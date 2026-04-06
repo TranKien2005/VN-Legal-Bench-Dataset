@@ -1,0 +1,470 @@
+Dự án xây dựng bộ dữ liệu đánh giá khả năng suy luận pháp lý Việt Nam của mô hình LLM
+Ý tưởng chính:
+Thảm khảo theo ý tưởng của bộ dữ liệu legal bench phân chia bộ dữ liệu theo các tác vụ chính mà một luật sư phải thực hiện:
+•	Issue Spotting (Phát hiện vấn đề): Xác định vấn đề (issue) từ một tập hợp các sự kiện (fact) xuất hiện từ một tình huống cho trước. Issue ở đây thường là xuất hiện của một tập hợp câu hỏi pháp lý, liên quan đến một lĩnh vực luật hoặc một bên cụ thể.
+•	Rule Recall (Ghi nhớ quy tắc): Ghi nhớ và truy xuất chính xác các quy tắc pháp lý cụ thể từ các tình huống trước đó (án lệ) hoặc văn bản quy phạm.
+•	Rule-conclusion (Kết luận quy tắc): Đưa ra kết luận chính xác từ tập hợp các sự kiện (fact) từ tình huống và tất cả quy tắc liên quan.
+•	Rule Application (Áp dụng quy tắc): Tương tự như rule-conclusion nhưng không chỉ đánh giá dựa trên câu trả lời cuối cùng mà còn đánh giá xem câu trả lời có kèm theo phân tích và suy luận hợp lý hay không.
+•	Interpretation (Diễn giải): Tập trung vào khả năng hiểu và phân tích, trích xuất thông tin từ một văn bản pháp lý mơ hồ ví dụ hợp đồng, điều khoản,..
+•	Rhetorical-understanding (Hiểu tu từ): Tập trung khả năng hiểu được quan điểm, phân tích và lập luận pháp lý ví dụ như lập luận của luật sư, phán quyết của tòa án, lời biện hộ của bị cáo,...
+Tuy nhiên bởi vì LegalBench thiết kế các task mang tính chất nguyên tử (mỗi tác vụ chỉ kiểm tra một năng lực pháp lý duy nhất rất nhỏ) tuy có được khả năng chẩn đoán lỗi cao nhưng lại có nhược điểm là cần lượng dữ liệu khổng lồ đồng thời tiêu tốn cực kỳ nhiều thời gian và công sức, nhân lực.
+Bởi vậy dự án hướng tới việc phân chia task theo các tác vụ tổng quát hơn như sau:
+Các task sẽ tập trung kiểm tra những tác vụ cơ bản và đặc trưng nhất của từng category chính, những tác vụ cơ bản này cần chọn lọc kĩ càng để mang tính đại diện cao để đảm bảo bộ dữ liệu có thể kiểm tra được AI một cách tương đối tổng quát và toàn diện với lượng nhỏ hơn task và dữ liệu.
+Một số task có thể kiểm tra cùng một tác vụ nhưng yêu cầu về đầu ra khác nhau (trắc nghiệm, tự luận, phân loại,..)
+Các task vẫn giữ sự độc lập và tách biệt nhau cũng như với category khác (các task không phải là tác vụ phụ của nhau, đầu ra của tác vụ này có thể là đầu vào của các tác vụ khác) với để duy trì khả năng chẩn đoán lỗi cao từ hệ thống tác vụ nguyên tử của LegalBench.
+Các task cần tận dụng từ nguồn dữ liệu sẵn có hoặc chỉ cần một số bước biến đổi, gia công đơn giản từ tài liệu có sẵn có thể thực hiện tự động với độ chính xác cao không cần tư duy xử lý phức tạp (trích xuất nguyên văn thông tin tình huống, nhân định tòa án, điều luật,..)
+
+Cấu trúc tác vụ:
+Issue Spotting:
+1.1	General Legal Issue Classification
+Mục tiêu: Đánh giá khả năng phát hiện sơ lược vấn đề pháp lý chung từ tình huống cụ thể nhằm xác định được miền luật của tình huống.
+Đầu vào, đầu ra: Cho đầu vào là một tình tiết vụ án yêu cầu xác định nhãn mục tiêu là 1 trong 15 nhãn legal issue phổ biến nhất được chọn lọc, Gồm 15 nhãn sau:
+•	Hôn nhân và Gia đình (Ly hôn, con cái, tài sản chung)
+•	Giao thông và Vận tải (Tai nạn, vi phạm an toàn giao thông)
+•	Thuế, Phí và Lệ phí (Nghĩa vụ tài chính với ngân sách nhà nước)
+•	Đất đai và Nhà ở (Quyền sử dụng đất, bồi thường, ranh giới)
+•	Lao động và Bảo hiểm xã hội (Lương, sa thải, chế độ BHXH)
+•	Kinh doanh và Đầu tư (Hợp đồng thương mại, nội bộ doanh nghiệp)
+•	Ngân hàng, Tín dụng và Bảo hiểm (Khoản vay, nợ xấu, thế chấp)
+•	Sở hữu trí tuệ (Bản quyền, nhãn hiệu, sáng chế)
+•	Môi trường và Tài nguyên (Ô nhiễm, khai thác tài nguyên)
+•	Trật tự, An toàn xã hội và Ma túy (Tệ nạn, chất cấm, an ninh công cộng)
+•	Xâm phạm Quyền con người (Tính mạng, sức khỏe, danh dự)
+•	Xâm phạm Quyền sở hữu tài sản (Trộm cắp, lừa đảo ngoài hợp đồng)
+•	Hành chính và Quản lý nhà nước (Khiếu kiện quyết định công quyền)
+•	Tư pháp và Tố tụng (Thẩm quyền, thủ tục, thời hiệu)
+•	Các vấn đề pháp lý khác (Hỗn hợp hoặc các lĩnh vực đặc thù khác)
+Cách sinh dữ liệu: Tình tiết vụ án lấy từ trong các bạn án được công khai, về nhãn có thể xác định dễ dàng dựa vào tiêu để của bán án được đặt sẵn Ví dụ: bán án về xin ly hôn số.., bản án về tội gây ô nhiễm môi trường, bản án về tranh chấp hợp đồng đặt cọc
+Độ đo: accuracy
+Note: Có thể cân nhắc đến việc chuyển sang dạng lựa chọn nhiều nhãn (multi label) tuy nhiên tiêu đề thường chỉ ghi issue chính nhất nên rất dễ bỏ sót hoặc lại yêu cầu phải thực hiện thủ công nên chỉ ưu tiên issue chính của tình huống. 
+1.2 Core Issue Generation
+Mục tiêu: Đánh giá khả năng xác định cụ thể vấn đề cốt lõi của tình huống cho trước của mô hình là bước đệm nhằm xác định cụ thể điều luật để áp dụng cho tình huống.
+Đầu vào, đầu ra: Đầu vào là tình tiết một vụ án yêu cầu sinh chính xác vấn đề chính có thể xác định được của vụ án đó.
+Cách sinh dữ liệu: tình tiết vụ án cũng được lấy từ các bản án, nhãn đầu ra được trích xuất chính xác từ tên được đặt cho bản án ví dụ bán án về xin ly hôn -> vấn đề xin ly hôn, bán án về tranh chấp hợp đồng đặt cọc -> vấn đề tranh chấp hợp đồng đặt cọc.
+Độ đo: Token-level F1 / LLM
+Rule recall:
+Có 2 ý tưởng chính là xây dựng task kiểm tra kiến thức theo 15 vấn đề luật chung được xác định từ issue spotting tuy nhiên hệ thống văn bản luật lại rất phức tạp, nhiều nghị định, văn bản có tác động đến nhiều lính vực khác nhau khiến việc xây dựng dữ liệu tốn nhiều thời gian và côgng sức. Hướng thứ 2 là tập trung vào các loại kiến thức yêu cầu kiểm tra ví dụ khả năng ghi nhớ các khái niệm, khả năng ghi nhớ điều luật, Khả năng ghi nhớ sự phát triển của các văn bản luật tác động lên nhau (văn bản nào là mới nhất đang dùng hiên tại, văn bản nào không còn hiệu lực,...)
+Quyết định lựa chọn hướng 2 vì sẽ dễ dàng tận dụng khả năng gia công của LLM hơn.
+2.1 Definition Recall 
+Mục tiêu: Kiểm tra khả năng ghi nhớ những khái niệm pháp lý một cách chính xác trong một văn bản luật cho trước
+Đầu vào đầu ra: đầu vào là câu hỏi yêu cầu trả lời chính xác một khái niệm luật trong một văn bản luật nhất định (cung cấp sẵn tên văn bản luật), đầu ra yêu cầu trích nguyên văn định nghĩa trong văn bản luật đấy
+Cách sinh dữ liệu: có 2 nguồn chính là lấy từ các đề thi, 2 là cho llm đọc từng điều khoản luật nếu phát hiện khái niệm thì trích xuất nguyên văn theo cặp khái niệm – định nghĩa.
+Độ đo: Token-level F1 / Exact Match + normalization
+2.2 Article Recall 
+Nhiệm vụ: Kiểm tra khả năng ghi nhớ chính xác các điều luật trong các văn bản quy phạm pháp luật.
+Đầu vào, đầu ra: đầu vào tên một điều khoản của một văn bản nhất định, đầu ra yêu cầu trích xuất chính xác điều khoản đấy
+Sinh dữ liệu: Sinh chính xác từ các văn bản quy phạm pháp luật
+Độ đo: Token-level F1 / Exact Match + normalization
+2.3 Legal Text Attribution
+Nhiệm vụ: Xác định được thông tin liên quan của văn bản luật cho trước bao gồm thông tin về số điều khoản, văn bản, ngày ban hành, ngày có hiệu lực,..
+Độ đo: Exact Match + normalization
+Cách sinh dữ liệu: dễ dàng sinh bằng cách trích xuất thông tin điều khoản trực tiếp ở văn bản quy pháp cũng như thông tin metadata của văn bản trên trang vanban.chinhphu.vn
+2.4 Legal Evolution
+Nhiệm vụ: Đánh giá khả năng ghi nhớ được sự phát triển của các quy định phát luật theo thời gian bao gồm  xác định văn bản phát lý hiện hành tại một thời điểm cho trước cũng như sự khác biệt về điều khoản so với những văn bản trước đó.
+Bao gồm những câu hỏi liên quan đến văn bản pháp luật nào là văn bản hiện hành hoặc điều luật này có thay đổi gì so với văn bản trước đó,...
+Ví dụ: "Quy định về 'Vốn điều lệ của công ty TNHH một thành viên' trong Luật Doanh nghiệp 2020 có điểm gì khác biệt so với Luật Doanh nghiệp 2014?"
+Phương pháp sinh: Chưa xác định được cách xây dựng tốt vì ít dữ liệu tương tự cũng như khó tin tưởng vào khả năng sinh trực tiếp của llm. Kiến nghị nhờ giáo viên bên luật xây dựng dữ liệu thủ công hộ.
+2.5 Legal Schema Recal
+Nhiệm vụ: Kiểm tra khả năng ghi nhớ và hiểu mối quan hệ giữa các điều khoản và văn bản luật với nhau. Nhiều điều luật ở văn bản này có thể là sửa đổi bổ sung hoặc triển khai rõ ràng hơn điều luật từ van bản khác.
+Đây là một task yêu cầu xác định được quan hệ giữa các văn bản pháp lý với nhau ví dụ (cơ sở, sửa đổi bổ sung,...)
+Cân nhắc tận dụng lại dữ liệu từ vlegal-bench của cmc như sau:
+ 
+ 2.6: Relevant Article Identification
+Nhiệm vụ: Đánh giá khả năng xác định các điều khoản pháp lý liên quan đến một tình huống pháp lý nhất định là cầu nối giữa category 1 và 2.
+Đầu vào và đầu ra: Đầu vào là một vấn đề pháp lý hoặc một câu hỏi lựa chọn đáp án đưa ra các điều khoản liên quan nhất đến vấn đề pháp lý trên.
+Phương pháp sinh: 
+Cách 1: lấy core issue từ task 1.2 làm đầu vào, nhãn là các văn bản được toàn đưa ra trong phần kết luận của toàn án.
+Cách 2: tổng hợp hoặc xây dựng thủ công từ nhiều nguồn vì dạng câu hỏi này cũng khá phổ biến. Đề xuất nhờ giảng viên khoa luật thực hiện thủ công.
+Độ đo: Accurancy
+Rule Application và Rule Conclusion
+Về việc đánh giá trường reasoning  của rule application cần cân nhắc thêm
+3.1 Legal Court Decision Prediction
+Đầu vào đầu ra: Đầu vào cung cấp toàn bộ thông tin về vụ án cũng như các điều luật liên quan (vì chỉ kiểm tra khả năng áp dụng luật không kiểm tra khả năng ghi nhớ) đầu ra là một trong 4 đáp án là quyết định chính của tòa án về vấn đề (ví dụ cho phép ly hôn, tuyên phạt 7 năm tù)
+Phương pháp sinh: có thể dễ dàng sinh từ các bản án với đa dạng các chủ đề luật pháp
+Đây là task cơ bản nhất rule application và rule conclusion cân nhắc tách thành các task nhở hơn theo 2 hướng
+Hướng 1: Chia task theo các loại mục tiêu conclusion khác nhau ví dụ: bên vi phạm, bên chịu trắc nhiệm, mức tiền phạt/ bồi thường, số năm tù, xác nhận văn bản có hiệu lực không,...
+Hướng 2: Chia task theo miền kiến thức luật hoặc chia theo 15 vấn đề cơ bản xác ở issue spotting 
+•	Hôn nhân và Gia đình (Ly hôn, con cái, tài sản chung)
+•	Giao thông và Vận tải (Tai nạn, vi phạm an toàn giao thông)
+•	Thuế, Phí và Lệ phí (Nghĩa vụ tài chính với ngân sách nhà nước)
+•	Đất đai và Nhà ở (Quyền sử dụng đất, bồi thường, ranh giới)
+•	Lao động và Bảo hiểm xã hội (Lương, sa thải, chế độ BHXH)
+•	Kinh doanh và Đầu tư (Hợp đồng thương mại, nội bộ doanh nghiệp)
+•	Ngân hàng, Tín dụng và Bảo hiểm (Khoản vay, nợ xấu, thế chấp)
+•	Sở hữu trí tuệ (Bản quyền, nhãn hiệu, sáng chế)
+•	Môi trường và Tài nguyên (Ô nhiễm, khai thác tài nguyên)
+•	Trật tự, An toàn xã hội và Ma túy (Tệ nạn, chất cấm, an ninh công cộng)
+•	Xâm phạm Quyền con người (Tính mạng, sức khỏe, danh dự)
+•	Xâm phạm Quyền sở hữu tài sản (Trộm cắp, lừa đảo ngoài hợp đồng)
+•	Hành chính và Quản lý nhà nước (Khiếu kiện quyết định công quyền)
+•	Tư pháp và Tố tụng (Thẩm quyền, thủ tục, thời hiệu)
+•	Các vấn đề pháp lý khác (Hỗn hợp hoặc các lĩnh vực đặc thù khác)
+Hướng 1 có vẻ khó xây dựng dữ liệu hơn hướng 2 chỉ việc chọn bản án liên quan đến một miền kiến thức nhận định để sinh.
+Về độ khó: các tình tiết của vụ án thường cực kỳ nhiều thông tin có thể dài đến 2, 3 trang và đều là các vụ án được lấy trực tiếp trong thực tế nên có thể đảm báo được độ phức tạp như đời thật. Có thể cân nhắc nhờ giảng viên khoa luật phân loại thủ công để chia thành 2 set dễ và khó nếu muốn đánh giá sâu hơn.
+Note: Một bản án thường rất phức tạp có thể gồm rất nhiều quyết định khác nhau câu hỏi chỉ tập trung vào một quyết định để có thể dễ dàng giải thích và đánh giá được.  Kết luận của toàn án cũng thường đi kèm phương phán xử lý đối với một số trường hợp khác nhau ví dụ: trường hợp bà A không bồi thường X có quyền lấy tài sản thế chấp, trường hợp bồi thường không đủ chi trả bà A vẫn phải tiếp tục thực hiện nghĩa vụ trả nợ.
+Về trường reasoning: phần nhận định của toàn án có phân tích và giải thich cực kỳ chi tiết và cụ thể tuy nhiên phần giải thích dài và phức tạp và cũng khó trích xuất được đề đánh giá mô hình. Cần phải xây dựng được một phương pháp đánh giá hợp lý nếu muốn sử dụng llm chấm hoặc phải sử dụng chuyên gia giảng viên luật chấm thủ công.
+Interpretation:
+4.1 Clause Functional Classification
+Mục tiêu: Kiểm tra khả năng đọc hiểu và phân loại điều khoản cơ bản. 
+Đầu vào, đầu ra: là một đoạn điều khoản đáp án là 1 trong 15 vấn dề luật cơ bản 
+Phương pháp sinh dữ liệu: Có 3 cách
+Cách 1: Sử dụng chung dữ liệu ban đầu với task Core Issue Generation đầu vào lấy từ chính đầu ra của task này còn nhãn thì được lấy từ các điều khoản và toàn tham chiếu đến trong phần quyết định. (yêu cầu xây dựng một cơ sở dữ liệu thống nhất) (đảm bảo độ chính xác)
+Cách 2: Cho LLm cấp cao đọc trực tiếp điều khoản và phân loại (không đảm bảo được độ chính xác và phụ thuộc vào llm sử dụng)
+Cách 3: Nhờ giảng viên luật xây dựng thủ công
+Đọ đo: Accuracy
+4.2 Legal Content Entailment (Xác minh nội dung dựa trên văn bản)
+Mục tiêu: Task này kiểm tra xem mô hình có thực sự "hiểu" nội dung văn bản hay chỉ đọc vẹt.
+Đầu vào, đầu ra: đầu vào là tình tiết của vụ án cùng với một nhân định về thông tin đầu ra là đúng hoặc sai
+Phương pháp sinh dữ liệu: Tình tiết dựa trên dữ liệu từ tình tiết vụ án của bản án, về các nhận định có thể dựa các phần nhận định của tòa án, tòa thường đưa ra một số nhận định từ thông tin của vụ án cần chọn lọc những nhận định không phải là kết quả suy luận luật để sử dụng ví dụ: quan hệ vợ chồng không hạnh phúc, các con đã trên 18 tuổi,... 
+// Cũng có thể sử dụng nhân định tòa án làm phần input và để kiểm tra các nhận định là các ý của quyết định có đúng không vì thường phần nhận định đã đưa ra đầy đủ kết luận rồi phần quyết định chỉ tóm gọn lại.
+Độ đo: Accuracy
+4.3 Legal Entity Extraction 
+Mục tiêu: Task này kiểm tra việc trích xuất thông tin từ các văn bản pháp lý
+Đầu vào đầu ra: phần headnote ban đầu của một bản án và thông tin được yêu cầu trích xuất, đáp án là một trong 4 đáp án cho trước
+Phương pháp sinh: Ở mỗi đầu văn bản thường cung cấp nhiều thông tin cơ bản như thành phần hội đồng xét xử, nguyên đơn, bị đơn, địa chỉ có thể dễ dàng trích xuất được, ngoài ra task này khá phổ biến không chỉ trong chủ đề luật có thể cân nhắc sử dụng bộ dữ liệu ngoài hoặc yêu cầu giảng viên luật hỗ trợ xây dựng thủ công để đảm bảo độ đa dạng.
+4.4 Legal Relation Extraction
+Tương tự với legal entity nhưng tập trung vào quan hệ giữa các đối tượng.
+Thương không được nêu rõ ràng trong các bản án ưu tiên dùng bộ dữ liệu khác hoặc xây dựng thủ công
+4.5 Core Meaning Extraction (Tóm tắt ý nghĩa cốt lõi - Gen)
+Chủ ý kiểm tra khả năng tóm tắt ý nghĩa cốt lõi của một đoạn văn bản luật 
+Phương pháp xây dựng: Thường phải tóm tắt thủ công để đảm bảo chất lượng nhưng cực kỳ tốn kém về công sức ngoài ra có thể sử dụng dữ liệu có sẵn cụ thể là task Legal Document Summarization của vlegal-bench của cmc đã được xây dựng thủ công với số lượng lớn.
+Phương pháp đánh giá và độ đo cũng cần xem xét thêm
+//Có một số task liên quan đến hợp đồng của bài báo gốc có thể được sử dụng lại vì hợp đồng chỉ cần xem xét đến bản thân văn bản không bị ảnh hưởng bởi 2 hệ thống luật khác nhau.
+Rhetorical-understanding:
+Đây là một task phức tạp tạm thời chưa xác định được những tác vụ cơ bản nhất của category này tuy nhiên dựa trên bài báo legalbench có thể xây dựng được một số task nguyên tử kiểm tra một loại năng lực nhất định để có đánh giá tổng quan sơ bộ.
+5.1 Legal Argument Role Classification
+Đầu vào, đầu ra: Cung cấp một đoạn trong nhân định của toàn án và yêu cầu đưa câu trả lời về tác dụng của câu hoặ đoạn trên dưa trên 6 loại sau:
+Tóm tắt sự việc: Thuật lại diễn biến để làm tiền đề.
+Dẫn chiếu căn cứ: Nêu ra các điều luật làm cơ sở.
+Bác bỏ/Chấp nhận lập luận: Đưa ra lý lẽ để phủ nhận hoặc đồng ý với quan điểm của đương sự (Nguyên đơn/Bị đơn/Viện kiểm sát).
+Lập luận bắc cầu: Kết nối các bằng chứng lại với nhau.
+Kết luận logic: Đưa ra điểm chốt của lập luận trước khi tuyên án.
+Phương pháp sinh: 
+C1: Dựa trực tiếp vào llm sinh bằng cách cung cấp toàn bộ phần nhận định để llm có cái nhìn toàn diện hơn tuy nhiên phải kiểm tra kĩ chất lượng.
+C2: Xây dựng thủ công.
+Độ đo: Accuracy
+5.2 Reasoning Method Detection (Nhận diện phương pháp tư duy pháp lý)  
+Mục tiêu: Đánh giá khả năng nhận diện phương pháp tư duy pháp lý mà  Thẩm phán sử dụng trong lập luận. 
+Cấu trúc câu hỏi: Cung cấp đoạn lập luận của Tòa án, yêu cầu mô hình  xác định phương pháp tư duy: [Textualism] (Dựa trên câu chữ khô khan của  luật) hay [Purposivism] (Dựa trên mục đích của luật và hoàn cảnh khách  quan để bảo vệ công lý). 
+Cách đánh giá: Sử dụng độ đo Accuracy.
+Phương pháp sinh tương tự như task trên
+5.3 Argument Consistency Check (Kiểm tra tính nhất quán lập luận) 
+ Mục tiêu: Đánh giá khả năng phân tích sự tương thích giữa lập luận của  các bên và chứng cứ thực tế. 
+ Cấu trúc câu hỏi: Cung cấp lập luận của một bên (đương sự, bị cáo, Viện  kiểm sát...) và chứng cứ/dữ kiện thực tế, yêu cầu mô hình đánh giá sự tương  thích. 
+ Cách đánh giá: Sử dụng độ đo Accuracy với đáp án "Nhất quán" hoặc  "Mâu thuẫn".
+Phương pháp sinh: tương tự task trên
+5.4: Counter-Argument Identification (Nhận diện phản nghị luận)
+Mục tiêu: Kiểm tra khả năng của mô hình trong việc xác định xem một một quan điểm là bổ trợ  hay bác bỏ cho một quan điểm cho trước
+Đầu vào: Lập luận của nguyên đơn/bị đơn + Đoạn nhận định tương ứng của Tòa.
+Đầu ra: Phân loại: [Chấp nhận] / [Bác bỏ một phần] / [Bác bỏ toàn bộ].
+Cách sinh dữ liệu: Tận dụng các từ khóa tín hiệu trong bản án như: "Tuy nhiên, xét thấy...", "Yêu cầu của bị cáo là không có cơ sở...", "Về nội dung này, Tòa án tán thành với quan điểm của..." hoặc xây dựng thủ công
+Câu hỏi mở
+Phần này chủ yếu dùng cho task chất lượng cao từ bộ dữ liệu khác nhưng khó khăn trong việc tách biệt hoàn toàn giữa các category chủ yếu kiểm tra khả năng suy luận tổng hợp có thể phải thực hiện nhiều tác vụ khác nhau để dễ dàng đánh giá tốt nhất nên tập trung vào các task phân loại hoặc mcq
+Kế hoạch xây dựng bộ dữ liệu: 
+B1: Hoàn thiện ý tưởng
+Hoàn thiện nốt cấu trúc của bộ dữ liệu ở những phần còn đang xem xét cúng như xác định phương pháp xây dựng dữ liệu của một số task là thủ công, tận dung bộ dữ liệu có sẵn hay xay dựng thủ công
+B2: Thu thập dữ liệu
+Các bản án:
+congbobanan.toaan.gov.vn 
+https://thuvienphapluat.vn/banan
+Có nguồn bán án dồi dào từ vài trăm nghìn lên đến hơn 1 triệu bản án tùy vào đoạn thời gian mong muốn sử dụng việc tách biệt hoàn toàn giữa việc ghi nhớ luật và áp dụng khiến cho không cần lo lắng đến việc các bản án cũ sử dụng luật từ các tài liệu đã không còn hiệu lực.
+Vì số lượng lớn tải thu công mất rất nhiều thời gian cân nhắc nhờ thầy cô luật hoặc xin nguồn dữ liệu từ admin trang web
+Cần xử lý sơ bộ và trích xuất một số trường và lưu vào cơ sở dữ liệu để phục vụ việc sinh một số task về sau cũng như tránh trùng lặp dữ liệu nếu mở rộng sau này
+Các đề thi cho sinh viên đại học :
+Là nguồn tốt cho các câu hỏi rule recall
+Cân nhắc nhờ giao viên luật thu thập
+Các đề thi luật sư:
+Có những câu hỏi khó và chất lượng với độ phức tạp cao nếu có số lượng lớn có thể tạo thêm các task không thể xây dựng vì không có nguồn dữ liệu hiện tại
+https://fdvn.vn/wp-content/uploads/2025/03/tong-hop-de-thi-va-dap-an-ky-thi-het-mon-ket-thuc-tap-su-nghe-luat-su-cacca3p-nhacca3t-den-nam-2024-5.pdf
+Các nguồn trên mạng hiện tại rải rác và không đap ứng được nhu cầu vì không thu thập được đáp án hoặc ít nhất là hướng dẫn chám
+Văn bản quy phạm: nguồn dữ liệu dồi dào và dễ dàng khai thác tuy nhiên cần tổ chức có hệ thống (điều/ khoản/ văn bản) để dễ dàng truy xuất cho việc sinh câu hỏi. Ngoài ra có thể bỏ sót một số tài liệu nếu tải thủ công.
+Bộ dữ liệu bên ngoài: Một số task cần sử dụng bổ dữ liệu có sẵn bên ngoài nếu không muốn bỏ ra lượng lớn nhân lực vào công sức tuy nhiên chưa rõ về vấn đề bản quyền sử dụng.
+B3: Xây dựng cơ sở dữ liệu
+Đầu tiên cần hệ thống hóa các điều, khoản văn bản quy phạm pháp luật để dễ dàng xây dựng các task rule recall cũng như trích xuất thông tin điều luật trực tiếp cho một số task application vì ở một số bản án tòa án có thể không nếu đầy đủ luật và chỉ trích dẫn theo điều abc bộ luật xyz
+Tiếp theo cần hệ thống hóa lại bản án vào một cơ sở dữ liệu để dễ dàng thêm bản án mới cũng như dễ dàng lấy ra các phần ví dụ phần thành phần tham gia phiên tòa, phần nội dung vụ án, phần nhận định, phần quyết định
+B4: Chuẩn bị code và thử nghiệm: 
+Chuẩn bị promt để sinh từng loại câu hỏi với từng đầu vào khác nhau cũng như các instruction no shot và fewshot trong việc đánh giá mô hình đồng thời cần chọn mô hình ngon ngữ lớn phù hợp để sinh thử một vài mẫu. Vì mỗi request có thể dài đến vài trang giả sử mỗi request sinh một câu hỏi thì có thể càn đến hàng chục nghìn request nếu sử api miễn phí sẽ hêt token rất nhanh cân nhắc đến việc sử dụng api trả phí.
+Đồng thời kiểm tra chất lượng và điều chỉnh với các task sinh thủ công hoặc sử dụng từ các bộ dữ liệu khác.
+B5: Sinh lượng lớn dữ liệu và tổng hợp kết quả.
+Sau khi sinh thử nghiệm bắt đầu sinh lượng lớn dữ liệu, tổng hợp lại kết quả sinh thủ công từ các giáo viên luật, ra soát lại và hoàn thiện.
+B6: Đánh giá
+Rà soát lại tiêu chí đánh giá đặc biệt là phương pháp đánh giá cho trường reasonig của category application.
+Thực hiện đánh giá trên nhiều mô hình ngôn ngữ lớn tiêu biểu cả few và no shot rồi tổng hợp kết quả.
+Các vấn đề và lưu ý chính
+Về việc phân chia tỉ lệ bộ dữ liệu dữa các chủ đề 
+Lựa chon chia đểu dữ liệu cho các chủ đề bằng các tìm kiếm bản án dựa trên keyword của vấn đề pháp lý chính.
+Về vấn đề phạm vi thời gian 
+Dù phương pháp xây dựng bộ dụ liệu chú trọng sự tách biệt giữa các tác vụ nên không phụ thuộc quá nhiều vào sự thay đổi của luật theo thời gian tuy nhiên vẫn ưu tiên dữ liệu thô lấy từ các văn bản hoặc bản án gần đây hơn
+Giai đoạn	Tỉ lệ đề xuất
+2021 - Nay (Hiện đại)	50%     
+2015 - 2020 (Chuyển đổi)	30%
+Trước 2015 (Lịch sử/Thử thách)	20%
+Trong các tác vụ rule recall đều phải nêu cụ thể thời điểm muốn truy suất hoặc cụ thể văn bản muốn truy suất
+Các tác vụ application đều cung cấp sẵn các điều khoản liên quan để suy luật trực tiếp.
+Về vấn đề độ khó của bộ dữ liệu
+Tiêu chí này thường không được đề cập trong các phương pháp nghiên cứu liên quan hoặc chỉ được xem xét ngầm dựa trên kết quả đánh giá để nâng lên. Ở đa số các tác vụ yêu cầu tư duy thì đều có tình huống khá phức tạp để giải quyết cần liên quan đến hàng chục điều luật được trích dẫn trong phần quyết định vì thế có thể đảm bảo được độ khó. Nếu muốn đánh giá sâu hơn đề xuất chia bộ dữ liệu bản án thô thành 2 set dễ và khó được các chuyên gia luật phân loại thủ công theo một tỉ lệ nhất định.
+Về vấn đề sử dụng các api llm để sinh dữ liệu và đánh giá
+Mong muốn sử dụng mô hình chất lượng cao để gia công trong việc sinh nhằm đảm bảo chát lượng cao nhất tuy nhiên lượng token miễn phí rất có hạn một số llm sử dụng hình thức chặn ip hoặc tài khoản nên khó có thể chỉ sử dụng api miễn phí.
+Về vấn các nhiệm vụ mong muốn nhận được sự hỗ trợ của giáo viên luật
+Thu thập dữ liệu thô
+Thu thập toàn bộ các văn bản quy phạm pháp lý từng được ban hành
+Thu thập một số đề thi của sinh viên liên quan đến một số lĩnh vực trựu tượng khó thu được từ các bản án ví dụ câu hỏi liên quan đến hiến pháp, lý thuyết pháp luật.
+Thu thập một số đề thi luật sư có sẵn đáp án hoặc phần hỗ trợ chấm điểm để hỗ trợ xây dựng các task khó xây dựng tự động hay những task câu hỏi mở phức tạp.
+Phân loại dữ liệu thô
+Lựa chọn một số văn bản quy phạm chính để ưu tiên tỉ lệ trong các task rule recall
+Phân loại bản án thô thành 2 set dễ và khó.
+Xây dựng dữ liệu thủ công
+Một số task hi vọng được hỗ trợ xây dựng thủ công
+2.4 Legal Evolution
+2.6: Relevant Article Identification
+4.1 Clause Functional Classification // ít ưu tiên hơn
+4.3 Legal Entity Extraction // ít ưu tiên vì có nhiều dữ liệu ngoài
+4.4 Legal Relation Extraction
+4.5 Core Meaning Extraction
+5.1 Legal Argument Role Classification
+5.2 Reasoning Method Detection 
+5.3 Argument Consistency Check 
+5.4: Counter-Argument Identification 
+Một số dữ liệu ví dụ
+1.1	General Legal Issue Classification
+Tình huống:
+Theo đơn khởi kiện ngày 26 tháng 6 năm 2025 và các bản tự khai trong quá trình giải
+quyết vụ án, cũng như tại phiên tòa sơ thẩm, nguyên đơn là bà Trần Thị Thu H trình bày:
+- Về tình cảm: Bà và ông Trịnh Văn T kết hôn trên cơ sở tự nguyện, có đăng ký kết
+hôn tại Ủy ban nhân dân phường T, quận B, Hà Nội vào ngày 04/12/2001.
+Sau khi kết hôn vợ chồng bà về chung sống hạnh phúc đến khoảng cuối năm 2019 thì
+phát sinh mâu thuẫn, nguyên nhân là do vợ chồng bất đồng về quan điểm sống, bất đồng
+lối sống. Vợ chồng bà đã sống ly thân hoàn toàn từ năm 2019 cho đến nay, tuy hai vợ
+chồng ở chung nhà nhưng mỗi người ở một phòng, không sinh hoạt vợ chồng, không
+quan tâm đến nhau. Nay bà nhận thấy tình cảm vợ chồng không còn, mục đích hôn nhân
+không đạt được. Bà H xin được ly hôn với ông Trịnh Văn T.
+- Về con chung: Bà H xác nhận quá trình chung sống với ông Trịnh Văn T có 02 (hai)
+con chung là Trịnh Thanh H1, sinh ngày 14/12/2001 và Trịnh Minh C, sinh ngày
+27/3/2006. Các con chung đã trưởng thành (đủ 18 tuổi), việc ở với ai do các cháu tự
+quyết định, không yêu cầu Tòa án giải quyết.
+- Về tài sản và nhà ở chung: Quá trình chung sống vợ chồng bà H và ông Trịnh Văn
+T có tạo dựng được khối tài sản là 1 căn nhà có diện tích 19m2 và diện tích xây dựng là
+21m2 tại địa chỉ số A tập thể máy điện phường Y, quận T (nay là số A ngách C A, Hồ N,
+Hà Nội) sổ đỏ đứng tên hai vợ chồng. Khi ly hôn bà H có nguyện vọng được chia bằng
+hiện vật nhà đất trên và cam kết có nghĩa vụ thanh toán lại ngay phần giá trị mà ông T
+được hưởng cho ông T.
+- Về nợ chung: Quá trình chung sống vợ chồng bà không có nợ ai, không cho ai vay
+nợ, không yêu cầu tòa án xem xét, giải quyết.
+Bị đơn: Trong bản tự khai và quá trình giải quyết cũng như tại phiên tòa, bị đơn ông
+Trịnh Văn T trình bày:
+Ông xác nhận quá trình kết hôn và chung sống như bà H đã trình bày là đúng. Ông và
+bà H kết hôn trên cơ sở tự nguyện, được sự đồng ý của hai bên gia đình, có tổ chức cưới
+và đăng ký kết hôn tại UBND phường T, B, Hà Nội.
+Sau khi cưới vợ chồng ông về chung sống với nhau hạnh phúc, chỉ đến khoảng năm
+2017 bà H bắt đầu không quan tâm đến gia đình, thường đi vắng nhiều ngày, bà H cũng
+không quan tâm đến gia đình nhà ông (nhiều năm nay bà H không về quê chồng) ... từ đó
+vợ chồng ông bà không có sự quan tâm đến nhau. Nay bà H xin ly hôn, mặc dù ông
+không muốn ly hôn nhưng nếu bà H cương quyết xin ly hôn, ông đồng ý ly hôn bà H.
+Về con chung: Ông T xác nhận quá trình chung sống ông và bà H có 2 con chung là
+Trịnh Thanh H1, sinh ngày 14/12/2001 và Trịnh Minh C, sinh ngày 27/3/2006. Các con đã trưởng thành nên việc ở với ai do các con tự quyết định, ông không yêu cầu Tòa án
+giải quyết.
+Về tài sản: Các động sản Ông T và bà H tự giải quyết, không yêu cầu Tòa án phải
+phân chia.
+Về động sản: Quá trình chung sống ông và bà H có 01 nhà đất có diện tích 19m2 và
+diện tích xây dựng là 21m2 tại địa chỉ số A tập thể máy điện phường Y, quận T (nay là số
+A ngách C A, Hồ N, Hà Nội) sổ đỏ đứng tên hai vợ chồng. Ông đề nghị Tòa án chia cho
+ông nhà đất này vì ông đã dồn nhiều tâm huyết để xây dựng và sửa chữa. Ông sẽ thanh
+toán phần giá trị cho bà H tuy nhiên đề nghị bà H cho ông thanh toán trong vòng 6 tháng.
+Đối với kết quả định giá của công ty Đ thế kỷ mới, ông đã được Tòa án thông báo và
+đồng ý để công ty tiến hành định giá. Tuy nhiên khi công ty đưa ra kết quả thì ông không
+đồng ý vì cho rằng giá mà công ty định giá đưa ra là quá cao so với thời điểm thực tế.
+Về vay nợ: Vợ chồng ông không có khoản nợ nào chung, cũng không cho ai vay nợ.
+Yêu cầu: Đưa ra câu trả lời là 1 trong 15 vấn đề pháp lý chung sau đây 
+•	Hôn nhân và Gia đình
+•	Giao thông và Vận tải
+•	Thuế, Phí và Lệ phí
+•	Đất đai và Nhà ở 
+•	Lao động và Bảo hiểm xã hội 
+•	Kinh doanh và Đầu tư 
+•	Ngân hàng, Tín dụng và Bảo hiểm 
+•	Sở hữu trí tuệ 
+•	Môi trường và Tài nguyên 
+•	Trật tự, An toàn xã hội và Ma túy 
+•	Xâm phạm Quyền con người 
+•	Xâm phạm Quyền sở hữu tài sản 
+•	Hành chính và Quản lý nhà nước 
+•	Tư pháp và Tố tụng 
+•	Các vấn đề pháp lý khác 
+Câu trả lời: Hôn nhân và gia đình
+1.2 Core Issue Generation
+Tình huống: Như 1.1
+Yêu cầu: Sinh vấn đề pháp lý cốt lõi của tình huống trên là.
+Câu trả lời: Vấn đề xin ly hôn
+2.1 Definition Recall 
+//Ví dụ của bộ dữ liệu khác nên còn thiêu sót chưa chỉ rõ cụ thể thời điểm hỏi hoặc là văn bản muốn hỏi
+“Theo quy định, Giao dịch dân sự được hiểu là gì?"
+Giao dịch dân sự là hợp đồng hoặc hành vi pháp lý đơn phương làm phát sinh, thay đổi hoặc chấm dứt quyền, nghĩa vụ dân sự
+2.2 Article Recall 
+Điều 2 của luật giáo dục 2019 là
+
+Điều 2. Mục tiêu giáo dục
+Mục tiêu giáo dục nhằm phát triển toàn diện con người Việt Nam có đạo đức, tri thức, văn hóa, sức khỏe, thẩm mỹ và nghề nghiệp; có phẩm chất, năng lực và ý thức công dân; có lòng yêu nước, tinh thần dân tộc, trung thành với lý tưởng độc lập dân tộc và chủ nghĩa xã hội; phát huy tiềm năng, khả năng sáng tạo của mỗi cá nhân; nâng cao dân trí, phát triển nguồn nhân lực, bồi dưỡng nhân tài, đáp ứng yêu cầu của sự nghiệp xây dựng, bảo vệ Tổ quốc và hội nhập quốc tế.
+2.3 Legal Text Attribution
+Mục tiêu giáo dục nhằm phát triển toàn diện con người Việt Nam có đạo đức, tri thức, văn hóa, sức khỏe, thẩm mỹ và nghề nghiệp; có phẩm chất, năng lực và ý thức công dân; có lòng yêu nước, tinh thần dân tộc, trung thành với lý tưởng độc lập dân tộc và chủ nghĩa xã hội; phát huy tiềm năng, khả năng sáng tạo của mỗi cá nhân; nâng cao dân trí, phát triển nguồn nhân lực, bồi dưỡng nhân tài, đáp ứng yêu cầu của sự nghiệp xây dựng, bảo vệ Tổ quốc và hội nhập quốc tế.
+
+Đoạn văn bản trên thuộc văn bản pháp lý nào 
+A Điều 2, 43/2019/QH14,...
+Đáp án A
+2.4 Legal Evolution
+Tại thời điểm 2025, luật giáo dục 2005 còn hiệu lực không
+A Có B Không
+Không
+2.5 Legal Schema Recal
+  // từ bộ dự liệu vlegal-bench
+"Văn bản nào đã được hợp nhất bởi Văn bản hợp nhất 62/VBHN-BNNMT năm 2025?", "answers": "A: 42/2023/TT-BTC\nB: 58/2025/TT-BKHDT\nC: 30/2024/TT-BTNMT\nD: 15/2025/TT-BNNMT", "ground_truth": "D"}
+2.6: Relevant Article Identification
+Những điều khoản nào sau đây liên quan đến vấn đề ly hôn
+Đáp án điều 33, 52/2014/QH13 // nhiều đáp án khác 
+3.1 Legal Court Decision Prediction
+Tình huống: như 1.1
+Luật cung cấp: Các Điều 33; 55; 56; 59; 62 Luật Hôn nhân và gia đình;Các Điều 28; 144; 147; 217; 271, 273 Bộ Luật tố tụng dân sự;Căn cứ khoản 2 Điều 468 Bộ luật Dân sự 2015;Nghị quyết 326/2016/UBTVQH14 ngày 30/12/2016 của Ủy ban Thường vụ Quốc hội quy định về mức thu, miễn, giảm, thu, nộp, quản lý và sử dụng án phí lệ phí
+//Khi xây dựng xong cơ sở dữ liệu sẽ tự động trích xuất và ghi nhưng điều luật trên vào trong câu hỏi
+Yêu cầu: Tòa án nên phán xử thế nào 
+A Bất động sản thuộc quyền sở hữu của ông T
+B Bất động sản thuộc quyền sở hữu của bà H
+C Hai người chia đôi đất mỗi người sở hữu một nửa
+D Một người sở hữu đất và có trách nghiệm thanh toán một nửa giá trị cho người kia
+
+Reasoning: Phần giải thích tương đối phức tạp nhưng căn cứ vào điều 33 và điều 59 để xác nhận chia đôi chủ yếu tập trung vào việc xác nhận đất là tài khoản chung theo điều 33, hai bên không thống nhất được phương án chia tòa căn cứ vào điều 59 quyết định mỗi người nhận một nửa giá trị của đất và nhà.
+4.1 Clause Functional Classification
+Điều 57. Thời điểm chấm dứt hôn nhân và trách nhiệm gửi bản án, quyết định ly hôn
+1. Quan hệ hôn nhân chấm dứt kể từ ngày bản án, quyết định ly hôn của Tòa án có hiệu lực pháp luật.
+2. Tòa án đã giải quyết ly hôn phải gửi bản án, quyết định ly hôn đã có hiệu lực pháp luật cho cơ quan đã thực hiện việc đăng ký kết hôn để ghi vào sổ hộ tịch; hai bên ly hôn; cá nhân, cơ quan, tổ chức khác theo quy định của Bộ luật tố tụng dân sự và các luật khác có liên quan.
+Câu trả lời: Hôn nhân và gia đình
+4.2 Legal Content Entailment
+Tình huống: tương tự 1.1
+Nhận định: Các con của 2 ông bà đã trưởng thành.
+Đúng
+4.3 Legal Entity Extraction 
+Tình huống tương tự 1.1
+Diện tích căn nhà của ông T và bà H là
+19m2
+4.4 Legal Relation Extraction
+Tình huống tương tự 1.1
+Ông H và bà T có quan hệ gì
+Vợ chồng 
+
+
+
+4.5 Core Meaning Extraction (Tóm tắt ý nghĩa cốt lõi - Gen)
+Tình huống 1.1
+Tóm tắt sơ bộ như sau: ông T và bà H sau một thời gian chung sống không hạnh phúc, bà H đề nghị ly hôn, ông T đồng ý nhưng hai bên vẫn đang mẫu thuẫn về việc chia bất động sản là căn nhà của hai vợ chồng.
+5.1 Legal Argument Role Classification
+[1] Về quan hệ hôn nhân:
+Bà Trần Thị Thanh H2 và ông Trịnh Văn T kết hôn trên cơ sở tự nguyện, có đăng ký
+kết hôn ngày 04/12/2001 tại UBND phường T, quận B, Hà Nội. Đây là hôn nhân hợp pháp.
+Vợ chồng chung sống không hạnh phúc, từ năm 2017 đến nay sống ly thân. Bà H2
+xác định tình cảm vợ chồng không còn và xin ly hôn, ông T cũng xác định tình cảm vợ
+chồng không còn nên đồng ý ly hôn bà H2.
+Tóm tắt sự việc
+5.2 Reasoning Method Detection
+Xét yêu cầu của các bên và điều kiện thực tế sử dụng nhà đất, Hội đồng xét xử
+xét thấy nên ưu tiên cho phụ nữ, vì vậy giao toàn bộ nhà đất cho bà Trần Thị Thu H
+được quyền sở hữu, sử dụng; bà H có nghĩa vụ thanh toán cho ông T số tiền
+1.955.988.216 đồng.
+[Purposivism]
+5.3 Argument Consistency Check (Kiểm tra tính nhất quán lập luận) 
+question": "Quy phạm được kiểm tra: Số ký hiệu: 74/2015/NĐ-CP; Vị trí: Điều 2, Nghị định số 74/2015/NĐ-CP; Nội dung quy phạm: Điều 2. Vị trí, chức năng của phòng không nhân dân\r\n\r\nPhòng không nhân dân là một nội dung quan trọng của công tác quốc phòng, quân sự; được xây dựng, hoạt động trong khu vực phòng thủ, là một bộ phận của thế trận quốc phòng toàn dân trên mặt trận đối không nhằm thực hiện phòng, tránh, đánh trả và khắc phục hậu quả các hành động xâm nhập, tiến công đường không của địch; bảo vệ tài sản của Nhà nước, tính mạng và tài sản của Nhân dân, góp phần xây dựng khu vực phòng thủ vững mạnh, bảo vệ vững chắc độc lập, chủ quyền và toàn vẹn lãnh thổ của Tổ quốc.\n\nQuy phạm là căn cứ rà soát: Số ký hiệu: 49/2024/QH15; Vị trí: Khoản 1, Điều 2, Luật Phòng không nhân dân 2024; Nội dung quy phạm: Điều 2. Giải thích từ ngữ\r\n\r\nTrong Luật này, các từ ngữ dưới đây được hiểu như sau:\r\n\r\n1. Phòng không nhân dân là hoạt động của toàn dân do bộ đội địa phương, Dân quân tự vệ và quân nhân dự bị làm nòng cốt, cùng với phòng không quốc gia, phòng không lục quân và các lực lượng khác chuẩn bị, ngăn ngừa, phòng tránh, đánh địch, khắc phục hậu quả địch đột nhập, tiến công đường không trong khu vực phòng thủ, quản lý, bảo vệ vững chắc vùng trời Tổ quốc.", "ground_truth": "Không"}
+5.4: Counter-Argument Identification (Nhận diện phản nghị luận)
+Về động sản: Quá trình chung sống ông và bà H có 01 nhà đất có diện tích 19m2 và
+diện tích xây dựng là 21m2 tại địa chỉ số A tập thể máy điện phường Y, quận T (nay là số
+A ngách C A, Hồ N, Hà Nội) sổ đỏ đứng tên hai vợ chồng. Ông đề nghị Tòa án chia cho
+ông nhà đất này vì ông đã dồn nhiều tâm huyết để xây dựng và sửa chữa. Ông sẽ thanh
+toán phần giá trị cho bà H tuy nhiên đề nghị bà H cho ông thanh toán trong vòng 6 tháng.
+
+Xét yêu cầu của các bên và điều kiện thực tế sử dụng nhà đất, Hội đồng xét xử
+xét thấy nên ưu tiên cho phụ nữ, vì vậy giao toàn bộ nhà đất cho bà Trần Thị Thu H
+được quyền sở hữu, sử dụng; bà H có nghĩa vụ thanh toán cho ông T số tiền
+1.955.988.216 đồng.
+
+Bác bỏ toàn bộ
+Xây dựng cơ sở dữ liệu
+Với các văn bản quy phạm pháp luật
+1. Legal docs
+legal_docs (
+  doc_id TEXT PRIMARY KEY,     -- 43/2019/QH14
+  title TEXT,                  -- Luật Giáo dục 2019
+  doc_type TEXT,               -- Luật // Luật/ Hiến pháp/ Nghị định/ Nghị quyết/ Thông tư
+raw_text  --backup  
+issuing_body TEXT,           -- Quốc hội
+  issue_date DATE,             -- 14-06-2019
+  effective_date DATE,         -- 01-07-2020
+)
+2. Legal Articles
+legal_articles (
+  article_id TEXT PRIMARY KEY,   -- 43/2019/QH14_XX
+  doc_id TEXT,
+  article_number TEXT,
+  content TEXT
+)
+// để khoản trong điều luôn thay vì tách ra 
+Với các bản án
+1. Cases
+cases (
+  case_id TEXT PRIMARY KEY,     -- 122/2026/DS-PT
+  title TEXT,                  -- Tranh chấp hợp đồng tín dụng
+  date DATE,                   -- 09-02-2026
+  raw_text TEXT,	-- raw full text (backup)
+  -- 4 phần chính (đã tách)
+  introduction TEXT,           -- phần mở đầu
+  case_content TEXT,           -- nội dung vụ án
+  court_reasoning TEXT,        -- nhận định của tòa
+  decision TEXT                -- quyết định
+)
+
+Xây dựng thử nghiệm
+Các tác vụ
+Lưa chọn một số tác vụ chính có thể dễ dàng xây dựng bằng llm chỉ phải thực hiện một số bước trích xuất đơn giản.
+Một số tác vụ phức tạp nhưng có giá trị quan trọng cũng tiến hành sinh mẫu. 
+
+1.1	General Legal Issue Classification
+Chi tiết cách sinh: 
+viết phần mở đồng cố định ví dụ đọc tình huống trên và xác định tình huống trên thuộc tình tương đồng với issue general nào nhất trong 15 th.... Câu trả lời chỉ bao gồm tên nhãn
+đưa cho llm tiêu đề của bản án để nó tự xác định
+lấy về nhãn llm sinh tạo câu hỏi thủ công bằng việc ghép phần mở đồng + tình huống 
+anser là nhãn mô hình sinh
+1.2 Core Issue Generation
+Tương tư 1.1
+2.1 Definition Recall 
+//Cần có phương pháp chọn điều khoản và chọn tài liệu để phân bổ đều
+Đưa điều khoản cho mô hình nếu phát hiện khái niệm yêu cầu trích nguyên văn
+2.2 Article Recall 
+// Cần có phương pháp chọn điều khoản và chọn tài liệu để phân bổ đều
+Tương tư như 2.1 nhưng yêu cầu trích nguyên văn một điều (chỉ trích đến điêu thôi để không mất quá nhiều công sức để tách đến khoản, điểm trong xử lý dữ liệu)
+//Cung cấp mẫu, yêu cầu cách viết cụ thể hoặc có cách chuẩn họa output để tránh việc mô hình xử dụng phong cách viết hay ký tự đặc biệt trong câu trả lời khó đánh giá hơn
+2.3 Legal Text Attribution
+Có thể sinh tự động dữ liệu đầy đủ trong cơ sở dữ liệu 
+2.4 Legal Evolution
+Ý tưởng là đánh dấu đặc biệt cho các điều luật có key word sửa đổi bổ sung trong quá trình xử lý văn bản đầu vào.
+2.6: Relevant Article Identification
+Trích xuất vẳn bản gốc trong đoạn quyết định toàn án liên quan đến các điều khoản sử dụng tuy nhiên không đảm bảo được là tất cả điều khoản đó đều liên quan trực tiếp đến vấn đề ở tiêu đề (có thể liên quan đến vấn đề nhỏ hợp trong tình tiết) có thể cung cấp cả đoạn và yêu cầu câu trả lời đúng nhất.
+***Các task 2. Cần xây xong cơ sở dữ liệu văn bản quy phạm đầy đủ trước
+3.1 Legal Court Decision Prediction
+//Chỉ lấy bản án sơ thẩm với tình tiết không quá phức tạp và chồng chéo
+Cho model đọc các phán quyết và tìm các phán quyết quan trong để sinh câu hỏi
+Reasoning có thể để tạo sau (tương đối khó nếu để có thể hoàn toàn tự động)
+4.2 Legal Content Entailment
+Hơi khó nhưng cố gắng lấy được các nhận định của toàn án trong phần nhận định để làm câu hỏi, đầu vào là nội dung vụ án
+4.5 Core Meaning Extraction
+Nếu không được xây dựng thủ công có thể xây dựng bằng cách chấm điểm bằng llm dựa trên việc có đầy đủ những thông tin quan trong được sử dụng trong phần nhận định để đưa ra kết luận không
+5.1 Legal Argument Role Classification
+Tạm thời llm sinh hoàn toàn nhưng phải cung cấp ví dụ và quy định chi tiết
+
+
+
+
+
+
+
+
+
+
+
+
+
+
