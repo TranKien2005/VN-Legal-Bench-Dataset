@@ -25,6 +25,8 @@ class LegalDoc(Base):
     issuing_body: Mapped[str | None] = mapped_column(String(100))  # "Quốc hội"
     issue_date: Mapped[date | None] = mapped_column(Date)
     effective_date: Mapped[date | None] = mapped_column(Date)
+    status: Mapped[str | None] = mapped_column(String(50))      # "Còn hiệu lực"
+    url: Mapped[str | None] = mapped_column(String(255))        # Link
     raw_text: Mapped[str | None] = mapped_column(Text)          # Full text backup
 
     # Relationships
