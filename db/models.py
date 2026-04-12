@@ -18,16 +18,27 @@ class LegalDoc(Base):
     """Văn bản quy phạm pháp luật."""
     __tablename__ = "legal_docs"
 
-    # VD: "43/2019/QH14"
-    doc_id: Mapped[str] = mapped_column(String(50), primary_key=True)
+    # UID tổng hợp: slugify(doc_id + title + issue_date)
+    uid: Mapped[str] = mapped_column(String(150), primary_key=True)
+    
+    # Số hiệu gốc (có thể trùng lặp cho văn bản cũ)
+    doc_id: Mapped[str] = mapped_column(String(100), index=True)
     title: Mapped[str] = mapped_column(Text)                    # "Luật Giáo dục 2019"
-    doc_type: Mapped[str | None] = mapped_column(String(50))    # "Luật"
-    issuing_body: Mapped[str | None] = mapped_column(String(100))  # "Quốc hội"
-    issue_date: Mapped[date | None] = mapped_column(Date)
-    effective_date: Mapped[date | None] = mapped_column(Date)
-    status: Mapped[str | None] = mapped_column(String(50))      # "Còn hiệu lực"
-    url: Mapped[str | None] = mapped_column(String(255))        # Link
-    raw_text: Mapped[str | None] = mapped_column(Text)          # Full text backup
+    
+    # Chuẩn hóa: "Luật", "Nghị định", "Nghị quyết", "Thông tư",...
+    doc_type: Mapped[str | None] = mapped_column(String(50), nullable=True)
+    
+    # Cơ quan ban hành: "Quốc hội", "Chính phủ",...
+    issuing_body: Mapped[str | None] = mapped_column(String(100), nullable=True)
+    
+    issue_date: Mapped[date | None] = mapped_column(Date, nullable=True)
+    effective_date: Mapped[date | None] = mapped_column(Date, nullable=True)
+    
+    # Trạng thái: "Có", "Không", "Không xác định"
+    status: Mapped[str | None] = mapped_column(String(50), nullable=True)
+    
+    url: Mapped[str | None] = mapped_column(String(255), nullable=True)
+    raw_text: Mapped[str | None] = mapped_column(Text, nullable=True)          # Full text backup
 
     # Relationships
     articles: Mapped[list["LegalArticle"]] = relationship(
@@ -35,21 +46,22 @@ class LegalDoc(Base):
     )
 
     def __repr__(self) -> str:
-        return f"<LegalDoc {self.doc_id}: {self.title}>"
+        return f"<LegalDoc {self.uid}: {self.title}>"
 
 
 class LegalArticle(Base):
     """Điều khoản trong văn bản quy phạm pháp luật."""
     __tablename__ = "legal_articles"
 
-    # VD: "43/2019/QH14_D2" (doc_id + "_D" + article_number)
-    article_id: Mapped[str] = mapped_column(String(100), primary_key=True)
-    doc_id: Mapped[str] = mapped_column(
-        String(50), ForeignKey("legal_docs.doc_id"), index=True
+    # VD: "uid_D2"
+    article_id: Mapped[str] = mapped_column(String(200), primary_key=True)
+    doc_uid: Mapped[str] = mapped_column(
+        String(150), ForeignKey("legal_docs.uid"), index=True
     )
     article_number: Mapped[str] = mapped_column(String(20))  # "2", "33a"
     title: Mapped[str | None] = mapped_column(Text)           # Tên điều (nếu có)
     content: Mapped[str] = mapped_column(Text)                 # Nội dung đầy đủ
+    is_amendment: Mapped[bool] = mapped_column(default=False)  # Sửa đổi, bổ sung
 
     # Relationships
     doc: Mapped["LegalDoc"] = relationship(back_populates="articles")

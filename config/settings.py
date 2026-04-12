@@ -29,6 +29,11 @@ class Settings(BaseSettings):
     PROCESSED_DIR: Path = BASE_DIR / "data" / "processed"
     BENCHMARK_DIR: Path = BASE_DIR / "data" / "benchmark"
 
+    # Chrome Automation
+    CHROME_PATH: str = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
+    CHROME_USER_DATA_DIR: str = r"C:\ChromeDebug"
+    CHROME_DEBUG_PORT: int = 9222
+
     @property
     def database_url(self) -> str:
         return (

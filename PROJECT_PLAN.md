@@ -7,9 +7,16 @@ Dự án **VN-Legal-Bench-Dataset** được thiết kế để tự động thu
 Dưới đây là các thư mục cốt lõi và vai trò của từng thành phần:
 
 ### `scrapers/`
-- **Vai trò**: Cào dữ liệu (Crawling/Scraping) từ các trang web như vanbanphapluat, congbobanan, v.v.
-- **Công nghệ**: `playwright`, `requests`, `BeautifulSoup`.
-- **Ví dụ luồng**: Khởi chạy một CDP Crawler với Chrome debugging thông qua thư viện Playwright (`vanbanphapluat_cdp_scraper.py`) để vượt qua các bộ lọc như Cloudflare, xuất dữ liệu thô (raw text, metadata) và định dạng xuất thành JSON đưa vào thư mục tạm `data/processed/`.
+- **Vai trò**: Chứa các "Engine" cào dữ liệu cốt lõi cho từng nguồn tin.
+- **Công nghệ**: `playwright`, `bs4`.
+- **Thành phần**:
+  - `vbpl_engine.py`: Engine chuyên biệt cho trang vanbanphapluat.co. **Tự động kích hoạt Chrome Debugging** (port 9222) nếu chưa chạy, tích hợp sẵn parser và model để trả về dữ liệu chuẩn hóa.
+
+### `scripts/`
+- **Vai trò**: Chứa các script chạy thực tế cho từng loại văn bản hoặc tác vụ cụ thể.
+- **Thành phần**:
+  - `scrape_vbpl_luat.py`: Script chuyên biệt để cào "Luật" từ VBPL.
+  - `process_raw_legal_docs.py`: Các công cụ xử lý hậu kỳ (nếu cần).
 
 ### `parsers/`
 - **Vai trò**: Phân rã văn bản pháp lý đã thu thập được thành các luồng data có cấu trúc chi tiết, tách biệt.
@@ -23,9 +30,33 @@ Dưới đây là các thư mục cốt lõi và vai trò của từng thành ph
 - **Các thành phần cụ thể**:
   - `models.py`: Định nghĩa các cấu trúc bảng (Tables) thông qua SQLAlchemy:
     - Bảng `legal_docs` quản lý Metadata cốt lõi (Trạng thái hiệu lực `status`, loại văn bản `doc_type`, ngày có hiệu lực `effective_date`, `url`...) của văn bản phạm vi.
-    - Bảng `legal_articles` chứa nội dung từng Điều luật chi tiết tách từ `legal_docs`.
-    - Bảng `court_cases` cho kho Bản án phục vụ suy luận pháp lý.
-  - `session.py`: Quản lý các cấu hình kết nối trực tiếp đến PostgreSQL engine.
+   ### 1. Standardized ID Format (Composite UID)
+To handle historical law variations and ID collisions (e.g., older laws with same numbers in different years), we use a composite UID:
+- **Format**: `slugify(doc_id + title_prefix + issue_date)`
+- **Example**: `24-1991-luat-luat-doanh-nghiep-1991-08-12`
+- **Article ID**: `[doc_uid]_D[article_number]` (e.g., `24-1991-luat-luat-doanh-nghiep-1991-08-12_D1`)
+
+### 2. Legal Document Schema (legal_docs)
+| Field | Type | Description |
+| :--- | :--- | :--- |
+| **uid** | String (PK) | Unique composite identifier |
+| **doc_id** | String | Official document ID (e.g., 37/2024/QH15) |
+| **title** | Text | Full title (extracted from text) |
+| **doc_type** | String | Normalized type (Luật, Nghị định,...) |
+| **issuing_body** | String | Issuing organization |
+| **issue_date** | Date | Date of issuance |
+| **effective_date** | Date | Date of effectivity |
+| **status** | String | Effectiveness status |
+| **url** | String | Source URL |
+| **raw_text** | Text | Full content for extraction |
+
+### 3. Folder Structure
+- `data/raw/legal_docs/`: Grouped page-level JSONs from scraper.
+- `data/processed/legal_docs/`: Refined metadata with `uid` and extracted titles.
+- `data/processed/legal_articles/`: Structured articles linked by `doc_uid`.
+  - `raw/`: Các JSON/PDF/HTML nguyên thủy chưa qua xử lý từ Internet đổ vào.
+  - `processed/`: Dữ liệu JSON đã được qua parse sơ bộ (như danh sách các document crawl được từ site).
+  - `benchmark/`: Đích đến lưu trữ file JSON, CSV của bộ công cụ dataset benchmarking cuối cùng, sẵn sàng test LLM.
 
 ### `config/`
 - **Vai trò**: Khởi tạo biến môi trường toàn cục cho dự án.
@@ -49,13 +80,13 @@ Dưới đây là các thư mục cốt lõi và vai trò của từng thành ph
 
 Mô tả sự phối hợp giữa 5 tầng thư mục trong hệ thống:
 
-1. **Thu thập (Scraping Layer - `scrapers/`)**: 
-   Cào file, bản án, kho luật. Sinh ra định dạng RAW và chuyển cho Processed Layer.
-2. **Tiền xử lý (Parsing Layer - `parsers/`)**:
-   Tổ chức đọc file từ ổ tĩnh, Cleaning (làm sạch), sử dụng Regex hoặc thư viện xử lý chữ để trích xuất từng entity nhỏ cấu trúc lại thành Pydantic object hoặc Dicts ổn định.
+1. **Thu thập & Cấu trúc (Scraping & Structuring Layer - `scrapers/`)**: 
+   Cào dữ liệu từ web, đồng thời sử dụng `parsers/` để chuẩn hóa metadata (ngày tháng, trạng thái, cơ quan ban hành) và tách Điều/Khoản ngay lập tức. Dữ liệu xuất ra dưới dạng JSON đã khớp với Schema của database.
+2. **Xử lý chuyên sâu (Parsing Layer - `parsers/`)**:
+   Cung cấp các công cụ chuẩn hóa (Normalization) và logic phân rã văn bản phức tạp (cho cả văn bản quy phạm và bản án). Đảm bảo tính nhất quán về kiểu dữ liệu (Data Types) cho toàn hệ thống.
 3. **Lưu trữ CSDL (Storage Layer - `db/`)**:
-   Tiếp nhận các Object hoàn hảo từ Parsing đẩy qua SQLAlchemy ORM đi thẳng vào Server PostgreSQL (Đóng vai trò Truth Data Pool sạch và thống nhất).
-4. **Sinh lượng lớn Dataset (Generation Layer - `scripts/` + `parsers/`)**: 
-   Scripts tự động nhặt mẫu (Case / Article) từ database đưa qua đường dẫn API (Gemini/LiteLLM), nhận cấu trúc hỏi-đáp MCQ/Gen Text chia 5 category của benchmark (Chi tiết phương pháp và dataset plan xem ngay bên `Ý tưởng và kế hoạch xây dựng dữ liệu .txt`).
+   Tiếp nhận các Object đã được chuẩn hóa, lưu trữ thông qua SQLAlchemy ORM. Dữ liệu lúc này đã sạch và sẵn sàng cho việc truy vấn/sinh câu hỏi.
+4. **Sinh lượng lớn Dataset (Generation Layer - `scripts/`)**: 
+   Sử dụng các script CLI để điều khiển quá trình cào dữ liệu hoặc sinh câu hỏi benchmark từ Truth Data Pool trong database.
 5. **Evaluation Output**: 
    Data đánh giá đẩy dưới dạng .json/.csv đổ về `data/benchmark/`.

@@ -389,18 +389,22 @@ Với các văn bản quy phạm pháp luật
 legal_docs (
   doc_id TEXT PRIMARY KEY,     -- 43/2019/QH14
   title TEXT,                  -- Luật Giáo dục 2019
-  doc_type TEXT,               -- Luật // Luật/ Hiến pháp/ Nghị định/ Nghị quyết/ Thông tư
-raw_text  --backup  
-issuing_body TEXT,           -- Quốc hội
-  issue_date DATE,             -- 14-06-2019
-  effective_date DATE,         -- 01-07-2020
+  doc_type TEXT,               -- Chuẩn hóa: Luật, Nghị định, Nghị quyết, Thông tư, Pháp lệnh, Hiến pháp
+  issuing_body TEXT,           -- Chuẩn hóa từ doc_id: Quốc hội, Chính phủ, Ủy ban Thường vụ Quốc hội,...
+  issue_date DATE,             -- Định dạng YYYY-MM-DD (hoặc null nếu không xác định)
+  effective_date DATE,         -- Định dạng YYYY-MM-DD (hoặc null nếu không xác định)
+  status TEXT,                 -- Giới hạn: Có, Không, Không xác định
+  url TEXT,                    -- Link gốc
+  raw_text TEXT                -- Toàn văn (backup)
 )
 2. Legal Articles
 legal_articles (
-  article_id TEXT PRIMARY KEY,   -- 43/2019/QH14_XX
+  article_id TEXT PRIMARY KEY,   -- số_điều/doc_id (VD: 1/44/2019/QH14)
   doc_id TEXT,
-  article_number TEXT,
-  content TEXT
+  article_number TEXT,           -- "1", "2a",...
+  title TEXT,                    -- Tiêu đề Điều (nếu có)
+  content TEXT,                  -- Nội dung đầy đủ của Điều
+  is_amendment BOOLEAN           -- Xác định sửa đổi, bổ sung
 )
 // để khoản trong điều luôn thay vì tách ra 
 Với các bản án
@@ -455,16 +459,36 @@ Nếu không được xây dựng thủ công có thể xây dựng bằng cách
 5.1 Legal Argument Role Classification
 Tạm thời llm sinh hoàn toàn nhưng phải cung cấp ví dụ và quy định chi tiết
 
+============================================================
+CẬP NHẬT GIAI ĐOẠN TRÍCH XUẤT DỮ LIỆU (KIẾN TRÚC TRUNG TÂM)
+============================================================
 
+1. Quản lý Danh tính Văn bản (Unified Identity - UID)
+- Giải pháp: Chuyển toàn bộ logic tạo UID và định danh về bộ Parser tập trung (`legal_doc_parser.py`).
+- Công thức UID chính quy: `slugify(type)-slugify(id)-slugify(title)-slugify(date)`.
+- Định danh Điều khoản:
+  + `article_id`: `[Số điều]/[Số hiệu]` (Dùng cho truy vấn truyền thống).
+  + `article_uid`: `dieu-[Số điều]-[UID văn bản cha]` (Dùng cho quan hệ RDBMS/Graph).
 
+2. Thuật toán "Khung xương tuần tự" (Sequential Skeleton Search)
+- Mục tiêu: Bóc tách chính xác các Điều thuộc văn bản gốc, loại bỏ hoàn toàn các Điều trích dẫn (citations).
+- Cơ chế:
+  + Duy trì biến `expected_number` tăng dần (1, 2, 3...). 
+  + Chỉ chấp nhận "Điều X" nếu nó khớp với chuỗi tăng dần; các Điều nhảy số quá xa hoặc nằm trong ngoặc kép sẽ bị gán nhãn là "trích dẫn" và bỏ qua khỏi danh sách Điều khoản chính.
 
+3. Quy tắc "Chữ hoa = Nội dung" (Strict Title Split)
+- Cơ chế tách Tiêu đề Điều khoản đa dòng:
+  + Smart Split: Tách tại dấu chấm `.` nếu dòng tiếp theo bắt đầu bằng Chữ cái Viết Hoa.
+  + Stop Condition: Ngừng gom tiêu đề ngay lập tức nếu gặp dòng mới bắt đầu bằng Chữ Hoa hoặc các ký hiệu danh sách (1., a., Chương, Mục).
+  + Fail-safe: Nếu tiêu đề dài quá 200 ký tự, tự động trả về toàn bộ đoạn làm phần Nội dung.
 
+4. Bóc tách Tiêu đề Văn bản (CAPS Block Identification)
+- Ưu tiên: Trích xuất khối chữ VIẾT HOA liên tục ở đầu văn bản để làm Tiêu đề chính thức (Title).
+- Dự phòng: Nếu không trích xuất được hoặc bị lỗi, hệ thống mới sử dụng Title từ Web scraping hoặc mã `[Loại] [Số hiệu]`.
 
+5. Quy trình Vận hành 3 Bước
+- Bước 1: **Scraping** (`scrape_vbpl_*.py`) - Thu thập RAW HTML/JSON.
+- Bước 2: **Refining** (`process_vbpl_docs.py`) - Tinh lọc Metadata, gán UID văn bản và trích xuất CAPS Title.
+- Bước 3: **Parsing** (`process_vbpl_articles.py`) - Bóc tách Điều khoản chi tiết, gán article_id/article_uid.
 
-
-
-
-
-
-
-
+Toàn bộ linh hồn của hệ thống hiện nằm tại `legal_doc_parser.py`, đảm bảo tính nhất quán tuyệt đối của dữ liệu đầu ra phục vụ cho việc nén vào Database.
