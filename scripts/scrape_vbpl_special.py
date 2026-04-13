@@ -12,8 +12,7 @@ from config.settings import settings
 async def main():
     # --- DANH SÁCH LINK CẦN CÀO ĐẶC BIỆT ---
     urls_to_scrape = [
-        "https://vanbanphapluat.co/luat-dat-dai-2024",
-        # Thêm các link khác tại đây...
+        
     ]
     # ---------------------------------------
 

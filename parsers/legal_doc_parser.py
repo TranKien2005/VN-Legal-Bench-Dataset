@@ -78,7 +78,7 @@ def split_articles(text: str, doc_id: str, doc_uid: str, is_amendment: bool = Fa
     """
     articles = []
     # Tìm tất cả "Điều X"
-    pattern = re.compile(r'(?:^|\n)Điều\s+(\d+[a-z]?)\.?\s*', re.IGNORECASE)
+    pattern = re.compile(r'(?:^|\n)Điều\s+(\d+[a-z]?)\.?[\t ]*', re.IGNORECASE)
     matches = list(pattern.finditer(text))
     
     # 1. Cơ chế lọc trích dẫn: Loại bỏ các Điều nằm trong dấu ngoặc kép "..."
@@ -150,14 +150,16 @@ def split_articles(text: str, doc_id: str, doc_uid: str, is_amendment: bool = Fa
         
         # Step 2 & 3: Gom tiếp tiêu đề hoặc dừng nếu gặp Chữ hoa/Danh sách
         if not found_content:
-            for line in lines[1:]:
+            for i, line in enumerate(lines[1:]):
                 l_strip = line.strip()
                 if not l_strip: continue
                 
                 # Điểm dừng: Viết hoa, số hiệu khoản (1., 2.) hoặc điểm (a, b)
                 if l_strip[0].isupper() or re.match(r'^(\d+|[a-z]|chương|mục)[\.\),]', l_strip, re.IGNORECASE):
                     found_content = True
-                    art_content_parts.append(line)
+                    # Khi đã tìm thấy dòng bắt đầu nội dung, gom toàn bộ phần còn lại
+                    art_content_parts.extend(lines[1+i:])
+                    break
                 else:
                     art_title_parts.append(l_strip)
         else:

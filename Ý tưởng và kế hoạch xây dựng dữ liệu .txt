@@ -383,32 +383,95 @@ xét thấy nên ưu tiên cho phụ nữ, vì vậy giao toàn bộ nhà đất
 1.955.988.216 đồng.
 
 Bác bỏ toàn bộ
-Xây dựng cơ sở dữ liệu
-Với các văn bản quy phạm pháp luật
-1. Legal docs
-legal_docs (
-  doc_id TEXT PRIMARY KEY,     -- 43/2019/QH14
-  title TEXT,                  -- Luật Giáo dục 2019
-  doc_type TEXT,               -- Chuẩn hóa: Luật, Nghị định, Nghị quyết, Thông tư, Pháp lệnh, Hiến pháp
-  issuing_body TEXT,           -- Chuẩn hóa từ doc_id: Quốc hội, Chính phủ, Ủy ban Thường vụ Quốc hội,...
-  issue_date DATE,             -- Định dạng YYYY-MM-DD (hoặc null nếu không xác định)
-  effective_date DATE,         -- Định dạng YYYY-MM-DD (hoặc null nếu không xác định)
-  status TEXT,                 -- Giới hạn: Có, Không, Không xác định
-  url TEXT,                    -- Link gốc
-  raw_text TEXT                -- Toàn văn (backup)
-)
-2. Legal Articles
-legal_articles (
-  article_id TEXT PRIMARY KEY,   -- số_điều/doc_id (VD: 1/44/2019/QH14)
-  doc_id TEXT,
-  article_number TEXT,           -- "1", "2a",...
-  title TEXT,                    -- Tiêu đề Điều (nếu có)
-  content TEXT,                  -- Nội dung đầy đủ của Điều
-  is_amendment BOOLEAN           -- Xác định sửa đổi, bổ sung
-)
-// để khoản trong điều luôn thay vì tách ra 
-Với các bản án
-1. Cases
+============================================================
+CHI TIẾT TRIỂN KHAI VIỆC THU THẬP VÀ XỬ LÝ DỮ LIỆU
+============================================================
+
+PHẦN 1: VĂN BẢN QUY PHẠM PHÁP LUẬT (KIẾN TRÚC TRUNG TÂM)
+
+Hệ thống được thiết kế theo mô hình luồng dữ liệu (Data Pipeline) qua 3 trạng thái model khác nhau, đảm bảo dữ liệu thô được tinh lọc và cấu trúc hóa sâu phục vụ cho tác vụ AI.
+
+I. Nguồn dữ liệu & Đặc điểm (Data Sources)
+- Trang mục tiêu: vanbanphapluat.co (lấy Toàn văn HTML & Metadata table).
+- Đặc điểm: Dữ liệu văn bản pháp luật Việt Nam rất đa dạng về hình thức (từ Sắc lệnh 1945 đến Luật hiện đại 2024), đòi hỏi bộ Parser phải cực kỳ linh hoạt.
+II. Mô hình dữ liệu và Luồng xử lý (Data Flow & Modeling)
+Dữ liệu được luân chuyển và biến đổi qua 3 "điểm chạm" chính, mỗi điểm chạm thực hiện một nhiệm vụ cấu trúc hóa riêng biệt:
+1. Giai đoạn 1: Raw Data Model (JSON thô)
+- Nguồn: Trích xuất bằng Playwright từ vanbanphapluat.co.
+- Trạng thái: Dữ liệu "phẳng", chứa toàn bộ nội dung HTML được convert sang Plaintext nhưng chưa phân tách thành phần.
+- Các trường dữ liệu: {url, title_web, raw_text, Số hiệu, Cơ quan ban hành, Ngày ban hành, Ngày hiệu lực, Loại văn bản, Lĩnh vực, Tình trạng hiệu lực}.
+- Ví dụ:
+"url": "https://vanbanphapluat.co/luat-dau-gia-tai-san-sua-doi",
+"title_web": "Luật 37/2024/QH15",
+"raw_text": "Nội dung toàn văn Luật Đấu giá tài sản sửa đổi năm 2024 số 37/20
+"Loại văn bản": "Luật",
+"Số hiệu": "37/2024/QH15",
+"Cơ quan ban hành": "Quốc hội",
+"Người ký": "Vương Đình Huệ",
+"Ngày ban hành": "27/06/2024",
+"Ngày hiệu lực":"
+"Ngày công báo":
+"Số công báo":
+"Lĩnh vực": "Tài chính nhà nước",
+"Tình trạng hiệu lực": "Không xác định",
+"Cập nhật": "năm ngoái"
+2. Giai đoạn 2: Refined Doc Model (ParsedLegalDoc)
+- Quá trình: Dữ liệu thô được đưa vào hàm `parse_legal_doc` để "làm sạch" Metadata.
+- Nhiệm vụ:
+    + Tính toán UID: Tạo định danh vĩnh viễn cho văn bản để liên kết với các bản án hoặc văn bản khác sau này.
+    + CAPS Title Extraction: Quét khối chữ viết hoa để lấy tên gọi chính quy (VD: "LUẬT GIÁO DỤC" thay vì "Luật số 43/2019/QH14 về giáo dục").
+    + Normalization: Chuyển đổi trạng thái và ngày tháng sang định dạng chuẩn hóa máy đọc được (Date object/Enum).
+- Cấu trúc: {uid, doc_id, title, doc_type, issuing_body, issue_date, effective_date, status, is_amendment}.
+- Ví dụ:
+"uid": "luat-372024qh15-luat-372024qh15-2024-06-27",
+"doc_id": "37/2024/QH15",
+"title": "LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT ĐẤU GIÁ TÀI SẢN",
+"doc_type": "Luật",
+"issuing_body": "Quốc hội",
+"legal_field": "Tài chính nhà nước",
+"is_amendment": true,
+"issue_date": "2024-06-27",
+"effective_date": null,
+"status": "Không xác định",
+"url": "https://vanbanphapluat.co/luat-dau-gia-tai-san-sua-doi",
+"raw_text": "Nội dung toàn văn Luật Đấu gia tai sản sửa đổi năm 2024 số 37/2024/QH15 moi nhatnQUỐC
+3. Giai đoạn 3: Structural Article Model (ParsedArticle)
+- Quá trình: Trường `raw_text` của Doc Model được đưa vào hàm `split_articles` để bẻ nhỏ thành từng đơn vị kiến thức nhỏ nhất.
+- Nhiệm vụ:
+    + Phân tách Điều/Khoản: Tách tiêu đề điều và nội dung.
+    + Article UID: Tạo mã định danh `dieu-[X]-[Doc UID]` để đảm báo tính duy nhất ngay cả khi các văn bản khác nhau có cùng số Điều.
+- Cấu trúc: {article_uid, article_id, article_number, title, content, is_amendment}.
+- Ví dụ:
+ "article_id": "1/37/2024/QH15",
+"doc_id": "37/2024/QH15",
+"doc_uid": "luat-372024qh15-luat-372024qh15-2024-06-27",
+"article_uid": "dieu-1-luat-372024qh15-luat-372024qh15-2024-06-27",
+"article_number": "1",
+"title": "Sửa đổi, bổ sung một số điều của Luật Đấu giá tài sản",
+"content": "1. Sửa đổi, bổ sung khoản 2 Điều 3 như sau: \n"2. Việc đau gia đoi với chứng khoan đuc
+"is amendment": true
+III. Chi tiết kỹ thuật xử lý phức tại Parser
+1. Thuật toán Sequential Skeleton Search (Khung xương tuần tự)
+- **Vấn đề**: Regex "Điều X" thường bắt nhầm các trích dẫn trong văn bản.
+- **Giải pháp**: Xây dựng máy trạng thái dựa trên tính tuần tự của luật pháp.
+- **Logic**: 
+    + Khởi tạo `expected = 1`. 
+    + Duyệt danh sách match: (1) Nếu match nằm trong dấu ngoặc kép -> Bỏ. (2) Nếu số của match != `expected` và không nằm trong khoảng nhảy an toàn (X < current + 5) -> Bỏ.
+    + Chỉ khi khớp tuần tự mới được ghi nhận là một Điều thực sự.
+2. Logic "Cửa một chiều" (One-way Gate) tách Title/Content
+- **Vấn đề**: Nội dung thường bắt đầu bằng ngày tháng/con số khiến Parser nhầm là Tiêu đề kéo dài.
+- **Logic**: 
+    + Dùng cờ `found_content = False`. 
+    + Check dấu hiệu bắt đầu nội dung: Dòng đầu tiên (sau dấu chấm header), hoặc dòng mới bắt đầu bằng Chữ hoa/Ký hiệu danh sách (1., a., Chương, Mục).
+    + Ngay khi `found_content` chuyển sang `True`, bộ Parser "khóa" Title lại. Từ đó về sau, mọi dòng text đều là Content mà không cần check bất kỳ điều kiện split nào nữa.
+3. Kỹ thuật No-Title Detection (Newline Stop Regex)
+- **Vấn đề**: Văn bản cũ (Sắc lệnh) không có tiêu đề điều.
+- **Logic**: 
+    + Build Regex header Điều không được "tiêu thụ" dấu xuống dòng (`\n`). 
+    + Khi gặp `Điều 2\n[Nội dung]`, Parser sẽ thấy dòng đầu tiên của đoạn văn bản là rỗng. Nếu dòng đầu rỗng = Auto `found_content = True` -> Toàn bộ là nội dung
+4. CAPS Block Identification (Bóc tiêu đề chính quy)
+- **Logic**: Quét 50 dòng đầu, tìm dòng bắt đầu bằng LOẠI VĂN BẢN (VIẾT HOA). Gom các dòng liên tục VIẾT HOA cho đến khi gặp chữ thường hoặc từ khóa "Căn cứ". Điều này giúp AI sau này nhận diện văn bản cực kỳ chính xác.
+Phần 2: Bản án
 cases (
   case_id TEXT PRIMARY KEY,     -- 122/2026/DS-PT
   title TEXT,                  -- Tranh chấp hợp đồng tín dụng
@@ -420,13 +483,12 @@ cases (
   court_reasoning TEXT,        -- nhận định của tòa
   decision TEXT                -- quyết định
 )
-
-Xây dựng thử nghiệm
+Xây dựng dự liệu tác vụ thử nghiệm
 Các tác vụ
 Lưa chọn một số tác vụ chính có thể dễ dàng xây dựng bằng llm chỉ phải thực hiện một số bước trích xuất đơn giản.
 Một số tác vụ phức tạp nhưng có giá trị quan trọng cũng tiến hành sinh mẫu. 
 
-1.1	General Legal Issue Classification
+1.1 General Legal Issue Classification
 Chi tiết cách sinh: 
 viết phần mở đồng cố định ví dụ đọc tình huống trên và xác định tình huống trên thuộc tình tương đồng với issue general nào nhất trong 15 th.... Câu trả lời chỉ bao gồm tên nhãn
 đưa cho llm tiêu đề của bản án để nó tự xác định
@@ -459,36 +521,18 @@ Nếu không được xây dựng thủ công có thể xây dựng bằng cách
 5.1 Legal Argument Role Classification
 Tạm thời llm sinh hoàn toàn nhưng phải cung cấp ví dụ và quy định chi tiết
 
-============================================================
-CẬP NHẬT GIAI ĐOẠN TRÍCH XUẤT DỮ LIỆU (KIẾN TRÚC TRUNG TÂM)
-============================================================
 
-1. Quản lý Danh tính Văn bản (Unified Identity - UID)
-- Giải pháp: Chuyển toàn bộ logic tạo UID và định danh về bộ Parser tập trung (`legal_doc_parser.py`).
-- Công thức UID chính quy: `slugify(type)-slugify(id)-slugify(title)-slugify(date)`.
-- Định danh Điều khoản:
-  + `article_id`: `[Số điều]/[Số hiệu]` (Dùng cho truy vấn truyền thống).
-  + `article_uid`: `dieu-[Số điều]-[UID văn bản cha]` (Dùng cho quan hệ RDBMS/Graph).
 
-2. Thuật toán "Khung xương tuần tự" (Sequential Skeleton Search)
-- Mục tiêu: Bóc tách chính xác các Điều thuộc văn bản gốc, loại bỏ hoàn toàn các Điều trích dẫn (citations).
-- Cơ chế:
-  + Duy trì biến `expected_number` tăng dần (1, 2, 3...). 
-  + Chỉ chấp nhận "Điều X" nếu nó khớp với chuỗi tăng dần; các Điều nhảy số quá xa hoặc nằm trong ngoặc kép sẽ bị gán nhãn là "trích dẫn" và bỏ qua khỏi danh sách Điều khoản chính.
 
-3. Quy tắc "Chữ hoa = Nội dung" (Strict Title Split)
-- Cơ chế tách Tiêu đề Điều khoản đa dòng:
-  + Smart Split: Tách tại dấu chấm `.` nếu dòng tiếp theo bắt đầu bằng Chữ cái Viết Hoa.
-  + Stop Condition: Ngừng gom tiêu đề ngay lập tức nếu gặp dòng mới bắt đầu bằng Chữ Hoa hoặc các ký hiệu danh sách (1., a., Chương, Mục).
-  + Fail-safe: Nếu tiêu đề dài quá 200 ký tự, tự động trả về toàn bộ đoạn làm phần Nội dung.
 
-4. Bóc tách Tiêu đề Văn bản (CAPS Block Identification)
-- Ưu tiên: Trích xuất khối chữ VIẾT HOA liên tục ở đầu văn bản để làm Tiêu đề chính thức (Title).
-- Dự phòng: Nếu không trích xuất được hoặc bị lỗi, hệ thống mới sử dụng Title từ Web scraping hoặc mã `[Loại] [Số hiệu]`.
 
-5. Quy trình Vận hành 3 Bước
-- Bước 1: **Scraping** (`scrape_vbpl_*.py`) - Thu thập RAW HTML/JSON.
-- Bước 2: **Refining** (`process_vbpl_docs.py`) - Tinh lọc Metadata, gán UID văn bản và trích xuất CAPS Title.
-- Bước 3: **Parsing** (`process_vbpl_articles.py`) - Bóc tách Điều khoản chi tiết, gán article_id/article_uid.
 
-Toàn bộ linh hồn của hệ thống hiện nằm tại `legal_doc_parser.py`, đảm bảo tính nhất quán tuyệt đối của dữ liệu đầu ra phục vụ cho việc nén vào Database.
+
+
+
+
+
+
+
+
+
