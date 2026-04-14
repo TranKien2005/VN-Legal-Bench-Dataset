@@ -11,6 +11,10 @@ from bs4 import BeautifulSoup
 
 # Import config
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+if sys.platform == "win32":
+    sys.stdout.reconfigure(encoding='utf-8')
+
 from config.settings import settings
 
 def is_port_in_use(port: int) -> bool:
@@ -179,5 +183,53 @@ async def scrape_vanbanphapluat(max_pages, doc_type_slug="luat", start_page=1, n
         except asyncio.CancelledError: stop_event.set()
         finally: print("\n=== KẾT THÚC QUY TRÌNH ===")
 
+async def scrape_special_vbpl(urls):
+    """Cào danh sách link đặc biệt chỉ định thủ công."""
+    if not await ensure_chrome_debug(): return
+    output_dir = settings.RAW_DIR / "legal_docs"
+    output_dir.mkdir(parents=True, exist_ok=True)
+    
+    async with async_playwright() as p:
+        browser = await p.chromium.connect_over_cdp("http://127.0.0.1:9222")
+        context = browser.contexts[0]
+        page = await context.new_page()
+        
+        print(f"=== SCRAPING ĐẶC BIỆT ({len(urls)} văn bản) ===")
+        results = []
+        for i, url in enumerate(urls):
+            print(f"[{i+1}/{len(urls)}] Đang xử lý: {url}")
+            try:
+                await page.goto(url, wait_until="domcontentloaded", timeout=45000)
+                soup = BeautifulSoup(await page.content(), 'html.parser')
+                doc_record = {"url": url, "title_web": "", "raw_text": ""}
+                
+                title_tag = soup.find('h1') or soup.find('title')
+                if title_tag: doc_record["title_web"] = title_tag.get_text(strip=True)
+
+                tv = soup.find(id="toan-van")
+                if tv: doc_record["raw_text"] = tv.get_text(separator='\n', strip=True)
+                
+                tbl = soup.find('table', class_='table-striped')
+                if tbl:
+                    for row in tbl.find_all('tr'):
+                        cells = row.find_all('td')
+                        if len(cells) == 2:
+                            lbl = cells[0].get_text(strip=True).replace(':', '')
+                            val_anchor = cells[1].find('a')
+                            val = val_anchor.get_text(strip=True) if val_anchor else cells[1].get_text(strip=True)
+                            doc_record[lbl] = val
+                
+                if doc_record.get("raw_text"):
+                    results.append(doc_record)
+                    print(f"  [OK] Thanh cong: {doc_record.get('Số hiệu') or doc_record.get('title_web')}")
+            except Exception as e:
+                print(f"  ! Lỗi {url}: {e}")
+        
+        if results:
+            output_file = output_dir / "vanbanphapluat_special_results.json"
+            with open(output_file, 'w', encoding='utf-8') as f:
+                json.dump(results, f, ensure_ascii=False, indent=2)
+            print(f"\n[DONE] Da luu {len(results)} van ban vao: {output_file}")
+            
 if __name__ == "__main__":
     asyncio.run(scrape_vanbanphapluat(max_pages=1))

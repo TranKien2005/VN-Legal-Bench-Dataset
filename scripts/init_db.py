@@ -14,9 +14,9 @@ from db.session import engine
 
 
 def main():
-    print("Đang tạo database tables...")
+    print("Creating database tables...")
     Base.metadata.create_all(engine)
-    print("✓ Tất cả tables đã được tạo thành công!")
+    print("✓ All tables created successfully!")
     print("  - legal_docs")
     print("  - legal_articles")
     print("  - court_cases")

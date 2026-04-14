@@ -17,6 +17,9 @@ class Settings(BaseSettings):
     DB_HOST: str = "localhost"
     DB_PORT: int = 5432
 
+    # Special IDs
+    CONSTITUTION_ID: str = "HP2013"
+
     # LLM API Keys
     GROQ_API_KEY: str = ""
     OPENAI_API_KEY: str = ""
