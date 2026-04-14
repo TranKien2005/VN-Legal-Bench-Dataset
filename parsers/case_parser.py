@@ -25,20 +25,20 @@ class ParsedCourtCase:
 
 # --- Regex patterns ---
 
-# Case ID: "Bản án số: 122/2026/DS-PT" hoặc "Số: 122/2026/DS-PT"
+# Case ID: "Bản án số: 122/2024/HNGĐ-ST" hoặc "Số: 122/2024/HNGĐ-ST"
 CASE_ID_PATTERN = re.compile(
-    r"(?:Bản\s+án\s+số|Số)\s*:\s*(\d+/\d{4}/[A-Za-zĐđ\-]+)",
+    r"(?:Bản\s+án\s+số|Số)\s*[:\s]*(\d+/\d{4}/[A-Za-zĐđ\-]+)",
     re.IGNORECASE,
 )
 
-# Ngày: "Ngày: 09 - 02 - 2026" hoặc "Ngày 09 tháng 02 năm 2026"
+# Ngày: "Ngày: 18/12/2024" hoặc "Ngày 18 tháng 12 năm 2024"
 CASE_DATE_PATTERNS = [
-    # "Ngày: 09 - 02 - 2026" hoặc "Ngày: 09-02-2026"
+    # "Ngày: 18/12/2024" hoặc "Ngày 18-12-2024"
     re.compile(
-        r"Ngày\s*:\s*(\d{1,2})\s*[-–]\s*(\d{1,2})\s*[-–]\s*(\d{4})",
+        r"Ngày\s*[:\s]*(\d{1,2})\s*[\/\-–]\s*(\d{1,2})\s*[\/\-–]\s*(\d{4})",
         re.IGNORECASE,
     ),
-    # "ngày 09 tháng 02 năm 2026"
+    # "ngày 18 tháng 12 năm 2024"
     re.compile(
         r"ngày\s+(\d{1,2})\s+tháng\s+(\d{1,2})\s+năm\s+(\d{4})",
         re.IGNORECASE,
@@ -48,9 +48,6 @@ CASE_DATE_PATTERNS = [
 # Tiêu đề vụ án: 'Về việc "Tranh chấp hợp đồng tín dụng"'
 # hoặc: "V/v: Tranh chấp hợp đồng tín dụng"
 CASE_TITLE_PATTERNS = [
-    # Khớp "Về việc" hoặc "V/v", theo sau là dấu hai chấm/ngoặc kép tùy chọn,
-    # sau đó bắt hết nội dung cho đến khi gặp tiêu đề phần mới (NỘI DUNG VỤ ÁN,...)
-    # hoặc cụm từ nghi thức (NHÂN DANH..., CỘNG HÒA...) hoặc 2 dòng trống.
     re.compile(
         r"(?:Về\s+việc|V/v)\s*[:\"]?\s*(.+?)(?=\n\n|\n\s*(?:NỘI\s+DUNG|NHẬN\s+ĐỊNH|QUYẾT\s+ĐỊNH|NHÂN\s+DANH|HỘI\s+ĐỒNG|VỚI\s+THÀNH|Với\s+thành|C[ỘÔO]NG\s+H[ÒO]A|ĐỘC\s+LẬP|Độc\s+lập)|$)",
         re.IGNORECASE | re.DOTALL
@@ -58,7 +55,6 @@ CASE_TITLE_PATTERNS = [
 ]
 
 # Keywords cho các phần chính (case-insensitive)
-# Mỗi keyword có nhiều biến thể viết hoa/thường/in đậm, chấp nhận cả sai dấu nhẹ (NHẠN vs NHẬN)
 SECTION_PATTERNS = {
     "case_content": re.compile(
         r"^\s*N[ỘÔO]I\s+DUNG\s+V[ỤU]\s+[ÁA]N.*$",
@@ -69,7 +65,7 @@ SECTION_PATTERNS = {
         re.MULTILINE | re.IGNORECASE,
     ),
     "decision": re.compile(
-        r"^\s*QUY[ẾÊE]T\s+Đ[ỊI]NH.*$",
+        r"^\s*QUY[ẾÊE]T\s+Đ[ỊI]NH\s*[:\s]*$", # Phải là dòng QUYẾT ĐỊNH: đứng độc lập
         re.MULTILINE | re.IGNORECASE,
     ),
 }
@@ -135,11 +131,18 @@ def split_case_sections(text: str) -> dict:
     }
 
     # Tìm vị trí bắt đầu của mỗi section
+    # Quan trọng: Loại bỏ các keyword lừa như "Quyết định đưa vụ án ra xét xử"
+    valid_text = text
+    
     section_positions = []
     for section_name, pattern in SECTION_PATTERNS.items():
-        match = pattern.search(text)
-        if match:
-            section_positions.append((match.start(), match.end(), section_name))
+        # Riêng phần QUYẾT ĐỊNH, ta chỉ lấy match cuối cùng hoặc match có dấu hai chấm đứng riêng
+        matches = list(pattern.finditer(valid_text))
+        if matches:
+            # Ưu tiên match cuối cùng hoặc match có kết cấu QUYẾT ĐỊNH: (dòng riêng)
+            # Trong thực tế, QUYẾT ĐỊNH nằm ở gần cuối bản án.
+            final_match = matches[-1]
+            section_positions.append((final_match.start(), final_match.end(), section_name))
 
     # Sắp xếp theo vị trí xuất hiện
     section_positions.sort(key=lambda x: x[0])

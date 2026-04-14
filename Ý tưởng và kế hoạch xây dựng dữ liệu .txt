@@ -471,17 +471,70 @@ III. Chi tiết kỹ thuật xử lý phức tại Parser
     + Khi gặp `Điều 2\n[Nội dung]`, Parser sẽ thấy dòng đầu tiên của đoạn văn bản là rỗng. Nếu dòng đầu rỗng = Auto `found_content = True` -> Toàn bộ là nội dung
 4. CAPS Block Identification (Bóc tiêu đề chính quy)
 - **Logic**: Quét 50 dòng đầu, tìm dòng bắt đầu bằng LOẠI VĂN BẢN (VIẾT HOA). Gom các dòng liên tục VIẾT HOA cho đến khi gặp chữ thường hoặc từ khóa "Căn cứ". Điều này giúp AI sau này nhận diện văn bản cực kỳ chính xác.
-Phần 2: Bản án
-cases (
-  case_id TEXT PRIMARY KEY,     -- 122/2026/DS-PT
-  title TEXT,                  -- Tranh chấp hợp đồng tín dụng
-  date DATE,                   -- 09-02-2026
-  raw_text TEXT,	-- raw full text (backup)
-  -- 4 phần chính (đã tách)
-  introduction TEXT,           -- phần mở đầu
-  case_content TEXT,           -- nội dung vụ án
-  court_reasoning TEXT,        -- nhận định của tòa
-  decision TEXT                -- quyết định
+Phần 2: Bản án (Court Judgments)
+
+I. Nguồn dữ liệu & Đặc tính (Data Sources)
+- Trang mục tiêu: luatvietnam.vn (Hệ thống bản án công khai).
+- Đặc điểm: Bản án thường dài, phức tạp, định dạng file DOCX hoặc PDF.
+- Ưu tiên: Trích xuất Text từ DOCX -> PDF -> Raw Text Header.
+- Đảm bảo: Nếu trường dữ liệu không tìm thấy, hệ thống phải gán giá trị `null` (None) thay vì bỏ qua để đảm bảo schema JSON thống nhất.
+
+II. Chiến lược thu thập và Hạn ngạch (Collection Strategy & Quotas)
+Hệ thống thực hiện thu thập tự động dựa trên 14 lĩnh vực pháp lý trọng tâm để xây dựng Task Issue Spotting và Prediction:
+
+1. Danh sách 14 Lĩnh vực (Topics):
+   - Hôn nhân và Gia đình (HNGD)
+   - Đất đai và Nhà ở (DDNO)
+   - Lao động & BHXH (LDBHXH)
+   - Xâm phạm quyền con người (XPCN)
+   - Sở hữu tài sản (SHTS)
+   - Kinh doanh và Đầu tư (KDDD)
+   - Ngân hàng, Tín dụng (NHTD)
+   - Thuế, Phí và Lệ phí (TPLL)
+   - Sở hữu trí tuệ (SHTT)
+   - Giao thông và Vận tải (GTVT)
+   - Hành chính & QLNN (HCQL)
+   - Môi trường & Tài nguyên (MTTN)
+   - Trật tự, Ma túy (TTMT)
+   - Tư pháp và Tố tụng (TPTT)
+
+2. Cơ chế Hạn ngạch (Quota logic):
+   - Mục tiêu: Tối thiểu 10 bản án chất lượng cho mỗi lĩnh vực.
+   - Logic bù trừ (Deficit Carryover): Quota 10 bản án được chia đều cho các Keyword của lĩnh vực. Nếu Keyword A không đủ kết quả, chỉ tiêu còn lại sẽ được cộng dồn vào Keyword tiếp theo trong cùng lĩnh vực cho đến khi đủ 10.
+   - Xác thực tiêu đề (Title Validation): Scraper thực hiện kiểm tra nghiêm ngặt, tiêu đề bản án trên trang tìm kiếm phải chứa chính xác từ khóa tìm kiếm (không phân biệt hoa thường) mới được chấp nhận tải về.
+
+3. Quy chuẩn đặt tên file thô (Naming Convention):
+   - Định dạng: `luatvietnam_[ID_LinhVuc]_[Slug_Keyword]_[FromDate]_[ToDate].json`
+   - Ví dụ: `luatvietnam_DDNO_tranh_chap_quyen_su_dung_dat____.json` (Ngày để trống nếu không lọc theo thời gian).
+
+III. Mô hình dữ liệu Database (CourtCase Model)
+Bản án sau khi cào được đưa qua `case_parser.py` để bóc tách sâu theo cấu trúc phẳng (Flat English Schema):
+
+court_cases (
+  uid TEXT PRIMARY KEY,        -- [ID Rút gọn]: [Số hiệu]-[Acronym Tòa]-[YYYY-MM-DD]
+  case_number TEXT,            -- Số hiệu (Ưu tiên từ Văn bản)
+  court_name TEXT,             -- Tên Tòa án (Bản đầy đủ)
+  issuance_date DATE,          -- Ngày ban hành (Ưu tiên từ Văn bản)
+  
+  title_web TEXT,              -- Tên bản án từ Metadata của Web
+  title_parsed TEXT,           -- Tên bản án trích xuất từ Header văn bản
+  legal_relation TEXT,         -- Quan hệ pháp luật
+  court_level TEXT,            -- Cấp xét xử (Sơ thẩm, Phúc thẩm,...)
+  case_type TEXT,              -- Lĩnh vực (Hình sự, Dân sự,...)
+  case_info TEXT,              -- Thông tin tóm tắt vụ việc
+  
+  source_url TEXT,             -- Link bài viết gốc
+  source_doc_url TEXT,         -- Link file PDF/DOCX đã sử dụng để bóc tách
+  
+  summary TEXT,                -- Tóm tắt từ Web
+  legal_bases TEXT,            -- Các căn cứ pháp lý trích dẫn (Căn cứ Điều... Luật...)
+  decision_items JSON,         -- Danh sách các quyết định chi tiết (List: 1., 2., 3. - tách từ phần Quyết định)
+  raw_text TEXT,               -- Nội dung toàn văn (Backup)
+  
+  section_introduction TEXT,   -- Phần mở đầu
+  section_content TEXT,        -- Nội dung vụ án
+  section_reasoning TEXT,      -- Nhận định của tòa
+  section_decision TEXT        -- Toàn bộ phần quyết định (Raw text)
 )
 Xây dựng dự liệu tác vụ thử nghiệm
 Các tác vụ

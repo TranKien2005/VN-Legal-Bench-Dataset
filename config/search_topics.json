@@ -1,0 +1,152 @@
+{
+  "topics": [
+    {
+      "id": "HNGD",
+      "name": "Hôn nhân và Gia đình",
+      "keywords": [
+        "tranh chấp ly hôn",
+        "chia tài sản chung vợ chồng",
+        "quyền nuôi con",
+        "thay đổi người trực tiếp nuôi con",
+        "mức cấp dưỡng cho con"
+      ]
+    },
+    {
+      "id": "DDNO",
+      "name": "Đất đai và Nhà ở",
+      "keywords": [
+        "tranh chấp quyền sử dụng đất",
+        "đòi lại nhà đất",
+        "tranh chấp ranh giới thửa đất",
+        "hợp đồng chuyển nhượng quyền sử dụng đất",
+        "bồi thường hỗ trợ tái định cư"
+      ]
+    },
+    {
+      "id": "LDBHXH",
+      "name": "Lao động & BHXH",
+      "keywords": [
+        "đơn phương chấm dứt hợp đồng lao động",
+        "tranh chấp tiền lương",
+        "sa thải trái pháp luật",
+        "truy đóng bảo hiểm xã hội",
+        "tai nạn lao động"
+      ]
+    },
+    {
+      "id": "XPCN",
+      "name": "Xâm phạm quyền con người",
+      "keywords": [
+        "cố ý gây thương tích",
+        "làm nhục người khác",
+        "vu khống",
+        "vô ý làm chết người",
+        "xâm phạm chỗ ở"
+      ]
+    },
+    {
+      "id": "SHTS",
+      "name": "Sở hữu tài sản",
+      "keywords": [
+        "trộm cắp tài sản",
+        "lừa đảo chiếm đoạt tài sản",
+        "lạm dụng tín nhiệm chiếm đoạt tài sản",
+        "cướp giật tài sản",
+        "hủy hoại tài sản"
+      ]
+    },
+    {
+      "id": "KDDD",
+      "name": "Kinh doanh và Đầu tư",
+      "keywords": [
+        "tranh chấp hợp đồng thương mại",
+        "tranh chấp giữa các thành viên công ty",
+        "hợp đồng hợp tác kinh doanh",
+        "vi phạm nghĩa vụ thanh toán"
+      ]
+    },
+    {
+      "id": "NHTD",
+      "name": "Ngân hàng, Tín dụng",
+      "keywords": [
+        "tranh chấp hợp đồng tín dụng",
+        "phát mãi tài sản thế chấp",
+        "xử lý nợ xấu",
+        "hợp đồng bảo hiểm",
+        "tranh chấp lãi suất"
+      ]
+    },
+    {
+      "id": "TPLL",
+      "name": "Thuế, Phí và Lệ phí",
+      "keywords": [
+        "tội trốn thuế",
+        "khiếu kiện quyết định truy thu thuế",
+        "hoàn thuế giá trị gia tăng",
+        "sai phạm quyết toán thuế"
+      ]
+    },
+    {
+      "id": "SHTT",
+      "name": "Sở hữu trí tuệ",
+      "keywords": [
+        "xâm phạm quyền tác giả",
+        "tranh chấp nhãn hiệu",
+        "vi phạm bản quyền phần mềm",
+        "hàng giả hàng nhái",
+        "sao chép kiểu dáng công nghiệp"
+      ]
+    },
+    {
+      "id": "GTVT",
+      "name": "Giao thông và Vận tải",
+      "keywords": [
+        "vi phạm quy định về tham gia giao thông",
+        "gây tai nạn giao thông",
+        "tranh chấp hợp đồng vận chuyển hàng hóa",
+        "hợp đồng logisitcs"
+      ]
+    },
+    {
+      "id": "HCQL",
+      "name": "Hành chính & QLNN",
+      "keywords": [
+        "khiếu kiện quyết định hành chính",
+        "hành vi hành chính",
+        "hủy quyết định thu hồi đất",
+        "xử phạt vi phạm hành chính"
+      ]
+    },
+    {
+      "id": "MTTN",
+      "name": "Môi trường & Tài nguyên",
+      "keywords": [
+        "gây ô nhiễm môi trường",
+        "khai thác tài nguyên trái phép",
+        "vi phạm quy định quản lý rừng",
+        "xả thải vượt quy chuẩn"
+      ]
+    },
+    {
+      "id": "TTMT",
+      "name": "Trật tự, Ma túy",
+      "keywords": [
+        "mua bán trái phép chất ma túy",
+        "tàng trữ chất cấm",
+        "gây rối trật tự công cộng",
+        "tổ chức đánh bạc"
+      ]
+    },
+    {
+      "id": "TPTT",
+      "name": "Tư pháp và Tố tụng",
+      "keywords": [
+        "thẩm quyền giải quyết của tòa án",
+        "thời hiệu khởi kiện",
+        "vi phạm thủ tục tố tụng",
+        "kháng cáo quá hạn",
+        "ủy thác tư pháp"
+      ]
+    }
+  ]
+}

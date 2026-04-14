@@ -10,13 +10,15 @@ Dưới đây là các thư mục cốt lõi và vai trò của từng thành ph
 - **Vai trò**: Chứa các "Engine" cào dữ liệu cốt lõi cho từng nguồn tin.
 - **Công nghệ**: `playwright`, `bs4`.
 - **Thành phần**:
-  - `vbpl_engine.py`: Engine chuyên biệt cho trang vanbanphapluat.co. **Tự động kích hoạt Chrome Debugging** (port 9222) nếu chưa chạy, tích hợp sẵn parser và model để trả về dữ liệu chuẩn hóa.
+  - `vbpl_engine.py`: Engine cho trang vanbanphapluat.co. Chuyên biệt cho văn bản quy phạm.
+  - `luatvietnam_engine.py`: Engine cho trang luatvietnam.vn. Chuyên biệt cho bản án, tích hợp chế độ cào theo chủ đề (topic_mode) và xác thực tiêu đề nghiêm ngặt.
 
 ### `scripts/`
 - **Vai trò**: Chứa các script chạy thực tế cho từng loại văn bản hoặc tác vụ cụ thể.
 - **Thành phần**:
   - `scrape_vbpl_luat.py`: Script chuyên biệt để cào "Luật" từ VBPL.
-  - `process_raw_legal_docs.py`: Các công cụ xử lý hậu kỳ (nếu cần).
+  - `scrape_luatvietnam_banan.py`: Script điều khiển cào bản án. Hỗ trợ chế độ cào theo lĩnh vực pháp lý với hạn ngạch (quota) tự động.
+  - `process_luatvietnam_banan.py`: Script bóc tách sâu bản án và lưu vào DB.
 
 ### `parsers/`
 - **Vai trò**: Phân rã văn bản pháp lý đã thu thập được thành các luồng data có cấu trúc chi tiết, tách biệt.
@@ -49,6 +51,18 @@ To handle historical law variations and ID collisions (e.g., older laws with sam
 | **status** | String | Effectiveness status |
 | **url** | String | Source URL |
 | **raw_text** | Text | Full content for extraction |
+
+### 3. Court Case Schema (court_cases)
+| Field | Type | Description |
+| :--- | :--- | :--- |
+| **uid** | String (PK) | Composite ID: `[CaseNumber]-[CourtAcronym]-[Date]` |
+| **court_name** | Text | Full name of the issuing court |
+| **issuance_date** | Date | Date the judgment was issued |
+| **legal_relation** | String | Legal relationship (e.g., Ly hôn, Tranh chấp đất đai) |
+| **legal_bases** | Text | Cited articles and laws (extracted) |
+| **decision_items** | JSON | Array of specific court orders (1., 2., 3.) |
+| **summary** | Text | Case summary from web source |
+| **raw_text** | Text | Full text backup for audit |
 
 ### 3. Folder Structure
 - `data/raw/legal_docs/`: Grouped page-level JSONs from scraper.

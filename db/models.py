@@ -7,7 +7,7 @@ Tables:
   - court_cases: Bản án tòa án
 """
 from datetime import date
-from sqlalchemy import String, Text, Date, ForeignKey
+from sqlalchemy import String, Text, Date, ForeignKey, JSON
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, relationship
 
 
@@ -39,7 +39,7 @@ class LegalDoc(Base):
     
     url: Mapped[str | None] = mapped_column(String(255), nullable=True)
     raw_text: Mapped[str | None] = mapped_column(Text, nullable=True)          # Full text backup
-
+    
     # Relationships
     articles: Mapped[list["LegalArticle"]] = relationship(
         back_populates="doc", cascade="all, delete-orphan"
@@ -71,21 +71,40 @@ class LegalArticle(Base):
 
 
 class CourtCase(Base):
-    """Bản án tòa án."""
+    """Bản án tòa án (Refined Schema)."""
     __tablename__ = "court_cases"
 
-    # VD: "122/2026/DS-PT"
-    case_id: Mapped[str] = mapped_column(String(50), primary_key=True)
-    title: Mapped[str | None] = mapped_column(Text)        # "Tranh chấp hợp đồng tín dụng"
-    case_date: Mapped[date | None] = mapped_column(Date)
-    raw_text: Mapped[str | None] = mapped_column(Text)     # Full text backup
-
+    # ID rút gọn: [Số hiệu]-[Court Acronym]-[yyyy-mm-dd]
+    uid: Mapped[str] = mapped_column(String(150), primary_key=True)
+    
+    # Thông tin định danh (Ưu tiên lấy từ Raw Text)
+    case_number: Mapped[str | None] = mapped_column(String(100), index=True)
+    court_name: Mapped[str | None] = mapped_column(String(255))
+    issuance_date: Mapped[date | None] = mapped_column(Date)
+    
+    # Thông tin phân loại
+    title_web: Mapped[str | None] = mapped_column(Text)        # Tên từ web
+    title_parsed: Mapped[str | None] = mapped_column(Text)     # Tên từ header văn bản
+    legal_relation: Mapped[str | None] = mapped_column(String(255))
+    court_level: Mapped[str | None] = mapped_column(String(50))
+    case_type: Mapped[str | None] = mapped_column(String(100))
+    case_info: Mapped[str | None] = mapped_column(Text)
+    
+    # Nguồn cấp
+    source_url: Mapped[str | None] = mapped_column(String(255))
+    source_doc_url: Mapped[str | None] = mapped_column(String(255))
+    
+    # Thành phần chuyên sâu
+    summary: Mapped[str | None] = mapped_column(Text)
+    legal_bases: Mapped[str | None] = mapped_column(Text)      # Các căn cứ pháp lý trích dẫn
+    decision_items: Mapped[list[str] | None] = mapped_column(JSON) # Danh sách quyết định chi tiết
+    raw_text: Mapped[str | None] = mapped_column(Text)         # Full text backup
+    
     # 4 phần chính (đã tách)
-    introduction: Mapped[str | None] = mapped_column(Text)     # Phần mở đầu
-    case_content: Mapped[str | None] = mapped_column(Text)     # Nội dung vụ án
-    court_reasoning: Mapped[str | None] = mapped_column(Text)  # Nhận định của tòa
-    decision: Mapped[str | None] = mapped_column(Text)         # Quyết định
-
+    section_introduction: Mapped[str | None] = mapped_column(Text)
+    section_content: Mapped[str | None] = mapped_column(Text)
+    section_reasoning: Mapped[str | None] = mapped_column(Text)
+    section_decision: Mapped[str | None] = mapped_column(Text)
 
     def __repr__(self) -> str:
-        return f"<CourtCase {self.case_id}: {self.title}>"
+        return f"<CourtCase {self.uid}: {self.case_number}>"
