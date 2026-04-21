@@ -25,6 +25,8 @@ class Settings(BaseSettings):
     OPENAI_API_KEY: str = ""
     ANTHROPIC_API_KEY: str = ""
     GEMINI_API_KEY: str = ""
+    NINEROUTER_API_KEY: str = ""
+    NINEROUTER_BASE_URL: str = "http://localhost:20128/v1"
 
     # Paths
     DATA_DIR: Path = BASE_DIR / "data"

@@ -30,7 +30,7 @@ def process_raw_data(raw_json_path):
         web_meta = entry.get("metadata", {})
         
         # Lấy tiêu đề để lọc
-        title = parsed.title or web_meta.get("Quan hệ pháp luật") or ""
+        title = parsed.title or ""
         # Bỏ qua nếu là Án lệ hoặc Đính chính
         if "án lệ" in title.lower() or "đính chính" in title.lower():
             continue

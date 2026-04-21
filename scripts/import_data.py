@@ -1,10 +1,11 @@
 """
 Unified Data Import Script for VN-Legal-Bench-Dataset.
-Imports LegalDocs, LegalArticles, and CourtCases into PostgreSQL with Upsert logic.
+Imports LegalDocs, LegalArticles, and CourtCases into PostgreSQL with Delete + Re-import or Upsert logic.
 """
 import os
 import json
 import logging
+import argparse
 from pathlib import Path
 from datetime import date
 from sqlalchemy.dialects.postgresql import insert
@@ -31,8 +32,17 @@ def parse_date(date_str: str) -> date | None:
     except ValueError:
         return None
 
-def import_legal_docs(session: Session, data_dir: Path):
-    logger.info("Importing Legal Documents...")
+def clear_table(session: Session, model):
+    """Xóa toàn bộ dữ liệu mẫu bản ghi của bảng tương ứng."""
+    logger.info(f"🗑️ Đang xóa toàn bộ dữ liệu bảng: {model.__tablename__}...")
+    session.query(model).delete()
+    session.commit()
+
+def import_legal_docs(session: Session, data_dir: Path, clear: bool = False):
+    if clear:
+        clear_table(session, LegalDoc)
+        
+    logger.info("📥 Importing Legal Documents...")
     files = list(data_dir.glob("*.json"))
     count = 0
     for file in files:
@@ -69,10 +79,13 @@ def import_legal_docs(session: Session, data_dir: Path):
                 session.execute(stmt)
                 count += 1
     session.commit()
-    logger.info(f"✓ Imported/Updated {count} Legal Documents.")
+    logger.info(f"✓ Đã import/cập nhật {count} Legal Documents.")
 
-def import_legal_articles(session: Session, data_dir: Path):
-    logger.info("Importing Legal Articles...")
+def import_legal_articles(session: Session, data_dir: Path, clear: bool = False):
+    if clear:
+        clear_table(session, LegalArticle)
+        
+    logger.info("📥 Importing Legal Articles...")
     files = list(data_dir.glob("*.json"))
     count = 0
     for file in files:
@@ -103,10 +116,13 @@ def import_legal_articles(session: Session, data_dir: Path):
                 session.execute(stmt)
                 count += 1
     session.commit()
-    logger.info(f"✓ Imported/Updated {count} Legal Articles.")
+    logger.info(f"✓ Đã import/cập nhật {count} Legal Articles.")
 
-def import_court_cases(session: Session, data_dir: Path):
-    logger.info("Importing Court Cases...")
+def import_court_cases(session: Session, data_dir: Path, clear: bool = False):
+    if clear:
+        clear_table(session, CourtCase)
+        
+    logger.info("📥 Importing Court Cases...")
     files = list(data_dir.glob("*.json"))
     count = 0
     for file in files:
@@ -153,30 +169,48 @@ def import_court_cases(session: Session, data_dir: Path):
                 session.execute(stmt)
                 count += 1
     session.commit()
-    logger.info(f"✓ Imported/Updated {count} Court Cases.")
+    logger.info(f"✓ Đã import/cập nhật {count} Court Cases.")
 
 def main():
+    parser = argparse.ArgumentParser(description="Import legal data vào cơ sở dữ liệu.")
+    parser.add_argument(
+        "type", 
+        choices=["case", "articles", "docs", "all"], 
+        help="Loại dữ liệu cần import (case, articles, docs, hoặc all)"
+    )
+    parser.add_argument(
+        "--no-clear", 
+        action="store_false", 
+        dest="clear", 
+        help="Không xóa dữ liệu bảng trước khi import"
+    )
+    parser.set_defaults(clear=True)
+    
+    args = parser.parse_args()
     processed_dir = Path("data/processed")
     session = SessionLocal()
     
     try:
         # 1. Legal Docs
-        docs_dir = processed_dir / "legal_docs"
-        if docs_dir.exists():
-            import_legal_docs(session, docs_dir)
+        if args.type in ["docs", "all"]:
+            docs_dir = processed_dir / "legal_docs"
+            if docs_dir.exists():
+                import_legal_docs(session, docs_dir, clear=args.clear)
             
         # 2. Legal Articles
-        articles_dir = processed_dir / "legal_articles"
-        if articles_dir.exists():
-            import_legal_articles(session, articles_dir)
+        if args.type in ["articles", "all"]:
+            articles_dir = processed_dir / "legal_articles"
+            if articles_dir.exists():
+                import_legal_articles(session, articles_dir, clear=args.clear)
             
         # 3. Court Cases
-        cases_dir = processed_dir / "court_cases"
-        if cases_dir.exists():
-            import_court_cases(session, cases_dir)
+        if args.type in ["case", "all"]:
+            cases_dir = processed_dir / "court_cases"
+            if cases_dir.exists():
+                import_court_cases(session, cases_dir, clear=args.clear)
             
     except Exception as e:
-        logger.error(f"Error during import: {e}")
+        logger.error(f"❌ Lỗi trong quá trình import: {e}")
         session.rollback()
     finally:
         session.close()

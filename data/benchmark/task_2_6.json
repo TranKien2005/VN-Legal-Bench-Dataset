@@ -1,0 +1,168 @@
+[
+  {
+    "uid": "bench_2_6_762023HCST-TANDTANDPY-20231208",
+    "refer_uid": "762023HCST-TANDTANDPY-20231208",
+    "refer_type": "case",
+    "confirmed_doc_ids": [
+      "64/2010/QH12",
+      "13/2003/QH11",
+      "182/2004/NĐ-CP"
+    ],
+    "question": "Vấn đề pháp lý: '“Khởi kiện quyết định hành chính, hành vi hành chính trong lĩnh vực quản lý đất đai”.'\n\nSố hiệu văn bản pháp luật nào dưới đây liên quan trực tiếp nhất đến vấn đề nêu trên?\n\nChọn đáp án đúng (chỉ trả về số hiệu văn bản):",
+    "options": [
+      "113/2013/NĐ-CP",
+      "119/2021/NĐ-CP",
+      "182/2004/NĐ-CP",
+      "559-TTg"
+    ],
+    "answer": "182/2004/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_6_432023HCST-TANDTANDHP-20230530",
+    "refer_uid": "432023HCST-TANDTANDHP-20230530",
+    "refer_type": "case",
+    "confirmed_doc_ids": [
+      "93/2015/QH13",
+      "47/2014/NĐ-CP"
+    ],
+    "question": "Vấn đề pháp lý: 'Khiếu kiện hành vi hành chính'\n\nSố hiệu văn bản pháp luật nào dưới đây liên quan trực tiếp nhất đến vấn đề nêu trên?\n\nChọn đáp án đúng (chỉ trả về số hiệu văn bản):",
+    "options": [
+      "93/2015/QH13",
+      "112/2020/NĐ-CP",
+      "26/2020/NĐ-CP",
+      "28/2003/NĐ-CP"
+    ],
+    "answer": "93/2015/QH13"
+  },
+  {
+    "uid": "bench_2_6_1412025DSST-TANDKV9TT-20250929",
+    "refer_uid": "1412025DSST-TANDKV9TT-20250929",
+    "refer_type": "case",
+    "confirmed_doc_ids": [
+      "45/2013/QH13"
+    ],
+    "question": "Vấn đề pháp lý: 'Tranh chấp về dân sự - Hợp đồng chuyển nhượng quyền sử dụng đất và chia tài sản chung”'\n\nSố hiệu văn bản pháp luật nào dưới đây liên quan trực tiếp nhất đến vấn đề nêu trên?\n\nChọn đáp án đúng (chỉ trả về số hiệu văn bản):",
+    "options": [
+      "81-CP",
+      "125-TP/NĐ",
+      "45/2013/QH13",
+      "96/2011/NĐ-CP"
+    ],
+    "answer": "45/2013/QH13"
+  },
+  {
+    "uid": "bench_2_6_402022HNGST-TANDTANDTVTANDTV-20220914",
+    "refer_uid": "402022HNGST-TANDTANDTVTANDTV-20220914",
+    "refer_type": "case",
+    "confirmed_doc_ids": [
+      "52/2014/QH13"
+    ],
+    "question": "Vấn đề pháp lý: 'Ly hôn, tranh chấp quyền nuôi con”'\n\nSố hiệu văn bản pháp luật nào dưới đây liên quan trực tiếp nhất đến vấn đề nêu trên?\n\nChọn đáp án đúng (chỉ trả về số hiệu văn bản):",
+    "options": [
+      "39/2021/NĐ-CP",
+      "93/2005/NĐ-CP",
+      "52/2014/QH13",
+      "81/1998/NĐ-CP"
+    ],
+    "answer": "52/2014/QH13"
+  },
+  {
+    "uid": "bench_2_6_2412018KDTMST-TANDTAND1TANDHCM-20180912",
+    "refer_uid": "2412018KDTMST-TANDTAND1TANDHCM-20180912",
+    "refer_type": "case",
+    "confirmed_doc_ids": [
+      "36/2005/QH11"
+    ],
+    "question": "Vấn đề pháp lý: 'tranh chấp hợp đồng hợp tác kinh doanh'\n\nSố hiệu văn bản pháp luật nào dưới đây liên quan trực tiếp nhất đến vấn đề nêu trên?\n\nChọn đáp án đúng (chỉ trả về số hiệu văn bản):",
+    "options": [
+      "27-VP/NgĐ",
+      "62/2012/NĐ-CP",
+      "68/1999/NĐ-CP",
+      "36/2005/QH11"
+    ],
+    "answer": "36/2005/QH11"
+  },
+  {
+    "uid": "bench_2_6_302023HCST-TANDTANDBN-20230707",
+    "refer_uid": "302023HCST-TANDTANDBN-20230707",
+    "refer_type": "case",
+    "confirmed_doc_ids": [
+      "93/2015/QH13",
+      "77/2015/QH13",
+      "02/2011/QH13",
+      "45/2013/QH13"
+    ],
+    "question": "Vấn đề pháp lý: 'Yêu cầu hủy quyết định thu hồi đất, quyết định cưỡng chế thu hồi đất và quyết định giải quyết khiếu nại”.'\n\nSố hiệu văn bản pháp luật nào dưới đây liên quan trực tiếp nhất đến vấn đề nêu trên?\n\nChọn đáp án đúng (chỉ trả về số hiệu văn bản):",
+    "options": [
+      "56-CP",
+      "11/2009/NĐ-CP",
+      "93/2015/QH13",
+      "152/2003/NĐ-CP"
+    ],
+    "answer": "93/2015/QH13"
+  },
+  {
+    "uid": "bench_2_6_2552025DSST-TANDKV8VLVL-20251014",
+    "refer_uid": "2552025DSST-TANDKV8VLVL-20251014",
+    "refer_type": "case",
+    "confirmed_doc_ids": [
+      "45/2013/QH13"
+    ],
+    "question": "Vấn đề pháp lý: 'tranh chấp: “Yêu cầu hủy Hợp đồng chuyển nhượng Quyền sử dụng đất và Đòi lại tài sản”.'\n\nSố hiệu văn bản pháp luật nào dưới đây liên quan trực tiếp nhất đến vấn đề nêu trên?\n\nChọn đáp án đúng (chỉ trả về số hiệu văn bản):",
+    "options": [
+      "129/1999/NĐ-CP",
+      "45/2013/QH13",
+      "004-TTg",
+      "172/2013/NĐ-CP"
+    ],
+    "answer": "45/2013/QH13"
+  },
+  {
+    "uid": "bench_2_6_202022HNGST-TANDTANDQVTANDBN-20220729",
+    "refer_uid": "202022HNGST-TANDTANDQVTANDBN-20220729",
+    "refer_type": "case",
+    "confirmed_doc_ids": [
+      "52/2014/QH13"
+    ],
+    "question": "Vấn đề pháp lý: 'Bản án số 20/2022/HNGĐ-ST ngày 29/07/2022 của TAND huyện Quế Võ, tỉnh Bắc Ninh về tranh chấp thay đổi quyền nuôi con (chấp nhận yêu cầu thay đổi người nuôi con)'\n\nSố hiệu văn bản pháp luật nào dưới đây liên quan trực tiếp nhất đến vấn đề nêu trên?\n\nChọn đáp án đúng (chỉ trả về số hiệu văn bản):",
+    "options": [
+      "74/2001/NĐ-CP",
+      "73/2003/NĐ-CP",
+      "51/2007/NĐ-CP",
+      "52/2014/QH13"
+    ],
+    "answer": "52/2014/QH13"
+  },
+  {
+    "uid": "bench_2_6_1262023HNGST-TANDTANDBMTTANDL-20230728",
+    "refer_uid": "1262023HNGST-TANDTANDBMTTANDL-20230728",
+    "refer_type": "case",
+    "confirmed_doc_ids": [
+      "52/2014/QH13"
+    ],
+    "question": "Vấn đề pháp lý: 'tranh chấp ly hôn”'\n\nSố hiệu văn bản pháp luật nào dưới đây liên quan trực tiếp nhất đến vấn đề nêu trên?\n\nChọn đáp án đúng (chỉ trả về số hiệu văn bản):",
+    "options": [
+      "98/2003/NĐ-CP",
+      "123/2004/NĐ-CP",
+      "52/2014/QH13",
+      "144/2013/NĐ-CP"
+    ],
+    "answer": "52/2014/QH13"
+  },
+  {
+    "uid": "bench_2_6_012024LST-TANDTANDQDKTANDHP-20240926",
+    "refer_uid": "012024LST-TANDTANDQDKTANDHP-20240926",
+    "refer_type": "case",
+    "confirmed_doc_ids": [
+      "326/2016/UBTVQH14"
+    ],
+    "question": "Vấn đề pháp lý: 'bị đơn phương chấm dứt hợp đồng lao động'\n\nSố hiệu văn bản pháp luật nào dưới đây liên quan trực tiếp nhất đến vấn đề nêu trên?\n\nChọn đáp án đúng (chỉ trả về số hiệu văn bản):",
+    "options": [
+      "77-CP",
+      "78/2008/NĐ-CP",
+      "09/2015/NĐ-CP",
+      "326/2016/UBTVQH14"
+    ],
+    "answer": "326/2016/UBTVQH14"
+  }
+]

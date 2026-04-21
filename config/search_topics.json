@@ -24,7 +24,7 @@
     },
     {
       "id": "LDBHXH",
-      "name": "Lao động & BHXH",
+      "name": "Lao động và Bảo hiểm xã hội",
       "keywords": [
         "đơn phương chấm dứt hợp đồng lao động",
         "tranh chấp tiền lương",
@@ -46,7 +46,7 @@
     },
     {
       "id": "SHTS",
-      "name": "Sở hữu tài sản",
+      "name": "Xâm phạm Quyền sở hữu tài sản",
       "keywords": [
         "trộm cắp tài sản",
         "lừa đảo chiếm đoạt tài sản",
@@ -67,7 +67,7 @@
     },
     {
       "id": "NHTD",
-      "name": "Ngân hàng, Tín dụng",
+      "name": "Ngân hàng, Tín dụng và Bảo hiểm",
       "keywords": [
         "tranh chấp hợp đồng tín dụng",
         "phát mãi tài sản thế chấp",
@@ -109,17 +109,18 @@
     },
     {
       "id": "HCQL",
-      "name": "Hành chính & QLNN",
+      "name": "Hành chính và Quản lý nhà nước",
       "keywords": [
         "khiếu kiện quyết định hành chính",
-        "hành vi hành chính",
+        "khiếu kiện hành vi hành chính",
         "hủy quyết định thu hồi đất",
-        "xử phạt vi phạm hành chính"
+        "hủy quyết định cưỡng chế",
+        "hủy quyết định xử phạt vi phạm hành chính"
       ]
     },
     {
       "id": "MTTN",
-      "name": "Môi trường & Tài nguyên",
+      "name": "Môi trường và Tài nguyên",
       "keywords": [
         "gây ô nhiễm môi trường",
         "khai thác tài nguyên trái phép",
@@ -129,7 +130,7 @@
     },
     {
       "id": "TTMT",
-      "name": "Trật tự, Ma túy",
+      "name": "Trật tự, An toàn xã hội và Ma túy",
       "keywords": [
         "mua bán trái phép chất ma túy",
         "tàng trữ chất cấm",

@@ -88,16 +88,17 @@ def run_topic_mode(engine, topics_file, target_per_topic=10):
                         # Log nhẹ để biết đang lọc
                         pass
 
-                for res in filtered_results:
-                    if len(kw_results) >= current_target:
-                        break
-                    
-                    print(f"    [*] Đang tải {len(kw_results)+1}/{current_target}: {res['url']}")
-                    doc = engine.scrape_detail_page(res["url"])
-                    if doc:
-                        kw_results.append(doc)
-                        topic_count += 1
-                    time.sleep(random.uniform(1, 2))
+                # Tải trang chi tiết song song
+                from concurrent.futures import ThreadPoolExecutor
+                with ThreadPoolExecutor(max_workers=engine.num_workers) as executor:
+                    futures = [executor.submit(engine.scrape_detail_page, res["url"]) for res in filtered_results]
+                    for future in futures:
+                        if len(kw_results) >= current_target:
+                            break
+                        doc = future.result()
+                        if doc:
+                            kw_results.append(doc)
+                            topic_count += 1
                 
                 page += 1
                 if page > 15: # Giới hạn trang tối đa cho 1 keyword
@@ -130,9 +131,10 @@ def main():
     parser.add_argument("--keyword", type=str, default="", help="Từ khóa tìm kiếm (chế độ thường)")
     
     # Chế độ theo chủ đề (Mới)
-    parser.add_argument("--topic_mode", action="store_true", help="Kích hoạt cào theo chủ đề từ config")
+    parser.add_argument("--topic_mode", action="store_false", dest="topic_mode", help="Tắt cào theo chủ đề (chuyển sang chế độ thường)")
     parser.add_argument("--topics_file", type=str, default="config/search_topics.json", help="Đường dẫn file topics")
-    parser.add_argument("--quota", type=int, default=10, help="Số lượng bản án mục tiêu cho mỗi chủ đề")
+    parser.add_argument("--quota", type=int, default=20, help="Số lượng bản án mục tiêu cho mỗi chủ đề")
+    parser.set_defaults(topic_mode=True)
     
     # Cấu hình chung
     parser.add_argument("--workers", type=int, default=1, help="Số lượng worker")

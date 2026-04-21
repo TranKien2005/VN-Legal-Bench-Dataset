@@ -2,23 +2,68 @@
 Constants cho dự án VN-Legal-Bench-Dataset.
 """
 
-# 15 nhãn vấn đề pháp lý chính (Issue Spotting)
+# 15 nhãn vấn đề pháp lý chính kèm mô tả chi tiết
 LEGAL_ISSUE_LABELS = [
-    "Hôn nhân và Gia đình",
-    "Giao thông và Vận tải",
-    "Thuế, Phí và Lệ phí",
-    "Đất đai và Nhà ở",
-    "Lao động và Bảo hiểm xã hội",
-    "Kinh doanh và Đầu tư",
-    "Ngân hàng, Tín dụng và Bảo hiểm",
-    "Sở hữu trí tuệ",
-    "Môi trường và Tài nguyên",
-    "Trật tự, An toàn xã hội và Ma túy",
-    "Xâm phạm Quyền con người",
-    "Xâm phạm Quyền sở hữu tài sản",
-    "Hành chính và Quản lý nhà nước",
-    "Tư pháp và Tố tụng",
-    "Các vấn đề pháp lý khác",
+    {
+        "label": "Hôn nhân và Gia đình",
+        "description": "Điều chỉnh các quan hệ nhân thân và tài sản giữa các thành viên trong gia đình (vợ chồng, cha mẹ con cái, ông bà cháu)."
+    },
+    {
+        "label": "Giao thông và Vận tải",
+        "description": "Các quy tắc di chuyển trên đường bộ, đường thủy, đường hàng không và chế tài khi vi phạm."
+    },
+    {
+        "label": "Thuế, Phí và Lệ phí",
+        "description": "Các nghĩa vụ nộp tiền vào ngân sách nhà nước phát sinh từ thu nhập, tài sản hoặc dịch vụ công."
+    },
+    {
+        "label": "Đất đai và Nhà ở",
+        "description": "Quyền quản lý, sử dụng đất, sở hữu nhà ở và các giao dịch liên quan đến bất động sản."
+    },
+    {
+        "label": "Lao động và Bảo hiểm xã hội",
+        "description": "Mối quan hệ giữa người lao động và người sử dụng lao động dựa trên hợp đồng lao động."
+    },
+    {
+        "label": "Kinh doanh và Đầu tư",
+        "description": "Các hoạt động nhằm mục đích sinh lợi của thương nhân và các vấn đề nội bộ công ty."
+    },
+    {
+        "label": "Ngân hàng, Tín dụng và Bảo hiểm",
+        "description": "Các giao dịch tài chính chuyên biệt với các tổ chức tín dụng và doanh nghiệp bảo hiểm."
+    },
+    {
+        "label": "Sở hữu trí tuệ",
+        "description": "Bảo hộ các sản phẩm của trí tuệ con người (logo, sáng chế, tác phẩm nghệ thuật)."
+    },
+    {
+        "label": "Môi trường và Tài nguyên",
+        "description": "Khai thác khoáng sản, nguồn nước và các hành vi gây ô nhiễm."
+    },
+    {
+        "label": "Trật tự, An toàn xã hội và Ma túy",
+        "description": "Các hành vi gây mất an ninh công cộng, tệ nạn xã hội và tội phạm ma túy."
+    },
+    {
+        "label": "Xâm phạm Quyền con người",
+        "description": "Các hành vi trực tiếp gây tổn hại đến thân thể, tính mạng, danh dự và nhân phẩm."
+    },
+    {
+        "label": "Xâm phạm Quyền sở hữu tài sản",
+        "description": "Các hành vi chiếm đoạt, hủy hoại tài sản của người khác ngoài phạm vi hợp đồng (trộm, cướp, lừa đảo chiếm đoạt tài sản)."
+    },
+    {
+        "label": "Hành chính và Quản lý nhà nước",
+        "description": "Khiếu nại, khởi kiện các quyết định hoặc hành vi hành chính của cơ quan nhà nước."
+    },
+    {
+        "label": "Tư pháp và Tố tụng",
+        "description": "Các quy định về cách thức nộp đơn, thời hạn khởi kiện, thẩm quyền của tòa án và thi hành án."
+    },
+    {
+        "label": "Các vấn đề pháp lý khác",
+        "description": "Các vấn đề hỗn hợp hoặc thuộc các lĩnh vực đặc thù khác không nằm trong 14 nhóm trên."
+    }
 ]
 
 # Loại văn bản quy phạm pháp luật

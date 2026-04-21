@@ -57,8 +57,13 @@ class LuatVietnamEngine:
     def scrape_detail_page(self, detail_url):
         """Cào trang chi tiết (Thuộc tính, Tóm tắt và file nội dung)."""
         try:
-            response = self.session.get(detail_url, timeout=30)
+            # Tạo header cục bộ cho thread này
+            headers = self.session.headers.copy()
+            headers["Referer"] = detail_url
+            
+            response = self.session.get(detail_url, headers=headers, timeout=30)
             if response.status_code != 200:
+                print(f"  [LỖI] Không thể truy cập trang chi tiết {detail_url} (Status {response.status_code})")
                 return None
 
             soup = BeautifulSoup(response.text, 'html.parser')
@@ -137,12 +142,16 @@ class LuatVietnamEngine:
             if doc_record["metadata"]["docx_url"]:
                 print(f"  -> Thử tải DOCX: {doc_record['metadata']['docx_url']}")
                 try:
-                    res = self.session.get(doc_record["metadata"]["docx_url"], timeout=60)
+                    headers = self.session.headers.copy()
+                    headers["Referer"] = detail_url
+                    res = self.session.get(doc_record["metadata"]["docx_url"], headers=headers, timeout=60)
                     if res.status_code == 200:
                         text = self.extract_docx_text(res.content)
                         if len(text) >= self.min_char_count:
                             final_text = text
                             source_used = "docx"
+                    else:
+                        print(f"  [!] Lỗi tải DOCX (Status {res.status_code})")
                 except Exception as e:
                     print(f"  [!] Lỗi tải/đọc DOCX: {e}")
 
@@ -150,12 +159,16 @@ class LuatVietnamEngine:
             if len(final_text) < self.min_char_count and doc_record["metadata"]["pdf_url"]:
                 print(f"  -> Thử tải PDF (fallback): {doc_record['metadata']['pdf_url']}")
                 try:
-                    res = self.session.get(doc_record["metadata"]["pdf_url"], timeout=60)
+                    headers = self.session.headers.copy()
+                    headers["Referer"] = detail_url
+                    res = self.session.get(doc_record["metadata"]["pdf_url"], headers=headers, timeout=60)
                     if res.status_code == 200:
                         text = self.extract_pdf_text(res.content)
                         if len(text) >= self.min_char_count:
                             final_text = text
                             source_used = "pdf"
+                    else:
+                        print(f"  [!] Lỗi tải PDF (Status {res.status_code})")
                 except Exception as e:
                     print(f"  [!] Lỗi tải/đọc PDF: {e}")
 
@@ -251,13 +264,18 @@ class LuatVietnamEngine:
                 print(f"  [!] Không tìm thấy thêm liên kết nào ở trang {page}. Dừng.")
                 break
             
+            # Xử lý các link song song bằng ThreadPoolExecutor
             page_results = []
-            for link in links:
-                print(f"  [*] Đang xử lý: {link}")
-                result = self.scrape_detail_page(link)
-                if result:
-                    page_results.append(result)
-                time.sleep(random.uniform(1, 3))
+            with ThreadPoolExecutor(max_workers=self.num_workers) as executor:
+                # Map detail page scraping tasks
+                future_to_url = {executor.submit(self.scrape_detail_page, link["url"]): link["url"] for link in links}
+                
+                for future in future_to_url:
+                    result = future.result()
+                    if result:
+                        page_results.append(result)
+                    # Giảm tải: nghỉ nhẹ giữa các kết quả nhận được (tùy chọn)
+                    # time.sleep(random.uniform(0.1, 0.5))
             
             if page_results:
                 # Tạo tên file gợi nhớ dựa trên tham số

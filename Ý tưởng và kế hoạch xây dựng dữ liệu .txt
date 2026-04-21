@@ -536,43 +536,190 @@ court_cases (
   section_reasoning TEXT,      -- Nhận định của tòa
   section_decision TEXT        -- Toàn bộ phần quyết định (Raw text)
 )
+
 Xây dựng dự liệu tác vụ thử nghiệm
 Các tác vụ
 Lưa chọn một số tác vụ chính có thể dễ dàng xây dựng bằng llm chỉ phải thực hiện một số bước trích xuất đơn giản.
 Một số tác vụ phức tạp nhưng có giá trị quan trọng cũng tiến hành sinh mẫu. 
 
-1.1 General Legal Issue Classification
-Chi tiết cách sinh: 
-viết phần mở đồng cố định ví dụ đọc tình huống trên và xác định tình huống trên thuộc tình tương đồng với issue general nào nhất trong 15 th.... Câu trả lời chỉ bao gồm tên nhãn
-đưa cho llm tiêu đề của bản án để nó tự xác định
-lấy về nhãn llm sinh tạo câu hỏi thủ công bằng việc ghép phần mở đồng + tình huống 
-anser là nhãn mô hình sinh
-1.2 Core Issue Generation
-Tương tư 1.1
-2.1 Definition Recall 
-//Cần có phương pháp chọn điều khoản và chọn tài liệu để phân bổ đều
-Đưa điều khoản cho mô hình nếu phát hiện khái niệm yêu cầu trích nguyên văn
-2.2 Article Recall 
-// Cần có phương pháp chọn điều khoản và chọn tài liệu để phân bổ đều
-Tương tư như 2.1 nhưng yêu cầu trích nguyên văn một điều (chỉ trích đến điêu thôi để không mất quá nhiều công sức để tách đến khoản, điểm trong xử lý dữ liệu)
-//Cung cấp mẫu, yêu cầu cách viết cụ thể hoặc có cách chuẩn họa output để tránh việc mô hình xử dụng phong cách viết hay ký tự đặc biệt trong câu trả lời khó đánh giá hơn
-2.3 Legal Text Attribution
-Có thể sinh tự động dữ liệu đầy đủ trong cơ sở dữ liệu 
-2.4 Legal Evolution
-Ý tưởng là đánh dấu đặc biệt cho các điều luật có key word sửa đổi bổ sung trong quá trình xử lý văn bản đầu vào.
-2.6: Relevant Article Identification
-Trích xuất vẳn bản gốc trong đoạn quyết định toàn án liên quan đến các điều khoản sử dụng tuy nhiên không đảm bảo được là tất cả điều khoản đó đều liên quan trực tiếp đến vấn đề ở tiêu đề (có thể liên quan đến vấn đề nhỏ hợp trong tình tiết) có thể cung cấp cả đoạn và yêu cầu câu trả lời đúng nhất.
-***Các task 2. Cần xây xong cơ sở dữ liệu văn bản quy phạm đầy đủ trước
-3.1 Legal Court Decision Prediction
-//Chỉ lấy bản án sơ thẩm với tình tiết không quá phức tạp và chồng chéo
-Cho model đọc các phán quyết và tìm các phán quyết quan trong để sinh câu hỏi
-Reasoning có thể để tạo sau (tương đối khó nếu để có thể hoàn toàn tự động)
+1.1 General Legal Issue Classification  [ĐÃ TRIỂN KHAI]
+Nguồn: court_cases
+Trường sử dụng để sinh nhãn: title_web, title_parsed, legal_relation, case_type
+Trường làm đầu vào câu hỏi: section_content (tình tiết vụ án)
+
+Pipeline:
+1. LLM đọc [title_parsed / title_web / legal_relation / case_type] của bản án → phân loại
+   vào đúng 1 trong 15 nhãn chuẩn. Validation bằng exact match với danh sách nhãn cho phép.
+   Fallback 3 tầng: exact match → khớp theo thứ tự số → substring match.
+   Chi phí LLM: cực thấp (chỉ vài chục token/mẫu, không gửi section_content).
+2. Câu hỏi được ghép tự động: phần mở đầu cố định + section_content.
+3. Đáp án: nhãn LLM xác nhận (string chính xác từ danh sách 15 nhãn).
+
+Cấu trúc mẫu: {uid, refer_uid, question, answer}
+Độ đo: Accuracy (exact match với 15 nhãn)
+Số lượng mục tiêu: 50
+Ghi chú: Phân bổ stratified đã thực hiện ở giai đoạn thu thập bản án → không cần
+stratify thêm khi sinh.
+
+1.2 Core Issue Generation  [ĐÃ TRIỂN KHAI]
+Nguồn: court_cases
+Trường sử dụng để sinh GT: title_parsed (tiêu đề bản án được parse từ văn bản)
+Trường làm đầu vào câu hỏi: section_content
+
+Pipeline:
+1. LLM đọc title_parsed → rút gọn thành cụm "Vấn đề [X]" (không dấu phẩy, ngoặc kép,...).
+   Few-shot examples được nhúng trong prompt để LLM học định dạng đầu ra.
+   Chi phí LLM: thấp (chỉ gửi title_parsed, ~10-30 token).
+2. Validation: LLM output phải bắt đầu bằng "Vấn đề", không chứa ký tự đặc biệt.
+3. Câu hỏi: phần mở đầu cố định ("Xác định vấn đề cốt lõi...") + section_content.
+4. Đáp án: chuỗi "Vấn đề [X]" do LLM sinh.
+
+Cấu trúc mẫu: {uid, refer_uid, question, answer}
+Độ đo: Token-level F1 / LLM-as-judge (so sánh ngữ nghĩa)
+Số lượng mục tiêu: 50
+
+2.1 Definition Recall  [ĐÃ TRIỂN KHAI]
+Nguồn: legal_articles (join với legal_docs)
+Phân bổ tài liệu: stratified theo doc_type — 80% Luật, 18% Nghị định, 2% Special
+(Special = mỗi văn bản phải được sử dụng ít nhất 1 lần)
+Pipeline:
+1. Lấy ngẫu nhiên điều khoản theo tỉ lệ phân bổ. Loop-until-full cho đến đủ limit.
+2. LLM đọc nội dung điều → phát hiện và trích xuất cặp (tên khái niệm, định nghĩa).
+   Trả về JSON: {"has_concept": true/false, "concept": "...", "definition": "..."}.
+   Chi phí LLM: trung bình (gửi tối đa 2000 ký tự/điều).
+3. Nếu tìm thấy khái niệm: câu hỏi ghép tự động theo khuôn cố định,
+   kèm hướng dẫn format đáp án rõ ràng.
+4. Đáp án: nội dung định nghĩa gần nguyên văn từ điều luật.
+
+Cấu trúc mẫu: {uid, refer_uid, refer_type, question, answer}
+Độ đo: Token-level F1 / Exact Match + normalization (bỏ dấu câu, xuống dòng)
+Số lượng mục tiêu: 50
+2.2 Article Recall  [ĐÃ TRIỂN KHAI]
+Nguồn: legal_articles (join với legal_docs)
+Phân bổ: giống 2.1 (80/18/2)
+Pipeline (hoàn toàn tự động, KHÔNG dùng LLM):
+1. Lấy ngẫu nhiên điều khoản theo tỉ lệ.
+2. Câu hỏi ghép tự động: "Nêu nguyên văn nội dung Điều X của [Tên văn bản]."
+   kèm hướng dẫn format cụ thể (chỉ chữ và số, không dấu câu thừa).
+3. Đáp án: normalize_legal_text(article.content) — bỏ xuống dòng, số thứ tự,
+   dấu câu đặc biệt, chỉ giữ chữ và số để tránh phụ thuộc format.
+
+Cấu trúc mẫu: {uid, refer_uid, refer_type, question, answer}
+Độ đo: Token-level F1 + Exact Match sau normalization
+Số lượng mục tiêu: 50
+
+2.3 Legal Text Attribution  [ĐÃ TRIỂN KHAI]
+Nguồn: legal_articles + legal_docs
+Phân bổ tài liệu: giống 2.1 (80/18/2)
+
+Pipeline (hoàn toàn tự động, KHÔNG dùng LLM):
+1. Lấy ngẫu nhiên điều khoản, chia đều 2 loại câu hỏi:
+   - Type A: cho đoạn trích 3 câu đầu của điều → hỏi số hiệu văn bản chứa đoạn này.
+     Distractors: 3 doc_id khác cùng doc_type.
+   - Type B: cho tên văn bản → hỏi metadata (cơ quan ban hành / ngày ban hành / loại văn bản).
+     Distractors: metadata của 3 văn bản khác cùng doc_type.
+2. MCQ 4 đáp án, đáp án đúng random vào vị trí ngẫu nhiên.
+3. Field question_type: A / B1 / B2 / B3 để phân tích kết quả chi tiết.
+
+Cấu trúc mẫu: {uid, refer_uid, refer_type, question_type, question, options, answer}
+Độ đo: Accuracy (exact match trên 4 đáp án)
+Số lượng mục tiêu: 50
+
+2.4 Legal Evolution  [ĐÃ TRIỂN KHAI]
+Nguồn: legal_articles (lọc is_amendment=True) + legal_docs
+
+Pipeline:
+1. Lấy ngẫu nhiên điều khoản sửa đổi (is_amendment=True).
+2. LLM đọc nội dung điều sửa đổi → xác định:
+   - Số điều gốc bị sửa (original_article_number)
+   - Từ khóa tên văn bản gốc + năm (search_hint)
+   Chi phí LLM: trung bình (gửi tối đa 2000 ký tự).
+3. Agentic DB search (module db_search_agent.py) → tìm doc_uid văn bản gốc:
+   - Vòng lặp tối đa 3 rounds: LLM extract params → code query → nếu ≤10 kết quả
+     thì LLM xác nhận chọn uid; ngược lại LLM tinh chỉnh params → query lại.
+4. Xác nhận điều gốc tồn tại trong DB (article_number = original_article_number, doc_uid khớp).
+5. MCQ: "Điều X của [Văn bản gốc] bị sửa bởi điều nào trong [Văn bản sửa đổi]?"
+   Đáp án đúng: "Điều [số điều sửa] của [amendment doc_id]"
+   Distractors: các điều lân cận trong cùng văn bản sửa đổi (article_number ± offset).
+
+Cấu trúc mẫu: {uid, refer_uid, refer_type, original_article_id, question, options, answer}
+Độ đo: Accuracy
+Số lượng mục tiêu: 50
+Ghi chú: Tỉ lệ thành công thấp (~30%) do nhiều điều sửa đổi không có đủ thông tin
+hoặc văn bản gốc chưa có trong CSDL — cần lấy dư 5x để đủ mẫu.
+
+2.6 Relevant Article Identification  [ĐÃ TRIỂN KHAI]
+Nguồn: court_cases (lấy trường legal_bases và title_parsed)
+Yêu cầu: case có legal_bases và title_parsed không null
+
+Pipeline:
+1. LLM đọc legal_bases (tối đa 2000 ký tự) → extract danh sách search params
+   cho từng văn bản được tham chiếu (bỏ qua Nghị quyết án phí 326/2016).
+   Output: [{"title_keywords": [...], "doc_type": "Luật", "year": 2014}, ...]
+   Chi phí LLM: trung bình (1 call/bản án).
+2. Với mỗi văn bản: agentic DB search (db_search_agent.py) → confirmed doc_uid.
+   Bỏ qua nếu không tìm được doc_id.
+3. MCQ: "Số hiệu văn bản nào được tòa áp dụng cho vụ án về [title_parsed]?"
+   Đáp án đúng: doc_id của 1 trong các confirmed docs (chọn ngẫu nhiên).
+   Distractors: 3 doc_id ngẫu nhiên từ CSDL, KHÔNG thuộc confirmed set.
+   Dùng doc_id thay vì title để tránh keyword matching đơn giản.
+
+Cấu trúc mẫu: {uid, refer_uid, refer_type, confirmed_doc_ids, question, options, answer}
+Độ đo: Accuracy
+Số lượng mục tiêu: 50
+Ghi chú: Đáp án "đúng nhất" — legal_bases có thể chứa văn bản liên quan đến vấn đề
+phụ, không chỉ vấn đề chính. Câu hỏi chỉ yêu cầu chọn 1 trong các văn bản hợp lệ.
+
+3.1 Legal Court Decision Prediction  [ĐÃ TRIỂN KHAI]
+Nguồn: court_cases (chỉ lấy court_level LIKE '%sơ thẩm%')
+Yêu cầu: decision_items ≥ 2 phần tử, section_content không null, legal_bases không null
+
+Pipeline:
+1. LLM call 1 — đọc decision_items (tối đa 10 phần tử):
+   - Chọn 1 quyết định có giá trị pháp lý thực chất nhất (bỏ án phí, thủ tục).
+   - Sinh 3 distractors phân biệt rõ về bản chất:
+     + Distractor 1: kết quả ngược lại (bác/chấp nhận đảo chiều, đổi bên thắng/thua)
+     + Distractor 2: thay đổi đối tượng hoặc tỉ lệ (đổi người nuôi con, mức bồi thường)
+     + Distractor 3: kết quả khác hẳn về bản chất (đình chỉ, chuyển vụ án, hủy quyết định)
+   Chi phí LLM: thấp (chỉ gửi danh sách decision_items ngắn).
+
+2. LLM call 2 — đọc legal_bases:
+   - Extract danh sách {title_keywords, doc_type, year, article_numbers} cho từng văn bản.
+   - Bỏ qua Nghị quyết án phí.
+   Chi phí LLM: trung bình (gửi tối đa 2000 ký tự legal_bases).
+
+3. Với mỗi văn bản trong danh sách:
+   - Agentic DB search → doc_uid.
+   - Query: WHERE doc_uid = X AND article_number IN (article_numbers) → lấy content.
+   - Ghép tất cả article content vào block [Các điều luật liên quan].
+   Fallback: nếu không tìm được điều nào → dùng raw legal_bases text.
+
+4. Làm sạch section_content: cắt bỏ phần "NHẬN ĐỊNH CỦA TÒA" trở đi
+   (phần nhận định chứa gợi ý trực tiếp cho đáp án đúng).
+
+5. Ghép câu hỏi tự động:
+   [Tình tiết vụ án] (section_content đã làm sạch)
+   [Các điều luật liên quan] (toàn bộ article content tìm được)
+   Câu hỏi: Tòa án đã đưa ra quyết định như thế nào?
+   MCQ 4 đáp án.
+
+Cấu trúc mẫu: {uid, refer_uid, refer_type, num_articles_found, question, options, answer}
+Độ đo: Accuracy
+Số lượng mục tiêu: 50
+Ghi chú: Task phức tạp nhất, dùng nhiều LLM calls nhất (~4-6 call/mẫu tùy số văn bản).
+Câu hỏi thường rất dài (2-5 trang) — đây là đặc tính của task, không thu gọn
+vì mô hình cần đọc đủ tình tiết + luật để suy luận.
+
 4.2 Legal Content Entailment
 Hơi khó nhưng cố gắng lấy được các nhận định của toàn án trong phần nhận định để làm câu hỏi, đầu vào là nội dung vụ án
+Sinh tạm để ai đọc pần thông tin vụ án để sinh một số (phân bố tương tự)
+Sl 50
 4.5 Core Meaning Extraction
 Nếu không được xây dựng thủ công có thể xây dựng bằng cách chấm điểm bằng llm dựa trên việc có đầy đủ những thông tin quan trong được sử dụng trong phần nhận định để đưa ra kết luận không
+Tạm thời bỏ qua
 5.1 Legal Argument Role Classification
 Tạm thời llm sinh hoàn toàn nhưng phải cung cấp ví dụ và quy định chi tiết
+Llm hoàn toàn số lượng 50
 
 
 

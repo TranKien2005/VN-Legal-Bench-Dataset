@@ -188,7 +188,7 @@ def extract_decision_details(decision_text: str):
     return legal_bases_text, decision_items
 
 def extract_case_metadata(text: str) -> dict:
-    header = text[:3500]
+    header = text[:1000]
     metadata = {
         "case_no": None,
         "court_name": None,
