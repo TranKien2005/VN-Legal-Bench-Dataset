@@ -27,11 +27,14 @@ SYSTEM_PROMPT = (
 EXTRACT_PROMPT_TEMPLATE = (
     "Đọc nội dung điều khoản sau và xác định xem nó có chứa định nghĩa chính thức "
     "cho một khái niệm pháp lý không.\n\n"
+    "QUY TẮC BỎ QUA: Nếu đây là điều khoản mang tính thủ tục hoặc giới thiệu "
+    "(ví dụ: Phạm vi điều chỉnh, Đối tượng áp dụng, Hiệu lực thi hành, Điều khoản chuyển tiếp, "
+    "Tổ chức thực hiện, Giải thích từ ngữ viết tắt của các cơ quan) thì hãy trả về 'khong'.\n\n"
     "Điều {article_number}. {article_title}\n"
     "Văn bản: {doc_title} (năm {issue_year})\n"
     "Nội dung:\n"
     "\"{content}\"\n\n"
-    "Nếu điều khoản này có định nghĩa: trả về JSON dạng:\n"
+    "Nếu điều khoản này có định nghĩa khái niệm: trả về JSON dạng:\n"
     "{{\"co\": \"co\", \"ten_khai_niem\": \"<tên khái niệm>\", \"giai_thich\": \"<trích nguyên văn định nghĩa>\"}}\n"
     "Nếu không có định nghĩa: trả về JSON:\n"
     "{{\"co\": \"khong\"}}\n"
@@ -164,7 +167,7 @@ def generate_task_2_1(limit=50):
                     print(f"  [{doc_type}] Found: '{concept}' in {article.article_id} — total: {sum(counts.values())}/{limit}")
 
     # Lưu kết quả
-    output_dir = Path("data/benchmark")
+    output_dir = Path("data/benchmark/rule_recall")
     output_dir.mkdir(parents=True, exist_ok=True)
     output_file = output_dir / "task_2_1.json"
 
@@ -176,4 +179,4 @@ def generate_task_2_1(limit=50):
     print(f"Final counts: {counts}")
 
 if __name__ == "__main__":
-    generate_task_2_1(limit=20)
+    generate_task_2_1(limit=50)

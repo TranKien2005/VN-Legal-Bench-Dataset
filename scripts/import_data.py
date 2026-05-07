@@ -52,14 +52,27 @@ def import_legal_docs(session: Session, data_dir: Path, clear: bool = False):
                 items = [items]
             
             for item in items:
+                # Validation: Các trường định danh bắt buộc
+                uid = item.get("uid")
+                doc_id = item.get("doc_id")
+                title = item.get("title")
+                
+                if not uid or not doc_id or not title:
+                    logger.warning(f"⚠️ Bỏ qua LegalDoc {uid}: Thiếu trường định danh (uid, doc_id hoặc title).")
+                    continue
+
                 # Map JSON fields to DB columns
+                issue_date = item.get("issue_date") or item.get("Ngày ban hành")
+                if issue_date == "unknown" or not issue_date:
+                    issue_date = None
+
                 stmt = insert(LegalDoc).values(
-                    uid=item.get("uid") or item.get("doc_uid"),
-                    doc_id=item.get("doc_id"),
-                    title=item.get("title"),
+                    uid=uid,
+                    doc_id=doc_id,
+                    title=title,
                     doc_type=item.get("doc_type"),
                     issuing_body=item.get("issuing_body"),
-                    issue_date=parse_date(item.get("issue_date") or item.get("Ngày ban hành")),
+                    issue_date=parse_date(issue_date),
                     effective_date=parse_date(item.get("effective_date") or item.get("Ngày có hiệu lực")),
                     status=item.get("status") or item.get("Tình trạng hiệu lực"),
                     url=item.get("url"),
@@ -88,6 +101,10 @@ def import_legal_articles(session: Session, data_dir: Path, clear: bool = False)
     logger.info("📥 Importing Legal Articles...")
     files = list(data_dir.glob("*.json"))
     count = 0
+    
+    # Lấy danh sách các UID văn bản đã tồn tại trong DB để check khóa ngoại
+    existing_docs = {uid[0] for uid in session.query(LegalDoc.uid).all()}
+    
     for file in files:
         with open(file, 'r', encoding='utf-8') as f:
             items = json.load(f)
@@ -95,13 +112,27 @@ def import_legal_articles(session: Session, data_dir: Path, clear: bool = False)
                 items = [items]
             
             for item in items:
+                doc_uid = item.get("doc_uid")
+                # BỎ QUA nếu văn bản cha không tồn tại trong DB (do đã bị lọc ở bước trước)
+                if doc_uid not in existing_docs:
+                    continue
+
+                # Validation: Nội dung điều luật
+                article_id = item.get("article_uid") or item.get("article_id")
+                content = item.get("content")
+                art_num = item.get("article_number")
+                
+                if not article_id or not content or str(content).strip() == "" or not art_num:
+                    logger.warning(f"⚠️ Bỏ qua LegalArticle {article_id}: Thiếu nội dung hoặc số điều.")
+                    continue
+
                 # article_id in DB corresponds to article_uid in JSON for uniqueness
                 stmt = insert(LegalArticle).values(
-                    article_id=item.get("article_uid") or item.get("article_id"),
+                    article_id=article_id,
                     doc_uid=item.get("doc_uid"),
-                    article_number=item.get("article_number"),
+                    article_number=art_num,
                     title=item.get("title"),
-                    content=item.get("content"),
+                    content=content,
                     is_amendment=item.get("is_amendment", False)
                 )
                 
@@ -132,6 +163,24 @@ def import_court_cases(session: Session, data_dir: Path, clear: bool = False):
                 items = [items]
             
             for item in items:
+                # Validation: Phải đủ 4 phần quan trọng của một bản án
+                sections = [
+                    item.get("section_introduction"),
+                    item.get("section_content"),
+                    item.get("section_reasoning"),
+                    item.get("section_decision")
+                ]
+                
+                # Metadata và Quyết định (Bắt buộc cho Task 3.1)
+                title = item.get("title_parsed") or item.get("title_web")
+                legal_rel = item.get("legal_relation")
+                decisions = item.get("decision_items")
+                legal_bases = item.get("legal_bases")
+
+                if any(s is None or str(s).strip() == "" for s in sections):
+                    # logger.warning(f"⚠️ Bỏ qua CourtCase {item.get('uid')}: Thiếu phần cấu trúc.")
+                    continue
+
                 # Map JSON fields (aligned with 17+ fields recently restored)
                 stmt = insert(CourtCase).values(
                     uid=item.get("uid"),
@@ -163,13 +212,17 @@ def import_court_cases(session: Session, data_dir: Path, clear: bool = False):
                         "issuance_date": stmt.excluded.issuance_date,
                         "legal_bases": stmt.excluded.legal_bases,
                         "decision_items": stmt.excluded.decision_items,
-                        "summary": stmt.excluded.summary
+                        "summary": stmt.excluded.summary,
+                        "section_introduction": stmt.excluded.section_introduction,
+                        "section_content": stmt.excluded.section_content,
+                        "section_reasoning": stmt.excluded.section_reasoning,
+                        "section_decision": stmt.excluded.section_decision
                     }
                 )
                 session.execute(stmt)
                 count += 1
     session.commit()
-    logger.info(f"✓ Đã import/cập nhật {count} Court Cases.")
+    logger.info(f"✓ Đã import/cập nhật {count} Court Cases (đã lọc các bản ghi không đạt chuẩn).")
 
 def main():
     parser = argparse.ArgumentParser(description="Import legal data vào cơ sở dữ liệu.")

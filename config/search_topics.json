@@ -7,8 +7,28 @@
         "tranh chấp ly hôn",
         "chia tài sản chung vợ chồng",
         "quyền nuôi con",
-        "thay đổi người trực tiếp nuôi con",
-        "mức cấp dưỡng cho con"
+        "tranh chấp quyền nghĩa vụ ông bà"
+      ]
+    },
+    {
+      "id": "GTVT",
+      "name": "Giao thông và Vận tải",
+      "keywords": [
+        "vi phạm an toàn giao thông đường bộ",
+        "tai nạn giao thông đường thủy",
+        "an toàn giao thông đường sắt",
+        "tranh chấp hợp đồng vận tải"
+      ]
+    },
+    {
+      "id": "TPLL",
+      "name": "Thuế, Phí và Lệ phí",
+      "keywords": [
+        "tội trốn thuế",
+        "khiếu kiện quyết định truy thu thuế",
+        "lệ phí trước bạ",
+        "hoàn thuế giá trị gia tăng",
+        "khiếu kiện về phí lệ phí dịch vụ công"
       ]
     },
     {
@@ -16,10 +36,11 @@
       "name": "Đất đai và Nhà ở",
       "keywords": [
         "tranh chấp quyền sử dụng đất",
-        "đòi lại nhà đất",
         "tranh chấp ranh giới thửa đất",
         "hợp đồng chuyển nhượng quyền sử dụng đất",
-        "bồi thường hỗ trợ tái định cư"
+        "bồi thường hỗ trợ tái định cư",
+        "tranh chấp quyền sở hữu nhà ở",
+        "tranh chấp hợp đồng đặt cọc nhà đất"
       ]
     },
     {
@@ -30,60 +51,30 @@
         "tranh chấp tiền lương",
         "sa thải trái pháp luật",
         "truy đóng bảo hiểm xã hội",
-        "tai nạn lao động"
-      ]
-    },
-    {
-      "id": "XPCN",
-      "name": "Xâm phạm quyền con người",
-      "keywords": [
-        "cố ý gây thương tích",
-        "làm nhục người khác",
-        "vu khống",
-        "vô ý làm chết người",
-        "xâm phạm chỗ ở"
-      ]
-    },
-    {
-      "id": "SHTS",
-      "name": "Xâm phạm Quyền sở hữu tài sản",
-      "keywords": [
-        "trộm cắp tài sản",
-        "lừa đảo chiếm đoạt tài sản",
-        "lạm dụng tín nhiệm chiếm đoạt tài sản",
-        "cướp giật tài sản",
-        "hủy hoại tài sản"
+        "tai nạn lao động",
+        "tranh chấp hợp đồng đào tạo nghề"
       ]
     },
     {
       "id": "KDDD",
-      "name": "Kinh doanh và Đầu tư",
+      "name": "Kinh doanh, đầu tư, thương mại",
       "keywords": [
         "tranh chấp hợp đồng thương mại",
         "tranh chấp giữa các thành viên công ty",
         "hợp đồng hợp tác kinh doanh",
-        "vi phạm nghĩa vụ thanh toán"
+        "vi phạm nghĩa vụ thanh toán",
+        "tranh chấp về chuyển nhượng cổ phần"
       ]
     },
     {
       "id": "NHTD",
-      "name": "Ngân hàng, Tín dụng và Bảo hiểm",
+      "name": "Tài chính, vay nợ, tín dụng",
       "keywords": [
         "tranh chấp hợp đồng tín dụng",
         "phát mãi tài sản thế chấp",
         "xử lý nợ xấu",
-        "hợp đồng bảo hiểm",
-        "tranh chấp lãi suất"
-      ]
-    },
-    {
-      "id": "TPLL",
-      "name": "Thuế, Phí và Lệ phí",
-      "keywords": [
-        "tội trốn thuế",
-        "khiếu kiện quyết định truy thu thuế",
-        "hoàn thuế giá trị gia tăng",
-        "sai phạm quyết toán thuế"
+        "tranh chấp hợp đồng bảo hiểm",
+        "tranh chấp về bảo lãnh ngân hàng"
       ]
     },
     {
@@ -94,28 +85,7 @@
         "tranh chấp nhãn hiệu",
         "vi phạm bản quyền phần mềm",
         "hàng giả hàng nhái",
-        "sao chép kiểu dáng công nghiệp"
-      ]
-    },
-    {
-      "id": "GTVT",
-      "name": "Giao thông và Vận tải",
-      "keywords": [
-        "vi phạm quy định về tham gia giao thông",
-        "gây tai nạn giao thông",
-        "tranh chấp hợp đồng vận chuyển hàng hóa",
-        "hợp đồng logisitcs"
-      ]
-    },
-    {
-      "id": "HCQL",
-      "name": "Hành chính và Quản lý nhà nước",
-      "keywords": [
-        "khiếu kiện quyết định hành chính",
-        "khiếu kiện hành vi hành chính",
-        "hủy quyết định thu hồi đất",
-        "hủy quyết định cưỡng chế",
-        "hủy quyết định xử phạt vi phạm hành chính"
+        "sáng chế kiểu dáng công nghiệp"
       ]
     },
     {
@@ -125,17 +95,52 @@
         "gây ô nhiễm môi trường",
         "khai thác tài nguyên trái phép",
         "vi phạm quy định quản lý rừng",
-        "xả thải vượt quy chuẩn"
+        "xả thải vượt quy chuẩn",
+        "khai thác khoáng sản trái phép"
       ]
     },
     {
       "id": "TTMT",
-      "name": "Trật tự, An toàn xã hội và Ma túy",
+      "name": "An ninh quốc gia, trật tự, An toàn xã hội và tệ nạn xã hội",
       "keywords": [
         "mua bán trái phép chất ma túy",
-        "tàng trữ chất cấm",
         "gây rối trật tự công cộng",
-        "tổ chức đánh bạc"
+        "tổ chức đánh bạc",
+        "tội phạm về tệ nạn xã hội",
+        "tàng trữ trái phép vũ khí"
+      ]
+    },
+    {
+      "id": "QCN",
+      "name": "Quyền con người",
+      "keywords": [
+        "cố ý gây thương tích",
+        "làm nhục người khác",
+        "vu khống",
+        "vô ý làm chết người",
+        "xâm phạm quyền tự do thân thể"
+      ]
+    },
+    {
+      "id": "SHTS",
+      "name": "Quyền sở hữu tài sản",
+      "keywords": [
+        "trộm cắp tài sản",
+        "lừa đảo chiếm đoạt tài sản",
+        "lạm dụng tín nhiệm chiếm đoạt tài sản",
+        "cướp giật tài sản",
+        "hủy hoại tài sản"
+      ]
+    },
+    {
+      "id": "HCQL",
+      "name": "Hành chính, dịch vụ công, an sinh",
+      "keywords": [
+        "khiếu kiện quyết định hành chính",
+        "khiếu kiện hành vi hành chính",
+        "kỷ luật buộc thôi việc",
+        "quản lý hộ tịch",
+        "trợ cấp an sinh xã hội"
       ]
     },
     {

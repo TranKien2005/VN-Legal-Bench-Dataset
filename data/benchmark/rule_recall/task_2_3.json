@@ -1,0 +1,338 @@
+[
+  {
+    "uid": "bench_2_3_id_dieu-410-luat-1002015qh13-luat-1002015qh13-2015-11-27",
+    "refer_uid": "dieu-410-luat-1002015qh13-luat-1002015qh13-2015-11-27",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Tội vi phạm quy định về bảo vệ 1. Người nào không chấp hành nghiêm chỉnh quy định về tuần tra, canh gác, áp tải, hộ tổng thuộc một trong các trường hợp sau đây, thì bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 05 năm: a) Làm người được bảo vệ, hộ tổng bị tổn thương cơ thể; b) Làm hư hỏng phương tiện kỹ thuật, thiết bị quân sự; c) Làm thiệt hại về tài sản từ 100.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
+    "answer": "100/2015/QH13"
+  },
+  {
+    "uid": "bench_2_3_id_dieu-81-luat-542019qh14-luat-542019qh14-2019-11-26",
+    "refer_uid": "dieu-81-luat-542019qh14-luat-542019qh14-2019-11-26",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"1. Giấy phép thành lập và hoạt động kinh doanh chứng khoán của công ty chứng khoán, công ty quản lý quỹ đầu tư chứng khoán bao gồm các nội dung sau đây: a) Tên công ty; b) Địa chỉ trụ sở chính; c) Nghiệp vụ ki nh doanh; d) Vốn điều lệ; đ) Người đại diện theo pháp luật.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
+    "answer": "54/2019/QH14"
+  },
+  {
+    "uid": "bench_2_3_id_dieu-62-luat-522005qh11-luat-522005qh11-2005-11-29",
+    "refer_uid": "dieu-62-luat-522005qh11-luat-522005qh11-2005-11-29",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"1. Việc điều phối hoạt động bảo vệ môi trường nước của lưu vực sông nằm trên địa bàn nhiều tỉnh, thành phố trực thuộc trung ương được thực hiện theo quy định của Thủ tướng Chính phủ.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
+    "answer": "52/2005/QH11"
+  },
+  {
+    "uid": "bench_2_3_id_dieu-13-nghi-dinh-142015nd-cp-nghi-dinh-142015nd-cp-2015-02-13",
+    "refer_uid": "dieu-13-nghi-dinh-142015nd-cp-nghi-dinh-142015nd-cp-2015-02-13",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Doanh nghiệp kinh doanh sản xuất, lắp ráp, hoán cải, phục hồi phương tiện giao thông đường sắt phải có đủ các điều kiện sau đây: 1. Các điều kiện quy định tại Khoản 2 Điều 8 Nghị định này.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
+    "answer": "14/2015/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_3_id_dieu-165-luat-682014qh13-luat-682014qh13-2014-11-26",
+    "refer_uid": "dieu-165-luat-682014qh13-luat-682014qh13-2014-11-26",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"1. Ban kiểm soát thực hiện giám sát Hội đồng quản trị, Giám đốc hoặc Tổng giám đốc trong việc quản lý và điều hành công ty.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
+    "answer": "68/2014/QH13"
+  },
+  {
+    "uid": "bench_2_3_id_dieu-37-luat-432019qh14-luat-432019qh14-2019-06-14",
+    "refer_uid": "dieu-37-luat-432019qh14-luat-432019qh14-2019-06-14",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Tổ chức và hoạt động giáo dục nghề nghiệp được thực hiện theo quy định của Luật này và Luật Giáo dục nghề nghiệp. Tiểu mục 4.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
+    "answer": "43/2019/QH14"
+  },
+  {
+    "uid": "bench_2_3_id_dieu-2-luat-182003qh11-luat-182003qh11-2003-11-26",
+    "refer_uid": "dieu-2-luat-182003qh11-luat-182003qh11-2003-11-26",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Luật này quy định việc thành lập, tổ chức và hoạt động đối với hợp tác xã trong các ngành, các lĩnh vực của nền kinh tế quốc dân.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
+    "answer": "18/2003/QH11"
+  },
+  {
+    "uid": "bench_2_3_id_dieu-99-luat-542019qh14-luat-542019qh14-2019-11-26",
+    "refer_uid": "dieu-99-luat-542019qh14-luat-542019qh14-2019-11-26",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"1. Quỹ đầu tư chứng khoán bao gồm quỹ đại chúng và quỹ thành viên.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
+    "answer": "54/2019/QH14"
+  },
+  {
+    "uid": "bench_2_3_id_dieu-68-nghi-dinh-50-hdbt-nghi-dinh-50-hdbt-1988-03-22",
+    "refer_uid": "dieu-68-nghi-dinh-50-hdbt-nghi-dinh-50-hdbt-1988-03-22",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"- Việc phân chia, sáp nhập, giải thể và chuyển hình thức sở hữu xí nghiệp phải do cơ quan có thẩm quyền ra quyết định thành lập xí nghiệp đó quyết định. Khi quyết định phân chia, sáp nhập, giải thể và chuyển hình thức sở hữu xí nghiệp, cơ quan nói trên phải quyết định lập một hội đồng gồm đại diện cấp trên trực tiếp (hoặc cơ quan chủ quản cấp trên) làm chủ tịch và đại diện các cơ quan hữu quan để bàn bạc, giải quyết các vấn đề do việc phân chia, sáp nhập, giải thể hoặc chuyển hình thức sở hữu xí nghiệp đặt ra, nhất là các vấn đề về sử dụng tài sản, vật tư, lao động, tiền vốn, về tiếp tục thực hiện các nghĩa vụ kế hoạch đối với Nhà nước, và các nghĩa vụ hợp đồng đối với các tổ chức, cơ sở hữu quan.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
+    "answer": "50-HĐBT"
+  },
+  {
+    "uid": "bench_2_3_id_dieu-29-luat-44-lctn-luat-44-lctn-1995-10-28",
+    "refer_uid": "dieu-29-luat-44-lctn-luat-44-lctn-1995-10-28",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Quyền thay đổi họ, tên 1- Cá nhân có quyền yêu cầu cơ quan nhà nước có thẩm quyền công nhận việc thay đổi họ, tên trong các trường hợp sau đây: a) Theo yêu cầu của người có họ, tên mà việc sử dụng họ, tên đó gây nhầm lẫn, ảnh hưởng đến tình cảm gia đình, đến danh dự, quyền, lợi ích hợp pháp của mình; b) Theo yêu cầu của cha, mẹ nuôi về việc thay đổi họ, tên cho con nuôi hoặc khi người con nuôi thôi không làm con nuôi và người này hoặc cha, mẹ đẻ yêu cầu lấy lại họ, tên mà cha, mẹ đẻ đã đặt; c) Theo yêu cầu của cha, mẹ hoặc người con khi xác định cha, mẹ cho con; d) Thay đổi họ cho con từ họ của cha sang họ của mẹ hoặc ngược lại; đ) Thay đổi họ, tên của người bị lưu lạc từ nhỏ mà tìm ra nguồn gốc huyết thống của mình; e) Các trường hợp khác do pháp luật quy định. 2- Việc thay đổi họ, tên cho người từ đủ chín tuổi trở lên phải có sự đồng ý của người đó.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
+    "answer": "44-L/CTN"
+  },
+  {
+    "uid": "bench_2_3_id_dieu-43-luat-3-lcthdnn8-luat-3-lcthdnn8-1987-12-29",
+    "refer_uid": "dieu-43-luat-3-lcthdnn8-luat-3-lcthdnn8-1987-12-29",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Đất làm nghĩa địa phải được quy hoạch thành khu tập trung, xa dân cư, thuận tiện cho việc chôn cất, thăm viếng, hợp vệ sinh và tiết kiệm đất.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
+    "answer": "3-LCT/HĐNN8"
+  },
+  {
+    "uid": "bench_2_3_id_dieu-131-luat-362005qh11-luat-362005qh11-2005-06-14",
+    "refer_uid": "dieu-131-luat-362005qh11-luat-362005qh11-2005-06-14",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Quyền tổ chức, tham gia hội chợ, triển lãm thương mại 1. Thương nhân Việt Nam, Chi nhánh của thương nhân Việt Nam, Chi nhánh của thương nhân nước ngoài tại Việt Nam có quyền trực tiếp tổ chức, tham gia hội chợ, triển lãm thương mại về hàng hóa, dịch vụ mà mình kinh doanh hoặc thuê thương nhân kinh doanh dịch vụ hội chợ, triển lãm thương mại thực hiện.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
+    "answer": "36/2005/QH11"
+  },
+  {
+    "uid": "bench_2_3_id_dieu-71-luat-272004qh11-luat-272004qh11-2004-12-03",
+    "refer_uid": "dieu-71-luat-272004qh11-luat-272004qh11-2004-12-03",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Người có quyền lợi, nghĩa vụ liên quan đến vụ việc cạnh tranh 1. Người có quyền lợi, nghĩa vụ liên quan có thể có yêu cầu độc lập hoặc tham gia tố tụng cạnh tranh với bên khiếu nại hoặc với bên bị điều tra.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
+    "answer": "27/2004/QH11"
+  },
+  {
+    "uid": "bench_2_3_id_dieu-15-luat-103-sll005-luat-103-sll005-1957-05-20",
+    "refer_uid": "dieu-15-luat-103-sll005-luat-103-sll005-1957-05-20",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Trong khi tiến hành việc bắt, tạm giữ, tạm giam, khám người, khám đồ vật, khám nhà và thư tín, mà người phạm pháp kháng cự lại hoặc có hành động để trốn tránh pháp luật thì có thể dùng phương pháp cưỡng chế thích đáng để bắt kẻ phạm pháp tuân theo pháp luật.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
+    "answer": "103-SL/L.005"
+  },
+  {
+    "uid": "bench_2_3_id_dieu-215-luat-642010qh12-luat-642010qh12-2010-11-24",
+    "refer_uid": "dieu-215-luat-642010qh12-luat-642010qh12-2010-11-24",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"1. Người có quyền kháng nghị theo thủ tục giám đốc thẩm được quyền kháng nghị trong thời hạn 02 năm, kể từ ngày bản án, quyết định của Toà án có hiệu lực pháp luật, trừ trường hợp quy định tại khoản 2 Điều này.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
+    "answer": "64/2010/QH12"
+  },
+  {
+    "uid": "bench_2_3_id_dieu-69-luat-152003qh11-luat-152003qh11-2003-11-26",
+    "refer_uid": "dieu-69-luat-152003qh11-luat-152003qh11-2003-11-26",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Kỷ niệm chương hoặc Huy hiệu để tặng cho cá nhân có đóng góp vào quá trình phát triển của bộ, ban, ngành, tổ chức chính trị, tổ chức chính trị - xã hội, tổ chức xã hội. Tên kỷ niệm chương, tên Huy hiệu, đối tượng và tiêu chuẩn tặng Kỷ niệm chương, Huy hiệu do bộ, ban, ngành, cơ quan trung ương của tổ chức chính trị, tổ chức chính trị - xã hội, tổ chức xã hội quy định.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
+    "answer": "15/2003/QH11"
+  },
+  {
+    "uid": "bench_2_3_id_dieu-273-luat-17-lcthdnn7-luat-17-lcthdnn7-1985-06-27",
+    "refer_uid": "dieu-273-luat-17-lcthdnn7-luat-17-lcthdnn7-1985-06-27",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Tội quấy nhiễu nhân dân. 1- Người nào có hành vi quấy nhiễu gây thiệt hại cho nhân dân làm mất đoàn kết quân dân thì bị phạt cải tạo ở đơn vị kỷ luật của quân đội đến một năm hoặc bị phạt tù từ ba tháng đến ba năm.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
+    "answer": "17-LCT/HĐNN7"
+  },
+  {
+    "uid": "bench_2_3_id_dieu-2-nghi-dinh-192015nd-cp-nghi-dinh-192015nd-cp-2015-02-14",
+    "refer_uid": "dieu-2-nghi-dinh-192015nd-cp-nghi-dinh-192015nd-cp-2015-02-14",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Nghị định này áp dụng đối với cơ quan, tổ chức, hộ gia đình và cá nhân có hoạt động trên lãnh thổ nước Cộng hòa xã hội chủ nghĩa Việt Nam, bao gồm đất liền, hải đảo, vùng biển và vùng trời.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
+    "answer": "19/2015/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_3_id_dieu-132-luat-682014qh13-luat-682014qh13-2014-11-26",
+    "refer_uid": "dieu-132-luat-682014qh13-luat-682014qh13-2014-11-26",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"1. Cổ tức trả cho cổ phần ưu đãi được thực hiện theo các điều kiện áp dụng riêng cho mỗi loại cổ phần ưu đãi.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
+    "answer": "68/2014/QH13"
+  },
+  {
+    "uid": "bench_2_3_id_dieu-89-luat-102012qh13-luat-102012qh13-2012-06-18",
+    "refer_uid": "dieu-89-luat-102012qh13-luat-102012qh13-2012-06-18",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Thoả ước lao động tập thể ngành có thời hạn từ 01 năm đến 03 năm. Chương VI TIỀN LƯƠNG.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
+    "answer": "10/2012/QH13"
+  },
+  {
+    "uid": "bench_2_3_id_dieu-49-luat-602014qh13-luat-602014qh13-2014-11-20",
+    "refer_uid": "dieu-49-luat-602014qh13-luat-602014qh13-2014-11-20",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"1. Người yêu cầu ghi vào Sổ hộ tịch việc khai sinh; giám hộ; nhận cha, mẹ, con; xác định cha, mẹ, con; nuôi con nuôi; thay đổi hộ tịch; khai tử nộp tờ khai theo mẫu quy định và bản sao có chứng thực giấy tờ chứng minh các việc này đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài cho cơ quan đăng ký hộ tịch.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
+    "answer": "60/2014/QH13"
+  },
+  {
+    "uid": "bench_2_3_id_dieu-3-nghi-dinh-130-nd-nghi-dinh-130-nd-1957-05-29",
+    "refer_uid": "dieu-3-nghi-dinh-130-nd-nghi-dinh-130-nd-1957-05-29",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"- Giấy chứng nhận để lĩnh tiền phải ghi nhận dang, có mẫy chữ ký của người lĩnh, có số vào sổ, dấu và chữ ký của Ủy ban Hành chính, cơ quan, xí nghiệp, trường học. Bưu điện giữ lại giấy chứng nhận khi phát tiền để làm chứng từ trả tiền.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
+    "answer": "130-NĐ"
+  },
+  {
+    "uid": "bench_2_3_id_dieu-321-luat-1002015qh13-luat-1002015qh13-2015-11-27",
+    "refer_uid": "dieu-321-luat-1002015qh13-luat-1002015qh13-2015-11-27",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Tội đánh bạc 1. Người nào đánh bạc trái phép dưới bất kỳ hình thức nào được thua bằng tiền hay hiện vật trị giá từ 5.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
+    "answer": "100/2015/QH13"
+  },
+  {
+    "uid": "bench_2_3_id_dieu-88-luat-452019qh14-luat-452019qh14-2019-11-20",
+    "refer_uid": "dieu-88-luat-452019qh14-luat-452019qh14-2019-11-20",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Khi thỏa ước lao động tập thể bị tuyên bố vô hiệu thì quyền, nghĩa vụ và lợi ích của các bên ghi tr ong thỏa ước lao động tập thể tương ứng với toàn bộ hoặc phần bị tuyên bố vô hiệu được giải quyết theo quy định của pháp luật và các thỏa thuận hợp pháp tr ong hợp đồng lao động.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
+    "answer": "45/2019/QH14"
+  },
+  {
+    "uid": "bench_2_3_date_nghi-dinh-232015nd-cp-nghi-dinh-232015nd-cp-2015-02-16",
+    "refer_uid": "nghi-dinh-232015nd-cp-nghi-dinh-232015nd-cp-2015-02-16",
+    "refer_type": "doc",
+    "question": "Văn bản pháp luật có số hiệu '23/2015/NĐ-CP' được ban hành vào ngày tháng năm nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY. (Ví dụ trả lời: 11/01/2022)",
+    "answer": "16/02/2015"
+  },
+  {
+    "uid": "bench_2_3_date_nghi-dinh-142016nd-cp-nghi-dinh-142016nd-cp-2016-03-15",
+    "refer_uid": "nghi-dinh-142016nd-cp-nghi-dinh-142016nd-cp-2016-03-15",
+    "refer_type": "doc",
+    "question": "Văn bản pháp luật có số hiệu '14/2016/NĐ-CP' được ban hành vào ngày tháng năm nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY. (Ví dụ trả lời: 11/01/2022)",
+    "answer": "15/03/2016"
+  },
+  {
+    "uid": "bench_2_3_date_nghi-dinh-94-cp-nghi-dinh-94-cp-1997-09-06",
+    "refer_uid": "nghi-dinh-94-cp-nghi-dinh-94-cp-1997-09-06",
+    "refer_type": "doc",
+    "question": "Văn bản pháp luật có số hiệu '94-CP' được ban hành vào ngày tháng năm nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY. (Ví dụ trả lời: 11/01/2022)",
+    "answer": "06/09/1997"
+  },
+  {
+    "uid": "bench_2_3_date_nghi-dinh-1101997nd-cp-nghi-dinh-1101997nd-cp-1997-11-18",
+    "refer_uid": "nghi-dinh-1101997nd-cp-nghi-dinh-1101997nd-cp-1997-11-18",
+    "refer_type": "doc",
+    "question": "Văn bản pháp luật có số hiệu '110/1997/NĐ-CP' được ban hành vào ngày tháng năm nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY. (Ví dụ trả lời: 11/01/2022)",
+    "answer": "18/11/1997"
+  },
+  {
+    "uid": "bench_2_3_date_nghi-dinh-731998nd-cp-nghi-dinh-731998nd-cp-1998-09-15",
+    "refer_uid": "nghi-dinh-731998nd-cp-nghi-dinh-731998nd-cp-1998-09-15",
+    "refer_type": "doc",
+    "question": "Văn bản pháp luật có số hiệu '73/1998/NĐ-CP' được ban hành vào ngày tháng năm nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY. (Ví dụ trả lời: 11/01/2022)",
+    "answer": "15/09/1998"
+  },
+  {
+    "uid": "bench_2_3_date_nghi-dinh-1402018nd-cp-nghi-dinh-1402018nd-cp-2018-10-08",
+    "refer_uid": "nghi-dinh-1402018nd-cp-nghi-dinh-1402018nd-cp-2018-10-08",
+    "refer_type": "doc",
+    "question": "Văn bản pháp luật có số hiệu '140/2018/NĐ-CP' được ban hành vào ngày tháng năm nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY. (Ví dụ trả lời: 11/01/2022)",
+    "answer": "08/10/2018"
+  },
+  {
+    "uid": "bench_2_3_date_nghi-dinh-832023nd-cp-nghi-dinh-832023nd-cp-2023-11-29",
+    "refer_uid": "nghi-dinh-832023nd-cp-nghi-dinh-832023nd-cp-2023-11-29",
+    "refer_type": "doc",
+    "question": "Văn bản pháp luật có số hiệu '83/2023/NĐ-CP' được ban hành vào ngày tháng năm nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY. (Ví dụ trả lời: 11/01/2022)",
+    "answer": "29/11/2023"
+  },
+  {
+    "uid": "bench_2_3_date_nghi-dinh-542019nd-cp-nghi-dinh-542019nd-cp-2019-06-19",
+    "refer_uid": "nghi-dinh-542019nd-cp-nghi-dinh-542019nd-cp-2019-06-19",
+    "refer_type": "doc",
+    "question": "Văn bản pháp luật có số hiệu '54/2019/NĐ-CP' được ban hành vào ngày tháng năm nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY. (Ví dụ trả lời: 11/01/2022)",
+    "answer": "19/06/2019"
+  },
+  {
+    "uid": "bench_2_3_date_nghi-dinh-422007nd-cp-nghi-dinh-422007nd-cp-2007-03-26",
+    "refer_uid": "nghi-dinh-422007nd-cp-nghi-dinh-422007nd-cp-2007-03-26",
+    "refer_type": "doc",
+    "question": "Văn bản pháp luật có số hiệu '42/2007/NĐ-CP' được ban hành vào ngày tháng năm nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY. (Ví dụ trả lời: 11/01/2022)",
+    "answer": "26/03/2007"
+  },
+  {
+    "uid": "bench_2_3_date_nghi-dinh-842018nd-cp-nghi-dinh-842018nd-cp-2018-05-28",
+    "refer_uid": "nghi-dinh-842018nd-cp-nghi-dinh-842018nd-cp-2018-05-28",
+    "refer_type": "doc",
+    "question": "Văn bản pháp luật có số hiệu '84/2018/NĐ-CP' được ban hành vào ngày tháng năm nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY. (Ví dụ trả lời: 11/01/2022)",
+    "answer": "28/05/2018"
+  },
+  {
+    "uid": "bench_2_3_date_nghi-dinh-712000nd-cp-nghi-dinh-712000nd-cp-2000-11-23",
+    "refer_uid": "nghi-dinh-712000nd-cp-nghi-dinh-712000nd-cp-2000-11-23",
+    "refer_type": "doc",
+    "question": "Văn bản pháp luật có số hiệu '71/2000/NĐ-CP' được ban hành vào ngày tháng năm nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY. (Ví dụ trả lời: 11/01/2022)",
+    "answer": "23/11/2000"
+  },
+  {
+    "uid": "bench_2_3_date_nghi-dinh-05nd-cp-nghi-dinh-05nd-cp-2007-04-02",
+    "refer_uid": "nghi-dinh-05nd-cp-nghi-dinh-05nd-cp-2007-04-02",
+    "refer_type": "doc",
+    "question": "Văn bản pháp luật có số hiệu '05/NĐ-CP' được ban hành vào ngày tháng năm nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY. (Ví dụ trả lời: 11/01/2022)",
+    "answer": "02/04/2007"
+  },
+  {
+    "uid": "bench_2_3_status_nghi-dinh-1042011nd-cp-nghi-dinh-1042011nd-cp-2011-11-16",
+    "refer_uid": "nghi-dinh-1042011nd-cp-nghi-dinh-1042011nd-cp-2011-11-16",
+    "refer_type": "doc",
+    "question": "Tình trạng hiệu lực hiện tại của văn bản có số hiệu '104/2011/NĐ-CP' là gì?\n\nYêu cầu: Chỉ trả về tình trạng hiệu lực. (Ví dụ trả lời: Còn hiệu lực)",
+    "answer": "Hết hiệu lực"
+  },
+  {
+    "uid": "bench_2_3_status_nghi-dinh-56-cp-nghi-dinh-56-cp-1966-03-17",
+    "refer_uid": "nghi-dinh-56-cp-nghi-dinh-56-cp-1966-03-17",
+    "refer_type": "doc",
+    "question": "Tình trạng hiệu lực hiện tại của văn bản có số hiệu '56-CP' là gì?\n\nYêu cầu: Chỉ trả về tình trạng hiệu lực. (Ví dụ trả lời: Còn hiệu lực)",
+    "answer": "Hết hiệu lực"
+  },
+  {
+    "uid": "bench_2_3_status_nghi-dinh-231999nd-cp-nghi-dinh-231999nd-cp-1999-04-15",
+    "refer_uid": "nghi-dinh-231999nd-cp-nghi-dinh-231999nd-cp-1999-04-15",
+    "refer_type": "doc",
+    "question": "Tình trạng hiệu lực hiện tại của văn bản có số hiệu '23/1999/NĐ-CP' là gì?\n\nYêu cầu: Chỉ trả về tình trạng hiệu lực. (Ví dụ trả lời: Còn hiệu lực)",
+    "answer": "Còn hiệu lực"
+  },
+  {
+    "uid": "bench_2_3_status_nghi-dinh-842004nd-cp-nghi-dinh-842004nd-cp-2004-02-21",
+    "refer_uid": "nghi-dinh-842004nd-cp-nghi-dinh-842004nd-cp-2004-02-21",
+    "refer_type": "doc",
+    "question": "Tình trạng hiệu lực hiện tại của văn bản có số hiệu '84/2004/NĐ-CP' là gì?\n\nYêu cầu: Chỉ trả về tình trạng hiệu lực. (Ví dụ trả lời: Còn hiệu lực)",
+    "answer": "Còn hiệu lực"
+  },
+  {
+    "uid": "bench_2_3_status_nghi-dinh-632019nd-cp-nghi-dinh-632019nd-cp-2019-07-11",
+    "refer_uid": "nghi-dinh-632019nd-cp-nghi-dinh-632019nd-cp-2019-07-11",
+    "refer_type": "doc",
+    "question": "Tình trạng hiệu lực hiện tại của văn bản có số hiệu '63/2019/NĐ-CP' là gì?\n\nYêu cầu: Chỉ trả về tình trạng hiệu lực. (Ví dụ trả lời: Còn hiệu lực)",
+    "answer": "Còn hiệu lực"
+  },
+  {
+    "uid": "bench_2_3_status_nghi-dinh-262009nd-cp-nghi-dinh-262009nd-cp-2009-03-16",
+    "refer_uid": "nghi-dinh-262009nd-cp-nghi-dinh-262009nd-cp-2009-03-16",
+    "refer_type": "doc",
+    "question": "Tình trạng hiệu lực hiện tại của văn bản có số hiệu '26/2009/NĐ-CP' là gì?\n\nYêu cầu: Chỉ trả về tình trạng hiệu lực. (Ví dụ trả lời: Còn hiệu lực)",
+    "answer": "Hết hiệu lực"
+  },
+  {
+    "uid": "bench_2_3_status_nghi-dinh-192004nd-cp-nghi-dinh-192004nd-cp-2004-01-10",
+    "refer_uid": "nghi-dinh-192004nd-cp-nghi-dinh-192004nd-cp-2004-01-10",
+    "refer_type": "doc",
+    "question": "Tình trạng hiệu lực hiện tại của văn bản có số hiệu '19/2004/NĐ-CP' là gì?\n\nYêu cầu: Chỉ trả về tình trạng hiệu lực. (Ví dụ trả lời: Còn hiệu lực)",
+    "answer": "Hết hiệu lực"
+  },
+  {
+    "uid": "bench_2_3_status_nghi-dinh-872008nd-cp-nghi-dinh-872008nd-cp-2008-08-04",
+    "refer_uid": "nghi-dinh-872008nd-cp-nghi-dinh-872008nd-cp-2008-08-04",
+    "refer_type": "doc",
+    "question": "Tình trạng hiệu lực hiện tại của văn bản có số hiệu '87/2008/NĐ-CP' là gì?\n\nYêu cầu: Chỉ trả về tình trạng hiệu lực. (Ví dụ trả lời: Còn hiệu lực)",
+    "answer": "Còn hiệu lực"
+  },
+  {
+    "uid": "bench_2_3_status_nghi-dinh-1232004nd-cp-nghi-dinh-1232004nd-cp-2004-05-18",
+    "refer_uid": "nghi-dinh-1232004nd-cp-nghi-dinh-1232004nd-cp-2004-05-18",
+    "refer_type": "doc",
+    "question": "Tình trạng hiệu lực hiện tại của văn bản có số hiệu '123/2004/NĐ-CP' là gì?\n\nYêu cầu: Chỉ trả về tình trạng hiệu lực. (Ví dụ trả lời: Còn hiệu lực)",
+    "answer": "Hết hiệu lực"
+  },
+  {
+    "uid": "bench_2_3_status_nghi-dinh-50-cp-nghi-dinh-50-cp-1995-07-26",
+    "refer_uid": "nghi-dinh-50-cp-nghi-dinh-50-cp-1995-07-26",
+    "refer_type": "doc",
+    "question": "Tình trạng hiệu lực hiện tại của văn bản có số hiệu '50-CP' là gì?\n\nYêu cầu: Chỉ trả về tình trạng hiệu lực. (Ví dụ trả lời: Còn hiệu lực)",
+    "answer": "Hết hiệu lực"
+  },
+  {
+    "uid": "bench_2_3_status_nghi-dinh-272010nd-cp-nghi-dinh-272010nd-cp-2010-03-24",
+    "refer_uid": "nghi-dinh-272010nd-cp-nghi-dinh-272010nd-cp-2010-03-24",
+    "refer_type": "doc",
+    "question": "Tình trạng hiệu lực hiện tại của văn bản có số hiệu '27/2010/NĐ-CP' là gì?\n\nYêu cầu: Chỉ trả về tình trạng hiệu lực. (Ví dụ trả lời: Còn hiệu lực)",
+    "answer": "Còn hiệu lực"
+  },
+  {
+    "uid": "bench_2_3_status_nghi-dinh-022017nd-cp-nghi-dinh-022017nd-cp-2017-01-09",
+    "refer_uid": "nghi-dinh-022017nd-cp-nghi-dinh-022017nd-cp-2017-01-09",
+    "refer_type": "doc",
+    "question": "Tình trạng hiệu lực hiện tại của văn bản có số hiệu '02/2017/NĐ-CP' là gì?\n\nYêu cầu: Chỉ trả về tình trạng hiệu lực. (Ví dụ trả lời: Còn hiệu lực)",
+    "answer": "Còn hiệu lực"
+  }
+]

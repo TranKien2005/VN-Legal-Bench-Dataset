@@ -2,7 +2,7 @@
 Constants cho dự án VN-Legal-Bench-Dataset.
 """
 
-# 15 nhãn vấn đề pháp lý chính kèm mô tả chi tiết
+# 15 nhãn vấn đề pháp lý chính kèm mô tả chi tiết (Chuẩn hóa theo yêu cầu người dùng)
 LEGAL_ISSUE_LABELS = [
     {
         "label": "Hôn nhân và Gia đình",
@@ -25,11 +25,11 @@ LEGAL_ISSUE_LABELS = [
         "description": "Mối quan hệ giữa người lao động và người sử dụng lao động dựa trên hợp đồng lao động."
     },
     {
-        "label": "Kinh doanh và Đầu tư",
+        "label": "Kinh doanh, đầu tư, thương mại",
         "description": "Các hoạt động nhằm mục đích sinh lợi của thương nhân và các vấn đề nội bộ công ty."
     },
     {
-        "label": "Ngân hàng, Tín dụng và Bảo hiểm",
+        "label": "Tài chính, vay nợ, tín dụng",
         "description": "Các giao dịch tài chính chuyên biệt với các tổ chức tín dụng và doanh nghiệp bảo hiểm."
     },
     {
@@ -41,19 +41,19 @@ LEGAL_ISSUE_LABELS = [
         "description": "Khai thác khoáng sản, nguồn nước và các hành vi gây ô nhiễm."
     },
     {
-        "label": "Trật tự, An toàn xã hội và Ma túy",
+        "label": "An ninh quốc gia, trật tự, An toàn xã hội và tệ nạn xã hội",
         "description": "Các hành vi gây mất an ninh công cộng, tệ nạn xã hội và tội phạm ma túy."
     },
     {
-        "label": "Xâm phạm Quyền con người",
+        "label": "Quyền con người",
         "description": "Các hành vi trực tiếp gây tổn hại đến thân thể, tính mạng, danh dự và nhân phẩm."
     },
     {
-        "label": "Xâm phạm Quyền sở hữu tài sản",
+        "label": "Quyền sở hữu tài sản",
         "description": "Các hành vi chiếm đoạt, hủy hoại tài sản của người khác ngoài phạm vi hợp đồng (trộm, cướp, lừa đảo chiếm đoạt tài sản)."
     },
     {
-        "label": "Hành chính và Quản lý nhà nước",
+        "label": "Hành chính, dịch vụ công, an sinh",
         "description": "Khiếu nại, khởi kiện các quyết định hoặc hành vi hành chính của cơ quan nhà nước."
     },
     {
@@ -62,7 +62,7 @@ LEGAL_ISSUE_LABELS = [
     },
     {
         "label": "Các vấn đề pháp lý khác",
-        "description": "Các vấn đề hỗn hợp hoặc thuộc các lĩnh vực đặc thù khác không nằm trong 14 nhóm trên."
+        "description": "Hỗn hợp hoặc các lĩnh vực đặc thù khác không nằm trong 14 nhóm trên."
     }
 ]
 
@@ -85,7 +85,7 @@ CASE_SECTION_KEYWORDS = {
     "decision": "QUYẾT ĐỊNH",
 }
 
-# 6 loại vai trò lập luận (Task 5.1)
+# 5 loại vai trò lập luận (Dành cho các task phân tích lập luận)
 ARGUMENT_ROLES = [
     "Tóm tắt sự việc",
     "Dẫn chiếu căn cứ",

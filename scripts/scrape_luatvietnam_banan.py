@@ -19,12 +19,16 @@ from scrapers.luatvietnam_engine import LuatVietnamEngine
 def slugify(text):
     """Bỏ dấu tiếng Việt và thay khoảng trắng bằng gạch dưới."""
     import unicodedata
+    if not text: return "empty"
     text = unicodedata.normalize('NFKD', text).encode('ascii', 'ignore').decode('utf-8')
     text = re.sub(r'[^\w\s-]', '', text).strip().lower()
     return re.sub(r'[-\s]+', '_', text)
 
-def run_topic_mode(engine, topics_file, target_per_topic=10):
-    """Chạy cào dữ liệu theo chủ đề và từ khóa với quota."""
+def run_unified_scraper(engine, topics_file, total_target=300):
+    """
+    Chạy cào dữ liệu hợp nhất: Chia đều cho 14 topic từ file + 1 topic Discovery.
+    Không lấy bù quota, không giới hạn số trang.
+    """
     if not Path(topics_file).exists():
         print(f"[LỖI] Không tìm thấy file cấu hình: {topics_file}")
         return
@@ -33,8 +37,20 @@ def run_topic_mode(engine, topics_file, target_per_topic=10):
         data = json.load(f)
     
     topics = data.get("topics", [])
-    print(f"=== CHẾ ĐỘ CÀO THEO CHỦ ĐỀ: {len(topics)} chủ đề, mục tiêu {target_per_topic} bản án/chủ đề ===")
     
+    # Thêm topic thứ 15: Discovery (Không keyword)
+    topics.append({
+        "id": "DISCOVERY",
+        "name": "Khám phá ngẫu nhiên",
+        "keywords": [""] # Keyword rỗng để lấy bản án mới nhất
+    })
+
+    num_topics = len(topics)
+    target_per_topic = total_target // num_topics
+    
+    print(f"=== CHẾ ĐỘ CÀO HỢP NHẤT: {num_topics} chủ đề, mục tiêu {target_per_topic} bản án/chủ đề ===")
+    print(f"=== Tổng mục tiêu: ~{num_topics * target_per_topic} bản án ===")
+
     for topic in topics:
         topic_name = topic["name"]
         topic_id = topic["id"]
@@ -43,68 +59,86 @@ def run_topic_mode(engine, topics_file, target_per_topic=10):
         print(f"\n>>> XỬ LÝ CHỦ ĐỀ: {topic_name} (ID: {topic_id})")
         
         topic_count = 0
-        keyword_targets = {}
+        # Chia đều target của topic cho các keyword bên trong
+        target_per_kw = target_per_topic // len(keywords)
         
-        # Chia đều target cho các keyword ban đầu
-        base_target = target_per_topic // len(keywords)
-        remainder = target_per_topic % len(keywords)
-        
-        for i, kw in enumerate(keywords):
-            keyword_targets[kw] = base_target + (1 if i < remainder else 0)
-
         for kw in keywords:
             if topic_count >= target_per_topic:
                 break
                 
-            current_target = keyword_targets[kw]
-            if current_target <= 0:
-                continue
-                
-            print(f"  [*] Từ khóa: '{kw}' (Mục tiêu cho từ khóa: {current_target})")
+            print(f"  [*] Từ khóa: '{kw if kw else '[TRỐNG]'}' (Mục tiêu: {target_per_kw})")
             kw_results = []
             page = 1
+            consecutive_empty_pages = 0
             
-            while len(kw_results) < current_target:
+            # Vòng lặp cho đến khi đủ số lượng hoặc hết kết quả/bị kẹt
+            while len(kw_results) < target_per_kw:
                 params = {
                     "SearchKeyword": kw,
-                    "DateFrom": "", # Không giới hạn thời gian
-                    "DateTo": "",
-                    "JudicialLevelId": "1", # Mặc định sơ thẩm
+                    "JudicialLevelId": "1",
                     "LawJudgTypeId": "1",
                     "Page": page
                 }
                 
                 search_results = engine.scrape_search_page(params)
                 if not search_results:
-                    print(f"    [!] Hết kết quả cho từ khóa '{kw}' tại trang {page}.")
+                    print(f"    [!] Hết kết quả trên web tại trang {page}.")
                     break
                 
-                # Lọc tiêu đề chứa keyword (không phân biệt hoa thường)
+                # LỌC MỜ TRÊN TIÊU ĐỀ (Độ tương đồng >= 70%)
                 filtered_results = []
                 for res in search_results:
-                    if kw.lower() in res["title"].lower():
+                    if not kw:
                         filtered_results.append(res)
-                    else:
-                        # Log nhẹ để biết đang lọc
-                        pass
+                        continue
+                        
+                    title_words = set(res["title"].lower().split())
+                    kw_words = set(kw.lower().split())
+                    
+                    # Tính tỷ lệ từ trùng lặp
+                    overlap = kw_words.intersection(title_words)
+                    similarity = len(overlap) / len(kw_words) if kw_words else 1.0
+                    
+                    if similarity >= 0.7:
+                        filtered_results.append(res)
+                
+                if not filtered_results:
+                    print(f"    [!] Không có kết quả phù hợp tiêu đề tại trang {page}. Thử trang tiếp theo.")
+                    consecutive_empty_pages += 1
+                    if consecutive_empty_pages >= 10:
+                        print(f"    [!] Đã 10 trang liên tiếp không thấy kết quả phù hợp tiêu đề. Bỏ qua từ khóa '{kw}'.")
+                        break
+                    page += 1
+                    continue
 
                 # Tải trang chi tiết song song
+                found_in_page = 0
                 from concurrent.futures import ThreadPoolExecutor
                 with ThreadPoolExecutor(max_workers=engine.num_workers) as executor:
                     futures = [executor.submit(engine.scrape_detail_page, res["url"]) for res in filtered_results]
                     for future in futures:
-                        if len(kw_results) >= current_target:
+                        if len(kw_results) >= target_per_kw:
                             break
                         doc = future.result()
                         if doc:
                             kw_results.append(doc)
                             topic_count += 1
+                            found_in_page += 1
                 
+                if found_in_page > 0:
+                    consecutive_empty_pages = 0 # Reset nếu tìm thấy
+                else:
+                    consecutive_empty_pages += 1
+                    if consecutive_empty_pages >= 10:
+                        print(f"    [!] Đã 10 trang liên tiếp không tải được bản án đạt chuẩn (>1000 ký tự). Bỏ qua từ khóa '{kw}'.")
+                        break
+
+                print(f"    [+] Trang {page}: Đã lấy được {len(kw_results)}/{target_per_kw}")
                 page += 1
-                if page > 15: # Giới hạn trang tối đa cho 1 keyword
-                    break
+                # Nghỉ nhẹ giữa các trang để tránh bị block
+                time.sleep(random.uniform(1, 3))
             
-            # Lưu kết quả theo từ khóa
+            # Lưu kết quả của từ khóa này
             if kw_results:
                 kw_slug = slugify(kw)
                 filename = f"luatvietnam_{topic_id}_{kw_slug}____.json"
@@ -113,50 +147,22 @@ def run_topic_mode(engine, topics_file, target_per_topic=10):
                     json.dump(kw_results, f, ensure_ascii=False, indent=2)
                 print(f"    [OK] Đã lưu {len(kw_results)} bản án vào {filename}")
             
-            # Nếu không đủ quota, chuyển phần dư sang keyword tiếp theo trong cùng chủ đề
-            if len(kw_results) < current_target:
-                deficit = current_target - len(kw_results)
-                idx = keywords.index(kw)
-                if idx + 1 < len(keywords):
-                    keyword_targets[keywords[idx+1]] += deficit
-                    print(f"    [!] Chuyển {deficit} chỉ tiêu còn thiếu sang từ khóa tiếp theo.")
+            # KHÔNG lấy bù quota (Yêu cầu của USER)
 
-        print(f">>> Hoàn tất chủ đề {topic_name}: Tổng cộng {topic_count}/{target_per_topic} bản án.")
+        print(f">>> Hoàn tất chủ đề {topic_name}: Tổng cộng {topic_count} bản án.")
 
 def main():
-    parser = argparse.ArgumentParser(description="Scraper bản án từ LuatVietnam.vn")
-    # Chế độ cũ
-    parser.add_argument("--pages", type=int, default=1, help="Số lượng trang cần cào (chế độ thường)")
-    parser.add_argument("--start", type=int, default=1, help="Trang bắt đầu (chế độ thường)")
-    parser.add_argument("--keyword", type=str, default="", help="Từ khóa tìm kiếm (chế độ thường)")
-    
-    # Chế độ theo chủ đề (Mới)
-    parser.add_argument("--topic_mode", action="store_false", dest="topic_mode", help="Tắt cào theo chủ đề (chuyển sang chế độ thường)")
-    parser.add_argument("--topics_file", type=str, default="config/search_topics.json", help="Đường dẫn file topics")
-    parser.add_argument("--quota", type=int, default=20, help="Số lượng bản án mục tiêu cho mỗi chủ đề")
-    parser.set_defaults(topic_mode=True)
-    
-    # Cấu hình chung
-    parser.add_argument("--workers", type=int, default=1, help="Số lượng worker")
-    parser.add_argument("--date_from", type=str, default="", help="Ngày bắt đầu (dd/mm/yyyy)")
-    parser.add_argument("--date_to", type=str, default="", help="Ngày kết thúc (dd/mm/yyyy)")
+    parser = argparse.ArgumentParser(description="Scraper bản án hợp nhất từ LuatVietnam.vn")
+    parser.add_argument("--total_quota", type=int, default=300, help="Tổng số lượng bản án mục tiêu (chia đều cho 15 nhóm)")
+    parser.add_argument("--topics_file", type=str, default="config/search_topics.json", help="Đường dẫn file cấu hình 14 topics")
+    parser.add_argument("--workers", type=int, default=3, help="Số lượng worker chạy song song")
     
     args = parser.parse_args()
 
     engine = LuatVietnamEngine(num_workers=args.workers)
-
-    if args.topic_mode:
-        run_topic_mode(engine, args.topics_file, target_per_topic=args.quota)
-    else:
-        print(f"=== CHẾ ĐỘ CÀO THÔNG THƯỜNG ===")
-        custom_params = {
-            "SearchKeyword": args.keyword,
-            "DateFrom": args.date_from,
-            "DateTo": args.date_to,
-            "JudicialLevelId": "1",
-            "LawJudgTypeId": "1"
-        }
-        engine.run(max_pages=args.pages, start_page=args.start, custom_params=custom_params)
+    
+    # Chạy quy trình hợp nhất
+    run_unified_scraper(engine, args.topics_file, total_target=args.total_quota)
 
 if __name__ == "__main__":
     main()

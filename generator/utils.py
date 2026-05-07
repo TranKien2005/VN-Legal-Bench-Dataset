@@ -10,13 +10,18 @@ def normalize_legal_text(text: str) -> str:
     """
     if not text:
         return ""
-    # Thay thế xuống dòng bằng khoảng trắng
+    
+    # 1. Loại bỏ các ký hiệu đầu mục dạng 1., a., i., - (Thực hiện khi còn xuống dòng)
+    text = re.sub(r'^\s*([0-9]+|[a-z]+|[ivxldm]+)[\.\)]\s*', ' ', text, flags=re.MULTILINE | re.IGNORECASE)
+    text = re.sub(r'^\s*-\s*', ' ', text, flags=re.MULTILINE)
+
+    # 2. Thay thế xuống dòng bằng khoảng trắng
     text = text.replace('\n', ' ')
-    # Loại bỏ các ký hiệu đầu mục dạng 1., a., i., - 
-    text = re.sub(r'^\s*([0-9]+|[a-z]+)\.?\s*', ' ', text, flags=re.MULTILINE)
-    # Loại bỏ mọi dấu câu
+    
+    # 3. Loại bỏ mọi dấu câu
     text = re.sub(r'[^\w\s]', '', text)
-    # Loại bỏ khoảng trắng thừa
+    
+    # 4. Loại bỏ khoảng trắng thừa
     text = " ".join(text.split())
     return text.strip()
 

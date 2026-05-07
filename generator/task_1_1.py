@@ -41,32 +41,40 @@ def _match_label_exact(answer: str) -> str:
             return label
     return "Các vấn đề pháp lý khác"
 
-def generate_task_1_1(limit=50):
+import argparse
+
+def generate_task_1_1(limit=50, use_all=False):
     """
     Task 1.1 — General Legal Issue Classification
-    Mục tiêu: Phân loại tình huống pháp lý vào 1 trong 15 nhãn.
-    
-    Ground truth: LLM đọc metadata bản án (title + legal_relation + case_type) → sinh nhãn.
-    Câu hỏi: Cung cấp section_content + danh sách 15 nhãn → yêu cầu chọn nhãn.
     """
-    print(f"Starting Task 1.1 Generation (Limit: {limit})...")
+    print(f"Starting Task 1.1 Generation (Use All: {use_all}, Limit: {limit})...")
     session = SessionLocal()
     llm = LLMClient()
 
-    cases = session.query(CourtCase).filter(
+    query = session.query(CourtCase).filter(
         CourtCase.section_content != None
-    ).order_by(func.random()).limit(limit).all()
+    )
 
+    if use_all:
+        print("Mode: ALL — Processing all cases sequentially")
+        cases = query.order_by(CourtCase.uid.asc()).all()
+    else:
+        cases = query.order_by(func.random()).limit(limit).all()
+
+    print(f"Found {len(cases)} candidate cases")
     benchmark_data = []
 
     for i, case in enumerate(cases):
-        print(f"[{i+1}/{len(cases)}] Processing: {case.uid}")
+        if not use_all and len(benchmark_data) >= limit:
+            break
+            
+        print(f"[{i+1}/{'ALL' if use_all else len(cases)}] Processing: {case.uid}")
 
-        # Ưu tiên title_parsed > title_web. Nếu không có cả hai -> Bỏ qua.
         case_title = case.title_parsed or case.title_web
-        if not case_title:
-            print(f"  -> Skipped: No title info")
+        if not case_title or not case.section_content:
+            print(f"  -> Skipped: Missing title or content")
             continue
+# ... (giữ nguyên phần logic tạo câu hỏi bên dưới)
 
         # GROUND TRUTH: gửi metadata ngắn gọn — tiết kiệm token
         metadata_context = (
@@ -103,7 +111,7 @@ def generate_task_1_1(limit=50):
             "answer": final_answer
         })
 
-    output_dir = Path("data/benchmark")
+    output_dir = Path("data/benchmark/issue_spotting")
     output_dir.mkdir(parents=True, exist_ok=True)
     output_file = output_dir / "task_1_1.json"
 
@@ -114,4 +122,9 @@ def generate_task_1_1(limit=50):
     print(f"Task 1.1 Complete. {len(benchmark_data)} samples saved to {output_file}")
 
 if __name__ == "__main__":
-    generate_task_1_1(limit=20)
+    parser = argparse.ArgumentParser(description="Sinh Benchmark cho Task 1.1")
+    parser.add_argument("--limit", type=int, default=20, help="Số lượng mẫu tối đa (nếu không dùng --all)")
+    parser.add_argument("--all", action="store_true", help="Xử lý toàn bộ dữ liệu tuần tự")
+    
+    args = parser.parse_args()
+    generate_task_1_1(limit=args.limit, use_all=args.all)

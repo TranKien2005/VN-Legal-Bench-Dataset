@@ -108,6 +108,12 @@ class LuatVietnamEngine:
                         key = cells[0].get_text(strip=True).replace(':', '')
                         val = cells[1].get_text(separator=' ', strip=True)
                         doc_record["metadata"][key] = val
+
+            # Hậu kiểm: Đảm bảo chỉ lấy bản án Sơ thẩm
+            judicial_level = doc_record["metadata"].get("Cấp xét xử", "")
+            if judicial_level and "Sơ thẩm" not in judicial_level:
+                print(f"  [!] Bỏ qua bản án: Cấp xét xử là '{judicial_level}', không phải Sơ thẩm.")
+                return None
             
             # 2. Lấy Tóm tắt (Tóm tắt Bản án)
             import re

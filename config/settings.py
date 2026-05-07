@@ -27,6 +27,7 @@ class Settings(BaseSettings):
     GEMINI_API_KEY: str = ""
     NINEROUTER_API_KEY: str = ""
     NINEROUTER_BASE_URL: str = "http://localhost:20128/v1"
+    LLM_MODEL: str = "llama3" # Model mặc định
 
     # Paths
     DATA_DIR: Path = BASE_DIR / "data"

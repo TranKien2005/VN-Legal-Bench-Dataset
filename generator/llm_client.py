@@ -3,7 +3,7 @@ from openai import OpenAI
 from config.settings import settings
 
 class LLMClient:
-    def __init__(self, model: str = "llama3"):
+    def __init__(self, model: str = None):
         self.api_key = settings.NINEROUTER_API_KEY
         self.base_url = settings.NINEROUTER_BASE_URL
         
@@ -15,7 +15,7 @@ class LLMClient:
             api_key=self.api_key,
             base_url=self.base_url
         )
-        self.model = model
+        self.model = model or settings.LLM_MODEL
 
     def generate(self, prompt: str, system_prompt: str = "You are a helpful legal assistant expert in Vietnamese law.") -> str:
         try:

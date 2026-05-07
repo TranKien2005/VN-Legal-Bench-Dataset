@@ -41,19 +41,36 @@ Bảng legal_articles:
 def query_docs(session, title_keywords=None, doc_type=None, year=None, limit=50):
     """Truy vấn legal_docs theo keyword / type / year. Trả về list LegalDoc."""
     q = session.query(LegalDoc)
-    if title_keywords:
-        for kw in title_keywords:
-            kw = kw.strip()
-            if kw:
-                q = q.filter(LegalDoc.title.ilike(f'%{kw}%'))
+    
     if doc_type:
         q = q.filter(LegalDoc.doc_type == doc_type)
+    
     if year:
         try:
             q = q.filter(sql_extract('year', LegalDoc.issue_date) == int(year))
         except Exception:
             pass
-    return q.limit(limit).all()
+
+    if title_keywords:
+        # Lọc bỏ các từ khóa quá ngắn hoặc chung chung
+        clean_kws = [kw.strip() for kw in title_keywords if len(kw.strip()) > 1]
+        for kw in clean_kws:
+            q = q.filter(LegalDoc.title.ilike(f'%{kw}%'))
+            
+    results = q.limit(limit).all()
+    
+    # Nếu không tìm thấy gì bằng AND, thử tìm lỏng hơn (chỉ lấy keywords quan trọng nhất)
+    if not results and title_keywords:
+        q_backup = session.query(LegalDoc)
+        if doc_type: q_backup = q_backup.filter(LegalDoc.doc_type == doc_type)
+        if year: q_backup = q_backup.filter(sql_extract('year', LegalDoc.issue_date) == int(year))
+        
+        # Thử lấy keyword đầu tiên (thường là tên chính của luật)
+        if clean_kws:
+            q_backup = q_backup.filter(LegalDoc.title.ilike(f'%{clean_kws[0]}%'))
+            results = q_backup.limit(limit).all()
+
+    return results
 
 
 def format_candidates(docs):

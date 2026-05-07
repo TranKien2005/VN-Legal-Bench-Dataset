@@ -12,10 +12,10 @@ from generator.llm_client import LLMClient
 from generator.db_search_agent import find_doc_agentic, get_neighbor_articles
 from generator.utils import get_stratified_articles
 
-# Prompt để LLM extract thông tin từ nội dung điều sửa đổi
 EXTRACT_PROMPT = """Đọc nội dung điều khoản sửa đổi bổ sung dưới đây.
 Hãy xác định:
-1. Điều khoản nào trong văn bản gốc đang bị sửa đổi (số điều trong văn bản gốc)?
+1. Điều khoản nào trong văn bản gốc đang bị sửa đổi (CHỈ TRẢ VỀ SỐ, ví dụ: 12, 33a)? 
+   Nếu sửa nhiều điều, chỉ lấy điều đầu tiên trong danh sách.
 2. Văn bản gốc là gì (tên và năm ban hành)?
 
 Nội dung điều khoản sửa đổi:
@@ -23,7 +23,7 @@ Nội dung điều khoản sửa đổi:
 
 Trả về JSON (không thêm gì khác):
 {{"original_article_number": "12", "search_hint": "Luật Doanh nghiệp 2014", "title_keywords": ["Doanh nghiệp"], "doc_type": "Luật", "year": 2014}}
-(year, doc_type có thể null nếu không rõ. Nếu không tìm thấy điều gốc nào rõ ràng, trả về null)"""
+(year, doc_type có thể null nếu không rõ. original_article_number chỉ chứa số/ký tự số, KHÔNG chứa chữ 'Điều')"""
 
 
 def generate_task_2_4(limit=50):
@@ -88,6 +88,11 @@ def generate_task_2_4(limit=50):
             continue
 
         original_article_number = str(info["original_article_number"]).strip()
+        # Clean: remove 'Điều', 'điều' and take the first one if it's a list
+        original_article_number = original_article_number.replace("Điều", "").replace("điều", "").strip()
+        if "," in original_article_number:
+            original_article_number = original_article_number.split(",")[0].strip()
+        
         search_hint = info.get("search_hint", "")
 
         # ── Bước 2: Agentic search tìm văn bản gốc ──
@@ -115,7 +120,7 @@ def generate_task_2_4(limit=50):
             session.query(LegalArticle)
             .filter(
                 LegalArticle.doc_uid == original_doc["uid"],
-                LegalArticle.article_number == original_article_number
+                func.lower(LegalArticle.article_number) == original_article_number.lower()
             )
             .first()
         )
@@ -167,7 +172,7 @@ def generate_task_2_4(limit=50):
               f"A: Điều {article.article_number} of {amend_doc.doc_id}")
 
     # Lưu kết quả
-    output_dir = Path("data/benchmark")
+    output_dir = Path("data/benchmark/rule_recall")
     output_dir.mkdir(parents=True, exist_ok=True)
     output_file = output_dir / "task_2_4.json"
 
@@ -179,4 +184,4 @@ def generate_task_2_4(limit=50):
 
 
 if __name__ == "__main__":
-    generate_task_2_4(limit=5)
+    generate_task_2_4(limit=50)
