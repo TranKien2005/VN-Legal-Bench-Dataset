@@ -9,6 +9,7 @@ from db.session import SessionLocal
 from db.models import LegalArticle, LegalDoc
 from sqlalchemy.sql import func
 from generator.llm_client import LLMClient
+from generator.utils import filter_core_articles
 
 # Phân bổ tỷ lệ loại văn bản
 DOC_TYPE_RATIOS = {
@@ -53,7 +54,8 @@ def _fetch_batch(session, doc_type: str, batch_size: int, exclude_ids: set) -> l
             LegalDoc.doc_type == doc_type,
             ~LegalArticle.article_id.in_(exclude_ids)
         )
-    return query.order_by(func.random()).limit(batch_size).all()
+    candidates = query.order_by(func.random()).limit(max(batch_size * 20, 100)).all()
+    return filter_core_articles(session, candidates)[:batch_size]
 
 def generate_task_2_1(limit=50):
     """
@@ -179,4 +181,4 @@ def generate_task_2_1(limit=50):
     print(f"Final counts: {counts}")
 
 if __name__ == "__main__":
-    generate_task_2_1(limit=50)
+    generate_task_2_1(limit=100)

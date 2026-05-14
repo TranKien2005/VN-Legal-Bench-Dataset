@@ -8,7 +8,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from db.session import SessionLocal
 from db.models import LegalArticle, LegalDoc
-from generator.utils import get_stratified_articles, normalize_legal_text
+from generator.utils import get_stratified_articles, normalize_legal_text, filter_core_articles
 
 # Hướng dẫn trả lời cố định nhúng vào câu hỏi
 ANSWER_INSTRUCTION = (
@@ -35,11 +35,12 @@ def generate_task_2_2(limit=50, use_all=False):
         for doc in docs:
             # Lấy toàn bộ điều của văn bản này
             doc_articles = session.query(LegalArticle).filter(LegalArticle.doc_uid == doc.uid).order_by(LegalArticle.article_number).all()
+            doc_articles = filter_core_articles(session, doc_articles)
             if not doc_articles:
                 continue
-            
-            # Quy tắc: >= 10 điều lấy 5 ngẫu nhiên, < 10 điều lấy 1 ngẫu nhiên
-            num_to_take = 5 if len(doc_articles) >= 10 else 1
+
+            # Quy tắc: văn bản còn đủ điều lõi thì lấy tối đa 5 điều ngẫu nhiên
+            num_to_take = min(5, len(doc_articles))
             selected = random.sample(doc_articles, num_to_take)
             articles_to_process.extend(selected)
     else:

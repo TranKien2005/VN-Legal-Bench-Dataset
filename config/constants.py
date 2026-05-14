@@ -6,11 +6,11 @@ Constants cho dự án VN-Legal-Bench-Dataset.
 LEGAL_ISSUE_LABELS = [
     {
         "label": "Hôn nhân và Gia đình",
-        "description": "Điều chỉnh các quan hệ nhân thân và tài sản giữa các thành viên trong gia đình (vợ chồng, cha mẹ con cái, ông bà cháu)."
+        "description": "Ly hôn, kết hôn, quan hệ vợ chồng, cha mẹ con, nuôi con, cấp dưỡng, giám hộ, chia tài sản chung vợ chồng và các quyền, nghĩa vụ phát sinh trong gia đình."
     },
     {
         "label": "Giao thông và Vận tải",
-        "description": "Các quy tắc di chuyển trên đường bộ, đường thủy, đường hàng không và chế tài khi vi phạm."
+        "description": "Vi phạm quy tắc giao thông, tai nạn giao thông, điều kiện điều khiển phương tiện, vận tải đường bộ, đường thủy, hàng không và trách nhiệm phát sinh từ hoạt động giao thông vận tải."
     },
     {
         "label": "Thuế, Phí và Lệ phí",
@@ -18,7 +18,7 @@ LEGAL_ISSUE_LABELS = [
     },
     {
         "label": "Đất đai và Nhà ở",
-        "description": "Quyền quản lý, sử dụng đất, sở hữu nhà ở và các giao dịch liên quan đến bất động sản."
+        "description": "Quyền sử dụng đất, quyền sở hữu nhà ở, cấp hoặc hủy giấy chứng nhận, ranh giới đất, thu hồi đất, bồi thường hỗ trợ tái định cư, chuyển nhượng/tặng cho/thừa kế nhà đất khi trọng tâm là quyền về đất hoặc nhà ở."
     },
     {
         "label": "Lao động và Bảo hiểm xã hội",
@@ -34,35 +34,35 @@ LEGAL_ISSUE_LABELS = [
     },
     {
         "label": "Sở hữu trí tuệ",
-        "description": "Bảo hộ các sản phẩm của trí tuệ con người (logo, sáng chế, tác phẩm nghệ thuật)."
+        "description": "Quyền tác giả, quyền liên quan, nhãn hiệu, sáng chế, kiểu dáng công nghiệp, bí mật kinh doanh, chuyển giao quyền sở hữu trí tuệ và hành vi xâm phạm quyền sở hữu trí tuệ."
     },
     {
         "label": "Môi trường và Tài nguyên",
-        "description": "Khai thác khoáng sản, nguồn nước và các hành vi gây ô nhiễm."
+        "description": "Bảo vệ môi trường, khai thác khoáng sản, nguồn nước, rừng, lâm sản, thủy sản, tài nguyên thiên nhiên và các hành vi gây ô nhiễm hoặc khai thác tài nguyên trái phép."
     },
     {
-        "label": "An ninh quốc gia, trật tự, An toàn xã hội và tệ nạn xã hội",
-        "description": "Các hành vi gây mất an ninh công cộng, tệ nạn xã hội và tội phạm ma túy."
+        "label": "Trật tự, An toàn xã hội và Ma túy",
+        "description": "Ma túy, gây rối trật tự công cộng, đánh bạc, mại dâm, vũ khí vật liệu nổ, phòng cháy chữa cháy và các hành vi xâm phạm trật tự, an toàn công cộng."
     },
     {
-        "label": "Quyền con người",
-        "description": "Các hành vi trực tiếp gây tổn hại đến thân thể, tính mạng, danh dự và nhân phẩm."
+        "label": "Xâm phạm tính mạng, sức khỏe, danh dự, nhân phẩm",
+        "description": "Giết người, cố ý gây thương tích, vô ý làm chết người, làm nhục, vu khống, xâm hại tình dục, bắt giữ người trái pháp luật và các hành vi xâm phạm quyền nhân thân."
     },
     {
-        "label": "Quyền sở hữu tài sản",
-        "description": "Các hành vi chiếm đoạt, hủy hoại tài sản của người khác ngoài phạm vi hợp đồng (trộm, cướp, lừa đảo chiếm đoạt tài sản)."
+        "label": "Xâm phạm sở hữu tài sản",
+        "description": "Trộm cắp, cướp, cướp giật, cưỡng đoạt, lừa đảo chiếm đoạt, lạm dụng tín nhiệm chiếm đoạt, hủy hoại hoặc cố ý làm hư hỏng tài sản ngoài phạm vi tranh chấp hợp đồng dân sự."
     },
     {
-        "label": "Hành chính, dịch vụ công, an sinh",
-        "description": "Khiếu nại, khởi kiện các quyết định hoặc hành vi hành chính của cơ quan nhà nước."
+        "label": "Hành chính và Quản lý nhà nước",
+        "description": "Khiếu kiện quyết định hoặc hành vi hành chính, xử phạt vi phạm hành chính, quản lý nhà nước, hộ tịch, cư trú, công chức, chính sách công và các biện pháp hành chính của cơ quan nhà nước."
     },
     {
-        "label": "Tư pháp và Tố tụng",
-        "description": "Các quy định về cách thức nộp đơn, thời hạn khởi kiện, thẩm quyền của tòa án và thi hành án."
+        "label": "Tư pháp, Tố tụng và Thi hành án",
+        "description": "Thẩm quyền, thời hiệu, trình tự thủ tục tố tụng, chứng cứ, án phí, kháng cáo, giám đốc thẩm, trọng tài, công chứng, thi hành án và các vấn đề mà trọng tâm là thủ tục giải quyết hoặc thi hành bản án; không chọn chỉ vì bản án có thông tin tố tụng thông thường."
     },
     {
-        "label": "Các vấn đề pháp lý khác",
-        "description": "Hỗn hợp hoặc các lĩnh vực đặc thù khác không nằm trong 14 nhóm trên."
+        "label": "Dân sự, Hợp đồng và Nghĩa vụ",
+        "description": "Giao dịch dân sự, hợp đồng đặt cọc, mua bán, vay mượn dân sự, thuê, mượn, gửi giữ, dịch vụ, bồi thường thiệt hại, giao dịch vô hiệu, đòi tài sản, thừa kế và nghĩa vụ dân sự không thuộc nhóm đất đai, tín dụng, lao động hoặc thương mại chuyên biệt."
     }
 ]
 

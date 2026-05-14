@@ -19,7 +19,7 @@ class LegalDoc(Base):
     __tablename__ = "legal_docs"
 
     # UID tổng hợp: slugify(doc_id + title + issue_date)
-    uid: Mapped[str] = mapped_column(String(150), primary_key=True)
+    uid: Mapped[str] = mapped_column(String(500), primary_key=True)
     
     # Số hiệu gốc (có thể trùng lặp cho văn bản cũ)
     doc_id: Mapped[str] = mapped_column(String(100), index=True)
@@ -30,13 +30,18 @@ class LegalDoc(Base):
     
     # Cơ quan ban hành: "Quốc hội", "Chính phủ",...
     issuing_body: Mapped[str | None] = mapped_column(String(100), nullable=True)
-    
+    legal_field: Mapped[str | None] = mapped_column(String(255), nullable=True)
+    is_amendment: Mapped[bool] = mapped_column(default=False)
+    signer: Mapped[str | None] = mapped_column(String(255), nullable=True)
+
     issue_date: Mapped[date | None] = mapped_column(Date, nullable=True)
     effective_date: Mapped[date | None] = mapped_column(Date, nullable=True)
-    
+
     # Trạng thái: "Có", "Không", "Không xác định"
     status: Mapped[str | None] = mapped_column(String(50), nullable=True)
-    
+    summary: Mapped[str | None] = mapped_column(Text, nullable=True)
+    download_links: Mapped[list[dict] | None] = mapped_column(JSON, nullable=True)
+
     url: Mapped[str | None] = mapped_column(String(255), nullable=True)
     raw_text: Mapped[str | None] = mapped_column(Text, nullable=True)          # Full text backup
     
@@ -54,9 +59,9 @@ class LegalArticle(Base):
     __tablename__ = "legal_articles"
 
     # VD: "uid_D2"
-    article_id: Mapped[str] = mapped_column(String(200), primary_key=True)
+    article_id: Mapped[str] = mapped_column(String(700), primary_key=True)
     doc_uid: Mapped[str] = mapped_column(
-        String(150), ForeignKey("legal_docs.uid"), index=True
+        String(500), ForeignKey("legal_docs.uid"), index=True
     )
     article_number: Mapped[str] = mapped_column(String(20))  # "2", "33a"
     title: Mapped[str | None] = mapped_column(Text)           # Tên điều (nếu có)
@@ -97,7 +102,6 @@ class CourtCase(Base):
     # Thành phần chuyên sâu
     summary: Mapped[str | None] = mapped_column(Text)
     legal_bases: Mapped[str | None] = mapped_column(Text)      # Các căn cứ pháp lý trích dẫn
-    decision_items: Mapped[list[str] | None] = mapped_column(JSON) # Danh sách quyết định chi tiết
     raw_text: Mapped[str | None] = mapped_column(Text)         # Full text backup
     
     # 4 phần chính (đã tách)

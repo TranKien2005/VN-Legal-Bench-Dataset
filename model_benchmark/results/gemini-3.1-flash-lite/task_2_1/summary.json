@@ -1,0 +1,10 @@
+{
+  "model": "gemini-3.1-flash-lite",
+  "task_id": "task_2_1",
+  "num_samples": 50,
+  "accuracy": 0.02,
+  "created_at": "2026-05-14T18:03:32",
+  "avg_token_f1": 0.521,
+  "avg_char_similarity": 0.4379,
+  "avg_length_ratio": 0.6977
+}

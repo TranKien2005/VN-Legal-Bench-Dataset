@@ -1,0 +1,1002 @@
+[
+  {
+    "uid": "bench_2_6_dieu-9-nghi-dinh-932022nd-cp-nghi-dinh-932022nd-cp-quan-ly-bao-dam-antt-tai-cua-khau-duong-hang-khong-unknown",
+    "refer_uid": "dieu-9-nghi-dinh-932022nd-cp-nghi-dinh-932022nd-cp-quan-ly-bao-dam-antt-tai-cua-khau-duong-hang-khong-unknown",
+    "refer_type": "article",
+    "legal_field": "Giao thông, An ninh trật tự, Hàng không",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Giao thông, An ninh trật tự, Hàng không'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 6 61/2026/NĐ-CP",
+      "Điều 6 358-HĐBT",
+      "Điều 9 93/2022/NĐ-CP",
+      "Điều 44 131/2025/NĐ-CP"
+    ],
+    "answer": "Điều 9 93/2022/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "D",
+    "raw_model_output": "D",
+    "latency_sec": 3.0728,
+    "evaluated_at": "2026-05-14T17:50:55"
+  },
+  {
+    "uid": "bench_2_6_dieu-27-nghi-dinh-322019nd-cp-nghi-dinh-322019nd-cp-dau-thau-cung-cap-san-pham-dich-vu-cong-unknown",
+    "refer_uid": "dieu-27-nghi-dinh-322019nd-cp-nghi-dinh-322019nd-cp-dau-thau-cung-cap-san-pham-dich-vu-cong-unknown",
+    "refer_type": "article",
+    "legal_field": "Tài chính-Ngân hàng, Đấu thầu-Cạnh tranh",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Tài chính-Ngân hàng, Đấu thầu-Cạnh tranh'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 19 38/2014/NĐ-CP",
+      "Điều 27 32/2019/NĐ-CP",
+      "Điều 25 137/2013/NĐ-CP",
+      "Điều 8 264/2025/NĐ-CP"
+    ],
+    "answer": "Điều 27 32/2019/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 27 32/2019/NĐ-CP",
+    "raw_model_output": "Điều 27 32/2019/NĐ-CP",
+    "latency_sec": 7.0746,
+    "evaluated_at": "2026-05-14T17:51:02"
+  },
+  {
+    "uid": "bench_2_6_dieu-40-luat-062007qh12-luat-hoa-chat-2007-so-062007qh12-unknown",
+    "refer_uid": "dieu-40-luat-062007qh12-luat-hoa-chat-2007-so-062007qh12-unknown",
+    "refer_type": "article",
+    "legal_field": "Y tế-Sức khỏe, Công nghiệp",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Y tế-Sức khỏe, Công nghiệp'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 41 158/2024/NĐ-CP",
+      "Điều 40 06/2007/QH12",
+      "Điều 5 21/2015/NĐ-CP",
+      "Điều 18 102/2025/NĐ-CP"
+    ],
+    "answer": "Điều 40 06/2007/QH12",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 5 21/2015/NĐ-CP",
+    "raw_model_output": "Điều 5 21/2015/NĐ-CP",
+    "latency_sec": 0.8367,
+    "evaluated_at": "2026-05-14T17:51:03"
+  },
+  {
+    "uid": "bench_2_6_dieu-12-nghi-dinh-402007nd-cp-nghi-dinh-402007nd-cp-cua-chinh-phu-quy-dinh-ve-viec-xac-dinh-tri-gia-hai-quan-doi-voi-hang-hoa-xuat-khau-nhap-khau-unknown",
+    "refer_uid": "dieu-12-nghi-dinh-402007nd-cp-nghi-dinh-402007nd-cp-cua-chinh-phu-quy-dinh-ve-viec-xac-dinh-tri-gia-hai-quan-doi-voi-hang-hoa-xuat-khau-nhap-khau-unknown",
+    "refer_type": "article",
+    "legal_field": "Thuế-Phí-Lệ phí, Xuất nhập khẩu, Hải quan",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Thuế-Phí-Lệ phí, Xuất nhập khẩu, Hải quan'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 44 96/2016/NĐ-CP",
+      "Điều 7 45/2012/NĐ-CP",
+      "Điều 12 40/2007/NĐ-CP",
+      "Điều 35 105/2025/NĐ-CP"
+    ],
+    "answer": "Điều 12 40/2007/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "A. Điều 44 96/2016/NĐ-CP",
+    "raw_model_output": "A. Điều 44 96/2016/NĐ-CP",
+    "latency_sec": 1.1203,
+    "evaluated_at": "2026-05-14T17:51:04"
+  },
+  {
+    "uid": "bench_2_6_dieu-6-nghi-dinh-31cp-nghi-dinh-31cp-cua-chinh-phu-ve-viec-ban-hanh-quy-che-quan-che-hanh-chinh-unknown",
+    "refer_uid": "dieu-6-nghi-dinh-31cp-nghi-dinh-31cp-cua-chinh-phu-ve-viec-ban-hanh-quy-che-quan-che-hanh-chinh-unknown",
+    "refer_type": "article",
+    "legal_field": "Hành chính, An ninh trật tự",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Hành chính, An ninh trật tự'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 3 145/2026/NĐ-CP",
+      "Điều 10 59/2026/NĐ-CP",
+      "Điều 6 31/CP",
+      "Điều 6 90/2010/NĐ-CP"
+    ],
+    "answer": "Điều 6 31/CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 6 90/2010/NĐ-CP",
+    "raw_model_output": "Điều 6 90/2010/NĐ-CP",
+    "latency_sec": 14.9654,
+    "evaluated_at": "2026-05-14T17:51:19"
+  },
+  {
+    "uid": "bench_2_6_dieu-6-nghi-dinh-3212025nd-cp-nghi-dinh-3212025nd-cp-huong-dan-lay-y-kien-nhan-dan-ve-don-vi-hanh-chinh-unknown",
+    "refer_uid": "dieu-6-nghi-dinh-3212025nd-cp-nghi-dinh-3212025nd-cp-huong-dan-lay-y-kien-nhan-dan-ve-don-vi-hanh-chinh-unknown",
+    "refer_type": "article",
+    "legal_field": "Hành chính, Địa giới hành chính",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Hành chính, Địa giới hành chính'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 6 11/2023/NĐ-CP",
+      "Điều 6 321/2025/NĐ-CP",
+      "Điều 63 139/2017/NĐ-CP",
+      "Điều 5 131/2008/NĐ-CP"
+    ],
+    "answer": "Điều 6 321/2025/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 5 131/2008/NĐ-CP",
+    "raw_model_output": "Điều 5 131/2008/NĐ-CP",
+    "latency_sec": 4.9463,
+    "evaluated_at": "2026-05-14T17:51:24"
+  },
+  {
+    "uid": "bench_2_6_dieu-17-nghi-dinh-1192018nd-cp-nghi-dinh-1192018nd-cp-ve-hoa-don-dien-tu-khi-ban-hang-hoa-cung-cap-dich-vu-unknown",
+    "refer_uid": "dieu-17-nghi-dinh-1192018nd-cp-nghi-dinh-1192018nd-cp-ve-hoa-don-dien-tu-khi-ban-hang-hoa-cung-cap-dich-vu-unknown",
+    "refer_type": "article",
+    "legal_field": "Thuế-Phí-Lệ phí, Kế toán-Kiểm toán",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Thuế-Phí-Lệ phí, Kế toán-Kiểm toán'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 32 265/2025/NĐ-CP",
+      "Điều 13 61-CP",
+      "Điều 17 119/2018/NĐ-CP",
+      "Điều 8 67/1999/NĐ-CP"
+    ],
+    "answer": "Điều 17 119/2018/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 17 119/2018/NĐ-CP",
+    "raw_model_output": "Điều 17 119/2018/NĐ-CP",
+    "latency_sec": 0.806,
+    "evaluated_at": "2026-05-14T17:51:25"
+  },
+  {
+    "uid": "bench_2_6_dieu-19-nghi-dinh-1312008nd-cp-nghi-dinh-1312008nd-cp-cua-chinh-phu-ve-viec-huong-dan-thi-hanh-cac-quy-dinh-cua-luat-luat-su-ve-to-chuc-xa-hoi-nghe-nghiep-cua-luat-su-unknown",
+    "refer_uid": "dieu-19-nghi-dinh-1312008nd-cp-nghi-dinh-1312008nd-cp-cua-chinh-phu-ve-viec-huong-dan-thi-hanh-cac-quy-dinh-cua-luat-luat-su-ve-to-chuc-xa-hoi-nghe-nghiep-cua-luat-su-unknown",
+    "refer_type": "article",
+    "legal_field": "Tư pháp-Hộ tịch, Lĩnh vực khác",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Tư pháp-Hộ tịch, Lĩnh vực khác'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 61 59/2024/QH15",
+      "Điều 3 57/2025/NĐ-CP",
+      "Điều 6 92/2026/NĐ-CP",
+      "Điều 19 131/2008/NĐ-CP"
+    ],
+    "answer": "Điều 19 131/2008/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 19 131/2008/NĐ-CP",
+    "raw_model_output": "Điều 19 131/2008/NĐ-CP",
+    "latency_sec": 10.9605,
+    "evaluated_at": "2026-05-14T17:51:36"
+  },
+  {
+    "uid": "bench_2_6_dieu-11-nghi-dinh-142011nd-cp-nghi-dinh-142011nd-cp-ve-dieu-kien-hoat-dong-cua-dai-ly-lam-thu-tuc-hai-quan-unknown",
+    "refer_uid": "dieu-11-nghi-dinh-142011nd-cp-nghi-dinh-142011nd-cp-ve-dieu-kien-hoat-dong-cua-dai-ly-lam-thu-tuc-hai-quan-unknown",
+    "refer_type": "article",
+    "legal_field": "Doanh nghiệp, Hải quan",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Doanh nghiệp, Hải quan'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 30 60/2021/NĐ-CP",
+      "Điều 24 40/2009/NĐ-CP",
+      "Điều 6 139/2025/NĐ-CP",
+      "Điều 11 14/2011/NĐ-CP"
+    ],
+    "answer": "Điều 11 14/2011/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 30 60/2021/NĐ-CP",
+    "raw_model_output": "Điều 30 60/2021/NĐ-CP",
+    "latency_sec": 0.7551,
+    "evaluated_at": "2026-05-14T17:51:36"
+  },
+  {
+    "uid": "bench_2_6_dieu-10-nghi-dinh-1172011nd-cp-nghi-dinh-1172011nd-cp-ve-to-chuc-quan-ly-pham-nhan-unknown",
+    "refer_uid": "dieu-10-nghi-dinh-1172011nd-cp-nghi-dinh-1172011nd-cp-ve-to-chuc-quan-ly-pham-nhan-unknown",
+    "refer_type": "article",
+    "legal_field": "Y tế-Sức khỏe, Hình sự",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Y tế-Sức khỏe, Hình sự'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 4 65/2011/NĐ-CP",
+      "Điều 10 43/2006/NĐ-CP",
+      "Điều 7 39/2007/NĐ-CP",
+      "Điều 10 117/2011/NĐ-CP"
+    ],
+    "answer": "Điều 10 117/2011/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "D",
+    "raw_model_output": "D",
+    "latency_sec": 0.7309,
+    "evaluated_at": "2026-05-14T17:51:37"
+  },
+  {
+    "uid": "bench_2_6_dieu-143-luat-362005qh11-luat-thuong-mai-2005-so-362005qh11-unknown",
+    "refer_uid": "dieu-143-luat-362005qh11-luat-thuong-mai-2005-so-362005qh11-unknown",
+    "refer_type": "article",
+    "legal_field": "Thương mại-Quảng cáo, Chính sách",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Thương mại-Quảng cáo, Chính sách'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 5 284/2025/NĐ-CP",
+      "Điều 65 142/2017/NĐ-CP",
+      "Điều 3 356/2025/NĐ-CP",
+      "Điều 143 36/2005/QH11"
+    ],
+    "answer": "Điều 143 36/2005/QH11",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 65 142/2017/NĐ-CP",
+    "raw_model_output": "Điều 65 142/2017/NĐ-CP",
+    "latency_sec": 19.274,
+    "evaluated_at": "2026-05-14T17:51:56"
+  },
+  {
+    "uid": "bench_2_6_dieu-31-nghi-dinh-2182025nd-cp-nghi-dinh-2182025nd-cp-quy-dinh-xu-phat-vi-pham-hanh-chinh-quoc-phong-co-yeu-unknown",
+    "refer_uid": "dieu-31-nghi-dinh-2182025nd-cp-nghi-dinh-2182025nd-cp-quy-dinh-xu-phat-vi-pham-hanh-chinh-quoc-phong-co-yeu-unknown",
+    "refer_type": "article",
+    "legal_field": "Hành chính, Vi phạm hành chính, An ninh quốc gia",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Hành chính, Vi phạm hành chính, An ninh quốc gia'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 31 218/2025/NĐ-CP",
+      "Điều 15 191/2004/NĐ-CP",
+      "Điều 26 282/2025/NĐ-CP",
+      "Điều 5 60/2023/NĐ-CP"
+    ],
+    "answer": "Điều 31 218/2025/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 5 60/2023/NĐ-CP",
+    "raw_model_output": "Điều 5 60/2023/NĐ-CP",
+    "latency_sec": 0.9956,
+    "evaluated_at": "2026-05-14T17:51:57"
+  },
+  {
+    "uid": "bench_2_6_dieu-31-nghi-dinh-232025nd-cp-nghi-dinh-232025nd-cp-quy-dinh-ve-chu-ky-dien-tu-va-dich-vu-tin-cay-unknown",
+    "refer_uid": "dieu-31-nghi-dinh-232025nd-cp-nghi-dinh-232025nd-cp-quy-dinh-ve-chu-ky-dien-tu-va-dich-vu-tin-cay-unknown",
+    "refer_type": "article",
+    "legal_field": "Thuế-Phí-Lệ phí, Thông tin-Truyền thông, Hành chính",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Thuế-Phí-Lệ phí, Thông tin-Truyền thông, Hành chính'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 13 120/2025/NĐ-CP",
+      "Điều 5 19/2002/NĐ-CP",
+      "Điều 31 23/2025/NĐ-CP",
+      "Điều 5 02/2012/NĐ-CP"
+    ],
+    "answer": "Điều 31 23/2025/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 31 23/2025/NĐ-CP",
+    "raw_model_output": "Điều 31 23/2025/NĐ-CP",
+    "latency_sec": 0.7174,
+    "evaluated_at": "2026-05-14T17:51:58"
+  },
+  {
+    "uid": "bench_2_6_dieu-4-nghi-dinh-262022nd-cp-nghi-dinh-262022nd-cp-vien-chuc-lanh-su-danh-du-nuoc-ngoai-tai-viet-nam-unknown",
+    "refer_uid": "dieu-4-nghi-dinh-262022nd-cp-nghi-dinh-262022nd-cp-vien-chuc-lanh-su-danh-du-nuoc-ngoai-tai-viet-nam-unknown",
+    "refer_type": "article",
+    "legal_field": "Cán bộ-Công chức-Viên chức, Ngoại giao",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Cán bộ-Công chức-Viên chức, Ngoại giao'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 79 24/2024/NĐ-CP",
+      "Điều 11 70/2010/NĐ-CP",
+      "Điều 30 93-CP",
+      "Điều 4 26/2022/NĐ-CP"
+    ],
+    "answer": "Điều 4 26/2022/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 4 26/2022/NĐ-CP",
+    "raw_model_output": "Điều 4 26/2022/NĐ-CP",
+    "latency_sec": 0.8444,
+    "evaluated_at": "2026-05-14T17:51:59"
+  },
+  {
+    "uid": "bench_2_6_dieu-10-nghi-dinh-372007nd-cp-nghi-dinh-372007nd-cp-cua-chinh-phu-ve-minh-bach-tai-san-thu-nhap-unknown",
+    "refer_uid": "dieu-10-nghi-dinh-372007nd-cp-nghi-dinh-372007nd-cp-cua-chinh-phu-ve-minh-bach-tai-san-thu-nhap-unknown",
+    "refer_type": "article",
+    "legal_field": "Cán bộ-Công chức-Viên chức, Tiết kiệm-Phòng, chống tham nhũng, lãng phí",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Cán bộ-Công chức-Viên chức, Tiết kiệm-Phòng, chống tham nhũng, lãng phí'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 9 29/2026/NĐ-CP",
+      "Điều 10 32/2016/NĐ-CP",
+      "Điều 58 48/2001/NĐ-CP",
+      "Điều 10 37/2007/NĐ-CP"
+    ],
+    "answer": "Điều 10 37/2007/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 10 37/2007/NĐ-CP",
+    "raw_model_output": "Điều 10 37/2007/NĐ-CP",
+    "latency_sec": 0.9103,
+    "evaluated_at": "2026-05-14T17:52:00"
+  },
+  {
+    "uid": "bench_2_6_dieu-10-nghi-dinh-1312026nd-cp-nghi-dinh-1312026nd-cp-quy-dinh-chi-tiet-khoan-3-dieu-160-luat-tu-phap-nguoi-chua-thanh-nien-unknown",
+    "refer_uid": "dieu-10-nghi-dinh-1312026nd-cp-nghi-dinh-1312026nd-cp-quy-dinh-chi-tiet-khoan-3-dieu-160-luat-tu-phap-nguoi-chua-thanh-nien-unknown",
+    "refer_type": "article",
+    "legal_field": "Y tế-Sức khỏe, Tư pháp-Hộ tịch, Chính sách",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Y tế-Sức khỏe, Tư pháp-Hộ tịch, Chính sách'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 22 58/2021/NĐ-CP",
+      "Điều 10 131/2026/NĐ-CP",
+      "Điều 12 17/2010/NĐ-CP",
+      "Điều 41 33/CP"
+    ],
+    "answer": "Điều 10 131/2026/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 12 17/2010/NĐ-CP",
+    "raw_model_output": "Điều 12 17/2010/NĐ-CP",
+    "latency_sec": 0.8336,
+    "evaluated_at": "2026-05-14T17:52:01"
+  },
+  {
+    "uid": "bench_2_6_dieu-8-nghi-dinh-1242025nd-cp-nghi-dinh-1242025nd-cp-ve-phan-quyen-phan-cap-trong-cong-tac-dan-toc-tin-nguong-ton-giao-unknown",
+    "refer_uid": "dieu-8-nghi-dinh-1242025nd-cp-nghi-dinh-1242025nd-cp-ve-phan-quyen-phan-cap-trong-cong-tac-dan-toc-tin-nguong-ton-giao-unknown",
+    "refer_type": "article",
+    "legal_field": "Hành chính, Cơ cấu tổ chức, Văn hóa-Thể thao-Du lịch",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Hành chính, Cơ cấu tổ chức, Văn hóa-Thể thao-Du lịch'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 5 11/2010/NĐ-CP",
+      "Điều 8 124/2025/NĐ-CP",
+      "Điều 4 45/2011/NĐ-CP",
+      "Điều 6 105/2009/NĐ-CP"
+    ],
+    "answer": "Điều 8 124/2025/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 4 45/2011/NĐ-CP",
+    "raw_model_output": "Điều 4 45/2011/NĐ-CP",
+    "latency_sec": 6.0757,
+    "evaluated_at": "2026-05-14T17:52:07"
+  },
+  {
+    "uid": "bench_2_6_dieu-10-nghi-dinh-2882025nd-cp-nghi-dinh-2882025nd-cp-ve-quan-ly-tau-bay-khong-nguoi-lai-va-phuong-tien-bay-khac-unknown",
+    "refer_uid": "dieu-10-nghi-dinh-2882025nd-cp-nghi-dinh-2882025nd-cp-ve-quan-ly-tau-bay-khong-nguoi-lai-va-phuong-tien-bay-khac-unknown",
+    "refer_type": "article",
+    "legal_field": "Giao thông, Hành chính, An ninh trật tự",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Giao thông, Hành chính, An ninh trật tự'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 23 120/2005/NĐ-CP",
+      "Điều 10 288/2025/NĐ-CP",
+      "Điều 7 1-CP",
+      "Điều 20 165/2025/NĐ-CP"
+    ],
+    "answer": "Điều 10 288/2025/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "A. Điều 23 120/2005/NĐ-CP",
+    "raw_model_output": "A. Điều 23 120/2005/NĐ-CP",
+    "latency_sec": 0.7915,
+    "evaluated_at": "2026-05-14T17:52:07"
+  },
+  {
+    "uid": "bench_2_6_dieu-11-nghi-dinh-272011nd-cp-nghi-dinh-272011nd-cp-su-dung-thong-tin-ve-hanh-khach-truoc-khi-nhap-canh-unknown",
+    "refer_uid": "dieu-11-nghi-dinh-272011nd-cp-nghi-dinh-272011nd-cp-su-dung-thong-tin-ve-hanh-khach-truoc-khi-nhap-canh-unknown",
+    "refer_type": "article",
+    "legal_field": "Hành chính, Xuất nhập cảnh, Hàng không",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Hành chính, Xuất nhập cảnh, Hàng không'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 30 80/2010/NĐ-CP",
+      "Điều 11 27/2011/NĐ-CP",
+      "Điều 35 94/2009/NĐ-CP",
+      "Điều 4 17/2026/NĐ-CP"
+    ],
+    "answer": "Điều 11 27/2011/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 11 27/2011/NĐ-CP",
+    "raw_model_output": "Điều 11 27/2011/NĐ-CP",
+    "latency_sec": 0.8206,
+    "evaluated_at": "2026-05-14T17:52:08"
+  },
+  {
+    "uid": "bench_2_6_dieu-15-nghi-dinh-1892025nd-cp-nghi-dinh-1892025nd-cp-quy-dinh-chi-tiet-luat-xu-ly-vi-pham-hanh-chinh-unknown",
+    "refer_uid": "dieu-15-nghi-dinh-1892025nd-cp-nghi-dinh-1892025nd-cp-quy-dinh-chi-tiet-luat-xu-ly-vi-pham-hanh-chinh-unknown",
+    "refer_type": "article",
+    "legal_field": "Hành chính, Cơ cấu tổ chức, Vi phạm hành chính",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Hành chính, Cơ cấu tổ chức, Vi phạm hành chính'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 15 189/2025/NĐ-CP",
+      "Điều 10 39/2007/NĐ-CP",
+      "Điều 18 25/2014/NĐ-CP",
+      "Điều 19 51/2010/NĐ-CP"
+    ],
+    "answer": "Điều 15 189/2025/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "D",
+    "raw_model_output": "D",
+    "latency_sec": 0.6944,
+    "evaluated_at": "2026-05-14T17:52:09"
+  },
+  {
+    "uid": "bench_2_6_dieu-18-nghi-dinh-39cp-nghi-dinh-39cp-cua-chinh-phu-ve-bao-dam-trat-tu-an-toan-giao-thong-duong-sat-unknown",
+    "refer_uid": "dieu-18-nghi-dinh-39cp-nghi-dinh-39cp-cua-chinh-phu-ve-bao-dam-trat-tu-an-toan-giao-thong-duong-sat-unknown",
+    "refer_type": "article",
+    "legal_field": "Giao thông, Công nghiệp",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Giao thông, Công nghiệp'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 32 355/2025/NĐ-CP",
+      "Điều 18 39/CP",
+      "Điều 13 97/2015/NĐ-CP",
+      "Điều 13 150/2025/QH15"
+    ],
+    "answer": "Điều 18 39/CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 13 97/2015/NĐ-CP",
+    "raw_model_output": "Điều 13 97/2015/NĐ-CP",
+    "latency_sec": 0.8994,
+    "evaluated_at": "2026-05-14T17:52:10"
+  },
+  {
+    "uid": "bench_2_6_dieu-12-nghi-dinh-252024nd-cp-nghi-dinh-252024nd-cp-xet-tang-danh-hieu-thay-thuoc-nhan-dan-thay-thuoc-uu-tu-unknown",
+    "refer_uid": "dieu-12-nghi-dinh-252024nd-cp-nghi-dinh-252024nd-cp-xet-tang-danh-hieu-thay-thuoc-nhan-dan-thay-thuoc-uu-tu-unknown",
+    "refer_type": "article",
+    "legal_field": "Y tế-Sức khỏe, Thi đua-Khen thưởng-Kỷ luật",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Y tế-Sức khỏe, Thi đua-Khen thưởng-Kỷ luật'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 8 297/2025/NĐ-CP",
+      "Điều 6 126/2018/NĐ-CP",
+      "Điều 12 25/2024/NĐ-CP",
+      "Điều 19 79/2023/NĐ-CP"
+    ],
+    "answer": "Điều 12 25/2024/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 6 126/2018/NĐ-CP",
+    "raw_model_output": "Điều 6 126/2018/NĐ-CP",
+    "latency_sec": 0.7093,
+    "evaluated_at": "2026-05-14T17:52:11"
+  },
+  {
+    "uid": "bench_2_6_dieu-8-nghi-dinh-1162026nd-cp-nghi-dinh-1162026nd-cp-sua-doi-thu-tuc-hanh-chinh-san-xuat-kinh-doanh-unknown",
+    "refer_uid": "dieu-8-nghi-dinh-1162026nd-cp-nghi-dinh-1162026nd-cp-sua-doi-thu-tuc-hanh-chinh-san-xuat-kinh-doanh-unknown",
+    "refer_type": "article",
+    "legal_field": "Doanh nghiệp, Thông tin-Truyền thông, Hành chính, Văn hóa-Thể thao-Du lịch",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Doanh nghiệp, Thông tin-Truyền thông, Hành chính, Văn hóa-Thể thao-Du lịch'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 10 15/2010/NĐ-CP",
+      "Điều 32 47/2020/NĐ-CP",
+      "Điều 6 157/2006/NĐ-CP",
+      "Điều 8 116/2026/NĐ-CP"
+    ],
+    "answer": "Điều 8 116/2026/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 32 47/2020/NĐ-CP",
+    "raw_model_output": "Điều 32 47/2020/NĐ-CP",
+    "latency_sec": 9.0531,
+    "evaluated_at": "2026-05-14T17:52:20"
+  },
+  {
+    "uid": "bench_2_6_dieu-14-nghi-dinh-582010nd-cp-nghi-dinh-582010nd-cp-huong-dan-luat-dan-quan-tu-ve-unknown",
+    "refer_uid": "dieu-14-nghi-dinh-582010nd-cp-nghi-dinh-582010nd-cp-huong-dan-luat-dan-quan-tu-ve-unknown",
+    "refer_type": "article",
+    "legal_field": "Chính sách, An ninh quốc gia, Dân sự",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Chính sách, An ninh quốc gia, Dân sự'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 3 72/2015/NĐ-CP",
+      "Điều 30 09/2009/NĐ-CP",
+      "Điều 14 58/2010/NĐ-CP",
+      "Điều 18 39/CP"
+    ],
+    "answer": "Điều 14 58/2010/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 30 09/2009/NĐ-CP",
+    "raw_model_output": "Điều 30 09/2009/NĐ-CP",
+    "latency_sec": 0.8223,
+    "evaluated_at": "2026-05-14T17:52:20"
+  },
+  {
+    "uid": "bench_2_6_dieu-12-nghi-dinh-1172011nd-cp-nghi-dinh-1172011nd-cp-ve-to-chuc-quan-ly-pham-nhan-unknown",
+    "refer_uid": "dieu-12-nghi-dinh-1172011nd-cp-nghi-dinh-1172011nd-cp-ve-to-chuc-quan-ly-pham-nhan-unknown",
+    "refer_type": "article",
+    "legal_field": "Y tế-Sức khỏe, Hình sự",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Y tế-Sức khỏe, Hình sự'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 49 25/2008/QH12",
+      "Điều 12 117/2011/NĐ-CP",
+      "Điều 40 109/2013/NĐ-CP",
+      "Điều 18 333/2025/NĐ-CP"
+    ],
+    "answer": "Điều 12 117/2011/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 40 109/2013/NĐ-CP",
+    "raw_model_output": "Điều 40 109/2013/NĐ-CP",
+    "latency_sec": 0.7238,
+    "evaluated_at": "2026-05-14T17:52:21"
+  },
+  {
+    "uid": "bench_2_6_dieu-28-nghi-dinh-1882025nd-cp-nghi-dinh-1882025nd-cp-huong-dan-thi-hanh-luat-bao-hiem-y-te-unknown",
+    "refer_uid": "dieu-28-nghi-dinh-1882025nd-cp-nghi-dinh-1882025nd-cp-huong-dan-thi-hanh-luat-bao-hiem-y-te-unknown",
+    "refer_type": "article",
+    "legal_field": "Bảo hiểm, Lao động-Tiền lương, Y tế-Sức khỏe",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Bảo hiểm, Lao động-Tiền lương, Y tế-Sức khỏe'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 20 178/2024/NĐ-CP",
+      "Điều 28 188/2025/NĐ-CP",
+      "Điều 11 136/2018/NĐ-CP",
+      "Điều 30 37/2018/NĐ-CP"
+    ],
+    "answer": "Điều 28 188/2025/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 30 37/2018/NĐ-CP",
+    "raw_model_output": "Điều 30 37/2018/NĐ-CP",
+    "latency_sec": 0.7287,
+    "evaluated_at": "2026-05-14T17:52:22"
+  },
+  {
+    "uid": "bench_2_6_dieu-29-luat-1042025qh15-luat-tinh-trang-khan-cap-2025-so-1042025qh15-unknown",
+    "refer_uid": "dieu-29-luat-1042025qh15-luat-tinh-trang-khan-cap-2025-so-1042025qh15-unknown",
+    "refer_type": "article",
+    "legal_field": "Tài nguyên-Môi trường, An ninh trật tự, An ninh quốc gia",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Tài nguyên-Môi trường, An ninh trật tự, An ninh quốc gia'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 9 136/2018/NĐ-CP",
+      "Điều 4 25/2014/NĐ-CP",
+      "Điều 29 104/2025/QH15",
+      "Điều 9 151/2025/NĐ-CP"
+    ],
+    "answer": "Điều 29 104/2025/QH15",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 4 25/2014/NĐ-CP",
+    "raw_model_output": "Điều 4 25/2014/NĐ-CP",
+    "latency_sec": 0.8316,
+    "evaluated_at": "2026-05-14T17:52:23"
+  },
+  {
+    "uid": "bench_2_6_dieu-17-nghi-dinh-352009nd-cp-nghi-dinh-352009nd-cp-cua-chinh-phu-ve-to-chuc-va-hoat-dong-cua-thanh-tra-tai-nguyen-va-moi-truong-unknown",
+    "refer_uid": "dieu-17-nghi-dinh-352009nd-cp-nghi-dinh-352009nd-cp-cua-chinh-phu-ve-to-chuc-va-hoat-dong-cua-thanh-tra-tai-nguyen-va-moi-truong-unknown",
+    "refer_type": "article",
+    "legal_field": "Tài nguyên-Môi trường, Cơ cấu tổ chức",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Tài nguyên-Môi trường, Cơ cấu tổ chức'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 10 249/2025/NĐ-CP",
+      "Điều 17 25/2014/NĐ-CP",
+      "Điều 17 35/2009/NĐ-CP",
+      "Điều 22 87/2018/NĐ-CP"
+    ],
+    "answer": "Điều 17 35/2009/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 17 25/2014/NĐ-CP",
+    "raw_model_output": "Điều 17 25/2014/NĐ-CP",
+    "latency_sec": 1.5916,
+    "evaluated_at": "2026-05-14T17:52:24"
+  },
+  {
+    "uid": "bench_2_6_dieu-23-nghi-dinh-1462004nd-cp-nghi-dinh-1462004nd-cp-cua-chinh-phu-ve-viec-quy-dinh-thu-tuc-tham-quyen-quyet-dinh-dua-vao-co-so-quan-ly-day-nghe-va-giai-quyet-viec-lam-doi-voi-nguoi-sau-cai-nghien-ma-tuy-unknown",
+    "refer_uid": "dieu-23-nghi-dinh-1462004nd-cp-nghi-dinh-1462004nd-cp-cua-chinh-phu-ve-viec-quy-dinh-thu-tuc-tham-quyen-quyet-dinh-dua-vao-co-so-quan-ly-day-nghe-va-giai-quyet-viec-lam-doi-voi-nguoi-sau-cai-nghien-ma-tuy-unknown",
+    "refer_type": "article",
+    "legal_field": "Chính sách, Chính sách, An ninh trật tự",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Chính sách, Chính sách, An ninh trật tự'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 5 57-L/CTN",
+      "Điều 23 146/2004/NĐ-CP",
+      "Điều 10 27/2007/NĐ-CP",
+      "Điều 27 99/2022/NĐ-CP"
+    ],
+    "answer": "Điều 23 146/2004/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 10 27/2007/NĐ-CP",
+    "raw_model_output": "Điều 10 27/2007/NĐ-CP",
+    "latency_sec": 5.6003,
+    "evaluated_at": "2026-05-14T17:52:30"
+  },
+  {
+    "uid": "bench_2_6_dieu-12-nghi-dinh-322016nd-cp-nghi-dinh-322016nd-cp-ve-quan-ly-do-cao-chuong-ngai-vat-hang-khong-unknown",
+    "refer_uid": "dieu-12-nghi-dinh-322016nd-cp-nghi-dinh-322016nd-cp-ve-quan-ly-do-cao-chuong-ngai-vat-hang-khong-unknown",
+    "refer_type": "article",
+    "legal_field": "Giao thông, An ninh quốc gia, Hàng không",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Giao thông, An ninh quốc gia, Hàng không'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 12 60/2026/NĐ-CP",
+      "Điều 12 32/2016/NĐ-CP",
+      "Điều 9 69/2010/NĐ-CP",
+      "Điều 3 124/2016/NĐ-CP"
+    ],
+    "answer": "Điều 12 32/2016/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 9 69/2010/NĐ-CP",
+    "raw_model_output": "Điều 9 69/2010/NĐ-CP",
+    "latency_sec": 0.8214,
+    "evaluated_at": "2026-05-14T17:52:31"
+  },
+  {
+    "uid": "bench_2_6_dieu-26-nghi-dinh-2952025nd-cp-nghi-dinh-2952025nd-cp-quy-dinh-thi-hanh-luat-vien-thong-ve-hoat-dong-vien-thong-cong-ich-unknown",
+    "refer_uid": "dieu-26-nghi-dinh-2952025nd-cp-nghi-dinh-2952025nd-cp-quy-dinh-thi-hanh-luat-vien-thong-ve-hoat-dong-vien-thong-cong-ich-unknown",
+    "refer_type": "article",
+    "legal_field": "Doanh nghiệp, Tài chính-Ngân hàng, Thông tin-Truyền thông",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Doanh nghiệp, Tài chính-Ngân hàng, Thông tin-Truyền thông'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 26 295/2025/NĐ-CP",
+      "Điều 10 97/2010/NĐ-CP",
+      "Điều 54 73/2019/NĐ-CP",
+      "Điều 8 101/2017/NĐ-CP"
+    ],
+    "answer": "Điều 26 295/2025/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "D",
+    "raw_model_output": "D",
+    "latency_sec": 0.7407,
+    "evaluated_at": "2026-05-14T17:52:32"
+  },
+  {
+    "uid": "bench_2_6_dieu-3-nghi-dinh-1402018nd-cp-nghi-dinh-1402018nd-cp-sua-doi-cac-nghi-dinh-lien-quan-den-dau-tu-kinh-doanh-thu-tuc-hanh-chinh-do-bo-lao-dong-thuong-binh-va-xa-hoi-quan-ly-unknown",
+    "refer_uid": "dieu-3-nghi-dinh-1402018nd-cp-nghi-dinh-1402018nd-cp-sua-doi-cac-nghi-dinh-lien-quan-den-dau-tu-kinh-doanh-thu-tuc-hanh-chinh-do-bo-lao-dong-thuong-binh-va-xa-hoi-quan-ly-unknown",
+    "refer_type": "article",
+    "legal_field": "Lao động-Tiền lương, Hành chính, Đầu tư",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Lao động-Tiền lương, Hành chính, Đầu tư'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 30 145/2006/NĐ-CP",
+      "Điều 3 140/2018/NĐ-CP",
+      "Điều 25 58/2018/NĐ-CP",
+      "Điều 5 68/2010/NĐ-CP"
+    ],
+    "answer": "Điều 3 140/2018/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 3 140/2018/NĐ-CP",
+    "raw_model_output": "Điều 3 140/2018/NĐ-CP",
+    "latency_sec": 0.7333,
+    "evaluated_at": "2026-05-14T17:52:32"
+  },
+  {
+    "uid": "bench_2_6_dieu-13-nghi-dinh-1582020nd-cp-nghi-dinh-1582020nd-cp-chung-khoan-phai-sinh-va-thi-truong-chung-khoan-phai-sinh-unknown",
+    "refer_uid": "dieu-13-nghi-dinh-1582020nd-cp-nghi-dinh-1582020nd-cp-chung-khoan-phai-sinh-va-thi-truong-chung-khoan-phai-sinh-unknown",
+    "refer_type": "article",
+    "legal_field": "Doanh nghiệp, Chứng khoán",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Doanh nghiệp, Chứng khoán'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 11 107/2006/NĐ-CP",
+      "Điều 13 158/2020/NĐ-CP",
+      "Điều 5 250/2025/NĐ-CP",
+      "Điều 31 12/2009/NĐ-CP"
+    ],
+    "answer": "Điều 13 158/2020/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 13 158/2020/NĐ-CP",
+    "raw_model_output": "Điều 13 158/2020/NĐ-CP",
+    "latency_sec": 1.9591,
+    "evaluated_at": "2026-05-14T17:52:34"
+  },
+  {
+    "uid": "bench_2_6_dieu-22-nghi-dinh-45-hdbt-nghi-dinh-45-hdbt-cua-hoi-dong-bo-truong-ve-to-chuc-va-hoat-dong-cong-chung-nha-nuoc-unknown",
+    "refer_uid": "dieu-22-nghi-dinh-45-hdbt-nghi-dinh-45-hdbt-cua-hoi-dong-bo-truong-ve-to-chuc-va-hoat-dong-cong-chung-nha-nuoc-unknown",
+    "refer_type": "article",
+    "legal_field": "Tư pháp-Hộ tịch",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Tư pháp-Hộ tịch'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 4 10/2015/NĐ-CP",
+      "Điều 22 45-HĐBT",
+      "Điều 13 57/2025/NĐ-CP",
+      "Điều 121 100/2015/QH13"
+    ],
+    "answer": "Điều 22 45-HĐBT",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 4 10/2015/NĐ-CP",
+    "raw_model_output": "Điều 4 10/2015/NĐ-CP",
+    "latency_sec": 0.8076,
+    "evaluated_at": "2026-05-14T17:52:35"
+  },
+  {
+    "uid": "bench_2_6_dieu-10-nghi-dinh-252014nd-cp-nghi-dinh-252014nd-cp-ve-phong-chong-toi-pham-co-su-dung-cong-nghe-cao-unknown",
+    "refer_uid": "dieu-10-nghi-dinh-252014nd-cp-nghi-dinh-252014nd-cp-ve-phong-chong-toi-pham-co-su-dung-cong-nghe-cao-unknown",
+    "refer_type": "article",
+    "legal_field": "Khoa học-Công nghệ, An ninh trật tự",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Khoa học-Công nghệ, An ninh trật tự'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 18 55/2020/NĐ-CP",
+      "Điều 11 02/2016/QH14",
+      "Điều 28 15/2019/NĐ-CP",
+      "Điều 10 25/2014/NĐ-CP"
+    ],
+    "answer": "Điều 10 25/2014/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 10 25/2014/NĐ-CP",
+    "raw_model_output": "Điều 10 25/2014/NĐ-CP",
+    "latency_sec": 5.9882,
+    "evaluated_at": "2026-05-14T17:52:41"
+  },
+  {
+    "uid": "bench_2_6_dieu-10-luat-532024qh15-luat-phong-chong-mua-ban-nguoi-2024-so-532024qh15-unknown",
+    "refer_uid": "dieu-10-luat-532024qh15-luat-phong-chong-mua-ban-nguoi-2024-so-532024qh15-unknown",
+    "refer_type": "article",
+    "legal_field": "An ninh trật tự, Hình sự",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'An ninh trật tự, Hình sự'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 23 37/2018/NĐ-CP",
+      "Điều 10 135/2007/NĐ-CP",
+      "Điều 15 62/2020/NĐ-CP",
+      "Điều 10 53/2024/QH15"
+    ],
+    "answer": "Điều 10 53/2024/QH15",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "D",
+    "raw_model_output": "D",
+    "latency_sec": 2.6156,
+    "evaluated_at": "2026-05-14T17:52:44"
+  },
+  {
+    "uid": "bench_2_6_dieu-105-nghi-dinh-462017nd-cp-nghi-dinh-462017nd-cp-dieu-kien-dau-tu-hoat-dong-giao-duc-unknown",
+    "refer_uid": "dieu-105-nghi-dinh-462017nd-cp-nghi-dinh-462017nd-cp-dieu-kien-dau-tu-hoat-dong-giao-duc-unknown",
+    "refer_type": "article",
+    "legal_field": "Giáo dục-Đào tạo-Dạy nghề, Đầu tư",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Giáo dục-Đào tạo-Dạy nghề, Đầu tư'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 10 46/2026/NĐ-CP",
+      "Điều 32 117/2003/NĐ-CP",
+      "Điều 105 46/2017/NĐ-CP",
+      "Điều 3 32/2012/NĐ-CP"
+    ],
+    "answer": "Điều 105 46/2017/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 105 46/2017/NĐ-CP",
+    "raw_model_output": "Điều 105 46/2017/NĐ-CP",
+    "latency_sec": 0.8379,
+    "evaluated_at": "2026-05-14T17:52:44"
+  },
+  {
+    "uid": "bench_2_6_dieu-13-nghi-dinh-1652025nd-cp-nghi-dinh-1652025nd-cp-quy-dinh-chi-tiet-thi-hanh-luat-du-lieu-unknown",
+    "refer_uid": "dieu-13-nghi-dinh-1652025nd-cp-nghi-dinh-1652025nd-cp-quy-dinh-chi-tiet-thi-hanh-luat-du-lieu-unknown",
+    "refer_type": "article",
+    "legal_field": "Thông tin-Truyền thông, Hành chính, An ninh quốc gia",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Thông tin-Truyền thông, Hành chính, An ninh quốc gia'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 3 32/2012/NĐ-CP",
+      "Điều 34 52/2024/NĐ-CP",
+      "Điều 13 165/2025/NĐ-CP",
+      "Điều 11 64/2015/NĐ-CP"
+    ],
+    "answer": "Điều 13 165/2025/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 34 52/2024/NĐ-CP",
+    "raw_model_output": "Điều 34 52/2024/NĐ-CP",
+    "latency_sec": 7.7252,
+    "evaluated_at": "2026-05-14T17:52:52"
+  },
+  {
+    "uid": "bench_2_6_dieu-23-nghi-dinh-1162021nd-cp-nghi-dinh-1162021nd-cp-huong-dan-luat-phong-chong-ma-tuy-luat-xu-ly-vi-pham-hanh-chinh-ve-cai-nghien-ma-tuy-unknown",
+    "refer_uid": "dieu-23-nghi-dinh-1162021nd-cp-nghi-dinh-1162021nd-cp-huong-dan-luat-phong-chong-ma-tuy-luat-xu-ly-vi-pham-hanh-chinh-ve-cai-nghien-ma-tuy-unknown",
+    "refer_type": "article",
+    "legal_field": "Y tế-Sức khỏe, An ninh trật tự, Vi phạm hành chính",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Y tế-Sức khỏe, An ninh trật tự, Vi phạm hành chính'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 17 54/1999/NĐ-CP",
+      "Điều 23 116/2021/NĐ-CP",
+      "Điều 3 93/2022/NĐ-CP",
+      "Điều 33 50/2010/QH12"
+    ],
+    "answer": "Điều 23 116/2021/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 23 116/2021/NĐ-CP",
+    "raw_model_output": "Điều 23 116/2021/NĐ-CP",
+    "latency_sec": 0.9699,
+    "evaluated_at": "2026-05-14T17:52:53"
+  },
+  {
+    "uid": "bench_2_6_dieu-22-nghi-dinh-842019nd-cp-nghi-dinh-842019nd-cp-quy-dinh-ve-quan-ly-phan-bon-unknown",
+    "refer_uid": "dieu-22-nghi-dinh-842019nd-cp-nghi-dinh-842019nd-cp-quy-dinh-ve-quan-ly-phan-bon-unknown",
+    "refer_type": "article",
+    "legal_field": "Nông nghiệp-Lâm nghiệp",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Nông nghiệp-Lâm nghiệp'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 27 11/2018/NĐ-CP",
+      "Điều 4 22/1998/NĐ-CP",
+      "Điều 295 36/2005/QH11",
+      "Điều 22 84/2019/NĐ-CP"
+    ],
+    "answer": "Điều 22 84/2019/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "D",
+    "raw_model_output": "D",
+    "latency_sec": 0.8034,
+    "evaluated_at": "2026-05-14T17:52:54"
+  },
+  {
+    "uid": "bench_2_6_dieu-3-nghi-dinh-3212025nd-cp-nghi-dinh-3212025nd-cp-huong-dan-lay-y-kien-nhan-dan-ve-don-vi-hanh-chinh-unknown",
+    "refer_uid": "dieu-3-nghi-dinh-3212025nd-cp-nghi-dinh-3212025nd-cp-huong-dan-lay-y-kien-nhan-dan-ve-don-vi-hanh-chinh-unknown",
+    "refer_type": "article",
+    "legal_field": "Hành chính, Địa giới hành chính",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Hành chính, Địa giới hành chính'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 12 23/2016/NĐ-CP",
+      "Điều 12 90/2020/NĐ-CP",
+      "Điều 3 321/2025/NĐ-CP",
+      "Điều 5 149/2017/NĐ-CP"
+    ],
+    "answer": "Điều 3 321/2025/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 12 90/2020/NĐ-CP",
+    "raw_model_output": "Điều 12 90/2020/NĐ-CP",
+    "latency_sec": 0.7245,
+    "evaluated_at": "2026-05-14T17:52:55"
+  },
+  {
+    "uid": "bench_2_6_dieu-13-nghi-dinh-1262018nd-cp-nghi-dinh-1262018nd-cp-ve-thanh-lap-va-hoat-dong-cua-co-so-van-hoa-nuoc-ngoai-tai-viet-nam-unknown",
+    "refer_uid": "dieu-13-nghi-dinh-1262018nd-cp-nghi-dinh-1262018nd-cp-ve-thanh-lap-va-hoat-dong-cua-co-so-van-hoa-nuoc-ngoai-tai-viet-nam-unknown",
+    "refer_type": "article",
+    "legal_field": "Cơ cấu tổ chức, Văn hóa-Thể thao-Du lịch",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Cơ cấu tổ chức, Văn hóa-Thể thao-Du lịch'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 4 05/2014/NĐ-CP",
+      "Điều 28 30/1998/NĐ-CP",
+      "Điều 13 126/2018/NĐ-CP",
+      "Điều 55 101/2015/QH13"
+    ],
+    "answer": "Điều 13 126/2018/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 13 126/2018/NĐ-CP",
+    "raw_model_output": "Điều 13 126/2018/NĐ-CP",
+    "latency_sec": 0.7271,
+    "evaluated_at": "2026-05-14T17:52:55"
+  },
+  {
+    "uid": "bench_2_6_dieu-28-nghi-dinh-682010nd-cp-nghi-dinh-682010nd-cp-xu-phat-vi-pham-phap-luat-trong-linh-vuc-dien-luc-unknown",
+    "refer_uid": "dieu-28-nghi-dinh-682010nd-cp-nghi-dinh-682010nd-cp-xu-phat-vi-pham-phap-luat-trong-linh-vuc-dien-luc-unknown",
+    "refer_type": "article",
+    "legal_field": "Chính sách, Công nghiệp, Điện lực",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Chính sách, Công nghiệp, Điện lực'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 28 68/2010/NĐ-CP",
+      "Điều 38 08/2007/QH12",
+      "Điều 35 119/2018/NĐ-CP",
+      "Điều 8 49/2000/NĐ-CP"
+    ],
+    "answer": "Điều 28 68/2010/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 35 119/2018/NĐ-CP",
+    "raw_model_output": "Điều 35 119/2018/NĐ-CP",
+    "latency_sec": 5.6621,
+    "evaluated_at": "2026-05-14T17:53:01"
+  },
+  {
+    "uid": "bench_2_6_dieu-97-luat-412024qh15-luat-bao-hiem-xa-hoi-2024-so-412024qh15-unknown",
+    "refer_uid": "dieu-97-luat-412024qh15-luat-bao-hiem-xa-hoi-2024-so-412024qh15-unknown",
+    "refer_type": "article",
+    "legal_field": "Bảo hiểm, Lao động-Tiền lương, Chính sách",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Bảo hiểm, Lao động-Tiền lương, Chính sách'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 26 128/2013/NĐ-CP",
+      "Điều 97 41/2024/QH15",
+      "Điều 16 228/2025/NĐ-CP",
+      "Điều 7 27/2016/NĐ-CP"
+    ],
+    "answer": "Điều 97 41/2024/QH15",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 97 41/2024/QH15",
+    "raw_model_output": "Điều 97 41/2024/QH15",
+    "latency_sec": 1.0297,
+    "evaluated_at": "2026-05-14T17:53:02"
+  },
+  {
+    "uid": "bench_2_6_dieu-5-luat-362005qh11-luat-thuong-mai-2005-so-362005qh11-unknown",
+    "refer_uid": "dieu-5-luat-362005qh11-luat-thuong-mai-2005-so-362005qh11-unknown",
+    "refer_type": "article",
+    "legal_field": "Thương mại-Quảng cáo, Chính sách",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Thương mại-Quảng cáo, Chính sách'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 5 36/2005/QH11",
+      "Điều 38 340/2025/NĐ-CP",
+      "Điều 6 142/2017/NĐ-CP",
+      "Điều 32 86/2015/QH13"
+    ],
+    "answer": "Điều 5 36/2005/QH11",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 6 142/2017/NĐ-CP",
+    "raw_model_output": "Điều 6 142/2017/NĐ-CP",
+    "latency_sec": 3.7578,
+    "evaluated_at": "2026-05-14T17:53:06"
+  },
+  {
+    "uid": "bench_2_6_dieu-4-nghi-dinh-1242016nd-cp-nghi-dinh-1242016nd-cp-bieu-thue-uu-dai-theo-hiep-dinh-thuong-mai-viet-lao-unknown",
+    "refer_uid": "dieu-4-nghi-dinh-1242016nd-cp-nghi-dinh-1242016nd-cp-bieu-thue-uu-dai-theo-hiep-dinh-thuong-mai-viet-lao-unknown",
+    "refer_type": "article",
+    "legal_field": "Thuế-Phí-Lệ phí, Thương mại-Quảng cáo, Xuất nhập khẩu, Ngoại giao",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Thuế-Phí-Lệ phí, Thương mại-Quảng cáo, Xuất nhập khẩu, Ngoại giao'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 3 20/2011/NĐ-CP",
+      "Điều 4 124/2016/NĐ-CP",
+      "Điều 41 109/2013/NĐ-CP",
+      "Điều 4 96/2009/NĐ-CP"
+    ],
+    "answer": "Điều 4 124/2016/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "B. Điều 4 124/2016/NĐ-CP",
+    "raw_model_output": "B. Điều 4 124/2016/NĐ-CP",
+    "latency_sec": 0.8282,
+    "evaluated_at": "2026-05-14T17:53:07"
+  },
+  {
+    "uid": "bench_2_6_dieu-4-nghi-dinh-032021nd-cp-nghi-dinh-032021nd-cp-bao-hiem-bat-buoc-trach-nhiem-dan-su-cua-chu-xe-co-gioi-unknown",
+    "refer_uid": "dieu-4-nghi-dinh-032021nd-cp-nghi-dinh-032021nd-cp-bao-hiem-bat-buoc-trach-nhiem-dan-su-cua-chu-xe-co-gioi-unknown",
+    "refer_type": "article",
+    "legal_field": "Bảo hiểm, Giao thông, Dân sự",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Bảo hiểm, Giao thông, Dân sự'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 32 119/2024/NĐ-CP",
+      "Điều 37 23/2025/NĐ-CP",
+      "Điều 4 03/2021/NĐ-CP",
+      "Điều 8 122/2026/NĐ-CP"
+    ],
+    "answer": "Điều 4 03/2021/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 4 03/2021/NĐ-CP",
+    "raw_model_output": "Điều 4 03/2021/NĐ-CP",
+    "latency_sec": 11.2721,
+    "evaluated_at": "2026-05-14T17:53:18"
+  },
+  {
+    "uid": "bench_2_6_dieu-40-nghi-dinh-1372013nd-cp-nghi-dinh-1372013nd-cp-huong-dan-luat-dien-luc-unknown",
+    "refer_uid": "dieu-40-nghi-dinh-1372013nd-cp-nghi-dinh-1372013nd-cp-huong-dan-luat-dien-luc-unknown",
+    "refer_type": "article",
+    "legal_field": "Tư pháp-Hộ tịch, Công nghiệp, Điện lực",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Tư pháp-Hộ tịch, Công nghiệp, Điện lực'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 12 53/2006/NĐ-CP",
+      "Điều 70 67/2023/NĐ-CP",
+      "Điều 9 86/2025/NĐ-CP",
+      "Điều 40 137/2013/NĐ-CP"
+    ],
+    "answer": "Điều 40 137/2013/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "Điều 40 137/2013/NĐ-CP",
+    "raw_model_output": "Điều 40 137/2013/NĐ-CP",
+    "latency_sec": 1.6682,
+    "evaluated_at": "2026-05-14T17:53:20"
+  },
+  {
+    "uid": "bench_2_6_dieu-10-luat-282013qh13-luat-phong-chong-khung-bo-2013-so-282013qh13-unknown",
+    "refer_uid": "dieu-10-luat-282013qh13-luat-phong-chong-khung-bo-2013-so-282013qh13-unknown",
+    "refer_type": "article",
+    "legal_field": "Quốc phòng, An ninh quốc gia, Ngoại giao",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Quốc phòng, An ninh quốc gia, Ngoại giao'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 10 28/2013/QH13",
+      "Điều 20 68/2016/NĐ-CP",
+      "Điều 8 240/2025/NĐ-CP",
+      "Điều 16 69/2024/NĐ-CP"
+    ],
+    "answer": "Điều 10 28/2013/QH13",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "A",
+    "raw_model_output": "A",
+    "latency_sec": 8.0049,
+    "evaluated_at": "2026-05-14T17:53:28"
+  },
+  {
+    "uid": "bench_2_6_dieu-13-nghi-dinh-422010nd-cp-nghi-dinh-422010nd-cp-huong-dan-luat-thi-dua-khen-thuong-unknown",
+    "refer_uid": "dieu-13-nghi-dinh-422010nd-cp-nghi-dinh-422010nd-cp-huong-dan-luat-thi-dua-khen-thuong-unknown",
+    "refer_type": "article",
+    "legal_field": "Thi đua-Khen thưởng-Kỷ luật",
+    "question": "Điều khoản nào dưới đây liên quan trực tiếp nhất đến chủ đề pháp lý: 'Thi đua-Khen thưởng-Kỷ luật'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 13 42/2010/NĐ-CP",
+      "Điều 29 45/2026/NĐ-CP",
+      "Điều 48 94/2025/QH15",
+      "Điều 5 04/2026/NĐ-CP"
+    ],
+    "answer": "Điều 13 42/2010/NĐ-CP",
+    "task_id": "task_2_6",
+    "model": "gemini-3.1-flash-lite",
+    "model_answer": "C",
+    "raw_model_output": "C",
+    "latency_sec": 17.7162,
+    "evaluated_at": "2026-05-14T17:53:45"
+  }
+]

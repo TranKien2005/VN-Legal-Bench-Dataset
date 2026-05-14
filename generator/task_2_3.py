@@ -3,16 +3,14 @@ import random
 from pathlib import Path
 import sys
 
-# Add project root to path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from db.session import SessionLocal
 from db.models import LegalArticle, LegalDoc
-from sqlalchemy.sql import func
 from generator.utils import get_stratified_articles
 
+
 def _get_short_excerpt(content: str, max_sentences: int = 2) -> str:
-    """Lấy đoạn trích ngắn để làm câu hỏi."""
     if not content:
         return ""
     sentences = [s.strip() for s in content.replace('\n', ' ').split('.') if s.strip()]
@@ -21,86 +19,100 @@ def _get_short_excerpt(content: str, max_sentences: int = 2) -> str:
         excerpt += '.'
     return excerpt
 
+
+def _article_label(article: LegalArticle, doc: LegalDoc) -> str:
+    return f"Điều {article.article_number} {doc.doc_id}"
+
+
 def generate_task_2_3(limit=50):
     """
-    Task 2.3 — Legal Metadata Identification (Exact Match Version)
+    Task 2.3 — Legal Metadata Identification
     1. Excerpt -> doc_id
-    2. doc_id -> issue_date
-    3. doc_id -> status (Only "Còn hiệu lực" / "Hết hiệu lực")
+    2. Excerpt -> article number + doc_id
+    3. doc_id -> effective_date
+    4. doc_id -> signer
     """
-    print(f"Starting Task 2.3 Generation (Exact Match, Limit: {limit})...")
+    print(f"Starting Task 2.3 Generation (Exact Metadata Recall, Limit: {limit})...")
     session = SessionLocal()
 
-    # Lấy mẫu bài viết để làm Dạng 1
-    articles = get_stratified_articles(session, limit // 2)
-    
-    # Lấy mẫu văn bản để làm Dạng 2 và 3
+    articles = get_stratified_articles(session, max(limit, 20))
     all_docs = session.query(LegalDoc).filter(LegalDoc.doc_id != None).all()
-    
+    doc_map = {d.uid: d for d in all_docs}
+
     benchmark_data = []
 
-    # --- DẠNG 1: Đoạn trích -> Số hiệu ---
-    doc_map = {d.uid: d for d in all_docs}
+    random.shuffle(articles)
     for article in articles:
+        if len(benchmark_data) >= limit // 2:
+            break
+
         doc = doc_map.get(article.doc_uid)
-        if not doc or not doc.doc_id:
+        if not doc or not doc.doc_id or not article.article_number:
             continue
-            
+
         excerpt = _get_short_excerpt(article.content)
         if not excerpt:
             continue
 
-        benchmark_data.append({
-            "uid": f"bench_2_3_id_{article.article_id}",
-            "refer_uid": article.article_id,
-            "refer_type": "article",
-            "question": (
-                f"Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n"
-                f"\"{excerpt}\"\n\n"
-                f"Yêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)"
-            ),
-            "answer": doc.doc_id
-        })
+        if random.random() < 0.5:
+            benchmark_data.append({
+                "uid": f"bench_2_3_docid_{article.article_id}",
+                "refer_uid": article.article_id,
+                "refer_type": "article",
+                "question": (
+                    f"Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n"
+                    f"\"{excerpt}\"\n\n"
+                    f"Yêu cầu: Chỉ trả về số hiệu văn bản."
+                ),
+                "answer": doc.doc_id
+            })
+        else:
+            benchmark_data.append({
+                "uid": f"bench_2_3_article_{article.article_id}",
+                "refer_uid": article.article_id,
+                "refer_type": "article",
+                "question": (
+                    f"Đoạn trích dưới đây thuộc điều khoản nào của văn bản pháp luật nào?\n\n"
+                    f"\"{excerpt}\"\n\n"
+                    f"Yêu cầu: Trả về theo mẫu 'Điều [số điều] [số hiệu văn bản]'."
+                ),
+                "answer": _article_label(article, doc)
+            })
 
-    # --- DẠNG 2: Số hiệu -> Ngày ban hành ---
-    # Lọc lấy các doc có ngày ban hành
-    docs_with_date = [d for d in all_docs if d.issue_date]
-    sample_2 = random.sample(docs_with_date, min(len(docs_with_date), limit // 4))
-    
-    for doc in sample_2:
-        # Chuyển định dạng ngày sang DD/MM/YYYY cho phổ thông
-        date_str = doc.issue_date.strftime("%d/%m/%Y")
-        
+    docs_with_effective_date = [d for d in all_docs if d.effective_date]
+    docs_with_signer = [d for d in all_docs if d.signer]
+
+    metadata_target = max(0, limit - len(benchmark_data))
+    date_target = metadata_target // 2
+    signer_target = metadata_target - date_target
+
+    for doc in random.sample(docs_with_effective_date, min(len(docs_with_effective_date), date_target)):
         benchmark_data.append({
-            "uid": f"bench_2_3_date_{doc.uid}",
+            "uid": f"bench_2_3_effective_{doc.uid}",
             "refer_uid": doc.uid,
             "refer_type": "doc",
             "question": (
-                f"Văn bản pháp luật có số hiệu '{doc.doc_id}' được ban hành vào ngày tháng năm nào?\n\n"
-                f"Yêu cầu: Trả về ngày theo định dạng DD/MM/YYYY. (Ví dụ trả lời: 11/01/2022)"
+                f"Văn bản pháp luật có số hiệu '{doc.doc_id}' có hiệu lực từ ngày nào?\n\n"
+                f"Yêu cầu: Trả về ngày theo định dạng DD/MM/YYYY."
             ),
-            "answer": date_str
+            "answer": doc.effective_date.strftime("%d/%m/%Y")
         })
 
-    # --- DẠNG 3: Số hiệu -> Trạng thái ---
-    # Chỉ lấy "Còn hiệu lực" hoặc "Hết hiệu lực"
-    valid_statuses = ["Còn hiệu lực", "Hết hiệu lực"]
-    docs_with_status = [d for d in all_docs if d.status in valid_statuses]
-    sample_3 = random.sample(docs_with_status, min(len(docs_with_status), limit // 4))
-    
-    for doc in sample_3:
+    for doc in random.sample(docs_with_signer, min(len(docs_with_signer), signer_target)):
         benchmark_data.append({
-            "uid": f"bench_2_3_status_{doc.uid}",
+            "uid": f"bench_2_3_signer_{doc.uid}",
             "refer_uid": doc.uid,
             "refer_type": "doc",
             "question": (
-                f"Tình trạng hiệu lực hiện tại của văn bản có số hiệu '{doc.doc_id}' là gì?\n\n"
-                f"Yêu cầu: Chỉ trả về tình trạng hiệu lực. (Ví dụ trả lời: Còn hiệu lực)"
+                f"Ai là người ký văn bản pháp luật có số hiệu '{doc.doc_id}'?\n\n"
+                f"Yêu cầu: Chỉ trả về tên người ký."
             ),
-            "answer": doc.status
+            "answer": doc.signer
         })
 
-    # Lưu kết quả
+    benchmark_data = benchmark_data[:limit]
+    random.shuffle(benchmark_data)
+
     output_dir = Path("data/benchmark/rule_recall")
     output_dir.mkdir(parents=True, exist_ok=True)
     output_file = output_dir / "task_2_3.json"
@@ -111,5 +123,6 @@ def generate_task_2_3(limit=50):
     session.close()
     print(f"Task 2.3 Complete. {len(benchmark_data)} samples saved to {output_file}")
 
+
 if __name__ == "__main__":
-    generate_task_2_3(limit=50)
+    generate_task_2_3(limit=100)

@@ -2,6 +2,7 @@ import re
 import unicodedata
 from dataclasses import dataclass, field, asdict
 from datetime import date
+from typing import Any
 
 def slugify(text: str) -> str:
     """Tạo slug chuẩn cho UID: Xử lý đ/Đ và loại bỏ ký tự đặc biệt."""
@@ -35,6 +36,9 @@ class ParsedLegalDoc:
     issue_date: date | None = None
     effective_date: date | None = None
     status: str | None = None
+    signer: str | None = None
+    summary: str | None = None
+    download_links: list[dict[str, Any]] | None = None
     url: str | None = None
     raw_text: str | None = None
     articles: list[ParsedArticle] = field(default_factory=list)
@@ -48,75 +52,144 @@ def is_valid_doc_content(title_web: str, doc_id: str) -> bool:
         return False
     return True
 
+def _is_caps_title_line(line: str) -> bool:
+    letters = [c for c in line if c.isalpha()]
+    if not letters:
+        return False
+    upper_count = sum(1 for c in letters if c.isupper())
+    return upper_count / len(letters) >= 0.8
+
+
+def clean_luatvietnam_raw_text(text: str) -> str:
+    if not text:
+        return ""
+    text = re.sub(r"[​‌‍﻿­]", "", text)
+    noise_lines = {"đang theo dõi", "bổ sung"}
+    lines = []
+    for line in text.splitlines():
+        clean_line = line.strip()
+        if clean_line.lower() in noise_lines:
+            continue
+        if "data-href=" in clean_line or "docitem-view-change-content" in clean_line:
+            continue
+        lines.append(line)
+    return "\n".join(lines)
+
+
 def extract_title_from_text(text: str) -> str | None:
-    """Trích xuất tiêu đề bằng cơ chế khối VIẾT HOA liên tục (Caps Block)."""
-    doc_types = ["LUẬT", "NGHỊ ĐỊNH", "NGHỊ QUYẾT", "THÔNG TƯ", "QUYẾT ĐỊNH", "HIẾN PHÁP", "LỆNH", "SẮC LỆNH"]
+    """Trích xuất tiêu đề từ dòng loại văn bản và các dòng mô tả ngay sau đó."""
+    text = unicodedata.normalize('NFC', text)
+    doc_types = ["BỘ LUẬT", "LUẬT", "NGHỊ ĐỊNH", "NGHỊ QUYẾT", "THÔNG TƯ", "QUYẾT ĐỊNH", "HIẾN PHÁP", "LỆNH", "SẮC LỆNH"]
     lines = text.split('\n')
     start_idx = -1
-    for i, line in enumerate(lines[:50]): # Tìm trong 50 dòng đầu
+    for i, line in enumerate(lines[:50]):
         line_clean = line.strip()
+        if line_clean == "LUẬT" and i >= 2:
+            prev_tokens = [lines[i - 2].strip().upper(), lines[i - 1].strip().upper()]
+            if prev_tokens == ["B", "Ộ"]:
+                lines[i] = "BỘ LUẬT"
+                start_idx = i
+                break
         if any(line_clean.startswith(dt) for dt in doc_types):
             start_idx = i
             break
-    if start_idx == -1: return None
-    
+    if start_idx == -1:
+        return None
+
+    next_title_line = None
+    for line in lines[start_idx + 1:start_idx + 6]:
+        line_clean = line.strip()
+        if line_clean:
+            next_title_line = line_clean
+            break
+    caps_block_mode = bool(next_title_line and _is_caps_title_line(next_title_line))
+
     title_parts = []
-    for i in range(start_idx, len(lines)):
-        line_clean = lines[i].strip()
-        if not line_clean: continue
-        # Dừng nếu gặp "Căn cứ", Chữ thường, hoặc Danh sách
-        if re.search(r"^\s*Căn\s+cứ\b", line_clean, re.IGNORECASE): break
-        if any(c.islower() for c in line_clean): break
+    for line in lines[start_idx:start_idx + 12]:
+        line_clean = line.strip()
+        if not line_clean:
+            continue
+        if re.search(r"^\s*Căn\s+cứ\b", line_clean, re.IGNORECASE):
+            break
+        if re.match(r"^(Chương|Mục|Điều)\s+", line_clean, re.IGNORECASE):
+            break
+        if re.search(r"^(Nơi nhận|TM\.|KT\.|THỦ TƯỚNG|BỘ TRƯỞNG|CHỦ TỊCH)\b", line_clean, re.IGNORECASE):
+            break
+        if caps_block_mode and title_parts and any(c.islower() for c in line_clean):
+            break
         title_parts.append(line_clean)
-        
-    if not title_parts: return None
+
+    if not title_parts:
+        return None
     return re.sub(r"\s+", " ", " ".join(title_parts)).strip()
 
 def split_articles(text: str, doc_id: str, doc_uid: str, is_amendment: bool = False) -> list[ParsedArticle]:
     """
     THUẬT TOÁN: Sequential Skeleton Search & Strict Title Split
     """
+    text = unicodedata.normalize('NFC', text)
     articles = []
-    # Tìm tất cả "Điều X"
-    pattern = re.compile(r'(?:^|\n)Điều\s+(\d+[a-z]?)\.?[\t ]*', re.IGNORECASE)
+    pattern = re.compile(r'(?m)^[\t ]*Điều\s+(\d+[a-z]?)\b(?:\s*\.)?[\t ]*([^\n]*)$', re.IGNORECASE)
     matches = list(pattern.finditer(text))
-    
-    # 1. Cơ chế lọc trích dẫn: Loại bỏ các Điều nằm trong dấu ngoặc kép "..."
-    # (Tạm thời xử lý bằng cách kiểm tra context phía trước)
+
+    def segment_word_count(start: int, end: int) -> int:
+        return len(re.findall(r"\w+", clean_luatvietnam_raw_text(text[start:end]), re.UNICODE))
+
+    def is_article_heading(match) -> bool:
+        heading_tail = match.group(2).strip()
+        if not heading_tail:
+            following_lines = text[match.end():].splitlines()
+            next_line = next((line.strip() for line in following_lines if line.strip()), "")
+            if re.match(r"^(và|hoặc|của|theo|tại|khoản|điểm)\b", next_line, re.IGNORECASE):
+                return False
+            return True
+        if "." in heading_tail:
+            return False
+        return True
+
+    # 1. Cơ chế lọc trích dẫn và ranh giới: chỉ nhận dòng tiêu đề Điều hợp lệ.
     valid_matches = []
     for m in matches:
         pre_context = text[max(0, m.start()-10):m.start()]
-        if '“' in pre_context or '"' in pre_context: continue # Bỏ qua điều trích dẫn
+        if '“' in pre_context or '"' in pre_context:
+            continue
+        if not is_article_heading(m):
+            continue
         valid_matches.append(m)
 
     # 2. Cơ chế Điều liên tục (Sequential Skeleton):
-    # Một văn bản chính thốn phải bắt đầu từ Điều 1 và tăng dần.
+    # Một văn bản chính thống phải bắt đầu từ Điều 1 và tăng dần.
     final_matches = []
     next_expected = 1
     found_start = False
-    
+
     for m in valid_matches:
         num_str = m.group(1)
         try: num = int(re.sub(r'[a-z]', '', num_str))
         except: continue
-        
+
         if not found_start:
             if num == 1:
                 found_start = True
                 next_expected = 2
                 final_matches.append(m)
         else:
-            # Chấp nhận nếu đúng số hiệu tiếp theo hoặc một bước nhảy nhỏ hợp lý
+            # Chỉ chấp nhận đúng số hiệu tiếp theo; mọi số khác được xem là trích dẫn/nhiễu
             if num == next_expected:
                 final_matches.append(m)
                 next_expected += 1
-            elif num < next_expected: # Điều cũ xuất hiện lại -> cite
+            else:
                 continue
-            elif num > next_expected + 5: # Nhảy quá xa -> nghi ngờ cite
-                continue
-            else: # Nhảy số nhỏ (ví dụ lỡ mất 1 điều) -> vẫn lấy
-                final_matches.append(m)
-                next_expected = num + 1
+
+    # 3. Nếu ranh giới không có tên Điều và tạo ra đoạn quá ngắn, coi đó là nhiễu.
+    compacted_matches = []
+    for i, m in enumerate(final_matches):
+        end_pos = final_matches[i+1].start() if i + 1 < len(final_matches) else len(text)
+        heading_tail = m.group(2).strip()
+        if compacted_matches and not heading_tail and segment_word_count(m.end(), end_pos) < 15:
+            continue
+        compacted_matches.append(m)
+    final_matches = compacted_matches
 
     # 3. Bóc tách chi tiết với Logic "Chữ hoa = Nội dung" (Strict Title Split)
     for i in range(len(final_matches)):
@@ -125,9 +198,9 @@ def split_articles(text: str, doc_id: str, doc_uid: str, is_amendment: bool = Fa
         start_pos = m.end()
         end_pos = final_matches[i+1].start() if i + 1 < len(final_matches) else len(text)
         
-        segment = text[start_pos:end_pos].strip('\r')
+        segment = clean_luatvietnam_raw_text(text[start_pos:end_pos]).strip('\r')
         if not segment: continue
-        
+
         # --- SMART SPLIT & MULTI-LINE TITLE ---
         lines = segment.split('\n')
         art_title_parts = []
@@ -146,7 +219,11 @@ def split_articles(text: str, doc_id: str, doc_uid: str, is_amendment: bool = Fa
                 art_content_parts.append(first_line[dot_match.start() + 1:].strip())
                 found_content = True
             else:
-                art_title_parts.append(first_line)
+                if first_line.endswith('.'):
+                    art_content_parts.append(first_line)
+                    found_content = True
+                else:
+                    art_title_parts.append(first_line)
         
         # Step 2 & 3: Gom tiếp tiêu đề hoặc dừng nếu gặp Chữ hoa/Danh sách
         if not found_content:
@@ -167,11 +244,25 @@ def split_articles(text: str, doc_id: str, doc_uid: str, is_amendment: bool = Fa
             
         art_title = " ".join(art_title_parts).strip()
         art_content = "\n".join(art_content_parts).strip()
-        
+
+        if not art_content and art_title:
+            junk_title = re.fullmatch(r"[,;:.\-–—\s]+", art_title) or re.match(
+                r"^(của\s+(Luật|Nghị định|Thông tư|Nghị quyết)\s+này|và|hoặc|Sửa đổi,\s*bổ sung|Bổ sung\s+Điều)",
+                art_title,
+                re.IGNORECASE
+            )
+            if junk_title:
+                continue
+            art_content = art_title
+            art_title = None
+
         # Step 4: Fail-safe (> 200 chars or ellipses)
         if art_title and (len(art_title) > 200 or '...' in art_title):
             art_content = (art_title + "\n" + art_content).strip()
             art_title = None
+
+        if not art_content.strip():
+            continue
 
         articles.append(ParsedArticle(
             article_id=f"{art_num}/{doc_id}",
@@ -198,15 +289,45 @@ def infer_issuing_body(doc_id: str) -> str | None:
 
 def parse_vn_date(date_str: str | None) -> date | None:
     if not date_str or not isinstance(date_str, str): return None
+    cleaned = date_str.strip().lower()
+    if not cleaned or cleaned in {"đã biết", "đang cập nhật", "chưa rõ"}: return None
     patterns = [r'(\d{1,2})[/-](\d{1,2})[/-](\d{4})', r'(\d{4})[/-](\d{1,2})[/-](\d{1,2})']
     for p in patterns:
-        m = re.search(p, date_str.strip())
+        m = re.search(p, cleaned)
         if m:
             g = m.groups()
             try:
                 if len(g[0]) == 4: return date(int(g[0]), int(g[1]), int(g[2]))
                 else: return date(int(g[2]), int(g[1]), int(g[0]))
             except: continue
+    m = re.search(r'ngày\s+(\d{1,2})\s+tháng\s+(\d{1,2})\s+năm\s+(\d{4})', cleaned)
+    if m:
+        try: return date(int(m.group(3)), int(m.group(2)), int(m.group(1)))
+        except: return None
+    return None
+
+
+def extract_effective_date_from_text(issue_date: date | None, *texts: str | None) -> date | None:
+    for text in texts:
+        if not text or not isinstance(text, str):
+            continue
+        lowered = text.lower()
+        if "hiệu lực" not in lowered:
+            continue
+        for pattern in [
+            r'(?:có\s+)?hiệu\s+lực(?:\s+thi\s+hành)?\s+(?:kể\s+)?từ\s+ngày\s+(\d{1,2}[/-]\d{1,2}[/-]\d{4})',
+            r'(?:có\s+)?hiệu\s+lực(?:\s+thi\s+hành)?\s+(?:kể\s+)?từ\s+ngày\s+(\d{1,2}\s+tháng\s+\d{1,2}\s+năm\s+\d{4})',
+            r'(?:có\s+)?hiệu\s+lực(?:\s+thi\s+hành)?\s+(?:kể\s+)?từ\s+(?:ngày\s+)?ban\s+hành'
+        ]:
+            m = re.search(pattern, lowered)
+            if not m:
+                continue
+            if m.groups():
+                parsed = parse_vn_date(m.group(1))
+                if parsed:
+                    return parsed
+            elif issue_date:
+                return issue_date
     return None
 
 def normalize_status(status_raw: str | None) -> str:
@@ -217,24 +338,45 @@ def normalize_status(status_raw: str | None) -> str:
     if any(kw in s for kw in ["còn hiệu lực", "đang áp dụng"]): return "Còn hiệu lực"
     return "Không xác định"
 
+def _is_weak_extracted_title(title: str | None) -> bool:
+    if not title:
+        return True
+    normalized = re.sub(r"\s+", " ", title).strip().upper()
+    generic_titles = {"LUẬT", "BỘ LUẬT", "NGHỊ ĐỊNH", "NGHỊ QUYẾT", "THÔNG TƯ", "QUYẾT ĐỊNH", "HIẾN PHÁP", "LỆNH", "SẮC LỆNH"}
+    return len(normalized) < 5 or len(normalized) > 350 or normalized in generic_titles
+
+
 def parse_legal_doc(text: str, **kwargs) -> ParsedLegalDoc:
     """Hàm trung tâm: Ưu tiên bóc tách CAPS Title và tạo UID chuẩn."""
+    text = unicodedata.normalize('NFC', text)
     doc_id = kwargs.get("doc_id", "").strip()
     doc_type = kwargs.get("doc_type", "Văn bản")
     title_web = kwargs.get("title_web", "")
-    
-    # 1. Ưu tiên bóc tách tiêu đề IN HOA từ nội dung
+
+    # 1. Ưu tiên bóc tách tiêu đề từ nội dung, fallback title web nếu kết quả quá chung chung
     extracted_title = extract_title_from_text(text)
-    final_title = extracted_title or title_web or f"{doc_type} {doc_id}"
+    final_title = title_web if _is_weak_extracted_title(extracted_title) and title_web else extracted_title or title_web or f"{doc_type} {doc_id}"
     
+    issue_date = parse_vn_date(kwargs.get("issue_date_str"))
+    summary = kwargs.get("summary")
+    effective_date = parse_vn_date(kwargs.get("effective_date_str")) or extract_effective_date_from_text(
+        issue_date,
+        kwargs.get("effective_date_str"),
+        summary,
+        text
+    )
+
     doc = ParsedLegalDoc(
         doc_id=doc_id,
         title=final_title.strip(),
         doc_type=doc_type,
         issuing_body=kwargs.get("issuing_body") or infer_issuing_body(doc_id),
         legal_field=kwargs.get("field"),
-        issue_date=parse_vn_date(kwargs.get("issue_date_str")),
-        effective_date=parse_vn_date(kwargs.get("effective_date_str")),
+        issue_date=issue_date,
+        effective_date=effective_date,
+        signer=kwargs.get("signer"),
+        summary=summary,
+        download_links=kwargs.get("download_links"),
         url=kwargs.get("url"),
         raw_text=text
     )
@@ -244,8 +386,9 @@ def parse_legal_doc(text: str, **kwargs) -> ParsedLegalDoc:
     uid_parts = [slugify(doc_type), slugify(doc_id), slugify(title_web or doc.title), slugify(issue_date_str)]
     doc.uid = "-".join(filter(None, uid_parts))
     
-    doc.status = normalize_status(kwargs.get("status_str"))
-    if any(kw in doc.title.lower() or kw in title_web.lower() for kw in ["sửa đổi", "bổ sung"]):
+    doc.status = normalize_status(kwargs.get("status_str")) if "status_str" in kwargs else None
+    amendment_source = " ".join([doc.title or "", title_web or "", summary or ""]).lower()
+    if any(kw in amendment_source for kw in ["sửa đổi", "bổ sung"]):
         doc.is_amendment = True
         
     return doc

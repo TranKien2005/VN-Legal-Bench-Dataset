@@ -123,7 +123,7 @@ def generate_task_1_1(limit=50, use_all=False):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Sinh Benchmark cho Task 1.1")
-    parser.add_argument("--limit", type=int, default=20, help="Số lượng mẫu tối đa (nếu không dùng --all)")
+    parser.add_argument("--limit", type=int, default=100, help="Số lượng mẫu tối đa (nếu không dùng --all)")
     parser.add_argument("--all", action="store_true", help="Xử lý toàn bộ dữ liệu tuần tự")
     
     args = parser.parse_args()

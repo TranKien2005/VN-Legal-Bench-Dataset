@@ -19,7 +19,6 @@ class ParsedCourtCase:
     case_date: str | None = None      # "YYYY-MM-DD"
     title: str | None = None          # Tiêu đề (Về việc...)
     legal_bases: str = ""             # Toàn bộ khối văn bản căn cứ pháp lý
-    decision_items: list[str] = None  # Danh sách chi tiết các khoản quyết định
     raw_text: str = ""
     introduction: str = ""
     case_content: str = ""
@@ -28,9 +27,7 @@ class ParsedCourtCase:
 
     def __post_init__(self):
         if self.legal_bases is None:
-            self.legal_bases = []
-        if self.decision_items is None:
-            self.decision_items = []
+            self.legal_bases = ""
 
 
 # --- Regex nâng cao ---
@@ -118,74 +115,36 @@ CASE_TITLE_PATTERN = re.compile(
 
 SECTION_PATTERNS = {
     "case_content": re.compile(
-        r"^\s*N[ỘÔO]I\s+DUNG\s+V[ỤU]\s+[ÁA]N.*$",
+        r"^\s*N[ỘÔO]\s*I\s*DUNG\s+V\s*[ỤU]\s*[ÁA]\s*N\s*:?\s*$",
         re.MULTILINE | re.IGNORECASE,
     ),
     "court_reasoning": re.compile(
-        r"^\s*NH[ẬẠÂA]N\s+Đ[ỊI]NH\s+C[ỦU]A\s+(?:HỘI\s+ĐỒNG\s+XÉT\s+XỬ|TÒA\s+ÁN|TOÀN?\s+ÁN).*$",
+        r"^\s*(?:NH[ẬẠÂA]\s*N\s*(?:Đ|D)\s*[ỊI]\s*NH\s+C[ỦU]A\s+(?:HỘI\s+ĐỒNG\s+XÉT\s+XỬ|T[ÒO]A\s*[ÁA]N|TO[ÀA]N?\s*[ÁA]N)|NH[ẬẠÂA]\s*N\s+TH[ẤA]\s*Y)\s*:?\s*$",
         re.MULTILINE | re.IGNORECASE,
     ),
     "decision": re.compile(
-        r"^\s*QUY[ẾÊE]T\s+Đ[ỊI]NH\s*[:\s]*$",
+        r"^\s*QUY[ẾÊE]\s*T\s*(?:Đ|D)\s*[ỊI]\s*NH\s*:?\s*$",
         re.MULTILINE | re.IGNORECASE,
     ),
 }
 
-def extract_decision_details(decision_text: str):
-    """
-    Tách Căn cứ pháp lý và Danh sách quyết định chi tiết.
-    Sử dụng kỹ thuật Sequential Skeleton Search và One-way Gate từ script gốc.
-    """
+def extract_legal_bases_from_decision(decision_text: str) -> str:
+    """Tách phần căn cứ pháp lý trong mục quyết định; giữ nguyên khối quyết định."""
     if not decision_text:
-        return "", []
-        
-    legal_bases_text = ""
-    decision_items = []
-    
-    # Neo từ khóa xử lý (One-way gate)
-    process_anchor = re.search(r'\bX[ửu]\s*:', decision_text, re.IGNORECASE)
-    
-    if process_anchor:
-        # 1. Căn cứ pháp lý là phần trước anchor
-        legal_bases_text = decision_text[:process_anchor.start()].strip()
-        legal_bases_text = re.sub(r'^QUY[ẾÊE]T\s+Đ[ỊI]NH\s*:?\s*', '', legal_bases_text, flags=re.IGNORECASE).strip()
-        
-        decision_content = decision_text[process_anchor.start():].strip()
-        
-        # 2. Sequential Skeleton Search (Đánh số 1. 2. 3.)
-        items_raw = []
-        current_idx = 1
-        
-        # Tìm điểm bắt đầu thực sự (phần text mô tả chung trước số 1.)
-        first_num = re.search(r'(?:\n|^)1\.\s+', decision_content)
-        if first_num:
-            intro_text = decision_content[:first_num.start()].strip()
-            if intro_text:
-                items_raw.append(intro_text)
-            
-            search_text = decision_content[first_num.start():]
-            while True:
-                next_val = current_idx + 1
-                next_num = re.search(rf'(?:\n|^){next_val}\.\s+', search_text)
-                if next_num:
-                    items_raw.append(search_text[:next_num.start()].strip())
-                    search_text = search_text[next_num.start():]
-                    current_idx += 1
-                else:
-                    items_raw.append(search_text.strip())
-                    break
-        else:
-            items_raw.append(decision_content)
-            
-        decision_items = [i for i in items_raw if i]
-    else:
-        # Fallback nếu không có "Xử:"
-        if len(decision_text) < 800:
-            legal_bases_text = decision_text
-        else:
-            decision_items = [decision_text]
-            
-    return legal_bases_text, decision_items
+        return ""
+
+    process_anchor = re.search(r'\b(?:X[ửư]\s*|Tuy[êe]n\s*x[ửư])\s*:?', decision_text, re.IGNORECASE)
+    if not process_anchor:
+        return ""
+
+    legal_bases_text = decision_text[:process_anchor.start()].strip()
+    legal_bases_text = re.sub(
+        r'^QUY[ẾÊE]T\s+Đ[ỊI]NH\s*:?\s*',
+        '',
+        legal_bases_text,
+        flags=re.IGNORECASE
+    ).strip()
+    return legal_bases_text
 
 def extract_case_metadata(text: str) -> dict:
     header = text[:1000]
@@ -255,13 +214,25 @@ def split_case_sections(text: str) -> dict:
         next_start = section_positions[i + 1][0] if i + 1 < len(section_positions) else len(text)
         sections[name] = text[end:next_start].strip()
 
+    if not sections["case_content"] and sections["court_reasoning"]:
+        reasoning_start = next((start for start, _, name in section_positions if name == "court_reasoning"), None)
+        if reasoning_start and len(sections["introduction"]) > 500:
+            intro_lines = sections["introduction"].splitlines()
+            start_line_idx = 0
+            for idx, line in enumerate(intro_lines):
+                if re.search(r"\b(?:Nguy[êe]n\s*đơn|Bị\s*đơn|B[ịi]\s*đơn|Người\s+có\s+quyền|Tại\s+đơn|Theo\s+đơn)\b", line, re.IGNORECASE):
+                    start_line_idx = idx
+                    break
+            sections["case_content"] = "\n".join(intro_lines[start_line_idx:]).strip()
+            sections["introduction"] = "\n".join(intro_lines[:start_line_idx]).strip()
+
     return sections
 
 def parse_court_case(text: str) -> ParsedCourtCase:
     metadata = extract_case_metadata(text)
     sections = split_case_sections(text)
     
-    bases, items = extract_decision_details(sections["decision"])
+    bases = extract_legal_bases_from_decision(sections["decision"])
 
     uid = generate_case_uid(
         metadata.get("case_no"), 
@@ -276,7 +247,6 @@ def parse_court_case(text: str) -> ParsedCourtCase:
         case_date=metadata.get("case_date"),
         title=metadata.get("title"),
         legal_bases=bases,
-        decision_items=items,
         raw_text=text,
         introduction=sections["introduction"],
         case_content=sections["case_content"],

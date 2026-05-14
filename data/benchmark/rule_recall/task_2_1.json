@@ -1,443 +1,884 @@
 [
   {
-    "uid": "bench_2_1_dieu-1-nghi-dinh-702012nd-cp-nghi-dinh-702012nd-cp-2012-09-18",
-    "refer_uid": "dieu-1-nghi-dinh-702012nd-cp-nghi-dinh-702012nd-cp-2012-09-18",
-    "refer_doc_id": "70/2012/NĐ-CP",
+    "uid": "bench_2_1_dieu-6-luat-632025qh15-luat-to-chuc-chinh-phu-2025-so-632025qh15-unknown",
+    "refer_uid": "dieu-6-luat-632025qh15-luat-to-chuc-chinh-phu-2025-so-632025qh15-unknown",
+    "refer_doc_id": "63/2025/QH15",
     "refer_type": "article",
-    "concept": "di tích",
-    "question": "Trong NGHỊ ĐỊNH QUY ĐỊNH THẨM QUYỀN, TRÌNH TỰ, THỦ TỤC LẬP, PHÊ DUYỆT QUY HOẠCH, DỰ ÁN BẢO QUẢN, TU BỔ, PHỤC HỒI DI TÍCH LỊCH SỬ - VĂN HÓA, DANH LAM THẮNG CẢNH (ban hành năm 2012), khái niệm 'di tích' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "di tích lịch sử - văn hóa, danh lam thắng cảnh (sau đây gọi là di tích)"
+    "concept": "Thủ tướng Chính phủ",
+    "question": "Trong LUẬT TỔ CHỨC CHÍNH PHỦ (ban hành năm không xác định), khái niệm 'Thủ tướng Chính phủ' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Thủ tướng Chính phủ là người đứng đầu Chính phủ; lãnh đạo công tác của Chính phủ và chịu trách nhiệm trước Quốc hội về hoạt động của Chính phủ và những nhiệm vụ được giao"
   },
   {
-    "uid": "bench_2_1_dieu-27-luat-352013qh13-luat-352013qh13-2013-06-20",
-    "refer_uid": "dieu-27-luat-352013qh13-luat-352013qh13-2013-06-20",
-    "refer_doc_id": "35/2013/QH13",
+    "uid": "bench_2_1_dieu-160-luat-42-lcthdnn8-bo-luat-hang-hai-so-42-lcthdnn8-cua-quoc-hoi-unknown",
+    "refer_uid": "dieu-160-luat-42-lcthdnn8-bo-luat-hang-hai-so-42-lcthdnn8-cua-quoc-hoi-unknown",
+    "refer_doc_id": "42-LCT/HĐNN8",
     "refer_type": "article",
-    "concept": "Hòa giải không thành",
-    "question": "Trong LUẬT HÒA GIẢI Ở CƠ SỞ (ban hành năm 2013), khái niệm 'Hòa giải không thành' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Hòa giải không thành là trường hợp các bên không đạt được thỏa thuận."
+    "concept": "Tập thể lai dắt",
+    "question": "Trong BỘ LUẬT HÀNG HẢI VIỆT NAM (ban hành năm không xác định), khái niệm 'Tập thể lai dắt' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Tầu lai và tầu biển hoặc các phương tiện được lai dắt khác hợp thành tập thể lai dắt. Tập thể lai dắt được hình thành kể từ khi tầu lai và các thành viên khác của tập thể lai dắt đã sẵn sàng thực hiện các tác nghiệp cần thiết theo lệnh của người chỉ huy tập thể lai dắt và được giải tán khi các tác nghiệp cuối cùng đã được thực hiện xong, các thành viên của tập thể lai dắt đã rời xa nhau ở một khoảng cách an toàn."
   },
   {
-    "uid": "bench_2_1_dieu-71-luat-652006qh11-luat-652006qh11-2006-06-29",
-    "refer_uid": "dieu-71-luat-652006qh11-luat-652006qh11-2006-06-29",
-    "refer_doc_id": "65/2006/QH11",
+    "uid": "bench_2_1_dieu-33-luat-1302025qh15-luat-hang-khong-dan-dung-viet-nam-2025-so-1302025qh15-unknown",
+    "refer_uid": "dieu-33-luat-1302025qh15-luat-hang-khong-dan-dung-viet-nam-2025-so-1302025qh15-unknown",
+    "refer_doc_id": "130/2025/QH15",
     "refer_type": "article",
-    "concept": "Chi nhánh",
-    "question": "Trong LUẬT LUẬT SƯ (ban hành năm 2006), khái niệm 'Chi nhánh' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "là đơn vị phụ thuộc của tổ chức hành nghề luật sư nước ngoài, được thành lập tại Việt Nam theo quy định của Luật này."
+    "concept": "Hoạt động kinh doanh tại cảng hàng không",
+    "question": "Trong LUẬT HÀNG KHÔNG DÂN DỤNG VIỆT NAM (ban hành năm không xác định), khái niệm 'Hoạt động kinh doanh tại cảng hàng không' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Hoạt động kinh doanh tại cảng hàng không bao gồm:\na) Kinh doanh cảng hàng không;\nb) Kinh doanh dịch vụ hàng không tại cảng hàng không;\nc) Kinh doanh dịch vụ khác."
   },
   {
-    "uid": "bench_2_1_dieu-3-nghi-dinh-032017nd-cp-nghi-dinh-032017nd-cp-2017-01-16",
-    "refer_uid": "dieu-3-nghi-dinh-032017nd-cp-nghi-dinh-032017nd-cp-2017-01-16",
-    "refer_doc_id": "03/2017/NĐ-CP",
+    "uid": "bench_2_1_dieu-8-nghi-dinh-141-hdbt-nghi-dinh-ban-hanh-dieu-le-ve-cong-tac-tieu-chuan-hoa-unknown",
+    "refer_uid": "dieu-8-nghi-dinh-141-hdbt-nghi-dinh-ban-hanh-dieu-le-ve-cong-tac-tieu-chuan-hoa-unknown",
+    "refer_doc_id": "141-HĐBT",
     "refer_type": "article",
-    "concept": "Kinh doanh casino",
-    "question": "Trong NGHỊ ĐỊNH VỀ KINH DOANH CASINO (ban hành năm 2017), khái niệm 'Kinh doanh casino' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Kinh doanh casino là hoạt động kinh doanh có điều kiện, chịu sự kiểm soát chặt chẽ của cơ quan quản lý nhà nước có thẩm quyền để đảm bảo hoạt động tuân thủ đúng quy định của Nghị định này và quy định của pháp luật có liên quan."
+    "concept": "Tiêu chuẩn Việt Nam",
+    "question": "Trong NGHỊ ĐỊNH CỦA HỘI ĐỒNG BỘ TRƯỞNG SỐ 141-HĐBT NGÀY 24 THÁNG 8 NĂM 1982 BAN HÀNH ĐIỀU LỆ VÈ CÔNG TÁC TIÊU CHUẨN HOÁ HỘI ĐỒNG BỘ TRƯỞNG (ban hành năm không xác định), khái niệm 'Tiêu chuẩn Việt Nam' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Tiêu chuẩn Việt Nam (ký hiệu là TCVN) là tiêu chuẩn dùng cho các đối tượng tiêu chuẩn hoá có tầm quan trọng trong nền kinh tế quốc dân hoặc có liên quan tới nhiều ngành, tới an toàn lao động và tới sức khoẻ của nhân dân."
   },
   {
-    "uid": "bench_2_1_dieu-195-luat-332005qh11-luat-332005qh11-2005-06-14",
-    "refer_uid": "dieu-195-luat-332005qh11-luat-332005qh11-2005-06-14",
-    "refer_doc_id": "33/2005/QH11",
+    "uid": "bench_2_1_dieu-39-nghi-dinh-222026nd-cp-nghi-dinh-222026nd-cp-quy-dinh-thi-hanh-luat-tieu-chuan-va-quy-chuan-ky-thuat-unknown",
+    "refer_uid": "dieu-39-nghi-dinh-222026nd-cp-nghi-dinh-222026nd-cp-quy-dinh-thi-hanh-luat-tieu-chuan-va-quy-chuan-ky-thuat-unknown",
+    "refer_doc_id": "22/2026/NĐ-CP",
     "refer_type": "article",
-    "concept": "Quyền định đoạt",
-    "question": "Trong Luật 33/2005/QH11 (ban hành năm 2005), khái niệm 'Quyền định đoạt' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "quyền chuyển giao quyền sở hữu tài sản hoặc từ bỏ quyền sở hữu đó"
+    "concept": "Hội, hiệp hội ngành, nghề hoạt động trong phạm vi toàn quốc",
+    "question": "Trong NGHỊ ĐỊNH Quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Tiêu chuẩn và quy chuẩn kỹ thuật (ban hành năm không xác định), khái niệm 'Hội, hiệp hội ngành, nghề hoạt động trong phạm vi toàn quốc' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Hội, hiệp hội ngành, nghề hoạt động trong phạm vi toàn quốc là tổ chức đáp ứng yêu cầu quy định theo pháp luật về thành lập, tổ chức, hoạt động và quản lý nhà nước đối với hội."
   },
   {
-    "uid": "bench_2_1_dieu-567-luat-332005qh11-luat-332005qh11-2005-06-14",
-    "refer_uid": "dieu-567-luat-332005qh11-luat-332005qh11-2005-06-14",
-    "refer_doc_id": "33/2005/QH11",
+    "uid": "bench_2_1_dieu-127-luat-502005qh11-luat-so-huu-tri-tue-2005-so-502005qh11-unknown",
+    "refer_uid": "dieu-127-luat-502005qh11-luat-so-huu-tri-tue-2005-so-502005qh11-unknown",
+    "refer_doc_id": "50/2005/QH11",
     "refer_type": "article",
-    "concept": "Hợp đồng bảo hiểm",
-    "question": "Trong Luật 33/2005/QH11 (ban hành năm 2005), khái niệm 'Hợp đồng bảo hiểm' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "là sự thoả thuận giữa các bên, theo đó bên mua bảo hiểm phải đóng phí bảo hiểm, còn bên bảo hiểm phải trả một khoản tiền bảo hiểm cho bên được bảo hiểm khi xảy ra sự kiện bảo hiểm."
+    "concept": "xâm phạm quyền đối với bí mật kinh doanh",
+    "question": "Trong LUẬT SỞ HỮU TRÍ TUỆ CỦA QUỐC HỘI NƯỚC CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM SỐ 50/2005/QH11 NGÀY 29 THÁNG 11 NĂM 2005 (ban hành năm không xác định), khái niệm 'xâm phạm quyền đối với bí mật kinh doanh' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Các hành vi sau đây bị coi là xâm phạm quyền đối với bí mật kinh doanh:\na) Tiếp cận, thu thập thông tin thuộc bí mật kinh doanh bằng cách chống lại các biện pháp bảo mật của người kiểm soát hợp pháp bí mật kinh doanh đó;\nb) Bộc lộ, sử dụng thông tin thuộc bí mật kinh doanh mà không được phép của chủ sở hữu bí mật kinh doanh đó;\nc) Vi phạm hợp đồng bảo mật hoặc lừa gạt, xui khiến, mua chuộc, ép buộc, dụ dỗ, lợi dụng lòng tin của người có nghĩa vụ bảo mật nhằm tiếp cận, thu thập hoặc làm bộc lộ bí mật kinh doanh;\nd) Tiếp cận, thu thập thông tin thuộc bí mật kinh doanh của người nộp đơn theo thủ tục xin cấp phép kinh doanh hoặc lưu hành sản phẩm bằng cách chống lại các biện pháp bảo mật của cơ quan có thẩm quyền;\nđ) Sử dụng, bộc lộ bí mật kinh doanh dù đã biết hoặc có nghĩa vụ phải biết bí mật kinh doanh đó do người khác thu được có liên quan đến một trong các hành vi quy định tại các điểm a, b, c và d khoản này;\ne) Không thực hiện nghĩa vụ bảo mật quy định tại"
   },
   {
-    "uid": "bench_2_1_dieu-40-luat-622006qh11-luat-622006qh11-2006-06-29",
-    "refer_uid": "dieu-40-luat-622006qh11-luat-622006qh11-2006-06-29",
-    "refer_doc_id": "62/2006/QH11",
+    "uid": "bench_2_1_dieu-6-nghi-dinh-1082017nd-cp-nghi-dinh-1082017nd-cp-ve-quan-ly-phan-bon-unknown",
+    "refer_uid": "dieu-6-nghi-dinh-1082017nd-cp-nghi-dinh-1082017nd-cp-ve-quan-ly-phan-bon-unknown",
+    "refer_doc_id": "108/2017/NĐ-CP",
     "refer_type": "article",
-    "concept": "Quảng cáo phim",
-    "question": "Trong LUẬT ĐIỆN ẢNH (ban hành năm 2006), khái niệm 'Quảng cáo phim' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Quảng cáo phim bao gồm quảng cáo về phim và quảng cáo trong phim."
+    "concept": "Phân bón",
+    "question": "Trong NGHỊ ĐỊNH VỀ QUẢN LÝ PHÂN BÓN (ban hành năm không xác định), khái niệm 'Phân bón' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Phân bón là sản phẩm, hàng hóa nhóm 2; kinh doanh có điều kiện được Cục Bảo vệ thực vật công nhận lưu hành tại Việt Nam."
   },
   {
-    "uid": "bench_2_1_dieu-7-nghi-dinh-108-cp-nghi-dinh-108-cp-1973-06-12",
-    "refer_uid": "dieu-7-nghi-dinh-108-cp-nghi-dinh-108-cp-1973-06-12",
-    "refer_doc_id": "108-CP",
+    "uid": "bench_2_1_dieu-3-nghi-dinh-502005nd-cp-nghi-dinh-502005nd-cp-cua-chinh-phu-ve-co-quan-quan-ly-thi-hanh-an-dan-su-co-quan-thi-hanh-an-dan-su-va-can-bo-cong-chuc-lam-cong-tac-thi-hanh-an-dan-su-unknown",
+    "refer_uid": "dieu-3-nghi-dinh-502005nd-cp-nghi-dinh-502005nd-cp-cua-chinh-phu-ve-co-quan-quan-ly-thi-hanh-an-dan-su-co-quan-thi-hanh-an-dan-su-va-can-bo-cong-chuc-lam-cong-tac-thi-hanh-an-dan-su-unknown",
+    "refer_doc_id": "50/2005/NĐ-CP",
     "refer_type": "article",
-    "concept": "Ban quản trị",
-    "question": "Trong NGHỊ ĐỊNH VỀ VIỆC BAN HÀNH ĐIỀU LỆ HỢP TÁC XÃ SẢN XUẤT MUỐI HỘI ĐỒNG CHÍNH PHỦ (ban hành năm 1973), khái niệm 'Ban quản trị' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Ban quản trị là cơ quan chấp hành của hợp tác xã để thường xuyên chăm lo công việc của hợp tác xã"
+    "concept": "Cơ quan thi hành án dân sự",
+    "question": "Trong NGHỊ ĐỊNH CỦA CHÍNH PHỦ SỐ 50/2005/NĐ-CP NGÀY 11 THÁNG 4 NĂM 2005 VỀ CƠ QUAN QUẢN LÝ THI HÀNH ÁN DÂN SỰ, CƠ QUAN THI HÀNH ÁN DÂN SỰ VÀ CÁN BỘ, CÔNG CHỨC LÀM CÔNG TÁC THI HÀNH ÁN DÂN SỰ CHÍNH PHỦ (ban hành năm không xác định), khái niệm 'Cơ quan thi hành án dân sự' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Cơ quan thi hành án dân sự gồm có:\n1. Thi hành án dân sự tỉnh, thành phố trực thuộc Trung ương (sau đây gọi chung là Thi hành án dân sự cấp tỉnh).\nThi hành án dân sự cấp tỉnh chịu sự quản lý, chỉ đạo của Bộ Tư pháp về tổ chức, cán bộ, công chức, kinh phí và nghiệp vụ; chịu sự quản lý, chỉ đạo của Uỷ ban nhân dân cấp tỉnh theo quy định tại khoản 1 Điều 58 của Pháp lệnh Thi hành án dân sự.\n2. Thi hành án dân sự huyện, quận, thị xã, thành phố thuộc tỉnh (sau đây gọi chung là Thi hành án dân sự cấp huyện).\nThi hành án dân sự cấp huyện trực thuộc và chịu sự quản lý, chỉ đạo của Thi hành án dân sự cấp tỉnh về kinh phí và nghiệp vụ; chịu sự quản lý, chỉ đạo của Uỷ ban nhân dân cấp huyện theo quy định tại khoản 2 Điều 58 của Pháp lệnh Thi hành án dân sự.\nThi hành án dân sự cấp tỉnh, Thi hành án dân sự cấp huyện sau đây gọi chung là cơ quan thi hành án dân sự địa phương.\n3. Thi hành án quân khu và tương đương (sau đây gọi chung là Thi hành án cấp quân khu).\nThi hành án cấp quân khu chịu sự quản lý, chỉ đạo của Bộ Quốc phòng và Tư lệnh quân khu theo quy định của pháp luật."
   },
   {
-    "uid": "bench_2_1_dieu-64-luat-932015qh13-luat-932015qh13-2015-11-25",
-    "refer_uid": "dieu-64-luat-932015qh13-luat-932015qh13-2015-11-25",
-    "refer_doc_id": "93/2015/QH13",
+    "uid": "bench_2_1_dieu-26-luat-302013qh13-luat-giao-duc-quoc-phong-va-an-ninh-2013-so-302013qh13-unknown",
+    "refer_uid": "dieu-26-luat-302013qh13-luat-giao-duc-quoc-phong-va-an-ninh-2013-so-302013qh13-unknown",
+    "refer_doc_id": "30/2013/QH13",
     "refer_type": "article",
-    "concept": "Người phiên dịch",
-    "question": "Trong LUẬT TỐ TỤNG HÀNH CHÍNH (ban hành năm 2015), khái niệm 'Người phiên dịch' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Người phiên dịch là người có khả năng dịch từ một ngôn ngữ khác ra tiếng Việt và ngược lại trong trường hợp có người tham gia tố tụng không sử dụng được tiếng Việt."
+    "concept": "Báo cáo viên giáo dục quốc phòng và an ninh",
+    "question": "Trong LUẬT GIÁO DỤC QUỐC PHÒNG VÀ AN NINH (ban hành năm không xác định), khái niệm 'Báo cáo viên giáo dục quốc phòng và an ninh' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Báo cáo viên giáo dục quốc phòng và an ninh là người được cơ quan, tổ chức có thẩm quyền mời tham gia bồi dưỡng kiến thức quốc phòng và an ninh, bao gồm:\n1. Lãnh đạo bộ, ban, ngành trung ương;\n2. Lãnh đạo tổng cục, quân khu, quân chủng, binh chủng và tương đương của Bộ Quốc phòng; tổng cục, cục, vụ và tương đương của Bộ Công an, bộ, ban, ngành liên quan;\n3. Lãnh đạo cấp tỉnh; lãnh đạo huyện, quận, thị xã, thành phố thuộc tỉnh; lãnh đạo cấp xã;\n4. Lãnh đạo sở, ban, ngành cấp tỉnh; phòng thuộc sở, ban, ngành cấp tỉnh và phòng, ban huyện, quận, thị xã, thành phố thuộc tỉnh;\n5. Chuyên gia, nhà khoa học."
   },
   {
-    "uid": "bench_2_1_dieu-35-luat-602005qh11-luat-602005qh11-2005-11-29",
-    "refer_uid": "dieu-35-luat-602005qh11-luat-602005qh11-2005-11-29",
-    "refer_doc_id": "60/2005/QH11",
+    "uid": "bench_2_1_dieu-21-nghi-dinh-1682017nd-cp-nghi-dinh-1682017nd-cp-quy-dinh-chi-tiet-mot-so-dieu-cua-luat-du-lich-unknown",
+    "refer_uid": "dieu-21-nghi-dinh-1682017nd-cp-nghi-dinh-1682017nd-cp-quy-dinh-chi-tiet-mot-so-dieu-cua-luat-du-lich-unknown",
+    "refer_doc_id": "168/2017/NĐ-CP",
     "refer_type": "article",
-    "concept": "Trụ sở chính của doanh nghiệp",
-    "question": "Trong LUẬT DOANH NGHIỆP (ban hành năm 2005), khái niệm 'Trụ sở chính của doanh nghiệp' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "là địa điểm liên lạc, giao dịch của doanh nghiệp; phải ở trên lãnh thổ Việt Nam, có địa chỉ được xác định gồm số nhà, tên phố (ngõ phố) hoặc tên xã, phường, thị trấn, huyện, quận, thị xã, thành phố thuộc tỉnh, tỉnh, thành phố trực thuộc trung ương; số điện thoại, số fax và thư điện tử (nếu có)."
+    "concept": "Khách sạn; Khách sạn nghỉ dưỡng; Khách sạn bên đường; Khách sạn nổi; Khách sạn thành phố; Biệt thự du lịch; Căn hộ du lịch; Tàu thủy lưu trú du lịch; Nhà nghỉ du lịch; Nhà ở có phòng cho khách du lịch thuê; Bãi cắm trại du lịch",
+    "question": "Trong NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU CỦA LUẬT DU LỊCH (ban hành năm không xác định), khái niệm 'Khách sạn; Khách sạn nghỉ dưỡng; Khách sạn bên đường; Khách sạn nổi; Khách sạn thành phố; Biệt thự du lịch; Căn hộ du lịch; Tàu thủy lưu trú du lịch; Nhà nghỉ du lịch; Nhà ở có phòng cho khách du lịch thuê; Bãi cắm trại du lịch' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "1. Khách sạn: Cơ sở lưu trú du lịch bảo đảm chất lượng về cơ sở vật chất, trang thiết bị và dịch vụ cần thiết phục vụ khách du lịch; bao gồm: Khách sạn nghỉ dưỡng, khách sạn bên đường, khách sạn nổi và khách sạn thành phố.\na) Khách sạn nghỉ dưỡng: Cơ sở lưu trú du lịch được xây dựng thành khối hoặc thành quần thể các biệt thự, nhà thấp tầng, căn hộ, ở khu vực có cảnh quan thiên nhiên đẹp;\nb) Khách sạn bên đường: Cơ sở lưu trú du lịch gần đường giao thông, có bãi đỗ xe nhằm phục vụ nhu cầu lưu trú của khách sử dụng phương tiện giao thông đường bộ (xe máy, ô tô) đi du lịch hoặc nghỉ ngơi giữa những chặng đường dài;\nc) Khách sạn nổi: Cơ sở lưu trú du lịch neo đậu trên mặt nước và có thể di chuyển khi cần thiết;\nd) Khách sạn thành phố: Cơ sở lưu trú du lịch được xây dựng tại các đô thị phục vụ khách du lịch.\n2. Biệt thự du lịch: Biệt thự có trang thiết bị, tiện nghi cho khách du lịch thuê và có thể tự phục vụ trong thời gian lưu trú.\n3. Căn hộ du lịch: Căn hộ có trang thiết bị, dịch vụ cần thiết phục vụ khách du lịch. Khách có thể tự phục vụ trong thời gian lưu trú.\n4. Tàu thủy lưu trú du lịch: Phương tiện vận tải thủy có phòng ngủ phục vụ nhu cầu lưu trú của khách du lịch.\n5. Nhà nghỉ du lịch: Cơ sở lưu trú có trang thiết bị, tiện nghi cần thiết phục vụ khách du lịch.\n6. Nhà ở có phòng cho khách du lịch thuê: Nhà ở có khu vực được bố trí trang thiết bị, tiện nghi cho khách du lịch thuê lưu trú; khách cùng sinh hoạt với gia đình chủ nhà.\n7. Bãi cắm trại du lịch: Khu vực được quy hoạch ở nơi có cảnh quan thiên nhiên đẹp, có kết cấu hạ tầng, có cơ sở vật chất và dịch vụ cần thiết phục vụ khách cắm trại."
   },
   {
-    "uid": "bench_2_1_dieu-39-nghi-dinh-1272015nd-cp-nghi-dinh-1272015nd-cp-2015-12-14",
-    "refer_uid": "dieu-39-nghi-dinh-1272015nd-cp-nghi-dinh-1272015nd-cp-2015-12-14",
-    "refer_doc_id": "127/2015/NĐ-CP",
+    "uid": "bench_2_1_dieu-4-nghi-dinh-582018nd-cp-nghi-dinh-582018nd-cp-ve-bao-hiem-nong-nghiep-unknown",
+    "refer_uid": "dieu-4-nghi-dinh-582018nd-cp-nghi-dinh-582018nd-cp-ve-bao-hiem-nong-nghiep-unknown",
+    "refer_doc_id": "58/2018/NĐ-CP",
     "refer_type": "article",
-    "concept": "Cộng tác viên thanh tra ngành Công Thương",
-    "question": "Trong NGHỊ ĐỊNH VỀ TỔ CHỨC VÀ HOẠT ĐỘNG THANH TRA NGÀNH CÔNG THƯƠNG (ban hành năm 2015), khái niệm 'Cộng tác viên thanh tra ngành Công Thương' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "là người được Thanh tra Bộ, Thanh tra Sở trưng tập tham gia Đoàn thanh tra và là người không thuộc biên chế của các cơ quan thanh tra nhà nước, có phẩm chất đạo đức tốt; có ý thức trách nhiệm, liêm khiết, trung thực, công minh, khách quan; có chuyên môn, nghiệp vụ phù hợp với yêu cầu, nhiệm vụ thanh tra của cơ quan trưng tập."
+    "concept": "Bảo hiểm đối với rủi ro định danh; Bảo hiểm mọi rủi ro; Bảo hiểm đối với tổn thất về thu nhập; Bảo hiểm theo chỉ số năng suất; Bảo hiểm theo chỉ số thời tiết; Bảo hiểm theo chỉ số viễn thám",
+    "question": "Trong NGHỊ ĐỊNH VỀ BẢO HIỂM NÔNG NGHIỆP (ban hành năm không xác định), khái niệm 'Bảo hiểm đối với rủi ro định danh; Bảo hiểm mọi rủi ro; Bảo hiểm đối với tổn thất về thu nhập; Bảo hiểm theo chỉ số năng suất; Bảo hiểm theo chỉ số thời tiết; Bảo hiểm theo chỉ số viễn thám' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "1. Bảo hiểm đối với rủi ro định danh, theo đó khi xảy ra sự kiện bảo hiểm, doanh nghiệp bảo hiểm bồi thường cho tổn thất thực tế do các rủi ro được thỏa thuận cụ thể trong hợp đồng bảo hiểm nông nghiệp gây ra.\n2. Bảo hiểm mọi rủi ro, theo đó khi xảy ra sự kiện bảo hiểm, doanh nghiệp bảo hiểm bồi thường cho tổn thất thực tế do mọi rủi ro gây ra, trừ các trường hợp loại trừ trách nhiệm bảo hiểm được thỏa thuận tại hợp đồng bảo hiểm nông nghiệp.\n3. Bảo hiểm đối với tổn thất về thu nhập, theo đó khi xảy ra sự kiện bảo hiểm, doanh nghiệp bảo hiểm bồi thường chi phí sản xuất nông nghiệp để bù đắp cho tổn thất do các rủi ro được bảo hiểm gây ra theo thỏa thuận tại hợp đồng bảo hiểm nông nghiệp.\n4. Bảo hiểm theo chỉ số năng suất, theo đó khi xảy ra sự kiện bảo hiểm, doanh nghiệp bảo hiểm bồi thường theo mức sụt giảm năng suất thực tế của một khu vực địa lý (huyện, xã,...) theo thỏa thuận tại hợp đồng bảo hiểm nông nghiệp, không phụ thuộc vào tổn thất thực tế của đối tượng bảo hiểm.\n5. Bảo hiểm theo chỉ số thời tiết, theo đó khi xảy ra sự kiện bảo hiểm, doanh nghiệp bảo hiểm bồi thường theo biến động của chỉ số thời tiết (mưa, gió, hạn hán, ngập lụt, rét hại, mưa đá, sương muối, động đất, sóng thần...) theo thỏa thuận tại hợp đồng bảo hiểm nông nghiệp, không phụ thuộc vào tổn thất thực tế của đối tượng bảo hiểm.\n6. Bảo hiểm theo chỉ số viễn thám, theo đó khi xảy ra sự kiện bảo hiểm, doanh nghiệp bảo hiểm bồi thường theo sự biến động của chỉ số viễn thám theo thỏa thuận tại hợp đồng bảo hiểm nông nghiệp, không phụ thuộc vào tổn thất thực tế của đối tượng bảo hiểm."
   },
   {
-    "uid": "bench_2_1_dieu-40-luat-092017qh14-luat-092017qh14-2017-06-19",
-    "refer_uid": "dieu-40-luat-092017qh14-luat-092017qh14-2017-06-19",
-    "refer_doc_id": "09/2017/QH14",
+    "uid": "bench_2_1_dieu-49-luat-1082025qh15-luat-quan-ly-thue-2025-so-1082025qh15-unknown",
+    "refer_uid": "dieu-49-luat-1082025qh15-luat-quan-ly-thue-2025-so-1082025qh15-unknown",
+    "refer_doc_id": "108/2025/QH15",
     "refer_type": "article",
-    "concept": "Kinh doanh đại lý lữ hành",
-    "question": "Trong LUẬT DU LỊCH (ban hành năm 2017), khái niệm 'Kinh doanh đại lý lữ hành' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "là việc tổ chức, cá nhân nhận bán chương trình du lịch của doanh nghiệp kinh doanh dịch vụ lữ hành cho khách du lịch để hưởng hoa hồng."
+    "concept": "Các biện pháp cưỡng chế thi hành quyết định hành chính về quản lý thuế",
+    "question": "Trong LUẬT QUẢN LÝ THUẾ (ban hành năm không xác định), khái niệm 'Các biện pháp cưỡng chế thi hành quyết định hành chính về quản lý thuế' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Các biện pháp cưỡng chế thi hành quyết định hành chính về quản lý thuế bao gồm:\na) Trích tiền từ tài khoản của đối tượng bị cưỡng chế thi hành quyết định hành chính về quản lý thuế tại tổ chức tín dụng, chi nhánh ngân hàng nước ngoài; phong tỏa tài khoản;\nb) Khấu trừ một phần tiền lương hoặc thu nhập;\nc) Dừng làm thủ tục hải quan đối với hàng hóa xuất khẩu, nhập khẩu;\nd) Ngừng sử dụng hóa đơn;\nđ) Thu tiền, tài sản khác của đối tượng bị cưỡng chế thi hành quyết định hành chính về quản lý thuế do cơ quan, tổ chức, cá nhân khác đang nắm giữ;\ne) Kê biên tài sản, bán đấu giá tài sản kê biên theo quy định của pháp luật;\ng) Nộp đơn yêu cầu áp dụng thủ tục phá sản;\nh) Thu hồi giấy chứng nhận đăng ký kinh doanh, giấy chứng nhận đăng ký doanh nghiệp, giấy chứng nhận đăng ký hợp tác xã, giấy chứng nhận đăng ký tổ hợp tác, giấy chứng nhận đăng ký hộ kinh doanh, giấy phép thành lập và hoạt động, giấy phép hành nghề, giấy chứng nhận đăng ký hoạt động chi nhánh, văn phòng đại diện, giấy chứng nhận đăng ký địa điểm kinh doanh, đăng ký hoặc giấy phép hoạt động kinh doanh nền tảng thương mại điện tử."
   },
   {
-    "uid": "bench_2_1_dieu-402-luat-912015qh13-luat-912015qh13-2015-11-24",
-    "refer_uid": "dieu-402-luat-912015qh13-luat-912015qh13-2015-11-24",
-    "refer_doc_id": "91/2015/QH13",
+    "uid": "bench_2_1_dieu-123-luat-082022qh15-luat-kinh-doanh-bao-hiem-2022-so-082022qh15-unknown",
+    "refer_uid": "dieu-123-luat-082022qh15-luat-kinh-doanh-bao-hiem-2022-so-082022qh15-unknown",
+    "refer_doc_id": "08/2022/QH15",
     "refer_type": "article",
-    "concept": "Hợp đồng song vụ, Hợp đồng đơn vụ, Hợp đồng chính, Hợp đồng phụ, Hợp đồng vì lợi ích của người thứ ba, Hợp đồng có điều kiện",
-    "question": "Trong Luật 91/2015/QH13 (ban hành năm 2015), khái niệm 'Hợp đồng song vụ, Hợp đồng đơn vụ, Hợp đồng chính, Hợp đồng phụ, Hợp đồng vì lợi ích của người thứ ba, Hợp đồng có điều kiện' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Hợp đồng song vụ là hợp đồng mà mỗi bên đều có nghĩa vụ đối với nhau. Hợp đồng đơn vụ là hợp đồng mà chỉ một bên có nghĩa vụ. Hợp đồng chính là hợp đồng mà hiệu lực không phụ thuộc vào hợp đồng phụ. Hợp đồng phụ là hợp đồng mà hiệu lực phụ thuộc vào hợp đồng chính. Hợp đồng vì lợi ích của người thứ ba là hợp đồng mà các bên giao kết hợp đồng đều phải thực hiện nghĩa vụ và người thứ ba được hưởng lợi ích từ việc thực hiện nghĩa vụ đó. Hợp đồng có điều kiện là hợp đồng mà việc thực hiện phụ thuộc vào việc phát sinh, thay đổi hoặc chấm dứt một sự kiện nhất định."
+    "concept": "Phòng, chống gian lận bảo hiểm trong hoạt động kinh doanh bảo hiểm",
+    "question": "Trong LUẬT KINH DOANH BẢO HIỂM (ban hành năm không xác định), khái niệm 'Phòng, chống gian lận bảo hiểm trong hoạt động kinh doanh bảo hiểm' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Phòng, chống gian lận bảo hiểm trong hoạt động kinh doanh bảo hiểm là việc thực hiện các biện pháp nhằm ngăn ngừa, hạn chế các hành vi gian lận trong quá trình giao kết, thực hiện hợp đồng bảo hiểm nhằm chiếm đoạt tiền, tài sản từ doanh nghiệp bảo hiểm, chi nhánh doanh nghiệp bảo hiểm phi nhân thọ nước ngoài, bên mua bảo hiểm."
   },
   {
-    "uid": "bench_2_1_dieu-20-nghi-dinh-112010nd-cp-nghi-dinh-112010nd-cp-2010-02-24",
-    "refer_uid": "dieu-20-nghi-dinh-112010nd-cp-nghi-dinh-112010nd-cp-2010-02-24",
-    "refer_doc_id": "11/2010/NĐ-CP",
+    "uid": "bench_2_1_dieu-133-luat-502005qh11-luat-so-huu-tri-tue-2005-so-502005qh11-unknown",
+    "refer_uid": "dieu-133-luat-502005qh11-luat-so-huu-tri-tue-2005-so-502005qh11-unknown",
+    "refer_doc_id": "50/2005/QH11",
     "refer_type": "article",
-    "concept": "Phạm vi bảo vệ",
-    "question": "Trong NGHỊ ĐỊNH QUY ĐỊNH VỀ QUẢN LÝ VÀ BẢO VỆ KẾT CẤU HẠ TẦNG GIAO THÔNG ĐƯỜNG BỘ CHÍNH PHỦ (ban hành năm 2010), khái niệm 'Phạm vi bảo vệ' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "là phạm vi vùng đất, vùng nước thuộc diện tích của công trình; diện tích của công trình được cơ quan nhà nước có thẩm quyền quy định trong Giấy chứng nhận quyền sử dụng đất, quyền sở hữu nhà ở và tài sản khác gắn liền với đất"
+    "concept": "người nắm độc quyền sử dụng sáng chế",
+    "question": "Trong LUẬT SỞ HỮU TRÍ TUỆ CỦA QUỐC HỘI NƯỚC CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM SỐ 50/2005/QH11 NGÀY 29 THÁNG 11 NĂM 2005 (ban hành năm không xác định), khái niệm 'người nắm độc quyền sử dụng sáng chế' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "chủ sở hữu sáng chế hoặc người được chuyển giao quyền sử dụng sáng chế theo hợp đồng độc quyền (sau đây gọi là người nắm độc quyền sử dụng sáng chế)"
   },
   {
-    "uid": "bench_2_1_dieu-136-luat-912015qh13-luat-912015qh13-2015-11-24",
-    "refer_uid": "dieu-136-luat-912015qh13-luat-912015qh13-2015-11-24",
-    "refer_doc_id": "91/2015/QH13",
+    "uid": "bench_2_1_dieu-40-luat-392024qh15-luat-thu-do-2024-so-392024qh15-unknown",
+    "refer_uid": "dieu-40-luat-392024qh15-luat-thu-do-2024-so-392024qh15-unknown",
+    "refer_doc_id": "39/2024/QH15",
     "refer_type": "article",
-    "concept": "Đại diện theo pháp luật của cá nhân",
-    "question": "Trong Luật 91/2015/QH13 (ban hành năm 2015), khái niệm 'Đại diện theo pháp luật của cá nhân' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Đại diện theo pháp luật của cá nhân là: Cha, mẹ đối với con chưa thành niên; Người giám hộ đối với người được giám hộ. Người giám hộ của người có khó khăn trong nhận thức, làm chủ hành vi là người đại diện theo pháp luật nếu được Tòa án chỉ định; Người do Tòa án chỉ định trong trường hợp không xác định được người đại diện; Người do Tòa án chỉ định đối với người bị hạn chế năng lực hành vi dân sự."
+    "concept": "Hợp đồng xây dựng - chuyển giao (hợp đồng BT)",
+    "question": "Trong LUẬT Thủ đô (ban hành năm không xác định), khái niệm 'Hợp đồng xây dựng - chuyển giao (hợp đồng BT)' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Hợp đồng xây dựng - chuyển giao (sau đây gọi là hợp đồng BT) là hợp đồng được ký giữa cơ quan có thẩm quyền và nhà đầu tư, doanh nghiệp dự án (nếu có) để xây dựng công trình hạ tầng và chuyển giao công trình đó cho cơ quan có thẩm quyền sau khi hoàn thành; nhà đầu tư được thanh toán bằng ngân sách nhà nước hoặc bằng quỹ đất."
   },
   {
-    "uid": "bench_2_1_dieu-143-luat-452019qh14-luat-452019qh14-2019-11-20",
-    "refer_uid": "dieu-143-luat-452019qh14-luat-452019qh14-2019-11-20",
-    "refer_doc_id": "45/2019/QH14",
+    "uid": "bench_2_1_dieu-19-nghi-dinh-112013nd-cp-nghi-dinh-112013nd-cp-ve-quan-ly-dau-tu-phat-trien-do-thi-unknown",
+    "refer_uid": "dieu-19-nghi-dinh-112013nd-cp-nghi-dinh-112013nd-cp-ve-quan-ly-dau-tu-phat-trien-do-thi-unknown",
+    "refer_doc_id": "11/2013/NĐ-CP",
     "refer_type": "article",
-    "concept": "Lao động chưa thành niên",
-    "question": "Trong Luật 45/2019/QH14 (ban hành năm 2019), khái niệm 'Lao động chưa thành niên' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "là người lao động chưa đủ 18 tuổi"
+    "concept": "Thay đổi chủ đầu tư",
+    "question": "Trong NGHỊ ĐỊNH VỀ QUẢN LÝ ĐẦU TƯ PHÁT TRIỂN ĐÔ THỊ (ban hành năm không xác định), khái niệm 'Thay đổi chủ đầu tư' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Thay đổi chủ đầu tư là việc chủ đầu tư chuyển nhượng toàn bộ dự án đầu tư phát triển đô thị cho một chủ đầu tư khác."
   },
   {
-    "uid": "bench_2_1_dieu-16-nghi-dinh-521999nd-cp-nghi-dinh-521999nd-cp-1999-07-08",
-    "refer_uid": "dieu-16-nghi-dinh-521999nd-cp-nghi-dinh-521999nd-cp-1999-07-08",
-    "refer_doc_id": "52/1999/NĐ-CP",
+    "uid": "bench_2_1_dieu-50-nghi-dinh-1632006nd-cp-nghi-dinh-1632006nd-cp-cua-chinh-phu-ve-giao-dich-bao-dam-unknown",
+    "refer_uid": "dieu-50-nghi-dinh-1632006nd-cp-nghi-dinh-1632006nd-cp-cua-chinh-phu-ve-giao-dich-bao-dam-unknown",
+    "refer_doc_id": "163/2006/NĐ-CP",
     "refer_type": "article",
-    "concept": "Doanh nghiệp xây dựng",
-    "question": "Trong NGHỊ ĐỊNH VỀ VIỆC BAN HÀNH QUY CHẾ QUẢN LÝ ĐẦU TƯ VÀ XÂY DỰNG CHÍNH PHỦ (ban hành năm 1999), khái niệm 'Doanh nghiệp xây dựng' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Doanh nghiệp xây dựng là doanh nghiệp thuộc mọi thành phần kinh tế được thành lập theo quy định của pháp luật, có đăng ký kinh doanh về xây dựng."
+    "concept": "bên bảo đảm bằng tín chấp",
+    "question": "Trong NGHỊ ĐỊNH CỦA CHÍNH PHỦ SỐ 163/2006/NĐ-CP NGÀY 29 THÁNG 12 NĂM 2006 VỀ GIAO DỊCH BẢO ĐẢM CHÍNH PHỦ (ban hành năm không xác định), khái niệm 'bên bảo đảm bằng tín chấp' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Đơn vị tại cơ sở của các tổ chức chính trị - xã hội sau đây là bên bảo đảm bằng tín chấp:\n1. Hội Nông dân Việt Nam;\n2. Hội Liên hiệp Phụ nữ Việt Nam;\n3. Tổng Liên đoàn Lao động Việt Nam;\n4. Đoàn Thanh niên Cộng sản Hồ Chí Minh;\n5. Hội Cựu chiến binh Việt Nam;\n6. Mặt trận Tổ quốc Việt Nam."
   },
   {
-    "uid": "bench_2_1_dieu-28-nghi-dinh-38-cp-nghi-dinh-38-cp-1995-05-30",
-    "refer_uid": "dieu-28-nghi-dinh-38-cp-nghi-dinh-38-cp-1995-05-30",
-    "refer_doc_id": "38-CP",
+    "uid": "bench_2_1_dieu-9-nghi-dinh-1552005nd-cp-nghi-dinh-1552005nd-cp-qui-dinh-ve-viec-xac-dinh-tri-gia-hai-quan-doi-voi-hang-hoa-xuat-khau-nhap-khau-unknown",
+    "refer_uid": "dieu-9-nghi-dinh-1552005nd-cp-nghi-dinh-1552005nd-cp-qui-dinh-ve-viec-xac-dinh-tri-gia-hai-quan-doi-voi-hang-hoa-xuat-khau-nhap-khau-unknown",
+    "refer_doc_id": "155/2005/NĐ-CP",
     "refer_type": "article",
-    "concept": "Công ty Tài chính",
-    "question": "Trong NGHỊ ĐỊNH CỦA CHÍNH PHỦ SỐ 38-CP NGÀY 30-5-1995 VỀ VIỆC PHÊ CHUẨN ĐIỀU LỆ TỔ CHỨC VÀ HOẠT ĐỘNG CỦA TỔNG CÔNG TY DẦU KHÍ VIỆT NAM CHÍNH PHỦ (ban hành năm 1995), khái niệm 'Công ty Tài chính' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Công ty Tài chính là doanh nghiệp thành viên hạch toán độc lập của Tổng công ty, hoạt động theo pháp luật và hướng dẫn của Thống đốc Ngân hàng Nhà nước, theo Điều lệ Tổ chức và hoạt động do Hội đồng Quản trị phê chuẩn và theo sự điều hành của Tổng giám đốc Tổng công ty."
+    "concept": "Hàng hoá nhập khẩu tương tự",
+    "question": "Trong NGHỊ ĐỊNH CỦA CHÍNH PHỦ SỐ 155/2005/NĐ-CP NGÀY 15 THÁNG 12 NĂM 2005 QUY ĐỊNH VỀ VIỆC XÁC ĐỊNH TRỊ GIÁ HẢI QUAN ĐỐI VỚI HÀNG HÓA XUẤT KHẨU, NHẬP KHẨU CHÍNH PHỦ (ban hành năm không xác định), khái niệm 'Hàng hoá nhập khẩu tương tự' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Hàng hoá nhập khẩu tương tự phải thoả mãn các điều kiện sau:\na) Lô hàng nhập khẩu tương tự được xuất khẩu đến Việt Nam vào cùng ngày hoặc trong vòng 60 ngày trước hoặc sau ngày xuất khẩu của lô hàng đang được xác định trị giá tính thuế;\nb) Lô hàng nhập khẩu tương tự có giao dịch mua bán ở cùng cấp độ hoặc đã được điều chỉnh về cùng cấp độ bán buôn hoặc bán lẻ, có cùng số lượng hoặc đã được điều chỉnh về cùng số lượng với lô hàng đang được xác định trị giá tính thuế;\nc) Lô hàng nhập khẩu tương tự có cùng khoảng cách và phương thức vận chuyển hoặc đã được điều chỉnh về cùng khoảng cách và phương thức vận chuyển giống như lô hàng đang được xác định trị giá tính thuế."
   },
   {
-    "uid": "bench_2_1_dieu-35-luat-232012qh13-luat-232012qh13-2012-11-20",
-    "refer_uid": "dieu-35-luat-232012qh13-luat-232012qh13-2012-11-20",
-    "refer_doc_id": "23/2012/QH13",
+    "uid": "bench_2_1_dieu-11-luat-432019qh14-luat-giao-duc-2019-so-432019qh14-unknown",
+    "refer_uid": "dieu-11-luat-432019qh14-luat-giao-duc-2019-so-432019qh14-unknown",
+    "refer_doc_id": "43/2019/QH14",
     "refer_type": "article",
-    "concept": "Hội đồng quản trị hợp tác xã, liên hiệp hợp tác xã",
-    "question": "Trong LUẬT HỢP TÁC XÃ (ban hành năm 2012), khái niệm 'Hội đồng quản trị hợp tác xã, liên hiệp hợp tác xã' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Hội đồng quản trị hợp tác xã, liên hiệp hợp tác xã là cơ quan quản lý hợp tác xã, liên hiệp hợp tác xã do hội nghị thành lập hoặc đại hội thành viên bầu, miễn nhiệm, bãi nhiệm theo thể thức bỏ phiếu kín."
+    "concept": "Ngoại ngữ quy định trong chương trình giáo dục",
+    "question": "Trong LUẬT GIÁO DỤC (ban hành năm không xác định), khái niệm 'Ngoại ngữ quy định trong chương trình giáo dục' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Ngoại ngữ quy định trong chương trình giáo dục là ngôn ngữ được sử dụng phổ biến trong giao dịch quốc tế."
   },
   {
-    "uid": "bench_2_1_dieu-52-luat-212000qh10-luat-212000qh10-2000-06-09",
-    "refer_uid": "dieu-52-luat-212000qh10-luat-212000qh10-2000-06-09",
-    "refer_doc_id": "21/2000/QH10",
+    "uid": "bench_2_1_dieu-14-nghi-dinh-612019nd-cp-nghi-dinh-612019nd-cp-huong-dan-luat-canh-sat-bien-viet-nam-unknown",
+    "refer_uid": "dieu-14-nghi-dinh-612019nd-cp-nghi-dinh-612019nd-cp-huong-dan-luat-canh-sat-bien-viet-nam-unknown",
+    "refer_doc_id": "61/2019/NĐ-CP",
     "refer_type": "article",
-    "concept": "Thanh tra khoa học và công nghệ",
-    "question": "Trong LUẬT KHOA HỌC VÀ CÔNG NGHỆ (ban hành năm 2000), khái niệm 'Thanh tra khoa học và công nghệ' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Thanh tra khoa học và công nghệ là thanh tra chuyên ngành về khoa học và công nghệ"
+    "concept": "Biểu tượng Cảnh sát biển Việt Nam",
+    "question": "Trong NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP THI HÀNH LUẬT CẢNH SÁT BIỂN VIỆT NAM (ban hành năm không xác định), khái niệm 'Biểu tượng Cảnh sát biển Việt Nam' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Biểu tượng Cảnh sát biển Việt Nam được đeo trên ngực, có hình cánh sóng, ở giữa có hình khiên, nền xanh nước biển viền vàng, có hai thanh kiếm vắt chéo phía sau, bên trong có hình mỏ neo màu vàng, hai bên hình cánh sóng màu xanh tím than."
   },
   {
-    "uid": "bench_2_1_dieu-68-luat-662006qh11-luat-662006qh11-2006-06-29",
-    "refer_uid": "dieu-68-luat-662006qh11-luat-662006qh11-2006-06-29",
-    "refer_doc_id": "66/2006/QH11",
+    "uid": "bench_2_1_dieu-5-nghi-dinh-732015nd-cp-nghi-dinh-732015nd-cp-tieu-chuan-xep-hang-co-so-giao-duc-dai-hoc-unknown",
+    "refer_uid": "dieu-5-nghi-dinh-732015nd-cp-nghi-dinh-732015nd-cp-tieu-chuan-xep-hang-co-so-giao-duc-dai-hoc-unknown",
+    "refer_doc_id": "73/2015/NĐ-CP",
     "refer_type": "article",
-    "concept": "Nhân viên hàng không",
-    "question": "Trong LUẬT HÀNG KHÔNG DÂN DỤNG VIỆT NAM (ban hành năm 2006), khái niệm 'Nhân viên hàng không' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "những người hoạt động liên quan trực tiếp đến bảo đảm an toàn hàng không, an ninh hàng không, khai thác tàu bay, vận chuyển hàng không, hoạt động bay, có giấy phép, chứng chỉ chuyên môn phù hợp do Bộ Giao thông vận tải cấp hoặc công nhận"
+    "concept": "cơ sở giáo dục đại học định hướng thực hành",
+    "question": "Trong NGHỊ ĐỊNH QUY ĐỊNH TIÊU CHUẨN PHÂN TẦNG, KHUNG XẾP HẠNG VÀ TIÊU CHUẨN XẾP HẠNG CƠ SỞ GIÁO DỤC ĐẠI HỌC (ban hành năm không xác định), khái niệm 'cơ sở giáo dục đại học định hướng thực hành' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Là cơ sở giáo dục đại học chú trọng đào tạo, phát triển năng lực thực hành của người học, gắn kết đào tạo với thực tế sản xuất; nghiên cứu khoa học và công nghệ tập trung theo hướng triển khai các kết quả nghiên cứu ứng dụng đã đạt được vào thực tiễn cuộc sống; cung cấp nguồn nhân lực có kiến thức thực tiễn và năng lực thực hành phù hợp với yêu cầu sử dụng lao động đa dạng của các địa phương và các vùng, các tổ chức kinh tế."
   },
   {
-    "uid": "bench_2_1_dieu-8-luat-082012qh13-luat-082012qh13-2012-06-18",
-    "refer_uid": "dieu-8-luat-082012qh13-luat-082012qh13-2012-06-18",
-    "refer_doc_id": "08/2012/QH13",
+    "uid": "bench_2_1_dieu-3-nghi-dinh-982007nd-cp-nghi-dinh-982007nd-cp-ve-xu-ly-vi-pham-phap-luat-ve-thue-unknown",
+    "refer_uid": "dieu-3-nghi-dinh-982007nd-cp-nghi-dinh-982007nd-cp-ve-xu-ly-vi-pham-phap-luat-ve-thue-unknown",
+    "refer_doc_id": "98/2007/NĐ-CP",
     "refer_type": "article",
-    "concept": "Đại học quốc gia",
-    "question": "Trong LUẬT GIÁO DỤC ĐẠI HỌC (ban hành năm 2012), khái niệm 'Đại học quốc gia' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Đại học quốc gia là trung tâm đào tạo, nghiên cứu khoa học, công nghệ đa ngành, đa lĩnh vực chất lượng cao, được Nhà nước ưu tiên đầu tư phát triển."
+    "concept": "Tái phạm vi phạm pháp luật về thuế",
+    "question": "Trong NGHỊ ĐỊNH CỦA CHÍNH PHỦ SỐ 98/2007/NĐ-CP NGÀY 07 THÁNG 06 NĂM 2007 QUY ĐỊNH VỀ XỬ LÝ VI PHẠM PHÁP LUẬT VỀ THUẾ VÀ CƯỠNG CHẾ THI HÀNH QUYẾT ĐỊNH HÀNH CHÍNH THUẾ CHÍNH PHỦ (ban hành năm không xác định), khái niệm 'Tái phạm vi phạm pháp luật về thuế' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Tái phạm vi phạm pháp luật về thuế chưa hết thời hạn một năm kể từ ngày chấp hành xong quyết định xử phạt hoặc kể từ ngày hết thời hiệu thi hành của quyết định xử phạt mà lại thực hiện hành vi vi phạm pháp luật về thuế đã bị xử phạt."
   },
   {
-    "uid": "bench_2_1_dieu-1-nghi-dinh-792000nd-cp-nghi-dinh-792000nd-cp-2000-12-29",
-    "refer_uid": "dieu-1-nghi-dinh-792000nd-cp-nghi-dinh-792000nd-cp-2000-12-29",
-    "refer_doc_id": "79/2000/NĐ-CP",
+    "uid": "bench_2_1_dieu-11-nghi-dinh-722012nd-cp-nghi-dinh-722012nd-cp-ve-cong-trinh-ha-tang-ky-thuat-unknown",
+    "refer_uid": "dieu-11-nghi-dinh-722012nd-cp-nghi-dinh-722012nd-cp-ve-cong-trinh-ha-tang-ky-thuat-unknown",
+    "refer_doc_id": "72/2012/NĐ-CP",
     "refer_type": "article",
-    "concept": "Thuế giá trị gia tăng",
-    "question": "Trong NGHỊ ĐỊNH CỦA CHÍNH PHỦ SỐ 79/2000/NĐ-CP NGÀY 29 THÁNG 12 NĂM 2000 QUY ĐỊNH CHI TIẾT THI HÀNH LUẬT THUẾ GIÁ TRỊ GIA TĂNG CHÍNH PHỦ (ban hành năm 2000), khái niệm 'Thuế giá trị gia tăng' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Thuế giá trị gia tăng là thuế tính trên khoản giá trị tăng thêm của hàng hoá, dịch vụ phát sinh trong quá trình sản xuất, lưu thông đến tiêu dùng."
+    "concept": "Dấu hiệu nhận biết các loại đường dây, cáp và đường ống",
+    "question": "Trong NGHỊ ĐỊNH Về quản lý và sử dụng chung công trình hạ tầng kỹ thuật _________________ (ban hành năm không xác định), khái niệm 'Dấu hiệu nhận biết các loại đường dây, cáp và đường ống' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Dấu hiệu nhận biết các loại đường dây, cáp và đường ống là các thông tin cơ bản được thể hiện thống nhất bằng các ký hiệu, màu sắc theo quy định để nhận biết, phân biệt được từng loại đường dây, cáp và đường ống lắp đặt vào công trình hạ tầng kỹ thuật sử dụng chung."
   },
   {
-    "uid": "bench_2_1_dieu-4-luat-012002qh11-luat-012002qh11-2002-12-16",
-    "refer_uid": "dieu-4-luat-012002qh11-luat-012002qh11-2002-12-16",
-    "refer_doc_id": "01/2002/QH11",
+    "uid": "bench_2_1_dieu-48-nghi-dinh-1542005nd-cp-nghi-dinh-1542005nd-cp-cua-chinh-phu-ve-viec-quy-dinh-chi-tiet-mot-so-dieu-cua-luat-hai-quan-ve-thu-tuc-hai-quan-kiem-tra-giam-sat-hai-quan-unknown",
+    "refer_uid": "dieu-48-nghi-dinh-1542005nd-cp-nghi-dinh-1542005nd-cp-cua-chinh-phu-ve-viec-quy-dinh-chi-tiet-mot-so-dieu-cua-luat-hai-quan-ve-thu-tuc-hai-quan-kiem-tra-giam-sat-hai-quan-unknown",
+    "refer_doc_id": "154/2005/NĐ-CP",
     "refer_type": "article",
-    "concept": "Ngân sách nhà nước",
-    "question": "Trong LUẬT CỦA QUỐC HỘI NƯỚC CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM SỐ 01/2002/QH11 NGÀY 16 THÁNG 12 NĂM 2002 VỀ NGÂN SÁCH NHÀ NƯỚC (ban hành năm 2002), khái niệm 'Ngân sách nhà nước' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Ngân sách nhà nước gồm ngân sách trung ương và ngân sách địa phương. Ngân sách địa phương bao gồm ngân sách của đơn vị hành chính các cấp có Hội đồng nhân dân và Uỷ ban nhân dân."
+    "concept": "người nộp đơn",
+    "question": "Trong NGHỊ ĐỊNH CỦA CHÍNH PHỦ SỐ 154/2005/NĐ-CP NGÀY 15 THÁNG 12 NĂM 2005 QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU CỦA LUẬT HẢI QUAN VỀ THỦ TỤC HẢI QUAN, KIỂM TRA, GIAM SÁT HẢI QUAN CHÍNH PHỦ (ban hành năm không xác định), khái niệm 'người nộp đơn' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Chủ sở hữu quyền sở hữu trí tuệ hoặc người được uỷ quyền hợp pháp (dưới đây gọi tắt là người nộp đơn)"
   },
   {
-    "uid": "bench_2_1_dieu-54-luat-082012qh13-luat-082012qh13-2012-06-18",
-    "refer_uid": "dieu-54-luat-082012qh13-luat-082012qh13-2012-06-18",
-    "refer_doc_id": "08/2012/QH13",
+    "uid": "bench_2_1_dieu-28-luat-322024qh15-luat-cac-to-chuc-tin-dung-2024-so-322024qh15-unknown",
+    "refer_uid": "dieu-28-luat-322024qh15-luat-cac-to-chuc-tin-dung-2024-so-322024qh15-unknown",
+    "refer_doc_id": "32/2024/QH15",
     "refer_type": "article",
-    "concept": "Giảng viên",
-    "question": "Trong LUẬT GIÁO DỤC ĐẠI HỌC (ban hành năm 2012), khái niệm 'Giảng viên' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "là người có nhân thân rõ ràng; có phẩm chất, đạo đức tốt; có sức khỏe theo yêu cầu nghề nghiệp; đạt trình độ về chuyên môn, nghiệp vụ quy định tại điểm e khoản 1 Điều 77 của Luật giáo dục"
+    "concept": "Giá trị thực của vốn điều lệ hoặc vốn được cấp",
+    "question": "Trong LUẬT CÁC TỔ CHỨC TÍN DỤNG (ban hành năm không xác định), khái niệm 'Giá trị thực của vốn điều lệ hoặc vốn được cấp' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Giá trị thực của vốn điều lệ hoặc vốn được cấp được xác định bằng vốn điều lệ hoặc vốn được cấp và thặng dư vốn cổ phần, cộng lợi nhuận lũy kế chưa phân phối, trừ lỗ lũy kế chưa xử lý được phản ánh trên sổ sách kế toán."
   },
   {
-    "uid": "bench_2_1_dieu-220-luat-952015qh13-luat-952015qh13-2015-11-25",
-    "refer_uid": "dieu-220-luat-952015qh13-luat-952015qh13-2015-11-25",
-    "refer_doc_id": "95/2015/QH13",
+    "uid": "bench_2_1_dieu-45-luat-13-lcthdnn7-luat-bau-cu-dai-bieu-hoi-dong-nhan-dan-unknown",
+    "refer_uid": "dieu-45-luat-13-lcthdnn7-luat-bau-cu-dai-bieu-hoi-dong-nhan-dan-unknown",
+    "refer_doc_id": "13-LCT/HĐNN7",
     "refer_type": "article",
-    "concept": "Hợp đồng thuê tàu định hạn",
-    "question": "Trong Luật 95/2015/QH13 (ban hành năm 2015), khái niệm 'Hợp đồng thuê tàu định hạn' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Hợp đồng thuê tàu định hạn là hợp đồng thuê tàu, theo đó chủ tàu cung cấp một tàu cụ thể cùng với thuyền bộ cho người thuê tàu."
+    "concept": "Phiếu trắng",
+    "question": "Trong LUẬT BẦU CỬ ĐẠI BIỂU HỘI ĐỒNG NHÂN DÂN (ban hành năm không xác định), khái niệm 'Phiếu trắng' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Phiếu trắng là phiếu không ghi tên một người nào trong danh sách những người được giới thiệu ra ứng cử hoặc xoá hết tên những người được giới thiệu ra ứng cử đã ghi trên phiếu bầu."
   },
   {
-    "uid": "bench_2_1_dieu-189-luat-332005qh11-luat-332005qh11-2005-06-14",
-    "refer_uid": "dieu-189-luat-332005qh11-luat-332005qh11-2005-06-14",
-    "refer_doc_id": "33/2005/QH11",
+    "uid": "bench_2_1_dieu-7-nghi-dinh-982023nd-cp-nghi-dinh-982023nd-cp-quy-dinh-chi-tiet-luat-thi-dua-khen-thuong-unknown",
+    "refer_uid": "dieu-7-nghi-dinh-982023nd-cp-nghi-dinh-982023nd-cp-quy-dinh-chi-tiet-luat-thi-dua-khen-thuong-unknown",
+    "refer_doc_id": "98/2023/NĐ-CP",
     "refer_type": "article",
-    "concept": "Chiếm hữu không có căn cứ pháp luật nhưng ngay tình",
-    "question": "Trong Luật 33/2005/QH11 (ban hành năm 2005), khái niệm 'Chiếm hữu không có căn cứ pháp luật nhưng ngay tình' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Người chiếm hữu tài sản không có căn cứ pháp luật nhưng ngay tình là người chiếm hữu mà không biết và không thể biết việc chiếm hữu tài sản đó là không có căn cứ pháp luật."
+    "concept": "Chức danh Bộ trưởng và tương đương; Chức danh Thứ trưởng và tương đương",
+    "question": "Trong NGHỊ ĐỊNH Quy định chi tiết thi hành một số điều của Luật Thi đua, khen thưởng _______________ (ban hành năm không xác định), khái niệm 'Chức danh Bộ trưởng và tương đương; Chức danh Thứ trưởng và tương đương' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "1. Chức danh Bộ trưởng và tương đương: Ủy viên Trung ương Đảng chính thức (Ủy viên Trung ương dự khuyết đang đảm nhiệm vị trí công tác nào thì được xác định vị trí thứ bậc và hưởng các chế độ, chính sách theo chức vụ đang công tác); Trưởng ban, cơ quan đảng ở Trung ương; Giám đốc Học viện Chính trị quốc gia Hồ Chí Minh; Tổng Biên tập Báo Nhân Dân, Tổng Biên tập Tạp chí Cộng sản; Ủy viên Ủy ban Thường vụ Quốc hội (Tổng Thư ký, Chủ nhiệm Văn phòng Quốc hội; Chủ tịch Hội đồng Dân tộc, Chủ nhiệm các Ủy ban của Quốc hội; Trưởng Ban Công tác đại biểu, Trưởng Ban Dân nguyện thuộc Ủy ban Thường vụ Quốc hội); Bộ trưởng, Thủ trưởng cơ quan ngang bộ; Chủ nhiệm Văn phòng Chủ tịch nước; Tổng Kiểm toán nhà nước; Trưởng tổ chức chính trị - xã hội ở trung ương; Phó Chủ tịch - Tổng Thư ký Ủy ban trung ương Mặt trận Tổ quốc Việt Nam; Bí thư tỉnh ủy, thành ủy, đảng ủy khối trực thuộc Trung ương; Phó Bí thư Thành ủy Hà Nội, Phó Bí thư Thành ủy Thành phố Hồ Chí Minh; Chủ tịch Hội đồng nhân dân, Ủy ban nhân dân thành phố Hà Nội, Thành phố Hồ Chí Minh; Phó Chủ nhiệm Ủy ban Kiểm tra Trung ương; Chủ tịch Viện Hàn lâm Khoa học xã hội Việt Nam; Chủ tịch Viện Hàn lâm Khoa học công nghệ Việt Nam; Chủ tịch Ủy ban Quản lý vốn nhà nước tại doanh nghiệp; Tổng Giám đốc Thông tấn xã Việt Nam; Tổng Giám đốc Đài Tiếng nói Việt Nam; Tổng Giám đốc Đài Truyền hình Việt Nam.\n2. Chức danh Thứ trưởng và tương đương: Phó trưởng ban, cơ quan đảng ở trung ương; Phó Giám đốc Học viện Chính trị quốc gia Hồ Chí Minh; Phó Tổng Biên tập Báo Nhân Dân, Phó Tổng Biên tập Tạp chí Cộng sản; Phó Chủ tịch Ủy ban trung ương Mặt trận Tổ quốc Việt Nam; Phó Chủ tịch Hội đồng Dân tộc; Phó Chủ nhiệm các Ủy ban của Quốc hội; Phó Chủ nhiệm Văn phòng Quốc hội; Phó Chánh án Toà án nhân dân tối cao; Phó Viện trưởng Viện kiểm sát nhân dân tối cao; Thứ trưởng, Phó thủ trưởng cơ quan ngang bộ; Phó Chủ nhiệm Văn phòng Chủ tịch nước; Phó Tổng Kiểm toán nhà nước; Phó trưởng các tổ chức chính trị - xã hội ở trung ương; Bí thư thường trực Tr"
   },
   {
-    "uid": "bench_2_1_dieu-55-luat-602005qh11-luat-602005qh11-2005-11-29",
-    "refer_uid": "dieu-55-luat-602005qh11-luat-602005qh11-2005-11-29",
-    "refer_doc_id": "60/2005/QH11",
+    "uid": "bench_2_1_dieu-23-luat-182012qh13-luat-bien-viet-nam-2012-so-182012qh13-unknown",
+    "refer_uid": "dieu-23-luat-182012qh13-luat-bien-viet-nam-2012-so-182012qh13-unknown",
+    "refer_doc_id": "18/2012/QH13",
     "refer_type": "article",
-    "concept": "Giám đốc hoặc Tổng giám đốc công ty",
-    "question": "Trong LUẬT DOANH NGHIỆP (ban hành năm 2005), khái niệm 'Giám đốc hoặc Tổng giám đốc công ty' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "là người điều hành hoạt động kinh doanh hằng ngày của công ty, chịu trách nhiệm trước Hội đồng thành viên về việc thực hiện các quyền và nhiệm vụ của mình"
+    "concept": "Đi qua lãnh hải",
+    "question": "Trong LUẬT BIỂN VIỆT NAM (ban hành năm không xác định), khái niệm 'Đi qua lãnh hải' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Đi qua lãnh hải là việc tàu thuyền nước ngoài đi trong lãnh hải Việt Nam nhằm một trong các mục đích sau:\na) Đi ngang qua nhưng không đi vào nội thủy Việt Nam, không neo đậu lại trong một công trình cảng, bến hay nơi trú đậu ở bên ngoài nội thủy Việt Nam;\nb) Đi vào hoặc rời khỏi nội thủy Việt Nam hay đậu lại hoặc rời khỏi một công trình cảng, bến hay nơi trú đậu ở bên ngoài nội thủy Việt Nam."
   },
   {
-    "uid": "bench_2_1_dieu-25-luat-1032016qh13-luat-1032016qh13-2016-04-05",
-    "refer_uid": "dieu-25-luat-1032016qh13-luat-1032016qh13-2016-04-05",
-    "refer_doc_id": "103/2016/QH13",
+    "uid": "bench_2_1_dieu-22-luat-132022qh15-luat-phong-chong-bao-luc-gia-dinh-2022-so-132022qh15-unknown",
+    "refer_uid": "dieu-22-luat-132022qh15-luat-phong-chong-bao-luc-gia-dinh-2022-so-132022qh15-unknown",
+    "refer_doc_id": "13/2022/QH15",
     "refer_type": "article",
-    "concept": "Nhà báo",
-    "question": "Trong LUẬT BÁO CHÍ (ban hành năm 2016), khái niệm 'Nhà báo' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Nhà báo là người hoạt động báo chí được cấp thẻ nhà báo."
+    "concept": "Biện pháp ngăn chặn hành vi bạo lực gia đình và bảo vệ, hỗ trợ người bị bạo lực gia đình",
+    "question": "Trong LUẬT PHÒNG, CHỐNG BẠO LỰC GIA ĐÌNH (ban hành năm không xác định), khái niệm 'Biện pháp ngăn chặn hành vi bạo lực gia đình và bảo vệ, hỗ trợ người bị bạo lực gia đình' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Biện pháp ngăn chặn hành vi bạo lực gia đình và bảo vệ, hỗ trợ người bị bạo lực gia đình bao gồm:\na) Buộc chấm dứt hành vi bạo lực gia đình;\nb) Yêu cầu người có hành vi bạo lực gia đình đến trụ sở Công an xã nơi xảy ra hành vi bạo lực gia đình;\nc) Cấm tiếp xúc;\nd) Bố trí nơi tạm lánh và hỗ trợ nhu cầu thiết yếu;\nđ) Chăm sóc, điều trị người bị bạo lực gia đình;\ne) Trợ giúp pháp lý và tư vấn tâm lý, kỹ năng để ứng phó với hành vi bạo lực gia đình;\ng) Giáo dục, hỗ trợ chuyển đổi hành vi bạo lực gia đình;\nh) Góp ý, phê bình người có hành vi bạo lực gia đình trong cộng đồng dân cư;\ni) Thực hiện công việc phục vụ cộng đồng;\nk) Các biện pháp ngăn chặn và bảo đảm xử lý vi phạm hành chính theo quy định của pháp luật về xử lý vi phạm hành chính; các biện pháp ngăn chặn, bảo vệ người bị hại theo quy định của pháp luật về tố tụng hình sự đối với người có hành vi bạo lực gia đình."
   },
   {
-    "uid": "bench_2_1_dieu-34-luat-562010qh12-luat-562010qh12-2010-11-15",
-    "refer_uid": "dieu-34-luat-562010qh12-luat-562010qh12-2010-11-15",
-    "refer_doc_id": "56/2010/QH12",
+    "uid": "bench_2_1_dieu-48-nghi-dinh-862025nd-cp-nghi-dinh-862025nd-cp-quy-dinh-chi-tiet-luat-quan-ly-ngoai-thuong-va-phong-ve-thuong-mai-unknown",
+    "refer_uid": "dieu-48-nghi-dinh-862025nd-cp-nghi-dinh-862025nd-cp-quy-dinh-chi-tiet-luat-quan-ly-ngoai-thuong-va-phong-ve-thuong-mai-unknown",
+    "refer_doc_id": "86/2025/NĐ-CP",
     "refer_type": "article",
-    "concept": "Người được giao thực hiện nhiệm vụ thanh tra chuyên ngành",
-    "question": "Trong LUẬT THANH TRA (ban hành năm 2010), khái niệm 'Người được giao thực hiện nhiệm vụ thanh tra chuyên ngành' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Người được giao thực hiện nhiệm vụ thanh tra chuyên ngành phải là công chức của cơ quan được giao thực hiện chức năng thanh tra chuyên ngành, có chuyên môn, nghiệp vụ phù hợp với chuyên ngành, am hiểu pháp luật, có nghiệp vụ thanh tra."
+    "concept": "Vi phạm cam kết loại trừ bán phá giá, trợ cấp",
+    "question": "Trong NGHỊ ĐỊNH Quy định chi tiết một số điều của Luật Quản lý ngoại thương về các biện pháp phòng vệ thương mại _______________ (ban hành năm không xác định), khái niệm 'Vi phạm cam kết loại trừ bán phá giá, trợ cấp' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Việc thực hiện cam kết loại trừ bán phá giá, trợ cấp sẽ bị coi là vi phạm trong các trường hợp sau:\n1. Bên bị yêu cầu hoặc Chính phủ của bên bị yêu cầu trong điều tra chống trợ cấp cam kết loại trừ bán phá giá, trợ cấp xuất khẩu hàng hóa bị điều tra vào Việt Nam với mức giá thấp hơn mức giá cam kết.\n2. Bên bị yêu cầu hoặc Chính phủ của bên bị yêu cầu trong điều tra chống trợ cấp, cam kết loại trừ bán phá giá, trợ cấp không cung cấp định kỳ thông tin về việc thực hiện cam kết được quy định trong nội dung cam kết.\n3. Bên bị yêu cầu hoặc Chính phủ của bên bị yêu cầu trong điều tra chống trợ cấp cam kết loại trừ bán phá giá, trợ cấp được xác định là không hợp tác với Cơ quan điều tra theo quy định tại Điều 9 Nghị định này trong việc xác minh, điều tra tại chỗ những thông tin do bên bị yêu cầu hoặc Chính phủ của bên bị yêu cầu cam kết cung cấp định kỳ.\n4. Thông tin, số liệu bên bị yêu cầu hoặc Chính phủ của bên bị yêu cầu trong điều tra chống trợ cấp cam kết loại trừ bán phá giá, trợ cấp cung cấp về việc thực hiện cam kết không chính xác.\n5. Bên bị yêu cầu hoặc Chính phủ của bên bị yêu cầu trong điều tra chống trợ cấp cam kết loại trừ bán phá giá, trợ cấp bị xác định là có hành vi lẩn tránh biện pháp chống bán phá giá, chống trợ cấp đang được áp dụng.\n6. Bên bị yêu cầu hoặc Chính phủ của bên bị yêu cầu trong điều tra chống trợ cấp cam kết loại trừ bán phá giá, trợ cấp tự ý hủy bỏ cam kết nhưng không thông báo cho Cơ quan điều tra theo quy định tại khoản 3 Điều 49 Nghị định này.\n7. Các trường hợp khác."
   },
   {
-    "uid": "bench_2_1_dieu-41-luat-212017qh14-luat-212017qh14-2017-11-24",
-    "refer_uid": "dieu-41-luat-212017qh14-luat-212017qh14-2017-11-24",
-    "refer_doc_id": "21/2017/QH14",
+    "uid": "bench_2_1_dieu-72-luat-392019qh14-luat-dau-tu-cong-2019-so-392019qh14-unknown",
+    "refer_uid": "dieu-72-luat-392019qh14-luat-dau-tu-cong-2019-so-392019qh14-unknown",
+    "refer_doc_id": "39/2019/QH14",
     "refer_type": "article",
-    "concept": "Hệ thống thông tin và cơ sở dữ liệu quốc gia về quy hoạch",
-    "question": "Trong LUẬT QUY HOẠCH (ban hành năm 2017), khái niệm 'Hệ thống thông tin và cơ sở dữ liệu quốc gia về quy hoạch' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Hệ thống thông tin và cơ sở dữ liệu quốc gia về quy hoạch được xây dựng, vận hành thống nhất trên phạm vi cả nước phục vụ cho hoạt động quy hoạch. Hệ thống thông tin và cơ sở dữ liệu quốc gia về quy hoạch bao gồm hồ sơ quy hoạch, các dữ liệu về tự nhiên, kinh tế - xã hội, môi trường, biến đổi khí hậu, quốc phòng, an ninh gắn với hệ thống cơ sở dữ liệu nền địa lý quốc gia đã được chuẩn hóa và cập nhật thường xuyên."
+    "concept": "Đánh giá chương trình, dự án",
+    "question": "Trong LUẬT ĐẦU TƯ CÔNG (ban hành năm không xác định), khái niệm 'Đánh giá chương trình, dự án' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Đánh giá chương trình, dự án bao gồm đánh giá ban đầu, đánh giá giữa kỳ hoặc giai đoạn, đánh giá kết thúc, đánh giá tác động và đánh giá đột xuất."
   },
   {
-    "uid": "bench_2_1_dieu-99-luat-58l-ctn-luat-58l-ctn-1997-05-10",
-    "refer_uid": "dieu-99-luat-58l-ctn-luat-58l-ctn-1997-05-10",
-    "refer_doc_id": "58/L-CTN",
-    "refer_type": "article",
-    "concept": "Uỷ thác mua bán hàng hoá",
-    "question": "Trong LUẬT THƯƠNG MẠI LỜI NÓI ĐẦU (ban hành năm 1997), khái niệm 'Uỷ thác mua bán hàng hoá' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "là hành vi thương mại, theo đó bên được uỷ thác thực hiện việc mua bán hàng hoá với danh nghĩa của mình theo những điều kiện đã thoả thuận với bên uỷ thác và được nhận phí uỷ thác."
-  },
-  {
-    "uid": "bench_2_1_dieu-213-luat-912015qh13-luat-912015qh13-2015-11-24",
-    "refer_uid": "dieu-213-luat-912015qh13-luat-912015qh13-2015-11-24",
-    "refer_doc_id": "91/2015/QH13",
-    "refer_type": "article",
-    "concept": "Sở hữu chung của vợ chồng",
-    "question": "Trong Luật 91/2015/QH13 (ban hành năm 2015), khái niệm 'Sở hữu chung của vợ chồng' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Sở hữu chung của vợ chồng là sở hữu chung hợp nhất có thể phân chia"
-  },
-  {
-    "uid": "bench_2_1_dieu-1-nghi-dinh-1472020nd-cp-nghi-dinh-1472020nd-cp-2020-12-18",
-    "refer_uid": "dieu-1-nghi-dinh-1472020nd-cp-nghi-dinh-1472020nd-cp-2020-12-18",
-    "refer_doc_id": "147/2020/NĐ-CP",
-    "refer_type": "article",
-    "concept": "Quỹ đầu tư phát triển địa phương",
-    "question": "Trong NGHỊ ĐỊNH QUY ĐỊNH VỀ TỔ CHỨC VÀ HOẠT ĐỘNG CỦA QUỸ ĐẦU TƯ PHÁT TRIỂN ĐỊA PHƯƠNG (ban hành năm 2020), khái niệm 'Quỹ đầu tư phát triển địa phương' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Quỹ đầu tư phát triển địa phương do tỉnh, thành phố trực thuộc trung ương thành lập"
-  },
-  {
-    "uid": "bench_2_1_dieu-651-luat-912015qh13-luat-912015qh13-2015-11-24",
-    "refer_uid": "dieu-651-luat-912015qh13-luat-912015qh13-2015-11-24",
-    "refer_doc_id": "91/2015/QH13",
-    "refer_type": "article",
-    "concept": "Người thừa kế theo pháp luật",
-    "question": "Trong Luật 91/2015/QH13 (ban hành năm 2015), khái niệm 'Người thừa kế theo pháp luật' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Những người thừa kế theo pháp luật được quy định theo thứ tự sau đây: a) Hàng thừa kế thứ nhất gồm: vợ, chồng, cha đẻ, mẹ đẻ, cha nuôi, mẹ nuôi, con đẻ, con nuôi của người chết; b) Hàng thừa kế thứ hai gồm: ông nội, bà nội, ông ngoại, bà ngoại, anh ruột, chị ruột, em ruột của người chết; cháu ruột của người chết mà người chết là ông nội, bà nội, ông ngoại, bà ngoại; c) Hàng thừa kế thứ ba gồm: cụ nội, cụ ngoại của người chết; bác ruột, chú ruột, cậu ruột, cô ruột, dì ruột của người chết; cháu ruột của người chết mà người chết là bác ruột, chú ruột, cậu ruột, cô ruột, dì ruột; chắt ruột của người chết mà người chết là cụ nội, cụ ngoại."
-  },
-  {
-    "uid": "bench_2_1_dieu-71-luat-612020qh14-luat-612020qh14-2020-06-17",
-    "refer_uid": "dieu-71-luat-612020qh14-luat-612020qh14-2020-06-17",
-    "refer_doc_id": "61/2020/QH14",
-    "refer_type": "article",
-    "concept": "Hệ thống thông tin quốc gia về đầu tư",
-    "question": "Trong LUẬT ĐẦU TƯ (ban hành năm 2020), khái niệm 'Hệ thống thông tin quốc gia về đầu tư' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Hệ thống thông tin quốc gia về đầu tư bao gồm: a) Hệ thống thông tin quốc gia về đầu tư trong nước; b) Hệ thống thông tin quốc gia về đầu tư nước ngoài vào Việt Nam; c) Hệ thống thông tin quốc gia về đầu tư của Việt Nam ra nước ngoài; d) Hệ thống thông tin quốc gia về xúc tiến đầu tư; đ) Hệ thống thông tin quốc gia về khu công nghiệp, khu kinh tế."
-  },
-  {
-    "uid": "bench_2_1_dieu-106-luat-102012qh13-luat-102012qh13-2012-06-18",
-    "refer_uid": "dieu-106-luat-102012qh13-luat-102012qh13-2012-06-18",
-    "refer_doc_id": "10/2012/QH13",
-    "refer_type": "article",
-    "concept": "Làm thêm giờ",
-    "question": "Trong Luật 10/2012/QH13 (ban hành năm 2012), khái niệm 'Làm thêm giờ' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Làm thêm giờ là khoảng thời gian làm việc ngoài thời giờ làm việc bình thường được quy định trong pháp luật, thỏa ước lao động tập thể hoặc theo nội quy lao động."
-  },
-  {
-    "uid": "bench_2_1_dieu-157-luat-452013qh13-luat-452013qh13-2013-11-29",
-    "refer_uid": "dieu-157-luat-452013qh13-luat-452013qh13-2013-11-29",
-    "refer_doc_id": "45/2013/QH13",
-    "refer_type": "article",
-    "concept": "Đất xây dựng công trình công cộng có hành lang bảo vệ an toàn",
-    "question": "Trong LUẬT ĐẤT ĐAI (ban hành năm 2013), khái niệm 'Đất xây dựng công trình công cộng có hành lang bảo vệ an toàn' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Đất xây dựng công trình công cộng có hành lang bảo vệ an toàn bao gồm đất xây dựng các hệ thống giao thông, thủy lợi, đê điều, hệ thống cấp nước, hệ thống thoát nước, hệ thống xử lý chất thải, hệ thống dẫn điện, dẫn xăng dầu, dẫn khí, thông tin liên lạc và đất thuộc hành lang bảo vệ an toàn các công trình này."
-  },
-  {
-    "uid": "bench_2_1_dieu-21-luat-432013qh13-luat-432013qh13-2013-11-26",
-    "refer_uid": "dieu-21-luat-432013qh13-luat-432013qh13-2013-11-26",
-    "refer_doc_id": "43/2013/QH13",
-    "refer_type": "article",
-    "concept": "Đấu thầu hạn chế",
-    "question": "Trong LUẬT ĐẤU THẦU (ban hành năm 2013), khái niệm 'Đấu thầu hạn chế' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Đấu thầu hạn chế được áp dụng trong trường hợp gói thầu có yêu cầu cao về kỹ thuật hoặc kỹ thuật có tính đặc thù mà chỉ có một số nhà thầu đáp ứng yêu cầu của gói thầu."
-  },
-  {
-    "uid": "bench_2_1_dieu-1-luat-292009qh12-luat-292009qh12-2009-06-17",
-    "refer_uid": "dieu-1-luat-292009qh12-luat-292009qh12-2009-06-17",
-    "refer_doc_id": "29/2009/QH12",
-    "refer_type": "article",
-    "concept": "Nợ công",
-    "question": "Trong LUẬT QUẢN LÝ NỢ CÔNG CỦA QUỐC HỘI KHOÁ XII, KỲ HỌP THỨ 5 (ban hành năm 2009), khái niệm 'Nợ công' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Nợ công được quy định trong Luật này bao gồm: a) Nợ chính phủ; b) Nợ được Chính phủ bảo lãnh; c) Nợ chính quyền địa phương."
-  },
-  {
-    "uid": "bench_2_1_dieu-2-luat-802015qh13-luat-802015qh13-2015-06-22",
-    "refer_uid": "dieu-2-luat-802015qh13-luat-802015qh13-2015-06-22",
-    "refer_doc_id": "80/2015/QH13",
-    "refer_type": "article",
-    "concept": "Văn bản quy phạm pháp luật",
-    "question": "Trong LUẬT BAN HÀNH VĂN BẢN QUY PHẠM PHÁP LUẬT (ban hành năm 2015), khái niệm 'Văn bản quy phạm pháp luật' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Văn bản quy phạm pháp luật là văn bản có chứa quy phạm pháp luật, được ban hành theo đúng thẩm quyền, hình thức, trình tự, thủ tục quy định trong Luật này. Văn bản có chứa quy phạm pháp luật nhưng được ban hành không đúng thẩm quyền, hình thức, trình tự, thủ tục quy định trong Luật này thì không phải là văn bản quy phạm pháp luật."
-  },
-  {
-    "uid": "bench_2_1_dieu-51-luat-352005qh11-luat-352005qh11-2005-06-14",
-    "refer_uid": "dieu-51-luat-352005qh11-luat-352005qh11-2005-06-14",
-    "refer_doc_id": "35/2005/QH11",
-    "refer_type": "article",
-    "concept": "Trực ban chạy tàu ga",
-    "question": "Trong LUẬT ĐƯỜNG SẮT CỦA QUỐC HỘI NƯỚC CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM SỐ 35/2005/QH11 NGÀY 14 THÁNG 6 NĂM 2005 (ban hành năm 2005), khái niệm 'Trực ban chạy tàu ga' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Trực ban chạy tàu ga là người điều hành việc lập tàu, xếp, dỡ hàng hóa, đón, tiễn hành khách, tổ chức công tác dồn, đón, tiễn tàu và các việc khác liên quan tại nhà ga theo biểu đồ chạy tàu, các mệnh lệnh chỉ huy chạy tàu, quy trình, quy phạm chạy tàu; tham gia giải quyết tai nạn giao thông đường sắt theo quy định tại Điều 11 của Luật này."
-  },
-  {
-    "uid": "bench_2_1_dieu-4-luat-212012qh13-luat-212012qh13-2012-11-20",
-    "refer_uid": "dieu-4-luat-212012qh13-luat-212012qh13-2012-11-20",
-    "refer_doc_id": "21/2012/QH13",
-    "refer_type": "article",
-    "concept": "Quản lý rủi ro trong quản lý thuế",
-    "question": "Trong LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT QUẢN LÝ THUẾ (ban hành năm 2012), khái niệm 'Quản lý rủi ro trong quản lý thuế' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Quản lý rủi ro tr ong qu ả n lý thuế là việc áp dụng có h ệ thống các quy định pháp luật, các quy trình nghiệp vụ đ ể xác định, đánh giá và phân loại các rủi ro có th ể tác động tiêu cực đến hiệu quả, hiệu l ực qu ả n l ý thuế, làm cơ s ở đ ể cơ quan quản lý thu ế phân b ổ ngu ồ n lực hợp lý, áp dụng các biện pháp quản lý hiệu quả."
-  },
-  {
-    "uid": "bench_2_1_dieu-13-luat-812006qh11-luat-812006qh11-2006-11-29",
-    "refer_uid": "dieu-13-luat-812006qh11-luat-812006qh11-2006-11-29",
-    "refer_doc_id": "81/2006/QH11",
-    "refer_type": "article",
-    "concept": "Nơi cư trú của người chưa thành niên",
-    "question": "Trong LUẬT CƯ TRÚ (ban hành năm 2006), khái niệm 'Nơi cư trú của người chưa thành niên' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Nơi cư trú của người chưa thành niên là nơi cư trú của cha, mẹ; nếu cha, mẹ có nơi cư trú khác nhau thì nơi cư trú của người chưa thành niên là nơi cư trú của cha hoặc mẹ mà người chưa thành niên thường xuyên chung sống. Người chưa thành niên có thể có nơi cư trú khác với nơi cư trú của cha, mẹ nếu được cha, mẹ đồng ý hoặc pháp luật có quy định."
-  },
-  {
-    "uid": "bench_2_1_dieu-28-luat-35-lctn-luat-35-lctn-1994-06-23",
-    "refer_uid": "dieu-28-luat-35-lctn-luat-35-lctn-1994-06-23",
+    "uid": "bench_2_1_dieu-46-luat-35-lctn-luat-to-chuc-hoi-dong-nhan-dan-va-uy-ban-nhan-dan-so-35-lctn-cua-quoc-hoi-unknown",
+    "refer_uid": "dieu-46-luat-35-lctn-luat-to-chuc-hoi-dong-nhan-dan-va-uy-ban-nhan-dan-so-35-lctn-cua-quoc-hoi-unknown",
     "refer_doc_id": "35-L/CTN",
     "refer_type": "article",
-    "concept": "Hợp đồng lao động",
-    "question": "Trong Luật 35-L/CTN (ban hành năm 1994), khái niệm 'Hợp đồng lao động' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Hợp đồng lao động được ký kết bằng văn bản và phải được làm thành hai bản, mỗi bên giữ một bản. Đối với một số công việc có tính chất tạm thời mà thời hạn dưới ba tháng hoặc đối với lao động giúp việc gia đình thì các bên có thể giao kết bằng miệng."
+    "concept": "Uỷ ban nhân dân",
+    "question": "Trong LUẬT TỔ CHỨC HỘI ĐỒNG NHÂN DÂN VÀ UỶ BAN NHÂN DÂN (ban hành năm không xác định), khái niệm 'Uỷ ban nhân dân' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Uỷ ban nhân dân do Hội đồng nhân dân cùng cấp bầu ra gồm có Chủ tịch, Phó Chủ tịch và uỷ viên."
   },
   {
-    "uid": "bench_2_1_dieu-123-luat-592020qh14-luat-592020qh14-2020-06-17",
-    "refer_uid": "dieu-123-luat-592020qh14-luat-592020qh14-2020-06-17",
+    "uid": "bench_2_1_dieu-58-luat-702006qh11-luat-chung-khoan-nam-2006-unknown",
+    "refer_uid": "dieu-58-luat-702006qh11-luat-chung-khoan-nam-2006-unknown",
+    "refer_doc_id": "70/2006/QH11",
+    "refer_type": "article",
+    "concept": "Quỹ hỗ trợ thanh toán",
+    "question": "Trong LUẬT CHỨNG KHOÁN CỦA QUỐC HỘI NƯỚC CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM SỐ 70/2006/QH11 NGÀY 29 THÁNG 6 NĂM 2006 (ban hành năm không xác định), khái niệm 'Quỹ hỗ trợ thanh toán' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Quỹ hỗ trợ thanh toán hình thành từ sự đóng góp của các thành viên lưu ký để thanh toán thay cho thành viên lưu ký trong trường hợp thành viên lưu ký tạm thời mất khả năng thanh toán giao dịch chứng khoán."
+  },
+  {
+    "uid": "bench_2_1_dieu-5-nghi-dinh-222026nd-cp-nghi-dinh-222026nd-cp-quy-dinh-thi-hanh-luat-tieu-chuan-va-quy-chuan-ky-thuat-unknown",
+    "refer_uid": "dieu-5-nghi-dinh-222026nd-cp-nghi-dinh-222026nd-cp-quy-dinh-thi-hanh-luat-tieu-chuan-va-quy-chuan-ky-thuat-unknown",
+    "refer_doc_id": "22/2026/NĐ-CP",
+    "refer_type": "article",
+    "concept": "Tham vấn trong quá trình xây dựng tiêu chuẩn quốc gia, quy chuẩn kỹ thuật",
+    "question": "Trong NGHỊ ĐỊNH Quy định chi tiết một số điều và biện pháp để tổ chức, hướng dẫn thi hành Luật Tiêu chuẩn và quy chuẩn kỹ thuật (ban hành năm không xác định), khái niệm 'Tham vấn trong quá trình xây dựng tiêu chuẩn quốc gia, quy chuẩn kỹ thuật' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Tham vấn trong quá trình xây dựng tiêu chuẩn quốc gia, quy chuẩn kỹ thuật là việc trao đổi trực tiếp giữa cơ quan chủ trì xây dựng dự thảo tiêu chuẩn quốc gia, quy chuẩn kỹ thuật với cơ quan, tổ chức, cá nhân có liên quan."
+  },
+  {
+    "uid": "bench_2_1_dieu-13-luat-502005qh11-luat-so-huu-tri-tue-2005-so-502005qh11-unknown",
+    "refer_uid": "dieu-13-luat-502005qh11-luat-so-huu-tri-tue-2005-so-502005qh11-unknown",
+    "refer_doc_id": "50/2005/QH11",
+    "refer_type": "article",
+    "concept": "Tổ chức, cá nhân có tác phẩm được bảo hộ quyền tác giả",
+    "question": "Trong LUẬT SỞ HỮU TRÍ TUỆ CỦA QUỐC HỘI NƯỚC CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM SỐ 50/2005/QH11 NGÀY 29 THÁNG 11 NĂM 2005 (ban hành năm không xác định), khái niệm 'Tổ chức, cá nhân có tác phẩm được bảo hộ quyền tác giả' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Tổ chức, cá nhân có tác phẩm được bảo hộ quyền tác giả gồm người trực tiếp sáng tạo ra tác phẩm và chủ sở hữu quyền tác giả quy định tại các điều từ Điều 37 đến Điều 42 của Luật này."
+  },
+  {
+    "uid": "bench_2_1_dieu-302-luat-362005qh11-luat-thuong-mai-2005-so-362005qh11-unknown",
+    "refer_uid": "dieu-302-luat-362005qh11-luat-thuong-mai-2005-so-362005qh11-unknown",
+    "refer_doc_id": "36/2005/QH11",
+    "refer_type": "article",
+    "concept": "Bồi thường thiệt hại",
+    "question": "Trong LUẬT THƯƠNG MẠI CỦA QUỐC HỘI NƯỚC CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM SỐ 36/2005/QH11 NGÀY 14 THÁNG 6 NĂM 2005 (ban hành năm không xác định), khái niệm 'Bồi thường thiệt hại' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Bồi thường thiệt hại là việc bên vi phạm bồi thường những tổn thất do hành vi vi phạm hợp đồng gây ra cho bên bị vi phạm."
+  },
+  {
+    "uid": "bench_2_1_dieu-13-luat-952025qh15-luat-duong-sat-2025-so-952025qh15-unknown",
+    "refer_uid": "dieu-13-luat-952025qh15-luat-duong-sat-2025-so-952025qh15-unknown",
+    "refer_doc_id": "95/2025/QH15",
+    "refer_type": "article",
+    "concept": "Hệ thống cấp điện sức kéo đường sắt",
+    "question": "Trong LUẬT ĐƯỜNG SẮT (ban hành năm không xác định), khái niệm 'Hệ thống cấp điện sức kéo đường sắt' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Hệ thống cấp điện sức kéo đường sắt bao gồm: trạm biến áp, đường dây tải điện, trạm phân phối điện, hệ thống cấp điện cho phương tiện giao thông đường sắt; hệ thống điều khiển; giám sát bảo vệ, an toàn điện."
+  },
+  {
+    "uid": "bench_2_1_dieu-26-luat-272018qh14-luat-do-dac-va-ban-do-2018-so-272018qh14-unknown",
+    "refer_uid": "dieu-26-luat-272018qh14-luat-do-dac-va-ban-do-2018-so-272018qh14-unknown",
+    "refer_doc_id": "27/2018/QH14",
+    "refer_type": "article",
+    "concept": "Bản đồ hành chính",
+    "question": "Trong LUẬT ĐO ĐẠC VÀ BẢN ĐỒ (ban hành năm không xác định), khái niệm 'Bản đồ hành chính' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Bản đồ hành chính bao gồm:\na) Bản đồ hành chính Việt Nam;\nb) Bản đồ hành chính cấp tỉnh;\nc) Bản đồ hành chính cấp huyện."
+  },
+  {
+    "uid": "bench_2_1_dieu-94-luat-1052016qh13-luat-duoc-2016-so-1052016qh13-unknown",
+    "refer_uid": "dieu-94-luat-1052016qh13-luat-duoc-2016-so-1052016qh13-unknown",
+    "refer_doc_id": "105/2016/QH13",
+    "refer_type": "article",
+    "concept": "Hội đồng đạo đức trong nghiên cứu y sinh học",
+    "question": "Trong LUẬT DƯỢC (ban hành năm không xác định), khái niệm 'Hội đồng đạo đức trong nghiên cứu y sinh học' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Hội đồng đạo đức trong nghiên cứu y sinh học là hội đồng độc lập được thành lập ở cấp quốc gia và cấp cơ sở để bảo vệ các quyền, sự an toàn và sức khỏe của người tham gia thử thuốc."
+  },
+  {
+    "uid": "bench_2_1_dieu-146-luat-602005qh11-luat-doanh-nghiep-2005-luat-so-602005qh11-unknown",
+    "refer_uid": "dieu-146-luat-602005qh11-luat-doanh-nghiep-2005-luat-so-602005qh11-unknown",
+    "refer_doc_id": "60/2005/QH11",
+    "refer_type": "article",
+    "concept": "Nhóm công ty",
+    "question": "Trong LUẬT DOANH NGHIỆP CỦA QUỐC HỘI NƯỚC CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM SỐ 60/2005/QH11 NGÀY 29 THÁNG 11 NĂM 2005 (ban hành năm không xác định), khái niệm 'Nhóm công ty' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Nhóm công ty là tập hợp các công ty có mối quan hệ gắn bó lâu dài với nhau về lợi ích kinh tế, công nghệ, thị trường và các dịch vụ kinh doanh khác."
+  },
+  {
+    "uid": "bench_2_1_dieu-94-luat-522014qh13-luat-hon-nhan-va-gia-dinh-2014-so-522014qh13-unknown",
+    "refer_uid": "dieu-94-luat-522014qh13-luat-hon-nhan-va-gia-dinh-2014-so-522014qh13-unknown",
+    "refer_doc_id": "52/2014/QH13",
+    "refer_type": "article",
+    "concept": "Con sinh ra trong trường hợp mang thai hộ vì mục đích nhân đạo",
+    "question": "Trong LUẬT HÔN NHÂN VÀ GIA ĐÌNH (ban hành năm không xác định), khái niệm 'Con sinh ra trong trường hợp mang thai hộ vì mục đích nhân đạo' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Con sinh ra trong trường hợp mang thai hộ vì mục đích nhân đạo là con chung của vợ chồng nhờ mang thai hộ kể từ thời điểm con được sinh ra."
+  },
+  {
+    "uid": "bench_2_1_dieu-6-nghi-dinh-212011nd-cp-nghi-dinh-212011nd-cp-huong-dan-luat-su-dung-nang-luong-tiet-kiem-va-hieu-qua-unknown",
+    "refer_uid": "dieu-6-nghi-dinh-212011nd-cp-nghi-dinh-212011nd-cp-huong-dan-luat-su-dung-nang-luong-tiet-kiem-va-hieu-qua-unknown",
+    "refer_doc_id": "21/2011/NĐ-CP",
+    "refer_type": "article",
+    "concept": "Cơ sở sử dụng năng lượng trọng điểm",
+    "question": "Trong NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT VÀ BIỆN PHÁP THI HÀNH LUẬT SỬ DỤNG NĂNG LƯỢNG TIẾT KIỆM VÀ HIỆU QUẢ ----------------------- CHÍNH PHỦ (ban hành năm không xác định), khái niệm 'Cơ sở sử dụng năng lượng trọng điểm' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Cơ sở sử dụng năng lượng trọng điểm là các cơ sở có mức sử dụng năng lượng sau đây:\na) Cơ sở sản xuất công nghiệp, nông nghiệp, đơn vị vận tải có tiêu thụ năng lượng tổng cộng trong một năm quy đổi ra một nghìn tấn dầu tương đương (1000 TOE) trở lên.\nb) Các công trình xây dựng được dùng làm trụ sở, văn phòng làm việc, nhà ở; cơ sở giáo dục, y tế, vui chơi giải trí, thể dục, thể thao; khách sạn, siêu thị, nhà hàng, cửa hàng có tiêu thụ năng lượng tổng cộng trong một năm quy đổi ra năm trăm tấn dầu tương đương (500 TOE) trở lên."
+  },
+  {
+    "uid": "bench_2_1_dieu-53-luat-932015qh13-luat-to-tung-hanh-chinh-2015-so-932015qh13-unknown",
+    "refer_uid": "dieu-53-luat-932015qh13-luat-to-tung-hanh-chinh-2015-so-932015qh13-unknown",
+    "refer_doc_id": "93/2015/QH13",
+    "refer_type": "article",
+    "concept": "Người tham gia tố tụng hành chính",
+    "question": "Trong LUẬT TỐ TỤNG HÀNH CHÍNH (ban hành năm không xác định), khái niệm 'Người tham gia tố tụng hành chính' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Người tham gia tố tụng hành chính gồm đương sự, người đại diện của đương sự, người bảo vệ quyền và lợi ích hợp pháp của đương sự, người làm chứng, người giám định, người phiên dịch."
+  },
+  {
+    "uid": "bench_2_1_dieu-20-luat-352024qh15-luat-duong-bo-2024-so-352024qh15-unknown",
+    "refer_uid": "dieu-20-luat-352024qh15-luat-duong-bo-2024-so-352024qh15-unknown",
+    "refer_doc_id": "35/2024/QH15",
+    "refer_type": "article",
+    "concept": "Công trình hạ tầng kỹ thuật sử dụng chung với đường bộ",
+    "question": "Trong LUẬT ĐƯỜNG BỘ (ban hành năm không xác định), khái niệm 'Công trình hạ tầng kỹ thuật sử dụng chung với đường bộ' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Công trình hạ tầng kỹ thuật sử dụng chung với đường bộ là công trình được xây dựng để bố trí, lắp đặt đường dây thông tin, viễn thông, đường dây tải điện, dây dẫn điện, chiếu sáng công cộng; đường ống cấp nước, thoát nước, cấp năng lượng."
+  },
+  {
+    "uid": "bench_2_1_dieu-43-luat-222008qh12-luat-can-bo-cong-chuc-2008-so-222008qh12-unknown",
+    "refer_uid": "dieu-43-luat-222008qh12-luat-can-bo-cong-chuc-2008-so-222008qh12-unknown",
+    "refer_doc_id": "22/2008/QH12",
+    "refer_type": "article",
+    "concept": "Chuyển ngạch",
+    "question": "Trong LUẬT CÁN BỘ, CÔNG CHỨC CỦA QUỐC HỘI KHÓA XII, KỲ HỌP THỨ TƯ SỐ 22/2008/QH12 NGÀY 13 THÁNG 11 NĂM 2008 (ban hành năm không xác định), khái niệm 'Chuyển ngạch' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Chuyển ngạch là việc công chức đang giữ ngạch của ngành chuyên môn này được bổ nhiệm sang ngạch của ngành chuyên môn khác có cùng thứ bậc về chuyên môn, nghiệp vụ."
+  },
+  {
+    "uid": "bench_2_1_dieu-122-luat-412024qh15-luat-bao-hiem-xa-hoi-2024-so-412024qh15-unknown",
+    "refer_uid": "dieu-122-luat-412024qh15-luat-bao-hiem-xa-hoi-2024-so-412024qh15-unknown",
+    "refer_doc_id": "41/2024/QH15",
+    "refer_type": "article",
+    "concept": "Danh mục đầu tư quỹ bảo hiểm xã hội tại thị trường trong nước",
+    "question": "Trong LUẬT Bảo hiểm xã hội (ban hành năm không xác định), khái niệm 'Danh mục đầu tư quỹ bảo hiểm xã hội tại thị trường trong nước' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Danh mục đầu tư quỹ bảo hiểm xã hội tại thị trường trong nước bao gồm:\na) Công cụ nợ của Chính phủ, bao gồm trái phiếu Chính phủ, tín phiếu Kho bạc Nhà nước, công trái xây dựng Tổ quốc;\nb) Trái phiếu chính quyền địa phương, trái phiếu được Chính phủ bảo lãnh;\nc) Tiền gửi tại các ngân hàng thương mại nhà nước và ngân hàng thương mại cổ phần có vốn nhà nước trên 50% vốn điều lệ; không thực hiện đầu tư quỹ bảo hiểm xã hội tại các ngân hàng thương mại đang được kiểm soát đặc biệt;\nd) Trái phiếu, chứng chỉ tiền gửi của các ngân hàng thương mại nhà nước và ngân hàng thương mại cổ phần có vốn nhà nước trên 50% vốn điều lệ; không thực hiện đầu tư quỹ bảo hiểm xã hội tại các ngân hàng thương mại đang được kiểm soát đặc biệt."
+  },
+  {
+    "uid": "bench_2_1_dieu-9-luat-1052016qh13-luat-duoc-2016-so-1052016qh13-unknown",
+    "refer_uid": "dieu-9-luat-1052016qh13-luat-duoc-2016-so-1052016qh13-unknown",
+    "refer_doc_id": "105/2016/QH13",
+    "refer_type": "article",
+    "concept": "Quy hoạch phát triển công nghiệp dược",
+    "question": "Trong LUẬT DƯỢC (ban hành năm không xác định), khái niệm 'Quy hoạch phát triển công nghiệp dược' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Quy hoạch phát triển công nghiệp dược bao gồm các quy hoạch về sản xuất, phân phối, bảo quản, kiểm nghiệm thuốc, nguyên liệu làm thuốc, phát triển nguồn dược liệu làm thuốc và vùng nuôi trồng dược liệu."
+  },
+  {
+    "uid": "bench_2_1_dieu-218-luat-362005qh11-luat-thuong-mai-2005-so-362005qh11-unknown",
+    "refer_uid": "dieu-218-luat-362005qh11-luat-thuong-mai-2005-so-362005qh11-unknown",
+    "refer_doc_id": "36/2005/QH11",
+    "refer_type": "article",
+    "concept": "Hồ sơ mời thầu",
+    "question": "Trong LUẬT THƯƠNG MẠI CỦA QUỐC HỘI NƯỚC CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM SỐ 36/2005/QH11 NGÀY 14 THÁNG 6 NĂM 2005 (ban hành năm không xác định), khái niệm 'Hồ sơ mời thầu' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Hồ sơ mời thầu bao gồm:\na) Thông báo mời thầu;\nb) Các yêu cầu liên quan đến hàng hóa, dịch vụ được đấu thầu;\nc) Phương pháp đánh giá, so sánh, xếp hạng và lựa chọn nhà thầu;\nd) Những chỉ dẫn khác liên quan đến việc đấu thầu."
+  },
+  {
+    "uid": "bench_2_1_dieu-56-luat-682014qh13-luat-doanh-nghiep-2014-so-682014qh13-unknown",
+    "refer_uid": "dieu-56-luat-682014qh13-luat-doanh-nghiep-2014-so-682014qh13-unknown",
+    "refer_doc_id": "68/2014/QH13",
+    "refer_type": "article",
+    "concept": "Hội đồng thành viên",
+    "question": "Trong LUẬT DOANH NGHIỆP (ban hành năm không xác định), khái niệm 'Hội đồng thành viên' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Hội đồng thành viên gồm tất cả các thành viên công ty, là cơ quan quyết định cao nhất của công ty."
+  },
+  {
+    "uid": "bench_2_1_dieu-76-luat-582014qh13-luat-bao-hiem-xa-hoi-2014-so-582014qh13-unknown",
+    "refer_uid": "dieu-76-luat-582014qh13-luat-bao-hiem-xa-hoi-2014-so-582014qh13-unknown",
+    "refer_doc_id": "58/2014/QH13",
+    "refer_type": "article",
+    "concept": "Thời điểm hưởng lương hưu",
+    "question": "Trong LUẬT BẢO HIỂM XÃ HỘI (ban hành năm không xác định), khái niệm 'Thời điểm hưởng lương hưu' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Thời điểm hưởng lương hưu của các đối tượng quy định tại Điều 72 của Luật này được tính từ tháng liền kề sau tháng người tham gia bảo hiểm xã hội đủ điều kiện hưởng lương hưu theo quy định tại Điều 73 của Luật này."
+  },
+  {
+    "uid": "bench_2_1_dieu-19-luat-30-lctn-luat-pha-san-doanh-nghiep-so-30-lctn-unknown",
+    "refer_uid": "dieu-19-luat-30-lctn-luat-pha-san-doanh-nghiep-so-30-lctn-unknown",
+    "refer_doc_id": "30-L/CTN",
+    "refer_type": "article",
+    "concept": "Tài sản của doanh nghiệp",
+    "question": "Trong LUẬT PHÁ SẢN DOANH NGHIỆP (ban hành năm không xác định), khái niệm 'Tài sản của doanh nghiệp' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Tài sản của doanh nghiệp bao gồm toàn bộ tài sản thuộc quyền sở hữu của doanh nghiệp hoặc thuộc quyền quản lý của doanh nghiệp (đối với doanh nghiệp Nhà nước), trong đó gồm :\n1- Tài sản cố định và tài sản lưu động của doanh nghiệp đang có ở doanh nghiệp;\n2- Tiền hoặc tài sản góp vốn, liên doanh, liên kết với cá nhân, doanh nghiệp hoặc tổ chức khác;\n3- Tiền hoặc tài sản của doanh nghiệp mà cá nhân, tổ chức doanh nghiệp khác đang nợ hoặc chiếm đoạt;\n4- Tài sản mà doanh nghiệp đang cho thuê hoặc cho mượn;\n5- Các quyền về tài sản.\nTài sản của doanh nghiệp tư nhân còn bao gồm cả tài sản của chủ doanh nghiệp tư nhân không trực tiếp dùng vào hoạt động kinh doanh."
+  },
+  {
+    "uid": "bench_2_1_dieu-63-luat-932015qh13-luat-to-tung-hanh-chinh-2015-so-932015qh13-unknown",
+    "refer_uid": "dieu-63-luat-932015qh13-luat-to-tung-hanh-chinh-2015-so-932015qh13-unknown",
+    "refer_doc_id": "93/2015/QH13",
+    "refer_type": "article",
+    "concept": "Người giám định",
+    "question": "Trong LUẬT TỐ TỤNG HÀNH CHÍNH (ban hành năm không xác định), khái niệm 'Người giám định' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Người giám định là người có kiến thức, kinh nghiệm cần thiết theo quy định của pháp luật về lĩnh vực có đối tượng cần được giám định, được các bên đương sự thỏa thuận lựa chọn hoặc được Tòa án trưng cầu để giám định đối tượng đó theo yêu cầu của một hoặc các bên đương sự."
+  },
+  {
+    "uid": "bench_2_1_dieu-3-luat-732014qh13-luat-cong-an-nhan-dan-2014-luat-so-732014qh13-unknown",
+    "refer_uid": "dieu-3-luat-732014qh13-luat-cong-an-nhan-dan-2014-luat-so-732014qh13-unknown",
+    "refer_doc_id": "73/2014/QH13",
+    "refer_type": "article",
+    "concept": "Bảo vệ an ninh quốc gia; Bảo đảm trật tự, an toàn xã hội; Sĩ quan, hạ sĩ quan nghiệp vụ; Sĩ quan, hạ sĩ quan chuyên môn kỹ thuật; Hạ sĩ quan, chiến sĩ nghĩa vụ; Công nhân công an",
+    "question": "Trong LUẬT CÔNG AN NHÂN DÂN (ban hành năm không xác định), khái niệm 'Bảo vệ an ninh quốc gia; Bảo đảm trật tự, an toàn xã hội; Sĩ quan, hạ sĩ quan nghiệp vụ; Sĩ quan, hạ sĩ quan chuyên môn kỹ thuật; Hạ sĩ quan, chiến sĩ nghĩa vụ; Công nhân công an' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "1. Bảo vệ an ninh quốc gia là phòng ngừa, phát hiện, ngăn chặn, đấu tranh làm thất bại các hoạt động xâm phạm an ninh quốc gia.\n2. Bảo đảm trật tự, an toàn xã hội là phòng ngừa, phát hiện, ngăn chặn, đấu tranh chống tội phạm và các hành vi vi phạm pháp luật về trật tự, an toàn xã hội.\n3. Sĩ quan, hạ sĩ quan nghiệp vụ là công dân Việt Nam được tuyển chọn, đào tạo, huấn luyện và hoạt động trong các lĩnh vực nghiệp vụ của Công an nhân dân được phong, thăng cấp bậc hàm cấp tướng, cấp tá, cấp úy, hạ sĩ quan.\n4. Sĩ quan, hạ sĩ quan chuyên môn kỹ thuật là công dân Việt Nam, có trình độ chuyên môn kỹ thuật, hoạt động trong Công an nhân dân được phong, thăng cấp bậc hàm cấp tá, cấp úy, hạ sĩ quan.\n5. Hạ sĩ quan, chiến sĩ nghĩa vụ là công dân Việt Nam thực hiện nghĩa vụ tham gia Công an nhân dân được phong, thăng cấp bậc hàm Thượng sĩ, Trung sĩ, Hạ sĩ, Binh nhất, Binh nhì.\n6. Công nhân công an là người được tuyển dụng vào làm việc trong Công an nhân dân mà không thuộc diện được phong cấp bậc hàm sĩ quan, hạ sĩ quan, chiến sĩ."
+  },
+  {
+    "uid": "bench_2_1_dieu-3-luat-11-lcthdnn7-luat-to-chuc-hoi-dong-nhan-dan-va-uy-ban-nhan-dan-unknown",
+    "refer_uid": "dieu-3-luat-11-lcthdnn7-luat-to-chuc-hoi-dong-nhan-dan-va-uy-ban-nhan-dan-unknown",
+    "refer_doc_id": "11-LCT/HĐNN7",
+    "refer_type": "article",
+    "concept": "Uỷ ban nhân dân",
+    "question": "Trong LUẬT TỔ CHỨC HỘI ĐỒNG NHÂN DÂN VÀ UỶ BAN NHÂN DÂN (ban hành năm không xác định), khái niệm 'Uỷ ban nhân dân' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Uỷ ban nhân dân do Hội đồng nhân dân bầu ra, là cơ quan chấp hành của Hội đồng nhân dân, là cơ quan hành chính Nhà nước ở địa phương."
+  },
+  {
+    "uid": "bench_2_1_dieu-88-luat-592020qh14-luat-doanh-nghiep-2020-so-592020qh14-unknown",
+    "refer_uid": "dieu-88-luat-592020qh14-luat-doanh-nghiep-2020-so-592020qh14-unknown",
     "refer_doc_id": "59/2020/QH14",
     "refer_type": "article",
-    "concept": "Chào bán cổ phần",
-    "question": "Trong LUẬT DOANH NGHIỆP (ban hành năm 2020), khái niệm 'Chào bán cổ phần' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "là việc công ty tăng thêm số lượng cổ phần, loại cổ phần được quyền chào bán để tăng vốn điều lệ"
+    "concept": "Doanh nghiệp nhà nước",
+    "question": "Trong LUẬT DOANH NGHIỆP (ban hành năm không xác định), khái niệm 'Doanh nghiệp nhà nước' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Doanh nghiệp nhà nước được tổ chức quản lý dưới hình thức công ty trách nhiệm hữu hạn, công ty cổ phần, bao gồm:\na) Doanh nghiệp do Nhà nước nắm giữ 100% vốn điều lệ;\nb) Doanh nghiệp do Nhà nước nắm giữ trên 50% vốn điều lệ hoặc tổng số cổ phần có quyền biểu quyết, trừ doanh nghiệp quy định tại điểm a khoản 1 Điều này."
   },
   {
-    "uid": "bench_2_1_dieu-149-luat-502014qh13-luat-502014qh13-2014-06-18",
-    "refer_uid": "dieu-149-luat-502014qh13-luat-502014qh13-2014-06-18",
+    "uid": "bench_2_1_dieu-21-luat-542019qh14-luat-chung-khoan-2019-so-542019qh14-unknown",
+    "refer_uid": "dieu-21-luat-542019qh14-luat-chung-khoan-2019-so-542019qh14-unknown",
+    "refer_doc_id": "54/2019/QH14",
+    "refer_type": "article",
+    "concept": "Đơn vị có lợi ích công chúng thuộc lĩnh vực chứng khoán",
+    "question": "Trong LUẬT CHỨNG KHOÁN (ban hành năm không xác định), khái niệm 'Đơn vị có lợi ích công chúng thuộc lĩnh vực chứng khoán' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Đơn vị có lợi ích công chúng thuộc lĩnh vực chứng khoán bao gồm công ty đại chúng, tổ chức niêm yết, tổ chức đăng ký giao dịch, tổ chức chào bán chứng khoán ra công chúng, công ty chứng khoán, công ty quản lý quỹ đầu tư chứng khoán, công ty đầu tư chứng khoán, quỹ đầu tư chứng khoán."
+  },
+  {
+    "uid": "bench_2_1_dieu-25-luat-03-lctn-luat-to-chuc-vien-kiem-sat-nhan-dan-unknown",
+    "refer_uid": "dieu-25-luat-03-lctn-luat-to-chuc-vien-kiem-sat-nhan-dan-unknown",
+    "refer_doc_id": "03-L/CTN",
+    "refer_type": "article",
+    "concept": "Hệ thống Viện kiểm sát nhân dân",
+    "question": "Trong LUẬT TỔ CHỨC VIỆN KIỂM SÁT NHÂN DÂN (ban hành năm không xác định), khái niệm 'Hệ thống Viện kiểm sát nhân dân' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Hệ thống Viện kiểm sát nhân dân gồm có:\n- Viện kiểm sát nhân dân tối cao;\n- Các Viện kiểm sát nhân dân tỉnh, thành phố trực thuộc trung ương;\n- Các Viện kiểm sát nhân dân huyện, quận, thị xã, thành phố thuộc tỉnh;\n- Các Viện kiểm sát quân sự."
+  },
+  {
+    "uid": "bench_2_1_dieu-9-luat-672011qh12-luat-kiem-toan-doc-lap-2011-so-672011qh12-unknown",
+    "refer_uid": "dieu-9-luat-672011qh12-luat-kiem-toan-doc-lap-2011-so-672011qh12-unknown",
+    "refer_doc_id": "67/2011/QH12",
+    "refer_type": "article",
+    "concept": "Kiểm toán bắt buộc",
+    "question": "Trong LUẬT KIỂM TOÁN ĐỘC LẬP (ban hành năm không xác định), khái niệm 'Kiểm toán bắt buộc' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Kiểm toán bắt buộc là kiểm toán đối với báo cáo tài chính hàng năm, báo cáo quyết toán dự án hoàn thành và các thông tin tài chính khác của đơn vị được kiểm toán quy định tại khoản 1 và khoản 2 Điều 37 của Luật này và các quy định khác của pháp luật có liên quan."
+  },
+  {
+    "uid": "bench_2_1_dieu-20-luat-222023qh15-luat-dau-thau-2023-so-222023qh15-unknown",
+    "refer_uid": "dieu-20-luat-222023qh15-luat-dau-thau-2023-so-222023qh15-unknown",
+    "refer_doc_id": "22/2023/QH15",
+    "refer_type": "article",
+    "concept": "Các hình thức lựa chọn nhà thầu",
+    "question": "Trong LUẬT ĐẤU THẦU (ban hành năm không xác định), khái niệm 'Các hình thức lựa chọn nhà thầu' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Các hình thức lựa chọn nhà thầu bao gồm:\na) Đấu thầu rộng rãi;\nb) Đấu thầu hạn chế;\nc) Chỉ định thầu;\nd) Chào hàng cạnh tranh;\nđ) Mua sắm trực tiếp;\ne) Tự thực hiện;\ng) Tham gia thực hiện của cộng đồng;\nh) Đàm phán giá;\ni) Lựa chọn nhà thầu trong trường hợp đặc biệt."
+  },
+  {
+    "uid": "bench_2_1_dieu-20-luat-022026qh16-luat-thu-do-2026-so-022026qh16-unknown",
+    "refer_uid": "dieu-20-luat-022026qh16-luat-thu-do-2026-so-022026qh16-unknown",
+    "refer_doc_id": "02/2026/QH16",
+    "refer_type": "article",
+    "concept": "Khu công nghệ cao Hòa Lạc",
+    "question": "Trong LUẬT THỦ ĐÔ (ban hành năm không xác định), khái niệm 'Khu công nghệ cao Hòa Lạc' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Khu công nghệ cao Hòa Lạc là khu vực nghiên cứu, phát triển, thử nghiệm, ứng dụng công nghệ cao, đào tạo nhân lực công nghệ cao, sản xuất sản phẩm công nghệ cao và đổi mới sáng tạo trọng điểm của đất nước và Thủ đô; là nơi thử nghiệm, thí điểm về cơ chế, chính sách cho việc quản lý, phát triển công nghệ cao và các khu công nghệ cao trong cả nước."
+  },
+  {
+    "uid": "bench_2_1_dieu-39-luat-452024qh15-luat-di-san-van-hoa-2024-so-452024qh15-unknown",
+    "refer_uid": "dieu-39-luat-452024qh15-luat-di-san-van-hoa-2024-so-452024qh15-unknown",
+    "refer_doc_id": "45/2024/QH15",
+    "refer_type": "article",
+    "concept": "Hoạt động thăm dò, khai quật khảo cổ",
+    "question": "Trong LUẬT DI SẢN VĂN HÓA (ban hành năm không xác định), khái niệm 'Hoạt động thăm dò, khai quật khảo cổ' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Hoạt động thăm dò, khai quật khảo cổ gồm thăm dò, khai quật khảo cổ trong lòng đất và thăm dò, khai quật khảo cổ dưới nước."
+  },
+  {
+    "uid": "bench_2_1_dieu-4-luat-35-lctn-luat-khuyen-khich-dau-tu-trong-nuoc-so-35-lctn-cua-quoc-hoi-unknown",
+    "refer_uid": "dieu-4-luat-35-lctn-luat-khuyen-khich-dau-tu-trong-nuoc-so-35-lctn-cua-quoc-hoi-unknown",
+    "refer_doc_id": "35-L/CTN",
+    "refer_type": "article",
+    "concept": "Đầu tư được áp dụng theo Luật này",
+    "question": "Trong LUẬT KHUYẾN KHÍCH ĐẦU TƯ TRONG NƯỚC (ban hành năm không xác định), khái niệm 'Đầu tư được áp dụng theo Luật này' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Đầu tư được áp dụng theo Luật này bao gồm:\n1- Đầu tư thành lập cơ sở sản xuất, kinh doanh thuộc mọi thành phần kinh tế;\n2- Đầu tư mở rộng quy mô, nâng cao năng lực sản xuất, nghiên cứu phát triển và đổi mới công nghệ của các cơ sở sản xuất, kinh doanh hiện có;\n3- Mua cổ phần của các doanh nghiệp, góp vốn vào các doanh nghiệp, kể cả doanh nghiệp Nhà nước được phép đa dạng hóa hình thức sở hữu."
+  },
+  {
+    "uid": "bench_2_1_dieu-23-luat-392024qh15-luat-thu-do-2024-so-392024qh15-unknown",
+    "refer_uid": "dieu-23-luat-392024qh15-luat-thu-do-2024-so-392024qh15-unknown",
+    "refer_doc_id": "39/2024/QH15",
+    "refer_type": "article",
+    "concept": "Lĩnh vực trọng điểm về khoa học và công nghệ của Thủ đô",
+    "question": "Trong LUẬT Thủ đô (ban hành năm không xác định), khái niệm 'Lĩnh vực trọng điểm về khoa học và công nghệ của Thủ đô' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Lĩnh vực trọng điểm về khoa học và công nghệ của Thủ đô bao gồm công nghệ số, công nghệ thông tin và truyền thông, công nghệ sinh học, công nghệ vật liệu mới, công nghệ chế tạo - tự động hóa, công nghệ môi trường, giảm phát thải các-bon, ứng phó với biến đổi khí hậu và các lĩnh vực khác do Hội đồng nhân dân Thành phố quyết định."
+  },
+  {
+    "uid": "bench_2_1_dieu-12-luat-622006qh11-luat-dien-anh-nam-2006-unknown",
+    "refer_uid": "dieu-12-luat-622006qh11-luat-dien-anh-nam-2006-unknown",
+    "refer_doc_id": "62/2006/QH11",
+    "refer_type": "article",
+    "concept": "Cơ sở điện ảnh",
+    "question": "Trong LUẬT ĐIỆN ẢNH CỦA QUỐC HỘI NƯỚC CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM SỐ 62/2006/QH11 NGÀY 29 THÁNG 6 NĂM 2006 (ban hành năm không xác định), khái niệm 'Cơ sở điện ảnh' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Cơ sở điện ảnh bao gồm:\na) Cơ sở sản xuất phim;\nb) Cơ sở dịch vụ sản xuất phim;\nc) Cơ sở in sang, nhân bản phim;\nd) Cơ sở bán, cho thuê phim;\nđ) Cơ sở xuất khẩu, nhập khẩu phim;\ne) Cơ sở chiếu phim;\ng) Cơ sở điện ảnh khác theo quy định của pháp luật."
+  },
+  {
+    "uid": "bench_2_1_dieu-132-luat-552014qh13-luat-bao-ve-moi-truong-2014-so-552014qh13-unknown",
+    "refer_uid": "dieu-132-luat-552014qh13-luat-bao-ve-moi-truong-2014-so-552014qh13-unknown",
+    "refer_doc_id": "55/2014/QH13",
+    "refer_type": "article",
+    "concept": "Chỉ thị môi trường",
+    "question": "Trong LUẬT BẢO VỆ MÔI TRƯỜNG (ban hành năm không xác định), khái niệm 'Chỉ thị môi trường' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Chỉ thị môi trường là thông số cơ bản phản ánh các yếu tố đặc trưng của môi trường phục vụ mục đích đánh giá, theo dõi diễn biến chất lượng môi trường, lập báo cáo hiện trạng môi trường."
+  },
+  {
+    "uid": "bench_2_1_dieu-80-luat-322024qh15-luat-cac-to-chuc-tin-dung-2024-so-322024qh15-unknown",
+    "refer_uid": "dieu-80-luat-322024qh15-luat-cac-to-chuc-tin-dung-2024-so-322024qh15-unknown",
+    "refer_doc_id": "32/2024/QH15",
+    "refer_type": "article",
+    "concept": "Tổ chức tín dụng là hợp tác xã",
+    "question": "Trong LUẬT CÁC TỔ CHỨC TÍN DỤNG (ban hành năm không xác định), khái niệm 'Tổ chức tín dụng là hợp tác xã' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Tổ chức tín dụng là hợp tác xã là loại hình tổ chức tín dụng được tổ chức theo mô hình hợp tác xã hoạt động trong lĩnh vực ngân hàng nhằm mục tiêu chủ yếu là tương trợ giữa các thành viên thực hiện có hiệu quả các hoạt động sản xuất, kinh doanh dịch vụ và cải thiện đời sống. Tổ chức tín dụng là hợp tác xã gồm ngân hàng hợp tác xã, quỹ tín dụng nhân dân."
+  },
+  {
+    "uid": "bench_2_1_dieu-14-luat-222018qh14-luat-quoc-phong-2018-so-222018qh14-unknown",
+    "refer_uid": "dieu-14-luat-222018qh14-luat-quoc-phong-2018-so-222018qh14-unknown",
+    "refer_doc_id": "22/2018/QH14",
+    "refer_type": "article",
+    "concept": "Đối ngoại quốc phòng",
+    "question": "Trong LUẬT QUỐC PHÒNG (ban hành năm không xác định), khái niệm 'Đối ngoại quốc phòng' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Đối ngoại quốc phòng để thực hiện đường lối, chính sách đối ngoại của Đảng và Nhà nước, nhằm phát huy sức mạnh tổng hợp của đất nước để xây dựng và bảo vệ Tổ quốc, góp phần vào sự nghiệp hòa bình, độc lập dân tộc, dân chủ và tiến bộ xã hội trên thế giới."
+  },
+  {
+    "uid": "bench_2_1_dieu-107-luat-652014qh13-luat-nha-o-2014-so-652014qh13-unknown",
+    "refer_uid": "dieu-107-luat-652014qh13-luat-nha-o-2014-so-652014qh13-unknown",
+    "refer_doc_id": "65/2014/QH13",
+    "refer_type": "article",
+    "concept": "Bảo trì nhà chung cư",
+    "question": "Trong LUẬT NHÀ Ở (ban hành năm không xác định), khái niệm 'Bảo trì nhà chung cư' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Bảo trì nhà chung cư bao gồm bảo trì phần sở hữu riêng và bảo trì phần sở hữu chung."
+  },
+  {
+    "uid": "bench_2_1_dieu-188-luat-682014qh13-luat-doanh-nghiep-2014-so-682014qh13-unknown",
+    "refer_uid": "dieu-188-luat-682014qh13-luat-doanh-nghiep-2014-so-682014qh13-unknown",
+    "refer_doc_id": "68/2014/QH13",
+    "refer_type": "article",
+    "concept": "Tập đoàn kinh tế, tổng công ty",
+    "question": "Trong LUẬT DOANH NGHIỆP (ban hành năm không xác định), khái niệm 'Tập đoàn kinh tế, tổng công ty' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Tập đoàn kinh tế, tổng công ty thuộc các thành phần kinh tế là nhóm công ty có mối quan hệ với nhau thông qua sở hữu cổ phần, phần vốn góp hoặc liên kết khác."
+  },
+  {
+    "uid": "bench_2_1_dieu-15-luat-1252025qh15-luat-giao-duc-dai-hoc-2025-so-1252025qh15-unknown",
+    "refer_uid": "dieu-15-luat-1252025qh15-luat-giao-duc-dai-hoc-2025-so-1252025qh15-unknown",
+    "refer_doc_id": "125/2025/QH15",
+    "refer_type": "article",
+    "concept": "hội đồng trường tư thục",
+    "question": "Trong LUẬT GIÁO DỤC ĐẠI HỌC (ban hành năm không xác định), khái niệm 'hội đồng trường tư thục' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Hội đồng đại học của đại học tư thục, hội đồng trường của trường đại học tư thục (sau đây gọi chung là hội đồng trường tư thục)"
+  },
+  {
+    "uid": "bench_2_1_dieu-67-luat-152017qh14-luat-quan-ly-su-dung-tai-san-cong-2017-so-152017qh14-unknown",
+    "refer_uid": "dieu-67-luat-152017qh14-luat-quan-ly-su-dung-tai-san-cong-2017-so-152017qh14-unknown",
+    "refer_doc_id": "15/2017/QH14",
+    "refer_type": "article",
+    "concept": "Tài sản tại cơ quan Đảng Cộng sản Việt Nam",
+    "question": "Trong LUẬT QUẢN LÝ, SỬ DỤNG TÀI SẢN CÔNG (ban hành năm không xác định), khái niệm 'Tài sản tại cơ quan Đảng Cộng sản Việt Nam' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Tài sản tại cơ quan Đảng Cộng sản Việt Nam bao gồm:\na) Tài sản được Nhà nước giao bằng hiện vật và tài sản được đầu tư xây dựng, mua sắm từ ngân sách nhà nước;\nb) Tài sản đã có quyết định của cơ quan nhà nước có thẩm quyền chuyển giao quyền sở hữu; tài sản được hình thành từ đảng phí và nguồn thu khác của Đảng."
+  },
+  {
+    "uid": "bench_2_1_dieu-3-luat-552014qh13-luat-bao-ve-moi-truong-2014-so-552014qh13-unknown",
+    "refer_uid": "dieu-3-luat-552014qh13-luat-bao-ve-moi-truong-2014-so-552014qh13-unknown",
+    "refer_doc_id": "55/2014/QH13",
+    "refer_type": "article",
+    "concept": "Môi trường",
+    "question": "Trong LUẬT BẢO VỆ MÔI TRƯỜNG (ban hành năm không xác định), khái niệm 'Môi trường' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Môi trường là hệ thống các yếu tố vật chất tự nhiên và nhân tạo có tác động đối với sự tồn tại và phát triển của con người và sinh vật."
+  },
+  {
+    "uid": "bench_2_1_dieu-15-luat-1162025qh15-luat-an-ninh-mang-2025-so-1162025qh15-unknown",
+    "refer_uid": "dieu-15-luat-1162025qh15-luat-an-ninh-mang-2025-so-1162025qh15-unknown",
+    "refer_doc_id": "116/2025/QH15",
+    "refer_type": "article",
+    "concept": "Hành vi gián điệp mạng; xâm phạm bí mật nhà nước, bí mật công tác, bí mật kinh doanh, bí mật cá nhân, bí mật gia đình và đời sống riêng tư trên không gian mạng",
+    "question": "Trong LUẬT AN NINH MẠNG (ban hành năm không xác định), khái niệm 'Hành vi gián điệp mạng; xâm phạm bí mật nhà nước, bí mật công tác, bí mật kinh doanh, bí mật cá nhân, bí mật gia đình và đời sống riêng tư trên không gian mạng' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Hành vi gián điệp mạng; xâm phạm bí mật nhà nước, bí mật công tác, bí mật kinh doanh, bí mật cá nhân, bí mật gia đình và đời sống riêng tư trên không gian mạng bao gồm:\na) Chiếm đoạt, mua bán, thu giữ, cố ý làm lộ thông tin thuộc bí mật nhà nước, bí mật công tác, bí mật kinh doanh; chiếm đoạt, mua bán, thu giữ, cố ý làm lộ bí mật cá nhân, bí mật gia đình và đời sống riêng tư gây ảnh hưởng đến danh dự, uy tín, nhân phẩm, quyền và lợi ích hợp pháp của cơ quan, tổ chức, cá nhân;\nb) Cố ý xóa, làm hư hỏng, thất lạc, thay đổi thông tin thuộc bí mật nhà nước, bí mật công tác, bí mật kinh doanh, bí mật cá nhân, bí mật gia đình và đời sống riêng tư được truyền đưa, lưu trữ trên không gian mạng;\nc) Cố ý thay đổi, hủy bỏ hoặc làm vô hiệu hóa biện pháp kỹ thuật được xây dựng, áp dụng để bảo vệ thông tin thuộc bí mật nhà nước, bí mật công tác, bí mật kinh doanh, bí mật cá nhân, bí mật gia đình và đời sống riêng tư;\nd) Đưa lên không gian mạng những thông tin thuộc bí mật nhà nước, bí mật công tác, bí mật kinh doanh, bí mật cá nhân, bí mật gia đình và đời sống riêng tư trái quy định của pháp luật;\nđ) Cố ý nghe, ghi âm, ghi hình trái phép các cuộc đàm thoại;\ne) Hành vi khác cố ý xâm phạm bí mật nhà nước, bí mật công tác, bí mật kinh doanh, bí mật cá nhân, bí mật gia đình và đời sống riêng tư."
+  },
+  {
+    "uid": "bench_2_1_dieu-182-luat-592020qh14-luat-doanh-nghiep-2020-so-592020qh14-unknown",
+    "refer_uid": "dieu-182-luat-592020qh14-luat-doanh-nghiep-2020-so-592020qh14-unknown",
+    "refer_doc_id": "59/2020/QH14",
+    "refer_type": "article",
+    "concept": "Hội đồng thành viên",
+    "question": "Trong LUẬT DOANH NGHIỆP (ban hành năm không xác định), khái niệm 'Hội đồng thành viên' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Hội đồng thành viên bao gồm tất cả thành viên."
+  },
+  {
+    "uid": "bench_2_1_dieu-44-luat-182003qh11-luat-hop-tac-xa-nam-2003-unknown",
+    "refer_uid": "dieu-44-luat-182003qh11-luat-hop-tac-xa-nam-2003-unknown",
+    "refer_doc_id": "18/2003/QH11",
+    "refer_type": "article",
+    "concept": "Liên hiệp hợp tác xã",
+    "question": "Trong LUẬT CỦA QUỐC HỘI NƯỚC CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM SỐ 18/2003/QH11 NGÀY 26 THÁNG 11 NĂM 2003 VỀ HỢP TÁC XÃ (ban hành năm không xác định), khái niệm 'Liên hiệp hợp tác xã' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Liên hiệp hợp tác xã là tổ chức kinh tế hoạt động theo nguyên tắc tổ chức và hoạt động của hợp tác xã quy định tại Điều 5 của Luật này, nhằm mục đích nâng cao hiệu quả sản xuất, kinh doanh của các hợp tác xã thành viên, hỗ trợ nhau trong hoạt động và đáp ứng các nhu cầu khác của các thành viên tham gia."
+  },
+  {
+    "uid": "bench_2_1_dieu-15-luat-1032016qh13-luat-bao-chi-2016-so-1032016qh13-unknown",
+    "refer_uid": "dieu-15-luat-1032016qh13-luat-bao-chi-2016-so-1032016qh13-unknown",
+    "refer_doc_id": "103/2016/QH13",
+    "refer_type": "article",
+    "concept": "Cơ quan chủ quản báo chí",
+    "question": "Trong LUẬT BÁO CHÍ (ban hành năm không xác định), khái niệm 'Cơ quan chủ quản báo chí' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Cơ quan chủ quản báo chí là cơ quan, tổ chức quy định tại Điều 14 của Luật này đứng tên đề nghị cấp giấy phép hoạt động báo chí, thành lập và trực tiếp quản lý cơ quan báo chí."
+  },
+  {
+    "uid": "bench_2_1_dieu-22-luat-892015qh13-luat-thong-ke-2015-so-892015qh13-unknown",
+    "refer_uid": "dieu-22-luat-892015qh13-luat-thong-ke-2015-so-892015qh13-unknown",
+    "refer_doc_id": "89/2015/QH13",
+    "refer_type": "article",
+    "concept": "Hệ thống chỉ tiêu thống kê cấp tỉnh; Hệ thống chỉ tiêu thống kê cấp huyện; Hệ thống chỉ tiêu thống kê cấp xã",
+    "question": "Trong LUẬT THỐNG KÊ (ban hành năm không xác định), khái niệm 'Hệ thống chỉ tiêu thống kê cấp tỉnh; Hệ thống chỉ tiêu thống kê cấp huyện; Hệ thống chỉ tiêu thống kê cấp xã' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Hệ thống chỉ tiêu thống kê cấp tỉnh là tập hợp các chỉ tiêu thống kê để hình thành hệ thống thông tin thống kê quốc gia và hệ thống thông tin thống kê cấp tỉnh.\nHệ thống chỉ tiêu thống kê cấp huyện là tập hợp các chỉ tiêu thống kê để hình thành hệ thống thông tin thống kê cấp tỉnh và hệ thống thông tin thống kê cấp huyện.\nHệ thống chỉ tiêu thống kê cấp xã là tập hợp các chỉ tiêu thống kê để hình thành hệ thống thông tin thống kê cấp huyện."
+  },
+  {
+    "uid": "bench_2_1_dieu-23-luat-402019qh14-luat-kien-truc-2019-so-402019qh14-unknown",
+    "refer_uid": "dieu-23-luat-402019qh14-luat-kien-truc-2019-so-402019qh14-unknown",
+    "refer_doc_id": "40/2019/QH14",
+    "refer_type": "article",
+    "concept": "Phát triển nghề nghiệp liên tục",
+    "question": "Trong LUẬT KIẾN TRÚC (ban hành năm không xác định), khái niệm 'Phát triển nghề nghiệp liên tục' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Phát triển nghề nghiệp liên tục gồm hoạt động cập nhật, duy trì, tăng cường, nâng cao kiến thức, kỹ năng của kiến trúc sư hành nghề."
+  },
+  {
+    "uid": "bench_2_1_dieu-5-luat-352024qh15-luat-duong-bo-2024-so-352024qh15-unknown",
+    "refer_uid": "dieu-5-luat-352024qh15-luat-duong-bo-2024-so-352024qh15-unknown",
+    "refer_doc_id": "35/2024/QH15",
+    "refer_type": "article",
+    "concept": "Quy hoạch mạng lưới đường bộ; Quy hoạch kết cấu hạ tầng đường bộ",
+    "question": "Trong LUẬT ĐƯỜNG BỘ (ban hành năm không xác định), khái niệm 'Quy hoạch mạng lưới đường bộ; Quy hoạch kết cấu hạ tầng đường bộ' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Quy hoạch mạng lưới đường bộ là quy hoạch ngành quốc gia, xác định phương hướng phát triển, tổ chức không gian hệ thống quốc lộ làm cơ sở để định hướng lập quy hoạch kết cấu hạ tầng đường bộ, phát triển mạng lưới đường bộ; Quy hoạch kết cấu hạ tầng đường bộ là quy hoạch có tính chất kỹ thuật, chuyên ngành, cụ thể hóa quy hoạch mạng lưới đường bộ, xác định phương án phát triển công trình đường bộ và kết cấu hạ tầng đường bộ khác theo từng tuyến đường bộ"
+  },
+  {
+    "uid": "bench_2_1_dieu-15-luat-362018qh14-luat-phong-chong-tham-nhung-2018-so-362018qh14-unknown",
+    "refer_uid": "dieu-15-luat-362018qh14-luat-phong-chong-tham-nhung-2018-so-362018qh14-unknown",
+    "refer_doc_id": "36/2018/QH14",
+    "refer_type": "article",
+    "concept": "Người thực hiện trách nhiệm giải trình",
+    "question": "Trong LUẬT PHÒNG, CHỐNG THAM NHŨNG (ban hành năm không xác định), khái niệm 'Người thực hiện trách nhiệm giải trình' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Người thực hiện trách nhiệm giải trình là người đứng đầu cơ quan, tổ chức, đơn vị hoặc người được phân công, người được ủy quyền hợp pháp để thực hiện trách nhiệm giải trình."
+  },
+  {
+    "uid": "bench_2_1_dieu-7-luat-482024qh15-luat-thue-gia-tri-gia-tang-2024-so-482024qh15-unknown",
+    "refer_uid": "dieu-7-luat-482024qh15-luat-thue-gia-tri-gia-tang-2024-so-482024qh15-unknown",
+    "refer_doc_id": "48/2024/QH15",
+    "refer_type": "article",
+    "concept": "Giá tính thuế",
+    "question": "Trong LUẬT THUẾ GIÁ TRỊ GIA TĂNG (ban hành năm không xác định), khái niệm 'Giá tính thuế' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Giá tính thuế được quy định như sau:\na) Đối với hàng hóa, dịch vụ do cơ sở kinh doanh bán ra là giá bán chưa có thuế giá trị gia tăng; đối với hàng hóa, dịch vụ chịu thuế tiêu thụ đặc biệt là giá bán đã có thuế tiêu thụ đặc biệt nhưng chưa có thuế giá trị gia tăng; đối với hàng hóa chịu thuế bảo vệ môi trường là giá bán đã có thuế bảo vệ môi trường nhưng chưa có thuế giá trị gia tăng; đối với hàng hóa chịu thuế tiêu thụ đặc biệt và thuế bảo vệ môi trường là giá bán đã có thuế tiêu thụ đặc biệt và thuế bảo vệ môi trường nhưng chưa có thuế giá trị gia tăng;\nb) Đối với hàng hóa nhập khẩu là trị giá tính thuế nhập khẩu theo quy định của pháp luật về thuế xuất khẩu, thuế nhập khẩu cộng với thuế nhập khẩu cộng với các khoản thuế là thuế nhập khẩu bổ sung theo quy định của pháp luật (nếu có), cộng với thuế tiêu thụ đặc biệt (nếu có) và cộng với thuế bảo vệ môi trường (nếu có);\nc) Đối với hàng hóa, dịch vụ dùng để trao đổi, tiêu dùng nội bộ, biếu, tặng, cho là giá tính thuế giá trị gia tăng của hàng hóa, dịch vụ cùng loại hoặc tương đương tại thời điểm phát sinh các hoạt động này.\nĐối với hàng hóa, dịch vụ dùng để khuyến mại theo quy định của pháp luật về thương mại, giá tính thuế được xác định bằng không (0);\nd) Đối với hoạt động cho thuê tài sản là số tiền cho thuê chưa có thuế giá trị gia tăng.\nTrường hợp cho thuê theo hình thức trả tiền thuê từng kỳ hoặc trả trước tiền thuê cho thời hạn thuê thì giá tính thuế là số tiền cho thuê trả từng kỳ hoặc trả trước cho thời hạn thuê chưa có thuế giá trị gia tăng;\nđ) Đối với hàng hóa bán theo phương thức trả góp, trả chậm là giá tính theo giá bán trả một lần chưa có thuế giá trị gia tăng của hàng hóa đó, không bao gồm khoản lãi trả góp, lãi trả chậm;\ne) Đối với gia công hàng hóa là giá gia công chưa có thuế giá trị gia tăng;\ng) Đối với hoạt động xây dựng, lắp đặt là giá trị công trình, hạng mục công trình hay phần công việc thực hiện bàn giao chưa có thuế giá trị gia tăng."
+  },
+  {
+    "uid": "bench_2_1_dieu-15-luat-1332025qh15-luat-cong-nghe-cao-2025-so-1332025qh15-unknown",
+    "refer_uid": "dieu-15-luat-1332025qh15-luat-cong-nghe-cao-2025-so-1332025qh15-unknown",
+    "refer_doc_id": "133/2025/QH15",
+    "refer_type": "article",
+    "concept": "Doanh nghiệp sản xuất sản phẩm công nghệ cao; Doanh nghiệp công nghệ cao; Doanh nghiệp công nghệ cao nhóm 1; Doanh nghiệp công nghệ cao nhóm 2",
+    "question": "Trong LUẬT CÔNG NGHỆ CAO (ban hành năm không xác định), khái niệm 'Doanh nghiệp sản xuất sản phẩm công nghệ cao; Doanh nghiệp công nghệ cao; Doanh nghiệp công nghệ cao nhóm 1; Doanh nghiệp công nghệ cao nhóm 2' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "1. Doanh nghiệp sản xuất sản phẩm công nghệ cao là doanh nghiệp đáp ứng các tiêu chí sau đây:\na) Sản xuất sản phẩm công nghệ cao hoặc cung ứng dịch vụ quy định tại khoản 1 Điều 6 của Luật này và thuộc Danh mục sản phẩm công nghệ cao được khuyến khích phát triển quy định tại khoản 3 Điều 6 của Luật này;\nb) Áp dụng các biện pháp thân thiện môi trường, tiết kiệm năng lượng, hệ thống quản lý chất lượng đáp ứng tiêu chuẩn, quy chuẩn kỹ thuật của Việt Nam; trường hợp chưa có tiêu chuẩn, quy chuẩn kỹ thuật của Việt Nam thì áp dụng tiêu chuẩn khu vực, nước ngoài.\n2. Doanh nghiệp công nghệ cao là doanh nghiệp đáp ứng tiêu chí quy định tại khoản 1 Điều này và các tiêu chí sau đây:\na) Sở hữu công nghệ, đồng sở hữu công nghệ, quyền sử dụng hợp pháp công nghệ hoặc có hoạt động chuyển giao công nghệ theo quy định của pháp luật để phát triển và ứng dụng công nghệ cao, sản xuất sản phẩm hoặc dịch vụ công nghệ cao;\nb) Đáp ứng tiêu chí về doanh thu, chi nghiên cứu và phát triển tại Việt Nam, lao động trực tiếp thực hiện nghiên cứu và phát triển.\n4. Doanh nghiệp công nghệ cao nhóm 1 là doanh nghiệp công nghệ cao đáp ứng tiêu chí quy định tại khoản 2 Điều này và một trong các tiêu chí sau đây:\na) Thực hiện hoạt động nghiên cứu và phát triển công nghệ cao, sản phẩm công nghệ cao;\nb) Sản xuất sản phẩm công nghệ cao đạt tỷ lệ nội địa hóa tối thiểu do Chính phủ quy định theo ngành, lĩnh vực; đồng thời bảo đảm tổng mức chi cho hoạt động nghiên cứu và phát triển tại Việt Nam hằng năm đạt tối thiểu 1% trên doanh thu thuần sau khi trừ giá trị đầu vào.\n5. Doanh nghiệp công nghệ cao nhóm 2 là doanh nghiệp công nghệ cao quy định tại khoản 2 Điều này."
+  },
+  {
+    "uid": "bench_2_1_dieu-16-luat-322024qh15-luat-cac-to-chuc-tin-dung-2024-so-322024qh15-unknown",
+    "refer_uid": "dieu-16-luat-322024qh15-luat-cac-to-chuc-tin-dung-2024-so-322024qh15-unknown",
+    "refer_doc_id": "32/2024/QH15",
+    "refer_type": "article",
+    "concept": "Ngân hàng chính sách",
+    "question": "Trong LUẬT CÁC TỔ CHỨC TÍN DỤNG (ban hành năm không xác định), khái niệm 'Ngân hàng chính sách' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Ngân hàng chính sách do Thủ tướng Chính phủ thành lập, hoạt động không vì mục tiêu lợi nhuận nhằm thực hiện các chính sách kinh tế - xã hội của Nhà nước."
+  },
+  {
+    "uid": "bench_2_1_dieu-80-luat-58-lctn-luat-thuong-mai-nam-1997-unknown",
+    "refer_uid": "dieu-80-luat-58-lctn-luat-thuong-mai-nam-1997-unknown",
+    "refer_doc_id": "58-L/CTN",
+    "refer_type": "article",
+    "concept": "Hợp đồng mua bán hàng hoá với thương nhân nước ngoài",
+    "question": "Trong LUẬT THƯƠNG MẠI LỜI NÓI ĐẦU (ban hành năm không xác định), khái niệm 'Hợp đồng mua bán hàng hoá với thương nhân nước ngoài' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Hợp đồng mua bán hàng hoá với thương nhân nước ngoài là hợp đồng mua bán hàng hoá được ký kết giữa một bên là thương nhân Việt Nam với một bên là thương nhân nước ngoài."
+  },
+  {
+    "uid": "bench_2_1_dieu-3-luat-392005qh11-luat-quoc-phong-nam-2005-unknown",
+    "refer_uid": "dieu-3-luat-392005qh11-luat-quoc-phong-nam-2005-unknown",
+    "refer_doc_id": "39/2005/QH11",
+    "refer_type": "article",
+    "concept": "Quốc phòng; Nền quốc phòng toàn dân; Tiềm lực quốc phòng; Khu vực phòng thủ; Tình trạng chiến tranh; Tổng động viên; Động viên cục bộ; Tình trạng khẩn cấp về quốc phòng; Thiết quân luật; Giới nghiêm",
+    "question": "Trong LUẬT QUỐC PHÒNG CỦA QUỐC HỘI NƯỚC CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM SỐ 39/2005/QH11 NGÀY 14 THÁNG 6 NĂM 2005 (ban hành năm không xác định), khái niệm 'Quốc phòng; Nền quốc phòng toàn dân; Tiềm lực quốc phòng; Khu vực phòng thủ; Tình trạng chiến tranh; Tổng động viên; Động viên cục bộ; Tình trạng khẩn cấp về quốc phòng; Thiết quân luật; Giới nghiêm' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "1. Quốc phòng là công cuộc giữ nước bằng sức mạnh tổng hợp của toàn dân tộc, trong đó sức mạnh quân sự là đặc trưng, lực lượng vũ trang nhân dân làm nòng cốt.\n2. Nền quốc phòng toàn dân là sức mạnh quốc phòng của đất nước được xây dựng trên nền tảng nhân lực, vật lực, tinh thần mang tính chất toàn dân, toàn diện, độc lập, tự chủ, tự cường.\n3. Tiềm lực quốc phòng là khả năng về nhân lực, vật lực, tài chính có thể huy động để thực hiện nhiệm vụ quốc phòng.\n4. Khu vực phòng thủ là khu vực được tổ chức về quốc phòng, an ninh theo địa giới hành chính tỉnh, thành phố trực thuộc trung ương và huyện, quận, thị xã, thành phố thuộc tỉnh nằm trong hệ thống phòng thủ chung của cả nước để thực hiện nhiệm vụ quốc phòng, bảo vệ Tổ quốc.\n5. Tình trạng chiến tranh là trạng thái xã hội đặc biệt của đất nước được tuyên bố trong thời gian từ khi nước nhà bị xâm lược cho tới khi hành động xâm lược đó được chấm dứt trên thực tế.\n6. Tổng động viên là biện pháp huy động mọi nguồn lực của đất nước để chống chiến tranh xâm lược.\n7. Động viên cục bộ là biện pháp huy động mọi nguồn lực của một hoặc một số địa phương để phục vụ nhiệm vụ quốc phòng.\n8. Tình trạng khẩn cấp về quốc phòng là trạng thái xã hội của đất nước khi có nguy cơ trực tiếp bị xâm lược hoặc đã xảy ra hành động vũ trang xâm lược hoặc bạo loạn, nhưng chưa đến mức tuyên bố tình trạng chiến tranh.\n9. Thiết quân luật là biện pháp quản lý nhà nước đặc biệt có thời hạn do quân đội thực hiện.\n10. Giới nghiêm là biện pháp cấm người, phương tiện đi lại và hoạt động vào những giờ nhất định tại những khu vực nhất định, trừ trường hợp được phép theo quy định của người có thẩm quyền tổ chức thực hiện lệnh giới nghiêm."
+  },
+  {
+    "uid": "bench_2_1_dieu-31-luat-63-lcthdnn8-luat-hang-khong-dan-dung-so-63-lcthdnn8-cua-quoc-hoi-unknown",
+    "refer_uid": "dieu-31-luat-63-lcthdnn8-luat-hang-khong-dan-dung-so-63-lcthdnn8-cua-quoc-hoi-unknown",
+    "refer_doc_id": "63-LCT/HĐNN8",
+    "refer_type": "article",
+    "concept": "Người chỉ huy tầu bay dân dụng Việt Nam",
+    "question": "Trong LUẬT CỦA QUỐC HỘI SỐ 63-LCT/HĐNN8 NGÀY 26/12/1991 VỀ HÀNG KHÔNG DÂN DỤNG (ban hành năm không xác định), khái niệm 'Người chỉ huy tầu bay dân dụng Việt Nam' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Người chỉ huy tầu bay dân dụng Việt Nam là người có quyền cao nhất trong tầu bay, chịu trách nhiệm bảo đảm an toàn và khai thác tầu bay trong thời gian bay."
+  },
+  {
+    "uid": "bench_2_1_dieu-11-luat-462010qh12-luat-ngan-hang-nha-nuoc-viet-nam-2010-so-462010qh12-unknown",
+    "refer_uid": "dieu-11-luat-462010qh12-luat-ngan-hang-nha-nuoc-viet-nam-2010-so-462010qh12-unknown",
+    "refer_doc_id": "46/2010/QH12",
+    "refer_type": "article",
+    "concept": "Tái cấp vốn",
+    "question": "Trong LUẬT NGÂN HÀNG NHÀ NƯỚC VIỆT NAM (ban hành năm không xác định), khái niệm 'Tái cấp vốn' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Tái cấp vốn là hình thức cấp tín dụng của Ngân hàng Nhà nước nhằm cung ứng vốn ngắn hạn và phương tiện thanh toán cho tổ chức tín dụng."
+  },
+  {
+    "uid": "bench_2_1_dieu-17-luat-262008qh12-luat-thi-hanh-an-dan-su-so-262008qh12-unknown",
+    "refer_uid": "dieu-17-luat-262008qh12-luat-thi-hanh-an-dan-su-so-262008qh12-unknown",
+    "refer_doc_id": "26/2008/QH12",
+    "refer_type": "article",
+    "concept": "Chấp hành viên",
+    "question": "Trong LUẬT THI HÀNH ÁN DÂN SỰ CỦA QUỐC HỘI KHÓA XII, KỲ HỌP THỨ TƯ SỐ 26/2008/QH12 NGÀY 14 THÁNG 11 NĂM 2008 (ban hành năm không xác định), khái niệm 'Chấp hành viên' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Chấp hành viên là người được Nhà nước giao nhiệm vụ thi hành các bản án, quyết định theo quy định tại Điều 2 của Luật này."
+  },
+  {
+    "uid": "bench_2_1_dieu-162-luat-592020qh14-luat-doanh-nghiep-2020-so-592020qh14-unknown",
+    "refer_uid": "dieu-162-luat-592020qh14-luat-doanh-nghiep-2020-so-592020qh14-unknown",
+    "refer_doc_id": "59/2020/QH14",
+    "refer_type": "article",
+    "concept": "Giám đốc hoặc Tổng giám đốc",
+    "question": "Trong LUẬT DOANH NGHIỆP (ban hành năm không xác định), khái niệm 'Giám đốc hoặc Tổng giám đốc' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Giám đốc hoặc Tổng giám đốc là người điều hành công việc kinh doanh hằng ngày của công ty; chịu sự giám sát của Hội đồng quản trị; chịu trách nhiệm trước Hội đồng quản trị và trước pháp luật về việc thực hiện quyền, nghĩa vụ được giao."
+  },
+  {
+    "uid": "bench_2_1_dieu-37-luat-932025qh15-luat-khoa-hoc-cong-nghe-va-doi-moi-sang-tao-2025-so-932025qh15-unknown",
+    "refer_uid": "dieu-37-luat-932025qh15-luat-khoa-hoc-cong-nghe-va-doi-moi-sang-tao-2025-so-932025qh15-unknown",
+    "refer_doc_id": "93/2025/QH15",
+    "refer_type": "article",
+    "concept": "tổ chức ngoài công lập",
+    "question": "Trong LUẬT KHOA HỌC, CÔNG NGHỆ VÀ ĐỔI MỚI SÁNG TẠO (ban hành năm không xác định), khái niệm 'tổ chức ngoài công lập' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Tổ chức có hoạt động trong lĩnh vực khoa học, công nghệ và đổi mới sáng tạo ngoài công lập, bao gồm doanh nghiệp ngoài nhà nước, viện nghiên cứu tư nhân, tổ chức khoa học và công nghệ tư nhân, tổ chức phi lợi nhuận tư nhân và các tổ chức ngoài công lập khác (sau đây gọi chung là tổ chức ngoài công lập)"
+  },
+  {
+    "uid": "bench_2_1_dieu-15-luat-1082025qh15-luat-quan-ly-thue-2025-so-1082025qh15-unknown",
+    "refer_uid": "dieu-15-luat-1082025qh15-luat-quan-ly-thue-2025-so-1082025qh15-unknown",
+    "refer_doc_id": "108/2025/QH15",
+    "refer_type": "article",
+    "concept": "Số tiền thuế, khoản thu khác, tiền chậm nộp, tiền phạt nộp thừa",
+    "question": "Trong LUẬT QUẢN LÝ THUẾ (ban hành năm không xác định), khái niệm 'Số tiền thuế, khoản thu khác, tiền chậm nộp, tiền phạt nộp thừa' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Số tiền thuế, khoản thu khác, tiền chậm nộp, tiền phạt nộp thừa là số tiền thuế, khoản thu khác, tiền chậm nộp, tiền phạt đã nộp lớn hơn số tiền thuế, khoản thu khác, tiền chậm nộp, tiền phạt phải nộp."
+  },
+  {
+    "uid": "bench_2_1_dieu-4-luat-47-lctn-luat-ngan-sach-nha-nuoc-nam-1996-unknown",
+    "refer_uid": "dieu-4-luat-47-lctn-luat-ngan-sach-nha-nuoc-nam-1996-unknown",
+    "refer_doc_id": "47-L/CTN",
+    "refer_type": "article",
+    "concept": "Ngân sách Nhà nước",
+    "question": "Trong LUẬT NGÂN SÁCH NHÀ NƯỚC (ban hành năm không xác định), khái niệm 'Ngân sách Nhà nước' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Ngân sách Nhà nước bao gồm ngân sách trung ương và ngân sách các cấp chính quyền địa phương (ngân sách địa phương)."
+  },
+  {
+    "uid": "bench_2_1_dieu-12-luat-592014qh13-luat-can-cuoc-cong-dan-2014-so-592014qh13-unknown",
+    "refer_uid": "dieu-12-luat-592014qh13-luat-can-cuoc-cong-dan-2014-so-592014qh13-unknown",
+    "refer_doc_id": "59/2014/QH13",
+    "refer_type": "article",
+    "concept": "Số định danh cá nhân",
+    "question": "Trong LUẬT CĂN CƯỚC CÔNG DÂN (ban hành năm không xác định), khái niệm 'Số định danh cá nhân' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Số định danh cá nhân được xác lập từ Cơ sở dữ liệu quốc gia về dân cư dùng để kết nối, cập nhật, chia sẻ, khai thác thông tin của công dân trong Cơ sở dữ liệu quốc gia về dân cư và các cơ sở dữ liệu chuyên ngành. Số định danh cá nhân do Bộ Công an thống nhất quản lý trên toàn quốc và cấp cho mỗi công dân Việt Nam, không lặp lại ở người khác."
+  },
+  {
+    "uid": "bench_2_1_dieu-53-luat-272004qh11-luat-canh-tranh-nam-2004-unknown",
+    "refer_uid": "dieu-53-luat-272004qh11-luat-canh-tranh-nam-2004-unknown",
+    "refer_doc_id": "27/2004/QH11",
+    "refer_type": "article",
+    "concept": "Hội đồng cạnh tranh",
+    "question": "Trong LUẬT CỦA QUỐC HỘI NƯỚC CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM SỐ 27/2004/QH11 NGÀY 03 THÁNG 12 NĂM 2004 VỀ CẠNH TRANH (ban hành năm không xác định), khái niệm 'Hội đồng cạnh tranh' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Hội đồng cạnh tranh là cơ quan do Chính phủ thành lập."
+  },
+  {
+    "uid": "bench_2_1_dieu-11-luat-342005qh11-luat-duoc-nam-2005-unknown",
+    "refer_uid": "dieu-11-luat-342005qh11-luat-duoc-nam-2005-unknown",
+    "refer_doc_id": "34/2005/QH11",
+    "refer_type": "article",
+    "concept": "cơ sở kinh doanh thuốc",
+    "question": "Trong LUẬT DƯỢC CỦA QUỐC HỘI NƯỚC CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM SỐ 34/2005/QH11 NGÀY 14 THÁNG 6 NĂM 2005 (ban hành năm không xác định), khái niệm 'cơ sở kinh doanh thuốc' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Cơ quan, tổ chức, cá nhân kinh doanh thuốc (sau đây gọi chung là cơ sở kinh doanh thuốc)"
+  },
+  {
+    "uid": "bench_2_1_dieu-45-luat-992015qh13-luat-to-chuc-co-quan-dieu-tra-hinh-su-2015-so-992015qh13-unknown",
+    "refer_uid": "dieu-45-luat-992015qh13-luat-to-chuc-co-quan-dieu-tra-hinh-su-2015-so-992015qh13-unknown",
+    "refer_doc_id": "99/2015/QH13",
+    "refer_type": "article",
+    "concept": "Điều tra viên",
+    "question": "Trong LUẬT TỔ CHỨC CƠ QUAN ĐIỀU TRA HÌNH SỰ (ban hành năm không xác định), khái niệm 'Điều tra viên' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Điều tra viên là người được bổ nhiệm để làm nhiệm vụ điều tra hình sự."
+  },
+  {
+    "uid": "bench_2_1_dieu-13-luat-222018qh14-luat-quoc-phong-2018-so-222018qh14-unknown",
+    "refer_uid": "dieu-13-luat-222018qh14-luat-quoc-phong-2018-so-222018qh14-unknown",
+    "refer_doc_id": "22/2018/QH14",
+    "refer_type": "article",
+    "concept": "Phòng thủ dân sự",
+    "question": "Trong LUẬT QUỐC PHÒNG (ban hành năm không xác định), khái niệm 'Phòng thủ dân sự' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Phòng thủ dân sự là bộ phận của phòng thủ đất nước bao gồm các biện pháp phòng, chống chiến tranh; phòng, chống, khắc phục hậu quả thảm họa, sự cố, thiên tai, dịch bệnh; bảo vệ Nhân dân, cơ quan, tổ chức và nền kinh tế quốc dân."
+  },
+  {
+    "uid": "bench_2_1_dieu-136-luat-502014qh13-luat-xay-dung-2014-so-502014qh13-unknown",
+    "refer_uid": "dieu-136-luat-502014qh13-luat-xay-dung-2014-so-502014qh13-unknown",
     "refer_doc_id": "50/2014/QH13",
     "refer_type": "article",
-    "concept": "Chứng chỉ hành nghề hoạt động xây dựng",
-    "question": "Trong LUẬT XÂY DỰNG (ban hành năm 2014), khái niệm 'Chứng chỉ hành nghề hoạt động xây dựng' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Chứng chỉ hành nghề hoạt động xây dựng là văn bản xác nhận năng lực hành nghề, do cơ quan có thẩm quyền cấp cho cá nhân quy định tại khoản 3 Điều 148 của Luật này có đủ trình độ chuyên môn và kinh nghiệm nghề nghiệp về lĩnh vực hành nghề."
-  },
-  {
-    "uid": "bench_2_1_dieu-63-luat-352005qh11-luat-352005qh11-2005-06-14",
-    "refer_uid": "dieu-63-luat-352005qh11-luat-352005qh11-2005-06-14",
-    "refer_doc_id": "35/2005/QH11",
-    "refer_type": "article",
-    "concept": "Tín hiệu giao thông đường sắt",
-    "question": "Trong LUẬT ĐƯỜNG SẮT CỦA QUỐC HỘI NƯỚC CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM SỐ 35/2005/QH11 NGÀY 14 THÁNG 6 NĂM 2005 (ban hành năm 2005), khái niệm 'Tín hiệu giao thông đường sắt' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Hệ thống tín hiệu giao thông đường sắt bao gồm hiệu lệnh của người tham gia điều khiển chạy tàu, tín hiệu đèn màu, tín hiệu cánh, biển báo hiệu, pháo hiệu phòng vệ, đuốc và tín hiệu của tàu. Biểu thị của tín hiệu là mệnh lệnh và điều kiện chạy tàu, dồn tàu."
-  },
-  {
-    "uid": "bench_2_1_dieu-37-luat-1002015qh13-luat-1002015qh13-2015-11-27",
-    "refer_uid": "dieu-37-luat-1002015qh13-luat-1002015qh13-2015-11-27",
-    "refer_doc_id": "100/2015/QH13",
-    "refer_type": "article",
-    "concept": "Trục xuất",
-    "question": "Trong Luật 100/2015/QH13 (ban hành năm 2015), khái niệm 'Trục xuất' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
-    "answer": "Trục xuất là buộc người nước ngoài bị kết án phải rời khỏi lãnh thổ nước Cộng hòa xã hội chủ nghĩa Việt Nam. Trục xuất được Tòa án áp dụng là hình phạt chính hoặc hình phạt bổ sung trong từng trường hợp cụ thể."
+    "concept": "Chỉ số giá xây dựng",
+    "question": "Trong LUẬT XÂY DỰNG (ban hành năm không xác định), khái niệm 'Chỉ số giá xây dựng' được định nghĩa như thế nào?\n\nYêu cầu: Chỉ trả lời bằng nội dung định nghĩa, trích nguyên văn từ luật, không thêm lời giải thích hay mở đầu.",
+    "answer": "Chỉ số giá xây dựng là chỉ tiêu phản ánh mức độ biến động của giá xây dựng công trình theo thời gian và làm cơ sở cho việc xác định, điều chỉnh tổng mức đầu tư, dự toán xây dựng công trình, giá hợp đồng xây dựng và quản lý chi phí đầu tư xây dựng công trình."
   }
 ]

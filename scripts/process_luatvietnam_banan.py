@@ -55,7 +55,6 @@ def process_raw_data(raw_json_path):
             "case_type": web_meta.get("Lĩnh vực"),
             "case_info": web_meta.get("Thông tin về vụ/việc"),
             "legal_bases": parsed.legal_bases,
-            "decision_items": parsed.decision_items,
             "source_doc_url": web_meta.get("docx_url") or web_meta.get("pdf_url"),
             "summary": web_meta.get("summary"),
             "raw_text": raw_text,

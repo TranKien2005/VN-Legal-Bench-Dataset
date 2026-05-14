@@ -1,702 +1,1402 @@
 [
   {
-    "uid": "bench_2_4_dieu-3-nghi-dinh-532005nd-cp-nghi-dinh-532005nd-cp-2005-04-19",
-    "refer_uid": "dieu-3-nghi-dinh-532005nd-cp-nghi-dinh-532005nd-cp-2005-04-19",
+    "uid": "bench_2_4_dieu-12-luat-672006qh11-luat-cong-nghe-thong-tin-2006-so-672006qh11-unknown_dieu-25-luat-1482025qh15-luat-chuyen-doi-so-2025-so-1482025qh15-unknown",
+    "refer_uid": "dieu-12-luat-672006qh11-luat-cong-nghe-thong-tin-2006-so-672006qh11-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-8-luat-022011qh13-luat-022011qh13-2011-11-11",
-    "question": "Điều 8 của 'LUẬT KHIẾU NẠI (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT VÀ HƯỚNG DẪN THI HÀNH LUẬT KHIẾU NẠI, TỐ CÁO VÀ LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT KHIẾU NẠI, TỐ CÁO CHÍNH PHỦ (2005)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-25-luat-1482025qh15-luat-chuyen-doi-so-2025-so-1482025qh15-unknown",
+    "question": "Điều 12 của 'LUẬT CÔNG NGHỆ THÔNG TIN CỦA QUỐC HỘI NƯỚC CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM SỐ 67/2006/QH11 NGÀY 29 THÁNG 6 NĂM 2006 (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 56 của 53/2005/NĐ-CP",
-      "Điều 4 của 53/2005/NĐ-CP",
-      "Điều 35 của 53/2005/NĐ-CP",
-      "Điều 3 của 53/2005/NĐ-CP"
+      "Điều 26 của 148/2025/QH15",
+      "Điều 25 của 148/2025/QH15",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 27 của 148/2025/QH15"
     ],
-    "answer": "Điều 3 của 53/2005/NĐ-CP"
+    "answer": "Điều 25 của 148/2025/QH15"
   },
   {
-    "uid": "bench_2_4_dieu-6-nghi-dinh-552021nd-cp-nghi-dinh-552021nd-cp-2021-05-24",
-    "refer_uid": "dieu-6-nghi-dinh-552021nd-cp-nghi-dinh-552021nd-cp-2021-05-24",
+    "uid": "bench_2_4_dieu-4-nghi-dinh-1232016nd-cp-nghi-dinh-1232016nd-cp-chuc-nang-nhiem-vu-co-cau-to-chuc-cua-bo-co-quan-ngang-bo-unknown_dieu-22-nghi-dinh-362012nd-cp-nghi-dinh-362012nd-cp-co-cau-to-chuc-cua-bo-co-quan-ngang-bo-unknown",
+    "refer_uid": "dieu-4-nghi-dinh-1232016nd-cp-nghi-dinh-1232016nd-cp-chuc-nang-nhiem-vu-co-cau-to-chuc-cua-bo-co-quan-ngang-bo-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-6-nghi-dinh-452022nd-cp-nghi-dinh-452022nd-cp-2022-07-07",
-    "question": "Điều 6 của 'NGHỊ ĐỊNH QUY ĐỊNH VỀ XỬ PHẠT VI PHẠM HÀNH CHÍNH TRONG LĨNH VỰC BẢO VỆ MÔI TRƯỜNG (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA NGHỊ ĐỊNH SỐ 155/2016/NĐ-CP NGÀY 18 THÁNG 11 NĂM 2016 CỦA CHÍNH PHỦ QUY ĐỊNH VỀ XỬ PHẠT VI PHẠM HÀNH CHÍNH TRONG LĨNH VỰC BẢO VỆ MÔI TRƯỜNG (2021)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-22-nghi-dinh-362012nd-cp-nghi-dinh-362012nd-cp-co-cau-to-chuc-cua-bo-co-quan-ngang-bo-unknown",
+    "question": "Điều 4 của 'NGHỊ ĐỊNH QUY ĐỊNH CHỨC NĂNG, NHIỆM VỤ, QUYỀN HẠN VÀ CƠ CẤU TỔ CHỨC CỦA BỘ, CƠ QUAN NGANG BỘ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 14 của 55/2021/NĐ-CP",
-      "Điều 10 của 55/2021/NĐ-CP",
-      "Điều 6 của 55/2021/NĐ-CP",
-      "Điều 21 của 55/2021/NĐ-CP"
+      "Điều 23 của 36/2012/NĐ-CP",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 22 của 36/2012/NĐ-CP",
+      "Điều 24 của 36/2012/NĐ-CP"
     ],
-    "answer": "Điều 6 của 55/2021/NĐ-CP"
+    "answer": "Điều 22 của 36/2012/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-15-nghi-dinh-422010nd-cp-nghi-dinh-422010nd-cp-2010-04-15",
-    "refer_uid": "dieu-15-nghi-dinh-422010nd-cp-nghi-dinh-422010nd-cp-2010-04-15",
+    "uid": "bench_2_4_dieu-59-nghi-dinh-1442021nd-cp-nghi-dinh-1442021nd-cp-xu-phat-hanh-chinh-linh-vuc-an-ninh-trat-tu-an-toan-xa-hoi-unknown_dieu-45-nghi-dinh-2822025nd-cp-nghi-dinh-2822025nd-cp-quy-dinh-xu-phat-vi-pham-hanh-chinh-trong-an-ninh-trat-tu-an-toan-xa-hoi-unknown",
+    "refer_uid": "dieu-59-nghi-dinh-1442021nd-cp-nghi-dinh-1442021nd-cp-xu-phat-hanh-chinh-linh-vuc-an-ninh-trat-tu-an-toan-xa-hoi-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-21-luat-152003qh11-luat-152003qh11-2003-11-26",
-    "question": "Điều 21 của 'LUẬT CỦA QUỐC HỘI NƯỚC CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM SỐ 15/2003/QH11 NGÀY 26 THÁNG 11 NĂM 2003 VỀ THI ĐUA, KHEN THƯỞNG (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT THI HÀNH MỘT SỐ ĐIỀU CỦA LUẬT THI ĐUA, KHEN THƯỞNG VÀ LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT THI ĐUA, KHEN THƯỞNG CHÍNH PHỦ (2010)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-45-nghi-dinh-2822025nd-cp-nghi-dinh-2822025nd-cp-quy-dinh-xu-phat-vi-pham-hanh-chinh-trong-an-ninh-trat-tu-an-toan-xa-hoi-unknown",
+    "question": "Điều 59 của 'NGHỊ ĐỊNH Quy định xử phạt vi phạm hành chính trong lĩnh vực an ninh, trật tự, an toàn xã hội; phòng, chống tệ nạn xã hội; phòng cháy, chữa cháy; cứu nạn, cứu hộ; phòng, chống bạo lực gia đình ___________ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 4 của 42/2010/NĐ-CP",
-      "Điều 15 của 42/2010/NĐ-CP",
-      "Điều 1 của 42/2010/NĐ-CP",
-      "Điều 6 của 42/2010/NĐ-CP"
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 45 của 282/2025/NĐ-CP",
+      "Điều 47 của 282/2025/NĐ-CP",
+      "Điều 43 của 282/2025/NĐ-CP"
     ],
-    "answer": "Điều 15 của 42/2010/NĐ-CP"
+    "answer": "Điều 45 của 282/2025/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-9-nghi-dinh-54-cp-nghi-dinh-54-cp-1993-08-28",
-    "refer_uid": "dieu-9-nghi-dinh-54-cp-nghi-dinh-54-cp-1993-08-28",
+    "uid": "bench_2_4_dieu-5-luat-392019qh14-luat-dau-tu-cong-2019-so-392019qh14-unknown_dieu-7-luat-582024qh15-luat-dau-tu-cong-2024-so-582024qh15-unknown",
+    "refer_uid": "dieu-5-luat-392019qh14-luat-dau-tu-cong-2019-so-392019qh14-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-5-luat-1072016qh13-luat-1072016qh13-2016-04-06",
-    "question": "Điều 5 của 'LUẬT THUẾ XUẤT KHẨU, THUẾ NHẬP KHẨU (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH CỦA CHÍNH PHỦ SỐ 54-CP NGÀY 28-8-1993 QUY ĐỊNH CHI TIẾT THI HÀNH LUẬT THUẾ XUẤT KHẨU, THUẾ NHẬP KHẨU VÀ LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT THUẾ XUẤT KHẨU, THUẾ NHẬP KHẨU CHÍNH PHỦ (1993)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-7-luat-582024qh15-luat-dau-tu-cong-2024-so-582024qh15-unknown",
+    "question": "Điều 5 của 'LUẬT ĐẦU TƯ CÔNG (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 6 của 54-CP",
-      "Điều 3 của 54-CP",
-      "Điều 7 của 54-CP",
-      "Điều 9 của 54-CP"
+      "Điều 7 của 58/2024/QH15",
+      "Điều 8 của 58/2024/QH15",
+      "Điều 5 của 58/2024/QH15",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có"
     ],
-    "answer": "Điều 9 của 54-CP"
+    "answer": "Điều 7 của 58/2024/QH15"
   },
   {
-    "uid": "bench_2_4_dieu-17-luat-102008qh12-luat-102008qh12-2008-06-03",
-    "refer_uid": "dieu-17-luat-102008qh12-luat-102008qh12-2008-06-03",
+    "uid": "bench_2_4_dieu-5-nghi-dinh-792023nd-cp-nghi-dinh-792023nd-cp-quy-dinh-chi-tiet-luat-so-huu-tri-tue-ve-giong-cay-trong-unknown_dieu-19-nghi-dinh-332026nd-cp-nghi-dinh-332026nd-cp-sua-doi-bo-sung-linh-vuc-trong-trot-va-bao-ve-thuc-vat-unknown",
+    "refer_uid": "dieu-5-nghi-dinh-792023nd-cp-nghi-dinh-792023nd-cp-quy-dinh-chi-tiet-luat-so-huu-tri-tue-ve-giong-cay-trong-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-20-luat-18-lctn-luat-18-lctn-1993-07-06",
-    "question": "Điều 20 của 'LUẬT SỐ 18-L/CTN NGÀY 06/07/1993 CỦA QUỐC HỘI VỀ DẦU KHÍ (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT DẦU KHÍ (2008)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-19-nghi-dinh-332026nd-cp-nghi-dinh-332026nd-cp-sua-doi-bo-sung-linh-vuc-trong-trot-va-bao-ve-thuc-vat-unknown",
+    "question": "Điều 5 của 'NGHỊ ĐỊNH Quy định chi tiết một số điều và biện pháp thi hành Luật Sở hữu trí tuệ về quyền đối với giống cây trồng ____________________ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 13 của 10/2008/QH12",
-      "Điều 8 của 10/2008/QH12",
-      "Điều 17 của 10/2008/QH12",
-      "Điều 3 của 10/2008/QH12"
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 21 của 33/2026/NĐ-CP",
+      "Điều 20 của 33/2026/NĐ-CP",
+      "Điều 19 của 33/2026/NĐ-CP"
     ],
-    "answer": "Điều 17 của 10/2008/QH12"
+    "answer": "Điều 19 của 33/2026/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-45-nghi-dinh-1372013nd-cp-nghi-dinh-1372013nd-cp-2013-10-21",
-    "refer_uid": "dieu-45-nghi-dinh-1372013nd-cp-nghi-dinh-1372013nd-cp-2013-10-21",
+    "uid": "bench_2_4_dieu-67-nghi-dinh-1552020nd-cp-nghi-dinh-1552020nd-cp-huong-dan-luat-chung-khoan-unknown_dieu-69-nghi-dinh-582012nd-cp-nghi-dinh-582012nd-cp-huong-dan-thi-hanh-luat-chung-khoan-va-luat-sua-doi-bo-sung-luat-chung-khoan-unknown",
+    "refer_uid": "dieu-67-nghi-dinh-1552020nd-cp-nghi-dinh-1552020nd-cp-huong-dan-luat-chung-khoan-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-35-luat-282004qh11-luat-282004qh11-2004-12-03",
-    "question": "Điều 35 của 'LUẬT ĐIỆN LỰC (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT THI HÀNH MỘT SỐ ĐIỀU CỦA LUẬT ĐIỆN LỰC VÀ LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT ĐIỆN LỰC (2013)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-69-nghi-dinh-582012nd-cp-nghi-dinh-582012nd-cp-huong-dan-thi-hanh-luat-chung-khoan-va-luat-sua-doi-bo-sung-luat-chung-khoan-unknown",
+    "question": "Điều 67 của 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT THI HÀNH MỘT SỐ ĐIỀU CỦA LUẬT CHỨNG KHOÁN _________________ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 5 của 137/2013/NĐ-CP",
-      "Điều 45 của 137/2013/NĐ-CP",
-      "Điều 7 của 137/2013/NĐ-CP",
-      "Điều 48 của 137/2013/NĐ-CP"
+      "Điều 68 của 58/2012/NĐ-CP",
+      "Điều 70 của 58/2012/NĐ-CP",
+      "Điều 67 của 58/2012/NĐ-CP",
+      "Điều 69 của 58/2012/NĐ-CP"
     ],
-    "answer": "Điều 45 của 137/2013/NĐ-CP"
+    "answer": "Điều 69 của 58/2012/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-5-nghi-dinh-732016nd-cp-nghi-dinh-732016nd-cp-2016-07-01",
-    "refer_uid": "dieu-5-nghi-dinh-732016nd-cp-nghi-dinh-732016nd-cp-2016-07-01",
+    "uid": "bench_2_4_dieu-40-nghi-dinh-152021nd-cp-nghi-dinh-152021nd-cp-ve-quan-ly-du-an-dau-tu-xay-dung-unknown_dieu-40-nghi-dinh-1752024nd-cp-nghi-dinh-1752024nd-cp-quy-dinh-chi-tiet-luat-xay-dung-ve-quan-ly-hoat-dong-xay-dung-unknown",
+    "refer_uid": "dieu-40-nghi-dinh-152021nd-cp-nghi-dinh-152021nd-cp-ve-quan-ly-du-an-dau-tu-xay-dung-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-8-luat-082022qh15-luat-082022qh15-2022-06-16",
-    "question": "Điều 8 của 'LUẬT KINH DOANH BẢO HIỂM (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT THI HÀNH LUẬT KINH DOANH BẢO HIỂM VÀ LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT KINH DOANH BẢO HIỂM C (2016)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-40-nghi-dinh-1752024nd-cp-nghi-dinh-1752024nd-cp-quy-dinh-chi-tiet-luat-xay-dung-ve-quan-ly-hoat-dong-xay-dung-unknown",
+    "question": "Điều 40 của 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT MỘT SỐ NỘI DUNG VỀ QUẢN LÝ DỰ ÁN ĐẦU TƯ XÂY DỰNG __________ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 1 của 73/2016/NĐ-CP",
-      "Điều 6 của 73/2016/NĐ-CP",
-      "Điều 4 của 73/2016/NĐ-CP",
-      "Điều 5 của 73/2016/NĐ-CP"
+      "Điều 40 của 175/2024/NĐ-CP",
+      "Điều 38 của 175/2024/NĐ-CP",
+      "Điều 42 của 175/2024/NĐ-CP",
+      "Điều 41 của 175/2024/NĐ-CP"
     ],
-    "answer": "Điều 5 của 73/2016/NĐ-CP"
+    "answer": "Điều 40 của 175/2024/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-18-nghi-dinh-532005nd-cp-nghi-dinh-532005nd-cp-2005-04-19",
-    "refer_uid": "dieu-18-nghi-dinh-532005nd-cp-nghi-dinh-532005nd-cp-2005-04-19",
+    "uid": "bench_2_4_dieu-12-nghi-dinh-712018nd-cp-nghi-dinh-712018nd-cp-quy-dinh-chi-tiet-luat-quan-ly-su-dung-vu-khi-vat-lieu-no-va-cong-cu-ho-tro-ve-vat-lieu-no-cong-nghiep-tien-chat-thuoc-no-unknown_dieu-12-nghi-dinh-762014nd-cp-nghi-dinh-762014nd-cp-huong-dan-phap-lenh-quan-ly-su-dung-vu-khi-vat-lieu-no-unknown",
+    "refer_uid": "dieu-12-nghi-dinh-712018nd-cp-nghi-dinh-712018nd-cp-quy-dinh-chi-tiet-luat-quan-ly-su-dung-vu-khi-vat-lieu-no-va-cong-cu-ho-tro-ve-vat-lieu-no-cong-nghiep-tien-chat-thuoc-no-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-40-luat-022011qh13-luat-022011qh13-2011-11-11",
-    "question": "Điều 40 của 'LUẬT KHIẾU NẠI (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT VÀ HƯỚNG DẪN THI HÀNH LUẬT KHIẾU NẠI, TỐ CÁO VÀ LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT KHIẾU NẠI, TỐ CÁO CHÍNH PHỦ (2005)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-12-nghi-dinh-762014nd-cp-nghi-dinh-762014nd-cp-huong-dan-phap-lenh-quan-ly-su-dung-vu-khi-vat-lieu-no-unknown",
+    "question": "Điều 12 của 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU CỦA LUẬT QUẢN LÝ, SỬ DỤNG VŨ KHÍ, VẬT LIỆU NỔ VÀ CÔNG CỤ HỖ TRỢ VỀ VẬT LIỆU NỔ CÔNG NGHIỆP VÀ TIỀN CHẤT THUỐC NỔ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 27 của 53/2005/NĐ-CP",
-      "Điều 28 của 53/2005/NĐ-CP",
-      "Điều 18 của 53/2005/NĐ-CP",
-      "Điều 63 của 53/2005/NĐ-CP"
+      "Điều 13 của 76/2014/NĐ-CP",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 12 của 76/2014/NĐ-CP",
+      "Điều 14 của 76/2014/NĐ-CP"
     ],
-    "answer": "Điều 18 của 53/2005/NĐ-CP"
+    "answer": "Điều 12 của 76/2014/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-24-nghi-dinh-732016nd-cp-nghi-dinh-732016nd-cp-2016-07-01",
-    "refer_uid": "dieu-24-nghi-dinh-732016nd-cp-nghi-dinh-732016nd-cp-2016-07-01",
+    "uid": "bench_2_4_dieu-12-nghi-dinh-1202013nd-cp-nghi-dinh-1202013nd-cp-ve-xu-phat-vi-pham-hanh-chinh-trong-linh-vuc-quoc-phong-co-yeu-unknown_dieu-13-nghi-dinh-2182025nd-cp-nghi-dinh-2182025nd-cp-quy-dinh-xu-phat-vi-pham-hanh-chinh-quoc-phong-co-yeu-unknown",
+    "refer_uid": "dieu-12-nghi-dinh-1202013nd-cp-nghi-dinh-1202013nd-cp-ve-xu-phat-vi-pham-hanh-chinh-trong-linh-vuc-quoc-phong-co-yeu-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-72-luat-082022qh15-luat-082022qh15-2022-06-16",
-    "question": "Điều 72 của 'LUẬT KINH DOANH BẢO HIỂM (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT THI HÀNH LUẬT KINH DOANH BẢO HIỂM VÀ LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT KINH DOANH BẢO HIỂM C (2016)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-13-nghi-dinh-2182025nd-cp-nghi-dinh-2182025nd-cp-quy-dinh-xu-phat-vi-pham-hanh-chinh-quoc-phong-co-yeu-unknown",
+    "question": "Điều 12 của 'NGHỊ ĐỊNH QUY ĐỊNH XỬ PHẠT VI PHẠM HÀNH CHÍNH TRONG LĨNH VỰC QUỐC PHÒNG, CƠ YẾU (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 6 của 73/2016/NĐ-CP",
-      "Điều 3 của 73/2016/NĐ-CP",
-      "Điều 4 của 73/2016/NĐ-CP",
-      "Điều 24 của 73/2016/NĐ-CP"
+      "Điều 11 của 218/2025/NĐ-CP",
+      "Điều 14 của 218/2025/NĐ-CP",
+      "Điều 13 của 218/2025/NĐ-CP",
+      "Điều 15 của 218/2025/NĐ-CP"
     ],
-    "answer": "Điều 24 của 73/2016/NĐ-CP"
+    "answer": "Điều 13 của 218/2025/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-21-nghi-dinh-772016nd-cp-nghi-dinh-772016nd-cp-2016-07-01",
-    "refer_uid": "dieu-21-nghi-dinh-772016nd-cp-nghi-dinh-772016nd-cp-2016-07-01",
+    "uid": "bench_2_4_dieu-2-nghi-dinh-382022nd-cp-nghi-dinh-382022nd-cp-muc-luong-toi-thieu-doi-voi-nguoi-lao-dong-lam-viec-theo-hdld-unknown_dieu-2-nghi-dinh-742024nd-cp-nghi-dinh-742024nd-cp-quy-dinh-muc-luong-toi-thieu-voi-nguoi-lao-dong-lam-viec-theo-hop-dong-lao-dong-unknown",
+    "refer_uid": "dieu-2-nghi-dinh-382022nd-cp-nghi-dinh-382022nd-cp-muc-luong-toi-thieu-doi-voi-nguoi-lao-dong-lam-viec-theo-hdld-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-20-nghi-dinh-1082017nd-cp-nghi-dinh-1082017nd-cp-2017-09-20",
-    "question": "Điều 20 của 'NGHỊ ĐỊNH VỀ QUẢN LÝ PHÂN BÓN (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH SỬA ĐỔI, BỔ SUNG MỘT SỐ QUY ĐỊNH VỀ ĐIỀU KIỆN ĐẦU TƯ KINH DOANH TRONG LĨNH VỰC MUA BÁN HÀNG HÓA QUỐC TẾ, HÓA CHẤT, VẬT LIỆU NỔ CÔNG NGHIỆP, PHÂN BÓN, KINH DOANH KHÍ, KINH DOANH THỰC PHẨM THUỘC PHẠM VI QUẢN LÝ NHÀ NƯỚC CỦA BỘ CÔNG THƯƠNG (2016)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-2-nghi-dinh-742024nd-cp-nghi-dinh-742024nd-cp-quy-dinh-muc-luong-toi-thieu-voi-nguoi-lao-dong-lam-viec-theo-hop-dong-lao-dong-unknown",
+    "question": "Điều 2 của 'NGHỊ ĐỊNH Quy định mức lương tối thiểu đối với người lao động làm việc theo hợp đồng lao động _______________ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 21 của 77/2016/NĐ-CP",
-      "Điều 2 của 77/2016/NĐ-CP",
-      "Điều 13 của 77/2016/NĐ-CP",
-      "Điều 11c của 77/2016/NĐ-CP"
+      "Điều 2 của 74/2024/NĐ-CP",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 4 của 74/2024/NĐ-CP",
+      "Điều 1 của 74/2024/NĐ-CP"
     ],
-    "answer": "Điều 21 của 77/2016/NĐ-CP"
+    "answer": "Điều 2 của 74/2024/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-33-nghi-dinh-1362006nd-cp-nghi-dinh-1362006nd-cp-2006-11-14",
-    "refer_uid": "dieu-33-nghi-dinh-1362006nd-cp-nghi-dinh-1362006nd-cp-2006-11-14",
+    "uid": "bench_2_4_dieu-90-luat-472010qh12-luat-cac-to-chuc-tin-dung-2010-so-472010qh12-unknown_dieu-99-luat-322024qh15-luat-cac-to-chuc-tin-dung-2024-so-322024qh15-unknown",
+    "refer_uid": "dieu-90-luat-472010qh12-luat-cac-to-chuc-tin-dung-2010-so-472010qh12-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-12-luat-032011qh13-luat-032011qh13-2011-11-11",
-    "question": "Điều 12 của 'LUẬT TỐ CÁO (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT VÀ HƯỚNG DẪN THI HÀNH MỘT SỐ ĐIỀU CỦA LUẬT KHIẾU NẠI, TỐ CÁO VÀ CÁC LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT KHIẾU NẠI, TỐ CÁO CHÍNH PHỦ (2006)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-99-luat-322024qh15-luat-cac-to-chuc-tin-dung-2024-so-322024qh15-unknown",
+    "question": "Điều 90 của 'LUẬT CÁC TỔ CHỨC TÍN DỤNG (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 36 của 136/2006/NĐ-CP",
-      "Điều 33 của 136/2006/NĐ-CP",
-      "Điều 1 của 136/2006/NĐ-CP",
-      "Điều 35 của 136/2006/NĐ-CP"
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 99 của 32/2024/QH15",
+      "Điều 100 của 32/2024/QH15",
+      "Điều 98 của 32/2024/QH15"
     ],
-    "answer": "Điều 33 của 136/2006/NĐ-CP"
+    "answer": "Điều 99 của 32/2024/QH15"
   },
   {
-    "uid": "bench_2_4_dieu-30-nghi-dinh-385-hdbt-nghi-dinh-385-hdbt-1990-11-07",
-    "refer_uid": "dieu-30-nghi-dinh-385-hdbt-nghi-dinh-385-hdbt-1990-11-07",
+    "uid": "bench_2_4_dieu-94-luat-472010qh12-luat-cac-to-chuc-tin-dung-2010-so-472010qh12-unknown_dieu-102-luat-322024qh15-luat-cac-to-chuc-tin-dung-2024-so-322024qh15-unknown",
+    "refer_uid": "dieu-94-luat-472010qh12-luat-cac-to-chuc-tin-dung-2010-so-472010qh12-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-24-nghi-dinh-42-cp-nghi-dinh-42-cp-1996-07-16",
-    "question": "Điều 24 của 'NGHỊ ĐỊNH CỦA CHÍNH PHỦ SỐ 42-CP NGÀY 16 THÁNG 7 NĂM 1996 VỀ VIỆC BAN HÀNH ĐIỀU LỆ QUẢN LÝ ĐẦU TƯ VÀ XÂY DỰNG CHÍNH PHỦ (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH CỦA HỘI ĐỒNG BỘ TRƯỞNG SỐ 358-HĐBT NGÀY 7-11-1990 VỀ VIỆC SỬA ĐỔI, BỔ SUNG THAY THẾ ĐIỀU LỆ QUẢN LÝ XÂY DỰNG CƠ BẢN ĐÃ BAN HÀNH KÈM THEO NGHỊ ĐỊNH SỐ 232-CP NGÀY 6 THÁNG 6 NĂM 1981. HỘI ĐỒNG BỘ TRƯỞNG (1990)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-102-luat-322024qh15-luat-cac-to-chuc-tin-dung-2024-so-322024qh15-unknown",
+    "question": "Điều 94 của 'LUẬT CÁC TỔ CHỨC TÍN DỤNG (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 3 của 385-HĐBT",
-      "Điều 2 của 385-HĐBT",
-      "Điều 30 của 385-HĐBT",
-      "Điều 7 của 385-HĐBT"
+      "Điều 101 của 32/2024/QH15",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 102 của 32/2024/QH15",
+      "Điều 100 của 32/2024/QH15"
     ],
-    "answer": "Điều 30 của 385-HĐBT"
+    "answer": "Điều 102 của 32/2024/QH15"
   },
   {
-    "uid": "bench_2_4_dieu-22-nghi-dinh-511999nd-cp-nghi-dinh-511999nd-cp-1999-07-08",
-    "refer_uid": "dieu-22-nghi-dinh-511999nd-cp-nghi-dinh-511999nd-cp-1999-07-08",
+    "uid": "bench_2_4_dieu-36-luat-152003qh11-luat-thi-dua-khen-thuong-nam-2003-so-152003qh11-unknown_dieu-23-nghi-dinh-422010nd-cp-nghi-dinh-422010nd-cp-huong-dan-luat-thi-dua-khen-thuong-unknown",
+    "refer_uid": "dieu-36-luat-152003qh11-luat-thi-dua-khen-thuong-nam-2003-so-152003qh11-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-16-luat-142008qh12-luat-142008qh12-2008-06-03",
-    "question": "Điều 16 của 'LUẬT THUẾ THU NHẬP DOANH NGHIỆP (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH CỦA CHÍNH PHỦ SỐ 51/1999/NĐ-CP NGÀY 08 THÁNG 7 NĂM 1999 QUY ĐỊNH CHI TIẾT THI HÀNH LUẬT KHUYẾN KHÍCH ĐẦU TƯ TRONG NƯỚC (SỬA ĐỔI) SỐ 03/1998/QH10 CHÍNH PHỦ (1999)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-23-nghi-dinh-422010nd-cp-nghi-dinh-422010nd-cp-huong-dan-luat-thi-dua-khen-thuong-unknown",
+    "question": "Điều 36 của 'LUẬT CỦA QUỐC HỘI NƯỚC CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM SỐ 15/2003/QH11 NGÀY 26 THÁNG 11 NĂM 2003 VỀ THI ĐUA, KHEN THƯỞNG (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 4 của 51/1999/NĐ-CP",
-      "Điều 22 của 51/1999/NĐ-CP",
-      "Điều 5 của 51/1999/NĐ-CP",
-      "Điều 3 của 51/1999/NĐ-CP"
+      "Điều 23 của 42/2010/NĐ-CP",
+      "Điều 22 của 42/2010/NĐ-CP",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 25 của 42/2010/NĐ-CP"
     ],
-    "answer": "Điều 22 của 51/1999/NĐ-CP"
+    "answer": "Điều 23 của 42/2010/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-29-nghi-dinh-385-hdbt-nghi-dinh-385-hdbt-1990-11-07",
-    "refer_uid": "dieu-29-nghi-dinh-385-hdbt-nghi-dinh-385-hdbt-1990-11-07",
+    "uid": "bench_2_4_dieu-15-luat-502005qh11-luat-so-huu-tri-tue-2005-so-502005qh11-unknown_dieu-21-nghi-dinh-1002006nd-cp-nghi-dinh-1002006nd-cp-huong-dan-bo-luat-dan-su-luat-so-huu-tri-tue-ve-quyen-tac-gia-va-quyen-lien-quan-unknown",
+    "refer_uid": "dieu-15-luat-502005qh11-luat-so-huu-tri-tue-2005-so-502005qh11-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-24-nghi-dinh-42-cp-nghi-dinh-42-cp-1996-07-16",
-    "question": "Điều 24 của 'NGHỊ ĐỊNH CỦA CHÍNH PHỦ SỐ 42-CP NGÀY 16 THÁNG 7 NĂM 1996 VỀ VIỆC BAN HÀNH ĐIỀU LỆ QUẢN LÝ ĐẦU TƯ VÀ XÂY DỰNG CHÍNH PHỦ (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH CỦA HỘI ĐỒNG BỘ TRƯỞNG SỐ 358-HĐBT NGÀY 7-11-1990 VỀ VIỆC SỬA ĐỔI, BỔ SUNG THAY THẾ ĐIỀU LỆ QUẢN LÝ XÂY DỰNG CƠ BẢN ĐÃ BAN HÀNH KÈM THEO NGHỊ ĐỊNH SỐ 232-CP NGÀY 6 THÁNG 6 NĂM 1981. HỘI ĐỒNG BỘ TRƯỞNG (1990)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-21-nghi-dinh-1002006nd-cp-nghi-dinh-1002006nd-cp-huong-dan-bo-luat-dan-su-luat-so-huu-tri-tue-ve-quyen-tac-gia-va-quyen-lien-quan-unknown",
+    "question": "Điều 15 của 'LUẬT SỞ HỮU TRÍ TUỆ CỦA QUỐC HỘI NƯỚC CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM SỐ 50/2005/QH11 NGÀY 29 THÁNG 11 NĂM 2005 (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 14 của 385-HĐBT",
-      "Điều 29 của 385-HĐBT",
-      "Điều 3 của 385-HĐBT",
-      "Điều 7 của 385-HĐBT"
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 21 của 100/2006/NĐ-CP",
+      "Điều 22 của 100/2006/NĐ-CP",
+      "Điều 19 của 100/2006/NĐ-CP"
     ],
-    "answer": "Điều 29 của 385-HĐBT"
+    "answer": "Điều 21 của 100/2006/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-4-nghi-dinh-1372013nd-cp-nghi-dinh-1372013nd-cp-2013-10-21",
-    "refer_uid": "dieu-4-nghi-dinh-1372013nd-cp-nghi-dinh-1372013nd-cp-2013-10-21",
+    "uid": "bench_2_4_dieu-6-nghi-dinh-812018nd-cp-nghi-dinh-812018nd-cp-quy-dinh-chi-tiet-luat-thuong-mai-ve-hoat-dong-xuc-tien-thuong-mai-unknown_dieu-1-nghi-dinh-1282024nd-cp-nghi-dinh-1282024nd-cp-sua-doi-nd-812018nd-cp-huong-dan-luat-thuong-mai-ve-hoat-dong-xuc-tien-thuong-mai-unknown",
+    "refer_uid": "dieu-6-nghi-dinh-812018nd-cp-nghi-dinh-812018nd-cp-quy-dinh-chi-tiet-luat-thuong-mai-ve-hoat-dong-xuc-tien-thuong-mai-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-4-luat-282004qh11-luat-282004qh11-2004-12-03",
-    "question": "Điều 4 của 'LUẬT ĐIỆN LỰC (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT THI HÀNH MỘT SỐ ĐIỀU CỦA LUẬT ĐIỆN LỰC VÀ LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT ĐIỆN LỰC (2013)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-1-nghi-dinh-1282024nd-cp-nghi-dinh-1282024nd-cp-sua-doi-nd-812018nd-cp-huong-dan-luat-thuong-mai-ve-hoat-dong-xuc-tien-thuong-mai-unknown",
+    "question": "Điều 6 của 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT LUẬT THƯƠNG MẠI VỀ HOẠT ĐỘNG XÚC TIẾN THƯƠNG MẠI (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 5 của 137/2013/NĐ-CP",
-      "Điều 3 của 137/2013/NĐ-CP",
-      "Điều 4 của 137/2013/NĐ-CP",
-      "Điều 6 của 137/2013/NĐ-CP"
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 2 của 128/2024/NĐ-CP",
+      "Điều 3 của 128/2024/NĐ-CP",
+      "Điều 1 của 128/2024/NĐ-CP"
     ],
-    "answer": "Điều 4 của 137/2013/NĐ-CP"
+    "answer": "Điều 1 của 128/2024/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-65-nghi-dinh-422010nd-cp-nghi-dinh-422010nd-cp-2010-04-15",
-    "refer_uid": "dieu-65-nghi-dinh-422010nd-cp-nghi-dinh-422010nd-cp-2010-04-15",
+    "uid": "bench_2_4_dieu-19-luat-242008qh12-luat-quoc-tich-2008-so-242008qh12-unknown_dieu-6-nghi-dinh-782009nd-cp-nghi-dinh-782009nd-cp-cua-chinh-phu-quy-dinh-chi-tiet-va-huong-dan-thi-hanh-mot-so-dieu-cua-luat-quoc-tich-viet-nam-unknown",
+    "refer_uid": "dieu-19-luat-242008qh12-luat-quoc-tich-2008-so-242008qh12-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-12-nghi-dinh-782014nd-cp-nghi-dinh-782014nd-cp-2014-07-30",
-    "question": "Điều 12 của 'NGHỊ ĐỊNH VỀ GIẢI THƯỞNG HỒ CHÍ MINH, GIẢI THƯỞNG NHÀ NƯỚC VÀ CÁC GIẢI THƯỞNG KHÁC VỀ KHOA HỌC VÀ CÔNG NGHỆ (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT THI HÀNH MỘT SỐ ĐIỀU CỦA LUẬT THI ĐUA, KHEN THƯỞNG VÀ LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT THI ĐUA, KHEN THƯỞNG CHÍNH PHỦ (2010)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-6-nghi-dinh-782009nd-cp-nghi-dinh-782009nd-cp-cua-chinh-phu-quy-dinh-chi-tiet-va-huong-dan-thi-hanh-mot-so-dieu-cua-luat-quoc-tich-viet-nam-unknown",
+    "question": "Điều 19 của 'LUẬT QUỐC TỊCH VIỆT NAM CỦA QUỐC HỘI KHÓA XII, KỲ HỌP THỨ TƯ SỐ 24/2008/QH12 NGÀY 13 THÁNG 11 NĂM 2008 (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 65 của 42/2010/NĐ-CP",
-      "Điều 2 của 42/2010/NĐ-CP",
-      "Điều 5 của 42/2010/NĐ-CP",
-      "Điều 3 của 42/2010/NĐ-CP"
+      "Điều 6 của 78/2009/NĐ-CP",
+      "Điều 5 của 78/2009/NĐ-CP",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 7 của 78/2009/NĐ-CP"
     ],
-    "answer": "Điều 65 của 42/2010/NĐ-CP"
+    "answer": "Điều 6 của 78/2009/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-10-nghi-dinh-762000nd-cp-nghi-dinh-762000nd-cp-2000-12-15",
-    "refer_uid": "dieu-10-nghi-dinh-762000nd-cp-nghi-dinh-762000nd-cp-2000-12-15",
+    "uid": "bench_2_4_dieu-8-luat-112017qh14-luat-tro-giup-phap-ly-2017-so-112017qh14-unknown_dieu-11-luat-692006qh11-luat-tro-giup-phap-ly-nam-2006-unknown",
+    "refer_uid": "dieu-8-luat-112017qh14-luat-tro-giup-phap-ly-2017-so-112017qh14-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-14-luat-602010qh12-luat-602010qh12-2010-11-17",
-    "question": "Điều 14 của 'LUẬT KHOÁNG SẢN C (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH CỦA CHÍNH PHỦ SỐ 76/2000/NĐ-CP NGÀY 15 THÁNG 12 NĂM 2000 QUY ĐỊNH CHI TIẾT VIỆC THI HÀNH LUẬT KHOÁNG SẢN (SỬA ĐỔI) CHÍNH PHỦ (2000)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-11-luat-692006qh11-luat-tro-giup-phap-ly-nam-2006-unknown",
+    "question": "Điều 8 của 'LUẬT TRỢ GIÚP PHÁP LÝ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 10 của 76/2000/NĐ-CP",
-      "Điều 59 của 76/2000/NĐ-CP",
-      "Điều 1 của 76/2000/NĐ-CP",
-      "Điều 11 của 76/2000/NĐ-CP"
+      "Điều 12 của 69/2006/QH11",
+      "Điều 10 của 69/2006/QH11",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 11 của 69/2006/QH11"
     ],
-    "answer": "Điều 10 của 76/2000/NĐ-CP"
+    "answer": "Điều 11 của 69/2006/QH11"
   },
   {
-    "uid": "bench_2_4_dieu-9-nghi-dinh-222018nd-cp-nghi-dinh-222018nd-cp-2018-02-23",
-    "refer_uid": "dieu-9-nghi-dinh-222018nd-cp-nghi-dinh-222018nd-cp-2018-02-23",
+    "uid": "bench_2_4_dieu-18-nghi-dinh-782015nd-cp-nghi-dinh-782015nd-cp-ve-dang-ky-doanh-nghiep-unknown_dieu-62-nghi-dinh-432010nd-cp-nghi-dinh-432010nd-cp-ve-dang-ky-doanh-nghiep-unknown",
+    "refer_uid": "dieu-18-nghi-dinh-782015nd-cp-nghi-dinh-782015nd-cp-ve-dang-ky-doanh-nghiep-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-14-luat-502005qh11-luat-502005qh11-2005-11-29",
-    "question": "Điều 14 của 'LUẬT SỞ HỮU TRÍ TUỆ (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP THI HÀNH LUẬT SỞ HỮU TRÍ TUỆ NĂM 2005 VÀ LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT SỞ HỮU TRÍ TUỆ NĂM 2009 VỀ QUYỀN TÁC GIẢ, QUYỀN LIÊN QUAN (2018)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-62-nghi-dinh-432010nd-cp-nghi-dinh-432010nd-cp-ve-dang-ky-doanh-nghiep-unknown",
+    "question": "Điều 18 của 'NGHỊ ĐỊNH VỀ ĐĂNG KÝ DOANH NGHIỆP (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 9 của 22/2018/NĐ-CP",
-      "Điều 4 của 22/2018/NĐ-CP",
-      "Điều 3 của 22/2018/NĐ-CP",
-      "Điều 7 của 22/2018/NĐ-CP"
+      "Điều 60 của 43/2010/NĐ-CP",
+      "Điều 62 của 43/2010/NĐ-CP",
+      "Điều 61 của 43/2010/NĐ-CP",
+      "Điều 63 của 43/2010/NĐ-CP"
     ],
-    "answer": "Điều 9 của 22/2018/NĐ-CP"
+    "answer": "Điều 62 của 43/2010/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-18-luat-632010qh12-luat-632010qh12-2010-11-24",
-    "refer_uid": "dieu-18-luat-632010qh12-luat-632010qh12-2010-11-24",
+    "uid": "bench_2_4_dieu-12-nghi-dinh-1482013nd-cp-nghi-dinh-1482013nd-cp-xu-phat-vphc-trong-linh-vuc-day-nghe-unknown_dieu-17-nghi-dinh-732006nd-cp-nghi-dinh-732006nd-cp-cua-chinh-phu-quy-dinh-ve-xu-phat-vi-pham-hanh-chinh-trong-linh-vuc-day-nghe-unknown",
+    "refer_uid": "dieu-12-nghi-dinh-1482013nd-cp-nghi-dinh-1482013nd-cp-xu-phat-vphc-trong-linh-vuc-day-nghe-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-18-luat-852015qh13-luat-852015qh13-2015-06-25",
-    "question": "Điều 18 của 'LUẬT BẦU CỬ ĐẠI BIỂU QUỐC HỘI VÀ ĐẠI BIỂU HỘI ĐỒNG NHÂN DÂN (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT BẦU CỬ ĐẠI BIỂU QUỐC HỘI VÀ LUẬT BẦU CỬ ĐẠI BIỂU HỘI ĐỒNG NHÂN DÂN C (2010)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-17-nghi-dinh-732006nd-cp-nghi-dinh-732006nd-cp-cua-chinh-phu-quy-dinh-ve-xu-phat-vi-pham-hanh-chinh-trong-linh-vuc-day-nghe-unknown",
+    "question": "Điều 12 của 'NGHỊ ĐỊNH QUY ĐỊNH XỬ PHẠT VI PHẠM HÀNH CHÍNH TRONG LĨNH VỰC DẠY NGHỀ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 18 của 63/2010/QH12",
-      "Điều 8 của 63/2010/QH12",
-      "Điều 4 của 63/2010/QH12",
-      "Điều 6 của 63/2010/QH12"
+      "Điều 18 của 73/2006/NĐ-CP",
+      "Điều 19 của 73/2006/NĐ-CP",
+      "Điều 16 của 73/2006/NĐ-CP",
+      "Điều 17 của 73/2006/NĐ-CP"
     ],
-    "answer": "Điều 18 của 63/2010/QH12"
+    "answer": "Điều 17 của 73/2006/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-29-nghi-dinh-1232011nd-cp-nghi-dinh-1232011nd-cp-2011-12-28",
-    "refer_uid": "dieu-29-nghi-dinh-1232011nd-cp-nghi-dinh-1232011nd-cp-2011-12-28",
+    "uid": "bench_2_4_dieu-42-luat-552014qh13-luat-bao-ve-moi-truong-2014-so-552014qh13-unknown_dieu-92-luat-722020qh14-luat-bao-ve-moi-truong-2020-so-722020qh14-unknown",
+    "refer_uid": "dieu-42-luat-552014qh13-luat-bao-ve-moi-truong-2014-so-552014qh13-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-98-luat-242000qh10-luat-242000qh10-2000-12-09",
-    "question": "Điều 98 của 'LUẬT CỦA QUỐC HỘI NƯỚC CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM SỐ 24/2000/QH10 NGÀY 09 THÁNG 12 NĂM 2000 VỀ KINH DOANH BẢO HIỂM (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT THI HÀNH MỘT SỐ ĐIỀU CỦA LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT KINH DOANH BẢO HIỂM VÀ SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA NGHỊ ĐỊNH SỐ 45/2007/NĐ-CP NGÀY 27 THÁNG 3 NĂM 2007 CỦA CHÍNH PHỦ QUY ĐỊNH CHI TIẾT THI HÀNH MỘT SỐ ĐIỀU CỦA LUẬT KINH DOANH BẢO HIỂM CHÍNH PHỦ (2011)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-92-luat-722020qh14-luat-bao-ve-moi-truong-2020-so-722020qh14-unknown",
+    "question": "Điều 42 của 'LUẬT BẢO VỆ MÔI TRƯỜNG (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 3 của 123/2011/NĐ-CP",
-      "Điều 2 của 123/2011/NĐ-CP",
-      "Điều 29 của 123/2011/NĐ-CP",
-      "Điều 4 của 123/2011/NĐ-CP"
+      "Điều 91 của 72/2020/QH14",
+      "Điều 94 của 72/2020/QH14",
+      "Điều 92 của 72/2020/QH14",
+      "Điều 90 của 72/2020/QH14"
     ],
-    "answer": "Điều 29 của 123/2011/NĐ-CP"
+    "answer": "Điều 92 của 72/2020/QH14"
   },
   {
-    "uid": "bench_2_4_dieu-1-nghi-dinh-941998nd-cp-nghi-dinh-941998nd-cp-1998-11-17",
-    "refer_uid": "dieu-1-nghi-dinh-941998nd-cp-nghi-dinh-941998nd-cp-1998-11-17",
+    "uid": "bench_2_4_dieu-65-nghi-dinh-592015nd-cp-nghi-dinh-592015nd-cp-ve-quan-ly-du-an-dau-tu-xay-dung-unknown_dieu-64-nghi-dinh-162005nd-cp-nghi-dinh-162005nd-cp-cua-chinh-phu-ve-viec-quan-ly-du-an-dau-tu-xay-dung-cong-trinh-unknown",
+    "refer_uid": "dieu-65-nghi-dinh-592015nd-cp-nghi-dinh-592015nd-cp-ve-quan-ly-du-an-dau-tu-xay-dung-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-11-luat-452005qh11-luat-452005qh11-2005-06-14",
-    "question": "Điều 11 của 'LUẬT THUẾ XUẤT KHẨU, THUẾ NHẬP KHẨU (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH CỦA CHÍNH PHỦ SỐ 94 /1998/NĐ-CP NGÀY 17 THÁNG 11 NĂM 1998 QUY ĐỊNH CHI TIẾT THI HÀNH LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT THUẾ XUẤT KHẨU, THUẾ NHẬP KHẨU SỐ 04/1998/QH10 NGÀY 20 THÁNG 5 NĂM 1998 CHÍNH PHỦ (1998)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-64-nghi-dinh-162005nd-cp-nghi-dinh-162005nd-cp-cua-chinh-phu-ve-viec-quan-ly-du-an-dau-tu-xay-dung-cong-trinh-unknown",
+    "question": "Điều 65 của 'NGHỊ ĐỊNH VỀ QUẢN LÝ DỰ ÁN ĐẦU TƯ XÂY DỰNG (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 2 của 94/1998/NĐ-CP",
-      "Điều 1 của 94/1998/NĐ-CP",
-      "Điều 4 của 94/1998/NĐ-CP",
-      "Điều 3 của 94/1998/NĐ-CP"
+      "Điều 64 của 16/2005/NĐ-CP",
+      "Điều 65 của 16/2005/NĐ-CP",
+      "Điều 62 của 16/2005/NĐ-CP",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có"
     ],
-    "answer": "Điều 1 của 94/1998/NĐ-CP"
+    "answer": "Điều 64 của 16/2005/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-13-nghi-dinh-1372013nd-cp-nghi-dinh-1372013nd-cp-2013-10-21",
-    "refer_uid": "dieu-13-nghi-dinh-1372013nd-cp-nghi-dinh-1372013nd-cp-2013-10-21",
+    "uid": "bench_2_4_dieu-24-nghi-dinh-162020nd-cp-nghi-dinh-162020nd-cp-huong-dan-thi-hanh-luat-quoc-tich-viet-nam-unknown_dieu-28-nghi-dinh-1912025nd-cp-nghi-dinh-1912025nd-cp-quy-dinh-chi-tiet-thi-hanh-luat-quoc-tich-viet-nam-unknown",
+    "refer_uid": "dieu-24-nghi-dinh-162020nd-cp-nghi-dinh-162020nd-cp-huong-dan-thi-hanh-luat-quoc-tich-viet-nam-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-26-luat-282004qh11-luat-282004qh11-2004-12-03",
-    "question": "Điều 26 của 'LUẬT ĐIỆN LỰC (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT THI HÀNH MỘT SỐ ĐIỀU CỦA LUẬT ĐIỆN LỰC VÀ LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT ĐIỆN LỰC (2013)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-28-nghi-dinh-1912025nd-cp-nghi-dinh-1912025nd-cp-quy-dinh-chi-tiet-thi-hanh-luat-quoc-tich-viet-nam-unknown",
+    "question": "Điều 24 của 'NGHỊ ĐỊNH Quy định chi tiết một số điều và biện pháp thi hành Luật Quốc tịch Việt Nam --------------- (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 48 của 137/2013/NĐ-CP",
-      "Điều 13 của 137/2013/NĐ-CP",
-      "Điều 6 của 137/2013/NĐ-CP",
-      "Điều 7 của 137/2013/NĐ-CP"
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 28 của 191/2025/NĐ-CP",
+      "Điều 26 của 191/2025/NĐ-CP",
+      "Điều 30 của 191/2025/NĐ-CP"
     ],
-    "answer": "Điều 13 của 137/2013/NĐ-CP"
+    "answer": "Điều 28 của 191/2025/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-14-nghi-dinh-81-cp-nghi-dinh-81-cp-1994-08-01",
-    "refer_uid": "dieu-14-nghi-dinh-81-cp-nghi-dinh-81-cp-1994-08-01",
+    "uid": "bench_2_4_dieu-28-nghi-dinh-992013nd-cp-nghi-dinh-992013nd-cp-quy-dinh-xu-phat-vi-pham-hanh-chinh-linh-vuc-so-huu-cong-nghiep-unknown_dieu-31-nghi-dinh-972010nd-cp-nghi-dinh-972010nd-cp-ve-xu-phat-hanh-chinh-trong-so-huu-cong-nghiep-unknown",
+    "refer_uid": "dieu-28-nghi-dinh-992013nd-cp-nghi-dinh-992013nd-cp-quy-dinh-xu-phat-vi-pham-hanh-chinh-linh-vuc-so-huu-cong-nghiep-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-54-luat-852015qh13-luat-852015qh13-2015-06-25",
-    "question": "Điều 54 của 'LUẬT BẦU CỬ ĐẠI BIỂU QUỐC HỘI VÀ ĐẠI BIỂU HỘI ĐỒNG NHÂN DÂN (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH CỦA CHÍNH PHỦ SỐ 81-CP NGÀY 1-8-1994 QUY ĐỊNH CHI TIẾT THI HÀNH LUẬT BẦU CỬ ĐẠI BIỂU HỘI ĐỒNG NHÂN DÂN (SỬA ĐỔI) CHÍNH PHỦ (1994)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-31-nghi-dinh-972010nd-cp-nghi-dinh-972010nd-cp-ve-xu-phat-hanh-chinh-trong-so-huu-cong-nghiep-unknown",
+    "question": "Điều 28 của 'NGHỊ ĐỊNH Quy định xử phạt vi phạm hành chính trong lĩnh vực sở hữu công nghiệp ____________________ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 5 của 81-CP",
-      "Điều 7 của 81-CP",
-      "Điều 6 của 81-CP",
-      "Điều 14 của 81-CP"
+      "Điều 33 của 97/2010/NĐ-CP",
+      "Điều 31 của 97/2010/NĐ-CP",
+      "Điều 30 của 97/2010/NĐ-CP",
+      "Điều 32 của 97/2010/NĐ-CP"
     ],
-    "answer": "Điều 14 của 81-CP"
+    "answer": "Điều 31 của 97/2010/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-17-nghi-dinh-762014nd-cp-nghi-dinh-762014nd-cp-2014-07-29",
-    "refer_uid": "dieu-17-nghi-dinh-762014nd-cp-nghi-dinh-762014nd-cp-2014-07-29",
+    "uid": "bench_2_4_dieu-52-luat-412019qh14-luat-thi-hanh-an-hinh-su-2019-so-412019qh14-unknown_dieu-27-nghi-dinh-1332020nd-cp-nghi-dinh-1332020nd-cp-huong-dan-luat-thi-hanh-an-hinh-su-unknown",
+    "refer_uid": "dieu-52-luat-412019qh14-luat-thi-hanh-an-hinh-su-2019-so-412019qh14-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-24-luat-142017qh14-luat-142017qh14-2017-06-20",
-    "question": "Điều 24 của 'LUẬT QUẢN LÝ, SỬ DỤNG VŨ KHÍ, VẬT LIỆU NỔ VÀ CÔNG CỤ HỖ TRỢ (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU CỦA PHÁP LỆNH SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA PHÁP LỆNH QUẢN LÝ, SỬ DỤNG VŨ KHÍ VẬT LIỆU NỔ VÀ CÔNG CỤ HỖ TRỢ (2014)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-27-nghi-dinh-1332020nd-cp-nghi-dinh-1332020nd-cp-huong-dan-luat-thi-hanh-an-hinh-su-unknown",
+    "question": "Điều 52 của 'LUẬT THI HÀNH ÁN HÌNH SỰ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 17 của 76/2014/NĐ-CP",
-      "Điều 5 của 76/2014/NĐ-CP",
-      "Điều 3 của 76/2014/NĐ-CP",
-      "Điều 6 của 76/2014/NĐ-CP"
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 27 của 133/2020/NĐ-CP",
+      "Điều 25 của 133/2020/NĐ-CP",
+      "Điều 28 của 133/2020/NĐ-CP"
     ],
-    "answer": "Điều 17 của 76/2014/NĐ-CP"
+    "answer": "Điều 27 của 133/2020/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-37-nghi-dinh-792014nd-cp-nghi-dinh-792014nd-cp-2014-07-31",
-    "refer_uid": "dieu-37-nghi-dinh-792014nd-cp-nghi-dinh-792014nd-cp-2014-07-31",
+    "uid": "bench_2_4_dieu-13-nghi-dinh-1022014nd-cp-nghi-dinh-1022014nd-cp-ve-xu-phat-vi-pham-hanh-chinh-trong-linh-vuc-dat-dai-unknown_dieu-18-nghi-dinh-912019nd-cp-nghi-dinh-912019nd-cp-xu-ly-vi-pham-hanh-chinh-linh-vuc-dat-dai-unknown",
+    "refer_uid": "dieu-13-nghi-dinh-1022014nd-cp-nghi-dinh-1022014nd-cp-ve-xu-phat-vi-pham-hanh-chinh-trong-linh-vuc-dat-dai-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-44-luat-272001qh10-luat-272001qh10-2001-06-29",
-    "question": "Điều 44 của 'LUẬT CỦA QUỐC HỘI NƯỚC CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM SỐ 27/2001/QH10 VỀ PHÒNG CHÁY VÀ CHỮA CHÁY (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT THI HÀNH MỘT SỐ ĐIỀU CỦA LUẬT PHÒNG CHÁY VÀ CHỮA CHÁY VÀ LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT PHÒNG CHÁY VÀ CHỮA CHÁY (2014)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-18-nghi-dinh-912019nd-cp-nghi-dinh-912019nd-cp-xu-ly-vi-pham-hanh-chinh-linh-vuc-dat-dai-unknown",
+    "question": "Điều 13 của 'NGHỊ ĐỊNH VỀ XỬ PHẠT VI PHẠM HÀNH CHÍNH TRONG LĨNH VỰC ĐẤT ĐAI (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 18 của 79/2014/NĐ-CP",
-      "Điều 5 của 79/2014/NĐ-CP",
-      "Điều 3 của 79/2014/NĐ-CP",
-      "Điều 37 của 79/2014/NĐ-CP"
+      "Điều 17 của 91/2019/NĐ-CP",
+      "Điều 19 của 91/2019/NĐ-CP",
+      "Điều 16 của 91/2019/NĐ-CP",
+      "Điều 18 của 91/2019/NĐ-CP"
     ],
-    "answer": "Điều 37 của 79/2014/NĐ-CP"
+    "answer": "Điều 18 của 91/2019/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-32-nghi-dinh-832013nd-cp-nghi-dinh-832013nd-cp-2013-07-22",
-    "refer_uid": "dieu-32-nghi-dinh-832013nd-cp-nghi-dinh-832013nd-cp-2013-07-22",
+    "uid": "bench_2_4_dieu-167-luat-502005qh11-luat-so-huu-tri-tue-2005-so-502005qh11-unknown_dieu-14-nghi-dinh-792023nd-cp-nghi-dinh-792023nd-cp-quy-dinh-chi-tiet-luat-so-huu-tri-tue-ve-giong-cay-trong-unknown",
+    "refer_uid": "dieu-167-luat-502005qh11-luat-so-huu-tri-tue-2005-so-502005qh11-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-85-luat-382019qh14-luat-382019qh14-2019-06-13",
-    "question": "Điều 85 của 'LUẬT QUẢN LÝ THUẾ (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT THI HÀNH MỘT SỐ ĐIỀU CỦA LUẬT QUẢN LÝ THUẾ VÀ LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT QUẢN LÝ THUẾ (2013)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-14-nghi-dinh-792023nd-cp-nghi-dinh-792023nd-cp-quy-dinh-chi-tiet-luat-so-huu-tri-tue-ve-giong-cay-trong-unknown",
+    "question": "Điều 167 của 'LUẬT SỞ HỮU TRÍ TUỆ CỦA QUỐC HỘI NƯỚC CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM SỐ 50/2005/QH11 NGÀY 29 THÁNG 11 NĂM 2005 (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 32 của 83/2013/NĐ-CP",
-      "Điều 2 của 83/2013/NĐ-CP",
-      "Điều 13 của 83/2013/NĐ-CP",
-      "Điều 6 của 83/2013/NĐ-CP"
+      "Điều 12 của 79/2023/NĐ-CP",
+      "Điều 15 của 79/2023/NĐ-CP",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 14 của 79/2023/NĐ-CP"
     ],
-    "answer": "Điều 32 của 83/2013/NĐ-CP"
+    "answer": "Điều 14 của 79/2023/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-41-nghi-dinh-832013nd-cp-nghi-dinh-832013nd-cp-2013-07-22",
-    "refer_uid": "dieu-41-nghi-dinh-832013nd-cp-nghi-dinh-832013nd-cp-2013-07-22",
+    "uid": "bench_2_4_dieu-49-luat-642025qh15-luat-ban-hanh-van-ban-quy-pham-phap-luat-2025-so-642025qh15-unknown_dieu-39-nghi-dinh-782025nd-cp-nghi-dinh-782025nd-cp-quy-dinh-chi-tiet-mot-so-dieu-va-bien-phap-de-to-chuc-huong-dan-thi-hanh-luat-ban-hanh-van-ban-qppl-unknown",
+    "refer_uid": "dieu-49-luat-642025qh15-luat-ban-hanh-van-ban-quy-pham-phap-luat-2025-so-642025qh15-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-73-luat-782006qh11-luat-782006qh11-2006-11-29",
-    "question": "Điều 73 của 'LUẬT QUẢN LÝ THUẾ (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT THI HÀNH MỘT SỐ ĐIỀU CỦA LUẬT QUẢN LÝ THUẾ VÀ LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT QUẢN LÝ THUẾ (2013)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-39-nghi-dinh-782025nd-cp-nghi-dinh-782025nd-cp-quy-dinh-chi-tiet-mot-so-dieu-va-bien-phap-de-to-chuc-huong-dan-thi-hanh-luat-ban-hanh-van-ban-qppl-unknown",
+    "question": "Điều 49 của 'LUẬT BAN HÀNH VĂN BẢN QUY PHẠM PHÁP LUẬT (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 1 của 83/2013/NĐ-CP",
-      "Điều 5 của 83/2013/NĐ-CP",
-      "Điều 2 của 83/2013/NĐ-CP",
-      "Điều 41 của 83/2013/NĐ-CP"
+      "Điều 41 của 78/2025/NĐ-CP",
+      "Điều 37 của 78/2025/NĐ-CP",
+      "Điều 39 của 78/2025/NĐ-CP",
+      "Điều 38 của 78/2025/NĐ-CP"
     ],
-    "answer": "Điều 41 của 83/2013/NĐ-CP"
+    "answer": "Điều 39 của 78/2025/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-2-nghi-dinh-1372013nd-cp-nghi-dinh-1372013nd-cp-2013-10-21",
-    "refer_uid": "dieu-2-nghi-dinh-1372013nd-cp-nghi-dinh-1372013nd-cp-2013-10-21",
+    "uid": "bench_2_4_dieu-34-nghi-dinh-1662013nd-cp-nghi-dinh-1662013nd-cp-cuong-che-thi-hanh-quyet-dinh-xu-phat-vphc-unknown_dieu-34-nghi-dinh-2962025nd-cp-nghi-dinh-2962025nd-cp-cua-chinh-phu-quy-dinh-ve-cuong-che-thi-hanh-quyet-dinh-xu-phat-vi-pham-hanh-chinh-unknown",
+    "refer_uid": "dieu-34-nghi-dinh-1662013nd-cp-nghi-dinh-1662013nd-cp-cuong-che-thi-hanh-quyet-dinh-xu-phat-vphc-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-7-luat-282004qh11-luat-282004qh11-2004-12-03",
-    "question": "Điều 7 của 'LUẬT ĐIỆN LỰC (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT THI HÀNH MỘT SỐ ĐIỀU CỦA LUẬT ĐIỆN LỰC VÀ LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT ĐIỆN LỰC (2013)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-34-nghi-dinh-2962025nd-cp-nghi-dinh-2962025nd-cp-cua-chinh-phu-quy-dinh-ve-cuong-che-thi-hanh-quyet-dinh-xu-phat-vi-pham-hanh-chinh-unknown",
+    "question": "Điều 34 của 'NGHỊ ĐỊNH QUY ĐỊNH VỀ CƯỠNG CHẾ THI HÀNH QUYẾT ĐỊNH XỬ PHẠT VI PHẠM HÀNH CHÍNH (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 48 của 137/2013/NĐ-CP",
-      "Điều 1 của 137/2013/NĐ-CP",
-      "Điều 7 của 137/2013/NĐ-CP",
-      "Điều 2 của 137/2013/NĐ-CP"
+      "Điều 34 của 296/2025/NĐ-CP",
+      "Điều 36 của 296/2025/NĐ-CP",
+      "Điều 35 của 296/2025/NĐ-CP",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có"
     ],
-    "answer": "Điều 2 của 137/2013/NĐ-CP"
+    "answer": "Điều 34 của 296/2025/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-33-nghi-dinh-842007nd-cp-nghi-dinh-842007nd-cp-2007-05-25",
-    "refer_uid": "dieu-33-nghi-dinh-842007nd-cp-nghi-dinh-842007nd-cp-2007-05-25",
+    "uid": "bench_2_4_dieu-59-luat-272023qh15-luat-nha-o-2023-so-272023qh15-unknown_dieu-23-nghi-dinh-982024nd-cp-nghi-dinh-982024nd-cp-quy-dinh-chi-tiet-mot-so-dieu-cua-luat-nha-o-ve-cai-tao-xay-dung-lai-nha-chung-cu-unknown",
+    "refer_uid": "dieu-59-luat-272023qh15-luat-nha-o-2023-so-272023qh15-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-114-luat-452013qh13-luat-452013qh13-2013-11-29",
-    "question": "Điều 114 của 'LUẬT ĐẤT ĐAI (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH QUY ĐỊNH BỔ SUNG VỀ VIỆC CẤP GIẤY CHỨNG NHẬN QUYỀN SỬ DỤNG ĐẤT, THU HỒI ĐẤT, THỰC HIỆN QUYỀN SỬ DỤNG ĐẤT, TRÌNH TỰ, THỦ TỤC BỒI THƯỜNG, HỖ TRỢ, TÁI ĐỊNH CƯ KHI NHÀ NƯỚC THU HỒI ĐẤT VÀ GIẢI QUYẾT KHIẾU NẠI VỀ ĐẤT ĐAI CHÍNH PHỦ (2007)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-23-nghi-dinh-982024nd-cp-nghi-dinh-982024nd-cp-quy-dinh-chi-tiet-mot-so-dieu-cua-luat-nha-o-ve-cai-tao-xay-dung-lai-nha-chung-cu-unknown",
+    "question": "Điều 59 của 'LUẬT NHÀ Ở (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 5 của 84/2007/NĐ-CP",
-      "Điều 3 của 84/2007/NĐ-CP",
-      "Điều 33 của 84/2007/NĐ-CP",
-      "Điều 8 của 84/2007/NĐ-CP"
+      "Điều 22 của 98/2024/NĐ-CP",
+      "Điều 24 của 98/2024/NĐ-CP",
+      "Điều 23 của 98/2024/NĐ-CP",
+      "Điều 25 của 98/2024/NĐ-CP"
     ],
-    "answer": "Điều 33 của 84/2007/NĐ-CP"
+    "answer": "Điều 23 của 98/2024/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-36-nghi-dinh-1362020nd-cp-nghi-dinh-1362020nd-cp-2020-11-24",
-    "refer_uid": "dieu-36-nghi-dinh-1362020nd-cp-nghi-dinh-1362020nd-cp-2020-11-24",
+    "uid": "bench_2_4_dieu-5-nghi-dinh-1322020nd-cp-nghi-dinh-1322020nd-cp-quan-ly-thue-doi-voi-doanh-nghiep-co-giao-dich-lien-ket-unknown_dieu-4-nghi-dinh-202025nd-cp-nghi-dinh-202025nd-cp-sua-doi-nghi-dinh-1322020nd-cp-quy-dinh-ve-quan-ly-thue-doi-voi-doanh-nghiep-co-giao-dich-lien-ket-unknown",
+    "refer_uid": "dieu-5-nghi-dinh-1322020nd-cp-nghi-dinh-1322020nd-cp-quan-ly-thue-doi-voi-doanh-nghiep-co-giao-dich-lien-ket-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-48-luat-272001qh10-luat-272001qh10-2001-06-29",
-    "question": "Điều 48 của 'LUẬT CỦA QUỐC HỘI NƯỚC CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM SỐ 27/2001/QH10 VỀ PHÒNG CHÁY VÀ CHỮA CHÁY (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP THI HÀNH LUẬT PHÒNG CHÁY VÀ CHỮA CHÁY VÀ LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT PHÒNG CHÁY VÀ CHỮA CHÁY (2020)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-4-nghi-dinh-202025nd-cp-nghi-dinh-202025nd-cp-sua-doi-nghi-dinh-1322020nd-cp-quy-dinh-ve-quan-ly-thue-doi-voi-doanh-nghiep-co-giao-dich-lien-ket-unknown",
+    "question": "Điều 5 của 'NGHỊ ĐỊNH Quy định về quản lý thuế đối với doanh nghiệp có giao dịch liên kết __________ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 6 của 136/2020/NĐ-CP",
-      "Điều 5 của 136/2020/NĐ-CP",
-      "Điều 4 của 136/2020/NĐ-CP",
-      "Điều 36 của 136/2020/NĐ-CP"
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 1 của 20/2025/NĐ-CP",
+      "Điều 3 của 20/2025/NĐ-CP",
+      "Điều 4 của 20/2025/NĐ-CP"
     ],
-    "answer": "Điều 36 của 136/2020/NĐ-CP"
+    "answer": "Điều 4 của 20/2025/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-2-nghi-dinh-332020nd-cp-nghi-dinh-332020nd-cp-2020-03-17",
-    "refer_uid": "dieu-2-nghi-dinh-332020nd-cp-nghi-dinh-332020nd-cp-2020-03-17",
+    "uid": "bench_2_4_dieu-19-nghi-dinh-382021nd-cp-nghi-dinh-382021nd-cp-xu-phat-vi-pham-hanh-chinh-linh-vuc-van-hoa-quang-cao-unknown_dieu-25-nghi-dinh-872026nd-cp-nghi-dinh-872026nd-cp-xu-phat-vi-pham-hanh-chinh-trong-van-hoa-va-quang-cao-unknown",
+    "refer_uid": "dieu-19-nghi-dinh-382021nd-cp-nghi-dinh-382021nd-cp-xu-phat-vi-pham-hanh-chinh-linh-vuc-van-hoa-quang-cao-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-64-luat-452013qh13-luat-452013qh13-2013-11-29",
-    "question": "Điều 64 của 'LUẬT ĐẤT ĐAI (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA NGHỊ ĐỊNH SỐ 62/2015/NĐ-CP NGÀY 18 THÁNG 7 NĂM 2015 CỦA CHÍNH PHỦ QUY ĐỊNH CHI TIẾT VÀ HƯỚNG DẪN THI HÀNH MỘT SỐ ĐIỀU CỦA LUẬT THI HÀNH ÁN DÂN SỰ (2020)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-25-nghi-dinh-872026nd-cp-nghi-dinh-872026nd-cp-xu-phat-vi-pham-hanh-chinh-trong-van-hoa-va-quang-cao-unknown",
+    "question": "Điều 19 của 'NGHỊ ĐỊNH Quy định xử phạt vi phạm hành chính trong lĩnh vực văn hoá và quảng cáo ________________ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 3 của 33/2020/NĐ-CP",
-      "Điều 2 của 33/2020/NĐ-CP",
-      "Điều 1 của 33/2020/NĐ-CP",
-      "Điều 4 của 33/2020/NĐ-CP"
+      "Điều 23 của 87/2026/NĐ-CP",
+      "Điều 27 của 87/2026/NĐ-CP",
+      "Điều 25 của 87/2026/NĐ-CP",
+      "Điều 26 của 87/2026/NĐ-CP"
     ],
-    "answer": "Điều 2 của 33/2020/NĐ-CP"
+    "answer": "Điều 25 của 87/2026/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-45-nghi-dinh-842007nd-cp-nghi-dinh-842007nd-cp-2007-05-25",
-    "refer_uid": "dieu-45-nghi-dinh-842007nd-cp-nghi-dinh-842007nd-cp-2007-05-25",
+    "uid": "bench_2_4_dieu-25-nghi-dinh-812013nd-cp-nghi-dinh-812013nd-cp-quy-dinh-chi-tiet-luat-xu-ly-vi-pham-hanh-chinh-unknown_dieu-4-nghi-dinh-972017nd-cp-nghi-dinh-972017nd-cp-sua-huong-dan-luat-xu-ly-vi-pham-hanh-chinh-unknown",
+    "refer_uid": "dieu-25-nghi-dinh-812013nd-cp-nghi-dinh-812013nd-cp-quy-dinh-chi-tiet-luat-xu-ly-vi-pham-hanh-chinh-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-14-nghi-dinh-1972004nd-cp-nghi-dinh-1972004nd-cp-2004-12-03",
-    "question": "Điều 14 của 'NGHỊ ĐỊNH CỦA CHÍNH PHỦ SỐ 197/2004/NĐ-CP NGÀY 03 THÁNG 12 NĂM 2004 VỀ BỒI THƯỜNG, HỖ TRỢ VÀ TÁI ĐỊNH CƯ KHI NHÀ NƯỚC THU HỒI ĐẤT CHÍNH PHỦ (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH QUY ĐỊNH BỔ SUNG VỀ VIỆC CẤP GIẤY CHỨNG NHẬN QUYỀN SỬ DỤNG ĐẤT, THU HỒI ĐẤT, THỰC HIỆN QUYỀN SỬ DỤNG ĐẤT, TRÌNH TỰ, THỦ TỤC BỒI THƯỜNG, HỖ TRỢ, TÁI ĐỊNH CƯ KHI NHÀ NƯỚC THU HỒI ĐẤT VÀ GIẢI QUYẾT KHIẾU NẠI VỀ ĐẤT ĐAI CHÍNH PHỦ (2007)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-4-nghi-dinh-972017nd-cp-nghi-dinh-972017nd-cp-sua-huong-dan-luat-xu-ly-vi-pham-hanh-chinh-unknown",
+    "question": "Điều 25 của 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP THI HÀNH LUẬT XỬ LÝ VI PHẠM HÀNH CHÍNH (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 45 của 84/2007/NĐ-CP",
-      "Điều 8 của 84/2007/NĐ-CP",
-      "Điều 7 của 84/2007/NĐ-CP",
-      "Điều 5 của 84/2007/NĐ-CP"
+      "Điều 3 của 97/2017/NĐ-CP",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 4 của 97/2017/NĐ-CP",
+      "Điều 1 của 97/2017/NĐ-CP"
     ],
-    "answer": "Điều 45 của 84/2007/NĐ-CP"
+    "answer": "Điều 4 của 97/2017/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-17-nghi-dinh-1492003nd-cp-nghi-dinh-1492003nd-cp-2003-12-04",
-    "refer_uid": "dieu-17-nghi-dinh-1492003nd-cp-nghi-dinh-1492003nd-cp-2003-12-04",
+    "uid": "bench_2_4_dieu-2-nghi-dinh-422022nd-cp-nghi-dinh-422022nd-cp-quy-dinh-dich-vu-cong-truc-tuyen-cua-co-quan-nn-tren-moi-truong-mang-unknown_dieu-2-nghi-dinh-432011nd-cp-nghi-dinh-432011nd-cp-ve-cung-cap-thong-tin-va-dich-vu-cong-truc-tuyen-unknown",
+    "refer_uid": "dieu-2-nghi-dinh-422022nd-cp-nghi-dinh-422022nd-cp-quy-dinh-dich-vu-cong-truc-tuyen-cua-co-quan-nn-tren-moi-truong-mang-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-21-luat-051998qh10-luat-051998qh10-1998-05-20",
-    "question": "Điều 21 của 'LUẬT THUẾ TIÊU THỤ ĐẶC BIỆT CỦA QUỐC HỘI SỐ 05/1998/QH10 NGÀY 20 THÁNG 05 NĂM 1998 (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH CỦA CHÍNH PHỦ SỐ 149/2003/NĐ-CP NGÀY 04 THÁNG 12 NĂM 2003 QUY ĐỊNH CHI TIẾT THI HÀNH LUẬT THUẾ TIÊU THỤ ĐẶC BIỆT VÀ LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT THUẾ TIÊU THỤ ĐẶC BIỆT CHÍNH PHỦ (2003)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-2-nghi-dinh-432011nd-cp-nghi-dinh-432011nd-cp-ve-cung-cap-thong-tin-va-dich-vu-cong-truc-tuyen-unknown",
+    "question": "Điều 2 của 'NGHỊ ĐỊNH Quy định về việc cung cấp thông tin và dịch vụ công trực tuyến của cơ quan nhà nước trên môi trường mạng ______________ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 2 của 149/2003/NĐ-CP",
-      "Điều 7 của 149/2003/NĐ-CP",
-      "Điều 17 của 149/2003/NĐ-CP",
-      "Điều 6 của 149/2003/NĐ-CP"
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 4 của 43/2011/NĐ-CP",
+      "Điều 2 của 43/2011/NĐ-CP",
+      "Điều 5 của 43/2011/NĐ-CP"
     ],
-    "answer": "Điều 17 của 149/2003/NĐ-CP"
+    "answer": "Điều 2 của 43/2011/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-22-nghi-dinh-842007nd-cp-nghi-dinh-842007nd-cp-2007-05-25",
-    "refer_uid": "dieu-22-nghi-dinh-842007nd-cp-nghi-dinh-842007nd-cp-2007-05-25",
+    "uid": "bench_2_4_dieu-1-nghi-dinh-342008nd-cp-nghi-dinh-342008nd-cp-cua-chinh-phu-quy-dinh-ve-tuyen-dung-va-quan-ly-nguoi-nuoc-ngoai-lam-viec-tai-viet-nam-unknown_dieu-1-nghi-dinh-1022013nd-cp-nghi-dinh-1022013nd-cp-ve-lao-dong-nuoc-ngoai-lam-viec-tai-viet-nam-unknown",
+    "refer_uid": "dieu-1-nghi-dinh-342008nd-cp-nghi-dinh-342008nd-cp-cua-chinh-phu-quy-dinh-ve-tuyen-dung-va-quan-ly-nguoi-nuoc-ngoai-lam-viec-tai-viet-nam-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-175-luat-452013qh13-luat-452013qh13-2013-11-29",
-    "question": "Điều 175 của 'LUẬT ĐẤT ĐAI (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH QUY ĐỊNH BỔ SUNG VỀ VIỆC CẤP GIẤY CHỨNG NHẬN QUYỀN SỬ DỤNG ĐẤT, THU HỒI ĐẤT, THỰC HIỆN QUYỀN SỬ DỤNG ĐẤT, TRÌNH TỰ, THỦ TỤC BỒI THƯỜNG, HỖ TRỢ, TÁI ĐỊNH CƯ KHI NHÀ NƯỚC THU HỒI ĐẤT VÀ GIẢI QUYẾT KHIẾU NẠI VỀ ĐẤT ĐAI CHÍNH PHỦ (2007)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-1-nghi-dinh-1022013nd-cp-nghi-dinh-1022013nd-cp-ve-lao-dong-nuoc-ngoai-lam-viec-tai-viet-nam-unknown",
+    "question": "Điều 1 của 'NGHỊ ĐỊNH CỦA CHÍNH PHỦ SỐ 34/2008/NĐ-CP NGÀY 25 THÁNG 03 NĂM 2008 QUY ĐỊNH VỀ TUYỂN DỤNG VÀ QUẢN LÝ NGƯỜI NƯỚC NGOÀI LÀM VIỆC TẠI VIỆT NAM CHÍNH PHỦ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 4 của 84/2007/NĐ-CP",
-      "Điều 5 của 84/2007/NĐ-CP",
-      "Điều 2 của 84/2007/NĐ-CP",
-      "Điều 22 của 84/2007/NĐ-CP"
+      "Điều 4 của 102/2013/NĐ-CP",
+      "Điều 1 của 102/2013/NĐ-CP",
+      "Điều 3 của 102/2013/NĐ-CP",
+      "Điều 5 của 102/2013/NĐ-CP"
     ],
-    "answer": "Điều 22 của 84/2007/NĐ-CP"
+    "answer": "Điều 1 của 102/2013/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-4-nghi-dinh-325-hdbt-nghi-dinh-325-hdbt-1991-10-19",
-    "refer_uid": "dieu-4-nghi-dinh-325-hdbt-nghi-dinh-325-hdbt-1991-10-19",
+    "uid": "bench_2_4_dieu-21-nghi-dinh-632023nd-cp-nghi-dinh-632023nd-cp-quy-dinh-luat-tan-so-vo-tuyen-dien-duoc-sua-doi-theo-luat-so-092022qh15-unknown_dieu-22-nghi-dinh-1722024nd-cp-nghi-dinh-1722024nd-cp-quy-dinh-chi-tiet-mot-so-dieu-cua-luat-dau-gia-tai-san-unknown",
+    "refer_uid": "dieu-21-nghi-dinh-632023nd-cp-nghi-dinh-632023nd-cp-quy-dinh-luat-tan-so-vo-tuyen-dien-duoc-sua-doi-theo-luat-so-092022qh15-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-3-nghi-dinh-351-hdbt-nghi-dinh-351-hdbt-1990-10-02",
-    "question": "Điều 3 của 'NGHỊ ĐỊNH CỦA HỘI ĐỒNG BỘ TRƯỞNG SỐ 351-HĐBT NGÀY 2-10-1990 QUY ĐỊNH CHI TIẾT THI HÀNH LUẬT THUẾ DOANH THU HỘI ĐỒNG BỘ TRƯỞNG (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH CỦA HỘI ĐỒNG BỘ TRƯỞNG SỐ 325-HĐBT NGÀY 19-10-1991 QUY ĐỊNH CHI TIẾT THI HÀNH QUYẾT ĐỊNH CỦA HỘI ĐỒNG NHÀ NƯỚC BỔ SUNG SỬA ĐỔI THUẾ DOANH THU VÀ THUẾ TIÊU THỤ ĐẶC BIỆT HỘI ĐỒNG BỘ TRƯỞNG (1991)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-22-nghi-dinh-1722024nd-cp-nghi-dinh-1722024nd-cp-quy-dinh-chi-tiet-mot-so-dieu-cua-luat-dau-gia-tai-san-unknown",
+    "question": "Điều 21 của 'NGHỊ ĐỊNH Quy định chi tiết một số điều của Luật Tần số vô tuyến điện số 42/2009/QH12, được sửa đổi, bổ sung một số điều theo Luật số 09/2022/QH15 Căn c ứ Luật Tổ chức Chính phủ ngày 19 tháng 6 năm 2015; Luật sửa đổi, bổ sung một số điều của Luật Tổ chức Chính phủ và Luật Tổ chức chính quyền địa phương ngày 22 tháng 11 năm 2019; Căn cứ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 6 của 325-HĐBT",
-      "Điều 3 của 325-HĐBT",
-      "Điều 4 của 325-HĐBT",
-      "Điều 1 của 325-HĐBT"
+      "Điều 20 của 172/2024/NĐ-CP",
+      "Điều 21 của 172/2024/NĐ-CP",
+      "Điều 24 của 172/2024/NĐ-CP",
+      "Điều 22 của 172/2024/NĐ-CP"
     ],
-    "answer": "Điều 4 của 325-HĐBT"
+    "answer": "Điều 22 của 172/2024/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-6-nghi-dinh-532005nd-cp-nghi-dinh-532005nd-cp-2005-04-19",
-    "refer_uid": "dieu-6-nghi-dinh-532005nd-cp-nghi-dinh-532005nd-cp-2005-04-19",
+    "uid": "bench_2_4_dieu-40-luat-112012qh13-luat-gia-nam-2012-so-112012qh13-unknown_dieu-56-luat-162023qh15-luat-gia-2023-so-162023qh15-unknown",
+    "refer_uid": "dieu-40-luat-112012qh13-luat-gia-nam-2012-so-112012qh13-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-35-luat-022011qh13-luat-022011qh13-2011-11-11",
-    "question": "Điều 35 của 'LUẬT KHIẾU NẠI (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT VÀ HƯỚNG DẪN THI HÀNH LUẬT KHIẾU NẠI, TỐ CÁO VÀ LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT KHIẾU NẠI, TỐ CÁO CHÍNH PHỦ (2005)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-56-luat-162023qh15-luat-gia-2023-so-162023qh15-unknown",
+    "question": "Điều 40 của 'LUẬT GIÁ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 6 của 53/2005/NĐ-CP",
-      "Điều 3 của 53/2005/NĐ-CP",
-      "Điều 35 của 53/2005/NĐ-CP",
-      "Điều 4 của 53/2005/NĐ-CP"
+      "Điều 54 của 16/2023/QH15",
+      "Điều 56 của 16/2023/QH15",
+      "Điều 58 của 16/2023/QH15",
+      "Điều 57 của 16/2023/QH15"
     ],
-    "answer": "Điều 6 của 53/2005/NĐ-CP"
+    "answer": "Điều 56 của 16/2023/QH15"
   },
   {
-    "uid": "bench_2_4_dieu-37-nghi-dinh-662021nd-cp-nghi-dinh-662021nd-cp-2021-07-06",
-    "refer_uid": "dieu-37-nghi-dinh-662021nd-cp-nghi-dinh-662021nd-cp-2021-07-06",
+    "uid": "bench_2_4_dieu-10-nghi-dinh-132020nd-cp-nghi-dinh-132020nd-cp-huong-dan-luat-chan-nuoi-unknown_dieu-4-nghi-dinh-322026nd-cp-nghi-dinh-322026nd-cp-sua-doi-bo-sung-linh-vuc-chan-nuoi-thu-y-unknown",
+    "refer_uid": "dieu-10-nghi-dinh-132020nd-cp-nghi-dinh-132020nd-cp-huong-dan-luat-chan-nuoi-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-12-nghi-dinh-022019nd-cp-nghi-dinh-022019nd-cp-2019-01-02",
-    "question": "Điều 12 của 'NGHỊ ĐỊNH VỀ PHÒNG THỦ DÂN SỰ (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT THI HÀNH MỘT SỐ ĐIỀU CỦA LUẬT PHÒNG, CHỐNG THIÊN TAI VÀ LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT PHÒNG, CHỐNG THIÊN TAI VÀ LUẬT ĐÊ ĐIỀU (2021)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-4-nghi-dinh-322026nd-cp-nghi-dinh-322026nd-cp-sua-doi-bo-sung-linh-vuc-chan-nuoi-thu-y-unknown",
+    "question": "Điều 10 của 'NGHỊ ĐỊNH Hướng dẫn chi tiết Luật Chăn nuôi -------------- (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 1 của 66/2021/NĐ-CP",
-      "Điều 4 của 66/2021/NĐ-CP",
-      "Điều 5 của 66/2021/NĐ-CP",
-      "Điều 37 của 66/2021/NĐ-CP"
+      "Điều 1 của 32/2026/NĐ-CP",
+      "Điều 4 của 32/2026/NĐ-CP",
+      "Điều 5 của 32/2026/NĐ-CP",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có"
     ],
-    "answer": "Điều 37 của 66/2021/NĐ-CP"
+    "answer": "Điều 4 của 32/2026/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-43-nghi-dinh-1212005nd-cp-nghi-dinh-1212005nd-cp-2005-09-30",
-    "refer_uid": "dieu-43-nghi-dinh-1212005nd-cp-nghi-dinh-1212005nd-cp-2005-09-30",
+    "uid": "bench_2_4_dieu-76-nghi-dinh-1512017nd-cp-nghi-dinh-1512017nd-cp-quy-dinh-chi-tiet-luat-quan-ly-su-dung-tai-san-cong-unknown_dieu-79-nghi-dinh-1862025nd-cp-nghi-dinh-1862025nd-cp-quy-dinh-chi-tiet-luat-quan-ly-su-dung-tai-san-cong-unknown",
+    "refer_uid": "dieu-76-nghi-dinh-1512017nd-cp-nghi-dinh-1512017nd-cp-quy-dinh-chi-tiet-luat-quan-ly-su-dung-tai-san-cong-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-58-luat-152003qh11-luat-152003qh11-2003-11-26",
-    "question": "Điều 58 của 'LUẬT CỦA QUỐC HỘI NƯỚC CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM SỐ 15/2003/QH11 NGÀY 26 THÁNG 11 NĂM 2003 VỀ THI ĐUA, KHEN THƯỞNG (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT VÀ HƯỚNG DẪN THI HÀNH MỘT SỐ ĐIỀU CỦA LUẬT THI ĐUA, KHEN THƯỞNG VÀ LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT THI ĐUA, KHEN THƯỞNG CHÍNH PHỦ (2005)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-79-nghi-dinh-1862025nd-cp-nghi-dinh-1862025nd-cp-quy-dinh-chi-tiet-luat-quan-ly-su-dung-tai-san-cong-unknown",
+    "question": "Điều 76 của 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU CỦA LUẬT QUẢN LÝ, SỬ DỤNG TÀI SẢN CÔNG (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 4 của 121/2005/NĐ-CP",
-      "Điều 5 của 121/2005/NĐ-CP",
-      "Điều 43 của 121/2005/NĐ-CP",
-      "Điều 6 của 121/2005/NĐ-CP"
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 80 của 186/2025/NĐ-CP",
+      "Điều 81 của 186/2025/NĐ-CP",
+      "Điều 79 của 186/2025/NĐ-CP"
     ],
-    "answer": "Điều 43 của 121/2005/NĐ-CP"
+    "answer": "Điều 79 của 186/2025/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-52-nghi-dinh-532005nd-cp-nghi-dinh-532005nd-cp-2005-04-19",
-    "refer_uid": "dieu-52-nghi-dinh-532005nd-cp-nghi-dinh-532005nd-cp-2005-04-19",
+    "uid": "bench_2_4_dieu-12-nghi-dinh-342016nd-cp-nghi-dinh-342016nd-cp-huong-dan-luat-ban-hanh-van-ban-quy-pham-phap-luat-unknown_dieu-19-nghi-dinh-1612005nd-cp-nghi-dinh-1612005nd-cp-cua-chinh-phu-ve-viec-quy-dinh-chi-tiet-va-huong-dan-thi-hanh-mot-so-dieu-cua-luat-ban-hanh-van-ban-quy-pham-phap-luat-va-luat-sua-doi-bo-sung-mot-so-dieu-cua-luat-ban-hanh-van-ban-quy-pham-phap-luat-unknown",
+    "refer_uid": "dieu-12-nghi-dinh-342016nd-cp-nghi-dinh-342016nd-cp-huong-dan-luat-ban-hanh-van-ban-quy-pham-phap-luat-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-13-luat-422013qh13-luat-422013qh13-2013-11-25",
-    "question": "Điều 13 của 'LUẬT TIẾP CÔNG DÂN (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT VÀ HƯỚNG DẪN THI HÀNH LUẬT KHIẾU NẠI, TỐ CÁO VÀ LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT KHIẾU NẠI, TỐ CÁO CHÍNH PHỦ (2005)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-19-nghi-dinh-1612005nd-cp-nghi-dinh-1612005nd-cp-cua-chinh-phu-ve-viec-quy-dinh-chi-tiet-va-huong-dan-thi-hanh-mot-so-dieu-cua-luat-ban-hanh-van-ban-quy-pham-phap-luat-va-luat-sua-doi-bo-sung-mot-so-dieu-cua-luat-ban-hanh-van-ban-quy-pham-phap-luat-unknown",
+    "question": "Điều 12 của 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP THI HÀNH LUẬT BAN HÀNH VĂN BẢN QUY PHẠM PHÁP LUẬT (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 28 của 53/2005/NĐ-CP",
-      "Điều 52 của 53/2005/NĐ-CP",
-      "Điều 34 của 53/2005/NĐ-CP",
-      "Điều 27 của 53/2005/NĐ-CP"
+      "Điều 18 của 161/2005/NĐ-CP",
+      "Điều 19 của 161/2005/NĐ-CP",
+      "Điều 20 của 161/2005/NĐ-CP",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có"
     ],
-    "answer": "Điều 52 của 53/2005/NĐ-CP"
+    "answer": "Điều 19 của 161/2005/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-2-nghi-dinh-052009nd-cp-nghi-dinh-052009nd-cp-2009-01-19",
-    "refer_uid": "dieu-2-nghi-dinh-052009nd-cp-nghi-dinh-052009nd-cp-2009-01-19",
+    "uid": "bench_2_4_dieu-34-nghi-dinh-362016nd-cp-nghi-dinh-362016nd-cp-ve-quan-ly-trang-thiet-bi-y-te-unknown_dieu-34-nghi-dinh-982021nd-cp-nghi-dinh-982021nd-cp-quan-ly-trang-thiet-bi-y-te-unknown",
+    "refer_uid": "dieu-34-nghi-dinh-362016nd-cp-nghi-dinh-362016nd-cp-ve-quan-ly-trang-thiet-bi-y-te-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-3-luat-452009qh12-luat-452009qh12-2009-11-25",
-    "question": "Điều 3 của 'LUẬT THUẾ TÀI NGUYÊN (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT THI HÀNH PHÁP LỆNH THUẾ TÀI NGUYÊN VÀ PHÁP LỆNH SỬA ĐỔI, BỔ SUNG ĐIỀU 6 PHÁP LỆNH THUẾ TÀI NGUYÊN CHÍNH PHỦ (2009)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-34-nghi-dinh-982021nd-cp-nghi-dinh-982021nd-cp-quan-ly-trang-thiet-bi-y-te-unknown",
+    "question": "Điều 34 của 'NGHỊ ĐỊNH VỀ QUẢN LÝ TRANG THIẾT BỊ Y TẾ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 7 của 05/2009/NĐ-CP",
-      "Điều 3 của 05/2009/NĐ-CP",
-      "Điều 8 của 05/2009/NĐ-CP",
-      "Điều 2 của 05/2009/NĐ-CP"
+      "Điều 32 của 98/2021/NĐ-CP",
+      "Điều 34 của 98/2021/NĐ-CP",
+      "Điều 33 của 98/2021/NĐ-CP",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có"
     ],
-    "answer": "Điều 2 của 05/2009/NĐ-CP"
+    "answer": "Điều 34 của 98/2021/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-4-nghi-dinh-1492003nd-cp-nghi-dinh-1492003nd-cp-2003-12-04",
-    "refer_uid": "dieu-4-nghi-dinh-1492003nd-cp-nghi-dinh-1492003nd-cp-2003-12-04",
+    "uid": "bench_2_4_dieu-31-nghi-dinh-1582016nd-cp-nghi-dinh-1582016nd-cp-huong-dan-luat-khoang-san-unknown_dieu-34-luat-542024qh15-luat-dia-chat-va-khoang-san-2024-so-542024qh15-unknown",
+    "refer_uid": "dieu-31-nghi-dinh-1582016nd-cp-nghi-dinh-1582016nd-cp-huong-dan-luat-khoang-san-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-6-luat-272008qh12-luat-272008qh12-2008-11-14",
-    "question": "Điều 6 của 'LUẬT THUẾ TIÊU THỤ ĐẶC BIỆT (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH CỦA CHÍNH PHỦ SỐ 149/2003/NĐ-CP NGÀY 04 THÁNG 12 NĂM 2003 QUY ĐỊNH CHI TIẾT THI HÀNH LUẬT THUẾ TIÊU THỤ ĐẶC BIỆT VÀ LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT THUẾ TIÊU THỤ ĐẶC BIỆT CHÍNH PHỦ (2003)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-34-luat-542024qh15-luat-dia-chat-va-khoang-san-2024-so-542024qh15-unknown",
+    "question": "Điều 31 của 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT THI HÀNH MỘT SỐ ĐIỀU CỦA LUẬT KHOÁNG SẢN (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 8 của 149/2003/NĐ-CP",
-      "Điều 4 của 149/2003/NĐ-CP",
-      "Điều 6 của 149/2003/NĐ-CP",
-      "Điều 3 của 149/2003/NĐ-CP"
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 33 của 54/2024/QH15",
+      "Điều 36 của 54/2024/QH15",
+      "Điều 34 của 54/2024/QH15"
     ],
-    "answer": "Điều 4 của 149/2003/NĐ-CP"
+    "answer": "Điều 34 của 54/2024/QH15"
   },
   {
-    "uid": "bench_2_4_dieu-65-nghi-dinh-762000nd-cp-nghi-dinh-762000nd-cp-2000-12-15",
-    "refer_uid": "dieu-65-nghi-dinh-762000nd-cp-nghi-dinh-762000nd-cp-2000-12-15",
+    "uid": "bench_2_4_dieu-15-luat-272001qh10-luat-phong-chay-chua-chay-2001-so-272001qh10-unknown_dieu-12-nghi-dinh-792014nd-cp-nghi-dinh-792014nd-cp-huong-dan-luat-phong-chay-va-chua-chay-unknown",
+    "refer_uid": "dieu-15-luat-272001qh10-luat-phong-chay-chua-chay-2001-so-272001qh10-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-67-luat-602010qh12-luat-602010qh12-2010-11-17",
-    "question": "Điều 67 của 'LUẬT KHOÁNG SẢN C (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH CỦA CHÍNH PHỦ SỐ 76/2000/NĐ-CP NGÀY 15 THÁNG 12 NĂM 2000 QUY ĐỊNH CHI TIẾT VIỆC THI HÀNH LUẬT KHOÁNG SẢN (SỬA ĐỔI) CHÍNH PHỦ (2000)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-12-nghi-dinh-792014nd-cp-nghi-dinh-792014nd-cp-huong-dan-luat-phong-chay-va-chua-chay-unknown",
+    "question": "Điều 15 của 'LUẬT CỦA QUỐC HỘI NƯỚC CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM SỐ 27/2001/QH10 VỀ PHÒNG CHÁY VÀ CHỮA CHÁY (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 65 của 76/2000/NĐ-CP",
-      "Điều 1 của 76/2000/NĐ-CP",
-      "Điều 9 của 76/2000/NĐ-CP",
-      "Điều 28 của 76/2000/NĐ-CP"
+      "Điều 11 của 79/2014/NĐ-CP",
+      "Điều 14 của 79/2014/NĐ-CP",
+      "Điều 12 của 79/2014/NĐ-CP",
+      "Điều 13 của 79/2014/NĐ-CP"
     ],
-    "answer": "Điều 65 của 76/2000/NĐ-CP"
+    "answer": "Điều 12 của 79/2014/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-3-nghi-dinh-922017nd-cp-nghi-dinh-922017nd-cp-2017-08-07",
-    "refer_uid": "dieu-3-nghi-dinh-922017nd-cp-nghi-dinh-922017nd-cp-2017-08-07",
+    "uid": "bench_2_4_dieu-17-nghi-dinh-162020nd-cp-nghi-dinh-162020nd-cp-huong-dan-thi-hanh-luat-quoc-tich-viet-nam-unknown_dieu-23-nghi-dinh-1912025nd-cp-nghi-dinh-1912025nd-cp-quy-dinh-chi-tiet-thi-hanh-luat-quoc-tich-viet-nam-unknown",
+    "refer_uid": "dieu-17-nghi-dinh-162020nd-cp-nghi-dinh-162020nd-cp-huong-dan-thi-hanh-luat-quoc-tich-viet-nam-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-8-nghi-dinh-242014nd-cp-nghi-dinh-242014nd-cp-2014-04-04",
-    "question": "Điều 8 của 'NGHỊ ĐỊNH QUY ĐỊNH TỔ CHỨC CÁC CƠ QUAN CHUYÊN MÔN THUỘC ỦY BAN NHÂN DÂN TỈNH, THÀNH PHỐ TRỰC THUỘC TRUNG ƯƠNG (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA CÁC NGHỊ ĐỊNH LIÊN QUAN ĐẾN KIỂM SOÁT THỦ TỤC HÀNH CHÍNH (2017)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-23-nghi-dinh-1912025nd-cp-nghi-dinh-1912025nd-cp-quy-dinh-chi-tiet-thi-hanh-luat-quoc-tich-viet-nam-unknown",
+    "question": "Điều 17 của 'NGHỊ ĐỊNH Quy định chi tiết một số điều và biện pháp thi hành Luật Quốc tịch Việt Nam --------------- (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 4 của 92/2017/NĐ-CP",
-      "Điều 3 của 92/2017/NĐ-CP",
-      "Điều 7 của 92/2017/NĐ-CP",
-      "Điều 5 của 92/2017/NĐ-CP"
+      "Điều 22 của 191/2025/NĐ-CP",
+      "Điều 23 của 191/2025/NĐ-CP",
+      "Điều 21 của 191/2025/NĐ-CP",
+      "Điều 25 của 191/2025/NĐ-CP"
     ],
-    "answer": "Điều 3 của 92/2017/NĐ-CP"
+    "answer": "Điều 23 của 191/2025/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-8-nghi-dinh-532005nd-cp-nghi-dinh-532005nd-cp-2005-04-19",
-    "refer_uid": "dieu-8-nghi-dinh-532005nd-cp-nghi-dinh-532005nd-cp-2005-04-19",
+    "uid": "bench_2_4_dieu-353-bo-luat-1012015qh13-bo-luat-to-tung-hinh-su-2015-so-1012015qh13-unknown_dieu-307-bo-luat-922015qh13-bo-luat-to-tung-dan-su-2015-so-922015qh13-unknown",
+    "refer_uid": "dieu-353-bo-luat-1012015qh13-bo-luat-to-tung-hinh-su-2015-so-1012015qh13-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-30-luat-022011qh13-luat-022011qh13-2011-11-11",
-    "question": "Điều 30 của 'LUẬT KHIẾU NẠI (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT VÀ HƯỚNG DẪN THI HÀNH LUẬT KHIẾU NẠI, TỐ CÁO VÀ LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT KHIẾU NẠI, TỐ CÁO CHÍNH PHỦ (2005)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-307-bo-luat-922015qh13-bo-luat-to-tung-dan-su-2015-so-922015qh13-unknown",
+    "question": "Điều 353 của 'BỘ LUẬT TỐ TỤNG HÌNH SỰ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 34 của 53/2005/NĐ-CP",
-      "Điều 27 của 53/2005/NĐ-CP",
-      "Điều 28 của 53/2005/NĐ-CP",
-      "Điều 8 của 53/2005/NĐ-CP"
+      "Điều 309 của 92/2015/QH13",
+      "Điều 307 của 92/2015/QH13",
+      "Điều 305 của 92/2015/QH13",
+      "Điều 306 của 92/2015/QH13"
     ],
-    "answer": "Điều 8 của 53/2005/NĐ-CP"
+    "answer": "Điều 307 của 92/2015/QH13"
   },
   {
-    "uid": "bench_2_4_dieu-5-nghi-dinh-1582003nd-cp-nghi-dinh-1582003nd-cp-2003-12-10",
-    "refer_uid": "dieu-5-nghi-dinh-1582003nd-cp-nghi-dinh-1582003nd-cp-2003-12-10",
+    "uid": "bench_2_4_dieu-48-nghi-dinh-1382020nd-cp-nghi-dinh-1382020nd-cp-ve-tuyen-dung-su-dung-va-quan-ly-cong-chuc-unknown_dieu-35-nghi-dinh-1702025nd-cp-nghi-dinh-1702025nd-cp-ve-tuyen-dung-su-dung-va-quan-ly-cong-chuc-unknown",
+    "refer_uid": "dieu-48-nghi-dinh-1382020nd-cp-nghi-dinh-1382020nd-cp-ve-tuyen-dung-su-dung-va-quan-ly-cong-chuc-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-7-luat-132008qh12-luat-132008qh12-2008-06-03",
-    "question": "Điều 7 của 'LUẬT THUẾ GIÁ TRỊ GIA TĂNG (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH CỦA CHÍNH PHỦ SỐ 158/2003/NĐ-CP NGÀY 10 THÁNG 12 NĂM 2003 QUY ĐỊNH CHI TIẾT THI HÀNH LUẬT THUẾ GIÁ TRỊ GIA TĂNG VÀ LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT THUẾ GIÁ TRỊ GIA TĂNG CHÍNH PHỦ (2003)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-35-nghi-dinh-1702025nd-cp-nghi-dinh-1702025nd-cp-ve-tuyen-dung-su-dung-va-quan-ly-cong-chuc-unknown",
+    "question": "Điều 48 của 'NGHỊ ĐỊNH Quy định về tuyển dụng, sử dụng và quản lý công chức __________ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 22 của 158/2003/NĐ-CP",
-      "Điều 1 của 158/2003/NĐ-CP",
-      "Điều 3 của 158/2003/NĐ-CP",
-      "Điều 5 của 158/2003/NĐ-CP"
+      "Điều 37 của 170/2025/NĐ-CP",
+      "Điều 35 của 170/2025/NĐ-CP",
+      "Điều 33 của 170/2025/NĐ-CP",
+      "Điều 36 của 170/2025/NĐ-CP"
     ],
-    "answer": "Điều 5 của 158/2003/NĐ-CP"
+    "answer": "Điều 35 của 170/2025/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-7-nghi-dinh-681998nd-cp-nghi-dinh-681998nd-cp-1998-09-03",
-    "refer_uid": "dieu-7-nghi-dinh-681998nd-cp-nghi-dinh-681998nd-cp-1998-09-03",
+    "uid": "bench_2_4_dieu-18-nghi-dinh-372015nd-cp-nghi-dinh-372015nd-cp-ve-hop-dong-xay-dung-unknown_dieu-17-nghi-dinh-482010nd-cp-nghi-dinh-482010nd-cp-ve-hop-dong-trong-hoat-dong-xay-dung-unknown",
+    "refer_uid": "dieu-18-nghi-dinh-372015nd-cp-nghi-dinh-372015nd-cp-ve-hop-dong-xay-dung-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-6-nghi-dinh-502010nd-cp-nghi-dinh-502010nd-cp-2010-05-14",
-    "question": "Điều 6 của 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT VÀ HƯỚNG DẪN THI HÀNH MỘT SỐ ĐIỀU CỦA LUẬT THUẾ TÀI NGUYÊN CHÍNH PHỦ (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH CỦA CHÍNH PHỦ SỐ 68/1998/NĐ-CP NGÀY 03 THÁNG 9 NĂM 1998 QUY ĐỊNH CHI TIẾT THI HÀNH PHÁP LỆNH THUẾ TÀI NGUYÊN(SỬA ĐỔI) CHÍNH PHỦ (1998)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-17-nghi-dinh-482010nd-cp-nghi-dinh-482010nd-cp-ve-hop-dong-trong-hoat-dong-xay-dung-unknown",
+    "question": "Điều 18 của 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT VỀ HỢP ĐỒNG XÂY DỰNG (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 7 của 68/1998/NĐ-CP",
-      "Điều 6 của 68/1998/NĐ-CP",
-      "Điều 3 của 68/1998/NĐ-CP",
-      "Điều 4 của 68/1998/NĐ-CP"
+      "Điều 15 của 48/2010/NĐ-CP",
+      "Điều 17 của 48/2010/NĐ-CP",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 16 của 48/2010/NĐ-CP"
     ],
-    "answer": "Điều 7 của 68/1998/NĐ-CP"
+    "answer": "Điều 17 của 48/2010/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-68-nghi-dinh-532005nd-cp-nghi-dinh-532005nd-cp-2005-04-19",
-    "refer_uid": "dieu-68-nghi-dinh-532005nd-cp-nghi-dinh-532005nd-cp-2005-04-19",
+    "uid": "bench_2_4_dieu-55-luat-532010qh12-luat-thi-hanh-an-hinh-su-nam-2010-unknown_dieu-79-luat-412019qh14-luat-thi-hanh-an-hinh-su-2019-so-412019qh14-unknown",
+    "refer_uid": "dieu-55-luat-532010qh12-luat-thi-hanh-an-hinh-su-nam-2010-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-101-luat-091998qh10-luat-091998qh10-1998-12-02",
-    "question": "Điều 101 của 'LUẬT CỦA QUỐC HỘI SỐ 09/1998/QH10 NGÀY 02 THÁNG 12 NĂM 1998 KHIẾU NẠI, TỐ CÁO (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT VÀ HƯỚNG DẪN THI HÀNH LUẬT KHIẾU NẠI, TỐ CÁO VÀ LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT KHIẾU NẠI, TỐ CÁO CHÍNH PHỦ (2005)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-79-luat-412019qh14-luat-thi-hanh-an-hinh-su-2019-so-412019qh14-unknown",
+    "question": "Điều 55 của 'LUẬT THI HÀNH ÁN HÌNH SỰ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 4 của 53/2005/NĐ-CP",
-      "Điều 56 của 53/2005/NĐ-CP",
-      "Điều 68 của 53/2005/NĐ-CP",
-      "Điều 28 của 53/2005/NĐ-CP"
+      "Điều 81 của 41/2019/QH14",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 77 của 41/2019/QH14",
+      "Điều 79 của 41/2019/QH14"
     ],
-    "answer": "Điều 68 của 53/2005/NĐ-CP"
+    "answer": "Điều 79 của 41/2019/QH14"
   },
   {
-    "uid": "bench_2_4_dieu-17-nghi-dinh-652013nd-cp-nghi-dinh-652013nd-cp-2013-06-27",
-    "refer_uid": "dieu-17-nghi-dinh-652013nd-cp-nghi-dinh-652013nd-cp-2013-06-27",
+    "uid": "bench_2_4_dieu-12-nghi-dinh-1562018nd-cp-nghi-dinh-1562018nd-cp-quy-dinh-chi-tiet-thi-hanh-mot-so-dieu-cua-luat-lam-nghiep-unknown_dieu-11-nghi-dinh-532019nd-cp-nghi-dinh-532019nd-cp-huong-dan-lap-va-dieu-chinh-quy-hoach-thuy-loi-unknown",
+    "refer_uid": "dieu-12-nghi-dinh-1562018nd-cp-nghi-dinh-1562018nd-cp-quy-dinh-chi-tiet-thi-hanh-mot-so-dieu-cua-luat-lam-nghiep-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-17-nghi-dinh-1002008nd-cp-nghi-dinh-1002008nd-cp-2008-09-08",
-    "question": "Điều 17 của 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU CỦA LUẬT THUẾ THU NHẬP CÁ NHÂN CHÍNH PHỦ (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU CỦA LUẬT THUẾ THU NHẬP CÁ NHÂN VÀ LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT THUẾ THU NHẬP CÁ NHÂN (2013)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-11-nghi-dinh-532019nd-cp-nghi-dinh-532019nd-cp-huong-dan-lap-va-dieu-chinh-quy-hoach-thuy-loi-unknown",
+    "question": "Điều 12 của 'NGHỊ ĐỊNH Quy định chi tiết thi hành một số điều của Luật Lâm nghiệp (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 6 của 65/2013/NĐ-CP",
-      "Điều 17 của 65/2013/NĐ-CP",
-      "Điều 2 của 65/2013/NĐ-CP",
-      "Điều 3 của 65/2013/NĐ-CP"
+      "Điều 11 của 53/2019/NĐ-CP",
+      "Điều 12 của 53/2019/NĐ-CP",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 10 của 53/2019/NĐ-CP"
     ],
-    "answer": "Điều 17 của 65/2013/NĐ-CP"
+    "answer": "Điều 11 của 53/2019/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-4-nghi-dinh-931998nd-cp-nghi-dinh-931998nd-cp-1998-11-12",
-    "refer_uid": "dieu-4-nghi-dinh-931998nd-cp-nghi-dinh-931998nd-cp-1998-11-12",
+    "uid": "bench_2_4_dieu-77-nghi-dinh-152021nd-cp-nghi-dinh-152021nd-cp-ve-quan-ly-du-an-dau-tu-xay-dung-unknown_dieu-28-nghi-dinh-962024nd-cp-nghi-dinh-962024nd-cp-quy-dinh-chi-tiet-mot-so-dieu-cua-luat-kinh-doanh-bat-dong-san-unknown",
+    "refer_uid": "dieu-77-nghi-dinh-152021nd-cp-nghi-dinh-152021nd-cp-ve-quan-ly-du-an-dau-tu-xay-dung-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-24-nghi-dinh-1152015nd-cp-nghi-dinh-1152015nd-cp-2015-11-11",
-    "question": "Điều 24 của 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU CỦA LUẬT BẢO HIỂM XÃ HỘI VỀ BẢO HIỂM XÃ HỘI BẮT BUỘC (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH CỦA CHÍNH PHỦ SỐ 93/1998/NĐ-CP NGÀY 12 THÁNG 11 NĂM 1998 VỀ VIỆC SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA ĐIỀU LỆ BẢO HIỂM XÃ HỘI BAN HÀNH KÈM THEO NGHỊ ĐỊNH SỐ 12/CP NGÀY 26 THÁNG 1 NĂM 1995 CỦA CHÍNH PHỦ CHÍNH PHỦ (1998)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-28-nghi-dinh-962024nd-cp-nghi-dinh-962024nd-cp-quy-dinh-chi-tiet-mot-so-dieu-cua-luat-kinh-doanh-bat-dong-san-unknown",
+    "question": "Điều 77 của 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT MỘT SỐ NỘI DUNG VỀ QUẢN LÝ DỰ ÁN ĐẦU TƯ XÂY DỰNG __________ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 1 của 93/1998/NĐ-CP",
-      "Điều 5 của 93/1998/NĐ-CP",
-      "Điều 4 của 93/1998/NĐ-CP",
-      "Điều 2 của 93/1998/NĐ-CP"
+      "Điều 28 của 96/2024/NĐ-CP",
+      "Điều 26 của 96/2024/NĐ-CP",
+      "Điều 27 của 96/2024/NĐ-CP",
+      "Điều 29 của 96/2024/NĐ-CP"
     ],
-    "answer": "Điều 4 của 93/1998/NĐ-CP"
+    "answer": "Điều 28 của 96/2024/NĐ-CP"
   },
   {
-    "uid": "bench_2_4_dieu-15-nghi-dinh-1612005nd-cp-nghi-dinh-1612005nd-cp-2005-12-27",
-    "refer_uid": "dieu-15-nghi-dinh-1612005nd-cp-nghi-dinh-1612005nd-cp-2005-12-27",
+    "uid": "bench_2_4_dieu-29-nghi-dinh-1712013nd-cp-nghi-dinh-1712013nd-cp-xu-phat-vphc-giao-thong-duong-bo-va-duong-sat-unknown_dieu-32-nghi-dinh-342010nd-cp-nghi-dinh-342010nd-cp-xu-phat-vphc-linh-vuc-giao-thong-duong-bo-unknown",
+    "refer_uid": "dieu-29-nghi-dinh-1712013nd-cp-nghi-dinh-1712013nd-cp-xu-phat-vphc-giao-thong-duong-bo-va-duong-sat-unknown",
     "refer_type": "article",
-    "original_article_id": "dieu-10-nghi-dinh-242009nd-cp-nghi-dinh-242009nd-cp-2009-03-05",
-    "question": "Điều 10 của 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT VÀ BIỆN PHÁP THI HÀNH LUẬT BAN HÀNH VĂN BẢN QUY PHẠM PHÁP LUẬT CHÍNH PHỦ (không xác định)' đã được sửa đổi, bổ sung bởi điều khoản nào trong 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT VÀ HƯỚNG DẪN THI HÀNH MỘT SỐ ĐIỀU CỦA LUẬT BAN HÀNH VĂN BẢN QUY PHẠM PHÁP LUẬT VÀ LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT BAN HÀNH VĂN BẢN QUY PHẠM PHÁP LUẬT CHÍNH PHỦ (2005)'?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "amendment_article_id": "dieu-32-nghi-dinh-342010nd-cp-nghi-dinh-342010nd-cp-xu-phat-vphc-linh-vuc-giao-thong-duong-bo-unknown",
+    "question": "Điều 29 của 'NGHỊ ĐỊNH QUY ĐỊNH XỬ PHẠT VI PHẠM HÀNH CHÍNH TRONG LĨNH VỰC GIAO THÔNG ĐƯỜNG BỘ VÀ ĐƯỜNG SẮT (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
     "options": [
-      "Điều 13 của 161/2005/NĐ-CP",
-      "Điều 2 của 161/2005/NĐ-CP",
-      "Điều 15 của 161/2005/NĐ-CP",
-      "Điều 1 của 161/2005/NĐ-CP"
+      "Điều 33 của 34/2010/NĐ-CP",
+      "Điều 30 của 34/2010/NĐ-CP",
+      "Điều 32 của 34/2010/NĐ-CP",
+      "Điều 34 của 34/2010/NĐ-CP"
     ],
-    "answer": "Điều 15 của 161/2005/NĐ-CP"
+    "answer": "Điều 32 của 34/2010/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-70-nghi-dinh-982020nd-cp-nghi-dinh-982020nd-cp-xu-phat-vi-pham-hanh-chinh-trong-hoat-dong-thuong-mai-unknown_dieu-89-nghi-dinh-1852013nd-cp-nghi-dinh-1852013nd-cp-xu-phat-vphc-trong-san-xuat-buon-ban-hang-gia-unknown",
+    "refer_uid": "dieu-70-nghi-dinh-982020nd-cp-nghi-dinh-982020nd-cp-xu-phat-vi-pham-hanh-chinh-trong-hoat-dong-thuong-mai-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-89-nghi-dinh-1852013nd-cp-nghi-dinh-1852013nd-cp-xu-phat-vphc-trong-san-xuat-buon-ban-hang-gia-unknown",
+    "question": "Điều 70 của 'NGHỊ ĐỊNH Quy định xử phạt vi phạm hành chính trong hoạt động thương mại, sản xuất, buôn bán hàng giả, hàng cấm và bảo vệ quyền lợi người tiêu dùng _________ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 87 của 185/2013/NĐ-CP",
+      "Điều 89 của 185/2013/NĐ-CP",
+      "Điều 88 của 185/2013/NĐ-CP"
+    ],
+    "answer": "Điều 89 của 185/2013/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-78-luat-222008qh12-luat-can-bo-cong-chuc-2008-so-222008qh12-unknown_dieu-7-nghi-dinh-1722025nd-cp-nghi-dinh-1722025nd-cp-ve-xu-ly-ky-luat-can-bo-cong-chuc-unknown",
+    "refer_uid": "dieu-78-luat-222008qh12-luat-can-bo-cong-chuc-2008-so-222008qh12-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-7-nghi-dinh-1722025nd-cp-nghi-dinh-1722025nd-cp-ve-xu-ly-ky-luat-can-bo-cong-chuc-unknown",
+    "question": "Điều 78 của 'LUẬT CÁN BỘ, CÔNG CHỨC CỦA QUỐC HỘI KHÓA XII, KỲ HỌP THỨ TƯ SỐ 22/2008/QH12 NGÀY 13 THÁNG 11 NĂM 2008 (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 8 của 172/2025/NĐ-CP",
+      "Điều 5 của 172/2025/NĐ-CP",
+      "Điều 6 của 172/2025/NĐ-CP",
+      "Điều 7 của 172/2025/NĐ-CP"
+    ],
+    "answer": "Điều 7 của 172/2025/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-13-nghi-dinh-502020nd-cp-nghi-dinh-502020nd-cp-tiep-nhan-quan-ly-va-su-dung-vien-tro-quoc-te-khan-cap-unknown_dieu-62-nghi-dinh-532026nd-cp-nghi-dinh-532026nd-cp-sua-doi-bo-sung-linh-vuc-de-dieu-va-phong-chong-thien-tai-unknown",
+    "refer_uid": "dieu-13-nghi-dinh-502020nd-cp-nghi-dinh-502020nd-cp-tiep-nhan-quan-ly-va-su-dung-vien-tro-quoc-te-khan-cap-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-62-nghi-dinh-532026nd-cp-nghi-dinh-532026nd-cp-sua-doi-bo-sung-linh-vuc-de-dieu-va-phong-chong-thien-tai-unknown",
+    "question": "Điều 13 của 'NGHỊ ĐỊNH Quy định về tiếp nhận, quản lý và sử dụng viện trợ quốc tế khẩn cấp để cứu trợ và khắc phục hậu quả thiên tai ____________________ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 62 của 53/2026/NĐ-CP",
+      "Điều 63 của 53/2026/NĐ-CP",
+      "Điều 61 của 53/2026/NĐ-CP",
+      "Điều 60 của 53/2026/NĐ-CP"
+    ],
+    "answer": "Điều 62 của 53/2026/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-12-nghi-dinh-1262018nd-cp-nghi-dinh-1262018nd-cp-ve-thanh-lap-va-hoat-dong-cua-co-so-van-hoa-nuoc-ngoai-tai-viet-nam-unknown_dieu-2-nghi-dinh-892023nd-cp-nghi-dinh-892023nd-cp-sua-doi-nd-722016-ve-nhiep-anh-va-nd-1262018-ve-thanh-lap-co-so-van-hoa-nuoc-ngoai-unknown",
+    "refer_uid": "dieu-12-nghi-dinh-1262018nd-cp-nghi-dinh-1262018nd-cp-ve-thanh-lap-va-hoat-dong-cua-co-so-van-hoa-nuoc-ngoai-tai-viet-nam-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-2-nghi-dinh-892023nd-cp-nghi-dinh-892023nd-cp-sua-doi-nd-722016-ve-nhiep-anh-va-nd-1262018-ve-thanh-lap-co-so-van-hoa-nuoc-ngoai-unknown",
+    "question": "Điều 12 của 'NGHỊ ĐỊNH QUY ĐỊNH VỀ THÀNH LẬP VÀ HOẠT ĐỘNG CỦA CƠ SỞ VĂN HÓA NƯỚC NGOÀI TẠI VIỆT NAM (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 1 của 89/2023/NĐ-CP",
+      "Điều 3 của 89/2023/NĐ-CP",
+      "Điều 2 của 89/2023/NĐ-CP"
+    ],
+    "answer": "Điều 2 của 89/2023/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-2-nghi-dinh-1372013nd-cp-nghi-dinh-1372013nd-cp-huong-dan-luat-dien-luc-unknown_dieu-2-nghi-dinh-562025nd-cp-nghi-dinh-562025nd-cp-quy-dinh-luat-dien-luc-ve-quy-hoach-phat-trien-dien-luc-unknown",
+    "refer_uid": "dieu-2-nghi-dinh-1372013nd-cp-nghi-dinh-1372013nd-cp-huong-dan-luat-dien-luc-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-2-nghi-dinh-562025nd-cp-nghi-dinh-562025nd-cp-quy-dinh-luat-dien-luc-ve-quy-hoach-phat-trien-dien-luc-unknown",
+    "question": "Điều 2 của 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT THI HÀNH MỘT SỐ ĐIỀU CỦA LUẬT ĐIỆN LỰC VÀ LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT ĐIỆN LỰC (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 5 của 56/2025/NĐ-CP",
+      "Điều 4 của 56/2025/NĐ-CP",
+      "Điều 2 của 56/2025/NĐ-CP"
+    ],
+    "answer": "Điều 2 của 56/2025/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-3-nghi-dinh-992007nd-cp-nghi-dinh-992007nd-cp-cua-chinh-phu-ve-viec-quan-ly-chi-phi-dau-tu-xay-dung-cong-trinh-unknown_dieu-3-nghi-dinh-1122009nd-cp-nghi-dinh-1122009nd-cp-cua-chinh-phu-ve-quan-ly-chi-phi-dau-tu-xay-dung-cong-trinh-unknown",
+    "refer_uid": "dieu-3-nghi-dinh-992007nd-cp-nghi-dinh-992007nd-cp-cua-chinh-phu-ve-viec-quan-ly-chi-phi-dau-tu-xay-dung-cong-trinh-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-3-nghi-dinh-1122009nd-cp-nghi-dinh-1122009nd-cp-cua-chinh-phu-ve-quan-ly-chi-phi-dau-tu-xay-dung-cong-trinh-unknown",
+    "question": "Điều 3 của 'NGHỊ ĐỊNH CỦA CHÍNH PHỦ SỐ 99/2007/NĐ-CP NGÀY 13 THÁNG 06 NĂM 2007 VỀ QUẢN LÝ CHI PHÍ ĐẦU TƯ XÂY DỰNG CÔNG TRÌNH CHÍNH PHỦ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 3 của 112/2009/NĐ-CP",
+      "Điều 1 của 112/2009/NĐ-CP",
+      "Điều 5 của 112/2009/NĐ-CP",
+      "Điều 2 của 112/2009/NĐ-CP"
+    ],
+    "answer": "Điều 3 của 112/2009/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-93-luat-492014qh13-luat-dau-tu-cong-nam-2014-unknown_dieu-82-luat-392019qh14-luat-dau-tu-cong-2019-so-392019qh14-unknown",
+    "refer_uid": "dieu-93-luat-492014qh13-luat-dau-tu-cong-nam-2014-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-82-luat-392019qh14-luat-dau-tu-cong-2019-so-392019qh14-unknown",
+    "question": "Điều 93 của 'LUẬT ĐẦU TƯ CÔNG (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 83 của 39/2019/QH14",
+      "Điều 82 của 39/2019/QH14",
+      "Điều 81 của 39/2019/QH14",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có"
+    ],
+    "answer": "Điều 82 của 39/2019/QH14"
+  },
+  {
+    "uid": "bench_2_4_dieu-12-nghi-dinh-312013nd-cp-nghi-dinh-312013nd-cp-huong-dan-phap-lenh-uu-dai-nguoi-co-cong-voi-cach-mang-unknown_dieu-161-nghi-dinh-1312021nd-cp-nghi-dinh-1312021nd-cp-quy-dinh-chi-tiet-phap-lenh-uu-dai-nguoi-co-cong-voi-cach-mang-unknown",
+    "refer_uid": "dieu-12-nghi-dinh-312013nd-cp-nghi-dinh-312013nd-cp-huong-dan-phap-lenh-uu-dai-nguoi-co-cong-voi-cach-mang-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-161-nghi-dinh-1312021nd-cp-nghi-dinh-1312021nd-cp-quy-dinh-chi-tiet-phap-lenh-uu-dai-nguoi-co-cong-voi-cach-mang-unknown",
+    "question": "Điều 12 của 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT, HƯỚNG DẪN THI HÀNH MỘT SỐ ĐIỀU CỦA PHÁP LỆNH ƯU ĐÃI NGƯỜI CÓ CÔNG VỚI CÁCH MẠNG (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 161 của 131/2021/NĐ-CP",
+      "Điều 159 của 131/2021/NĐ-CP",
+      "Điều 163 của 131/2021/NĐ-CP",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có"
+    ],
+    "answer": "Điều 161 của 131/2021/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-9-nghi-dinh-302016nd-cp-nghi-dinh-302016nd-cp-huong-dan-hoat-dong-dau-tu-tu-quy-bhxh-bhyt-unknown_dieu-10-nghi-dinh-2122025nd-cp-nghi-dinh-2122025nd-cp-quy-dinh-chi-tiet-dau-tu-tu-quy-bao-hiem-xa-hoi-y-te-that-nghiep-unknown",
+    "refer_uid": "dieu-9-nghi-dinh-302016nd-cp-nghi-dinh-302016nd-cp-huong-dan-hoat-dong-dau-tu-tu-quy-bhxh-bhyt-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-10-nghi-dinh-2122025nd-cp-nghi-dinh-2122025nd-cp-quy-dinh-chi-tiet-dau-tu-tu-quy-bao-hiem-xa-hoi-y-te-that-nghiep-unknown",
+    "question": "Điều 9 của 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT HOẠT ĐỘNG ĐẦU TƯ TỪ QUỸ BẢO HIỂM XÃ HỘI, BẢO HIỂM Y TẾ, BẢO HIỂM THẤT NGHIỆP (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 9 của 212/2025/NĐ-CP",
+      "Điều 8 của 212/2025/NĐ-CP",
+      "Điều 11 của 212/2025/NĐ-CP",
+      "Điều 10 của 212/2025/NĐ-CP"
+    ],
+    "answer": "Điều 10 của 212/2025/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-48-luat-382024qh15-luat-cong-nghiep-quoc-phong-an-ninh-va-dong-vien-cong-nghiep-2024-so-382024qh15-unknown_dieu-19-nghi-dinh-992025nd-cp-nghi-dinh-992025nd-cp-quy-dinh-chi-tiet-luat-cong-nghiep-quoc-phong-an-ninh-va-dong-vien-cong-nghiep-unknown",
+    "refer_uid": "dieu-48-luat-382024qh15-luat-cong-nghiep-quoc-phong-an-ninh-va-dong-vien-cong-nghiep-2024-so-382024qh15-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-19-nghi-dinh-992025nd-cp-nghi-dinh-992025nd-cp-quy-dinh-chi-tiet-luat-cong-nghiep-quoc-phong-an-ninh-va-dong-vien-cong-nghiep-unknown",
+    "question": "Điều 48 của 'LUẬT Công nghiệp quốc phòng, an ninh và động viên công nghiệp ________________ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 19 của 99/2025/NĐ-CP",
+      "Điều 18 của 99/2025/NĐ-CP",
+      "Điều 17 của 99/2025/NĐ-CP",
+      "Điều 20 của 99/2025/NĐ-CP"
+    ],
+    "answer": "Điều 19 của 99/2025/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-7-nghi-dinh-652013nd-cp-nghi-dinh-652013nd-cp-huong-dan-luat-thue-thu-nhap-ca-nhan-unknown_dieu-7-nghi-dinh-122015nd-cp-nghi-dinh-122015nd-cp-huong-dan-luat-sua-doi-bo-sung-mot-so-dieu-cua-cac-luat-ve-thue-unknown",
+    "refer_uid": "dieu-7-nghi-dinh-652013nd-cp-nghi-dinh-652013nd-cp-huong-dan-luat-thue-thu-nhap-ca-nhan-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-7-nghi-dinh-122015nd-cp-nghi-dinh-122015nd-cp-huong-dan-luat-sua-doi-bo-sung-mot-so-dieu-cua-cac-luat-ve-thue-unknown",
+    "question": "Điều 7 của 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU CỦA LUẬT THUẾ THU NHẬP CÁ NHÂN VÀ LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT THUẾ THU NHẬP CÁ NHÂN (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 5 của 12/2015/NĐ-CP",
+      "Điều 3 của 12/2015/NĐ-CP",
+      "Điều 6 của 12/2015/NĐ-CP",
+      "Điều 7 của 12/2015/NĐ-CP"
+    ],
+    "answer": "Điều 7 của 12/2015/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-14-hien-phap-248-lct-hien-phap-nam-1980-unknown_dieu-14-hien-phap-68-lcthdnn8-hien-phap-nam-1992-unknown",
+    "refer_uid": "dieu-14-hien-phap-248-lct-hien-phap-nam-1980-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-14-hien-phap-68-lcthdnn8-hien-phap-nam-1992-unknown",
+    "question": "Điều 14 của 'HIẾN PHÁP NƯỚC CỘNG HOÀ XÃ HỘI CHỦ NGHĨA VIỆT NAM NĂM 1980 LỜI NÓI ĐẦU (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 15 của 68-LCT/HĐNN8",
+      "Điều 13 của 68-LCT/HĐNN8",
+      "Điều 14 của 68-LCT/HĐNN8",
+      "Điều 12 của 68-LCT/HĐNN8"
+    ],
+    "answer": "Điều 14 của 68-LCT/HĐNN8"
+  },
+  {
+    "uid": "bench_2_4_dieu-12-nghi-dinh-892020nd-cp-nghi-dinh-892020nd-cp-chuc-nang-nhiem-vu-co-cau-to-chuc-bao-hiem-xa-hoi-viet-nam-unknown_dieu-6-nghi-dinh-1972025nd-cp-nghi-dinh-1972025nd-cp-ve-hoi-dong-quan-ly-bao-hiem-xa-hoi-unknown",
+    "refer_uid": "dieu-12-nghi-dinh-892020nd-cp-nghi-dinh-892020nd-cp-chuc-nang-nhiem-vu-co-cau-to-chuc-bao-hiem-xa-hoi-viet-nam-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-6-nghi-dinh-1972025nd-cp-nghi-dinh-1972025nd-cp-ve-hoi-dong-quan-ly-bao-hiem-xa-hoi-unknown",
+    "question": "Điều 12 của 'NGHỊ ĐỊNH Quy định chức năng, nhiệm vụ, quyền hạn và cơ cấu tổ chức của Bảo hiểm xã hội Việt Nam ___________ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 4 của 197/2025/NĐ-CP",
+      "Điều 8 của 197/2025/NĐ-CP",
+      "Điều 6 của 197/2025/NĐ-CP",
+      "Điều 7 của 197/2025/NĐ-CP"
+    ],
+    "answer": "Điều 6 của 197/2025/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-11-luat-672011qh12-luat-kiem-toan-doc-lap-2011-so-672011qh12-unknown_dieu-3-luat-562024qh15-luat-sua-doi-bo-sung-luat-chung-khoan-luat-ke-toan-luat-kiem-toan-doc-lap-luat-ngan-sach-nha-nuoc-luat-quan-ly-su-dung-tai-san-cong-luat-quan-ly-thue-luat-thue-thu-nhap-ca-nhan-luat-du-tru-quoc-gia-luat-xu-ly-vi-pham-hanh-chinh-so-562024qh15-unknown",
+    "refer_uid": "dieu-11-luat-672011qh12-luat-kiem-toan-doc-lap-2011-so-672011qh12-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-3-luat-562024qh15-luat-sua-doi-bo-sung-luat-chung-khoan-luat-ke-toan-luat-kiem-toan-doc-lap-luat-ngan-sach-nha-nuoc-luat-quan-ly-su-dung-tai-san-cong-luat-quan-ly-thue-luat-thue-thu-nhap-ca-nhan-luat-du-tru-quoc-gia-luat-xu-ly-vi-pham-hanh-chinh-so-562024qh15-unknown",
+    "question": "Điều 11 của 'LUẬT KIỂM TOÁN ĐỘC LẬP (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 3 của 56/2024/QH15",
+      "Điều 5 của 56/2024/QH15",
+      "Điều 4 của 56/2024/QH15",
+      "Điều 2 của 56/2024/QH15"
+    ],
+    "answer": "Điều 3 của 56/2024/QH15"
+  },
+  {
+    "uid": "bench_2_4_dieu-17-luat-112012qh13-luat-gia-nam-2012-so-112012qh13-unknown_dieu-19-luat-162023qh15-luat-gia-2023-so-162023qh15-unknown",
+    "refer_uid": "dieu-17-luat-112012qh13-luat-gia-nam-2012-so-112012qh13-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-19-luat-162023qh15-luat-gia-2023-so-162023qh15-unknown",
+    "question": "Điều 17 của 'LUẬT GIÁ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 21 của 16/2023/QH15",
+      "Điều 17 của 16/2023/QH15",
+      "Điều 19 của 16/2023/QH15"
+    ],
+    "answer": "Điều 19 của 16/2023/QH15"
+  },
+  {
+    "uid": "bench_2_4_dieu-176-nghi-dinh-342016nd-cp-nghi-dinh-342016nd-cp-huong-dan-luat-ban-hanh-van-ban-quy-pham-phap-luat-unknown_dieu-57-nghi-dinh-792025nd-cp-nghi-dinh-792025nd-cp-kiem-tra-ra-soat-he-thong-hoa-va-xu-ly-van-ban-quy-pham-phap-luat-unknown",
+    "refer_uid": "dieu-176-nghi-dinh-342016nd-cp-nghi-dinh-342016nd-cp-huong-dan-luat-ban-hanh-van-ban-quy-pham-phap-luat-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-57-nghi-dinh-792025nd-cp-nghi-dinh-792025nd-cp-kiem-tra-ra-soat-he-thong-hoa-va-xu-ly-van-ban-quy-pham-phap-luat-unknown",
+    "question": "Điều 176 của 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT MỘT SỐ ĐIỀU VÀ BIỆN PHÁP THI HÀNH LUẬT BAN HÀNH VĂN BẢN QUY PHẠM PHÁP LUẬT (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 55 của 79/2025/NĐ-CP",
+      "Điều 57 của 79/2025/NĐ-CP",
+      "Điều 56 của 79/2025/NĐ-CP",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có"
+    ],
+    "answer": "Điều 57 của 79/2025/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-27-nghi-dinh-982020nd-cp-nghi-dinh-982020nd-cp-xu-phat-vi-pham-hanh-chinh-trong-hoat-dong-thuong-mai-unknown_dieu-12-nghi-dinh-1022026nd-cp-nghi-dinh-1022026nd-cp-sua-doi-nghi-dinh-752019-ve-xu-phat-vi-pham-canh-tranh-unknown",
+    "refer_uid": "dieu-27-nghi-dinh-982020nd-cp-nghi-dinh-982020nd-cp-xu-phat-vi-pham-hanh-chinh-trong-hoat-dong-thuong-mai-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-12-nghi-dinh-1022026nd-cp-nghi-dinh-1022026nd-cp-sua-doi-nghi-dinh-752019-ve-xu-phat-vi-pham-canh-tranh-unknown",
+    "question": "Điều 27 của 'NGHỊ ĐỊNH Quy định xử phạt vi phạm hành chính trong hoạt động thương mại, sản xuất, buôn bán hàng giả, hàng cấm và bảo vệ quyền lợi người tiêu dùng _________ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 12 của 102/2026/NĐ-CP",
+      "Điều 10 của 102/2026/NĐ-CP",
+      "Điều 11 của 102/2026/NĐ-CP",
+      "Điều 14 của 102/2026/NĐ-CP"
+    ],
+    "answer": "Điều 12 của 102/2026/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-18-luat-662011qh12-luat-phong-chong-mua-ban-nguoi-2011-so-662011qh12-unknown_dieu-21-luat-532024qh15-luat-phong-chong-mua-ban-nguoi-2024-so-532024qh15-unknown",
+    "refer_uid": "dieu-18-luat-662011qh12-luat-phong-chong-mua-ban-nguoi-2011-so-662011qh12-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-21-luat-532024qh15-luat-phong-chong-mua-ban-nguoi-2024-so-532024qh15-unknown",
+    "question": "Điều 18 của 'LUẬT PHÒNG, CHỐNG MUA BÁN NGƯỜI (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 19 của 53/2024/QH15",
+      "Điều 21 của 53/2024/QH15",
+      "Điều 20 của 53/2024/QH15",
+      "Điều 23 của 53/2024/QH15"
+    ],
+    "answer": "Điều 21 của 53/2024/QH15"
+  },
+  {
+    "uid": "bench_2_4_dieu-13-nghi-dinh-692021nd-cp-nghi-dinh-692021nd-cp-ve-cai-tao-xay-dung-lai-nha-chung-cu-unknown_dieu-6-nghi-dinh-982024nd-cp-nghi-dinh-982024nd-cp-quy-dinh-chi-tiet-mot-so-dieu-cua-luat-nha-o-ve-cai-tao-xay-dung-lai-nha-chung-cu-unknown",
+    "refer_uid": "dieu-13-nghi-dinh-692021nd-cp-nghi-dinh-692021nd-cp-ve-cai-tao-xay-dung-lai-nha-chung-cu-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-6-nghi-dinh-982024nd-cp-nghi-dinh-982024nd-cp-quy-dinh-chi-tiet-mot-so-dieu-cua-luat-nha-o-ve-cai-tao-xay-dung-lai-nha-chung-cu-unknown",
+    "question": "Điều 13 của 'NGHỊ ĐỊNH Về cải tạo, xây dựng lại nhà chung cư ___________ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 6 của 98/2024/NĐ-CP",
+      "Điều 7 của 98/2024/NĐ-CP",
+      "Điều 5 của 98/2024/NĐ-CP",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có"
+    ],
+    "answer": "Điều 6 của 98/2024/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-28-nghi-dinh-1072016nd-cp-nghi-dinh-1072016nd-cp-dieu-kien-kinh-doanh-dich-vu-danh-gia-su-phu-hop-unknown_dieu-55-nghi-dinh-1332025nd-cp-nghi-dinh-1332025nd-cp-ve-phan-quyen-phan-cap-quan-ly-nha-nuoc-bo-khoa-hoc-va-cong-nghe-unknown",
+    "refer_uid": "dieu-28-nghi-dinh-1072016nd-cp-nghi-dinh-1072016nd-cp-dieu-kien-kinh-doanh-dich-vu-danh-gia-su-phu-hop-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-55-nghi-dinh-1332025nd-cp-nghi-dinh-1332025nd-cp-ve-phan-quyen-phan-cap-quan-ly-nha-nuoc-bo-khoa-hoc-va-cong-nghe-unknown",
+    "question": "Điều 28 của 'NGHỊ ĐỊNH QUY ĐỊNH VỀ ĐIỀU KIỆN KINH DOANH DỊCH VỤ ĐÁNH GIÁ SỰ PHÙ HỢP (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 54 của 133/2025/NĐ-CP",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 55 của 133/2025/NĐ-CP",
+      "Điều 53 của 133/2025/NĐ-CP"
+    ],
+    "answer": "Điều 55 của 133/2025/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-26-nghi-dinh-252020nd-cp-nghi-dinh-252020nd-cp-huong-dan-luat-dau-thau-ve-lua-chon-nha-dau-tu-unknown_dieu-35-nghi-dinh-232024nd-cp-nghi-dinh-232024nd-cp-quy-dinh-chi-tiet-luat-dau-thau-ve-lua-chon-nha-dau-tu-voi-du-an-phai-to-chuc-dau-thau-unknown",
+    "refer_uid": "dieu-26-nghi-dinh-252020nd-cp-nghi-dinh-252020nd-cp-huong-dan-luat-dau-thau-ve-lua-chon-nha-dau-tu-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-35-nghi-dinh-232024nd-cp-nghi-dinh-232024nd-cp-quy-dinh-chi-tiet-luat-dau-thau-ve-lua-chon-nha-dau-tu-voi-du-an-phai-to-chuc-dau-thau-unknown",
+    "question": "Điều 26 của 'NGHỊ ĐỊNH Quy định chi tiết thi hành một số điều của Luật Đấu thầu về lựa chọn nhà đầu tư ------------------- (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 35 của 23/2024/NĐ-CP",
+      "Điều 37 của 23/2024/NĐ-CP",
+      "Điều 36 của 23/2024/NĐ-CP",
+      "Điều 34 của 23/2024/NĐ-CP"
+    ],
+    "answer": "Điều 35 của 23/2024/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-93-nghi-dinh-152021nd-cp-nghi-dinh-152021nd-cp-ve-quan-ly-du-an-dau-tu-xay-dung-unknown_dieu-87-nghi-dinh-1752024nd-cp-nghi-dinh-1752024nd-cp-quy-dinh-chi-tiet-luat-xay-dung-ve-quan-ly-hoat-dong-xay-dung-unknown",
+    "refer_uid": "dieu-93-nghi-dinh-152021nd-cp-nghi-dinh-152021nd-cp-ve-quan-ly-du-an-dau-tu-xay-dung-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-87-nghi-dinh-1752024nd-cp-nghi-dinh-1752024nd-cp-quy-dinh-chi-tiet-luat-xay-dung-ve-quan-ly-hoat-dong-xay-dung-unknown",
+    "question": "Điều 93 của 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT MỘT SỐ NỘI DUNG VỀ QUẢN LÝ DỰ ÁN ĐẦU TƯ XÂY DỰNG __________ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 87 của 175/2024/NĐ-CP",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 85 của 175/2024/NĐ-CP",
+      "Điều 88 của 175/2024/NĐ-CP"
+    ],
+    "answer": "Điều 87 của 175/2024/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-7-luat-122012qh13-luat-cong-doan-2012-so-122012qh13-unknown_dieu-24-luat-502024qh15-luat-cong-doan-2024-so-502024qh15-unknown",
+    "refer_uid": "dieu-7-luat-122012qh13-luat-cong-doan-2012-so-122012qh13-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-24-luat-502024qh15-luat-cong-doan-2024-so-502024qh15-unknown",
+    "question": "Điều 7 của 'LUẬT CÔNG ĐOÀN (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 26 của 50/2024/QH15",
+      "Điều 25 của 50/2024/QH15",
+      "Điều 23 của 50/2024/QH15",
+      "Điều 24 của 50/2024/QH15"
+    ],
+    "answer": "Điều 24 của 50/2024/QH15"
+  },
+  {
+    "uid": "bench_2_4_dieu-20-nghi-dinh-992015nd-cp-nghi-dinh-992015nd-cp-huong-dan-luat-nha-o-unknown_dieu-20-nghi-dinh-952024nd-cp-nghi-dinh-952024nd-cp-quy-dinh-chi-tiet-mot-so-dieu-cua-luat-nha-o-unknown",
+    "refer_uid": "dieu-20-nghi-dinh-992015nd-cp-nghi-dinh-992015nd-cp-huong-dan-luat-nha-o-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-20-nghi-dinh-952024nd-cp-nghi-dinh-952024nd-cp-quy-dinh-chi-tiet-mot-so-dieu-cua-luat-nha-o-unknown",
+    "question": "Điều 20 của 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT VÀ HƯỚNG DẪN THI HÀNH MỘT SỐ ĐIỀU CỦA LUẬT NHÀ Ở (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 22 của 95/2024/NĐ-CP",
+      "Điều 20 của 95/2024/NĐ-CP",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 21 của 95/2024/NĐ-CP"
+    ],
+    "answer": "Điều 20 của 95/2024/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-368-bo-luat-1012015qh13-bo-luat-to-tung-hinh-su-2015-so-1012015qh13-unknown_dieu-58-luat-412019qh14-luat-thi-hanh-an-hinh-su-2019-so-412019qh14-unknown",
+    "refer_uid": "dieu-368-bo-luat-1012015qh13-bo-luat-to-tung-hinh-su-2015-so-1012015qh13-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-58-luat-412019qh14-luat-thi-hanh-an-hinh-su-2019-so-412019qh14-unknown",
+    "question": "Điều 368 của 'BỘ LUẬT TỐ TỤNG HÌNH SỰ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 59 của 41/2019/QH14",
+      "Điều 60 của 41/2019/QH14",
+      "Điều 58 của 41/2019/QH14",
+      "Điều 56 của 41/2019/QH14"
+    ],
+    "answer": "Điều 58 của 41/2019/QH14"
+  },
+  {
+    "uid": "bench_2_4_dieu-11-nghi-dinh-1372013nd-cp-nghi-dinh-1372013nd-cp-huong-dan-luat-dien-luc-unknown_dieu-6-nghi-dinh-182025nd-cp-nghi-dinh-182025nd-cp-quy-dinh-mot-so-dieu-cua-luat-dien-luc-lien-quan-den-hoat-dong-mua-ban-dien-va-tinh-huong-bao-dam-cung-cap-dien-unknown",
+    "refer_uid": "dieu-11-nghi-dinh-1372013nd-cp-nghi-dinh-1372013nd-cp-huong-dan-luat-dien-luc-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-6-nghi-dinh-182025nd-cp-nghi-dinh-182025nd-cp-quy-dinh-mot-so-dieu-cua-luat-dien-luc-lien-quan-den-hoat-dong-mua-ban-dien-va-tinh-huong-bao-dam-cung-cap-dien-unknown",
+    "question": "Điều 11 của 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT THI HÀNH MỘT SỐ ĐIỀU CỦA LUẬT ĐIỆN LỰC VÀ LUẬT SỬA ĐỔI, BỔ SUNG MỘT SỐ ĐIỀU CỦA LUẬT ĐIỆN LỰC (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 6 của 18/2025/NĐ-CP",
+      "Điều 5 của 18/2025/NĐ-CP",
+      "Điều 7 của 18/2025/NĐ-CP",
+      "Điều 4 của 18/2025/NĐ-CP"
+    ],
+    "answer": "Điều 6 của 18/2025/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-1-nghi-dinh-862010nd-cp-nghi-dinh-862010nd-cp-xu-phat-vi-pham-hanh-chinh-trong-linh-vuc-bhxh-unknown_dieu-1-nghi-dinh-1352007nd-cp-nghi-dinh-1352007nd-cp-cua-chinh-phu-ve-viec-quy-dinh-xu-phat-vi-pham-hanh-chinh-trong-linh-vuc-bao-hiem-xa-hoi-unknown",
+    "refer_uid": "dieu-1-nghi-dinh-862010nd-cp-nghi-dinh-862010nd-cp-xu-phat-vi-pham-hanh-chinh-trong-linh-vuc-bhxh-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-1-nghi-dinh-1352007nd-cp-nghi-dinh-1352007nd-cp-cua-chinh-phu-ve-viec-quy-dinh-xu-phat-vi-pham-hanh-chinh-trong-linh-vuc-bao-hiem-xa-hoi-unknown",
+    "question": "Điều 1 của 'NGHỊ ĐỊNH QUY ĐỊNH XỬ PHẠT VI PHẠM HÀNH CHÍNH TRONG LĨNH VỰC BẢO HIỂM XÃ HỘI -------------------- CHÍNH PHỦ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 4 của 135/2007/NĐ-CP",
+      "Điều 5 của 135/2007/NĐ-CP",
+      "Điều 1 của 135/2007/NĐ-CP"
+    ],
+    "answer": "Điều 1 của 135/2007/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-14-nghi-dinh-642002nd-cp-nghi-dinh-642002nd-cp-cua-chinh-phu-ve-viec-chuyen-doanh-nghiep-nha-nuoc-thanh-cong-ty-co-phan-unknown_dieu-7-nghi-dinh-592011nd-cp-nghi-dinh-592011nd-cp-ve-chuyen-doanh-nghiep-100-von-nha-nuoc-unknown",
+    "refer_uid": "dieu-14-nghi-dinh-642002nd-cp-nghi-dinh-642002nd-cp-cua-chinh-phu-ve-viec-chuyen-doanh-nghiep-nha-nuoc-thanh-cong-ty-co-phan-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-7-nghi-dinh-592011nd-cp-nghi-dinh-592011nd-cp-ve-chuyen-doanh-nghiep-100-von-nha-nuoc-unknown",
+    "question": "Điều 14 của 'NGHỊ ĐỊNH CỦA CHÍNH PHỦ SỐ 64/2002/NĐ-CP NGÀY 19 THÁNG 6 NĂM 2002 VỀ VIỆC CHUYỂN DOANH NGHIỆP NHÀ NƯỚC THÀNH CÔNG TY CỔ PHẦN CHÍNH PHỦ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 5 của 59/2011/NĐ-CP",
+      "Điều 7 của 59/2011/NĐ-CP",
+      "Điều 8 của 59/2011/NĐ-CP"
+    ],
+    "answer": "Điều 7 của 59/2011/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-62-luat-532014qh13-luat-cong-chung-2014-so-532014qh13-unknown_dieu-66-luat-462024qh15-luat-cong-chung-2024-so-462024qh15-unknown",
+    "refer_uid": "dieu-62-luat-532014qh13-luat-cong-chung-2014-so-532014qh13-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-66-luat-462024qh15-luat-cong-chung-2024-so-462024qh15-unknown",
+    "question": "Điều 62 của 'LUẬT CÔNG CHỨNG (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 67 của 46/2024/QH15",
+      "Điều 68 của 46/2024/QH15",
+      "Điều 64 của 46/2024/QH15",
+      "Điều 66 của 46/2024/QH15"
+    ],
+    "answer": "Điều 66 của 46/2024/QH15"
+  },
+  {
+    "uid": "bench_2_4_dieu-46-luat-492014qh13-luat-dau-tu-cong-nam-2014-unknown_dieu-37-luat-392019qh14-luat-dau-tu-cong-2019-so-392019qh14-unknown",
+    "refer_uid": "dieu-46-luat-492014qh13-luat-dau-tu-cong-nam-2014-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-37-luat-392019qh14-luat-dau-tu-cong-2019-so-392019qh14-unknown",
+    "question": "Điều 46 của 'LUẬT ĐẦU TƯ CÔNG (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 38 của 39/2019/QH14",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 36 của 39/2019/QH14",
+      "Điều 37 của 39/2019/QH14"
+    ],
+    "answer": "Điều 37 của 39/2019/QH14"
+  },
+  {
+    "uid": "bench_2_4_dieu-79-luat-392019qh14-luat-dau-tu-cong-2019-so-392019qh14-unknown_dieu-79-luat-582024qh15-luat-dau-tu-cong-2024-so-582024qh15-unknown",
+    "refer_uid": "dieu-79-luat-392019qh14-luat-dau-tu-cong-2019-so-392019qh14-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-79-luat-582024qh15-luat-dau-tu-cong-2024-so-582024qh15-unknown",
+    "question": "Điều 79 của 'LUẬT ĐẦU TƯ CÔNG (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 79 của 58/2024/QH15",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 80 của 58/2024/QH15",
+      "Điều 81 của 58/2024/QH15"
+    ],
+    "answer": "Điều 79 của 58/2024/QH15"
+  },
+  {
+    "uid": "bench_2_4_dieu-65-luat-202008qh12-luat-da-dang-sinh-hoc-2008-so-202008qh12-unknown_dieu-5-nghi-dinh-692010nd-cp-nghi-dinh-692010nd-cp-an-toan-sinh-hoc-doi-voi-sinh-vat-bien-doi-gen-unknown",
+    "refer_uid": "dieu-65-luat-202008qh12-luat-da-dang-sinh-hoc-2008-so-202008qh12-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-5-nghi-dinh-692010nd-cp-nghi-dinh-692010nd-cp-an-toan-sinh-hoc-doi-voi-sinh-vat-bien-doi-gen-unknown",
+    "question": "Điều 65 của 'LUẬT ĐA DẠNG SINH HỌC CỦA QUỐC HỘI KHÓA XII, KỲ THỨ TƯ SỐ 20/2008/QH12 QUA NGÀY 13 THÁNG 11 NĂM 2008 (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 3 của 69/2010/NĐ-CP",
+      "Điều 6 của 69/2010/NĐ-CP",
+      "Điều 7 của 69/2010/NĐ-CP",
+      "Điều 5 của 69/2010/NĐ-CP"
+    ],
+    "answer": "Điều 5 của 69/2010/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-6-nghi-dinh-902006nd-cp-nghi-dinh-902006nd-cp-cua-chinh-phu-ve-viec-quy-dinh-chi-tiet-va-huong-dan-thi-hanh-luat-nha-o-unknown_dieu-6-nghi-dinh-712010nd-cp-nghi-dinh-712010nd-cp-huong-dan-luat-nha-o-unknown",
+    "refer_uid": "dieu-6-nghi-dinh-902006nd-cp-nghi-dinh-902006nd-cp-cua-chinh-phu-ve-viec-quy-dinh-chi-tiet-va-huong-dan-thi-hanh-luat-nha-o-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-6-nghi-dinh-712010nd-cp-nghi-dinh-712010nd-cp-huong-dan-luat-nha-o-unknown",
+    "question": "Điều 6 của 'NGHỊ ĐỊNH CỦA CHÍNH PHỦ SỐ 90/2006/NĐ-CP NGÀY 06 THÁNG 9 NĂM 2006 QUY ĐỊNH CHI TIẾT VÀ HƯỚNG DẪN THI HÀNH LUẬT NHÀ Ở CHÍNH PHỦ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 5 của 71/2010/NĐ-CP",
+      "Điều 8 của 71/2010/NĐ-CP",
+      "Điều 6 của 71/2010/NĐ-CP",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có"
+    ],
+    "answer": "Điều 6 của 71/2010/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-38-nghi-dinh-382021nd-cp-nghi-dinh-382021nd-cp-xu-phat-vi-pham-hanh-chinh-linh-vuc-van-hoa-quang-cao-unknown_dieu-58-nghi-dinh-872026nd-cp-nghi-dinh-872026nd-cp-xu-phat-vi-pham-hanh-chinh-trong-van-hoa-va-quang-cao-unknown",
+    "refer_uid": "dieu-38-nghi-dinh-382021nd-cp-nghi-dinh-382021nd-cp-xu-phat-vi-pham-hanh-chinh-linh-vuc-van-hoa-quang-cao-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-58-nghi-dinh-872026nd-cp-nghi-dinh-872026nd-cp-xu-phat-vi-pham-hanh-chinh-trong-van-hoa-va-quang-cao-unknown",
+    "question": "Điều 38 của 'NGHỊ ĐỊNH Quy định xử phạt vi phạm hành chính trong lĩnh vực văn hoá và quảng cáo ________________ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 56 của 87/2026/NĐ-CP",
+      "Điều 58 của 87/2026/NĐ-CP",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 59 của 87/2026/NĐ-CP"
+    ],
+    "answer": "Điều 58 của 87/2026/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-60-nghi-dinh-1182015nd-cp-nghi-dinh-1182015nd-cp-huong-dan-luat-dau-tu-unknown_dieu-126-nghi-dinh-312021nd-cp-nghi-dinh-312021nd-cp-huong-dan-thi-hanh-luat-dau-tu-unknown",
+    "refer_uid": "dieu-60-nghi-dinh-1182015nd-cp-nghi-dinh-1182015nd-cp-huong-dan-luat-dau-tu-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-126-nghi-dinh-312021nd-cp-nghi-dinh-312021nd-cp-huong-dan-thi-hanh-luat-dau-tu-unknown",
+    "question": "Điều 60 của 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT VÀ HƯỚNG DẪN THI HÀNH MỘT SỐ ĐIỀU CỦA LUẬT ĐẦU TƯ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 125 của 31/2021/NĐ-CP",
+      "Điều 127 của 31/2021/NĐ-CP",
+      "Điều 128 của 31/2021/NĐ-CP",
+      "Điều 126 của 31/2021/NĐ-CP"
+    ],
+    "answer": "Điều 126 của 31/2021/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-2-luat-622014qh13-luat-to-chuc-toa-an-nhan-dan-2014-so-622014qh13-unknown_dieu-33-luat-342024qh15-luat-to-chuc-toa-an-nhan-dan-2024-so-342024qh15-unknown",
+    "refer_uid": "dieu-2-luat-622014qh13-luat-to-chuc-toa-an-nhan-dan-2014-so-622014qh13-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-33-luat-342024qh15-luat-to-chuc-toa-an-nhan-dan-2024-so-342024qh15-unknown",
+    "question": "Điều 2 của 'LUẬT TỔ CHỨC TÒA ÁN NHÂN DÂN (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 34 của 34/2024/QH15",
+      "Điều 35 của 34/2024/QH15",
+      "Điều 33 của 34/2024/QH15",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có"
+    ],
+    "answer": "Điều 33 của 34/2024/QH15"
+  },
+  {
+    "uid": "bench_2_4_dieu-11-nghi-dinh-602014nd-cp-nghi-dinh-602014nd-cp-ve-hoat-dong-in-unknown_dieu-4-nghi-dinh-722022nd-cp-nghi-dinh-722022nd-cp-sua-doi-nghi-dinh-602014nd-cp-va-nghi-dinh-252018nd-cp-ve-hoat-dong-in-unknown",
+    "refer_uid": "dieu-11-nghi-dinh-602014nd-cp-nghi-dinh-602014nd-cp-ve-hoat-dong-in-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-4-nghi-dinh-722022nd-cp-nghi-dinh-722022nd-cp-sua-doi-nghi-dinh-602014nd-cp-va-nghi-dinh-252018nd-cp-ve-hoat-dong-in-unknown",
+    "question": "Điều 11 của 'NGHỊ ĐỊNH QUY ĐỊNH VỀ HOẠT ĐỘNG IN (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 4 của 72/2022/NĐ-CP",
+      "Điều 3 của 72/2022/NĐ-CP",
+      "Điều 2 của 72/2022/NĐ-CP"
+    ],
+    "answer": "Điều 4 của 72/2022/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-35-bo-luat-452019qh14-bo-luat-lao-dong-2019-so-452019qh14-unknown_dieu-7-nghi-dinh-1452020nd-cp-nghi-dinh-1452020nd-cp-huong-dan-bo-luat-lao-dong-ve-dieu-kien-lao-dong-va-quan-he-lao-dong-unknown",
+    "refer_uid": "dieu-35-bo-luat-452019qh14-bo-luat-lao-dong-2019-so-452019qh14-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-7-nghi-dinh-1452020nd-cp-nghi-dinh-1452020nd-cp-huong-dan-bo-luat-lao-dong-ve-dieu-kien-lao-dong-va-quan-he-lao-dong-unknown",
+    "question": "Điều 35 của 'BỘ LUẬT LAO ĐỘNG (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 7 của 145/2020/NĐ-CP",
+      "Điều 6 của 145/2020/NĐ-CP",
+      "Điều 9 của 145/2020/NĐ-CP",
+      "Điều 8 của 145/2020/NĐ-CP"
+    ],
+    "answer": "Điều 7 của 145/2020/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-3-nghi-dinh-1132007nd-cp-nghi-dinh-1132007nd-cp-huong-dan-thi-hanh-mot-so-dieu-cua-luat-de-dieu-unknown_dieu-30-nghi-dinh-532026nd-cp-nghi-dinh-532026nd-cp-sua-doi-bo-sung-linh-vuc-de-dieu-va-phong-chong-thien-tai-unknown",
+    "refer_uid": "dieu-3-nghi-dinh-1132007nd-cp-nghi-dinh-1132007nd-cp-huong-dan-thi-hanh-mot-so-dieu-cua-luat-de-dieu-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-30-nghi-dinh-532026nd-cp-nghi-dinh-532026nd-cp-sua-doi-bo-sung-linh-vuc-de-dieu-va-phong-chong-thien-tai-unknown",
+    "question": "Điều 3 của 'NGHỊ ĐỊNH CỦA CHÍNH PHỦ SỐ 113/2007/NĐ-CP NGÀY 28 THÁNG 06 NĂM 2007 QUY ĐỊNH CHI TIẾT VÀ HƯỚNG DẪN THI HÀNH MỘT SỐ ĐIỀU CỦA LUẬT ĐÊ ĐIỀU CHÍNH PHỦ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 30 của 53/2026/NĐ-CP",
+      "Điều 31 của 53/2026/NĐ-CP",
+      "Điều 29 của 53/2026/NĐ-CP"
+    ],
+    "answer": "Điều 30 của 53/2026/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-2-nghi-dinh-362020nd-cp-nghi-dinh-362020nd-cp-xu-phat-vi-pham-hanh-chinh-linh-vuc-khoang-san-unknown_dieu-3-nghi-dinh-2902025nd-cp-nghi-dinh-2902025nd-cp-ve-xu-phat-vi-pham-hanh-chinh-trong-tai-nguyen-nuoc-unknown",
+    "refer_uid": "dieu-2-nghi-dinh-362020nd-cp-nghi-dinh-362020nd-cp-xu-phat-vi-pham-hanh-chinh-linh-vuc-khoang-san-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-3-nghi-dinh-2902025nd-cp-nghi-dinh-2902025nd-cp-ve-xu-phat-vi-pham-hanh-chinh-trong-tai-nguyen-nuoc-unknown",
+    "question": "Điều 2 của 'NGHỊ ĐỊNH Quy định về xử phạt vi phạm hành chính trong lĩnh vực tài nguyên nước và khoáng sản _________________ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 1 của 290/2025/NĐ-CP",
+      "Điều 3 của 290/2025/NĐ-CP",
+      "Điều 5 của 290/2025/NĐ-CP",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có"
+    ],
+    "answer": "Điều 3 của 290/2025/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-31-luat-252008qh12-luat-bao-hiem-y-te-2008-so-252008qh12-unknown_dieu-57-nghi-dinh-1882025nd-cp-nghi-dinh-1882025nd-cp-huong-dan-thi-hanh-luat-bao-hiem-y-te-unknown",
+    "refer_uid": "dieu-31-luat-252008qh12-luat-bao-hiem-y-te-2008-so-252008qh12-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-57-nghi-dinh-1882025nd-cp-nghi-dinh-1882025nd-cp-huong-dan-thi-hanh-luat-bao-hiem-y-te-unknown",
+    "question": "Điều 31 của 'LUẬT BẢO HIỂM Y TẾ CỦA QUỐC HỘI KHÓA XII, KỲ HỌP THỨ TƯ SỐ 25/2008/QH12 NGÀY 14 THÁNG 11 NĂM 2008 (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 57 của 188/2025/NĐ-CP",
+      "Điều 58 của 188/2025/NĐ-CP",
+      "Điều 59 của 188/2025/NĐ-CP",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có"
+    ],
+    "answer": "Điều 57 của 188/2025/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-112-luat-512014qh13-luat-pha-san-2014-so-512014qh13-unknown_dieu-67-luat-1422025qh15-luat-phuc-hoi-pha-san-2025-so-1422025qh15-unknown",
+    "refer_uid": "dieu-112-luat-512014qh13-luat-pha-san-2014-so-512014qh13-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-67-luat-1422025qh15-luat-phuc-hoi-pha-san-2025-so-1422025qh15-unknown",
+    "question": "Điều 112 của 'LUẬT PHÁ SẢN (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 65 của 142/2025/QH15",
+      "Điều 66 của 142/2025/QH15",
+      "Điều 67 của 142/2025/QH15"
+    ],
+    "answer": "Điều 67 của 142/2025/QH15"
+  },
+  {
+    "uid": "bench_2_4_dieu-18-nghi-dinh-692021nd-cp-nghi-dinh-692021nd-cp-ve-cai-tao-xay-dung-lai-nha-chung-cu-unknown_dieu-29-nghi-dinh-542026nd-cp-nghi-dinh-542026nd-cp-sua-doi-bo-sung-nghi-dinh-ve-nha-o-kinh-doanh-bat-dong-san-unknown",
+    "refer_uid": "dieu-18-nghi-dinh-692021nd-cp-nghi-dinh-692021nd-cp-ve-cai-tao-xay-dung-lai-nha-chung-cu-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-29-nghi-dinh-542026nd-cp-nghi-dinh-542026nd-cp-sua-doi-bo-sung-nghi-dinh-ve-nha-o-kinh-doanh-bat-dong-san-unknown",
+    "question": "Điều 18 của 'NGHỊ ĐỊNH Về cải tạo, xây dựng lại nhà chung cư ___________ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 27 của 54/2026/NĐ-CP",
+      "Điều 29 của 54/2026/NĐ-CP",
+      "Điều 28 của 54/2026/NĐ-CP",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có"
+    ],
+    "answer": "Điều 29 của 54/2026/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-20-nghi-dinh-1172020nd-cp-nghi-dinh-1172020nd-cp-xu-phat-vi-pham-hanh-chinh-linh-vuc-y-te-unknown_dieu-18-nghi-dinh-1762013nd-cp-nghi-dinh-1762013nd-cp-ve-xu-phat-hanh-chinh-trong-linh-vuc-y-te-unknown",
+    "refer_uid": "dieu-20-nghi-dinh-1172020nd-cp-nghi-dinh-1172020nd-cp-xu-phat-vi-pham-hanh-chinh-linh-vuc-y-te-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-18-nghi-dinh-1762013nd-cp-nghi-dinh-1762013nd-cp-ve-xu-phat-hanh-chinh-trong-linh-vuc-y-te-unknown",
+    "question": "Điều 20 của 'NGHỊ ĐỊNH Quy định xử phạt vi phạm hành chính trong lĩnh vực y tế ___________ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 20 của 176/2013/NĐ-CP",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 16 của 176/2013/NĐ-CP",
+      "Điều 18 của 176/2013/NĐ-CP"
+    ],
+    "answer": "Điều 18 của 176/2013/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-87-nghi-dinh-982020nd-cp-nghi-dinh-982020nd-cp-xu-phat-vi-pham-hanh-chinh-trong-hoat-dong-thuong-mai-unknown_dieu-103-nghi-dinh-1852013nd-cp-nghi-dinh-1852013nd-cp-xu-phat-vphc-trong-san-xuat-buon-ban-hang-gia-unknown",
+    "refer_uid": "dieu-87-nghi-dinh-982020nd-cp-nghi-dinh-982020nd-cp-xu-phat-vi-pham-hanh-chinh-trong-hoat-dong-thuong-mai-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-103-nghi-dinh-1852013nd-cp-nghi-dinh-1852013nd-cp-xu-phat-vphc-trong-san-xuat-buon-ban-hang-gia-unknown",
+    "question": "Điều 87 của 'NGHỊ ĐỊNH Quy định xử phạt vi phạm hành chính trong hoạt động thương mại, sản xuất, buôn bán hàng giả, hàng cấm và bảo vệ quyền lợi người tiêu dùng _________ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 103 của 185/2013/NĐ-CP",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 102 của 185/2013/NĐ-CP",
+      "Điều 105 của 185/2013/NĐ-CP"
+    ],
+    "answer": "Điều 103 của 185/2013/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-5-nghi-dinh-372016nd-cp-nghi-dinh-372016nd-cp-huong-dan-ve-bao-hiem-tai-nan-lao-dong-unknown_dieu-4-nghi-dinh-882020nd-cp-nghi-dinh-882020nd-cp-huong-dan-ve-bao-hiem-tai-nan-lao-dong-unknown",
+    "refer_uid": "dieu-5-nghi-dinh-372016nd-cp-nghi-dinh-372016nd-cp-huong-dan-ve-bao-hiem-tai-nan-lao-dong-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-4-nghi-dinh-882020nd-cp-nghi-dinh-882020nd-cp-huong-dan-ve-bao-hiem-tai-nan-lao-dong-unknown",
+    "question": "Điều 5 của 'NGHỊ ĐỊNH QUY ĐỊNH CHI TIẾT VÀ HƯỚNG DẪN THI HÀNH MỘT SỐ ĐIỀU CỦA LUẬT AN TOÀN, VỆ SINH LAO ĐỘNG VỀ BẢO HIỂM TAI NẠN LAO ĐỘNG, BỆNH NGHỀ NGHIỆP BẮT BUỘC (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 6 của 88/2020/NĐ-CP",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 4 của 88/2020/NĐ-CP",
+      "Điều 5 của 88/2020/NĐ-CP"
+    ],
+    "answer": "Điều 4 của 88/2020/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-20-nghi-dinh-572024nd-cp-nghi-dinh-572024nd-cp-quan-ly-hoat-dong-nao-vet-vung-nuoc-cang-bien-vung-nuoc-duong-thuy-noi-dia-unknown_dieu-92-nghi-dinh-142026nd-cp-nghi-dinh-142026nd-cp-sua-doi-bo-sung-cat-giam-thu-tuc-hanh-chinh-xay-dung-unknown",
+    "refer_uid": "dieu-20-nghi-dinh-572024nd-cp-nghi-dinh-572024nd-cp-quan-ly-hoat-dong-nao-vet-vung-nuoc-cang-bien-vung-nuoc-duong-thuy-noi-dia-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-92-nghi-dinh-142026nd-cp-nghi-dinh-142026nd-cp-sua-doi-bo-sung-cat-giam-thu-tuc-hanh-chinh-xay-dung-unknown",
+    "question": "Điều 20 của 'NGHỊ ĐỊNH Về quản lý hoạt động nạo vét trong vùng nước cảng biển và vùng nước đường thủy nội địa ______________________ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 92 của 14/2026/NĐ-CP",
+      "Điều 90 của 14/2026/NĐ-CP",
+      "Điều 93 của 14/2026/NĐ-CP",
+      "Điều 91 của 14/2026/NĐ-CP"
+    ],
+    "answer": "Điều 92 của 14/2026/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-16-nghi-dinh-692021nd-cp-nghi-dinh-692021nd-cp-ve-cai-tao-xay-dung-lai-nha-chung-cu-unknown_dieu-20-nghi-dinh-982024nd-cp-nghi-dinh-982024nd-cp-quy-dinh-chi-tiet-mot-so-dieu-cua-luat-nha-o-ve-cai-tao-xay-dung-lai-nha-chung-cu-unknown",
+    "refer_uid": "dieu-16-nghi-dinh-692021nd-cp-nghi-dinh-692021nd-cp-ve-cai-tao-xay-dung-lai-nha-chung-cu-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-20-nghi-dinh-982024nd-cp-nghi-dinh-982024nd-cp-quy-dinh-chi-tiet-mot-so-dieu-cua-luat-nha-o-ve-cai-tao-xay-dung-lai-nha-chung-cu-unknown",
+    "question": "Điều 16 của 'NGHỊ ĐỊNH Về cải tạo, xây dựng lại nhà chung cư ___________ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 22 của 98/2024/NĐ-CP",
+      "Điều 19 của 98/2024/NĐ-CP",
+      "Điều 20 của 98/2024/NĐ-CP",
+      "Điều 18 của 98/2024/NĐ-CP"
+    ],
+    "answer": "Điều 20 của 98/2024/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-12-nghi-dinh-252020nd-cp-nghi-dinh-252020nd-cp-huong-dan-luat-dau-thau-ve-lua-chon-nha-dau-tu-unknown_dieu-16-nghi-dinh-1152024nd-cp-nghi-dinh-1152024nd-cp-quy-dinh-mot-so-dieu-bien-phap-thi-hanh-luat-dau-thau-lua-chon-nha-dau-tu-thuc-hien-du-an-dau-tu-co-su-dung-dat-unknown",
+    "refer_uid": "dieu-12-nghi-dinh-252020nd-cp-nghi-dinh-252020nd-cp-huong-dan-luat-dau-thau-ve-lua-chon-nha-dau-tu-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-16-nghi-dinh-1152024nd-cp-nghi-dinh-1152024nd-cp-quy-dinh-mot-so-dieu-bien-phap-thi-hanh-luat-dau-thau-lua-chon-nha-dau-tu-thuc-hien-du-an-dau-tu-co-su-dung-dat-unknown",
+    "question": "Điều 12 của 'NGHỊ ĐỊNH Quy định chi tiết thi hành một số điều của Luật Đấu thầu về lựa chọn nhà đầu tư ------------------- (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 14 của 115/2024/NĐ-CP",
+      "Điều 18 của 115/2024/NĐ-CP",
+      "Điều 16 của 115/2024/NĐ-CP",
+      "Điều 17 của 115/2024/NĐ-CP"
+    ],
+    "answer": "Điều 16 của 115/2024/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_4_dieu-40-luat-762015qh13-luat-to-chuc-chinh-phu-2015-so-762015qh13-unknown_dieu-23-luat-632025qh15-luat-to-chuc-chinh-phu-2025-so-632025qh15-unknown",
+    "refer_uid": "dieu-40-luat-762015qh13-luat-to-chuc-chinh-phu-2015-so-762015qh13-unknown",
+    "refer_type": "article",
+    "amendment_article_id": "dieu-23-luat-632025qh15-luat-to-chuc-chinh-phu-2025-so-632025qh15-unknown",
+    "question": "Điều 40 của 'LUẬT TỔ CHỨC CHÍNH PHỦ (không xác định)' được sửa đổi, bổ sung bởi điều khoản nào sau đây?\n\nChọn đáp án đúng (chỉ trả về nội dung đáp án):",
+    "options": [
+      "Điều 25 của 63/2025/QH15",
+      "Điều này chưa được sửa đổi, bổ sung trong dữ liệu hiện có",
+      "Điều 22 của 63/2025/QH15",
+      "Điều 23 của 63/2025/QH15"
+    ],
+    "answer": "Điều 23 của 63/2025/QH15"
   }
 ]

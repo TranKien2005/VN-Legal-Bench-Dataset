@@ -1,0 +1,502 @@
+[
+  {
+    "uid": "bench_2_3_docid_dieu-17-luat-332013qh13-luat-phong-chong-thien-tai-2013-so-332013qh13-unknown",
+    "task_id": "task_2_3",
+    "question_type": "doc_id_from_excerpt",
+    "scoring_method": "doc_id_contains_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "33/2013/QH13",
+    "model_answer": "31/2015/QH13"
+  },
+  {
+    "uid": "bench_2_3_docid_dieu-39-luat-63-lcthdnn8-luat-hang-khong-dan-dung-so-63-lcthdnn8-cua-quoc-hoi-unknown",
+    "task_id": "task_2_3",
+    "question_type": "doc_id_from_excerpt",
+    "scoring_method": "doc_id_contains_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "63-LCT/HĐNN8",
+    "model_answer": "126/QĐ-BC"
+  },
+  {
+    "uid": "bench_2_3_article_dieu-33-nghi-dinh-3662025nd-cp-nghi-dinh-3662025nd-cp-ve-quan-ly-va-dau-tu-von-nha-nuoc-tai-doanh-nghiep-unknown",
+    "task_id": "task_2_3",
+    "question_type": "article_from_excerpt",
+    "scoring_method": "article_contains_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "Điều 33 366/2025/NĐ-CP",
+    "model_answer": "Điều 13 Nghị định 118/2020/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_3_article_dieu-4-luat-13-lcthdnn7-luat-bau-cu-dai-bieu-hoi-dong-nhan-dan-unknown",
+    "task_id": "task_2_3",
+    "question_type": "article_from_excerpt",
+    "scoring_method": "article_contains_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "Điều 4 13-LCT/HĐNN7",
+    "model_answer": "Điều 71 33/2015/QH13"
+  },
+  {
+    "uid": "bench_2_3_effective_nghi-dinh-782019nd-cp-nghi-dinh-782019nd-cp-sua-doi-nghi-dinh-huong-dan-phap-lenh-quan-ly-thi-truong-unknown",
+    "task_id": "task_2_3",
+    "question_type": "effective_date_from_doc_id",
+    "scoring_method": "date_exact_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "10/12/2019",
+    "model_answer": "01/07/2019"
+  },
+  {
+    "uid": "bench_2_3_effective_nghi-dinh-1202020nd-cp-nghi-dinh-1202020nd-cp-thanh-lap-giai-the-don-vi-su-nghiep-cong-lap-unknown",
+    "task_id": "task_2_3",
+    "question_type": "effective_date_from_doc_id",
+    "scoring_method": "date_exact_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "01/12/2020",
+    "model_answer": "01/01/2021"
+  },
+  {
+    "uid": "bench_2_3_effective_nghi-dinh-1472016nd-cp-nghi-dinh-1472016nd-cp-sua-quy-dinh-chinh-sach-chi-tra-dich-vu-moi-truong-rung-unknown",
+    "task_id": "task_2_3",
+    "question_type": "effective_date_from_doc_id",
+    "scoring_method": "date_exact_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "01/01/2017",
+    "model_answer": "01/07/2016"
+  },
+  {
+    "uid": "bench_2_3_signer_nghi-dinh-332002nd-cp-nghi-dinh-332002nd-cp-cua-chinh-phu-quy-dinh-chi-tiet-thi-hanh-phap-lenh-bao-ve-bi-mat-nha-nuoc-unknown",
+    "task_id": "task_2_3",
+    "question_type": "signer_from_doc_id",
+    "scoring_method": "signer_normalized_match",
+    "score": 1.0,
+    "is_correct": true,
+    "gold_answer": "Phan Văn Khải",
+    "model_answer": "Phan Văn Khải"
+  },
+  {
+    "uid": "bench_2_3_docid_dieu-12-luat-322024qh15-luat-cac-to-chuc-tin-dung-2024-so-322024qh15-unknown",
+    "task_id": "task_2_3",
+    "question_type": "doc_id_from_excerpt",
+    "scoring_method": "doc_id_contains_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "32/2024/QH15",
+    "model_answer": "125/2020/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_3_effective_bo-luat-1012015qh13-bo-luat-to-tung-hinh-su-2015-so-1012015qh13-unknown",
+    "task_id": "task_2_3",
+    "question_type": "effective_date_from_doc_id",
+    "scoring_method": "date_exact_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "01/07/2016",
+    "model_answer": "01/07/2015"
+  },
+  {
+    "uid": "bench_2_3_docid_dieu-3-luat-442005qh11-luat-du-lich-nam-2005-unknown",
+    "task_id": "task_2_3",
+    "question_type": "doc_id_from_excerpt",
+    "scoring_method": "doc_id_contains_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "44/2005/QH11",
+    "model_answer": "61/2020/QH14"
+  },
+  {
+    "uid": "bench_2_3_article_dieu-113-luat-512014qh13-luat-pha-san-2014-so-512014qh13-unknown",
+    "task_id": "task_2_3",
+    "question_type": "article_from_excerpt",
+    "scoring_method": "article_contains_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "Điều 113 51/2014/QH13",
+    "model_answer": "Điều 115 91/2014/QH13"
+  },
+  {
+    "uid": "bench_2_3_signer_nghi-dinh-150-hdbt-nghi-dinh-150-hdbt-cua-hoi-dong-bo-truong-ve-nhiem-vu-quyen-han-to-chuc-bo-may-giup-bo-truong-chu-nhiem-uy-ban-nha-nuoc-thu-truong-cac-co-quan-khac-thuoc-hoi-dong-bo-truong-quan-ly-nha-nuoc-unknown",
+    "task_id": "task_2_3",
+    "question_type": "signer_from_doc_id",
+    "scoring_method": "signer_normalized_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "Tố Hữu",
+    "model_answer": "Phan Văn Khải"
+  },
+  {
+    "uid": "bench_2_3_signer_nghi-dinh-1432006nd-cp-nghi-dinh-1432006nd-cp-cua-chinh-phu-ve-viec-dieu-chinh-dia-gioi-hanh-chinh-phuong-quan-thanh-lap-phuong-thuoc-quan-go-vap-quan-12-va-quan-tan-binh-thanh-pho-ho-chi-minh-unknown",
+    "task_id": "task_2_3",
+    "question_type": "signer_from_doc_id",
+    "scoring_method": "signer_normalized_match",
+    "score": 1.0,
+    "is_correct": true,
+    "gold_answer": "Nguyễn Tấn Dũng",
+    "model_answer": "Nguyễn Tấn Dũng"
+  },
+  {
+    "uid": "bench_2_3_article_dieu-39-nghi-dinh-52cp-nghi-dinh-52cp-cua-chinh-phu-phe-chuan-dieu-le-to-chuc-va-hoat-dong-cua-tong-cong-ty-giay-viet-nam-unknown",
+    "task_id": "task_2_3",
+    "question_type": "article_from_excerpt",
+    "scoring_method": "article_contains_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "Điều 39 52/CP",
+    "model_answer": "Điều 5 39/2015/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_3_article_dieu-42-luat-1482025qh15-luat-chuyen-doi-so-2025-so-1482025qh15-unknown",
+    "task_id": "task_2_3",
+    "question_type": "article_from_excerpt",
+    "scoring_method": "article_contains_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "Điều 42 148/2025/QH15",
+    "model_answer": "Điều 3 06/2020/QH14"
+  },
+  {
+    "uid": "bench_2_3_effective_nghi-dinh-1122015nd-cp-nghi-dinh-1122015nd-cp-sua-quy-dinh-co-che-tai-chinh-ngan-sach-voi-ha-noi-unknown",
+    "task_id": "task_2_3",
+    "question_type": "effective_date_from_doc_id",
+    "scoring_method": "date_exact_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "20/12/2015",
+    "model_answer": "01/01/2016"
+  },
+  {
+    "uid": "bench_2_3_signer_nghi-dinh-1062017nd-cp-nghi-dinh-1062017nd-cp-sua-huong-dan-luat-phong-chong-tac-hai-thuoc-la-unknown",
+    "task_id": "task_2_3",
+    "question_type": "signer_from_doc_id",
+    "scoring_method": "signer_normalized_match",
+    "score": 1.0,
+    "is_correct": true,
+    "gold_answer": "Nguyễn Xuân Phúc",
+    "model_answer": "Nguyễn Xuân Phúc"
+  },
+  {
+    "uid": "bench_2_3_article_dieu-90-luat-572014qh13-luat-to-chuc-quoc-hoi-2014-so-572014qh13-unknown",
+    "task_id": "task_2_3",
+    "question_type": "article_from_excerpt",
+    "scoring_method": "article_contains_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "Điều 90 57/2014/QH13",
+    "model_answer": "Điều 6 2013/QH13"
+  },
+  {
+    "uid": "bench_2_3_effective_luat-532005qh11-luat-thanh-nien-nam-2005-so-532005qh11-unknown",
+    "task_id": "task_2_3",
+    "question_type": "effective_date_from_doc_id",
+    "scoring_method": "date_exact_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "01/07/2006",
+    "model_answer": "01/07/2005"
+  },
+  {
+    "uid": "bench_2_3_effective_nghi-dinh-532018nd-cp-nghi-dinh-532018nd-cp-sua-doi-nghi-dinh-582016nd-cp-ve-kd-san-pham-dich-vu-mat-ma-dan-su-va-xuat-khau-nhap-khau-san-pham-mat-ma-dan-su-unknown",
+    "task_id": "task_2_3",
+    "question_type": "effective_date_from_doc_id",
+    "scoring_method": "date_exact_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "16/04/2018",
+    "model_answer": "01/01/2019"
+  },
+  {
+    "uid": "bench_2_3_article_dieu-22-luat-692006qh11-luat-tro-giup-phap-ly-nam-2006-unknown",
+    "task_id": "task_2_3",
+    "question_type": "article_from_excerpt",
+    "scoring_method": "article_contains_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "Điều 22 69/2006/QH11",
+    "model_answer": "Điều 20 71/2005/QH11"
+  },
+  {
+    "uid": "bench_2_3_docid_dieu-84-luat-412005qh11-luat-ky-ket-gia-nhap-va-thuc-hien-dieu-uoc-quoc-te-nam-2005-unknown",
+    "task_id": "task_2_3",
+    "question_type": "doc_id_from_excerpt",
+    "scoring_method": "doc_id_contains_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "41/2005/QH11",
+    "model_answer": "61/2012/QH13"
+  },
+  {
+    "uid": "bench_2_3_signer_nghi-dinh-792021nd-cp-nghi-dinh-792021nd-cp-sua-nghi-dinh-ve-cho-vay-lai-von-vay-oda-vay-uu-dai-nuoc-ngoai-cua-chinh-phu-unknown",
+    "task_id": "task_2_3",
+    "question_type": "signer_from_doc_id",
+    "scoring_method": "signer_normalized_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "Phạm Bình Minh",
+    "model_answer": "Phạm Minh Chính"
+  },
+  {
+    "uid": "bench_2_3_signer_nghi-dinh-072009nd-cp-nghi-dinh-072009nd-cp-cua-chinh-phu-sua-doi-bo-sung-mot-so-dieu-cua-nghi-dinh-so-1602005nd-cp-ngay-27-thang-12-nam-2005-cua-chinh-phu-quy-dinh-chi-tiet-va-huong-dan-thi-hanh-luat-khoang-san-va-luat-sua-doi-bo-sung-mot-so-dieu-cua-luat-khoang-san-unknown",
+    "task_id": "task_2_3",
+    "question_type": "signer_from_doc_id",
+    "scoring_method": "signer_normalized_match",
+    "score": 1.0,
+    "is_correct": true,
+    "gold_answer": "Nguyễn Tấn Dũng",
+    "model_answer": "Nguyễn Tấn Dũng"
+  },
+  {
+    "uid": "bench_2_3_docid_dieu-70-luat-382024qh15-luat-cong-nghiep-quoc-phong-an-ninh-va-dong-vien-cong-nghiep-2024-so-382024qh15-unknown",
+    "task_id": "task_2_3",
+    "question_type": "doc_id_from_excerpt",
+    "scoring_method": "doc_id_contains_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "38/2024/QH15",
+    "model_answer": "33/2013/QH13"
+  },
+  {
+    "uid": "bench_2_3_docid_dieu-10-luat-122022qh15-luat-dau-khi-2022-so-122022qh15-unknown",
+    "task_id": "task_2_3",
+    "question_type": "doc_id_from_excerpt",
+    "scoring_method": "doc_id_contains_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "12/2022/QH15",
+    "model_answer": "38/2015/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_3_effective_nghi-dinh-162007nd-cp-nghi-dinh-162007nd-cp-cua-chinh-phu-quy-dinh-ve-tim-kiem-quy-tap-hai-cot-liet-si-quan-ly-mo-nghia-trang-dai-tuong-niem-bia-ghi-ten-liet-si-unknown",
+    "task_id": "task_2_3",
+    "question_type": "effective_date_from_doc_id",
+    "scoring_method": "date_exact_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "25/02/2007",
+    "model_answer": "01/01/2008"
+  },
+  {
+    "uid": "bench_2_3_article_dieu-23-luat-312018qh14-luat-trong-trot-nam-2018-so-312018qh14-unknown",
+    "task_id": "task_2_3",
+    "question_type": "article_from_excerpt",
+    "scoring_method": "article_contains_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "Điều 23 31/2018/QH14",
+    "model_answer": "Điều 5 38/2015/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_3_docid_dieu-110-luat-702006qh11-luat-chung-khoan-nam-2006-unknown",
+    "task_id": "task_2_3",
+    "question_type": "doc_id_from_excerpt",
+    "scoring_method": "doc_id_contains_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "70/2006/QH11",
+    "model_answer": "125/2015/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_3_signer_nghi-dinh-19cp-nghi-dinh-19cp-cua-chinh-phu-ve-viec-thanh-lap-bao-hiem-xa-hoi-viet-nam-unknown",
+    "task_id": "task_2_3",
+    "question_type": "signer_from_doc_id",
+    "scoring_method": "signer_normalized_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "Võ Văn Kiệt",
+    "model_answer": "Phạm Minh Chính"
+  },
+  {
+    "uid": "bench_2_3_article_dieu-53-luat-522005qh11-luat-bao-ve-moi-truong-nam-2005-unknown",
+    "task_id": "task_2_3",
+    "question_type": "article_from_excerpt",
+    "scoring_method": "article_contains_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "Điều 53 52/2005/QH11",
+    "model_answer": "Điều 5 31/2015/QH13"
+  },
+  {
+    "uid": "bench_2_3_article_dieu-23-luat-1292025qh15-luat-vien-chuc-2025-so-1292025qh15-unknown",
+    "task_id": "task_2_3",
+    "question_type": "article_from_excerpt",
+    "scoring_method": "article_contains_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "Điều 23 129/2025/QH15",
+    "model_answer": "Điều 31 139/2020/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_3_docid_dieu-91-luat-112022qh15-luat-thanh-tra-2022-so-112022qh15-unknown",
+    "task_id": "task_2_3",
+    "question_type": "doc_id_from_excerpt",
+    "scoring_method": "doc_id_contains_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "11/2022/QH15",
+    "model_answer": "119/2015/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_3_effective_nghi-dinh-1152021nd-cp-nghi-dinh-1152021nd-cp-sua-doi-nghi-dinh-082016nd-cp-quy-dinh-so-luong-pho-chu-tich-va-quy-trinh-thu-tuc-bau-cach-chuc-thanh-vien-ubnd-unknown",
+    "task_id": "task_2_3",
+    "question_type": "effective_date_from_doc_id",
+    "scoring_method": "date_exact_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "16/12/2021",
+    "model_answer": "01/07/2021"
+  },
+  {
+    "uid": "bench_2_3_signer_nghi-dinh-1551999nd-cp-nghi-dinh-1551999nd-cp-cua-chinh-phu-ve-phe-chuan-so-don-vi-bau-cu-danh-sach-cac-don-vi-bau-cu-va-so-dai-bieu-duoc-bau-o-moi-don-vi-bau-cu-dai-bieu-hdnd-tinh-cua-tinh-binh-thuan-nhiem-ky-1999-2004-unknown",
+    "task_id": "task_2_3",
+    "question_type": "signer_from_doc_id",
+    "scoring_method": "signer_normalized_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "Nguyễn Tấn Dũng",
+    "model_answer": "Phan Văn Khải"
+  },
+  {
+    "uid": "bench_2_3_effective_nghi-dinh-1462020nd-cp-nghi-dinh-1462020nd-cp-sua-doi-bo-sung-dieu-5-nghi-dinh-202011nd-cp-mien-giam-thue-su-dung-dat-nong-nghiep-unknown",
+    "task_id": "task_2_3",
+    "question_type": "effective_date_from_doc_id",
+    "scoring_method": "date_exact_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "01/01/2021",
+    "model_answer": "01/07/2020"
+  },
+  {
+    "uid": "bench_2_3_docid_dieu-12-luat-58-lcthdnn8-luat-bao-ve-va-phat-trien-rung-unknown",
+    "task_id": "task_2_3",
+    "question_type": "doc_id_from_excerpt",
+    "scoring_method": "doc_id_contains_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "58-LCT/HĐNN8",
+    "model_answer": "31/2009/QH12"
+  },
+  {
+    "uid": "bench_2_3_signer_nghi-dinh-95-cp-nghi-dinh-95-cp-cua-chinh-phu-ve-viec-de-xa-loc-hoa-tiep-tuc-truc-thuoc-thanh-pho-nam-dinh-tinh-nam-dinh-unknown",
+    "task_id": "task_2_3",
+    "question_type": "signer_from_doc_id",
+    "scoring_method": "signer_normalized_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "Võ Văn Kiệt",
+    "model_answer": "Nguyễn Xuân Phúc"
+  },
+  {
+    "uid": "bench_2_3_docid_dieu-57-luat-562005qh11-luat-nha-o-nam-2005-unknown",
+    "task_id": "task_2_3",
+    "question_type": "doc_id_from_excerpt",
+    "scoring_method": "doc_id_contains_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "56/2005/QH11",
+    "model_answer": "65/2014/QH13"
+  },
+  {
+    "uid": "bench_2_3_article_dieu-28-nghi-dinh-082015nd-cp-nghi-dinh-082015nd-cp-huong-dan-luat-hai-quan-unknown",
+    "task_id": "task_2_3",
+    "question_type": "article_from_excerpt",
+    "scoring_method": "article_contains_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "Điều 28 08/2015/NĐ-CP",
+    "model_answer": "Điều 31 54/2019/QH14"
+  },
+  {
+    "uid": "bench_2_3_signer_nghi-dinh-332020nd-cp-nghi-dinh-332020nd-cp-sua-doi-nghi-dinh-huong-dan-luat-thi-hanh-an-dan-su-unknown",
+    "task_id": "task_2_3",
+    "question_type": "signer_from_doc_id",
+    "scoring_method": "signer_normalized_match",
+    "score": 1.0,
+    "is_correct": true,
+    "gold_answer": "Nguyễn Xuân Phúc",
+    "model_answer": "Nguyễn Xuân Phúc"
+  },
+  {
+    "uid": "bench_2_3_signer_nghi-dinh-02nd-cp-nghi-dinh-02nd-cp-cua-chinh-phu-ve-viec-dieu-chinh-dia-gioi-hanh-chinh-xa-thanh-lap-phuong-thuoc-thi-xa-an-khe-huyen-chu-pah-tinh-gia-lai-unknown",
+    "task_id": "task_2_3",
+    "question_type": "signer_from_doc_id",
+    "scoring_method": "signer_normalized_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "Nguyễn Tấn Dũng",
+    "model_answer": "Phan Văn Khải"
+  },
+  {
+    "uid": "bench_2_3_article_dieu-40-luat-662014qh13-luat-kinh-doanh-bat-dong-san-2014-so-662014qh13-unknown",
+    "task_id": "task_2_3",
+    "question_type": "article_from_excerpt",
+    "scoring_method": "article_contains_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "Điều 40 66/2014/QH13",
+    "model_answer": "Điều 5 43/2014/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_3_docid_dieu-10-nghi-dinh-912016nd-cp-nghi-dinh-912016nd-cp-quan-ly-hoa-chat-che-pham-diet-con-trung-diet-khuan-unknown",
+    "task_id": "task_2_3",
+    "question_type": "doc_id_from_excerpt",
+    "scoring_method": "doc_id_contains_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "91/2016/NĐ-CP",
+    "model_answer": "59/2020/QH14"
+  },
+  {
+    "uid": "bench_2_3_docid_dieu-8-nghi-dinh-532022nd-cp-nghi-dinh-532022nd-cp-huong-dan-luat-an-ninh-mang-unknown",
+    "task_id": "task_2_3",
+    "question_type": "doc_id_from_excerpt",
+    "scoring_method": "doc_id_contains_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "53/2022/NĐ-CP",
+    "model_answer": "24/2020/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_3_docid_dieu-18-luat-632006qh11-luat-kinh-doanh-bat-dong-san-nam-2006-unknown",
+    "task_id": "task_2_3",
+    "question_type": "doc_id_from_excerpt",
+    "scoring_method": "doc_id_contains_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "63/2006/QH11",
+    "model_answer": "66/2014/QH13"
+  },
+  {
+    "uid": "bench_2_3_effective_nghi-dinh-502019nd-cp-nghi-dinh-502019nd-cp-cap-chung-chi-hanh-nghe-kham-chua-benh-trong-quan-doi-unknown",
+    "task_id": "task_2_3",
+    "question_type": "effective_date_from_doc_id",
+    "scoring_method": "date_exact_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "24/07/2019",
+    "model_answer": "01/07/2019"
+  },
+  {
+    "uid": "bench_2_3_docid_dieu-36-nghi-dinh-1212005nd-cp-nghi-dinh-1212005nd-cp-cua-chinh-phu-ve-viec-quy-dinh-chi-tiet-va-huong-dan-thi-hanh-mot-so-dieu-cua-luat-thi-dua-khen-thuong-va-luat-sua-doi-bo-sung-mot-so-dieu-cua-luat-thi-dua-khen-thuong-unknown",
+    "task_id": "task_2_3",
+    "question_type": "doc_id_from_excerpt",
+    "scoring_method": "doc_id_contains_match",
+    "score": 0.0,
+    "is_correct": false,
+    "gold_answer": "121/2005/NĐ-CP",
+    "model_answer": "84/2005/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_3_signer_nghi-dinh-142015nd-cp-nghi-dinh-142015nd-cp-huong-dan-luat-duong-sat-unknown",
+    "task_id": "task_2_3",
+    "question_type": "signer_from_doc_id",
+    "scoring_method": "signer_normalized_match",
+    "score": 1.0,
+    "is_correct": true,
+    "gold_answer": "Nguyễn Tấn Dũng",
+    "model_answer": "Nguyễn Tấn Dũng"
+  }
+]

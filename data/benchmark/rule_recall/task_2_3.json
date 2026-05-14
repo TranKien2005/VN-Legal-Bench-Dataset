@@ -1,338 +1,702 @@
 [
   {
-    "uid": "bench_2_3_id_dieu-410-luat-1002015qh13-luat-1002015qh13-2015-11-27",
-    "refer_uid": "dieu-410-luat-1002015qh13-luat-1002015qh13-2015-11-27",
+    "uid": "bench_2_3_docid_dieu-17-luat-332013qh13-luat-phong-chong-thien-tai-2013-so-332013qh13-unknown",
+    "refer_uid": "dieu-17-luat-332013qh13-luat-phong-chong-thien-tai-2013-so-332013qh13-unknown",
     "refer_type": "article",
-    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Tội vi phạm quy định về bảo vệ 1. Người nào không chấp hành nghiêm chỉnh quy định về tuần tra, canh gác, áp tải, hộ tổng thuộc một trong các trường hợp sau đây, thì bị phạt cải tạo không giam giữ đến 03 năm hoặc phạt tù từ 06 tháng đến 05 năm: a) Làm người được bảo vệ, hộ tổng bị tổn thương cơ thể; b) Làm hư hỏng phương tiện kỹ thuật, thiết bị quân sự; c) Làm thiệt hại về tài sản từ 100.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
-    "answer": "100/2015/QH13"
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"1. Hoạt động xác định, đánh giá, phân vùng rủi ro thiên tai; theo dõi, giám sát thiên tai bao gồm: a) Quan trắc, thu thập, cập nhật, theo dõi, giám sát, tổng hợp, xử lý thông tin từ hệ thống quan trắc, xây dựng cơ sở dữ liệu về thiên tai; b) Đánh giá rủi ro thiên tai, phân vùng rủi ro thiên tai; lập bản đồ cảnh báo thiên tai; c) Cung cấp đầy đủ, kịp thời thông tin về thiên tai cho Ban chỉ đạo trung ương về phòng, chống thiên tai , bộ, cơ quan ngang bộ và địa phương phục vụ cho việc chỉ đạo, triển khai hoạt động phòng, chống thiên tai.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản.",
+    "answer": "33/2013/QH13"
   },
   {
-    "uid": "bench_2_3_id_dieu-81-luat-542019qh14-luat-542019qh14-2019-11-26",
-    "refer_uid": "dieu-81-luat-542019qh14-luat-542019qh14-2019-11-26",
+    "uid": "bench_2_3_docid_dieu-39-luat-63-lcthdnn8-luat-hang-khong-dan-dung-so-63-lcthdnn8-cua-quoc-hoi-unknown",
+    "refer_uid": "dieu-39-luat-63-lcthdnn8-luat-hang-khong-dan-dung-so-63-lcthdnn8-cua-quoc-hoi-unknown",
     "refer_type": "article",
-    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"1. Giấy phép thành lập và hoạt động kinh doanh chứng khoán của công ty chứng khoán, công ty quản lý quỹ đầu tư chứng khoán bao gồm các nội dung sau đây: a) Tên công ty; b) Địa chỉ trụ sở chính; c) Nghiệp vụ ki nh doanh; d) Vốn điều lệ; đ) Người đại diện theo pháp luật.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
-    "answer": "54/2019/QH14"
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Hợp đồng lao động thuê nhân viên bay chuyên nghiệp phải có nội dung chủ yếu sau đây: 1- Nội dung công việc và mức lương tối thiểu hàng tháng; mức lương này không được thấp hơn mức lương tối thiểu do pháp luật quy định đối với nhân viên bay chuyên nghiệp; 2- Mức trợ cấp trong trường hợp buộc thôi việc; 3- Các điều kiện chấm dứt hợp đồng lao động trong trường hợp ốm đau, tàn tật hoặc chết; 4- Nơi đến cuối cùng hoặc thời điểm được coi là kết thúc công việc đối với hợp đồng ký kết theo vụ việc; 5- Thời hạn ở nước ngoài, phụ cấp lưu trú, điều kiện nghỉ phép, điều kiện trở về nước nếu có.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản.",
+    "answer": "63-LCT/HĐNN8"
   },
   {
-    "uid": "bench_2_3_id_dieu-62-luat-522005qh11-luat-522005qh11-2005-11-29",
-    "refer_uid": "dieu-62-luat-522005qh11-luat-522005qh11-2005-11-29",
+    "uid": "bench_2_3_article_dieu-33-nghi-dinh-3662025nd-cp-nghi-dinh-3662025nd-cp-ve-quan-ly-va-dau-tu-von-nha-nuoc-tai-doanh-nghiep-unknown",
+    "refer_uid": "dieu-33-nghi-dinh-3662025nd-cp-nghi-dinh-3662025nd-cp-ve-quan-ly-va-dau-tu-von-nha-nuoc-tai-doanh-nghiep-unknown",
     "refer_type": "article",
-    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"1. Việc điều phối hoạt động bảo vệ môi trường nước của lưu vực sông nằm trên địa bàn nhiều tỉnh, thành phố trực thuộc trung ương được thực hiện theo quy định của Thủ tướng Chính phủ.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
-    "answer": "52/2005/QH11"
+    "question": "Đoạn trích dưới đây thuộc điều khoản nào của văn bản pháp luật nào?\n\n\"Thực hiện quyền, trách nhiệm của đại diện chủ sở hữu nhà nước trong việc đầu tư vốn nhà nước vào doanh nghiệp và quản lý vốn nhà nước tại doanh nghiệp theo các nội dung sau: 1. Đối với doanh nghiệp do Nhà nước nắm giữ 100% vốn điều lệ: a) Quyết định hoặc trình Thủ tướng Chính phủ quyết định chủ trương đầu tư vốn nhà nước vào doanh nghiệp theo thẩm quyền quy định tại Nghị định này; quyết định chủ trương giảm vốn điều lệ theo quy định của pháp luật doanh nghiệp đối với các doanh nghiệp thuộc phạm vi quản lý, trừ các doanh nghiệp thuộc danh mục quy định tại Phụ lục I kèm theo Nghị định này ; b) Giao nhiệm vụ và một số chỉ tiêu cơ bản trong chiến lược phát triển, giao chỉ tiêu định hướng cho doanh nghiệp thuộc phạm vi quản lý, trừ các doanh nghiệp thuộc danh mục quy định tại Phụ lục I kèm theo Nghị định này ; c) Báo cáo Thủ tướng Chính phủ có ý kiến chấp thuận về phạm vi đầu tư vốn nhà nước vào doanh nghiệp theo thẩm quyền quy định tại điểm i khoản 1, khoản 2, điểm b khoản 7 Điều 6 ; điểm d khoản 1 Điều 9 ; khoản 2 Điều 12 và khoản 1, khoản 2 Điều 15 Nghị định này.\"\n\nYêu cầu: Trả về theo mẫu 'Điều [số điều] [số hiệu văn bản]'.",
+    "answer": "Điều 33 366/2025/NĐ-CP"
   },
   {
-    "uid": "bench_2_3_id_dieu-13-nghi-dinh-142015nd-cp-nghi-dinh-142015nd-cp-2015-02-13",
-    "refer_uid": "dieu-13-nghi-dinh-142015nd-cp-nghi-dinh-142015nd-cp-2015-02-13",
+    "uid": "bench_2_3_article_dieu-4-luat-13-lcthdnn7-luat-bau-cu-dai-bieu-hoi-dong-nhan-dan-unknown",
+    "refer_uid": "dieu-4-luat-13-lcthdnn7-luat-bau-cu-dai-bieu-hoi-dong-nhan-dan-unknown",
     "refer_type": "article",
-    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Doanh nghiệp kinh doanh sản xuất, lắp ráp, hoán cải, phục hồi phương tiện giao thông đường sắt phải có đủ các điều kiện sau đây: 1. Các điều kiện quy định tại Khoản 2 Điều 8 Nghị định này.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
-    "answer": "14/2015/NĐ-CP"
+    "question": "Đoạn trích dưới đây thuộc điều khoản nào của văn bản pháp luật nào?\n\n\"Cử tri có quyền bãi miễn Đại biểu Hội đồng nhân dân, nếu Đại biểu đó không xứng đáng với sự tín nhiệm của nhân dân.\"\n\nYêu cầu: Trả về theo mẫu 'Điều [số điều] [số hiệu văn bản]'.",
+    "answer": "Điều 4 13-LCT/HĐNN7"
   },
   {
-    "uid": "bench_2_3_id_dieu-165-luat-682014qh13-luat-682014qh13-2014-11-26",
-    "refer_uid": "dieu-165-luat-682014qh13-luat-682014qh13-2014-11-26",
+    "uid": "bench_2_3_effective_nghi-dinh-782019nd-cp-nghi-dinh-782019nd-cp-sua-doi-nghi-dinh-huong-dan-phap-lenh-quan-ly-thi-truong-unknown",
+    "refer_uid": "nghi-dinh-782019nd-cp-nghi-dinh-782019nd-cp-sua-doi-nghi-dinh-huong-dan-phap-lenh-quan-ly-thi-truong-unknown",
+    "refer_type": "doc",
+    "question": "Văn bản pháp luật có số hiệu '78/2019/NĐ-CP' có hiệu lực từ ngày nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY.",
+    "answer": "10/12/2019"
+  },
+  {
+    "uid": "bench_2_3_effective_nghi-dinh-1202020nd-cp-nghi-dinh-1202020nd-cp-thanh-lap-giai-the-don-vi-su-nghiep-cong-lap-unknown",
+    "refer_uid": "nghi-dinh-1202020nd-cp-nghi-dinh-1202020nd-cp-thanh-lap-giai-the-don-vi-su-nghiep-cong-lap-unknown",
+    "refer_type": "doc",
+    "question": "Văn bản pháp luật có số hiệu '120/2020/NĐ-CP' có hiệu lực từ ngày nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY.",
+    "answer": "01/12/2020"
+  },
+  {
+    "uid": "bench_2_3_effective_nghi-dinh-1472016nd-cp-nghi-dinh-1472016nd-cp-sua-quy-dinh-chinh-sach-chi-tra-dich-vu-moi-truong-rung-unknown",
+    "refer_uid": "nghi-dinh-1472016nd-cp-nghi-dinh-1472016nd-cp-sua-quy-dinh-chinh-sach-chi-tra-dich-vu-moi-truong-rung-unknown",
+    "refer_type": "doc",
+    "question": "Văn bản pháp luật có số hiệu '147/2016/NĐ-CP' có hiệu lực từ ngày nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY.",
+    "answer": "01/01/2017"
+  },
+  {
+    "uid": "bench_2_3_signer_nghi-dinh-332002nd-cp-nghi-dinh-332002nd-cp-cua-chinh-phu-quy-dinh-chi-tiet-thi-hanh-phap-lenh-bao-ve-bi-mat-nha-nuoc-unknown",
+    "refer_uid": "nghi-dinh-332002nd-cp-nghi-dinh-332002nd-cp-cua-chinh-phu-quy-dinh-chi-tiet-thi-hanh-phap-lenh-bao-ve-bi-mat-nha-nuoc-unknown",
+    "refer_type": "doc",
+    "question": "Ai là người ký văn bản pháp luật có số hiệu '33/2002/NĐ-CP'?\n\nYêu cầu: Chỉ trả về tên người ký.",
+    "answer": "Phan Văn Khải"
+  },
+  {
+    "uid": "bench_2_3_docid_dieu-12-luat-322024qh15-luat-cac-to-chuc-tin-dung-2024-so-322024qh15-unknown",
+    "refer_uid": "dieu-12-luat-322024qh15-luat-cac-to-chuc-tin-dung-2024-so-322024qh15-unknown",
     "refer_type": "article",
-    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"1. Ban kiểm soát thực hiện giám sát Hội đồng quản trị, Giám đốc hoặc Tổng giám đốc trong việc quản lý và điều hành công ty.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
-    "answer": "68/2014/QH13"
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"1. Tổ chức tín dụng, chi nhánh ngân hàng nước ngoài cung cấp cho chủ tài khoản thông tin về giao dịch và số dư trên tài khoản của chủ tài khoản theo thỏa thuận với chủ tài khoản.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản.",
+    "answer": "32/2024/QH15"
   },
   {
-    "uid": "bench_2_3_id_dieu-37-luat-432019qh14-luat-432019qh14-2019-06-14",
-    "refer_uid": "dieu-37-luat-432019qh14-luat-432019qh14-2019-06-14",
+    "uid": "bench_2_3_effective_bo-luat-1012015qh13-bo-luat-to-tung-hinh-su-2015-so-1012015qh13-unknown",
+    "refer_uid": "bo-luat-1012015qh13-bo-luat-to-tung-hinh-su-2015-so-1012015qh13-unknown",
+    "refer_type": "doc",
+    "question": "Văn bản pháp luật có số hiệu '101/2015/QH13' có hiệu lực từ ngày nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY.",
+    "answer": "01/07/2016"
+  },
+  {
+    "uid": "bench_2_3_docid_dieu-3-luat-442005qh11-luat-du-lich-nam-2005-unknown",
+    "refer_uid": "dieu-3-luat-442005qh11-luat-du-lich-nam-2005-unknown",
     "refer_type": "article",
-    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Tổ chức và hoạt động giáo dục nghề nghiệp được thực hiện theo quy định của Luật này và Luật Giáo dục nghề nghiệp. Tiểu mục 4.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
-    "answer": "43/2019/QH14"
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"1. Các chủ thể quy định tại Điều 2 của Luật này thực hiện quy định của Luật này và các quy định có liên quan của pháp luật Việt Nam.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản.",
+    "answer": "44/2005/QH11"
   },
   {
-    "uid": "bench_2_3_id_dieu-2-luat-182003qh11-luat-182003qh11-2003-11-26",
-    "refer_uid": "dieu-2-luat-182003qh11-luat-182003qh11-2003-11-26",
+    "uid": "bench_2_3_article_dieu-113-luat-512014qh13-luat-pha-san-2014-so-512014qh13-unknown",
+    "refer_uid": "dieu-113-luat-512014qh13-luat-pha-san-2014-so-512014qh13-unknown",
     "refer_type": "article",
-    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Luật này quy định việc thành lập, tổ chức và hoạt động đối với hợp tác xã trong các ngành, các lĩnh vực của nền kinh tế quốc dân.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
-    "answer": "18/2003/QH11"
+    "question": "Đoạn trích dưới đây thuộc điều khoản nào của văn bản pháp luật nào?\n\n\"1. Trong thời hạn 15 ngày kể từ ngày Tòa án nhân dân cấp trên trực tiếp ra quyết định giải quyết đề nghị, kiến nghị theo Điều 112 của Luật này mà có đơn đề nghị xem xét lại của người tham gia thủ tục phá sản, kiến nghị của Viện kiểm sát nhân dân tối cao hoặc kiến nghị của Tòa án nhân dân thì Chánh án Tòa án nhân dân tối cao xem xét lại quyết định đó khi có một trong các căn cứ sau: a) Có vi phạm nghiêm trọng pháp luật về phá sản; b) Phát hiện tình tiết mới có thể làm thay đổi cơ bản nội dung quyết định tuyên bố phá sản mà Tòa án nhân dân, người tham gia thủ tục phá sản không thể biết được khi Tòa án nhân dân ra quyết định.\"\n\nYêu cầu: Trả về theo mẫu 'Điều [số điều] [số hiệu văn bản]'.",
+    "answer": "Điều 113 51/2014/QH13"
   },
   {
-    "uid": "bench_2_3_id_dieu-99-luat-542019qh14-luat-542019qh14-2019-11-26",
-    "refer_uid": "dieu-99-luat-542019qh14-luat-542019qh14-2019-11-26",
+    "uid": "bench_2_3_signer_nghi-dinh-150-hdbt-nghi-dinh-150-hdbt-cua-hoi-dong-bo-truong-ve-nhiem-vu-quyen-han-to-chuc-bo-may-giup-bo-truong-chu-nhiem-uy-ban-nha-nuoc-thu-truong-cac-co-quan-khac-thuoc-hoi-dong-bo-truong-quan-ly-nha-nuoc-unknown",
+    "refer_uid": "nghi-dinh-150-hdbt-nghi-dinh-150-hdbt-cua-hoi-dong-bo-truong-ve-nhiem-vu-quyen-han-to-chuc-bo-may-giup-bo-truong-chu-nhiem-uy-ban-nha-nuoc-thu-truong-cac-co-quan-khac-thuoc-hoi-dong-bo-truong-quan-ly-nha-nuoc-unknown",
+    "refer_type": "doc",
+    "question": "Ai là người ký văn bản pháp luật có số hiệu '150-HĐBT'?\n\nYêu cầu: Chỉ trả về tên người ký.",
+    "answer": "Tố Hữu"
+  },
+  {
+    "uid": "bench_2_3_signer_nghi-dinh-1432006nd-cp-nghi-dinh-1432006nd-cp-cua-chinh-phu-ve-viec-dieu-chinh-dia-gioi-hanh-chinh-phuong-quan-thanh-lap-phuong-thuoc-quan-go-vap-quan-12-va-quan-tan-binh-thanh-pho-ho-chi-minh-unknown",
+    "refer_uid": "nghi-dinh-1432006nd-cp-nghi-dinh-1432006nd-cp-cua-chinh-phu-ve-viec-dieu-chinh-dia-gioi-hanh-chinh-phuong-quan-thanh-lap-phuong-thuoc-quan-go-vap-quan-12-va-quan-tan-binh-thanh-pho-ho-chi-minh-unknown",
+    "refer_type": "doc",
+    "question": "Ai là người ký văn bản pháp luật có số hiệu '143/2006/NĐ-CP'?\n\nYêu cầu: Chỉ trả về tên người ký.",
+    "answer": "Nguyễn Tấn Dũng"
+  },
+  {
+    "uid": "bench_2_3_article_dieu-39-nghi-dinh-52cp-nghi-dinh-52cp-cua-chinh-phu-phe-chuan-dieu-le-to-chuc-va-hoat-dong-cua-tong-cong-ty-giay-viet-nam-unknown",
+    "refer_uid": "dieu-39-nghi-dinh-52cp-nghi-dinh-52cp-cua-chinh-phu-phe-chuan-dieu-le-to-chuc-va-hoat-dong-cua-tong-cong-ty-giay-viet-nam-unknown",
     "refer_type": "article",
-    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"1. Quỹ đầu tư chứng khoán bao gồm quỹ đại chúng và quỹ thành viên.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
-    "answer": "54/2019/QH14"
+    "question": "Đoạn trích dưới đây thuộc điều khoản nào của văn bản pháp luật nào?\n\n\"Mối quan hệ với Chính phủ: 1. Chấp hành pháp luật thực hiện nghiêm túc các quy định của Chính phủ có liên quan đến Tổng Công ty và doanh nghiệp Nhà nước.\"\n\nYêu cầu: Trả về theo mẫu 'Điều [số điều] [số hiệu văn bản]'.",
+    "answer": "Điều 39 52/CP"
   },
   {
-    "uid": "bench_2_3_id_dieu-68-nghi-dinh-50-hdbt-nghi-dinh-50-hdbt-1988-03-22",
-    "refer_uid": "dieu-68-nghi-dinh-50-hdbt-nghi-dinh-50-hdbt-1988-03-22",
+    "uid": "bench_2_3_article_dieu-42-luat-1482025qh15-luat-chuyen-doi-so-2025-so-1482025qh15-unknown",
+    "refer_uid": "dieu-42-luat-1482025qh15-luat-chuyen-doi-so-2025-so-1482025qh15-unknown",
     "refer_type": "article",
-    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"- Việc phân chia, sáp nhập, giải thể và chuyển hình thức sở hữu xí nghiệp phải do cơ quan có thẩm quyền ra quyết định thành lập xí nghiệp đó quyết định. Khi quyết định phân chia, sáp nhập, giải thể và chuyển hình thức sở hữu xí nghiệp, cơ quan nói trên phải quyết định lập một hội đồng gồm đại diện cấp trên trực tiếp (hoặc cơ quan chủ quản cấp trên) làm chủ tịch và đại diện các cơ quan hữu quan để bàn bạc, giải quyết các vấn đề do việc phân chia, sáp nhập, giải thể hoặc chuyển hình thức sở hữu xí nghiệp đặt ra, nhất là các vấn đề về sử dụng tài sản, vật tư, lao động, tiền vốn, về tiếp tục thực hiện các nghĩa vụ kế hoạch đối với Nhà nước, và các nghĩa vụ hợp đồng đối với các tổ chức, cơ sở hữu quan.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
-    "answer": "50-HĐBT"
+    "question": "Đoạn trích dưới đây thuộc điều khoản nào của văn bản pháp luật nào?\n\n\"1. Nhà nước ưu tiên bố trí nguồn lực gồm nguồn vốn đầu tư và các hình thức hỗ trợ tài chính để thu hẹp khoảng cách số; bảo đảm bố trí nguồn lực cao hơn mức trung bình của cả nước đối với khu vực biên giới, hải đảo, vùng đồng bào dân tộc thiểu số, miền núi, vùng có điều kiện kinh tế - xã hội khó khăn, đặc biệt khó khăn.\"\n\nYêu cầu: Trả về theo mẫu 'Điều [số điều] [số hiệu văn bản]'.",
+    "answer": "Điều 42 148/2025/QH15"
   },
   {
-    "uid": "bench_2_3_id_dieu-29-luat-44-lctn-luat-44-lctn-1995-10-28",
-    "refer_uid": "dieu-29-luat-44-lctn-luat-44-lctn-1995-10-28",
+    "uid": "bench_2_3_effective_nghi-dinh-1122015nd-cp-nghi-dinh-1122015nd-cp-sua-quy-dinh-co-che-tai-chinh-ngan-sach-voi-ha-noi-unknown",
+    "refer_uid": "nghi-dinh-1122015nd-cp-nghi-dinh-1122015nd-cp-sua-quy-dinh-co-che-tai-chinh-ngan-sach-voi-ha-noi-unknown",
+    "refer_type": "doc",
+    "question": "Văn bản pháp luật có số hiệu '112/2015/NĐ-CP' có hiệu lực từ ngày nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY.",
+    "answer": "20/12/2015"
+  },
+  {
+    "uid": "bench_2_3_signer_nghi-dinh-1062017nd-cp-nghi-dinh-1062017nd-cp-sua-huong-dan-luat-phong-chong-tac-hai-thuoc-la-unknown",
+    "refer_uid": "nghi-dinh-1062017nd-cp-nghi-dinh-1062017nd-cp-sua-huong-dan-luat-phong-chong-tac-hai-thuoc-la-unknown",
+    "refer_type": "doc",
+    "question": "Ai là người ký văn bản pháp luật có số hiệu '106/2017/NĐ-CP'?\n\nYêu cầu: Chỉ trả về tên người ký.",
+    "answer": "Nguyễn Xuân Phúc"
+  },
+  {
+    "uid": "bench_2_3_article_dieu-90-luat-572014qh13-luat-to-chuc-quoc-hoi-2014-so-572014qh13-unknown",
+    "refer_uid": "dieu-90-luat-572014qh13-luat-to-chuc-quoc-hoi-2014-so-572014qh13-unknown",
     "refer_type": "article",
-    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Quyền thay đổi họ, tên 1- Cá nhân có quyền yêu cầu cơ quan nhà nước có thẩm quyền công nhận việc thay đổi họ, tên trong các trường hợp sau đây: a) Theo yêu cầu của người có họ, tên mà việc sử dụng họ, tên đó gây nhầm lẫn, ảnh hưởng đến tình cảm gia đình, đến danh dự, quyền, lợi ích hợp pháp của mình; b) Theo yêu cầu của cha, mẹ nuôi về việc thay đổi họ, tên cho con nuôi hoặc khi người con nuôi thôi không làm con nuôi và người này hoặc cha, mẹ đẻ yêu cầu lấy lại họ, tên mà cha, mẹ đẻ đã đặt; c) Theo yêu cầu của cha, mẹ hoặc người con khi xác định cha, mẹ cho con; d) Thay đổi họ cho con từ họ của cha sang họ của mẹ hoặc ngược lại; đ) Thay đổi họ, tên của người bị lưu lạc từ nhỏ mà tìm ra nguồn gốc huyết thống của mình; e) Các trường hợp khác do pháp luật quy định. 2- Việc thay đổi họ, tên cho người từ đủ chín tuổi trở lên phải có sự đồng ý của người đó.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
-    "answer": "44-L/CTN"
+    "question": "Đoạn trích dưới đây thuộc điều khoản nào của văn bản pháp luật nào?\n\n\"1. Quốc hội họp công khai.\"\n\nYêu cầu: Trả về theo mẫu 'Điều [số điều] [số hiệu văn bản]'.",
+    "answer": "Điều 90 57/2014/QH13"
   },
   {
-    "uid": "bench_2_3_id_dieu-43-luat-3-lcthdnn8-luat-3-lcthdnn8-1987-12-29",
-    "refer_uid": "dieu-43-luat-3-lcthdnn8-luat-3-lcthdnn8-1987-12-29",
+    "uid": "bench_2_3_effective_luat-532005qh11-luat-thanh-nien-nam-2005-so-532005qh11-unknown",
+    "refer_uid": "luat-532005qh11-luat-thanh-nien-nam-2005-so-532005qh11-unknown",
+    "refer_type": "doc",
+    "question": "Văn bản pháp luật có số hiệu '53/2005/QH11' có hiệu lực từ ngày nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY.",
+    "answer": "01/07/2006"
+  },
+  {
+    "uid": "bench_2_3_effective_nghi-dinh-532018nd-cp-nghi-dinh-532018nd-cp-sua-doi-nghi-dinh-582016nd-cp-ve-kd-san-pham-dich-vu-mat-ma-dan-su-va-xuat-khau-nhap-khau-san-pham-mat-ma-dan-su-unknown",
+    "refer_uid": "nghi-dinh-532018nd-cp-nghi-dinh-532018nd-cp-sua-doi-nghi-dinh-582016nd-cp-ve-kd-san-pham-dich-vu-mat-ma-dan-su-va-xuat-khau-nhap-khau-san-pham-mat-ma-dan-su-unknown",
+    "refer_type": "doc",
+    "question": "Văn bản pháp luật có số hiệu '53/2018/NĐ-CP' có hiệu lực từ ngày nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY.",
+    "answer": "16/04/2018"
+  },
+  {
+    "uid": "bench_2_3_article_dieu-22-luat-692006qh11-luat-tro-giup-phap-ly-nam-2006-unknown",
+    "refer_uid": "dieu-22-luat-692006qh11-luat-tro-giup-phap-ly-nam-2006-unknown",
     "refer_type": "article",
-    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Đất làm nghĩa địa phải được quy hoạch thành khu tập trung, xa dân cư, thuận tiện cho việc chôn cất, thăm viếng, hợp vệ sinh và tiết kiệm đất.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
-    "answer": "3-LCT/HĐNN8"
+    "question": "Đoạn trích dưới đây thuộc điều khoản nào của văn bản pháp luật nào?\n\n\"1. Công dân Việt Nam thường trú tại Việt Nam, có năng lực hành vi dân sự đầy đủ, có phẩm chất đạo đức tốt, có sức khoẻ bảo đảm hoàn thành nhiệm vụ được giao, tự nguyện tham gia trợ giúp pháp lý mà không thuộc một trong các trường hợp quy định tại khoản 3 Điều 20 của Luật này thì được Giám đốc Sở Tư pháp xem xét, công nhận và cấp thẻ cộng tác viên trong các trường hợp sau đây: a) Người có bằng cử nhân luật; người có bằng đại học khác làm việc trong các ngành, nghề có liên quan đến quyền và nghĩa vụ cơ bản của công dân; b) Người thường trú ở vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn, vùng dân tộc thiểu số và miền núi có bằng trung cấp luật hoặc có thời gian làm công tác pháp luật từ ba năm trở lên hoặc có kiến thức pháp luật và có uy tín trong cộng đồng; c) Luật sư, Tư vấn viên pháp luật.\"\n\nYêu cầu: Trả về theo mẫu 'Điều [số điều] [số hiệu văn bản]'.",
+    "answer": "Điều 22 69/2006/QH11"
   },
   {
-    "uid": "bench_2_3_id_dieu-131-luat-362005qh11-luat-362005qh11-2005-06-14",
-    "refer_uid": "dieu-131-luat-362005qh11-luat-362005qh11-2005-06-14",
+    "uid": "bench_2_3_docid_dieu-84-luat-412005qh11-luat-ky-ket-gia-nhap-va-thuc-hien-dieu-uoc-quoc-te-nam-2005-unknown",
+    "refer_uid": "dieu-84-luat-412005qh11-luat-ky-ket-gia-nhap-va-thuc-hien-dieu-uoc-quoc-te-nam-2005-unknown",
     "refer_type": "article",
-    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Quyền tổ chức, tham gia hội chợ, triển lãm thương mại 1. Thương nhân Việt Nam, Chi nhánh của thương nhân Việt Nam, Chi nhánh của thương nhân nước ngoài tại Việt Nam có quyền trực tiếp tổ chức, tham gia hội chợ, triển lãm thương mại về hàng hóa, dịch vụ mà mình kinh doanh hoặc thuê thương nhân kinh doanh dịch vụ hội chợ, triển lãm thương mại thực hiện.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
-    "answer": "36/2005/QH11"
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"1. Bộ Ngoại giao phối hợp với cơ quan đề xuất thông báo cho bên ký kết nước ngoài về việc sửa đổi, bổ sung, gia hạn điều ước quốc tế trong thời hạn mười lăm ngày, kể từ ngày nhận được quyết định của cơ quan nhà nước có thẩm quyền về việc sửa đổi, bổ sung, gia hạn điều ước quốc tế đó.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản.",
+    "answer": "41/2005/QH11"
   },
   {
-    "uid": "bench_2_3_id_dieu-71-luat-272004qh11-luat-272004qh11-2004-12-03",
-    "refer_uid": "dieu-71-luat-272004qh11-luat-272004qh11-2004-12-03",
+    "uid": "bench_2_3_signer_nghi-dinh-792021nd-cp-nghi-dinh-792021nd-cp-sua-nghi-dinh-ve-cho-vay-lai-von-vay-oda-vay-uu-dai-nuoc-ngoai-cua-chinh-phu-unknown",
+    "refer_uid": "nghi-dinh-792021nd-cp-nghi-dinh-792021nd-cp-sua-nghi-dinh-ve-cho-vay-lai-von-vay-oda-vay-uu-dai-nuoc-ngoai-cua-chinh-phu-unknown",
+    "refer_type": "doc",
+    "question": "Ai là người ký văn bản pháp luật có số hiệu '79/2021/NĐ-CP'?\n\nYêu cầu: Chỉ trả về tên người ký.",
+    "answer": "Phạm Bình Minh"
+  },
+  {
+    "uid": "bench_2_3_signer_nghi-dinh-072009nd-cp-nghi-dinh-072009nd-cp-cua-chinh-phu-sua-doi-bo-sung-mot-so-dieu-cua-nghi-dinh-so-1602005nd-cp-ngay-27-thang-12-nam-2005-cua-chinh-phu-quy-dinh-chi-tiet-va-huong-dan-thi-hanh-luat-khoang-san-va-luat-sua-doi-bo-sung-mot-so-dieu-cua-luat-khoang-san-unknown",
+    "refer_uid": "nghi-dinh-072009nd-cp-nghi-dinh-072009nd-cp-cua-chinh-phu-sua-doi-bo-sung-mot-so-dieu-cua-nghi-dinh-so-1602005nd-cp-ngay-27-thang-12-nam-2005-cua-chinh-phu-quy-dinh-chi-tiet-va-huong-dan-thi-hanh-luat-khoang-san-va-luat-sua-doi-bo-sung-mot-so-dieu-cua-luat-khoang-san-unknown",
+    "refer_type": "doc",
+    "question": "Ai là người ký văn bản pháp luật có số hiệu '07/2009/NĐ-CP'?\n\nYêu cầu: Chỉ trả về tên người ký.",
+    "answer": "Nguyễn Tấn Dũng"
+  },
+  {
+    "uid": "bench_2_3_docid_dieu-70-luat-382024qh15-luat-cong-nghiep-quoc-phong-an-ninh-va-dong-vien-cong-nghiep-2024-so-382024qh15-unknown",
+    "refer_uid": "dieu-70-luat-382024qh15-luat-cong-nghiep-quoc-phong-an-ninh-va-dong-vien-cong-nghiep-2024-so-382024qh15-unknown",
     "refer_type": "article",
-    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Người có quyền lợi, nghĩa vụ liên quan đến vụ việc cạnh tranh 1. Người có quyền lợi, nghĩa vụ liên quan có thể có yêu cầu độc lập hoặc tham gia tố tụng cạnh tranh với bên khiếu nại hoặc với bên bị điều tra.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
-    "answer": "27/2004/QH11"
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"1. Yêu cầu đối với hoạt động hợp tác quốc tế và thương mại quốc tế về công nghiệp quốc phòng, an ninh bao gồm: a) Ưu tiên lĩnh vực công nghệ cao, công nghệ nền, công nghệ lõi, công nghệ lưỡng dụng; nghiên cứu, chế tạo vũ khí trang bị kỹ thuật có ý nghĩa chiến lược, phương tiện kỹ thuật nghiệp vụ đặc biệt; gắn hoạt động hợp tác quốc tế, thương mại quốc tế với chuyển giao công nghệ trong lĩnh vực quốc phòng, an ninh; b) Bảo đảm bí mật nhà nước theo quy định của pháp luật.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản.",
+    "answer": "38/2024/QH15"
   },
   {
-    "uid": "bench_2_3_id_dieu-15-luat-103-sll005-luat-103-sll005-1957-05-20",
-    "refer_uid": "dieu-15-luat-103-sll005-luat-103-sll005-1957-05-20",
+    "uid": "bench_2_3_docid_dieu-10-luat-122022qh15-luat-dau-khi-2022-so-122022qh15-unknown",
+    "refer_uid": "dieu-10-luat-122022qh15-luat-dau-khi-2022-so-122022qh15-unknown",
     "refer_type": "article",
-    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Trong khi tiến hành việc bắt, tạm giữ, tạm giam, khám người, khám đồ vật, khám nhà và thư tín, mà người phạm pháp kháng cự lại hoặc có hành động để trốn tránh pháp luật thì có thể dùng phương pháp cưỡng chế thích đáng để bắt kẻ phạm pháp tuân theo pháp luật.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
-    "answer": "103-SL/L.005"
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"1. Căn cứ chiến lược, quy hoạch về năng lượng, tài nguyên khoáng sản và đề xuất của các tổ chức đáp ứng điều kiện quy định tại Điều 12 của Luật này , Bộ Công Thương chủ trì, phối hợp với Bộ Tài nguyên và Môi trường và các Bộ, cơ quan có liên quan xây dựng danh mục đề án điều tra cơ bản về dầu khí bảo đảm tính tổng thể, đồng bộ trình Thủ tướng Chính phủ phê duyệt.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản.",
+    "answer": "12/2022/QH15"
   },
   {
-    "uid": "bench_2_3_id_dieu-215-luat-642010qh12-luat-642010qh12-2010-11-24",
-    "refer_uid": "dieu-215-luat-642010qh12-luat-642010qh12-2010-11-24",
+    "uid": "bench_2_3_effective_nghi-dinh-162007nd-cp-nghi-dinh-162007nd-cp-cua-chinh-phu-quy-dinh-ve-tim-kiem-quy-tap-hai-cot-liet-si-quan-ly-mo-nghia-trang-dai-tuong-niem-bia-ghi-ten-liet-si-unknown",
+    "refer_uid": "nghi-dinh-162007nd-cp-nghi-dinh-162007nd-cp-cua-chinh-phu-quy-dinh-ve-tim-kiem-quy-tap-hai-cot-liet-si-quan-ly-mo-nghia-trang-dai-tuong-niem-bia-ghi-ten-liet-si-unknown",
+    "refer_type": "doc",
+    "question": "Văn bản pháp luật có số hiệu '16/2007/NĐ-CP' có hiệu lực từ ngày nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY.",
+    "answer": "25/02/2007"
+  },
+  {
+    "uid": "bench_2_3_article_dieu-23-luat-312018qh14-luat-trong-trot-nam-2018-so-312018qh14-unknown",
+    "refer_uid": "dieu-23-luat-312018qh14-luat-trong-trot-nam-2018-so-312018qh14-unknown",
     "refer_type": "article",
-    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"1. Người có quyền kháng nghị theo thủ tục giám đốc thẩm được quyền kháng nghị trong thời hạn 02 năm, kể từ ngày bản án, quyết định của Toà án có hiệu lực pháp luật, trừ trường hợp quy định tại khoản 2 Điều này.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
-    "answer": "64/2010/QH12"
+    "question": "Đoạn trích dưới đây thuộc điều khoản nào của văn bản pháp luật nào?\n\n\"1. Sản xuất giống cây trồng được thực hiện theo phương pháp nhân giống hữu tính và phương pháp nhân giống vô tính theo tiêu chuẩn quốc gia về sản xuất giống cây trồng; trường hợp không có tiêu chuẩn quốc gia thì áp dụng tiêu chuẩn cơ sở.\"\n\nYêu cầu: Trả về theo mẫu 'Điều [số điều] [số hiệu văn bản]'.",
+    "answer": "Điều 23 31/2018/QH14"
   },
   {
-    "uid": "bench_2_3_id_dieu-69-luat-152003qh11-luat-152003qh11-2003-11-26",
-    "refer_uid": "dieu-69-luat-152003qh11-luat-152003qh11-2003-11-26",
+    "uid": "bench_2_3_docid_dieu-110-luat-702006qh11-luat-chung-khoan-nam-2006-unknown",
+    "refer_uid": "dieu-110-luat-702006qh11-luat-chung-khoan-nam-2006-unknown",
     "refer_type": "article",
-    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Kỷ niệm chương hoặc Huy hiệu để tặng cho cá nhân có đóng góp vào quá trình phát triển của bộ, ban, ngành, tổ chức chính trị, tổ chức chính trị - xã hội, tổ chức xã hội. Tên kỷ niệm chương, tên Huy hiệu, đối tượng và tiêu chuẩn tặng Kỷ niệm chương, Huy hiệu do bộ, ban, ngành, cơ quan trung ương của tổ chức chính trị, tổ chức chính trị - xã hội, tổ chức xã hội quy định.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
-    "answer": "15/2003/QH11"
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"1. Thanh tra theo chương trình, kế hoạch đã được Chủ tịch Uỷ ban Chứng khoán Nhà nước phê duyệt.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản.",
+    "answer": "70/2006/QH11"
   },
   {
-    "uid": "bench_2_3_id_dieu-273-luat-17-lcthdnn7-luat-17-lcthdnn7-1985-06-27",
-    "refer_uid": "dieu-273-luat-17-lcthdnn7-luat-17-lcthdnn7-1985-06-27",
+    "uid": "bench_2_3_signer_nghi-dinh-19cp-nghi-dinh-19cp-cua-chinh-phu-ve-viec-thanh-lap-bao-hiem-xa-hoi-viet-nam-unknown",
+    "refer_uid": "nghi-dinh-19cp-nghi-dinh-19cp-cua-chinh-phu-ve-viec-thanh-lap-bao-hiem-xa-hoi-viet-nam-unknown",
+    "refer_type": "doc",
+    "question": "Ai là người ký văn bản pháp luật có số hiệu '19/CP'?\n\nYêu cầu: Chỉ trả về tên người ký.",
+    "answer": "Võ Văn Kiệt"
+  },
+  {
+    "uid": "bench_2_3_article_dieu-53-luat-522005qh11-luat-bao-ve-moi-truong-nam-2005-unknown",
+    "refer_uid": "dieu-53-luat-522005qh11-luat-bao-ve-moi-truong-nam-2005-unknown",
     "refer_type": "article",
-    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Tội quấy nhiễu nhân dân. 1- Người nào có hành vi quấy nhiễu gây thiệt hại cho nhân dân làm mất đoàn kết quân dân thì bị phạt cải tạo ở đơn vị kỷ luật của quân đội đến một năm hoặc bị phạt tù từ ba tháng đến ba năm.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
-    "answer": "17-LCT/HĐNN7"
+    "question": "Đoạn trích dưới đây thuộc điều khoản nào của văn bản pháp luật nào?\n\n\"1. Hộ gia đình có trách nhiệm thực hiện các quy định về bảo vệ môi trường sau đây: a) Thu gom và chuyển chất thải sinh hoạt đến đúng nơi do tổ chức giữ gìn vệ sinh môi trường tại địa bàn quy định; xả nước thải vào hệ thống thu gom nước thải; b) Không được phát tán khí thải, gây tiếng ồn và tác nhân khác vượt quá tiêu chuẩn môi trường gây ảnh hưởng đến sức khoẻ, sinh hoạt của cộng đồng dân cư xung quanh; c) Nộp đủ và đúng thời hạn các loại phí bảo vệ môi trường theo quy định của pháp luật; d) Tham gia hoạt động vệ sinh môi trường khu phố, đường làng, ngõ xóm, nơi công cộng và hoạt động tự quản về bảo vệ môi trường của cộng đồng dân cư; đ) Có công trình vệ sinh, chuồng trại chăn nuôi gia súc, gia cầm bảo đảm  vệ sinh, an toàn đối với khu vực sinh hoạt của con người; e) Thực hiện các quy định về bảo vệ môi trường trong hương ước, bản cam kết bảo vệ môi trường.\"\n\nYêu cầu: Trả về theo mẫu 'Điều [số điều] [số hiệu văn bản]'.",
+    "answer": "Điều 53 52/2005/QH11"
   },
   {
-    "uid": "bench_2_3_id_dieu-2-nghi-dinh-192015nd-cp-nghi-dinh-192015nd-cp-2015-02-14",
-    "refer_uid": "dieu-2-nghi-dinh-192015nd-cp-nghi-dinh-192015nd-cp-2015-02-14",
+    "uid": "bench_2_3_article_dieu-23-luat-1292025qh15-luat-vien-chuc-2025-so-1292025qh15-unknown",
+    "refer_uid": "dieu-23-luat-1292025qh15-luat-vien-chuc-2025-so-1292025qh15-unknown",
     "refer_type": "article",
-    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Nghị định này áp dụng đối với cơ quan, tổ chức, hộ gia đình và cá nhân có hoạt động trên lãnh thổ nước Cộng hòa xã hội chủ nghĩa Việt Nam, bao gồm đất liền, hải đảo, vùng biển và vùng trời.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
-    "answer": "19/2015/NĐ-CP"
+    "question": "Đoạn trích dưới đây thuộc điều khoản nào của văn bản pháp luật nào?\n\n\"1. Căn cứ xác định vị trí việc làm viên chức: a) Chức năng, nhiệm vụ và cơ cấu tổ chức của đơn vị sự nghiệp công lập; b) Mức độ phức tạp, tính chất, đặc điểm, quy mô hoạt động của đơn vị sự nghiệp công lập; phạm vi, đối tượng phục vụ; quy trình quản lý chuyên môn, nghiệp vụ; c) Chuyên môn, nghiệp vụ của ngành, lĩnh vực hoạt động nghề nghiệp và chuyên môn, nghiệp vụ của ngành, lĩnh vực khác theo quy định; d) Mức độ hiện đại hóa phương tiện, trang bị, thiết bị, điều kiện làm việc và ứng dụng khoa học, công nghệ, chuyển đổi số.\"\n\nYêu cầu: Trả về theo mẫu 'Điều [số điều] [số hiệu văn bản]'.",
+    "answer": "Điều 23 129/2025/QH15"
   },
   {
-    "uid": "bench_2_3_id_dieu-132-luat-682014qh13-luat-682014qh13-2014-11-26",
-    "refer_uid": "dieu-132-luat-682014qh13-luat-682014qh13-2014-11-26",
+    "uid": "bench_2_3_docid_dieu-91-luat-112022qh15-luat-thanh-tra-2022-so-112022qh15-unknown",
+    "refer_uid": "dieu-91-luat-112022qh15-luat-thanh-tra-2022-so-112022qh15-unknown",
     "refer_type": "article",
-    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"1. Cổ tức trả cho cổ phần ưu đãi được thực hiện theo các điều kiện áp dụng riêng cho mỗi loại cổ phần ưu đãi.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
-    "answer": "68/2014/QH13"
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"thì người ra quyết định thanh tra yêu cầu tổ chức tín dụng nơi đối tượng thanh tra có tài khoản phong tỏa tài khoản để phục vụ việc thanh tra. 2.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản.",
+    "answer": "11/2022/QH15"
   },
   {
-    "uid": "bench_2_3_id_dieu-89-luat-102012qh13-luat-102012qh13-2012-06-18",
-    "refer_uid": "dieu-89-luat-102012qh13-luat-102012qh13-2012-06-18",
+    "uid": "bench_2_3_effective_nghi-dinh-1152021nd-cp-nghi-dinh-1152021nd-cp-sua-doi-nghi-dinh-082016nd-cp-quy-dinh-so-luong-pho-chu-tich-va-quy-trinh-thu-tuc-bau-cach-chuc-thanh-vien-ubnd-unknown",
+    "refer_uid": "nghi-dinh-1152021nd-cp-nghi-dinh-1152021nd-cp-sua-doi-nghi-dinh-082016nd-cp-quy-dinh-so-luong-pho-chu-tich-va-quy-trinh-thu-tuc-bau-cach-chuc-thanh-vien-ubnd-unknown",
+    "refer_type": "doc",
+    "question": "Văn bản pháp luật có số hiệu '115/2021/NĐ-CP' có hiệu lực từ ngày nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY.",
+    "answer": "16/12/2021"
+  },
+  {
+    "uid": "bench_2_3_signer_nghi-dinh-1551999nd-cp-nghi-dinh-1551999nd-cp-cua-chinh-phu-ve-phe-chuan-so-don-vi-bau-cu-danh-sach-cac-don-vi-bau-cu-va-so-dai-bieu-duoc-bau-o-moi-don-vi-bau-cu-dai-bieu-hdnd-tinh-cua-tinh-binh-thuan-nhiem-ky-1999-2004-unknown",
+    "refer_uid": "nghi-dinh-1551999nd-cp-nghi-dinh-1551999nd-cp-cua-chinh-phu-ve-phe-chuan-so-don-vi-bau-cu-danh-sach-cac-don-vi-bau-cu-va-so-dai-bieu-duoc-bau-o-moi-don-vi-bau-cu-dai-bieu-hdnd-tinh-cua-tinh-binh-thuan-nhiem-ky-1999-2004-unknown",
+    "refer_type": "doc",
+    "question": "Ai là người ký văn bản pháp luật có số hiệu '155/1999/NĐ-CP'?\n\nYêu cầu: Chỉ trả về tên người ký.",
+    "answer": "Nguyễn Tấn Dũng"
+  },
+  {
+    "uid": "bench_2_3_effective_nghi-dinh-1462020nd-cp-nghi-dinh-1462020nd-cp-sua-doi-bo-sung-dieu-5-nghi-dinh-202011nd-cp-mien-giam-thue-su-dung-dat-nong-nghiep-unknown",
+    "refer_uid": "nghi-dinh-1462020nd-cp-nghi-dinh-1462020nd-cp-sua-doi-bo-sung-dieu-5-nghi-dinh-202011nd-cp-mien-giam-thue-su-dung-dat-nong-nghiep-unknown",
+    "refer_type": "doc",
+    "question": "Văn bản pháp luật có số hiệu '146/2020/NĐ-CP' có hiệu lực từ ngày nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY.",
+    "answer": "01/01/2021"
+  },
+  {
+    "uid": "bench_2_3_docid_dieu-12-luat-58-lcthdnn8-luat-bao-ve-va-phat-trien-rung-unknown",
+    "refer_uid": "dieu-12-luat-58-lcthdnn8-luat-bao-ve-va-phat-trien-rung-unknown",
     "refer_type": "article",
-    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Thoả ước lao động tập thể ngành có thời hạn từ 01 năm đến 03 năm. Chương VI TIỀN LƯƠNG.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
-    "answer": "10/2012/QH13"
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Những diện tích rừng, đất trồng rừng chưa giao cho tổ chức, cá nhân nào thì Bộ lâm nghiệp và cơ quan quản lý Nhà nước về lâm nghiệp ở địa phương giúp Hội đồng bộ trưởng và Uỷ ban nhân dân các cấp tổ chức quản lý và có kế hoạch từng bước đưa vào sử dụng.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản.",
+    "answer": "58-LCT/HĐNN8"
   },
   {
-    "uid": "bench_2_3_id_dieu-49-luat-602014qh13-luat-602014qh13-2014-11-20",
-    "refer_uid": "dieu-49-luat-602014qh13-luat-602014qh13-2014-11-20",
+    "uid": "bench_2_3_signer_nghi-dinh-95-cp-nghi-dinh-95-cp-cua-chinh-phu-ve-viec-de-xa-loc-hoa-tiep-tuc-truc-thuoc-thanh-pho-nam-dinh-tinh-nam-dinh-unknown",
+    "refer_uid": "nghi-dinh-95-cp-nghi-dinh-95-cp-cua-chinh-phu-ve-viec-de-xa-loc-hoa-tiep-tuc-truc-thuoc-thanh-pho-nam-dinh-tinh-nam-dinh-unknown",
+    "refer_type": "doc",
+    "question": "Ai là người ký văn bản pháp luật có số hiệu '95-CP'?\n\nYêu cầu: Chỉ trả về tên người ký.",
+    "answer": "Võ Văn Kiệt"
+  },
+  {
+    "uid": "bench_2_3_docid_dieu-57-luat-562005qh11-luat-nha-o-nam-2005-unknown",
+    "refer_uid": "dieu-57-luat-562005qh11-luat-nha-o-nam-2005-unknown",
     "refer_type": "article",
-    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"1. Người yêu cầu ghi vào Sổ hộ tịch việc khai sinh; giám hộ; nhận cha, mẹ, con; xác định cha, mẹ, con; nuôi con nuôi; thay đổi hộ tịch; khai tử nộp tờ khai theo mẫu quy định và bản sao có chứng thực giấy tờ chứng minh các việc này đã được giải quyết tại cơ quan có thẩm quyền của nước ngoài cho cơ quan đăng ký hộ tịch.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
-    "answer": "60/2014/QH13"
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"1. Việc cho thuê, thuê mua nhà ở xã hội phải đúng đối tượng, người thuê, thuê mua không được chuyển nhượng nhà ở dưới bất kỳ hình thức nào trong thời hạn thuê, thuê mua, trừ trường hợp thừa kế nhà ở quy định tại khoản 2 Điều 106 của Luật này; nếu vi phạm thì đơn vị quản lý quỹ nhà ở xã hội được quyền thu hồi nhà ở đó.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản.",
+    "answer": "56/2005/QH11"
   },
   {
-    "uid": "bench_2_3_id_dieu-3-nghi-dinh-130-nd-nghi-dinh-130-nd-1957-05-29",
-    "refer_uid": "dieu-3-nghi-dinh-130-nd-nghi-dinh-130-nd-1957-05-29",
+    "uid": "bench_2_3_article_dieu-28-nghi-dinh-082015nd-cp-nghi-dinh-082015nd-cp-huong-dan-luat-hai-quan-unknown",
+    "refer_uid": "dieu-28-nghi-dinh-082015nd-cp-nghi-dinh-082015nd-cp-huong-dan-luat-hai-quan-unknown",
     "refer_type": "article",
-    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"- Giấy chứng nhận để lĩnh tiền phải ghi nhận dang, có mẫy chữ ký của người lĩnh, có số vào sổ, dấu và chữ ký của Ủy ban Hành chính, cơ quan, xí nghiệp, trường học. Bưu điện giữ lại giấy chứng nhận khi phát tiền để làm chứng từ trả tiền.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
-    "answer": "130-NĐ"
+    "question": "Đoạn trích dưới đây thuộc điều khoản nào của văn bản pháp luật nào?\n\n\"1. Căn cứ kết quả phân tích thông tin quản lý rủi ro, bản khai hàng hóa nhập khẩu được cung cấp trước khi hàng hóa đến cửa khẩu, cơ quan hải quan quyết định việc kiểm tra thực tế hàng hóa thông qua máy soi và thiết bị kỹ thuật khác.\"\n\nYêu cầu: Trả về theo mẫu 'Điều [số điều] [số hiệu văn bản]'.",
+    "answer": "Điều 28 08/2015/NĐ-CP"
   },
   {
-    "uid": "bench_2_3_id_dieu-321-luat-1002015qh13-luat-1002015qh13-2015-11-27",
-    "refer_uid": "dieu-321-luat-1002015qh13-luat-1002015qh13-2015-11-27",
+    "uid": "bench_2_3_signer_nghi-dinh-332020nd-cp-nghi-dinh-332020nd-cp-sua-doi-nghi-dinh-huong-dan-luat-thi-hanh-an-dan-su-unknown",
+    "refer_uid": "nghi-dinh-332020nd-cp-nghi-dinh-332020nd-cp-sua-doi-nghi-dinh-huong-dan-luat-thi-hanh-an-dan-su-unknown",
+    "refer_type": "doc",
+    "question": "Ai là người ký văn bản pháp luật có số hiệu '33/2020/NĐ-CP'?\n\nYêu cầu: Chỉ trả về tên người ký.",
+    "answer": "Nguyễn Xuân Phúc"
+  },
+  {
+    "uid": "bench_2_3_signer_nghi-dinh-02nd-cp-nghi-dinh-02nd-cp-cua-chinh-phu-ve-viec-dieu-chinh-dia-gioi-hanh-chinh-xa-thanh-lap-phuong-thuoc-thi-xa-an-khe-huyen-chu-pah-tinh-gia-lai-unknown",
+    "refer_uid": "nghi-dinh-02nd-cp-nghi-dinh-02nd-cp-cua-chinh-phu-ve-viec-dieu-chinh-dia-gioi-hanh-chinh-xa-thanh-lap-phuong-thuoc-thi-xa-an-khe-huyen-chu-pah-tinh-gia-lai-unknown",
+    "refer_type": "doc",
+    "question": "Ai là người ký văn bản pháp luật có số hiệu '02/NĐ-CP'?\n\nYêu cầu: Chỉ trả về tên người ký.",
+    "answer": "Nguyễn Tấn Dũng"
+  },
+  {
+    "uid": "bench_2_3_article_dieu-40-luat-662014qh13-luat-kinh-doanh-bat-dong-san-2014-so-662014qh13-unknown",
+    "refer_uid": "dieu-40-luat-662014qh13-luat-kinh-doanh-bat-dong-san-2014-so-662014qh13-unknown",
     "refer_type": "article",
-    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Tội đánh bạc 1. Người nào đánh bạc trái phép dưới bất kỳ hình thức nào được thua bằng tiền hay hiện vật trị giá từ 5.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
-    "answer": "100/2015/QH13"
+    "question": "Đoạn trích dưới đây thuộc điều khoản nào của văn bản pháp luật nào?\n\n\"1. Yêu cầu bên chuyển nhượng cung cấp thông tin đầy đủ, trung thực về quyền sử dụng đất chuyển nhượng.\"\n\nYêu cầu: Trả về theo mẫu 'Điều [số điều] [số hiệu văn bản]'.",
+    "answer": "Điều 40 66/2014/QH13"
   },
   {
-    "uid": "bench_2_3_id_dieu-88-luat-452019qh14-luat-452019qh14-2019-11-20",
-    "refer_uid": "dieu-88-luat-452019qh14-luat-452019qh14-2019-11-20",
+    "uid": "bench_2_3_docid_dieu-10-nghi-dinh-912016nd-cp-nghi-dinh-912016nd-cp-quan-ly-hoa-chat-che-pham-diet-con-trung-diet-khuan-unknown",
+    "refer_uid": "dieu-10-nghi-dinh-912016nd-cp-nghi-dinh-912016nd-cp-quan-ly-hoa-chat-che-pham-diet-con-trung-diet-khuan-unknown",
     "refer_type": "article",
-    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Khi thỏa ước lao động tập thể bị tuyên bố vô hiệu thì quyền, nghĩa vụ và lợi ích của các bên ghi tr ong thỏa ước lao động tập thể tương ứng với toàn bộ hoặc phần bị tuyên bố vô hiệu được giải quyết theo quy định của pháp luật và các thỏa thuận hợp pháp tr ong hợp đồng lao động.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản. (Ví dụ trả lời: 03/2022/QH15)",
-    "answer": "45/2019/QH14"
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"1. Được thành lập hợp pháp.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản.",
+    "answer": "91/2016/NĐ-CP"
   },
   {
-    "uid": "bench_2_3_date_nghi-dinh-232015nd-cp-nghi-dinh-232015nd-cp-2015-02-16",
-    "refer_uid": "nghi-dinh-232015nd-cp-nghi-dinh-232015nd-cp-2015-02-16",
-    "refer_type": "doc",
-    "question": "Văn bản pháp luật có số hiệu '23/2015/NĐ-CP' được ban hành vào ngày tháng năm nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY. (Ví dụ trả lời: 11/01/2022)",
-    "answer": "16/02/2015"
+    "uid": "bench_2_3_docid_dieu-8-nghi-dinh-532022nd-cp-nghi-dinh-532022nd-cp-huong-dan-luat-an-ninh-mang-unknown",
+    "refer_uid": "dieu-8-nghi-dinh-532022nd-cp-nghi-dinh-532022nd-cp-huong-dan-luat-an-ninh-mang-unknown",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"1. Căn cứ vào các quy định bảo vệ an ninh mạng, bảo vệ bí mật nhà nước, bí mật công tác, tiêu chuẩn, quy chuẩn kỹ thuật an toàn thông tin mạng và các tiêu chuẩn kỹ thuật chuyên ngành khác có liên quan, chủ quản hệ thống thông tin quan trọng về an ninh quốc gia xây dựng các quy định, quy trình, phương án bảo vệ an ninh mạng đối với hệ thống thông tin quan trọng về an ninh quốc gia do mình quản lý.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản.",
+    "answer": "53/2022/NĐ-CP"
   },
   {
-    "uid": "bench_2_3_date_nghi-dinh-142016nd-cp-nghi-dinh-142016nd-cp-2016-03-15",
-    "refer_uid": "nghi-dinh-142016nd-cp-nghi-dinh-142016nd-cp-2016-03-15",
-    "refer_type": "doc",
-    "question": "Văn bản pháp luật có số hiệu '14/2016/NĐ-CP' được ban hành vào ngày tháng năm nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY. (Ví dụ trả lời: 11/01/2022)",
-    "answer": "15/03/2016"
+    "uid": "bench_2_3_docid_dieu-18-luat-632006qh11-luat-kinh-doanh-bat-dong-san-nam-2006-unknown",
+    "refer_uid": "dieu-18-luat-632006qh11-luat-kinh-doanh-bat-dong-san-nam-2006-unknown",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"1. Tổ chức, cá nhân kinh doanh bất động sản được đầu tư tạo lập nhà, công trình xây dựng để kinh doanh theo các hình thức sau đây: a) Đầu tư xây dựng mới nhà, công trình xây dựng; b) Đầu tư cải tạo, sửa chữa nhà, công trình xây dựng có sẵn.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản.",
+    "answer": "63/2006/QH11"
   },
   {
-    "uid": "bench_2_3_date_nghi-dinh-94-cp-nghi-dinh-94-cp-1997-09-06",
-    "refer_uid": "nghi-dinh-94-cp-nghi-dinh-94-cp-1997-09-06",
+    "uid": "bench_2_3_effective_nghi-dinh-502019nd-cp-nghi-dinh-502019nd-cp-cap-chung-chi-hanh-nghe-kham-chua-benh-trong-quan-doi-unknown",
+    "refer_uid": "nghi-dinh-502019nd-cp-nghi-dinh-502019nd-cp-cap-chung-chi-hanh-nghe-kham-chua-benh-trong-quan-doi-unknown",
     "refer_type": "doc",
-    "question": "Văn bản pháp luật có số hiệu '94-CP' được ban hành vào ngày tháng năm nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY. (Ví dụ trả lời: 11/01/2022)",
-    "answer": "06/09/1997"
+    "question": "Văn bản pháp luật có số hiệu '50/2019/NĐ-CP' có hiệu lực từ ngày nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY.",
+    "answer": "24/07/2019"
   },
   {
-    "uid": "bench_2_3_date_nghi-dinh-1101997nd-cp-nghi-dinh-1101997nd-cp-1997-11-18",
-    "refer_uid": "nghi-dinh-1101997nd-cp-nghi-dinh-1101997nd-cp-1997-11-18",
-    "refer_type": "doc",
-    "question": "Văn bản pháp luật có số hiệu '110/1997/NĐ-CP' được ban hành vào ngày tháng năm nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY. (Ví dụ trả lời: 11/01/2022)",
-    "answer": "18/11/1997"
+    "uid": "bench_2_3_docid_dieu-36-nghi-dinh-1212005nd-cp-nghi-dinh-1212005nd-cp-cua-chinh-phu-ve-viec-quy-dinh-chi-tiet-va-huong-dan-thi-hanh-mot-so-dieu-cua-luat-thi-dua-khen-thuong-va-luat-sua-doi-bo-sung-mot-so-dieu-cua-luat-thi-dua-khen-thuong-unknown",
+    "refer_uid": "dieu-36-nghi-dinh-1212005nd-cp-nghi-dinh-1212005nd-cp-cua-chinh-phu-ve-viec-quy-dinh-chi-tiet-va-huong-dan-thi-hanh-mot-so-dieu-cua-luat-thi-dua-khen-thuong-va-luat-sua-doi-bo-sung-mot-so-dieu-cua-luat-thi-dua-khen-thuong-unknown",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"1. Huân chương Chiến công hạng ba để tặng cho cán bộ, chiến sỹ trong quân đội nhân dân, công an nhân dân, dân quân tự vệ và trong các tầng lớp nhân dân đạt các tiêu chuẩn sau: a) Đã dũng cảm mưu trí, sáng tạo, hoàn thành xuất sắc nhiệm vụ trong chiến đấu, phục vụ chiến đấu, chấp hành tốt chủ trương, chính sách, pháp luật của Đảng và Nhà nước, không vi phạm khuyết điểm lớn; b) Mưu trí, dũng cảm, đạt hiệu quả cao trong chiến đấu và phục vụ chiến đấu bảo vệ chủ quyền an ninh quốc gia hoặc tấn công tội phạm hình sự, kinh tế và các loại tội phạm khác, góp phần giữ vững an ninh chính trị, trật tự, an toàn xã hội; hoàn thành tốt nhiệm vụ được giao; c) Thành tích đạt được có tác dụng động viên, giáo dục, nêu gương trong toàn quân khu, quân chủng, quân đoàn, tổng cục, được cấp có thẩm quyền ghi nhận.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản.",
+    "answer": "121/2005/NĐ-CP"
   },
   {
-    "uid": "bench_2_3_date_nghi-dinh-731998nd-cp-nghi-dinh-731998nd-cp-1998-09-15",
-    "refer_uid": "nghi-dinh-731998nd-cp-nghi-dinh-731998nd-cp-1998-09-15",
+    "uid": "bench_2_3_signer_nghi-dinh-142015nd-cp-nghi-dinh-142015nd-cp-huong-dan-luat-duong-sat-unknown",
+    "refer_uid": "nghi-dinh-142015nd-cp-nghi-dinh-142015nd-cp-huong-dan-luat-duong-sat-unknown",
     "refer_type": "doc",
-    "question": "Văn bản pháp luật có số hiệu '73/1998/NĐ-CP' được ban hành vào ngày tháng năm nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY. (Ví dụ trả lời: 11/01/2022)",
-    "answer": "15/09/1998"
+    "question": "Ai là người ký văn bản pháp luật có số hiệu '14/2015/NĐ-CP'?\n\nYêu cầu: Chỉ trả về tên người ký.",
+    "answer": "Nguyễn Tấn Dũng"
   },
   {
-    "uid": "bench_2_3_date_nghi-dinh-1402018nd-cp-nghi-dinh-1402018nd-cp-2018-10-08",
-    "refer_uid": "nghi-dinh-1402018nd-cp-nghi-dinh-1402018nd-cp-2018-10-08",
-    "refer_type": "doc",
-    "question": "Văn bản pháp luật có số hiệu '140/2018/NĐ-CP' được ban hành vào ngày tháng năm nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY. (Ví dụ trả lời: 11/01/2022)",
-    "answer": "08/10/2018"
+    "uid": "bench_2_3_article_dieu-6-luat-672006qh11-luat-cong-nghe-thong-tin-2006-so-672006qh11-unknown",
+    "refer_uid": "dieu-6-luat-672006qh11-luat-cong-nghe-thong-tin-2006-so-672006qh11-unknown",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc điều khoản nào của văn bản pháp luật nào?\n\n\"1. Xây dựng, tổ chức thực hiện chiến lược, quy hoạch, kế hoạch, chính sách ứng dụng và phát triển công nghệ thông tin.\"\n\nYêu cầu: Trả về theo mẫu 'Điều [số điều] [số hiệu văn bản]'.",
+    "answer": "Điều 6 67/2006/QH11"
   },
   {
-    "uid": "bench_2_3_date_nghi-dinh-832023nd-cp-nghi-dinh-832023nd-cp-2023-11-29",
-    "refer_uid": "nghi-dinh-832023nd-cp-nghi-dinh-832023nd-cp-2023-11-29",
+    "uid": "bench_2_3_signer_nghi-dinh-822017nd-cp-nghi-dinh-so-822017nd-cp-ve-muc-phi-cap-quyen-khai-thac-nuoc-unknown",
+    "refer_uid": "nghi-dinh-822017nd-cp-nghi-dinh-so-822017nd-cp-ve-muc-phi-cap-quyen-khai-thac-nuoc-unknown",
     "refer_type": "doc",
-    "question": "Văn bản pháp luật có số hiệu '83/2023/NĐ-CP' được ban hành vào ngày tháng năm nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY. (Ví dụ trả lời: 11/01/2022)",
-    "answer": "29/11/2023"
+    "question": "Ai là người ký văn bản pháp luật có số hiệu '82/2017/NĐ-CP'?\n\nYêu cầu: Chỉ trả về tên người ký.",
+    "answer": "Nguyễn Xuân Phúc"
   },
   {
-    "uid": "bench_2_3_date_nghi-dinh-542019nd-cp-nghi-dinh-542019nd-cp-2019-06-19",
-    "refer_uid": "nghi-dinh-542019nd-cp-nghi-dinh-542019nd-cp-2019-06-19",
+    "uid": "bench_2_3_effective_nghi-dinh-852017nd-cp-nghi-dinh-852017nd-cp-ve-he-thong-to-chuc-thong-ke-tap-trung-unknown",
+    "refer_uid": "nghi-dinh-852017nd-cp-nghi-dinh-852017nd-cp-ve-he-thong-to-chuc-thong-ke-tap-trung-unknown",
     "refer_type": "doc",
-    "question": "Văn bản pháp luật có số hiệu '54/2019/NĐ-CP' được ban hành vào ngày tháng năm nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY. (Ví dụ trả lời: 11/01/2022)",
-    "answer": "19/06/2019"
+    "question": "Văn bản pháp luật có số hiệu '85/2017/NĐ-CP' có hiệu lực từ ngày nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY.",
+    "answer": "05/09/2017"
   },
   {
-    "uid": "bench_2_3_date_nghi-dinh-422007nd-cp-nghi-dinh-422007nd-cp-2007-03-26",
-    "refer_uid": "nghi-dinh-422007nd-cp-nghi-dinh-422007nd-cp-2007-03-26",
+    "uid": "bench_2_3_effective_nghi-dinh-1472003nd-cp-nghi-dinh-1472003nd-cp-cua-chinh-phu-quy-dinh-ve-dieu-kien-thu-tuc-cap-giay-phep-va-quan-ly-hoat-dong-cua-cac-co-so-cai-nghien-ma-tuy-tu-nguyen-unknown",
+    "refer_uid": "nghi-dinh-1472003nd-cp-nghi-dinh-1472003nd-cp-cua-chinh-phu-quy-dinh-ve-dieu-kien-thu-tuc-cap-giay-phep-va-quan-ly-hoat-dong-cua-cac-co-so-cai-nghien-ma-tuy-tu-nguyen-unknown",
     "refer_type": "doc",
-    "question": "Văn bản pháp luật có số hiệu '42/2007/NĐ-CP' được ban hành vào ngày tháng năm nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY. (Ví dụ trả lời: 11/01/2022)",
-    "answer": "26/03/2007"
+    "question": "Văn bản pháp luật có số hiệu '147/2003/NĐ-CP' có hiệu lực từ ngày nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY.",
+    "answer": "23/12/2003"
   },
   {
-    "uid": "bench_2_3_date_nghi-dinh-842018nd-cp-nghi-dinh-842018nd-cp-2018-05-28",
-    "refer_uid": "nghi-dinh-842018nd-cp-nghi-dinh-842018nd-cp-2018-05-28",
+    "uid": "bench_2_3_effective_nghi-dinh-062008nd-cp-nghi-dinh-062008nd-cp-ve-xu-phat-vi-pham-hanh-chinh-trong-hoat-dong-thuong-mai-unknown",
+    "refer_uid": "nghi-dinh-062008nd-cp-nghi-dinh-062008nd-cp-ve-xu-phat-vi-pham-hanh-chinh-trong-hoat-dong-thuong-mai-unknown",
     "refer_type": "doc",
-    "question": "Văn bản pháp luật có số hiệu '84/2018/NĐ-CP' được ban hành vào ngày tháng năm nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY. (Ví dụ trả lời: 11/01/2022)",
-    "answer": "28/05/2018"
+    "question": "Văn bản pháp luật có số hiệu '06/2008/NĐ-CP' có hiệu lực từ ngày nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY.",
+    "answer": "13/02/2008"
   },
   {
-    "uid": "bench_2_3_date_nghi-dinh-712000nd-cp-nghi-dinh-712000nd-cp-2000-11-23",
-    "refer_uid": "nghi-dinh-712000nd-cp-nghi-dinh-712000nd-cp-2000-11-23",
-    "refer_type": "doc",
-    "question": "Văn bản pháp luật có số hiệu '71/2000/NĐ-CP' được ban hành vào ngày tháng năm nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY. (Ví dụ trả lời: 11/01/2022)",
-    "answer": "23/11/2000"
+    "uid": "bench_2_3_article_dieu-169-luat-322024qh15-luat-cac-to-chuc-tin-dung-2024-so-322024qh15-unknown",
+    "refer_uid": "dieu-169-luat-322024qh15-luat-cac-to-chuc-tin-dung-2024-so-322024qh15-unknown",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc điều khoản nào của văn bản pháp luật nào?\n\n\"1. Trong thời hạn 60 ngày kể từ ngày nhận được văn bản yêu cầu của Ban kiểm soát đặc biệt quy định tại khoản 7 Điều 167 của Luật này , tổ chức tín dụng được kiểm soát đặc biệt hoàn thành việc xây dựng phương án phục hồi gửi Ban kiểm soát đặc biệt.\"\n\nYêu cầu: Trả về theo mẫu 'Điều [số điều] [số hiệu văn bản]'.",
+    "answer": "Điều 169 32/2024/QH15"
   },
   {
-    "uid": "bench_2_3_date_nghi-dinh-05nd-cp-nghi-dinh-05nd-cp-2007-04-02",
-    "refer_uid": "nghi-dinh-05nd-cp-nghi-dinh-05nd-cp-2007-04-02",
+    "uid": "bench_2_3_signer_nghi-dinh-632024nd-cp-nghi-dinh-632024nd-cp-lien-thong-dien-tu-02-nhom-tthc-dang-ky-khai-sinh-thuong-tru-cap-the-bhyt-khai-tu-xoa-dang-ky-thuong-tru-va-giai-quyet-tu-tuat-unknown",
+    "refer_uid": "nghi-dinh-632024nd-cp-nghi-dinh-632024nd-cp-lien-thong-dien-tu-02-nhom-tthc-dang-ky-khai-sinh-thuong-tru-cap-the-bhyt-khai-tu-xoa-dang-ky-thuong-tru-va-giai-quyet-tu-tuat-unknown",
     "refer_type": "doc",
-    "question": "Văn bản pháp luật có số hiệu '05/NĐ-CP' được ban hành vào ngày tháng năm nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY. (Ví dụ trả lời: 11/01/2022)",
-    "answer": "02/04/2007"
+    "question": "Ai là người ký văn bản pháp luật có số hiệu '63/2024/NĐ-CP'?\n\nYêu cầu: Chỉ trả về tên người ký.",
+    "answer": "Trần Lưu Quang"
   },
   {
-    "uid": "bench_2_3_status_nghi-dinh-1042011nd-cp-nghi-dinh-1042011nd-cp-2011-11-16",
-    "refer_uid": "nghi-dinh-1042011nd-cp-nghi-dinh-1042011nd-cp-2011-11-16",
-    "refer_type": "doc",
-    "question": "Tình trạng hiệu lực hiện tại của văn bản có số hiệu '104/2011/NĐ-CP' là gì?\n\nYêu cầu: Chỉ trả về tình trạng hiệu lực. (Ví dụ trả lời: Còn hiệu lực)",
-    "answer": "Hết hiệu lực"
+    "uid": "bench_2_3_article_dieu-27-luat-012002qh11-luat-ngan-sach-nha-nuoc-nam-2002-unknown",
+    "refer_uid": "dieu-27-luat-012002qh11-luat-ngan-sach-nha-nuoc-nam-2002-unknown",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc điều khoản nào của văn bản pháp luật nào?\n\n\"Nhiệm vụ, quyền hạn của các đơn vị dự toán ngân sách: 1. Tổ chức lập dự toán thu, chi ngân sách thuộc phạm vi quản lý, thực hiện phân bổ dự toán ngân sách được cấp có thẩm quyền giao cho các đơn vị trực thuộc và điều chỉnh phân bổ dự toán theo thẩm quyền; 2.\"\n\nYêu cầu: Trả về theo mẫu 'Điều [số điều] [số hiệu văn bản]'.",
+    "answer": "Điều 27 01/2002/QH11"
   },
   {
-    "uid": "bench_2_3_status_nghi-dinh-56-cp-nghi-dinh-56-cp-1966-03-17",
-    "refer_uid": "nghi-dinh-56-cp-nghi-dinh-56-cp-1966-03-17",
-    "refer_type": "doc",
-    "question": "Tình trạng hiệu lực hiện tại của văn bản có số hiệu '56-CP' là gì?\n\nYêu cầu: Chỉ trả về tình trạng hiệu lực. (Ví dụ trả lời: Còn hiệu lực)",
-    "answer": "Hết hiệu lực"
+    "uid": "bench_2_3_docid_dieu-18-luat-042011qh13-luat-do-luong-2011-so-042011qh13-unknown",
+    "refer_uid": "dieu-18-luat-042011qh13-luat-do-luong-2011-so-042011qh13-unknown",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"1. Đáp ứng yêu cầu quy định tại Điều 17 của Luật này.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản.",
+    "answer": "04/2011/QH13"
   },
   {
-    "uid": "bench_2_3_status_nghi-dinh-231999nd-cp-nghi-dinh-231999nd-cp-1999-04-15",
-    "refer_uid": "nghi-dinh-231999nd-cp-nghi-dinh-231999nd-cp-1999-04-15",
+    "uid": "bench_2_3_effective_nghi-dinh-2082004nd-cp-nghi-dinh-2082004nd-cp-cua-chinh-phu-ve-viec-dieu-chinh-luong-huu-va-tro-cap-bao-hiem-xa-hoi-unknown",
+    "refer_uid": "nghi-dinh-2082004nd-cp-nghi-dinh-2082004nd-cp-cua-chinh-phu-ve-viec-dieu-chinh-luong-huu-va-tro-cap-bao-hiem-xa-hoi-unknown",
     "refer_type": "doc",
-    "question": "Tình trạng hiệu lực hiện tại của văn bản có số hiệu '23/1999/NĐ-CP' là gì?\n\nYêu cầu: Chỉ trả về tình trạng hiệu lực. (Ví dụ trả lời: Còn hiệu lực)",
-    "answer": "Còn hiệu lực"
+    "question": "Văn bản pháp luật có số hiệu '208/2004/NĐ-CP' có hiệu lực từ ngày nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY.",
+    "answer": "04/01/2005"
   },
   {
-    "uid": "bench_2_3_status_nghi-dinh-842004nd-cp-nghi-dinh-842004nd-cp-2004-02-21",
-    "refer_uid": "nghi-dinh-842004nd-cp-nghi-dinh-842004nd-cp-2004-02-21",
-    "refer_type": "doc",
-    "question": "Tình trạng hiệu lực hiện tại của văn bản có số hiệu '84/2004/NĐ-CP' là gì?\n\nYêu cầu: Chỉ trả về tình trạng hiệu lực. (Ví dụ trả lời: Còn hiệu lực)",
-    "answer": "Còn hiệu lực"
+    "uid": "bench_2_3_article_dieu-17-nghi-dinh-682007nd-cp-nghi-dinh-so-682007nd-cp-cua-chinh-phu-ve-viec-quy-dinh-chi-tiet-va-huong-dan-thi-hanh-mot-so-dieu-cua-luat-bao-hiem-xa-hoi-ve-bao-hiem-xa-hoi-bat-buoc-doi-voi-quan-nhan-cong-an-nhan-dan-va-nguoi-lam-cong-tac-co-yeu-huong-luong-nhu-doi-voi-quan-nhan-cong-an-nhan-dan-unknown",
+    "refer_uid": "dieu-17-nghi-dinh-682007nd-cp-nghi-dinh-so-682007nd-cp-cua-chinh-phu-ve-viec-quy-dinh-chi-tiet-va-huong-dan-thi-hanh-mot-so-dieu-cua-luat-bao-hiem-xa-hoi-ve-bao-hiem-xa-hoi-bat-buoc-doi-voi-quan-nhan-cong-an-nhan-dan-va-nguoi-lam-cong-tac-co-yeu-huong-luong-nhu-doi-voi-quan-nhan-cong-an-nhan-dan-unknown",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc điều khoản nào của văn bản pháp luật nào?\n\n\"Người lao động quy định tại các khoản 1 và 2 Điều 2 Nghị định này, nếu bị suy giảm khả năng lao động từ 5% trở lên do bị tai nạn thuộc một trong các trường hợp sau thì được hưởng chế độ tai nạn lao động: 1. Bị tai nạn trong huấn luyện quân sự, trong học tập, rèn luyện, công tác, lao động sản xuất, thực hiện nhiệm vụ theo yêu cầu của chỉ huy đơn vị, kể cả tại nơi làm việc hoặc ngoài nơi làm việc, trong giờ làm việc hoặc ngoài giờ làm việc.\"\n\nYêu cầu: Trả về theo mẫu 'Điều [số điều] [số hiệu văn bản]'.",
+    "answer": "Điều 17 68/2007/NĐ-CP"
   },
   {
-    "uid": "bench_2_3_status_nghi-dinh-632019nd-cp-nghi-dinh-632019nd-cp-2019-07-11",
-    "refer_uid": "nghi-dinh-632019nd-cp-nghi-dinh-632019nd-cp-2019-07-11",
+    "uid": "bench_2_3_signer_nghi-dinh-1452007nd-cp-nghi-dinh-1452007nd-cp-cua-chinh-phu-ve-viec-dieu-chinh-dia-gioi-hanh-chinh-huyen-kien-thuy-de-thanh-lap-quan-duong-kinh-thanh-lap-quan-do-son-thanh-lap-phuong-thuoc-cac-quan-duong-kinh-do-son-thanh-pho-hai-phong-unknown",
+    "refer_uid": "nghi-dinh-1452007nd-cp-nghi-dinh-1452007nd-cp-cua-chinh-phu-ve-viec-dieu-chinh-dia-gioi-hanh-chinh-huyen-kien-thuy-de-thanh-lap-quan-duong-kinh-thanh-lap-quan-do-son-thanh-lap-phuong-thuoc-cac-quan-duong-kinh-do-son-thanh-pho-hai-phong-unknown",
     "refer_type": "doc",
-    "question": "Tình trạng hiệu lực hiện tại của văn bản có số hiệu '63/2019/NĐ-CP' là gì?\n\nYêu cầu: Chỉ trả về tình trạng hiệu lực. (Ví dụ trả lời: Còn hiệu lực)",
-    "answer": "Còn hiệu lực"
+    "question": "Ai là người ký văn bản pháp luật có số hiệu '145/2007/NĐ-CP'?\n\nYêu cầu: Chỉ trả về tên người ký.",
+    "answer": "Nguyễn Tấn Dũng"
   },
   {
-    "uid": "bench_2_3_status_nghi-dinh-262009nd-cp-nghi-dinh-262009nd-cp-2009-03-16",
-    "refer_uid": "nghi-dinh-262009nd-cp-nghi-dinh-262009nd-cp-2009-03-16",
-    "refer_type": "doc",
-    "question": "Tình trạng hiệu lực hiện tại của văn bản có số hiệu '26/2009/NĐ-CP' là gì?\n\nYêu cầu: Chỉ trả về tình trạng hiệu lực. (Ví dụ trả lời: Còn hiệu lực)",
-    "answer": "Hết hiệu lực"
+    "uid": "bench_2_3_docid_dieu-35-luat-382013qh13-luat-viec-lam-2013-so-382013qh13-unknown",
+    "refer_uid": "dieu-35-luat-382013qh13-luat-viec-lam-2013-so-382013qh13-unknown",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"1. Người lao động làm công việc ảnh hưởng trực tiếp đến an toàn và sức khoẻ của cá nhân người lao động hoặc cộng đồng phải có chứng chỉ kỹ năng nghề quốc gia.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản.",
+    "answer": "38/2013/QH13"
   },
   {
-    "uid": "bench_2_3_status_nghi-dinh-192004nd-cp-nghi-dinh-192004nd-cp-2004-01-10",
-    "refer_uid": "nghi-dinh-192004nd-cp-nghi-dinh-192004nd-cp-2004-01-10",
+    "uid": "bench_2_3_effective_nghi-dinh-1142008nd-cp-nghi-dinh-1142008nd-cp-cua-chinh-phu-ve-viec-huong-dan-thi-hanh-mot-so-dieu-cua-luat-pha-san-doi-voi-doanh-nghiep-hoat-dong-kinh-doanh-trong-linh-vuc-bao-hiem-chung-khoan-va-tai-chinh-khac-unknown",
+    "refer_uid": "nghi-dinh-1142008nd-cp-nghi-dinh-1142008nd-cp-cua-chinh-phu-ve-viec-huong-dan-thi-hanh-mot-so-dieu-cua-luat-pha-san-doi-voi-doanh-nghiep-hoat-dong-kinh-doanh-trong-linh-vuc-bao-hiem-chung-khoan-va-tai-chinh-khac-unknown",
     "refer_type": "doc",
-    "question": "Tình trạng hiệu lực hiện tại của văn bản có số hiệu '19/2004/NĐ-CP' là gì?\n\nYêu cầu: Chỉ trả về tình trạng hiệu lực. (Ví dụ trả lời: Còn hiệu lực)",
-    "answer": "Hết hiệu lực"
+    "question": "Văn bản pháp luật có số hiệu '114/2008/NĐ-CP' có hiệu lực từ ngày nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY.",
+    "answer": "29/11/2008"
   },
   {
-    "uid": "bench_2_3_status_nghi-dinh-872008nd-cp-nghi-dinh-872008nd-cp-2008-08-04",
-    "refer_uid": "nghi-dinh-872008nd-cp-nghi-dinh-872008nd-cp-2008-08-04",
+    "uid": "bench_2_3_signer_nghi-dinh-2222013nd-cp-nghi-dinh-2222013nd-cp-ve-thanh-toan-bang-tien-mat-unknown",
+    "refer_uid": "nghi-dinh-2222013nd-cp-nghi-dinh-2222013nd-cp-ve-thanh-toan-bang-tien-mat-unknown",
     "refer_type": "doc",
-    "question": "Tình trạng hiệu lực hiện tại của văn bản có số hiệu '87/2008/NĐ-CP' là gì?\n\nYêu cầu: Chỉ trả về tình trạng hiệu lực. (Ví dụ trả lời: Còn hiệu lực)",
-    "answer": "Còn hiệu lực"
+    "question": "Ai là người ký văn bản pháp luật có số hiệu '222/2013/NĐ-CP'?\n\nYêu cầu: Chỉ trả về tên người ký.",
+    "answer": "Nguyễn Tấn Dũng"
   },
   {
-    "uid": "bench_2_3_status_nghi-dinh-1232004nd-cp-nghi-dinh-1232004nd-cp-2004-05-18",
-    "refer_uid": "nghi-dinh-1232004nd-cp-nghi-dinh-1232004nd-cp-2004-05-18",
-    "refer_type": "doc",
-    "question": "Tình trạng hiệu lực hiện tại của văn bản có số hiệu '123/2004/NĐ-CP' là gì?\n\nYêu cầu: Chỉ trả về tình trạng hiệu lực. (Ví dụ trả lời: Còn hiệu lực)",
-    "answer": "Hết hiệu lực"
+    "uid": "bench_2_3_article_dieu-41-luat-202008qh12-luat-da-dang-sinh-hoc-2008-so-202008qh12-unknown",
+    "refer_uid": "dieu-41-luat-202008qh12-luat-da-dang-sinh-hoc-2008-so-202008qh12-unknown",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc điều khoản nào của văn bản pháp luật nào?\n\n\"1. Khu vực có loài thuộc Danh mục loài nguy cấp, quý, hiếm được ưu tiên bảo vệ quy định tại điểm a khoản 1 Điều 37 của Luật này sinh sống tự nhiên thường xuyên hoặc theo mùa phải được điều tra, đánh giá để lập dự án thành lập khu bảo tồn.\"\n\nYêu cầu: Trả về theo mẫu 'Điều [số điều] [số hiệu văn bản]'.",
+    "answer": "Điều 41 20/2008/QH12"
   },
   {
-    "uid": "bench_2_3_status_nghi-dinh-50-cp-nghi-dinh-50-cp-1995-07-26",
-    "refer_uid": "nghi-dinh-50-cp-nghi-dinh-50-cp-1995-07-26",
+    "uid": "bench_2_3_effective_nghi-dinh-1102005nd-cp-nghi-dinh-1102005nd-cp-cua-chinh-phu-ve-quan-ly-hoat-dong-ban-hang-da-cap-unknown",
+    "refer_uid": "nghi-dinh-1102005nd-cp-nghi-dinh-1102005nd-cp-cua-chinh-phu-ve-quan-ly-hoat-dong-ban-hang-da-cap-unknown",
     "refer_type": "doc",
-    "question": "Tình trạng hiệu lực hiện tại của văn bản có số hiệu '50-CP' là gì?\n\nYêu cầu: Chỉ trả về tình trạng hiệu lực. (Ví dụ trả lời: Còn hiệu lực)",
-    "answer": "Hết hiệu lực"
+    "question": "Văn bản pháp luật có số hiệu '110/2005/NĐ-CP' có hiệu lực từ ngày nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY.",
+    "answer": "20/09/2005"
   },
   {
-    "uid": "bench_2_3_status_nghi-dinh-272010nd-cp-nghi-dinh-272010nd-cp-2010-03-24",
-    "refer_uid": "nghi-dinh-272010nd-cp-nghi-dinh-272010nd-cp-2010-03-24",
-    "refer_type": "doc",
-    "question": "Tình trạng hiệu lực hiện tại của văn bản có số hiệu '27/2010/NĐ-CP' là gì?\n\nYêu cầu: Chỉ trả về tình trạng hiệu lực. (Ví dụ trả lời: Còn hiệu lực)",
-    "answer": "Còn hiệu lực"
+    "uid": "bench_2_3_docid_dieu-20-luat-39-lctn-luat-doanh-nghiep-nha-nuoc-nam-1995-unknown",
+    "refer_uid": "dieu-20-luat-39-lctn-luat-doanh-nghiep-nha-nuoc-nam-1995-unknown",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"1- Các biện pháp áp dụng để tổ chức lại doanh nghiệp bao gồm: sáp nhập vào doanh nghiệp nhà nước khác, chia tách doanh nghiệp nhà nước và những biện pháp khác làm thay đổi mục tiêu hoạt động, hình thức tổ chức của doanh nghiệp. 2- Người đề nghị thành lập doanh nghiệp nhà nước phải lập phương án tổ chức lại doanh nghiệp.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản.",
+    "answer": "39-L/CTN"
   },
   {
-    "uid": "bench_2_3_status_nghi-dinh-022017nd-cp-nghi-dinh-022017nd-cp-2017-01-09",
-    "refer_uid": "nghi-dinh-022017nd-cp-nghi-dinh-022017nd-cp-2017-01-09",
+    "uid": "bench_2_3_signer_nghi-dinh-082023nd-cp-nghi-dinh-082023nd-cp-sua-doi-ngung-hieu-luc-mot-so-dieu-tai-cac-nghi-dinh-quy-dinh-ve-chao-ban-giao-dich-trai-phieu-doanh-nghiep-rieng-le-unknown",
+    "refer_uid": "nghi-dinh-082023nd-cp-nghi-dinh-082023nd-cp-sua-doi-ngung-hieu-luc-mot-so-dieu-tai-cac-nghi-dinh-quy-dinh-ve-chao-ban-giao-dich-trai-phieu-doanh-nghiep-rieng-le-unknown",
     "refer_type": "doc",
-    "question": "Tình trạng hiệu lực hiện tại của văn bản có số hiệu '02/2017/NĐ-CP' là gì?\n\nYêu cầu: Chỉ trả về tình trạng hiệu lực. (Ví dụ trả lời: Còn hiệu lực)",
-    "answer": "Còn hiệu lực"
+    "question": "Ai là người ký văn bản pháp luật có số hiệu '08/2023/NĐ-CP'?\n\nYêu cầu: Chỉ trả về tên người ký.",
+    "answer": "Lê Minh Khái"
+  },
+  {
+    "uid": "bench_2_3_docid_dieu-41-luat-052003qh11-luat-hoat-dong-giam-sat-cua-quoc-hoi-nam-2003-unknown",
+    "refer_uid": "dieu-41-luat-052003qh11-luat-hoat-dong-giam-sat-cua-quoc-hoi-nam-2003-unknown",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Khi nhận được văn bản quy phạm pháp luật, đại biểu Quốc hội, Đoàn đại biểu Quốc hội có trách nhiệm nghiên cứu, xem xét nội dung văn bản đó. Trong trường hợp phát hiện văn bản quy phạm pháp luật có dấu hiệu trái với Hiến pháp, luật, nghị quyết của Quốc hội, pháp lệnh, nghị quyết của Uỷ ban thường vụ Quốc hội thì đại biểu Quốc hội, Đoàn đại biểu Quốc hội trong phạm vi nhiệm vụ, quyền hạn của mình có quyền yêu cầu cơ quan, tổ chức, cá nhân có thẩm quyền sửa đổi, bổ sung, đình chỉ việc thi hành, bãi bỏ một phần hoặc toàn bộ văn bản quy phạm pháp luật hoặc ban hành văn bản quy phạm pháp luật mới.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản.",
+    "answer": "05/2003/QH11"
+  },
+  {
+    "uid": "bench_2_3_docid_dieu-95-luat-602005qh11-luat-doanh-nghiep-2005-luat-so-602005qh11-unknown",
+    "refer_uid": "dieu-95-luat-602005qh11-luat-doanh-nghiep-2005-luat-so-602005qh11-unknown",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Công ty cổ phần có Đại hội đồng cổ đông, Hội đồng quản trị và Giám đốc hoặc Tổng giám đốc; đối với công ty cổ phần có trên mười một cổ đông là cá nhân hoặc có cổ đông là tổ chức sở hữu trên 50% tổng số cổ phần của công ty phải có Ban kiểm soát. Chủ tịch Hội đồng quản trị hoặc Giám đốc hoặc Tổng giám đốc là người đại diện theo pháp luật của công ty được quy định tại Điều lệ công ty.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản.",
+    "answer": "60/2005/QH11"
+  },
+  {
+    "uid": "bench_2_3_effective_nghi-dinh-932025nd-cp-nghi-dinh-932025nd-cp-sua-doi-bo-sung-nghi-dinh-192020nd-cp-ve-kiem-tra-xu-ly-ky-luat-trong-thi-hanh-phap-luat-xu-ly-vi-pham-hanh-chinh-unknown",
+    "refer_uid": "nghi-dinh-932025nd-cp-nghi-dinh-932025nd-cp-sua-doi-bo-sung-nghi-dinh-192020nd-cp-ve-kiem-tra-xu-ly-ky-luat-trong-thi-hanh-phap-luat-xu-ly-vi-pham-hanh-chinh-unknown",
+    "refer_type": "doc",
+    "question": "Văn bản pháp luật có số hiệu '93/2025/NĐ-CP' có hiệu lực từ ngày nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY.",
+    "answer": "15/06/2025"
+  },
+  {
+    "uid": "bench_2_3_article_dieu-8-luat-22-lctn-luat-xuat-ban-unknown",
+    "refer_uid": "dieu-8-luat-22-lctn-luat-xuat-ban-unknown",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc điều khoản nào của văn bản pháp luật nào?\n\n\"Không một tổ chức, cá nhân nào được cản trở quyền phổ biến tác phẩm, quyền hoạt động xuất bản hợp pháp của nhà xuất bản hoặc lợi dụng quyền phổ biến tác phẩm, quyền hoạt động xuất bản làm thiệt hại đến lợi ích Nhà nước, lợi ích hợp pháp của tổ chức, công dân. Nhà xuất bản không được xuất bản, tái bản tác phẩm nếu không được sự đồng ý của tác giả hoặc người được thừa kế hợp pháp theo quy định của pháp luật về quyền tác giả.\"\n\nYêu cầu: Trả về theo mẫu 'Điều [số điều] [số hiệu văn bản]'.",
+    "answer": "Điều 8 22-L/CTN"
+  },
+  {
+    "uid": "bench_2_3_article_dieu-225-luat-42-lcthdnn8-bo-luat-hang-hai-so-42-lcthdnn8-cua-quoc-hoi-unknown",
+    "refer_uid": "dieu-225-luat-42-lcthdnn8-bo-luat-hang-hai-so-42-lcthdnn8-cua-quoc-hoi-unknown",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc điều khoản nào của văn bản pháp luật nào?\n\n\"Khi bảo hiểm tầu và tiền cước vận chuyển, người bảo hiểm không chịu trách nhiệm về các tổn thất phát sinh do: a) Tầu không đủ khả năng an toàn đi biển vào lúc bắt đầu chuyến đi, trừ khi tầu có khuyết tật ẩn hoặc khi xảy ra các tình huống không thể tránh khỏi, mặc dù người được bảo hiểm đã có sự quan tâm thích đáng; b) Tuổi của tầu hoặc thời gian sử dụng; c) Bốc lên tầu những chất hoặc vật liệu dễ nổ, dễ cháy hoặc những hàng hoá nguy hiểm khác, không phù hợp với những quy định về việc vận chuyển loại hàng này, nếu người được bảo hiểm biết nhưng người bảo hiểm lại không biết về việc đó.\"\n\nYêu cầu: Trả về theo mẫu 'Điều [số điều] [số hiệu văn bản]'.",
+    "answer": "Điều 225 42-LCT/HĐNN8"
+  },
+  {
+    "uid": "bench_2_3_effective_nghi-dinh-542006nd-cp-nghi-dinh-542006nd-cp-cua-chinh-phu-ve-viec-huong-dan-thi-hanh-mot-so-dieu-cua-phap-lenh-uu-dai-nguoi-co-cong-voi-cach-mang-unknown",
+    "refer_uid": "nghi-dinh-542006nd-cp-nghi-dinh-542006nd-cp-cua-chinh-phu-ve-viec-huong-dan-thi-hanh-mot-so-dieu-cua-phap-lenh-uu-dai-nguoi-co-cong-voi-cach-mang-unknown",
+    "refer_type": "doc",
+    "question": "Văn bản pháp luật có số hiệu '54/2006/NĐ-CP' có hiệu lực từ ngày nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY.",
+    "answer": "20/06/2006"
+  },
+  {
+    "uid": "bench_2_3_docid_dieu-126-luat-722020qh14-luat-bao-ve-moi-truong-2020-so-722020qh14-unknown",
+    "refer_uid": "dieu-126-luat-722020qh14-luat-bao-ve-moi-truong-2020-so-722020qh14-unknown",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"1. Chủ dự án đầu tư, cơ sở gây ra sự cố môi trường phải thực hiện phục hồi môi trường sau sự cố môi trường trong phạm vi cơ sở.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản.",
+    "answer": "72/2020/QH14"
+  },
+  {
+    "uid": "bench_2_3_article_dieu-49-luat-502005qh11-luat-so-huu-tri-tue-2005-so-502005qh11-unknown",
+    "refer_uid": "dieu-49-luat-502005qh11-luat-so-huu-tri-tue-2005-so-502005qh11-unknown",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc điều khoản nào của văn bản pháp luật nào?\n\n\"1. Đăng ký quyền tác giả, quyền liên quan là việc tác giả, chủ sở hữu quyền tác giả, chủ sở hữu quyền liên quan nộp đơn và hồ sơ kèm theo (sau đây gọi chung là đơn) cho cơ quan nhà nước có thẩm quyền để ghi nhận các thông tin về tác giả, tác phẩm, chủ sở hữu quyền tác giả, chủ sở hữu quyền liên quan.\"\n\nYêu cầu: Trả về theo mẫu 'Điều [số điều] [số hiệu văn bản]'.",
+    "answer": "Điều 49 50/2005/QH11"
+  },
+  {
+    "uid": "bench_2_3_signer_nghi-dinh-1792013nd-cp-nghi-dinh-1792013nd-cp-xu-phat-vphc-linh-vuc-bao-ve-moi-truong-unknown",
+    "refer_uid": "nghi-dinh-1792013nd-cp-nghi-dinh-1792013nd-cp-xu-phat-vphc-linh-vuc-bao-ve-moi-truong-unknown",
+    "refer_type": "doc",
+    "question": "Ai là người ký văn bản pháp luật có số hiệu '179/2013/NĐ-CP'?\n\nYêu cầu: Chỉ trả về tên người ký.",
+    "answer": "Nguyễn Tấn Dũng"
+  },
+  {
+    "uid": "bench_2_3_signer_nghi-dinh-622022nd-cp-nghi-dinh-622022nd-cp-quy-dinh-co-cau-to-chuc-cua-bo-ldtbxh-unknown",
+    "refer_uid": "nghi-dinh-622022nd-cp-nghi-dinh-622022nd-cp-quy-dinh-co-cau-to-chuc-cua-bo-ldtbxh-unknown",
+    "refer_type": "doc",
+    "question": "Ai là người ký văn bản pháp luật có số hiệu '62/2022/NĐ-CP'?\n\nYêu cầu: Chỉ trả về tên người ký.",
+    "answer": "Phạm Bình Minh"
+  },
+  {
+    "uid": "bench_2_3_signer_nghi-dinh-152001nd-cp-nghi-dinh-152001nd-cp-cua-chinh-phu-ve-giao-duc-quoc-phong-unknown",
+    "refer_uid": "nghi-dinh-152001nd-cp-nghi-dinh-152001nd-cp-cua-chinh-phu-ve-giao-duc-quoc-phong-unknown",
+    "refer_type": "doc",
+    "question": "Ai là người ký văn bản pháp luật có số hiệu '15/2001/NĐ-CP'?\n\nYêu cầu: Chỉ trả về tên người ký.",
+    "answer": "Phan Văn Khải"
+  },
+  {
+    "uid": "bench_2_3_signer_nghi-dinh-152011nd-cp-nghi-dinh-152011nd-cp-ve-cap-va-quan-ly-bao-lanh-chinh-phu-unknown",
+    "refer_uid": "nghi-dinh-152011nd-cp-nghi-dinh-152011nd-cp-ve-cap-va-quan-ly-bao-lanh-chinh-phu-unknown",
+    "refer_type": "doc",
+    "question": "Ai là người ký văn bản pháp luật có số hiệu '15/2011/NĐ-CP'?\n\nYêu cầu: Chỉ trả về tên người ký.",
+    "answer": "Nguyễn Tấn Dũng"
+  },
+  {
+    "uid": "bench_2_3_effective_nghi-dinh-1082011nd-cp-nghi-dinh-1082011nd-cp-sua-nghi-dinh-ve-sinh-vat-bien-doi-gen-unknown",
+    "refer_uid": "nghi-dinh-1082011nd-cp-nghi-dinh-1082011nd-cp-sua-nghi-dinh-ve-sinh-vat-bien-doi-gen-unknown",
+    "refer_type": "doc",
+    "question": "Văn bản pháp luật có số hiệu '108/2011/NĐ-CP' có hiệu lực từ ngày nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY.",
+    "answer": "15/01/2012"
+  },
+  {
+    "uid": "bench_2_3_signer_nghi-dinh-042002nd-cp-nghi-dinh-042002nd-cp-thanh-lap-xa-thuoc-huyen-cu-lao-dung-tinh-soc-trang-unknown",
+    "refer_uid": "nghi-dinh-042002nd-cp-nghi-dinh-042002nd-cp-thanh-lap-xa-thuoc-huyen-cu-lao-dung-tinh-soc-trang-unknown",
+    "refer_type": "doc",
+    "question": "Ai là người ký văn bản pháp luật có số hiệu '04/2002/NĐ-CP'?\n\nYêu cầu: Chỉ trả về tên người ký.",
+    "answer": "Phan Văn Khải"
+  },
+  {
+    "uid": "bench_2_3_effective_nghi-dinh-2902025nd-cp-nghi-dinh-2902025nd-cp-ve-xu-phat-vi-pham-hanh-chinh-trong-tai-nguyen-nuoc-unknown",
+    "refer_uid": "nghi-dinh-2902025nd-cp-nghi-dinh-2902025nd-cp-ve-xu-phat-vi-pham-hanh-chinh-trong-tai-nguyen-nuoc-unknown",
+    "refer_type": "doc",
+    "question": "Văn bản pháp luật có số hiệu '290/2025/NĐ-CP' có hiệu lực từ ngày nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY.",
+    "answer": "25/12/2025"
+  },
+  {
+    "uid": "bench_2_3_article_dieu-89-nghi-dinh-152021nd-cp-nghi-dinh-152021nd-cp-ve-quan-ly-du-an-dau-tu-xay-dung-unknown",
+    "refer_uid": "dieu-89-nghi-dinh-152021nd-cp-nghi-dinh-152021nd-cp-ve-quan-ly-du-an-dau-tu-xay-dung-unknown",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc điều khoản nào của văn bản pháp luật nào?\n\n\"1. Cơ quan có thẩm quyền cấp chứng chỉ năng lực quyết định việc cấp chứng chỉ năng lực hoạt động xây dựng sau khi có kết quả đánh giá của Hội đồng xét cấp chứng chỉ năng lực hoạt động xây dựng.\"\n\nYêu cầu: Trả về theo mẫu 'Điều [số điều] [số hiệu văn bản]'.",
+    "answer": "Điều 89 15/2021/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_3_docid_dieu-54-nghi-dinh-012021nd-cp-nghi-dinh-012021nd-cp-ve-dang-ky-doanh-nghiep-unknown",
+    "refer_uid": "dieu-54-nghi-dinh-012021nd-cp-nghi-dinh-012021nd-cp-ve-dang-ky-doanh-nghiep-unknown",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"1. Trường hợp chủ doanh nghiệp tư nhân bán, tặng cho doanh nghiệp hoặc chủ doanh nghiệp tư nhân chết thì người mua, người được tặng cho, người thừa kế phải nộp hồ sơ đăng ký thay đổi chủ doanh nghiệp tư nhân đến Phòng Đăng ký kinh doanh nơi doanh nghiệp đặt trụ sở chính.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản.",
+    "answer": "01/2021/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_3_effective_nghi-dinh-982001nd-cp-nghi-dinh-982001nd-cp-thanh-hai-huyen-dong-hai-va-gia-rai-unknown",
+    "refer_uid": "nghi-dinh-982001nd-cp-nghi-dinh-982001nd-cp-thanh-hai-huyen-dong-hai-va-gia-rai-unknown",
+    "refer_type": "doc",
+    "question": "Văn bản pháp luật có số hiệu '98/2001/NĐ-CP' có hiệu lực từ ngày nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY.",
+    "answer": "08/01/2002"
+  },
+  {
+    "uid": "bench_2_3_signer_luat-242008qh12-luat-quoc-tich-2008-so-242008qh12-unknown",
+    "refer_uid": "luat-242008qh12-luat-quoc-tich-2008-so-242008qh12-unknown",
+    "refer_type": "doc",
+    "question": "Ai là người ký văn bản pháp luật có số hiệu '24/2008/QH12'?\n\nYêu cầu: Chỉ trả về tên người ký.",
+    "answer": "Nguyễn Phú Trọng"
+  },
+  {
+    "uid": "bench_2_3_article_dieu-177-luat-532010qh12-luat-thi-hanh-an-hinh-su-nam-2010-unknown",
+    "refer_uid": "dieu-177-luat-532010qh12-luat-thi-hanh-an-hinh-su-nam-2010-unknown",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc điều khoản nào của văn bản pháp luật nào?\n\n\"Bộ Lao động - Thương binh và Xã hội có trách nhiệm phối hợp với Bộ Công an trong chỉ đạo, hướng dẫn việc tổ chức lao động, dạy nghề và thực hiện chế độ, chính sách cho phạm nhân, học sinh trường giáo dưỡng. Chỉ đạo Sở Lao động - Thương binh và Xã hội và các cơ sở bảo trợ xã hội tiếp nhận, chăm sóc, nuôi dưỡng trẻ em là con phạm nhân không có người thân nhận chăm sóc, nuôi dưỡng theo quy định của Luật này và các quy định khác của pháp luật có liên quan.\"\n\nYêu cầu: Trả về theo mẫu 'Điều [số điều] [số hiệu văn bản]'.",
+    "answer": "Điều 177 53/2010/QH12"
+  },
+  {
+    "uid": "bench_2_3_effective_nghi-dinh-1252021nd-cp-nghi-dinh-1252021nd-cp-quy-dinh-xu-phat-vphc-trong-linh-vuc-binh-dang-gioi-unknown",
+    "refer_uid": "nghi-dinh-1252021nd-cp-nghi-dinh-1252021nd-cp-quy-dinh-xu-phat-vphc-trong-linh-vuc-binh-dang-gioi-unknown",
+    "refer_type": "doc",
+    "question": "Văn bản pháp luật có số hiệu '125/2021/NĐ-CP' có hiệu lực từ ngày nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY.",
+    "answer": "01/01/2022"
+  },
+  {
+    "uid": "bench_2_3_effective_nghi-dinh-222015nd-cp-nghi-dinh-222015nd-cp-huong-dan-luat-pha-san-ve-quan-tai-vien-unknown",
+    "refer_uid": "nghi-dinh-222015nd-cp-nghi-dinh-222015nd-cp-huong-dan-luat-pha-san-ve-quan-tai-vien-unknown",
+    "refer_type": "doc",
+    "question": "Văn bản pháp luật có số hiệu '22/2015/NĐ-CP' có hiệu lực từ ngày nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY.",
+    "answer": "06/04/2015"
+  },
+  {
+    "uid": "bench_2_3_article_dieu-73-luat-422024qh15-luat-quan-ly-su-dung-vu-khi-vat-lieu-no-va-cong-cu-ho-tro-2024-so-422024qh15-unknown",
+    "refer_uid": "dieu-73-luat-422024qh15-luat-quan-ly-su-dung-vu-khi-vat-lieu-no-va-cong-cu-ho-tro-2024-so-422024qh15-unknown",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc điều khoản nào của văn bản pháp luật nào?\n\n\"1. Luật này có hiệu lực thi hành từ ngày 01 tháng 01 năm 2025, trừ trường hợp quy định tại khoản 2 Điều này.\"\n\nYêu cầu: Trả về theo mẫu 'Điều [số điều] [số hiệu văn bản]'.",
+    "answer": "Điều 73 42/2024/QH15"
+  },
+  {
+    "uid": "bench_2_3_docid_dieu-13-nghi-dinh-242010nd-cp-nghi-dinh-242010nd-cp-ve-tuyen-dung-su-dung-va-quan-ly-cong-chuc-unknown",
+    "refer_uid": "dieu-13-nghi-dinh-242010nd-cp-nghi-dinh-242010nd-cp-ve-tuyen-dung-su-dung-va-quan-ly-cong-chuc-unknown",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"1. Điểm học tập được xác định bằng trung bình cộng kết quả các môn học trong toàn bộ quá trình học tập của người dự xét tuyển ở trình độ chuyên môn, nghiệp vụ theo yêu cầu của vị trí dự tuyển, được quy đổi theo thang điểm 100 và tính hệ số 2.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản.",
+    "answer": "24/2010/NĐ-CP"
+  },
+  {
+    "uid": "bench_2_3_effective_luat-192012qh13-luat-xuat-ban-2012-so-192012qh13-unknown",
+    "refer_uid": "luat-192012qh13-luat-xuat-ban-2012-so-192012qh13-unknown",
+    "refer_type": "doc",
+    "question": "Văn bản pháp luật có số hiệu '19/2012/QH13' có hiệu lực từ ngày nào?\n\nYêu cầu: Trả về ngày theo định dạng DD/MM/YYYY.",
+    "answer": "01/07/2013"
+  },
+  {
+    "uid": "bench_2_3_article_dieu-40-luat-322018qh14-luat-chan-nuoi-2018-so-322018qh14-unknown",
+    "refer_uid": "dieu-40-luat-322018qh14-luat-chan-nuoi-2018-so-322018qh14-unknown",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc điều khoản nào của văn bản pháp luật nào?\n\n\"1. Có trang thiết bị, dụng cụ để bảo quản thức ăn chăn nuôi theo hướng dẫn của tổ chức, cá nhân sản xuất, cung cấp.\"\n\nYêu cầu: Trả về theo mẫu 'Điều [số điều] [số hiệu văn bản]'.",
+    "answer": "Điều 40 32/2018/QH14"
+  },
+  {
+    "uid": "bench_2_3_signer_nghi-dinh-2882025nd-cp-nghi-dinh-2882025nd-cp-ve-quan-ly-tau-bay-khong-nguoi-lai-va-phuong-tien-bay-khac-unknown",
+    "refer_uid": "nghi-dinh-2882025nd-cp-nghi-dinh-2882025nd-cp-ve-quan-ly-tau-bay-khong-nguoi-lai-va-phuong-tien-bay-khac-unknown",
+    "refer_type": "doc",
+    "question": "Ai là người ký văn bản pháp luật có số hiệu '288/2025/NĐ-CP'?\n\nYêu cầu: Chỉ trả về tên người ký.",
+    "answer": "Phạm Minh Chính"
+  },
+  {
+    "uid": "bench_2_3_docid_dieu-62-luat-292001qh10-luat-hai-quan-nam-2001-unknown",
+    "refer_uid": "dieu-62-luat-292001qh10-luat-hai-quan-nam-2001-unknown",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Khi có căn cứ để khẳng định túi ngoại giao, túi lãnh sự bị lạm dụng vào mục đích trái với điều ước quốc tế về quan hệ ngoại giao, quan hệ lãnh sự mà Cộng hoà xã hội chủ nghĩa Việt Nam ký kết hoặc tham gia hoặc trong hành lý, phương tiện vận tải có đồ vật cấm xuất khẩu, nhập khẩu, đồ vật không thuộc loại được hưởng chế độ ưu đãi, miễn trừ theo quy định của pháp luật thì Tổng cục Hải quan quyết định việc xử lý theo quy định của các điều ước quốc tế đó. CHƯƠNG IV TRÁCH NHIỆM CỦA HẢI QUAN TRONG VIỆC PHÒNG, CHỐNG BUÔN LẬU, VẬN CHUYỂN TRÁI PHÉP HÀNG HOÁ QUA BIÊN GIỚI.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản.",
+    "answer": "29/2001/QH10"
+  },
+  {
+    "uid": "bench_2_3_article_dieu-4-luat-602014qh13-luat-ho-tich-2014-so-602014qh13-unknown",
+    "refer_uid": "dieu-4-luat-602014qh13-luat-ho-tich-2014-so-602014qh13-unknown",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc điều khoản nào của văn bản pháp luật nào?\n\n\"Trong Luật này, những từ ngữ dưới đây được hiểu như sau: 1. Cơ quan đăng ký hộ tịch là Ủy ban nhân dân xã, phường, thị trấn (sau đây gọi là Ủy ban nhân dân cấp xã), Ủy ban nhân dân huyện, quận, thị xã, thành phố thuộc tỉnh và đơn vị hành chính tương đương (sau đây gọi là Ủy ban nhân dân cấp huyện), Cơ quan đại diện ngoại giao, Cơ quan đại diện lãnh sự của Việt Nam ở nước ngoài (sau đây gọi là Cơ quan đại diện).\"\n\nYêu cầu: Trả về theo mẫu 'Điều [số điều] [số hiệu văn bản]'.",
+    "answer": "Điều 4 60/2014/QH13"
+  },
+  {
+    "uid": "bench_2_3_signer_nghi-dinh-251-cp-nghi-dinh-ve-giai-thuong-ho-chi-minh-va-giai-thuong-nha-nuoc-unknown",
+    "refer_uid": "nghi-dinh-251-cp-nghi-dinh-ve-giai-thuong-ho-chi-minh-va-giai-thuong-nha-nuoc-unknown",
+    "refer_type": "doc",
+    "question": "Ai là người ký văn bản pháp luật có số hiệu '251-CP'?\n\nYêu cầu: Chỉ trả về tên người ký.",
+    "answer": "Phạm Văn Đồng"
+  },
+  {
+    "uid": "bench_2_3_docid_dieu-4-luat-52-lctn-luat-dau-tu-nuoc-ngoai-nam-1996-unknown",
+    "refer_uid": "dieu-4-luat-52-lctn-luat-dau-tu-nuoc-ngoai-nam-1996-unknown",
+    "refer_type": "article",
+    "question": "Đoạn trích dưới đây thuộc văn bản pháp luật có số hiệu nào?\n\n\"Các nhà đầu tư nước ngoài được đầu tư vào Việt Nam dưới các hình thức sau đây: 1- Hợp tác kinh doanh trên cơ sở hợp đồng hợp tác kinh doanh; 2- Doanh nghiệp liên doanh; 3- Doanh nghiệp 100% vốn đầu tư nước ngoài.\"\n\nYêu cầu: Chỉ trả về số hiệu văn bản.",
+    "answer": "52-L/CTN"
   }
 ]

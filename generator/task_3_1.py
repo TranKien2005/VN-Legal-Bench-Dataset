@@ -16,7 +16,7 @@ from generator.db_search_agent import find_doc_agentic, DB_SCHEMA_CONTEXT
 # Prompts
 # ─────────────────────────────────────────────
 
-DECISION_PROMPT = """Đọc danh sách quyết định của tòa án dưới đây:
+DECISION_PROMPT = """Đọc toàn bộ căn cứ pháp lý liên quan và quyết định thực tế của Tòa án dưới đây.
 
 Căn cứ pháp lý áp dụng:
 {legal_context}
@@ -25,18 +25,31 @@ Quyết định thực tế của Tòa án (Ground Truth):
 {decision_text}
 
 Nhiệm vụ:
-1. Tạo đáp án ĐÚNG bằng cách trích xuất hoặc kết hợp các quyết định quan trọng nhất.
+Hãy tạo 4 phương án trắc nghiệm (1 ĐÚNG, 3 SAI) về PHÁN QUYẾT TRỌNG TÂM của Tòa án.
 
-2. Sinh 3 đáp án SAI (Distractors) cực kỳ "HỢP LÝ" nhưng sai về luật:
-   - SAI KHUNG HÌNH PHẠT: Dựa vào nội dung luật cung cấp, hãy sinh đáp án có mức hình phạt nằm ngoài khung (ví dụ: luật quy định 2-5 năm, đáp án sai đưa ra 7 năm).
-   - SAI LOGIC ÁP DỤNG: Áp dụng sai các tình tiết tăng nặng/giảm nhẹ.
-   - SAI ĐỐI TƯỢNG/TỶ LỆ: Thay đổi người chịu trách nhiệm hoặc tỷ lệ bồi thường nhưng giữ nguyên văn phong pháp lý.
+YÊU CẦU VỀ ĐÁP ÁN ĐÚNG:
+1. Chỉ chọn 1 kết luận trọng tâm nhất từ quyết định thực tế, không chép toàn bộ quyết định.
+2. Ưu tiên các loại phán quyết chính: cho ly hôn hay không, giao con/cấp dưỡng; tội danh và mức hình phạt chính; chấp nhận/bác yêu cầu; số tiền bồi thường/nghĩa vụ thanh toán; tỉ lệ hoặc chủ thể được chia tài sản; hủy/sửa/giữ nguyên quyết định hành chính.
+3. Bỏ qua án phí, quyền kháng cáo, hướng dẫn thi hành án, nghĩa vụ chậm thi hành án và các chi tiết thủ tục nếu không phải kết luận chính.
+4. Viết như một trích đoạn phán quyết ngắn gọn, chuyên nghiệp, chỉ 1 câu hoặc 2 câu rất ngắn.
+
+YÊU CẦU VỀ ĐÁP ÁN SAI:
+1. Ba đáp án sai phải cùng loại phán quyết với đáp án đúng.
+   - Nếu đáp án đúng là mức án tù, đáp án sai cũng là mức án tù khác, ưu tiên nằm trong hoặc gần khung hình phạt hợp lý theo điều luật.
+   - Nếu đáp án đúng là chia tài sản/bồi thường/thanh toán, đáp án sai chỉ thay đổi số tiền, tỉ lệ, chủ thể hoặc nghĩa vụ chính.
+   - Nếu đáp án đúng là chấp nhận/bác yêu cầu, đáp án sai đảo kết quả hoặc thay đổi một phần kết quả.
+   - Nếu đáp án đúng là ly hôn/nuôi con/cấp dưỡng, đáp án sai thay đổi kết quả ly hôn, người trực tiếp nuôi con hoặc mức cấp dưỡng.
+2. Không tạo đáp án sai phi lý, khác hẳn chủ đề, hoặc dựa vào án phí/quyền kháng cáo.
+3. Tất cả 4 phương án phải có độ dài xấp xỉ nhau; không phương án nào dài vượt trội hoặc ngắn bất thường.
+4. Các đáp án sai phải đánh lừa nhưng vẫn phù hợp với bối cảnh pháp lý và các điều luật liên quan.
 
 Trả về duy nhất JSON:
-{{"correct": "Nội dung quyết định ĐÚNG",
-  "distractors": ["Đáp án SAI 1 (ngoài khung/sai luật)", 
-                 "Đáp án SAI 2 (sai tình tiết/tỷ lệ)", 
-                 "Đáp án SAI 3 (văn phong phức tạp tương đương)"]}}"""
+{{"correct": "Phán quyết đúng trọng tâm, ngắn gọn",
+  "distractors": [
+    "Phán quyết sai 1 cùng loại và cùng độ dài",
+    "Phán quyết sai 2 cùng loại và cùng độ dài",
+    "Phán quyết sai 3 cùng loại và cùng độ dài"
+  ]}}"""
 
 LEGAL_BASES_EXTRACT_PROMPT = """Đọc phần căn cứ pháp lý dưới đây từ một bản án Việt Nam.
 Xác định TẤT CẢ các văn bản pháp luật và điều khoản được trích dẫn.
@@ -53,38 +66,49 @@ Trả về JSON danh sách (không thêm gì khác):
     "title_keywords": ["Hôn nhân", "Gia đình"],
     "doc_type": "Luật",
     "year": 2014,
+    "doc_id": "52/2014/QH13",
     "article_numbers": ["33", "55", "56", "59"]
   }},
   {{
     "title_keywords": ["Tố tụng dân sự"],
-    "doc_type": "Bộ luật",
+    "doc_type": "Luật",
     "year": 2015,
+    "doc_id": null,
     "article_numbers": ["147", "227", "228", "244"]
   }}
 ]}}
-(LƯU Ý: article_numbers chỉ chứa số/ký tự số, KHÔNG chứa chữ 'Điều'. Nếu không xác định được năm hoặc doc_type thì để null)"""
+LƯU Ý: doc_type chỉ được là "Luật", "Bộ luật", "Nghị định", "Nghị quyết" hoặc "Hiến pháp". article_numbers chỉ chứa số/ký tự số, KHÔNG chứa chữ 'Điều'. Nếu không xác định được năm, doc_type hoặc doc_id thì để null."""
 
 
 # ─────────────────────────────────────────────
 # Helpers
 # ─────────────────────────────────────────────
 
-def extract_refs_from_legal_bases(llm, legal_bases: str) -> list[dict]:
+def extract_refs_from_legal_bases(llm, legal_bases: str, debug: bool = False) -> list[dict]:
     prompt = LEGAL_BASES_EXTRACT_PROMPT.format(
         schema=DB_SCHEMA_CONTEXT,
         legal_bases=legal_bases[:2000]
     )
     raw = llm.generate(prompt)
+    if debug:
+        print("    [debug] legal_bases excerpt:", legal_bases[:500].replace("\n", " "))
+        print("    [debug] refs raw:", raw[:1500])
     try:
         data = json.loads(raw[raw.find('{'):raw.rfind('}') + 1])
-        return data.get("refs", [])
-    except Exception:
+        refs = data.get("refs", [])
+        if debug:
+            print(f"    [debug] extracted refs: {json.dumps(refs, ensure_ascii=False)[:2000]}")
+        return refs
+    except Exception as e:
+        if debug:
+            print(f"    [debug] cannot parse refs JSON: {e}")
         return []
 
 
-def fetch_articles_from_refs(session, llm, refs: list[dict]) -> list[tuple]:
+def fetch_articles_from_refs(session, llm, refs: list[dict], legal_bases: str, debug: bool = False) -> tuple[list[tuple], int]:
     found = []
     seen_ids = set()
+    expected_resolvable = 0
 
     for ref in refs:
         title_keywords = ref.get("title_keywords", [])
@@ -100,23 +124,38 @@ def fetch_articles_from_refs(session, llm, refs: list[dict]) -> list[tuple]:
             f"Đang tìm văn bản: {hint} "
             f"(type={ref.get('doc_type')}, year={ref.get('year')})"
         )
+        if debug:
+            print(f"    [debug] ref: {json.dumps(ref, ensure_ascii=False)}")
         doc_result = find_doc_agentic(
             session, llm,
             content_hint=hint,
-            context_instruction=context
+            context_instruction=context,
+            title_keywords=title_keywords,
+            doc_type=ref.get("doc_type"),
+            year=ref.get("year"),
+            doc_id=ref.get("doc_id"),
+            article_numbers=article_numbers
         )
 
         if not doc_result:
+            if debug:
+                print("    [debug] doc_result: <none>")
             continue
+
+        if debug:
+            print(f"    [debug] selected doc: {json.dumps(doc_result, ensure_ascii=False)}")
 
         doc = session.query(LegalDoc).filter(LegalDoc.uid == doc_result["uid"]).first()
         if not doc:
+            if debug:
+                print(f"    [debug] selected uid missing in DB: {doc_result['uid']}")
             continue
 
-        for num in article_numbers[:10]:
+        expected_resolvable += len(article_numbers)
+        for num in article_numbers:
             # Clean: remove 'Điều', 'điều' and whitespace
             clean_num = str(num).replace("Điều", "").replace("điều", "").strip()
-            
+
             art = session.query(LegalArticle).filter(
                 LegalArticle.doc_uid == doc.uid,
                 func.lower(LegalArticle.article_number) == clean_num.lower()
@@ -124,8 +163,12 @@ def fetch_articles_from_refs(session, llm, refs: list[dict]) -> list[tuple]:
             if art and art.article_id not in seen_ids:
                 found.append((art, doc))
                 seen_ids.add(art.article_id)
+                if debug:
+                    print(f"    [debug] article found: Điều {clean_num} -> {art.article_id}")
+            elif debug:
+                print(f"    [debug] article missing: Điều {clean_num} in {doc.doc_id} | {doc.title}")
 
-    return found
+    return found, expected_resolvable
 
 
 def format_legal_block(article_doc_pairs: list[tuple]) -> str:
@@ -164,13 +207,13 @@ def get_clean_case_content(case) -> str:
 # Generator chính
 # ─────────────────────────────────────────────
 
-def generate_task_3_1(limit=50, use_all=False):
-    print(f"Starting Task 3.1 Generation (Use All: {use_all}, Limit: {limit})...")
+def generate_task_3_1(limit=50, use_all=False, debug=False):
+    print(f"Starting Task 3.1 Generation (Use All: {use_all}, Limit: {limit}, Debug: {debug})...")
     session = SessionLocal()
     llm = LLMClient()
 
     query = session.query(CourtCase).filter(
-        CourtCase.decision_items != None,
+        CourtCase.section_decision != None,
         CourtCase.section_content != None,
         CourtCase.section_content != "",
         CourtCase.legal_bases != None,
@@ -178,45 +221,52 @@ def generate_task_3_1(limit=50, use_all=False):
         CourtCase.court_level.ilike('%sơ thẩm%')
     )
 
-    if use_all:
-        print("Mode: ALL — Processing all eligible cases sequentially")
-        candidates = query.order_by(CourtCase.uid.asc()).all()
-    else:
-        candidates = query.order_by(func.random()).limit(limit * 4).all()
+    total_candidates = query.count()
+    candidates = query.order_by(CourtCase.uid.asc()).yield_per(20)
 
-    print(f"Found {len(candidates)} candidate first-trial cases")
+    if use_all:
+        print(f"Mode: ALL — Processing all {total_candidates} eligible cases sequentially")
+    else:
+        print(f"Mode: LIMIT — Processing sequentially until {limit} samples are generated")
+
     benchmark_data = []
+    processed_cases = 0
 
     for case in candidates:
         if not use_all and len(benchmark_data) >= limit:
             break
 
-        print(f"\n[{len(benchmark_data)+1}/{'ALL' if use_all else limit}] Processing: {case.uid}")
+        processed_cases += 1
 
         # Kiểm tra điều kiện cần thiết cho Task 3.1
-        if not case.section_content or not case.decision_items or not case.legal_bases:
-            print(f"    -> Skipped: Missing core fields (content, decisions, or legal_bases)")
+        if not case.section_content or not case.section_decision or not case.legal_bases:
+            if debug:
+                print(f"\n[{len(benchmark_data)+1}/{'ALL' if use_all else limit}] Skip case {processed_cases}/{total_candidates}: {case.uid} — missing core fields")
             continue
 
-        items = case.decision_items
-        if not isinstance(items, list) or len(items) < 2:
+        decision_text = (case.section_decision or "").strip()
+        if len(decision_text) < 100:
+            if debug:
+                print(f"\n[{len(benchmark_data)+1}/{'ALL' if use_all else limit}] Skip case {processed_cases}/{total_candidates}: {case.uid} — decision text too short")
             continue
 
-        refs = extract_refs_from_legal_bases(llm, case.legal_bases)
+        print(f"\n[{len(benchmark_data)+1}/{'ALL' if use_all else limit}] Processing case {processed_cases}/{total_candidates}: {case.uid}")
+
+        refs = extract_refs_from_legal_bases(llm, case.legal_bases, debug=debug)
         if not refs:
+            if debug:
+                print("    [debug] no refs extracted")
             continue
 
-        article_doc_pairs = fetch_articles_from_refs(session, llm, refs)
-        total_expected = sum(len(ref.get("article_numbers", [])) for ref in refs)
+        article_doc_pairs, total_expected = fetch_articles_from_refs(session, llm, refs, case.legal_bases, debug=debug)
         found_count = len(article_doc_pairs)
 
         if total_expected == 0 or found_count < total_expected:
-            print(f"    -> Skipped: Found only {found_count}/{total_expected} articles.")
+            print(f"    -> Skipped: Found only {found_count}/{total_expected} resolvable articles.")
             continue
 
         legal_block = format_legal_block(article_doc_pairs)
-        decision_text = "\n".join(f"{i+1}. {item}" for i, item in enumerate(items[:10]))
-        
+
         prompt = DECISION_PROMPT.format(
             decision_text=decision_text,
             legal_context=legal_block
@@ -272,8 +322,9 @@ def generate_task_3_1(limit=50, use_all=False):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Sinh Benchmark cho Task 3.1")
-    parser.add_argument("--limit", type=int, default=10, help="Số lượng mẫu tối đa (nếu không dùng --all)")
+    parser.add_argument("--limit", type=int, default=5, help="Số lượng mẫu tối đa (nếu không dùng --all)")
     parser.add_argument("--all", action="store_true", help="Xử lý toàn bộ dữ liệu tuần tự")
-    
+    parser.add_argument("--debug", action="store_true", help="In log chi tiết bước tìm văn bản/điều luật")
+
     args = parser.parse_args()
-    generate_task_3_1(limit=args.limit, use_all=args.all)
+    generate_task_3_1(limit=args.limit, use_all=args.all, debug=args.debug)

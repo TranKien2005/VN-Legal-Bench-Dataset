@@ -4,149 +4,179 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-VN-Legal-Bench-Dataset is a Vietnamese legal benchmark dataset for evaluating LLMs on legal reasoning. It scrapes legal documents and court cases from Vietnamese government websites, stores them in PostgreSQL, and auto-generates benchmark questions using LLMs.
+VN-Legal-Bench-Dataset is a Vietnamese legal benchmark dataset for evaluating LLMs on legal reasoning. It scrapes legal documents and court cases from Vietnamese legal websites, parses them into structured records, stores them in PostgreSQL, and generates benchmark questions with LLM calls.
 
-**Philosophy**: Follows [LegalBench](https://github.com/HazyResearch/legalbench) but uses more generalized task categories to reduce data requirements while maintaining diagnostic capability. Each task is independent and can serve as input to other tasks.
+The project follows LegalBench conceptually, but uses broader Vietnamese-law task categories so each generated task can be independent and can feed later tasks.
 
 ## Common Commands
 
 ### Environment Setup
 ```bash
-python -m venv venv && venv\Scripts\activate
+python -m venv venv
+venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
+PDF parsing also requires a system Tesseract install with Vietnamese `vie.traineddata` available in the Tesseract `tessdata` folder. Verify with:
+```bash
+python -c "import pytesseract; print(pytesseract.get_tesseract_version())"
+```
+
+Configuration comes from `.env` via `config/settings.py`. Copy `.env.example` to `.env` if present, then set database credentials and any LLM API keys needed by generator scripts.
+
 ### Database
 ```bash
-# Start PostgreSQL + pgAdmin via Docker
+# Start PostgreSQL + pgAdmin
 docker-compose up -d
 
-# Initialize/create all tables (legal_docs, legal_articles, court_cases)
+# Create database tables
 python scripts/init_db.py
+
+# Drop and recreate all database tables
+python scripts/init_db.py --reset
 ```
 
-### Scraping
+The Docker defaults are database `vn_legal_bench`, user `legal`, password `legal123`, PostgreSQL port `5432`, and pgAdmin port `8080`; `.env` can override them.
+
+### Scraping Raw Data
 ```bash
-# Court cases from luatvietnam.vn - topic mode with quota (default)
-python scripts/scrape_luatvietnam_banan.py --quota 20
+# Court cases from luatvietnam.vn using topic quotas
+python scripts/scrape_luatvietnam_banan.py --total_quota 300 --workers 3
 
-# Court cases - regular mode (keyword search)
-python scripts/scrape_luatvietnam_banan.py --topic_mode --pages 5 --keyword "divorce"
+# Legal normative documents from vanbanphapluat.co
+python scripts/scrape_vbpl_luat.py --pages auto --start 1 --workers 5
+python scripts/scrape_vbpl_nghi_dinh.py --pages auto --start 1 --workers 3
+python scripts/scrape_vbpl_special.py
 
-# Legal documents from vanbanphapluat.co
-python scripts/scrape_vbpl_luat.py
+# Legal normative documents from luatvietnam.vn
+python scripts/scrape_luatvietnam_luat.py --pages auto --start 1 --workers 3
+python scripts/scrape_luatvietnam_nghi_dinh.py --pages auto --start 39 --workers 3
+python scripts/scrape_luatvietnam_special.py
 ```
 
-### Processing (Parse raw → DB)
+Court-case scraping uses `config/search_topics.json` for topic keywords. Some scraping flows use the Chrome debug settings in `config/settings.py` (`CHROME_PATH`, `CHROME_USER_DATA_DIR`, `CHROME_DEBUG_PORT`).
+
+### Processing and Importing Data
 ```bash
-python scripts/process_luatvietnam_banan.py  # Court cases
-python scripts/process_vbpl_docs.py           # Legal documents
+# Parse raw files into data/processed
+python scripts/process_luatvietnam_banan.py
+python scripts/process_vbpl_docs.py
+python scripts/process_vbpl_articles.py
+python scripts/process_luatvietnam_docs.py
+python scripts/process_luatvietnam_articles.py
+
+# Import processed JSON into PostgreSQL; clears target tables by default
+python scripts/import_data.py docs
+python scripts/import_data.py articles
+python scripts/import_data.py case
+python scripts/import_data.py all
+
+# Preserve existing DB rows while importing
+python scripts/import_data.py all --no-clear
 ```
+
+### Benchmark Generation
+```bash
+# Tasks with CLI limits
+python generator/task_1_1.py --limit 20
+python generator/task_1_1.py --all
+python generator/task_1_2.py --limit 10
+python generator/task_2_2.py --limit 10
+python generator/task_2_6.py --limit 10
+python generator/task_3_1.py --limit 5
+
+# Tasks with fixed limits in __main__
+python generator/task_2_1.py
+python generator/task_2_3.py
+python generator/task_2_4.py
+```
+
+Generated benchmark JSON files are written under `data/benchmark/`. Generator scripts usually require a populated database and configured LLM credentials.
+
+### Tests and Checks
+```bash
+# pytest is installed as a development dependency, but this repo currently has no project test suite
+pytest
+
+# Run one test when tests are added
+pytest path/to/test_file.py::test_name
+
+# Quick LuatVietnam search smoke check
+python scripts/diagnostic_search.py
+```
+
+There is no project-level build, lint, formatter, `pyproject.toml`, or pytest configuration at the repository root at the time this file was written.
 
 ## Architecture
 
-### Data Pipeline (5 layers)
+### Data Pipeline
 ```
-scrapers/    → Collect from web (luatvietnam.vn, vanbanphapluat.co)
-parsers/     → Parse into structured format
-db/          → SQLAlchemy ORM (PostgreSQL)
-scripts/     → CLI entry points for scraping/processing
-generator/   → LLM-driven benchmark question generation (task_*.py)
-data/        → Raw → Processed → Benchmark output
+scrapers/  -> collect raw web data and downloaded documents
+parsers/   -> normalize legal text and split it into structured fields
+data/      -> raw, processed, and benchmark JSON/CSV artifacts
+db/        -> SQLAlchemy ORM models, engine, and session setup
+scripts/   -> command-line entry points for scraping, parsing, DB setup, and imports
+generator/ -> LLM-driven benchmark task generation
 ```
 
-### Database Schema (3 main tables)
+### Storage Model
 
-**legal_docs** — Legal normative documents (Luật, Nghị định, Thông tư...)
-- UID format: `slugify(doc_id + title_prefix + issue_date)` — e.g., `24-1991-luat-luat-doanh-nghiep-1991-08-12`
-- One-to-many with `legal_articles`
+`db/models.py` defines three primary tables:
 
-**legal_articles** — Individual articles within a legal doc
-- Article ID: `[doc_uid]_D[article_number]` — e.g., `24-1991-..._D1`
-- `is_amendment` flag indicates if article amends another legal text
+- `legal_docs`: legal normative documents such as Luật, Nghị định, Thông tư. The primary key `uid` is a composite slug based on document ID, title, and issue date to avoid historical ID collisions.
+- `legal_articles`: individual articles linked to `legal_docs.uid` by `doc_uid`. Article IDs follow `[doc_uid]_D[article_number]`; `is_amendment` marks amendment articles.
+- `court_cases`: court judgments with metadata, cited legal bases, decision items, raw text, and four parsed sections: `section_introduction`, `section_content`, `section_reasoning`, and `section_decision`.
 
-**court_cases** — Court judgments
-- UID format: `[CaseNumber]-[CourtAcronym]-[Date]`
-- 4 parsed sections: `section_introduction` → `section_content` → `section_reasoning` → `section_decision`
-- `legal_relation` field stores the legal category (e.g., "Ly hôn", "Tranh chấp đất đai")
-- `decision_items` stored as JSON array
+### Scraping and Parsing
 
-### Scrapers
+- `scrapers/vbpl_engine.py` collects legal normative documents from vanbanphapluat.co; type-specific scripts in `scripts/` pass document slugs such as `luat` and `nghi-dinh`.
+- `scrapers/luatvietnam_engine.py` collects both court cases and legal normative documents from luatvietnam.vn. Court-case scraping uses topic quotas from `config/search_topics.json`; legal-document scripts pass LuatVietnam document type IDs for Luật/Bộ luật and Nghị định.
+- `parsers/legal_doc_parser.py` extracts document metadata and articles from legal documents.
+- `parsers/case_parser.py` splits court judgments into the four canonical sections used by benchmark tasks.
+- `parsers/pdf_parser.py` uses PyMuPDF/pdfplumber/Tesseract OCR for PDF text extraction.
 
-- `luatvietnam_engine.py` — Court cases from luatvietnam.vn. Supports topic-based scraping with keyword quotas across 15 legal issue categories (configured in `config/search_topics.json`).
-- `vbpl_engine.py` — Legal normative documents from vanbanphapluat.co.
+### Benchmark Generator
 
-### Parsers
+`generator/task_*.py` scripts query the database and write benchmark datasets. Tasks use case facts (`section_content`) as inputs and avoid leaking `section_reasoning` when the court reasoning would reveal the answer.
 
-- `case_parser.py` — Splits court case raw text into 4 sections using `CASE_SECTION_KEYWORDS` from constants.
-- `legal_doc_parser.py` — Extracts articles using Sequential Skeleton Search algorithm (handles edge cases like old Sắc lệnh without article titles).
-- `pdf_parser.py` — Uses PyMuPDF + Tesseract OCR for PDF text extraction.
+Task families:
 
-### Generator (Benchmark Tasks)
+- `task_1_1.py`: legal issue classification over the 15 configured issue categories.
+- `task_1_2.py`: core issue generation.
+- `task_2_1.py`, `task_2_2.py`: definition/article recall over legal articles.
+- `task_2_3.py`: legal text attribution multiple choice.
+- `task_2_4.py`: legal evolution from amendment articles.
+- `task_2_6.py`: relevant article identification from court-case legal bases.
+- `task_3_1.py`: court decision prediction; this is a multi-call pipeline and uses `generator/db_search_agent.py` to resolve cited legal bases against database records.
 
-The `generator/` folder contains task scripts that auto-generate benchmark questions using LLM clients:
+### Configuration and Constants
 
-| Script | Task | Source | Metric |
-|--------|------|--------|--------|
-| `task_1_1.py` | General Legal Issue Classification (15 labels) | court_cases | Accuracy |
-| `task_1_2.py` | Core Issue Generation | court_cases | Token F1 / LLM-judge |
-| `task_2_1.py` | Definition Recall | legal_articles | Token F1 / Exact Match |
-| `task_2_2.py` | Article Recall | legal_articles | Token F1 / Exact Match |
-| `task_2_3.py` | Legal Text Attribution (MCQ) | legal_articles + legal_docs | Accuracy |
-| `task_2_4.py` | Legal Evolution | legal_articles (is_amendment=True) | Accuracy |
-| `task_2_6.py` | Relevant Article Identification (MCQ) | court_cases.legal_bases | Accuracy |
-| `task_3_1.py` | Legal Court Decision Prediction (MCQ) | court_cases + legal_articles | Accuracy |
-
-**Output**: Each task generates JSON files to `data/benchmark/`.
-
-**Task design principles**:
-- Tasks use `section_content` (case facts) as input — `section_reasoning` is stripped to avoid giving away answers
-- Multiple LLM calls per sample for complex tasks (3.1 uses ~4-6 calls)
-- Agentic DB search (`db_search_agent.py`) used to link legal citations to database records
-- Document distribution: 80% Luật, 18% Nghị định, 2% Special (per task plan)
-
-### Configuration
-
-- `config/settings.py` — Pydantic BaseSettings, loads from `.env`. DB credentials, API keys, paths.
-- `config/constants.py` — 15 legal issue labels, DOC_TYPES, CASE_SECTION_KEYWORDS, ARGUMENT_ROLES.
-- `config/search_topics.json` — 14 legal topics with keywords for quota-based scraping.
+- `config/settings.py` loads `.env` with Pydantic settings for DB, API keys, data directories, and Chrome automation.
+- `config/constants.py` contains legal issue labels, document types, parser section keywords, and related shared constants.
+- `config/search_topics.json` controls court-case topic scraping quotas and keyword searches.
 
 ### Data Directories
 
-- `data/raw/` — Raw JSON/HTML scraped from internet
-- `data/processed/` — Parsed/structured data ready for DB
-- `data/benchmark/` — Final benchmark JSON/CSV output
+- `data/raw/`: scraped source files and downloads.
+- `data/processed/`: parsed JSON ready for inspection or DB import.
+- `data/benchmark/`: generated benchmark outputs.
 
-### Legal Issue Categories (15 labels)
+## Legal Issue Categories
 
-Used for Issue Spotting tasks (1.1, 1.2):
+Issue-spotting tasks use these 15 labels from `config/constants.py`:
+
 1. Hôn nhân và Gia đình
 2. Giao thông và Vận tải
 3. Thuế, Phí và Lệ phí
 4. Đất đai và Nhà ở
 5. Lao động và Bảo hiểm xã hội
-6. Kinh doanh và Đầu tư
-7. Ngân hàng, Tín dụng và Bảo hiểm
+6. Kinh doanh, đầu tư, thương mại
+7. Tài chính, vay nợ, tín dụng
 8. Sở hữu trí tuệ
 9. Môi trường và Tài nguyên
 10. Trật tự, An toàn xã hội và Ma túy
-11. Xâm phạm Quyền con người
-12. Xâm phạm Quyền sở hữu tài sản
+11. Xâm phạm tính mạng, sức khỏe, danh dự, nhân phẩm
+12. Xâm phạm sở hữu tài sản
 13. Hành chính và Quản lý nhà nước
-14. Tư pháp và Tố tụng
-15. Các vấn đề pháp lý khác
-
-## Dependencies
-
-- **DB**: PostgreSQL (or Docker), SQLAlchemy, alembic
-- **Scraping**: playwright, beautifulsoup4, requests
-- **PDF**: PyMuPDF, pdfplumber, pytesseract (requires system install + `vie.traineddata`)
-- **LLM**: litellm (multi-provider), groq, google-generativeai
-- **NLP**: underthesea (Vietnamese text processing)
-
-## Notes
-
-- Tesseract OCR must be installed system-wide with `vie.traineddata` in `tessdata` folder for PDF parsing.
-- Chrome debug mode is used for some scraping tasks (`CHROME_DEBUG_PORT: 9222`).
-- Python 3.11+ required (uses `str | None` union syntax).
-- Court case scraping uses quota-based topic mode — each topic gets evenly distributed targets, with deficit carryover between keywords.
+14. Tư pháp, Tố tụng và Thi hành án
+15. Dân sự, Hợp đồng và Nghĩa vụ

@@ -12,17 +12,17 @@ from db.session import SessionLocal
 from db.models import CourtCase
 from generator.llm_client import LLMClient
 
-# Prompt tối ưu: Dùng Title và Decisions để sinh MCQ (Tiết kiệm token)
+# Prompt tối ưu: Dùng Title và phần quyết định để sinh MCQ (Tiết kiệm token)
 MCQ_PROMPT_TEMPLATE = """Dựa vào thông tin bản án dưới đây, hãy tạo câu hỏi trắc nghiệm về "Vấn đề pháp lý cốt lõi".
 
 Tên bản án: {title}
-Các quyết định của Tòa án:
-{decisions}
+Phần quyết định của Tòa án:
+{decision}
 
 Nhiệm vụ:
 1. "correct": Trích xuất vấn đề pháp lý cốt lõi từ Tên bản án (Bắt đầu bằng 'Vấn đề...', ví dụ: 'Vấn đề tranh chấp hợp đồng đặt cọc').
 2. "distractors": Sinh 3 vấn đề SAI. Yêu cầu:
-   - Dựa vào nội dung 'Các quyết định' để tạo ra các vấn đề sai nhưng có vẻ liên quan (ví dụ: nếu tòa quyết định về bồi thường, hãy sinh vấn đề sai về 'Hủy hợp đồng').
+   - Dựa vào nội dung 'Phần quyết định' để tạo ra các vấn đề sai nhưng có vẻ liên quan (ví dụ: nếu tòa quyết định về bồi thường, hãy sinh vấn đề sai về 'Hủy hợp đồng').
    - Phải đảm bảo 3 vấn đề này SAI về bản chất so với Tên bản án gốc.
    - Không được quá lộ liễu, phải dùng thuật ngữ pháp lý tương đương.
 
@@ -41,11 +41,12 @@ def generate_task_1_2(limit=50, use_all=False):
     session = SessionLocal()
     llm = LLMClient()
 
-    # Lấy các bản án có đủ title, content và decisions
+    # Lấy các bản án có đủ content và phần quyết định
     query = session.query(CourtCase).filter(
         CourtCase.section_content != None,
         CourtCase.section_content != "",
-        CourtCase.decision_items != None
+        CourtCase.section_decision != None,
+        CourtCase.section_decision != ""
     )
 
     if use_all:
@@ -64,15 +65,14 @@ def generate_task_1_2(limit=50, use_all=False):
         print(f"[{i+1}/{'ALL' if use_all else len(cases)}] Processing: {case.uid}")
 
         input_title = case.title_parsed or case.title_web
-        if not input_title or not case.section_content or not case.decision_items:
-            print(f"  -> Skipped: Missing title, content, or decision_items")
+        if not input_title or not case.section_content or not case.section_decision:
+            print(f"  -> Skipped: Missing title, content, or section_decision")
             continue
 
-        # Chuẩn bị thông tin bổ trợ để sinh distractors
-        decisions_text = "\n".join([f"- {item}" for item in case.decision_items[:5]])
+        decision_text = case.section_decision[:1500]
 
         # Gọi LLM sinh options (Rất ít token vì không gửi content)
-        prompt = MCQ_PROMPT_TEMPLATE.format(title=input_title, decisions=decisions_text)
+        prompt = MCQ_PROMPT_TEMPLATE.format(title=input_title, decision=decision_text)
         raw_res = llm.generate(prompt)
 
         try:
@@ -124,7 +124,7 @@ def generate_task_1_2(limit=50, use_all=False):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Sinh Benchmark cho Task 1.2")
-    parser.add_argument("--limit", type=int, default=10, help="Số lượng mẫu tối đa (nếu không dùng --all)")
+    parser.add_argument("--limit", type=int, default=100, help="Số lượng mẫu tối đa (nếu không dùng --all)")
     parser.add_argument("--all", action="store_true", help="Xử lý toàn bộ dữ liệu tuần tự")
     
     args = parser.parse_args()

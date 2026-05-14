@@ -72,9 +72,14 @@ def import_legal_docs(session: Session, data_dir: Path, clear: bool = False):
                     title=title,
                     doc_type=item.get("doc_type"),
                     issuing_body=item.get("issuing_body"),
+                    legal_field=item.get("legal_field"),
+                    is_amendment=item.get("is_amendment", False),
+                    signer=item.get("signer"),
                     issue_date=parse_date(issue_date),
                     effective_date=parse_date(item.get("effective_date") or item.get("Ngày có hiệu lực")),
                     status=item.get("status") or item.get("Tình trạng hiệu lực"),
+                    summary=item.get("summary"),
+                    download_links=item.get("download_links"),
                     url=item.get("url"),
                     raw_text=item.get("raw_text")
                 )
@@ -84,7 +89,16 @@ def import_legal_docs(session: Session, data_dir: Path, clear: bool = False):
                     index_elements=['uid'],
                     set_={
                         "title": stmt.excluded.title,
+                        "doc_type": stmt.excluded.doc_type,
+                        "issuing_body": stmt.excluded.issuing_body,
+                        "legal_field": stmt.excluded.legal_field,
+                        "is_amendment": stmt.excluded.is_amendment,
+                        "signer": stmt.excluded.signer,
+                        "issue_date": stmt.excluded.issue_date,
+                        "effective_date": stmt.excluded.effective_date,
                         "status": stmt.excluded.status,
+                        "summary": stmt.excluded.summary,
+                        "download_links": stmt.excluded.download_links,
                         "url": stmt.excluded.url,
                         "raw_text": stmt.excluded.raw_text
                     }
@@ -171,12 +185,6 @@ def import_court_cases(session: Session, data_dir: Path, clear: bool = False):
                     item.get("section_decision")
                 ]
                 
-                # Metadata và Quyết định (Bắt buộc cho Task 3.1)
-                title = item.get("title_parsed") or item.get("title_web")
-                legal_rel = item.get("legal_relation")
-                decisions = item.get("decision_items")
-                legal_bases = item.get("legal_bases")
-
                 if any(s is None or str(s).strip() == "" for s in sections):
                     # logger.warning(f"⚠️ Bỏ qua CourtCase {item.get('uid')}: Thiếu phần cấu trúc.")
                     continue
@@ -197,7 +205,6 @@ def import_court_cases(session: Session, data_dir: Path, clear: bool = False):
                     source_doc_url=item.get("source_doc_url"),
                     summary=item.get("summary"),
                     legal_bases=item.get("legal_bases"),
-                    decision_items=item.get("decision_items"),
                     raw_text=item.get("raw_text"),
                     section_introduction=item.get("section_introduction"),
                     section_content=item.get("section_content"),
@@ -211,7 +218,6 @@ def import_court_cases(session: Session, data_dir: Path, clear: bool = False):
                         "case_number": stmt.excluded.case_number,
                         "issuance_date": stmt.excluded.issuance_date,
                         "legal_bases": stmt.excluded.legal_bases,
-                        "decision_items": stmt.excluded.decision_items,
                         "summary": stmt.excluded.summary,
                         "section_introduction": stmt.excluded.section_introduction,
                         "section_content": stmt.excluded.section_content,
@@ -244,24 +250,32 @@ def main():
     session = SessionLocal()
     
     try:
+        if args.type == "all" and args.clear:
+            clear_table(session, LegalArticle)
+            clear_table(session, LegalDoc)
+            clear_table(session, CourtCase)
+            clear_each_table = False
+        else:
+            clear_each_table = args.clear
+
         # 1. Legal Docs
         if args.type in ["docs", "all"]:
             docs_dir = processed_dir / "legal_docs"
             if docs_dir.exists():
-                import_legal_docs(session, docs_dir, clear=args.clear)
-            
+                import_legal_docs(session, docs_dir, clear=clear_each_table)
+
         # 2. Legal Articles
         if args.type in ["articles", "all"]:
             articles_dir = processed_dir / "legal_articles"
             if articles_dir.exists():
-                import_legal_articles(session, articles_dir, clear=args.clear)
-            
+                import_legal_articles(session, articles_dir, clear=clear_each_table)
+
         # 3. Court Cases
         if args.type in ["case", "all"]:
             cases_dir = processed_dir / "court_cases"
             if cases_dir.exists():
-                import_court_cases(session, cases_dir, clear=args.clear)
-            
+                import_court_cases(session, cases_dir, clear=clear_each_table)
+
     except Exception as e:
         logger.error(f"❌ Lỗi trong quá trình import: {e}")
         session.rollback()

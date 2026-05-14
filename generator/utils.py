@@ -25,39 +25,74 @@ def normalize_legal_text(text: str) -> str:
     text = " ".join(text.split())
     return text.strip()
 
+def article_number_int(article_number: str | None) -> int | None:
+    if not article_number:
+        return None
+    match = re.match(r"^(\d+)", str(article_number).strip())
+    if not match:
+        return None
+    return int(match.group(1))
+
+
+def get_doc_article_bounds(session, doc_uid: str) -> tuple[int, int] | None:
+    numbers = [
+        n for (n,) in session.query(LegalArticle.article_number).filter(LegalArticle.doc_uid == doc_uid).all()
+    ]
+    parsed = [article_number_int(n) for n in numbers]
+    parsed = [n for n in parsed if n is not None]
+    if not parsed:
+        return None
+    return min(parsed), max(parsed)
+
+
+def is_core_article(session, article: LegalArticle, min_articles_per_doc: int = 8, edge_margin: int = 2) -> bool:
+    num = article_number_int(article.article_number)
+    if num is None or not article.content or len(article.content.strip()) < 80:
+        return False
+    bounds = get_doc_article_bounds(session, article.doc_uid)
+    if not bounds:
+        return False
+    first_num, last_num = bounds
+    total = last_num - first_num + 1
+    if total < min_articles_per_doc:
+        return False
+    return first_num + edge_margin <= num <= last_num - edge_margin
+
+
+def filter_core_articles(session, articles: list[LegalArticle], min_articles_per_doc: int = 8, edge_margin: int = 2) -> list[LegalArticle]:
+    return [a for a in articles if is_core_article(session, a, min_articles_per_doc, edge_margin)]
+
+
+def _sample_core_articles(session, query, limit: int) -> list[LegalArticle]:
+    if limit <= 0:
+        return []
+    candidates = query.order_by(func.random()).limit(max(limit * 20, 100)).all()
+    return filter_core_articles(session, candidates)[:limit]
+
+
 def get_stratified_articles(session, limit=50):
     """
-    Lấy mẫu điều khoản theo tỷ lệ 80% Luật, 18% Nghị định, 2% Special (HP2013).
+    Lấy mẫu điều khoản theo tỷ lệ 80% Luật, 18% Nghị định, 2% Special (HP2013),
+    tránh điều đầu/cuối và văn bản có quá ít điều khoản.
     """
     num_laws = int(limit * 0.8)
     num_decrees = int(limit * 0.18)
     num_special = limit - num_laws - num_decrees
-    
+
     selected_articles = []
-    
-    # 1. Lấy Luật
-    laws = session.query(LegalArticle).join(LegalDoc).filter(
-        LegalDoc.doc_type == "Luật"
-    ).order_by(func.random()).limit(num_laws).all()
-    selected_articles.extend(laws)
-    
-    # 2. Lấy Nghị định
-    decrees = session.query(LegalArticle).join(LegalDoc).filter(
-        LegalDoc.doc_type == "Nghị định"
-    ).order_by(func.random()).limit(num_decrees).all()
-    selected_articles.extend(decrees)
-    
-    # 3. Lấy Special (HP2013)
-    specials = session.query(LegalArticle).join(LegalDoc).filter(
-        LegalDoc.uid == "HP2013"
-    ).order_by(func.random()).limit(num_special).all()
-    # Nếu không tìm thấy bằng UID chính xác, thử lọc theo doc_id
+
+    laws_query = session.query(LegalArticle).join(LegalDoc).filter(LegalDoc.doc_type == "Luật")
+    selected_articles.extend(_sample_core_articles(session, laws_query, num_laws))
+
+    decrees_query = session.query(LegalArticle).join(LegalDoc).filter(LegalDoc.doc_type == "Nghị định")
+    selected_articles.extend(_sample_core_articles(session, decrees_query, num_decrees))
+
+    specials_query = session.query(LegalArticle).join(LegalDoc).filter(LegalDoc.uid == "HP2013")
+    specials = _sample_core_articles(session, specials_query, num_special)
     if not specials:
-        specials = session.query(LegalArticle).join(LegalDoc).filter(
-            LegalDoc.doc_id == "HP2013"
-        ).order_by(func.random()).limit(num_special).all()
-        
+        specials_query = session.query(LegalArticle).join(LegalDoc).filter(LegalDoc.doc_id == "HP2013")
+        specials = _sample_core_articles(session, specials_query, num_special)
     selected_articles.extend(specials)
-    
+
     random.shuffle(selected_articles)
     return selected_articles
